@@ -5970,10 +5970,54 @@ genuinely global property; (ii) bulk-half ($0.284$) and
 core-half ($0.249$) values differ by $\sim\!14\%$, so the
 carrier has bulk/matter-core spectral inhomogeneity;
 (iii) the Fiedler-vector participation ratio is
-$\mathrm{PR}\!\to\!120$ (Symanzik-$1$, $N$-independent),
-indicating that the spectral gap is carried by an
-$N$-independent sub-population of $\sim\!120$
-spectrally-active vertices, not uniformly across all $N$.
+\emph{extensive but not uniform}: the linear fit
+$\mathrm{PR}(N)\!\approx\!0.298\,N\!+\!9.7$ gives
+$\mathrm{PR}/N\!\to\!0.31$ (Symanzik-$1$), so about
+$30\%$ of vertices are spectrally active in the Fiedler
+mode while the remaining $70\%$ contribute negligibly.
+The asymptotic fraction $0.31$ sits $4.2\%$ above the
+candidate System-$\mathcal R$ rational
+$\alpha_{\xi}/N_{\rm gen}\!=\!3/10$; this is suggestive
+but outside the corpus EXACT/PRECISE tier thresholds, so
+the identification is registered as exploratory.
+
+\paragraph{Where are the spectrally active vertices?}
+The follow-up audit
+(\path|src/verify_lemma_B_fiedler_overlap.py|, output
+\path|outputs/verify_lemma_B_fiedler_overlap.json|)
+computes Jaccard overlap between the Fiedler-amplitude
+top-$30\%$ set and the row-sum-induced
+matter-core/bulk classification:
+\begin{center}
+\renewcommand{\arraystretch}{1.10}
+\small
+\begin{tabular}{@{}llll@{}}
+\toprule
+Overlap & Mean (10-regime) & Random baseline & vs.\ random \\
+\midrule
+$J$(Fiedler-top$30$, core-top$30$)  & $0.26$ & $0.18$ & $+45\%$ \\
+$J$(Fiedler-top$30$, bulk-bot$30$)  & $0.12$ & $0.18$ & $-35\%$ \\
+$J$(Fiedler-top$30$, core-top$50$)  & $0.30$ & $0.18$ & $+67\%$ \\
+$J$(Fiedler-top$30$, bulk-bot$50$)  & $0.17$ & $0.18$ & $-7\%$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The spectrally active set is \emph{not} identical to the
+matter-core set (Jaccard well below $0.5$): it correlates
+positively with matter-core ($+45\%$ over random for the
+strong test, $+67\%$ for the weaker test) and negatively
+with bulk ($-35\%$ over random for the strong test, $-7\%$
+for the weaker test). The interpretation is that the
+Fiedler hot-spots are the \emph{interface vertices}
+between matter-core and bulk, not the matter-core itself.
+This is consistent with the small-world signature of
+Proposition~\ref{prop:edge_correlation_small_world}:
+small-world graphs have characteristic interface
+populations between clusters that carry the spectral
+gap. The conjectured $\sim\!30\%$ active fraction is
+therefore the empirical size of this interface set in
+the carrier-action geometry, not a generic carrier
+identity.
 The top-$50\%$ and bottom-$50\%$ rational candidates
 $1/4$ and $2/7$ are registered as exploratory observations,
 not as robust conjectures (sub-Laplacian asymptotes depend
