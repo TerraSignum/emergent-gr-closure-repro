@@ -1,0 +1,130 @@
+{
+  "headline": "Lemma B branch-resolved Symanzik-1 fit: vacuum (N<=100), matter (N>=256), pooled. Conjectured asymptote 3/8 = 0.375. Phase boundaries from project_chirality_flip_pi_over_4 2026-05-05.",
+  "boundaries": {
+    "vacuum_N_max": 100,
+    "peri_flip_N_low": 110,
+    "peri_flip_N_high": 200,
+    "matter_N_min": 256,
+    "N_inversion_approx": 591
+  },
+  "vacuum": {
+    "status": "OK",
+    "n_points": 5,
+    "lambda_inf": 0.3732208694927582,
+    "a": 7.170921513194894,
+    "SSE": 3.2546979485525466e-05,
+    "RMSE": 0.0025513517783922104,
+    "delta_vs_3_8_relative_pct": -0.47443480193115245,
+    "points": [
+      {
+        "N": 50,
+        "lambda_2_mean": 0.514628304406466
+      },
+      {
+        "N": 64,
+        "lambda_2_mean": 0.4862411624382059
+      },
+      {
+        "N": 72,
+        "lambda_2_mean": 0.4754419137464885
+      },
+      {
+        "N": 84,
+        "lambda_2_mean": 0.4609092662892594
+      },
+      {
+        "N": 100,
+        "lambda_2_mean": 0.4410212400029154
+      }
+    ]
+  },
+  "peri_flip": {
+    "status": "BANDED",
+    "n_points": 2,
+    "points": [
+      {
+        "N": 128,
+        "lambda_2_mean": 0.39689965642921327
+      },
+      {
+        "N": 200,
+        "lambda_2_mean": 0.4197898619809064
+      }
+    ],
+    "note": "Peri-flip points are not fitted; they straddle theta_chir = pi/4 mixing zone."
+  },
+  "matter": {
+    "status": "OK",
+    "n_points": 3,
+    "lambda_inf": 0.39572505320426105,
+    "a": 2.7878066771853263,
+    "SSE": 3.0480628047584975e-08,
+    "RMSE": 0.00010079786381265722,
+    "delta_vs_3_8_relative_pct": 5.526680854469612,
+    "points": [
+      {
+        "N": 256,
+        "lambda_2_mean": 0.40671290679483313
+      },
+      {
+        "N": 300,
+        "lambda_2_mean": 0.40487908586715093
+      },
+      {
+        "N": 512,
+        "lambda_2_mean": 0.40121066062388344
+      }
+    ]
+  },
+  "pooled": {
+    "status": "OK",
+    "n_points": 10,
+    "lambda_inf": 0.3789057066066873,
+    "a": 6.622259006358616,
+    "SSE": 0.0013791039053333632,
+    "RMSE": 0.011743525472929171,
+    "delta_vs_3_8_relative_pct": 1.0415217617832853,
+    "points": [
+      {
+        "N": 50,
+        "lambda_2_mean": 0.514628304406466
+      },
+      {
+        "N": 64,
+        "lambda_2_mean": 0.4862411624382059
+      },
+      {
+        "N": 72,
+        "lambda_2_mean": 0.4754419137464885
+      },
+      {
+        "N": 84,
+        "lambda_2_mean": 0.4609092662892594
+      },
+      {
+        "N": 100,
+        "lambda_2_mean": 0.4410212400029154
+      },
+      {
+        "N": 128,
+        "lambda_2_mean": 0.39689965642921327
+      },
+      {
+        "N": 200,
+        "lambda_2_mean": 0.4197898619809064
+      },
+      {
+        "N": 256,
+        "lambda_2_mean": 0.40671290679483313
+      },
+      {
+        "N": 300,
+        "lambda_2_mean": 0.40487908586715093
+      },
+      {
+        "N": 512,
+        "lambda_2_mean": 0.40121066062388344
+      }
+    ]
+  }
+}

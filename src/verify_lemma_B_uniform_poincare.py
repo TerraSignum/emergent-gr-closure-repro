@@ -60,6 +60,11 @@ LADDER = [
     ("P5N256", 256, "results_d1_p5n256_12seeds/P5N256.snapshots.npz", "edge_xi_snapshots"),
     ("P5N300", 300, "results_d1_p5n300_12seeds/P5N300.snapshots.npz", "edge_xi_snapshots"),
     ("P5N512", 512, "results_d1_p5n512_12seeds/P5N512.snapshots.npz", "edge_xi_snapshots"),
+    # Matter-branch lever-arm extension (Phase-3, FB-w4 test).
+    # Auto-included if the corresponding npz exists.
+    ("P5N600", 600, "results_d1_p5n600_12seeds/P5N600.snapshots.npz", "edge_xi_snapshots"),
+    ("P5N700", 700, "results_d1_p5n700_12seeds/P5N700.snapshots.npz", "edge_xi_snapshots"),
+    ("P5N800", 800, "results_d1_p5n800_12seeds/P5N800.snapshots.npz", "edge_xi_snapshots"),
 ]
 
 BOOT_RESAMPLES = 1000
