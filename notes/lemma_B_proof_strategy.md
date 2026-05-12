@@ -920,14 +920,29 @@ companion paper).
 
 ## Cross-sector independence of the 3/8 conjecture
 
-**Branch scope.** The entire Phase-2 ladder (N ∈ [50, 512])
-sits *pre-inversion* of the chirality flip — empirical
-inversion at N_inversion ≈ 591–600 (memory:
-project_chirality_flip_pi_over_4 2026-05-05). All Phase-2
-data therefore characterise the **vacuum branch**
-(θ_chir < π/4). The post-inversion (matter-branch) regime
-N ≥ 600 is *not* yet covered and is registered as an open
-audit obligation (FB-w4 below).
+**Branch scope (corrected).** The Phase-2 ladder spans
+**both** branches of the matter-vacuum flip: the flip
+itself (θ_chir = π/4) occurs at **N\* ≈ 110–120**, between
+N=100 (θ_chir = 37.1°) and N=128 (θ_chir = 46.1°). The
+subsequent N_inversion = 591–600 is a *different* point
+(the chirality-inversion endpoint where θ_chir → arctan(N_gen)
+= 71.6°, α_ξ → 1/10). Branch-separated Symanzik-1 fits
+(corpus-verified):
+
+  - **Vacuum branch** (N ∈ [50, 100], 5 pts):
+      λ_inf^vac = **0.3732**, delta = **−0.48%** vs 3/8.
+      Clean.
+  - **Matter branch, stable** (N ∈ [256, 512], 3 pts):
+      λ_inf^mat = 0.3957, delta = +5.52% vs 3/8. Trend
+      still descending (N=256: 0.4067 → N=512: 0.4012).
+  - **Pooled (10 pts)**: λ_inf = 0.3789, delta = +1.04%.
+
+The pooled fit lands near 3/8 by **averaging** the
+vacuum-pulldown and the matter-pullup, *not* via a
+universal cross-branch identity. The cleanest landing of
+3/8 is therefore on the **vacuum branch alone**; matter-
+branch certification requires N ≥ 600 to extend the
+post-flip lever-arm.
 
 The weighted-Laplacian asymptote `lambda_w_inf = 3/8 = (d-1)/(2d)`
 isolates a **pure spectral-graph identity** in the carrier
@@ -994,23 +1009,26 @@ explicit falsifiers:
   N. (Pointwise check at the overlap N=50: λ_2 = 0.515 for
   both canonical and alt; consistency holds.)
 
-- **(FB-w4)** Post-inversion regime (N ≥ N_inversion ≈
-  591–600, θ_chir > π/4 → matter branch). A future ladder
-  N ∈ [600, 1024] that yields a Symanzik-1 asymptote
-  outside [0.365, 0.385] would either falsify the conjecture
-  outright OR force a **branch-resolved** restatement
-  `lambda_w_inf^vac = 3/8` (already empirical) and
-  `lambda_w_inf^mat = …` (to be determined). The pre-flip
-  evidence does not predict the post-flip value because the
-  3/8 mechanism (small-world spectral geometry of the
-  τ=0.10 skeleton) plausibly survives the chirality flip,
-  but the |Ξ|/K/Q field-content does jump (cf. Λ_t
-  33/40 ↔ 81/100). A jump in the skeleton edge-distribution
-  would translate to a jump in λ_w_inf.
+- **(FB-w4)** Matter-branch certification. The current
+  ladder has only **3 stable post-flip points** (N=256,
+  300, 512) which fit `lambda_w_inf^mat = 0.3957`
+  (+5.52% off 3/8) with the asymptote still trending
+  downward at N=512. A future ladder N ∈ [512, 1024] (still
+  pre-inversion N < 600) that confirms `lambda_w_inf^mat`
+  remains > 0.385 (outside the ±2.7% band around 3/8)
+  forces a **branch-resolved** restatement:
+  `lambda_w_inf^vac = 3/8` (already certified at 0.48%) and
+  `lambda_w_inf^mat = X` (X to be determined, possibly
+  4/10 = 0.40 if the trend stabilises).
 
 Trigger (FB-w1) is the deciding empirical falsifier *within
 the vacuum branch*; FB-w4 is the deciding test for the
-universality across the chirality flip. The current data
-do not distinguish between (a) `lambda_w_inf = 3/8`
-universally and (b) `lambda_w_inf` branch-resolved with
-`vac = 3/8`.
+universality of 3/8 across the chirality flip at N\* ≈ 110–120.
+The current data **already mildly favour** branch-resolved
+behaviour over universality:
+  - Vacuum-branch fit (5 pts): 0.3732 (−0.48%) — clean 3/8.
+  - Matter-branch fit (3 pts): 0.3957 (+5.52%) — open.
+
+The 3/8 conjecture is therefore properly restated as a
+**vacuum-branch closed-form**, not a global continuum
+asymptote, until FB-w4 closes.

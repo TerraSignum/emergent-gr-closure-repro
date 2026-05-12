@@ -5506,21 +5506,34 @@ registered for future falsification on an extended ladder
 $N\!\ge\!1024$, not claimed as a closure.
 
 \textbf{Branch scope.} The Phase-2 ladder
-$N\!\in\![50,512]$ sits \emph{pre-inversion} of the
-chirality flip (empirical inversion at
-$N_{\mathrm{inv}}\!\approx\!591$--$600$, where
-$\theta_{\mathrm{chir}}\!=\!\pi/4$). All certification above
-therefore applies to the \emph{vacuum branch}
-($\theta_{\mathrm{chir}}\!<\!\pi/4$). Post-inversion
-behaviour is open: the cross-branch invariance of
-$\lambda_{\infty}$ is not predicted by the present data,
-since the underlying $\xi/K/Q$ field-content does jump
-across the flip (e.g.\ $\Lambda_{t}^{\rm vac}\!=\!33/40$
-versus $\Lambda_{t}^{\rm mat}\!=\!81/100$). A future
-ladder $N\!\in\![600,1024]$ either confirms universality
-or forces a branch-resolved statement
-$\lambda_{\infty}^{\rm vac}\!=\!3/8$ (certified) plus a
-to-be-determined $\lambda_{\infty}^{\rm mat}$.
+$N\!\in\![50,512]$ \emph{spans} the matter-vacuum chirality
+flip, which occurs at the dynamical crossing
+$\theta_{\mathrm{chir}}(N^{\!*})\!=\!\pi/4$ between
+$N\!=\!100$ ($\theta_{\mathrm{chir}}\!=\!37.1^{\circ}$) and
+$N\!=\!128$ ($\theta_{\mathrm{chir}}\!=\!46.1^{\circ}$),
+i.e.\ $N^{\!*}\!\approx\!110$--$120$ (per-regime causal-wave
+readout, \path|outputs/causal_wave_per_N_readout.json|;
+not to be confused with the chirality-inversion endpoint
+$N_{\mathrm{inv}}\!\approx\!591$--$600$ where
+$\theta_{\mathrm{chir}}\!\to\!\arctan(N_{\mathrm{gen}})\!\approx\!71.6^{\circ}$).
+Branch-separated Symanzik-$1$ fits split the conjecture:
+\begin{equation*}
+\begin{array}{lll}
+\text{Vacuum (}N\!\le\!100,\,5\text{ pts}\text{):}   & \lambda_{\infty}^{\rm vac}\!=\!0.3732, & \Delta\!=\!-0.48\%\text{ vs }3/8 \\
+\text{Matter (}N\!\ge\!256,\,3\text{ pts}\text{):}   & \lambda_{\infty}^{\rm mat}\!=\!0.3957, & \Delta\!=\!+5.52\%\text{ vs }3/8 \\
+\text{Pooled (all }10\text{ pts):} & \lambda_{\infty}\!=\!0.3789, & \Delta\!=\!+1.04\%\text{ vs }3/8 \\
+\end{array}
+\end{equation*}
+The pooled fit lands near $3/8$ via averaging — vacuum
+pulls the asymptote down, matter pulls it up. The cleanest
+landing of $3/8$ is on the \emph{vacuum branch alone}
+($0.48\%$ residual). The matter branch (only three stable
+post-flip points; $\lambda_{2}$ still trending down from
+$0.4067$ at $N\!=\!256$ to $0.4012$ at $N\!=\!512$) is not
+yet certified to converge to $3/8$. The conjecture is
+therefore most defensibly stated as a vacuum-branch
+closed-form $\lambda_{\infty}^{\rm vac}\!=\!3/8\!=\!(d-1)/(2d)$
+plus an open matter-branch question for $N\!\ge\!512$.
 \end{proposition}
 
 \begin{table}[ht]
