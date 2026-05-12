@@ -1,0 +1,74 @@
+{
+  "headline": "CLP-B redundancy audit: absorption and locality are not independent; locality = absorption + 0.0274 (constant offset, std/mean = 9.2%). Residual Pearson 0.998. AICc favors joint model. Corrected 3-component CLP-B mean = 0.6207.",
+  "n_payloads": 9,
+  "dense_cell_N": [
+    409,
+    1539,
+    2254,
+    3917,
+    6038,
+    9379,
+    14181,
+    20793,
+    28014
+  ],
+  "absorption_values": [
+    0.5829752291665838,
+    0.5443768336027307,
+    0.5082975661761139,
+    0.4680186839119661,
+    0.4911709071099549,
+    0.5468032467341895,
+    0.4829075907327609,
+    0.5622475266089431,
+    0.5207363729112258
+  ],
+  "locality_values": [
+    0.6109677142013763,
+    0.5716281829979895,
+    0.5381648686775088,
+    0.49191706889300446,
+    0.5194424898267301,
+    0.577427644825339,
+    0.5052343366991873,
+    0.5900506907338884,
+    0.5490362682227968
+  ],
+  "finding_1_locality_eq_absorption_plus_const": {
+    "diff_per_regime": [
+      0.027992485034792458,
+      0.02725134939525875,
+      0.02986730250139491,
+      0.023898384981038356,
+      0.028271582716775212,
+      0.030624398091149585,
+      0.022326745966426365,
+      0.027803164124945323,
+      0.028299895311571066
+    ],
+    "diff_mean": 0.02737058979148356,
+    "diff_std": 0.0025073425308893057,
+    "diff_relative_std_pct": 9.160717945761887,
+    "diff_max_minus_min": 0.00829765212472322
+  },
+  "finding_2_shared_residual_mode": {
+    "residual_pearson_corr": 0.9980025561466609,
+    "pc1_variance_share": 0.9990040610109379,
+    "absorption_asymptote": 0.5143876035822765,
+    "locality_asymptote": 0.5416625095593433,
+    "joint_absorption_asymptote": 0.514339761675068,
+    "joint_locality_asymptote": 0.5417103514664632,
+    "joint_shared_c": 11721.734896929484,
+    "aicc_independent": -114.77176548394475,
+    "aicc_joint": -118.13412573648606,
+    "aicc_delta_joint_minus_indep": -3.3623602525413077,
+    "joint_preferred": true
+  },
+  "finding_3_corrected_mean": {
+    "abs_loc_merged_asymptote": 0.5280250565708099,
+    "density_asymptote": 0.6518106269370174,
+    "spectral_asymptote": 0.6821669473195411,
+    "corrected_3component_mean": 0.6206675436091228,
+    "original_4component_mean_from_report": 0.5975069218495446
+  }
+}
