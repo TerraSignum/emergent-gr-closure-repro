@@ -918,6 +918,40 @@ companion paper).
    structure is θ(N)-stable (not dependent on the running
    chirality angle).
 
+## Cross-sector independence of the 3/8 conjecture
+
+The weighted-Laplacian asymptote `lambda_w_inf = 3/8 = (d-1)/(2d)`
+isolates a **pure spectral-graph identity** in the carrier
+dimension `d=4` alone. It does **not** factor through any
+System-R primitive (γ, α_ξ, β_π, ε²_sync, D_Ω) or any
+matter-sector observable. Numerical checks (reproduced in
+this memo's Y2 cross-connection audit):
+
+  - `3/8 / Λ_t   = 3/8 / (α_ξ²)   = 0.463` (no clean rational)
+  - `3/8 / Λ_trace = 3/8 / (161/200) = 0.466` (no clean rational)
+  - `Λ_t − 3/8 = 0.435` (no clean rational)
+  - Closest alternative `(d−1)/(2d) ± γ`: at least
+    +6.7% off (gamma + 1/d = 0.350; gamma + (d-1)/(2d) = 0.475).
+
+This confirms the **sector-decomposition principle**: the
+geometric closures (`Λ_t = α_ξ² = 81/100`, `Λ_μν trace
+= 161/200`, `Λ_t^vac = 33/40`) live in the System-R
+coefficient algebra (α_ξ-dependent), while the spectral-
+gap asymptote lives in the dimensional-graph algebra
+(d-dependent). They share *no* algebraic cross-term and
+must be derived from disjoint analytical mechanisms:
+
+  - Λ_t: branch-resolved Lagrangian (chirality-locked,
+    P4-B anisotropic source).
+  - 3/8: small-world spectral theory on the τ=0.10
+    skeleton, Friedman-Bulk + isolated-eigenvalue
+    decomposition (Lemma B Step 4).
+
+The independence is a *feature*, not a defect: it permits
+Lemma B (analytical) to be settled without re-opening any
+Lambda-closure, and conversely a future revision of Λ_t
+would not propagate into the spectral-gap target.
+
 ## Falsification triggers for the 3/8 weighted-Laplacian conjecture
 
 The 3/8 = (d−1)/(2d) conjecture for
