@@ -1,5 +1,62 @@
 # Lemma B — proof-strategy memo
 
+## Status of the original 3-Lemma decomposition (A, B, C)
+
+The initial Phase-2 framing introduced three target lemmas:
+
+  - **Lemma A** — Non-collapse / volume-doubling theorem
+    (uniform Ahlfors-doubling A8 on admissible carriers).
+  - **Lemma B** — Uniform Poincaré / spectral-gap theorem
+    on admissible carriers (this memo's central object).
+  - **Lemma C** — Operator / tensor convergence theorem
+    (G_N → G_∞, T_N^Ξ → T_∞^Ξ as distributions on the mm-GH
+    limit).
+
+**Current status of each:**
+
+- **Lemma A is SUBSUMED by Lemma B.** P4
+  `thm:sg_implies_admissibility` proves that the uniform
+  spectral gap `(SG)` (= Lemma B) implies the full
+  admissibility set A1+A8 via uniform Poincaré + Cheeger-
+  Buser machinery. Lemma A therefore does not need a
+  separate analytical attack; once Lemma B is established
+  analytically, Lemma A follows.
+
+- **Lemma B is the open analytical target** addressed by
+  this memo. Phase-1 empirical certification complete
+  (P4 prop:sg_empirical, λ_inf = 0.3789, conjectured 3/8);
+  Phase-2 empirical characterisation complete (7 P4
+  propositions); analytical Step 4 (small-world spectral
+  theory, Friedman-Kahale type bounds) remains
+  multi-month research.
+
+- **Lemma C is empirically certified, analytically partial.**
+  The Dal Maso Γ-convergence audit reports
+  γ-score = 0.849 in the GAMMA_CONVERGED band (P4
+  master-synthesis chapter, src/verify_clp_c_gamma_convergence
+  _detailed.py). This is a 5-proxy numerical certification
+  (liminf, recovery sequence, equi-coercivity, minimizer
+  convergence, δS_N → δS_∞), not a full analytical proof.
+  Status: NUMERICALLY CERTIFIED; analytical proof would
+  require replacing each numerical proxy by an analytical
+  argument.
+
+**Net Phase-2 deliverable count:**
+
+  - Subsumed: 1 (Lemma A → follows from Lemma B).
+  - Open analytical: 1 (Lemma B).
+  - Numerically certified, analytically partial: 1 (Lemma C).
+
+The session work has focused on Lemma B because it is the
+only one of the three that lacks both an analytical proof
+and a clear bridge from one of the others. Lemma C's
+numerical certification is robust enough to support the
+conditional master closure theorem (M3 in P6 master
+synthesis); analytical replacement would harden the result
+but is not the deciding gap.
+
+
+
 **Status:** survey of candidate analytical routes for proving the
 target Lemma B (uniform spectral gap on admissible relational
 carriers). Phase 2 of the program; the statement and empirical
