@@ -552,3 +552,71 @@ algebraically discrete sub-bounds (3/8 weighted, 7/24
 skeleton, ratio 9/7). Both are closed-form rationals in
 the System-R primitive set, ready for Step-4 analytical
 attack.
+
+## Phase-2 Step 3c result (structured-random spectral fingerprint)
+
+**Relation to existing audit.** The corpus already contains
+`src/verify_xi_gram_spectral_gap_scaling.py`, which classifies
+the Xi-Gram spectrum on the P0..P8 ladder via the Wigner-Dyson
+gap-ratio statistic (Poisson 0.386 / GOE 0.530 / GUE 0.603) —
+a level-spacing classifier. Step 3c is a *complementary* RMT
+fingerprint on a *different* operator (skeleton normalised
+Laplacian L_skel, not Xi-Gram) and a *different* ladder
+(P5/P5N, not P0..P8), using the Kesten-McKay BULK density
+(not level spacing) as discriminator. The two together build
+the full spectral-fingerprint picture.
+
+Reproducer: `src/verify_lemma_B_spectral_fingerprint.py`.
+Output: `outputs/verify_lemma_B_spectral_fingerprint.json`.
+
+| Diagnostic            | Signal       | Friedman-pure | SBM-pure | Observed |
+|-----------------------|--------------|---------------|----------|----------|
+| n_isolated_eigs(N)    | bounded → ∞ | O(1)          | O(N)     | ~N/3 (linear) |
+| frac_bulk_in_KM       | ≤ 1         | ~ 1           | < 1      | 0.999     |
+| bulk kurtosis_excess  | ≈ -0.5      | ≈ -0.3       | > 0      | -0.7      |
+
+**Verdict: STRUCTURED_RANDOM** — neither pure Friedman nor
+pure SBM. The bulk lies inside the Kesten-McKay arch (Friedman-
+like global shape), but the isolated-eigenvalue count grows
+roughly linearly with N (block-model-like). The natural
+interpretation is a **Cayley-graph-like construction**: the
+skeleton resembles a Cayley graph on a finite group, whose
+spectrum has a KM bulk per irreducible representation class
+plus discrete isolated eigenvalues counted by the
+representation lattice.
+
+**Important caveat.** The MAD-based isolated-eigenvalue
+detector with threshold 3 × MAD(spacings) may misclassify
+fine bulk clustering as isolated; in the Cayley-graph
+interpretation, the "isolated" eigenvalues would actually be
+narrow internal bands corresponding to non-trivial
+representations of the underlying group, not true isolated
+peaks. Step 3d (effective-regularity / permutation search)
+is the deciding follow-up.
+
+### Updated Phase-2 work plan (post-Step-3c)
+
+**Step 3d (1-2 weeks):** Effective-regularity search on the
+skeleton. Test whether there exists a vertex permutation
+σ such that A_skel(σ(i), σ(j)) is approximately translation-
+invariant (Cayley/circulant signature) or block-permutable
+(SBM signature). Test the strongest candidates:
+  - Z/N cyclic Cayley structure: sort by degree, check
+    autocorrelation of permuted adjacency.
+  - Cuthill-McKee reordering bandwidth: small bandwidth
+    indicates geometric/manifold-like structure.
+  - Block-Toeplitz pattern via random projection: random
+    sub-matrices should reveal periodicity.
+
+**Step 4 (analytical, unchanged):** Once Step 3d identifies
+the structural class, the analytical derivation of
+lambda_inf^skel = 7/24 follows from:
+  - Cayley case: representation theory of the underlying
+    finite group acting on the carrier.
+  - Block case: Mossel-Neeman-Sly stochastic-block-model
+    bounds, adapted to System-R rational parameters.
+
+**Phase-2 status after Step 3c:** Bulk is Friedman-shape
+(Kesten-McKay), discrete spectrum has structured complement
+(Cayley-like signature). Step 3d will discriminate; Step 4
+follows once the class is fixed.

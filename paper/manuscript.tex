@@ -5663,6 +5663,35 @@ unweighted-Laplacian gap by the rational factor $9/7$
 analytical step.
 \end{proposition}
 
+\begin{proposition}[Skeleton spectral-fingerprint is
+structured-random]\label{prop:spectral_fingerprint}
+On the same $10$-regime ladder ($184$ seeds), the bulk
+density of $L_{\rm skel}$ lies almost entirely
+($\ge 99.8\%$) inside the Kesten--McKay support
+$[1-2\sqrt{d-1}/d,\,1+2\sqrt{d-1}/d]$ for
+$d\!=\!d_{\rm skel}\!\approx\!12$, with bulk excess kurtosis
+$\sim\!-0.7$ (Friedman-like shape). However, the count of
+isolated eigenvalues (gap to nearest neighbour $>\!3\,\mathrm{MAD}$
+of bulk spacings) grows roughly linearly with $N$
+(empirically $\sim\!N/3$), which is the signature of a
+\emph{structured-random} graph rather than a pure
+Friedman-random or pure stochastic-block-model graph. The
+combination ``Kesten--McKay bulk per representation class
++ discrete isolated bands'' is consistent with a
+Cayley-graph-like construction on a finite group acting
+on the carrier; the MAD-based detector may also misclassify
+fine bulk clustering as isolated peaks, so the structural-
+class identification is conditional on Step~3d
+(effective-regularity / permutation search) of the Phase-$2$
+program. This proposition is complementary to the
+Wigner--Dyson level-spacing audit of
+\path|src/verify_xi_gram_spectral_gap_scaling.py| on the
+P$0$--P$8$ ladder (which finds intermediate Poisson--GOE
+behaviour). Reproducer
+\path|src/verify_lemma_B_spectral_fingerprint.py|, output
+\path|outputs/verify_lemma_B_spectral_fingerprint.json|.
+\end{proposition}
+
 The admissibility conditions (A1)+(A8) are not strengthenings
 that remain to be deduced from M0--M3: they are operative
 parts of the carrier-path admissibility definition
