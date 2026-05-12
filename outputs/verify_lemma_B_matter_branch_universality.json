@@ -1,0 +1,179 @@
+{
+  "headline": "Lemma B matter-branch universality: best candidate is 79/200 = 0.3950 with implied-a spread 0.216 vs runner-up 2/5 spread 1.099. Empirical matter-branch asymptote 0.39573.",
+  "branch_boundaries": {
+    "vacuum_N_max": 100,
+    "peri_flip_range": [
+      128,
+      200
+    ],
+    "matter_N_min": 256
+  },
+  "vacuum_points": [
+    {
+      "N": 50,
+      "lambda_2": 0.514628304406466
+    },
+    {
+      "N": 64,
+      "lambda_2": 0.4862411624382059
+    },
+    {
+      "N": 72,
+      "lambda_2": 0.4754419137464885
+    },
+    {
+      "N": 84,
+      "lambda_2": 0.4609092662892594
+    },
+    {
+      "N": 100,
+      "lambda_2": 0.4410212400029154
+    }
+  ],
+  "peri_flip_points": [
+    {
+      "N": 128,
+      "lambda_2": 0.39689965642921327
+    },
+    {
+      "N": 200,
+      "lambda_2": 0.4197898619809064
+    }
+  ],
+  "matter_points": [
+    {
+      "N": 256,
+      "lambda_2": 0.40671290679483313
+    },
+    {
+      "N": 300,
+      "lambda_2": 0.40487908586715093
+    },
+    {
+      "N": 512,
+      "lambda_2": 0.40121066062388344
+    }
+  ],
+  "matter_branch_fit": {
+    "n_points": 3,
+    "lambda_inf": 0.39572505320426105,
+    "a_coefficient": 2.7878066771853263,
+    "sse": 3.0480628047584975e-08,
+    "richardson_2pt_using_two_largest_N": {
+      "N1": 300,
+      "N2": 512,
+      "lambda_inf": 0.3960194928268068
+    },
+    "bootstrap": {
+      "n_boot": 2000,
+      "asymp_median": 0.39572505320426105,
+      "asymp_CI95": [
+        0.39420958228790876,
+        0.4067067009430731
+      ]
+    }
+  },
+  "candidate_rationals": [
+    {
+      "label": "79/200 = 3/8 + 2*gamma^2",
+      "value": 0.395,
+      "rational": "79/200",
+      "implied_a_per_regime": [
+        {
+          "N": 256.0,
+          "a": 2.9985041394772765
+        },
+        {
+          "N": 300.0,
+          "a": 2.963725760145275
+        },
+        {
+          "N": 512.0,
+          "a": 3.179858239428313
+        }
+      ],
+      "implied_a_spread": 0.21613247928303814,
+      "implied_a_mean": 3.047362713016955,
+      "relative_residual_pct": 0.1832214560059148,
+      "in_bootstrap_CI95": true
+    },
+    {
+      "label": "2/5 = 2/(d+1)",
+      "value": 0.4,
+      "rational": "2/5",
+      "implied_a_per_regime": [
+        {
+          "N": 256.0,
+          "a": 1.7185041394772753
+        },
+        {
+          "N": 300.0,
+          "a": 1.4637257601452736
+        },
+        {
+          "N": 512.0,
+          "a": 0.6198582394283108
+        }
+      ],
+      "implied_a_spread": 1.0986459000489646,
+      "implied_a_mean": 1.2673627130169531,
+      "relative_residual_pct": 1.0802820698674291,
+      "in_bootstrap_CI95": true
+    },
+    {
+      "label": "41/100 = (d+gamma)/(2d)",
+      "value": 0.41,
+      "rational": "41/100",
+      "implied_a_per_regime": [
+        {
+          "N": 256.0,
+          "a": -0.8414958605227127
+        },
+        {
+          "N": 300.0,
+          "a": -1.5362742398547125
+        },
+        {
+          "N": 512.0,
+          "a": -4.500141760571665
+        }
+      ],
+      "implied_a_spread": 3.6586459000489526,
+      "implied_a_mean": -2.2926372869830303,
+      "relative_residual_pct": 3.607289121614103,
+      "in_bootstrap_CI95": false
+    },
+    {
+      "label": "3/8 = (d-1)/(2d) [vacuum]",
+      "value": 0.375,
+      "rational": "3/8",
+      "implied_a_per_regime": [
+        {
+          "N": 256.0,
+          "a": 8.118504139477281
+        },
+        {
+          "N": 300.0,
+          "a": 8.96372576014528
+        },
+        {
+          "N": 512.0,
+          "a": 13.419858239428322
+        }
+      ],
+      "implied_a_spread": 5.301354099951041,
+      "implied_a_mean": 10.167362713016962,
+      "relative_residual_pct": 5.2372355594992905,
+      "in_bootstrap_CI95": false
+    }
+  ],
+  "verdict": {
+    "best_candidate": "79/200",
+    "best_candidate_decimal": 0.395,
+    "best_residual_pct": 0.1832214560059148,
+    "shift_from_vacuum_3_8": 0.02,
+    "shift_in_gamma2_units": 2.0,
+    "interpretation": "Vacuum: lambda_w_inf^vac = (d-1)/(2d) = 3/8. Matter: lambda_w_inf^mat = 79/200. Shift = 0.0200 = 2.00 * gamma^2 = d/2 * gamma^2 (for d=4).",
+    "status": "MATTER_BRANCH_UNIVERSALITY_CONJECTURED"
+  }
+}

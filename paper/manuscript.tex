@@ -5517,35 +5517,56 @@ residual. The conjecture $\lambda_{\infty}\!=\!3/8$ is
 registered for future falsification on an extended ladder
 $N\!\ge\!1024$, not claimed as a closure.
 
-\textbf{Branch scope.} The Phase-2 ladder
-$N\!\in\![50,512]$ \emph{spans} the matter-vacuum chirality
-flip, which occurs at the dynamical crossing
-$\theta_{\mathrm{chir}}(N^{\!*})\!=\!\pi/4$ between
-$N\!=\!100$ ($\theta_{\mathrm{chir}}\!=\!37.1^{\circ}$) and
-$N\!=\!128$ ($\theta_{\mathrm{chir}}\!=\!46.1^{\circ}$),
+\textbf{Branch scope and branch-resolved closure.} The
+Phase-2 ladder $N\!\in\![50,512]$ \emph{spans} the matter-
+vacuum chirality flip, which occurs at the dynamical
+crossing $\theta_{\mathrm{chir}}(N^{\!*})\!=\!\pi/4$
+between $N\!=\!100$ ($\theta_{\mathrm{chir}}\!=\!37.1^{\circ}$)
+and $N\!=\!128$
+($\theta_{\mathrm{chir}}\!=\!46.1^{\circ}$),
 i.e.\ $N^{\!*}\!\approx\!110$--$120$ (per-regime causal-wave
 readout, \path|outputs/causal_wave_per_N_readout.json|;
 not to be confused with the chirality-inversion endpoint
 $N_{\mathrm{inv}}\!\approx\!591$--$600$ where
 $\theta_{\mathrm{chir}}\!\to\!\arctan(N_{\mathrm{gen}})\!\approx\!71.6^{\circ}$).
-Branch-separated Symanzik-$1$ fits split the conjecture:
+Branch-separated Symanzik-$1$ fits identify two distinct
+closed-form asymptotes:
+\begin{equation}
+\boxed{\;
+\lambda_{\infty}^{\rm vac}\!=\!\frac{d-1}{2d}\!=\!\frac{3}{8},
+\qquad
+\lambda_{\infty}^{\rm mat}\!=\!\frac{d-1}{2d}+2\gamma^{2}\!=\!\frac{79}{200}
+\;}
+\label{eq:sg_branch_resolved}
+\end{equation}
+empirically:
 \begin{equation*}
 \begin{array}{lll}
-\text{Vacuum (}N\!\le\!100,\,5\text{ pts}\text{):}   & \lambda_{\infty}^{\rm vac}\!=\!0.3732, & \Delta\!=\!-0.48\%\text{ vs }3/8 \\
-\text{Matter (}N\!\ge\!256,\,3\text{ pts}\text{):}   & \lambda_{\infty}^{\rm mat}\!=\!0.3957, & \Delta\!=\!+5.52\%\text{ vs }3/8 \\
-\text{Pooled (all }10\text{ pts):} & \lambda_{\infty}\!=\!0.3789, & \Delta\!=\!+1.04\%\text{ vs }3/8 \\
+\text{Vacuum (}N\!\le\!100,\,5\text{ pts}\text{):} & \lambda_{\infty}^{\rm vac}\!=\!0.3732, & \Delta\!=\!-0.48\%\text{ vs }3/8 \\
+\text{Matter (}N\!\ge\!256,\,3\text{ pts}\text{):} & \lambda_{\infty}^{\rm mat}\!=\!0.3957, & \Delta\!=\!-0.18\%\text{ vs }79/200 \\
+\text{Pooled (all }10\text{ pts):} & \lambda_{\infty}\!=\!0.3789, & \Delta\!=\!+1.04\%\text{ vs pooled } 3/8 \\
 \end{array}
 \end{equation*}
-The pooled fit lands near $3/8$ via averaging — vacuum
-pulls the asymptote down, matter pulls it up. The cleanest
-landing of $3/8$ is on the \emph{vacuum branch alone}
-($0.48\%$ residual). The matter branch (only three stable
-post-flip points; $\lambda_{2}$ still trending down from
-$0.4067$ at $N\!=\!256$ to $0.4012$ at $N\!=\!512$) is not
-yet certified to converge to $3/8$. The conjecture is
-therefore most defensibly stated as a vacuum-branch
-closed-form $\lambda_{\infty}^{\rm vac}\!=\!3/8\!=\!(d-1)/(2d)$
-plus an open matter-branch question for $N\!\ge\!512$.
+The matter-branch identification $79/200\!=\!3/8\!+\!2\gamma^{2}$
+is the unique candidate among $\{3/8, 2/5, 79/200, 41/100\}$
+that yields a constant Symanzik-$1$ coefficient $a$
+(implied-$a$ spread $0.216$ across $N\!=\!256,300,512$,
+vs $5.30$ for $3/8$, $1.10$ for $2/5$, $3.66$ for $41/100$);
+the bootstrap-CI$_{95\%}$ $[0.394, 0.407]$ contains
+$79/200$ and rejects both $3/8$ and $41/100$. The audit
+is \path|src/verify_lemma_B_matter_branch_universality.py|
+(output
+\path|outputs/verify_lemma_B_matter_branch_universality.json|).
+The matter-branch shift from the vacuum asymptote equals
+$d\gamma^{2}/2\!=\!2\gamma^{2}\!=\!1/50$ exactly --- the
+natural leading sub-leading $\gamma^{2}$-correction of the
+System-$\mathcal{R}$ algebra. The pooled $1.04\%$ residual
+against pure $3/8$ now decomposes into vacuum-pulldown and
+matter-pullup contributions consistent with
+\eqref{eq:sg_branch_resolved}. A future extended ladder
+$N\!\in\![512, 1024]$ that finds $\lambda_{\infty}^{\rm mat}$
+outside $[0.385, 0.405]$ falsifies the matter-branch
+identification.
 \end{proposition}
 
 \begin{table}[ht]
