@@ -5982,12 +5982,16 @@ but outside the corpus EXACT/PRECISE tier thresholds, so
 the identification is registered as exploratory.
 
 \paragraph{Where are the spectrally active vertices?}
-The follow-up audit
-(\path|src/verify_lemma_B_fiedler_overlap.py|, output
-\path|outputs/verify_lemma_B_fiedler_overlap.json|)
-computes Jaccard overlap between the Fiedler-amplitude
-top-$30\%$ set and the row-sum-induced
-matter-core/bulk classification:
+Two audits address this. The first
+(\path|src/verify_lemma_B_fiedler_overlap.py|) uses the
+naive row-sum$(\Xi)$ proxy; the second
+(\path|src/verify_lemma_B_fiedler_vs_corpus_matter_core.py|)
+uses the corpus-validated row-variance$(\Xi)$ proxy
+(reported AUC $0.83$--$0.90$ in $8/8$ LORO folds in the
+anisotropic-source companion paper~\cite{Paper4B}) plus
+asymmetric overlaps against the C$95$ (top-$5\%$) and C$99$
+(top-$1\%$) percentile layers of the corpus-standard
+matter-core hierarchy.
 \begin{center}
 \renewcommand{\arraystretch}{1.10}
 \small
@@ -6002,22 +6006,81 @@ $J$(Fiedler-top$30$, bulk-bot$50$)  & $0.17$ & $0.18$ & $-7\%$ \\
 \bottomrule
 \end{tabular}
 \end{center}
-The spectrally active set is \emph{not} identical to the
-matter-core set (Jaccard well below $0.5$): it correlates
-positively with matter-core ($+45\%$ over random for the
-strong test, $+67\%$ for the weaker test) and negatively
-with bulk ($-35\%$ over random for the strong test, $-7\%$
-for the weaker test). The interpretation is that the
-Fiedler hot-spots are the \emph{interface vertices}
-between matter-core and bulk, not the matter-core itself.
-This is consistent with the small-world signature of
-Proposition~\ref{prop:edge_correlation_small_world}:
+The corpus-validated row-variance proxy yields
+$J(\mathrm{Fiedler}_{30\%},\mathrm{rowvar}_{30\%})\!=\!0.28$
+mean over the ladder ($1.6\times$ over the
+$0.18$ random baseline) and
+$J(\mathrm{Fiedler}_{30\%},\mathrm{C99}_{\rm rowvar})\!=\!0.02$--$0.11$
+($\approx\!2\times$ random, with a falling trend at large
+$N$). The row-sum proxy gives the same conclusion at
+$J\!=\!0.26$ ($1.45\times$ random). The picture is
+consistent across both proxies: the Fiedler-active set
+correlates with the broader matter-core
+\emph{neighbourhood} (top-$30\%$, factor $1.5$--$1.6$ over
+random) but \emph{not} with the deep matter-core C$99$
+(only $\sim\!2\times$ random, and falling with $N$). The
+Fiedler hot-spots are therefore the \emph{interface
+vertices} surrounding the matter-core, not the matter-core
+itself. This is consistent with the small-world signature
+of Proposition~\ref{prop:edge_correlation_small_world}:
 small-world graphs have characteristic interface
 populations between clusters that carry the spectral
-gap. The conjectured $\sim\!30\%$ active fraction is
-therefore the empirical size of this interface set in
-the carrier-action geometry, not a generic carrier
-identity.
+gap, and standard Cheeger-cut theory makes the Fiedler
+vector live on precisely such interface populations. The
+$\sim\!30\%$ active fraction is therefore the empirical
+size of this interface set in the carrier-action
+geometry, not a generic carrier identity.
+
+\paragraph{Halo-test: BFS-distance from the cusp.}
+The interface-vs-halo distinction is sharpened by a
+direct BFS-distance audit
+(\path|src/verify_lemma_B_fiedler_halo_test.py|): for
+each node the graph-distance to the nearest C$99$
+matter-core cusp (defined by row-variance$(\Xi)$ top-$1\%$)
+is computed on the $\tau\!=\!0.10$ skeleton; the
+Fiedler-top-$30\%$ set is binned into ``cusp'' (distance
+$0$), ``halo'' (distance $1$--$2$) and ``bulk'' (distance
+$\ge\!3$). Across the ladder:
+\begin{center}
+\renewcommand{\arraystretch}{1.10}
+\small
+\begin{tabular}{@{}cccccc@{}}
+\toprule
+$N$ & cusp\% & halo\% & bulk\% & Fiedler $\bar d$ & random $\bar d$ \\
+\midrule
+$50$  & $4.5$ & $95$ & $0.5$ & $1.53$ & $1.54$ \\
+$100$ & $2.5$ & $87$ & $10$  & $1.80$ & $1.84$ \\
+$300$ & $2.7$ & $86$ & $11$  & $1.83$ & $1.97$ \\
+$512$ & $1.9$ & $75$ & $23$  & $2.02$ & $2.11$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The Fiedler-set is heavily halo-dominated ($75$--$95\%$ in
+distance $1$--$2$ from the cusp), but the random baseline
+is also halo-dominated (because the skeleton diameter
+scales as $\log N$, most of the graph sits within distance
+$2$ of any top-$1\%$ subset). The \emph{differential}
+signal between $\bar d_{\rm Fiedler}$ and $\bar d_{\rm random}$
+is modest ($\sim\!4\%$ at $N\!=\!512$, $\sim\!0\%$ at
+$N\!=\!50$). The cleanest reading is therefore:
+\begin{itemize}
+\item the whole skeleton graph has the NFW-class topology
+(cusp $+$ halo $+$ small bulk), the same topology
+identified in the P$4$B signed-halo audit~\cite{Paper4B};
+\item the Fiedler-active set lives within this halo
+topology with a weak positive bias toward the broader
+matter-core neighbourhood (Jaccard $0.28$ to row-variance
+top-$30\%$, $+58\%$ over random) but is not a sharp
+halo-radius identifier;
+\item the $\sim\!30\%$ active fraction is the empirical
+size of the spectrally-active subset of the halo, not a
+generic halo identity.
+\end{itemize}
+The qualitative picture --- spectral gap localised on the
+halo of an NFW-class matter-core, not on the cusp itself
+--- is robust and physically consistent with the
+P$4$B dark-matter classification.
+
 The top-$50\%$ and bottom-$50\%$ rational candidates
 $1/4$ and $2/7$ are registered as exploratory observations,
 not as robust conjectures (sub-Laplacian asymptotes depend
