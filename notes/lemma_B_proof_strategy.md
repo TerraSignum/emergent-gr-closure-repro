@@ -30,16 +30,56 @@ The initial Phase-2 framing introduced three target lemmas:
   theory, Friedman-Kahale type bounds) remains
   multi-month research.
 
-- **Lemma C is empirically certified, analytically partial.**
-  The Dal Maso Γ-convergence audit reports
-  γ-score = 0.849 in the GAMMA_CONVERGED band (P4
-  master-synthesis chapter, src/verify_clp_c_gamma_convergence
-  _detailed.py). This is a 5-proxy numerical certification
-  (liminf, recovery sequence, equi-coercivity, minimizer
-  convergence, δS_N → δS_∞), not a full analytical proof.
-  Status: NUMERICALLY CERTIFIED; analytical proof would
-  require replacing each numerical proxy by an analytical
-  argument.
+- **Lemma C is a three-axis target, all three currently
+  numerically certified.** Initially this memo treated
+  Lemma C as the Dal Maso Γ-convergence audit alone
+  (γ-score 0.849, GAMMA_CONVERGED). A subsequent
+  inventory of the corpus's actual CLP framework
+  (outputs/clp_full_report.json,
+  Papers/python/08_Gap_Closure_Results.md §8) corrected
+  this to a three-axis decomposition:
+
+    **Axis 1 — CLP-A (continuum-limit existence):**
+      score 0.813, CLOSED (T1=1.0, T2=0.90, T3=0.45, T4=1.0).
+
+    **Axis 2 — CLP-B (operator convergence):**
+      score 0.598 standard, 0.801 in the B-family
+      restructuring. Three sub-families:
+        - B-fast-geom (B1+B4-fast):  1.000 CLOSED
+        - B-slow-phys (B2+B3+B4-slow): 0.604 PRINCIPAL_RESIDUAL
+        - B-internal (B5+B6+B7):     0.733 INTERNAL_CONVERGE
+
+    **Axis 3 — CLP-C (Γ-convergence, the Dal Maso 5-proxy
+      audit):** score 0.849, GAMMA_CONVERGED. Sub-scores
+      C1=0.73 (liminf), C2=1.00 (recovery), C3=0.83 (equi-
+      coercivity), C4=0.82 (minimiser convergence), C5=0.87
+      (= ½ C1 + ½ C2, δS_N → δS_∞ link).
+
+    **Axis 4 — CLP-N4 Bridge:**
+      Γ-convergence → first variation → operator-limit chain.
+      Numerical bridge score = min(Γ-side, B-side). Currently
+      inherits min(C_i) = 0.73 from C1.
+
+    **CLP-D Overall:** 0.738 (weights A:0.3, B:0.4, C:0.3),
+    status CLP_PROVEN.
+
+  The analytical-replacement programme therefore proceeds
+  along three axes simultaneously, not one:
+    (a) tighten the weakest C_i (currently C1=liminf at 0.73)
+        by replacing the numerical liminf proxy with a
+        rigorous analytical argument;
+    (b) tighten the weakest B-family member (currently
+        B-slow-phys at 0.60) by replacing the spectral-gap /
+        resolvent / slow-tail proxies;
+    (c) operationalise CLP-N4 analytically by replacing the
+        min-bridge with an explicit first-variation →
+        operator-limit derivation.
+
+  All three are independent multi-month research
+  deliverables. The conditional master closure theorem of
+  P6 holds at CLP_PROVEN level (0.738) on all three axes;
+  the unconditional theorem requires replacement of the
+  weakest-scoring sub-component on each axis.
 
 **Net Phase-2 deliverable count:**
 

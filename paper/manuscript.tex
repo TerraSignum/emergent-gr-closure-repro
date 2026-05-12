@@ -5298,6 +5298,52 @@ $9$-payload ladder, sufficient for the conditional Phase-$1$
 result of P6~\cite{Paper6} but not for an unconditional
 continuum theorem.
 
+\paragraph{Lemma~C is a three-axis target: CLP-C + CLP-B
++ CLP-N4 Bridge.}
+The Dal Maso $\Gamma$-convergence sub-conditions C$1$--C$5$
+above form the CLP-C axis of the master closure-limit-proof
+framework. The full Lemma~C target also includes the
+\emph{operator-convergence axis} CLP-B and the
+\emph{bridge axis} CLP-N$4$ that connects them:
+\begin{itemize}
+\item \textbf{CLP-A} (continuum-limit existence):
+$0.813$ \textbf{CLOSED} on the $9$-payload ladder
+(\path|outputs/clp_full_report.json|, family\_scores key).
+\item \textbf{CLP-B/B$4$} (operator convergence):
+$0.598$ overall, with the B-family restructuring
+B-fast-geom $\!=\!1.000$ \textbf{CLOSED} (geometric
+operators, $\alpha\!>\!3$), B-slow-phys $\!=\!0.604$
+(spectral gap, resolvent, slow-tail), B-internal
+$\!=\!0.733$ (flavor/mass/CKM/PMNS operators).
+The combined operator-convergence assembly reaches
+$0.801$ in the upgraded scoring scheme
+(\path|Papers/python/08_Gap_Closure_Results.md|, §8.1).
+\item \textbf{CLP-C} (the $\Gamma$-convergence Dal Maso
+audit reported above): $0.849$ \textbf{GAMMA\_CONVERGED}.
+\item \textbf{CLP-N$4$} (the explicit
+$\delta S_{N}\!\to\!\delta S_{\infty}$ bridge via
+$\Gamma$-convergence $\!\to\!$ first variation $\!\to\!$
+operator limit chain): \textbf{conditional bridge
+exists}, bridge score $\!=\!\min(\text{$\Gamma$-side},
+\text{B-side})$, currently inheriting from
+$\min(C_{i})\!=\!0.73$ on the bridge.
+\item \textbf{CLP-D overall}: $0.738$ \textbf{CLP\_PROVEN}
+(weights $A\!:\!0.3, B\!:\!0.4, C\!:\!0.3$;
+\path|outputs/clp_full_report.json|, CLP-D key).
+\end{itemize}
+The Lemma~C analytical-replacement programme therefore
+proceeds along three axes simultaneously: tighten the
+worst-scoring C$_{i}$ (currently C$1$=liminf at $0.73$),
+tighten the worst-scoring B-family member (currently
+B-slow-phys at $0.60$, the operator-side counterpart of
+C$1$), and operationalise CLP-N$4$ analytically (replace
+the numerical min-bridge by a rigorous first-variation
+$\to$ operator-limit derivation). The conditional master
+closure theorem of P6~\cite{Paper6} holds at
+CLP\_PROVEN level on all three axes; the unconditional
+theorem requires analytical replacement of the
+weakest-scoring sub-component on each axis.
+
 \begin{corollary}[CBI under structural admissibility]
 \label{cor:cbi_admissibility}
 Under the eight admissibility conditions (A1)--(A8) of
