@@ -196,59 +196,121 @@ is brittle.
 But this is the longest route and Route 3 is more likely to land
 first.
 
-## Recommendation
+## Phase-2 Step 1 result (radial hypothesis falsified)
 
-**Primary route: Route 3 (Hardy / spectral-synthesis via radial
-operators).** Reasons:
+**Related existing audit.** The corpus already contains
+`src/verify_xi_gram_spectral_gap_scaling.py`, which audits Xi_N's
+SVD spectrum on the P0..P8 ladder for Wigner-Dyson RMT
+classification (gap-ratio statistic). It reports
+intermediate-regime behaviour (gap-ratio ≈ 0.46, between Poisson
+0.386 and GOE 0.530), consistent with a non-trivial structured
+spectrum. The Phase-2 Step-1 audit below tests a different
+diagnostic (effective rank, not RMT class) on a different ladder
+(P5/P5N, not P0..P8), addressing the specific question whether
+Xi_N is low-effective-dimensional in the sense required by the
+spectral-synthesis route.
 
-1. The carrier-action of P6 already imposes the radial structure
-   as a UV-closure consequence (M3 + bounded-operator readout
-   forces `Xi_N(i,j) = f(d_N(i,j))`). The hard hypothesis of
-   Route 3 is structurally guaranteed.
-2. The Symanzik-1 finite-size correction `a/N` is the natural
-   output of radial-spectrum expansion, matching empirical data.
-3. Connects `lambda_inf` to a *closed-form* integral of the
-   radial spectral measure — gives the predicted exact value of
-   `lambda_inf` against the System-R rationals.
-4. Existence-only fallback (Route 1, Cheeger) is already
-   structurally guaranteed via the `xi_min^2/8` bound, so Route 3
-   is the *quantitative* upgrade.
+The original radial-hypothesis formulation "`Xi_N(i,j) = f(d_N(i,j))`
+for a single bounded monotone `f`" is tautologically true because
+`d_N := -log Xi_N` by definition. The non-tautological version
+tested in Phase-2 Step 1 was: **Xi_N has effectively bounded rank
+as N → ∞**, i.e., the singular-value spectrum concentrates on a
+number `k = k(d, N_gen, xi_min)` of dominant components,
+independent of N.
 
-**Secondary route: Route 1 (Cheeger).** Use as the
-existence-of-Lemma-B fallback if Route 3 stalls. The `xi_min^2/8`
-bound is structurally cheap and seven orders of magnitude weaker
-than the empirical gap but mathematically rigorous.
+This formulation was tested empirically by
+`src/verify_lemma_B_radial_hypothesis.py` across the 10-regime
+ladder with 184 seeds. Result:
 
-**Defer: Routes 2 and 4** (Bakry–Émery, log-Sobolev). Both have
-unclear hypothesis-checking on the admissible-carrier class and
-much higher analytical cost. Revisit only if Route 3 fails.
+| Diagnostic         | N-scaling fit (preferred) | Scaling                  | Verdict   |
+|--------------------|---------------------------|--------------------------|-----------|
+| `r_95(Xi_N)`       | linear                    | `r_95 ≈ -3.1 + 0.41·N`   | DIVERGES  |
+| `r_99(Xi_N)`       | linear                    | `r_99 ≈ -5.2 + 0.61·N`   | DIVERGES  |
+| `PR(Xi_N)`         | linear                    | `PR  ≈ -7.6 + 0.28·N`    | DIVERGES  |
+| `top σ-share`      | log                       | `≈ 0.71 - 0.12·log(N)`   | bounded → 0 |
 
-## Phase 2 work plan
+**Verdict: RADIAL_HYPOTHESIS_NOT_SUPPORTED.** The effective rank
+of `Xi_N` grows linearly with `N` (at ~41% of `N` for the
+95%-energy cutoff). The carrier produces matrices with broadly-
+distributed singular spectra, not low-dimensional ones. The
+top-singular share decays as `0.71 - 0.116·log(N)`, dropping to
+0.029 at `N = 512` — no dominant subspace persists in the
+continuum.
 
-**Step 1 (1–2 weeks):** verify the radial-structure hypothesis
-of Route 3 against the P5/P5N snapshots. Compute, per regime,
-the empirical correlation `corr(d_N(i,j), Xi_N(i,j))` and check
-that it is consistent with a single deterministic function `f`.
-If yes, Route 3 hypothesis confirmed empirically; if no, Route 3
-needs restriction to a sub-class.
+**Implication.** Route 3 (Hardy spectral synthesis via low-dim
+embedding) as originally formulated does *not* apply. The
+uniform spectral gap (Phase 1, empirical) is therefore *not*
+explained by low-dimensional structure of `Xi_N`. The gap must
+come from a different mechanism.
 
-**Step 2 (2–4 weeks):** if Step 1 succeeds, derive the radial
-spectral measure for the carrier-action `f`. Closed-form integral
-expression of `lambda_inf` in terms of `(d, N_gen, alpha_xi,
-gamma, beta_pi, D_Omega, eps_sync^2)`. Compare to the empirical
-`lambda_inf = 0.3789 ± 0.005` and to the conjectured `3/8`.
+## Revised route ranking (post-Step-1)
 
-**Step 3 (1–2 months):** finite-size correction. Show that the
-discrete-to-continuum spectral correction is `a / N + O(1/N^2)`
-with `a` computable in closed form. Match to empirical `a = 6.62`.
+The Phase-1 result `lambda_2(L_N) → 0.3789 + 6.62/N` combined with
+the Step-1 result "Xi_N is effective-full-rank with broad spectrum"
+sharpens the analytical question to: *what structural property
+of the carrier action enforces a uniform Laplacian spectral gap
+in spite of the broad Xi spectrum?*
 
-**Step 4 (2–4 months):** uniform lower bound. Prove that the
-spectral-measure construction is uniformly stable across the
-admissible-carrier class (not just the canonical P5/P5N realisation).
-Produce the proof of Lemma B as a theorem.
+Two natural candidates, each tested empirically below the route
+descriptions:
 
-**Phase 2 total estimate:** 6–10 weeks for Step 1+2 (proof of
-concept), 3–6 months for Step 3+4 (full theorem). Step 1 is the
-deciding empirical check; if it fails, the analytical route shifts
-to a careful Cheeger-improvement program (Route 1+) for an
-existence-only Lemma B.
+**Revised primary route: Route 1+ (quantitative Cheeger via
+degree concentration).** The trivial Cheeger bound `lambda_2 ≥
+xi_min^2/8` is seven orders of magnitude weaker than the empirical
+gap. A *quantitative* refinement uses the fact that, if the
+vertex-degrees `deg(i) = sum_j (Xi_N(i,j) - delta_ij)` are
+uniformly concentrated about a common mean, the random-regular-
+graph-style Cheeger argument (Diaconis–Stroock canonical-paths)
+gives a uniform spectral gap controlled by the mean degree and
+the degree variance, not by `xi_min` alone. The empirical test
+is the **degree-concentration hypothesis**:
+
+```
+Var(deg) / Mean(deg)^2 → 0  as N → ∞,
+```
+
+i.e., relative degree fluctuations vanish in the continuum
+limit. This is the Phase-2 Step-2 audit (to be implemented in
+`src/verify_lemma_B_degree_concentration.py`).
+
+**Revised secondary route: Route 2 (Bakry–Émery curvature-
+dimension).** Now elevated because the broad-spectrum Xi rules
+out the simpler radial picture, while leaving open whether the
+Markov chain `P_N = D^{-1} W` admits a uniform `CD(K, infty)`
+estimate. Empirical test: compute the discrete Bakry-Émery
+operator `Gamma_2` per regime and check the inequality
+`Gamma_2(f) ≥ K Gamma(f, f)` pointwise for a uniform `K > 0`.
+This is the Phase-2 Step-3 audit.
+
+**Deferred: Routes 3 and 4** (radial, log-Sobolev). Route 3 is
+falsified at the low-rank level by Step 1; a softer "radial"
+version (e.g., approximate translation-invariance under a
+non-trivial vertex permutation) may still apply but is no longer
+the leading candidate. Route 4 (log-Sobolev) was already
+deferred and remains so.
+
+## Revised Phase-2 work plan
+
+**Step 1 (DONE, 1 session).** Radial hypothesis falsified on
+the 10-regime ladder.
+
+**Step 2 (1–2 weeks).** Degree-concentration audit. Compute
+`Var(deg) / Mean(deg)^2` per regime and fit the N-scaling.
+Predicted: `Var/Mean^2 → 0` as `N → ∞` if Cheeger-route works;
+`Var/Mean^2 → const > 0` if degree fluctuations persist and
+Route 1+ also fails.
+
+**Step 3 (2–4 weeks).** Bakry–Émery audit. Compute the discrete
+`Gamma_2` operator on small-N admissible carriers and test
+`CD(K, infty)` for uniform `K > 0`.
+
+**Step 4 (2–4 months).** Whichever route survives Steps 2–3,
+derive the analytical proof of Lemma B from the carrier-action
+construction. The empirical asymptote `lambda_inf = 0.3789` and
+the conjectured rational `3/8` are the calibration targets.
+
+**Phase-2 status after Step 1:** Route 3 falsified, Route 1+
+elevated to primary, Route 2 secondary. The 6–10 week
+proof-of-concept estimate (Steps 2+3) and the 3–6 month full-
+theorem estimate (Step 4) are unchanged. The deciding next
+audit is the degree-concentration test (Step 2).

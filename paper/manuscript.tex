@@ -5449,20 +5449,57 @@ missing structural axiom $(\mathrm{SG})$. Proposition
 on the closure-domain ladder. The genuinely open mathematical
 question is therefore sharpened to: \emph{can $(\mathrm{SG})$
 be derived from $M0$--$M3$ plus the carrier-action
-equilibrium construction?} -- a question at the level of
-discrete Bakry--\'Emery curvature
-theory~\cite{Sturm2006,LottVillani2009} on $\xi$-weighted
-graphs. Four candidate analytical routes
+equilibrium construction?} Four candidate analytical routes
 (Cheeger isoperimetry, Bakry--\'Emery $CD(K,\infty)$, spectral
 synthesis via radial Markov operators, Brascamp--Lieb /
 log-Sobolev) are surveyed in
-\path|notes/lemma_B_proof_strategy.md|, which recommends the
-radial spectral-synthesis route as primary: the carrier-action
-UV-closure forces $\xi_{N}(i,j)\!=\!f(d_{N}(i,j))$ for a single
-bounded monotone $f$, so $P_{N}\!=\!D_{N}^{-1}W_{N}$ is radial
-on the carrier metric and admits a closed-form spectral
-expansion whose leading term should reproduce the conjectured
-$\lambda_{\infty}\!=\!3/8$ of Proposition~\ref{prop:sg_empirical}.
+\path|notes/lemma_B_proof_strategy.md|. The empirical
+Phase-2 Step-1 audit
+(Proposition~\ref{prop:radial_hypothesis_falsified} below)
+falsifies the low-rank version of the radial-synthesis route;
+the revised primary candidate is the quantitative Cheeger
+route via degree concentration, with Bakry--\'Emery secondary.
+
+\begin{proposition}[Radial low-rank hypothesis falsified on the
+canonical-physics ladder]\label{prop:radial_hypothesis_falsified}
+On the $10$-regime ladder
+$N\!\in\!\{50,64,72,84,100,128,200,256,300,512\}$ with $184$
+seeds, the singular spectrum of $\xi_{N}$ has effectively-N-
+extensive rank: the $95\%$-energy cutoff $r_{95}(\xi_{N})$ scales
+linearly as $r_{95}\!\approx\!-3.1\!+\!0.41\,N$
+(AICc-preferred over const, log, sqrt models), the $99\%$-energy
+cutoff $r_{99}\!\approx\!-5.2\!+\!0.61\,N$, the participation
+ratio $\mathrm{PR}\!\approx\!-7.6\!+\!0.28\,N$, and the
+top-singular-share decays as $\sigma_{1}^{2}/\|\xi\|_{F}^{2}\!\approx\!
+0.71\!-\!0.116\log N$. No bounded effective rank survives in the
+continuum limit; therefore the spectral-synthesis route for
+$(\mathrm{SG})$ via low-dimensional embedding of $\xi_{N}$ does
+not apply. The reproducer
+\path|src/verify_lemma_B_radial_hypothesis.py|
+(output
+\path|outputs/verify_lemma_B_radial_hypothesis.json|) reports the
+verdict \texttt{RADIAL\_HYPOTHESIS\_NOT\_SUPPORTED}. This is
+complementary to the earlier RMT-class audit
+\path|src/verify_xi_gram_spectral_gap_scaling.py|, which reports
+intermediate Wigner-Dyson statistics on the P0--P8 ladder
+(gap-ratio between Poisson and GOE regimes): together the two
+audits show that $\xi_{N}$ has a Perron-Frobenius-style top
+eigenvalue separated from a broad bulk spectrum that is
+N-extensive rather than concentrated on a finite-dimensional
+subspace.
+\end{proposition}
+
+Proposition~\ref{prop:radial_hypothesis_falsified} sharpens the
+Phase-2 analytical question: the empirical Laplacian gap
+$\lambda_{\infty}\!=\!0.3789$ of Proposition~\ref{prop:sg_empirical}
+holds \emph{despite} the broad-spectrum $\xi_{N}$, hence must
+arise from a structural property other than low-dimensional
+embedding. The revised primary candidate is a quantitative
+Cheeger argument controlled by degree concentration; the
+empirical test is the degree-concentration audit
+$\mathrm{Var}(\deg)/\mathrm{Mean}(\deg)^{2}\!\to\!0$ as
+$N\!\to\!\infty$, to be reported in a subsequent Phase-2
+Step-2 audit.
 
 The admissibility conditions (A1)+(A8) are not strengthenings
 that remain to be deduced from M0--M3: they are operative
