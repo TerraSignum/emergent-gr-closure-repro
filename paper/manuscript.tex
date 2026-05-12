@@ -5341,8 +5341,18 @@ original framing ``deduce (A1)+(A8) from $M0$--$M3$ plus
 admissibility'' is mathematically impossible; the question
 needs an additional structural axiom.
 
-\begin{definition}[Uniform spectral-gap axiom $(\mathrm{SG})$]
+\begin{definition}[Uniform spectral-gap axiom $(\mathrm{SG})$;
+target ``$(\mathrm{SG})$-Lemma'']
 \label{def:uniform_spectral_gap}
+\textbf{Disambiguation.} The ``$(\mathrm{SG})$-Lemma''
+discussed below is the single target theorem about the
+carrier-action uniform spectral gap. It is distinct from
+the topology-labelled loop-class library entries
+``Lemma~$1$,~Lemma~$2$,~\ldots,~Lemma~$10$'' of
+P3~\cite{Paper3}, which are deterministic single-valued
+read-offs for individual cross-sector observables and form
+a finite library, not a target theorem.
+
 The carrier sequence $\{\mathfrak X_{N}\}$ satisfies
 $(\mathrm{SG})$ if the smallest non-zero eigenvalue
 $\lambda_{2}(N)$ of the $\xi_{N}$-weighted normalised graph
@@ -5756,7 +5766,7 @@ signature~\cite{WattsStrogatz1998}: short paths plus high
 local clustering, distinct from both pure Erd\H{o}s--R\'enyi
 (clustering $\to\!0$) and pure regular lattice
 (diameter $\sim\!N^{1/k}$). The analytical Phase-$2$ route
-for Lemma~B is therefore small-world spectral theory, not
+for the target $(\mathrm{SG})$-Lemma is therefore small-world spectral theory, not
 Friedman's theorem direct.
 Reproducer
 \path|src/verify_lemma_B_edge_correlation.py|, output
@@ -5798,7 +5808,7 @@ Propositions~\ref{prop:sg_empirical}--\ref{prop:spectral_fingerprint}
 (plus
 Proposition~\ref{prop:skeleton_diameter_friedman}) constitute
 the complete empirical characterisation of the carrier
-spectral structure relevant to Lemma~B. The findings are
+spectral structure relevant to the target $(\mathrm{SG})$-Lemma. The findings are
 mutually consistent and lock in the
 Phase-$2$ analytical route:
 
@@ -12253,7 +12263,7 @@ The Alon--Boppana lower bound on the second eigenvalue of
 $d$-regular graphs:
 $\lambda_{2}(A)\ge 2\sqrt{d-1}-o(1)$, equivalently
 $\lambda_{2}(L_{\rm norm})\le 1-2\sqrt{d-1}/d+o(1)$.
-Used in the Phase-$2$ Lemma~B audit.
+Used in the Phase-$2$ $(\mathrm{SG})$-Lemma audit.
 
 \bibitem{Friedman2008}
 J.~Friedman,
