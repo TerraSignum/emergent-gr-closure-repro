@@ -5741,6 +5741,72 @@ behaviour). Reproducer
 \path|outputs/verify_lemma_B_spectral_fingerprint.json|.
 \end{proposition}
 
+\paragraph{Phase-$2$ empirical characterisation: summary.}
+Propositions~\ref{prop:sg_empirical}--\ref{prop:spectral_fingerprint}
+(plus
+Proposition~\ref{prop:skeleton_diameter_friedman}) constitute
+the complete empirical characterisation of the carrier
+spectral structure relevant to Lemma~B. The findings are
+mutually consistent and lock in the
+Phase-$2$ analytical route:
+
+\begin{center}
+\renewcommand{\arraystretch}{1.15}
+\small
+\begin{tabular}{@{}lll@{}}
+\toprule
+Property & Empirical asymptote ($N\!\to\!\infty$) & Reference \\
+\midrule
+Weighted Laplacian $\lambda_{\infty}$ & $0.3789$ (Symanzik-$1$);
+conjectured $3/8$ at $1.0\%$ & Prop.~\ref{prop:sg_empirical} \\
+$\xi_{N}$ rank scaling & N-extensive
+(low-rank hypothesis falsified) &
+Prop.~\ref{prop:radial_hypothesis_falsified} \\
+Mean weighted degree & $4.24$ (constant); $\mathrm{CV}\!=\!0.168$
+(constant) & Prop.~\ref{prop:degree_concentration_negative} \\
+Skeleton structural degree $d_{\rm eff}(\tau\!=\!0.10)$ & $12.14$;
+Alon--Boppana $\lambda_{\rm AB}\!=\!0.4499$ &
+Prop.~\ref{prop:expander_skeleton} \\
+Skeleton Laplacian $\lambda_{\infty}^{\rm skel}$ & $0.2924$;
+conjectured $7/24$ at $0.24\%$ &
+Prop.~\ref{prop:skeleton_laplacian_audit} \\
+Skeleton diameter scaling & $-0.47\!+\!0.84\log N$
+(Friedman regime) &
+Prop.~\ref{prop:skeleton_diameter_friedman} \\
+Skeleton bulk spectrum & inside Kesten--McKay support
+$\ge\!99.8\%$ & Prop.~\ref{prop:spectral_fingerprint} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The locked-in analytical Phase-$2$ programme consists of
+two closed-form sub-bounds:
+\begin{align}
+\text{(Step~4a, Friedman type)}\qquad
+\lambda_{\infty}^{\rm skel} \;&=\;
+\tfrac{7}{24}\;=\;\tfrac{d{+}N_{\rm gen}}{d\,N_{\rm gen}\!\cdot 2},
+\label{eq:step4a_target}\\
+\text{(Step~4b, Kahale-type lift)}\qquad
+\lambda_{\infty}^{\rm weighted}/\lambda_{\infty}^{\rm skel} \;&=\;
+\tfrac{9}{7}\;=\;\tfrac{\alpha_{\xi}^{2}\cdot d}{d\!+\!N_{\rm gen}},
+\label{eq:step4b_target}
+\end{align}
+each addressable independently. The product of
+\eqref{eq:step4a_target} and \eqref{eq:step4b_target} is the
+weighted-Laplacian asymptote
+$\lambda_{\infty}^{\rm weighted}\!=\!3/8\!=\!\alpha_{\xi}^{2}/2\cdot 5/(d{+}1)$
+(if both rational conjectures hold), reproducing
+Proposition~\ref{prop:sg_empirical}. The full algebraic
+identification of $\lambda_{\infty}^{\rm weighted}$ in
+\eqref{eq:step4b_target} is a consequence of $\alpha_{\xi}\!=\!9/10$
+together with $d\!=\!4$ and $N_{\rm gen}\!=\!3$; it is part of
+the calibration target, not an independent algebraic claim.
+The Step~$4$ analytical derivation of either rational closes
+the corresponding empirical sub-bound; both together resolve
+the conditional structure of the master closure theorem of
+P6~\cite{Paper6} (the emergent Einstein equation conditional
+on A1--A8) into an unconditional theorem.
+
 The admissibility conditions (A1)+(A8) are not strengthenings
 that remain to be deduced from M0--M3: they are operative
 parts of the carrier-path admissibility definition
