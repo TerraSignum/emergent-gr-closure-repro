@@ -2,7 +2,7 @@
 
 **Emergent Einstein dynamics from relational metric closure on finite correlation lattices.**
 
-[![CI: reproduce](https://github.com/[anonymized]/emergent-gr-closure-repro/actions/workflows/reproduce.yml/badge.svg)](https://github.com/[anonymized]/emergent-gr-closure-repro/actions/workflows/reproduce.yml)
+[![CI: reproduce](https://github.com/TerraSignum/emergent-gr-closure-repro/actions/workflows/reproduce.yml/badge.svg)](https://github.com/TerraSignum/emergent-gr-closure-repro/actions/workflows/reproduce.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 This repository reproduces the emergent-Einstein closure of the Emergence
@@ -219,7 +219,7 @@ This package presents the emergent-GR closure conditional on:
 ## Installation (Windows PowerShell)
 
 ```powershell
-git clone https://github.com/[anonymized]/emergent-gr-closure-repro.git
+git clone https://github.com/TerraSignum/emergent-gr-closure-repro.git
 cd emergent-gr-closure-repro
 
 py -3.11 -m venv .venv

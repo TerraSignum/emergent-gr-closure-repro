@@ -19,9 +19,9 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/[anonymized]/emergent-gr-closure-repro"
-Homepage = "https://github.com/[anonymized]/emergent-gr-closure-repro"
-Issues = "https://github.com/[anonymized]/emergent-gr-closure-repro/issues"
+Repository = "https://github.com/TerraSignum/emergent-gr-closure-repro"
+Homepage = "https://github.com/TerraSignum/emergent-gr-closure-repro"
+Issues = "https://github.com/TerraSignum/emergent-gr-closure-repro/issues"
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0",
