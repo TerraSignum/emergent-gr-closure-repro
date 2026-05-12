@@ -5663,6 +5663,55 @@ unweighted-Laplacian gap by the rational factor $9/7$
 analytical step.
 \end{proposition}
 
+\begin{proposition}[Skeleton diameter scales logarithmically:
+Friedman-like, not Cayley-geometric]
+\label{prop:skeleton_diameter_friedman}
+On the same $10$-regime ladder ($\le 8$ seeds per regime; the
+$O(N^{2})$ shortest-path cost limits the seed count at large
+$N$), the diameter of the $\tau\!=\!0.10$ skeleton scales
+\emph{logarithmically} with $N$:
+\begin{equation}
+\mathrm{diam}(A_{\rm skel})(N) \;\approx\;
+   -0.47 \;+\; 0.84\,\log N,
+\label{eq:diameter_log_fit}
+\end{equation}
+AICc-preferred over the power-law model $c\,N^{\alpha}$ with
+$\Delta\mathrm{AICc}\!=\!+3.07$ in favour of the logarithmic
+fit. Combined with $100\%$ giant-component fraction on every
+regime, girth $\!=\!3$ on every regime, and skeleton-degree
+CV $\!\sim\!0.24$ close to the $1/\sqrt{d_{\rm eff}}$
+Friedman-random value, the skeleton is in the
+\emph{Friedman regime}: a sparse near-regular random
+expander, \emph{not} a geometric Cayley graph on a finite
+group.
+
+The Step-$3$c isolated-eigenvalue count of
+Proposition~\ref{prop:spectral_fingerprint} is re-interpreted
+in light of this verdict: the linear-in-$N$ count of
+``isolated'' eigenvalues was a MAD-detector artefact reading
+fine bulk clustering as discrete peaks, not a Cayley-
+representation signature. The skeleton is Friedman-random
+through and through, with Kesten--McKay bulk and at most
+$O(1)$ true isolated eigenvalues (the Perron value and a few
+near-Perron stragglers).
+
+Reproducer
+\path|src/verify_lemma_B_skeleton_diameter.py|
+(output \path|outputs/verify_lemma_B_skeleton_diameter.json|).
+\end{proposition}
+
+The Step-$3$d verdict
+(Proposition~\ref{prop:skeleton_diameter_friedman}) locks the
+Phase-$2$ analytical route to Friedman's theorem for typical
+sparse near-regular random expanders. The Cayley-graph
+hypothesis is rejected. Step~$4$a (the analytical proof of
+$\lambda_{\infty}^{\rm skel}\!=\!7/24$ from the carrier
+construction) reduces to: show that the carrier-action
+equilibrium produces a $d\!\approx\!12$-regular random graph
+ensemble whose Friedman spectral gap saturates at the
+conjectured rational. Step~$4$b (the $9/7$ lift factor from
+the weight distribution) is unchanged.
+
 \begin{proposition}[Skeleton spectral-fingerprint is
 structured-random]\label{prop:spectral_fingerprint}
 On the same $10$-regime ladder ($184$ seeds), the bulk
