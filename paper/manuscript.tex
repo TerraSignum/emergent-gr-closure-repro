@@ -5931,6 +5931,74 @@ $\ge\!99.8\%$ & Prop.~\ref{prop:spectral_fingerprint} \\
 \end{tabular}
 \end{center}
 
+\paragraph{Per-node-percentile and bulk/matter-core
+decomposition (R-loop audit).}
+The Phase-$2$ Q-loop already showed that the
+skeleton-rational $7/24$ at $\tau\!=\!0.10$ is a
+threshold-choice coincidence rather than a robust identity.
+The R-loop deepens this by decomposing the weighted
+Laplacian per-node-percentile and per-bulk/matter-core
+(reproducer
+\path|src/verify_lemma_B_percentile_decomposition.py|,
+output
+\path|outputs/verify_lemma_B_percentile_decomposition.json|).
+For each per-snapshot, vertices are sorted by row-sum
+(matter-core proxy: high row-sum $\Rightarrow$ strongly
+coupled $\Rightarrow$ matter-core); the sub-Laplacian of
+the top-$p\%$ and bottom-$p\%$ slices is diagonalised and
+its Symanzik-$1$ asymptote in $N$ is reported:
+\begin{center}
+\renewcommand{\arraystretch}{1.10}
+\small
+\begin{tabular}{@{}lll@{}}
+\toprule
+Cut & Symanzik-$1$ $\lambda_{\infty}$ & Note \\
+\midrule
+Full (no cut)        & $0.379$ & matches $3/8\!=\!(d{-}1)/(2 d)$, $\Delta\!=\!1.0\%$ \\
+Top $50\%$ (matter-core half)  & $0.249$ & $\approx 1/4\!=\!1/d$, $\Delta\!=\!0.4\%$ \\
+Top $20\%$           & $0.096$ & sub-Laplacian sparser \\
+Top $\le 10\%$       & sub-graph disconnection artefact \\
+Bottom $50\%$ (bulk half)      & $0.284$ & $\approx 2/7$, $\Delta\!=\!0.7\%$ \\
+Bottom $20\%$        & $0.112$ & sub-Laplacian sparser \\
+Bottom $\le 10\%$    & sub-graph disconnection artefact \\
+\bottomrule
+\end{tabular}
+\end{center}
+Three observations: (i) the full-Laplacian asymptote
+$3/8$ is \emph{not} reproduced by any sub-cut --- it is a
+genuinely global property; (ii) bulk-half ($0.284$) and
+core-half ($0.249$) values differ by $\sim\!14\%$, so the
+carrier has bulk/matter-core spectral inhomogeneity;
+(iii) the Fiedler-vector participation ratio is
+$\mathrm{PR}\!\to\!120$ (Symanzik-$1$, $N$-independent),
+indicating that the spectral gap is carried by an
+$N$-independent sub-population of $\sim\!120$
+spectrally-active vertices, not uniformly across all $N$.
+The top-$50\%$ and bottom-$50\%$ rational candidates
+$1/4$ and $2/7$ are registered as exploratory observations,
+not as robust conjectures (sub-Laplacian asymptotes depend
+on the cut and finite-size corrections grow rapidly as
+$p\!\to\!0$).
+
+\paragraph{Cross-validation against the alt-anchor ladder
+(R3).}
+The P$0$--P$8$ alt-anchor ladder (used for the
+Wigner--Dyson level-spacing audit
+\path|src/verify_xi_gram_spectral_gap_scaling.py|) catalogs
+nine distinct physics regimes at $N\!\in\!\{18,28,30,36,42,50,60,72,84\}$;
+each P-anchor is a separate physics setup, not the same
+regime at varying $N$, so the cross-regime sequence is
+\emph{not} a Symanzik-$1$ continuum-limit ladder. Pointwise
+consistency at the overlap with the canonical-physics
+ladder: P$5$ canonical and P$5$\_alt at $N\!=\!50$ are
+identical (both $\lambda_{2}\!=\!0.515$), and the P$6$/P$7$/P$8$
+alt-anchor values at $N\!\in\!\{60,72,84\}$ are within
+$1$--$3\%$ of the canonical $\mathcal{P}_{5}N$ values at
+the same $N$. The $3/8$ conjecture is therefore a property
+of the canonical-physics continuum limit, not a sectoral
+identity across alt-anchor regimes. Reproducer
+\path|src/verify_lemma_B_p0p8_cross_validation.py|.
+
 The locked-in analytical Phase-$2$ programme, after the
 threshold-sensitivity audit of
 Proposition~\ref{prop:skeleton_laplacian_audit} downgrading

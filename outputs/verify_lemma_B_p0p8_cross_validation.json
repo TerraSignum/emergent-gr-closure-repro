@@ -1,0 +1,175 @@
+{
+  "headline": "Lemma B R3 cross-validation: weighted-Laplacian on P0..P8 alt-anchor ladder. Honest interpretation: this is NOT a continuum-limit ladder (each P-anchor is a separate physics regime), so the Symanzik-1 fit is not directly comparable to the canonical-physics 3/8 asymptote of P5/P5N. Point-wise consistency at overlapping N values is the correct cross-check.",
+  "ladder": [
+    "P0",
+    "P1",
+    "P2prime",
+    "P3",
+    "P4",
+    "P5_alt",
+    "P6_alt",
+    "P7_alt",
+    "P8_alt"
+  ],
+  "per_regime": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "n_seeds_loaded": 24,
+      "n_seeds_valid": 24,
+      "lambda2_mean": 0.3098968802998447,
+      "lambda2_std": 0.07079310603160603,
+      "lambda2_min": 0.16773146308916298,
+      "lambda2_max": 0.42108106609831364,
+      "status": "OK"
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "n_seeds_loaded": 32,
+      "n_seeds_valid": 32,
+      "lambda2_mean": 0.3879336311481264,
+      "lambda2_std": 0.05134191954547642,
+      "lambda2_min": 0.27985815684334303,
+      "lambda2_max": 0.47771221857161505,
+      "status": "OK"
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "n_seeds_loaded": 28,
+      "n_seeds_valid": 28,
+      "lambda2_mean": 0.5212883549885969,
+      "lambda2_std": 0.04917552227847277,
+      "lambda2_min": 0.4001001654862657,
+      "lambda2_max": 0.6165650590928744,
+      "status": "OK"
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "n_seeds_loaded": 28,
+      "n_seeds_valid": 28,
+      "lambda2_mean": 0.578299322683206,
+      "lambda2_std": 0.02999506884360641,
+      "lambda2_min": 0.53185200649032,
+      "lambda2_max": 0.6364497612552483,
+      "status": "OK"
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "n_seeds_loaded": 28,
+      "n_seeds_valid": 28,
+      "lambda2_mean": 0.5475740353309563,
+      "lambda2_std": 0.040697567667647774,
+      "lambda2_min": 0.485741894514353,
+      "lambda2_max": 0.6372769461018143,
+      "status": "OK"
+    },
+    {
+      "regime": "P5_alt",
+      "N": 50,
+      "n_seeds_loaded": 28,
+      "n_seeds_valid": 28,
+      "lambda2_mean": 0.514628304406466,
+      "lambda2_std": 0.029725445116226983,
+      "lambda2_min": 0.4486635859165962,
+      "lambda2_max": 0.5812150323492188,
+      "status": "OK"
+    },
+    {
+      "regime": "P6_alt",
+      "N": 60,
+      "n_seeds_loaded": 28,
+      "n_seeds_valid": 28,
+      "lambda2_mean": 0.4795625154067052,
+      "lambda2_std": 0.02497615546369234,
+      "lambda2_min": 0.4203694056270074,
+      "lambda2_max": 0.510223107680955,
+      "status": "OK"
+    },
+    {
+      "regime": "P7_alt",
+      "N": 72,
+      "n_seeds_loaded": 20,
+      "n_seeds_valid": 20,
+      "lambda2_mean": 0.46498998252246004,
+      "lambda2_std": 0.023020436920878542,
+      "lambda2_min": 0.43364880622811386,
+      "lambda2_max": 0.5221639825189417,
+      "status": "OK"
+    },
+    {
+      "regime": "P8_alt",
+      "N": 84,
+      "n_seeds_loaded": 16,
+      "n_seeds_valid": 16,
+      "lambda2_mean": 0.4436547169962627,
+      "lambda2_std": 0.02474935181462662,
+      "lambda2_min": 0.40469846534748044,
+      "lambda2_max": 0.4825464480057921,
+      "status": "OK"
+    }
+  ],
+  "point_lambda2_per_regime": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "lambda2": 0.3098968802998447
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "lambda2": 0.3879336311481264
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "lambda2": 0.5212883549885969
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "lambda2": 0.578299322683206
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "lambda2": 0.5475740353309563
+    },
+    {
+      "regime": "P5_alt",
+      "N": 50,
+      "lambda2": 0.514628304406466
+    },
+    {
+      "regime": "P6_alt",
+      "N": 60,
+      "lambda2": 0.4795625154067052
+    },
+    {
+      "regime": "P7_alt",
+      "N": 72,
+      "lambda2": 0.46498998252246004
+    },
+    {
+      "regime": "P8_alt",
+      "N": 84,
+      "lambda2": 0.4436547169962627
+    }
+  ],
+  "symanzik_1_fit_not_meaningful_here": {
+    "c_inf": 0.561770351309741,
+    "a": -3.386141758185424,
+    "SSE": 0.038362256240973655,
+    "n_pts": 9
+  },
+  "const_fit": {
+    "c": 0.4719808604202915,
+    "SSE": 0.05551185463758984,
+    "n_pts": 9
+  },
+  "canonical_3_8_for_P5_P5N_continuum_only": 0.375,
+  "verdict": "ALT_LADDER_IS_SECTORAL_NOT_CONTINUUM \u2014 3/8 conjecture applies only to canonical-physics P5/P5N continuum limit; alt-anchor ladder P0..P8 shows regime-by-regime values, point-wise consistent with canonical at the overlap (N=50: both ~0.515)."
+}
