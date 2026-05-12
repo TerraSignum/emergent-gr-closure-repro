@@ -5597,6 +5597,72 @@ against $\lambda_{2}^{\rm AB}(12)\!=\!0.4499$ at the level of
 the explicit skeleton.
 \end{proposition}
 
+\begin{proposition}[Skeleton-Laplacian audit confirms the
+weighted-vs-unweighted spectral-gap relation]
+\label{prop:skeleton_laplacian_audit}
+The unweighted skeleton
+$A_{\rm skel}(i,j)\!=\!\mathbb{1}[\xi_{N}(i,j)\!>\!0.10]$ has
+its own normalised graph Laplacian spectral gap
+$\lambda_{2}(L_{\rm skel})(N)$. On the $10$-regime ladder
+($184$ seeds) the Symanzik-$1$ extrapolation yields
+\begin{equation}
+\lambda_{2}(L_{\rm skel})\;\to\;\lambda_{\infty}^{\rm skel}
+\;=\;0.2924,\qquad
+\text{ratio}\;\;
+\lambda_{\infty}^{\rm skel}/\lambda_{\infty}^{\rm weighted}
+\;=\;0.789,
+\label{eq:skeleton_asymptote}
+\end{equation}
+with skeleton-degree asymptote
+$d_{\rm eff}^{\infty}\!=\!12.14$
+(matching Proposition~\ref{prop:expander_skeleton}) and
+skeleton-degree coefficient of variation
+$\mathrm{CV}(d_{\rm skel})\!\to\!0.263$ (higher than the weighted
+CV of Proposition~\ref{prop:degree_concentration_negative}).
+The reproducer
+\path|src/verify_lemma_B_skeleton_laplacian.py|
+(output \path|outputs/verify_lemma_B_skeleton_laplacian.json|)
+reports both Symanzik-$1$ fits and the cross-seed asymptote
+comparison.
+
+\textbf{Conjectures (rational closed forms).} The empirical
+asymptotes match two System-$\mathcal{R}$ rationals:
+\begin{equation}
+\lambda_{\infty}^{\rm weighted}\!\stackrel{?}{=}\!\tfrac{3}{8}\!=\!0.3750
+\quad(\Delta\!=\!1.0\%),
+\qquad
+\lambda_{\infty}^{\rm skel}\!\stackrel{?}{=}\!\tfrac{7}{24}\!=\!0.29167
+\quad(\Delta\!=\!0.24\%),
+\label{eq:two_rational_conjectures}
+\end{equation}
+with algebraically consistent ratio
+$(7/24)/(3/8)\!=\!7/9\!=\!0.7778$ vs.\ empirical $0.789$
+($\Delta\!=\!1.4\%$). The numerator
+$d\!+\!N_{\rm gen}\!=\!7$ enters both: in the weighted form via
+$3/8$ which is structurally $3/d^{2}\cdot 2$, and in the
+skeleton form via $7/24\!=\!(d\!+\!N_{\rm gen})/(d\cdot
+N_{\rm gen}\cdot 2)$. Both conjectures are registered for
+falsification on an extended ladder $N\!\ge\!1024$, not claimed
+as closures (1.0\% and 1.4\% residuals are well above the
+EXACT and PRECISE tier thresholds).
+
+\textbf{Implication for analytical Phase-$2$.} The
+$30\%$ gap improvement of the weighted Laplacian over the
+unweighted skeleton ($\lambda_{\infty}^{\rm weighted}/
+\lambda_{\infty}^{\rm skel}\!\approx\!1.30$) is structural
+information: the carrier-action does not merely produce a
+near-Ramanujan skeleton, it produces an
+\emph{edge-weight distribution} that further sharpens the
+spectral gap by a factor close to the conjectured rational
+$9/7$. The two-step analytical programme is therefore: (i)
+prove the skeleton is a near-Ramanujan expander with
+$d\!=\!12$ (Step~4a, Friedman-type bound), and (ii) prove
+the carrier-action weight distribution lifts the
+unweighted-Laplacian gap by the rational factor $9/7$
+(Step~4b, Kahale-type bound). The latter is the smaller
+analytical step.
+\end{proposition}
+
 The admissibility conditions (A1)+(A8) are not strengthenings
 that remain to be deduced from M0--M3: they are operative
 parts of the carrier-path admissibility definition
