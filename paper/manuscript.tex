@@ -5494,12 +5494,53 @@ Phase-2 analytical question: the empirical Laplacian gap
 $\lambda_{\infty}\!=\!0.3789$ of Proposition~\ref{prop:sg_empirical}
 holds \emph{despite} the broad-spectrum $\xi_{N}$, hence must
 arise from a structural property other than low-dimensional
-embedding. The revised primary candidate is a quantitative
-Cheeger argument controlled by degree concentration; the
-empirical test is the degree-concentration audit
-$\mathrm{Var}(\deg)/\mathrm{Mean}(\deg)^{2}\!\to\!0$ as
-$N\!\to\!\infty$, to be reported in a subsequent Phase-2
-Step-2 audit.
+embedding. The Phase-2 Step-2 audit
+(Proposition~\ref{prop:degree_concentration_negative})
+falsifies the next-simplest analytical candidate, classical
+Cheeger via degree concentration, while simultaneously
+revealing the actual structural signature of the carrier.
+
+\begin{proposition}[Degree concentration falsified; carrier
+exhibits sparse expander-like structure]
+\label{prop:degree_concentration_negative}
+On the same $10$-regime ladder of
+Proposition~\ref{prop:sg_empirical} ($184$ seeds), the
+unnormalised vertex degree
+$\deg(i)\!=\!\sum_{j\neq i}\max(\xi_{N}(i,j),0)$ has
+\emph{constant mean and constant relative fluctuation across
+the ladder}:
+\begin{equation}
+\mathrm{Mean}(\deg)\!\to\!4.24,\quad
+\mathrm{CV}(\deg)\!=\!\sigma_{\deg}/\mu_{\deg}\!\to\!0.168,
+\quad
+\mathrm{NSM}(\deg)\!=\!\sigma_{\deg}^{2}/\mu_{\deg}^{2}\!\to\!0.029,
+\label{eq:degree_signature}
+\end{equation}
+with AICc-preferred const (CV, NSM) and Symanzik-$1$ (mean
+$\mu_{\deg}\!=\!4.24\!+\!53/N$). The Cheeger-via-concentration
+route, which requires $\mathrm{NSM}\!\to\!0$, is therefore not
+supported: relative degree fluctuations persist at the
+$17\%$ level in the continuum limit. The reproducer
+\path|src/verify_lemma_B_degree_concentration.py|
+(output \path|outputs/verify_lemma_B_degree_concentration.json|)
+reports the verdict
+\texttt{DEGREE\_CONCENTRATION\_NOT\_SUPPORTED}.
+
+The constant-mean-degree finding $\mu_{\deg}\!\to\!4.24$ is
+\emph{positive structural information}: the carrier produces a
+\emph{sparse} weighted graph (mean weighted degree $\sim\!4$
+independent of $N$) rather than a dense one. Combined with the
+uniform spectral gap of
+Proposition~\ref{prop:sg_empirical} and the broad-spectrum
+$\xi_{N}$ of Proposition~\ref{prop:radial_hypothesis_falsified},
+the carrier signature is that of a \emph{sparse
+expander-like graph with constant relative degree
+fluctuation}. The appropriate analytical route is therefore
+expander-graph theory (Alon--Boppana bounds, Friedman's
+theorem, Kahale spectral bounds for irregular expanders),
+not classical isoperimetric Cheeger. This is the Phase-2 Step-3 target,
+not addressed in the present audit.
+\end{proposition}
 
 The admissibility conditions (A1)+(A8) are not strengthenings
 that remain to be deduced from M0--M3: they are operative
