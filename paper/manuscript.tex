@@ -2677,10 +2677,22 @@ CLP-D    & Weighted $0.3\,$A$+0.4\,$B$+0.3\,$C & $0.738$ & $0.70$ & \textsc{audi
 \bottomrule
 \end{tabular}
 \par\medskip
-\footnotesize $^{\dagger}$ CLP-B/B4 carries the heuristic per-sub-component
+\footnotesize $^{\dagger}$ CLP-B/B4 carries the per-sub-component
 threshold $0.50$ rather than the family-level closure-domain
 threshold $0.70$; see Section~\ref{sec:gap} for the four-sub-component
 breakdown (absorption $0.51$, locality $0.54$, density $0.65$, spectral $0.68$).
+A 2026-05-13 architectural-ceiling audit
+(\path|src/verify_clp_b_architectural_ceiling.py|,
+\path|outputs/verify_clp_b_architectural_ceiling.json|)
+identifies the six inner asymptotes feeding the absorption
+sub-score as clean System-R rationals (support\_score $5/6$,
+support\_persistence $49/60$, macro/intrinsic/structural/calibration
+distances $13/25,\,9/32,\,3/8,\,5/12$) and shows the absorption
+asymptote is architecturally bounded above by
+$\tfrac{2(5/6)(49/60)/(1+\tfrac{1}{4}(13/25+9/32+3/8+5/12)) + 0.652 + 0.686}{4}\!\approx\!0.578$,
+so that $0.70$ is unreachable without redefining the
+\texttt{quality\_seed} primitive and $0.50$ is the natural —
+not heuristic — sub-component threshold.
 \end{table}
 
 \begin{figure}[h]
