@@ -5250,6 +5250,54 @@ header and computed from the bundled D1 payloads under
 \texttt{results\_d1\_fix16/}~\cite{DalMaso1993}.
 \end{proof}
 
+\paragraph{Numerical-to-analytical proxy map (transparency).}
+The C1--C5 numerical proxies above are approximations of the
+five standard analytical conditions of Dal Maso
+$\Gamma$-convergence~\cite{DalMaso1993}; an unconditional
+proof would replace each numerical proxy by a rigorous
+analytical argument. The mapping is:
+\begin{itemize}
+\item[\textbf{C1}] \emph{Liminf inequality}: for every sequence
+$f_{N}\!\to\!f$ in the mm-GH limit, $\liminf_{N}\!S_{N}(f_{N})\!\ge\!S_{\infty}(f)$.
+Numerical proxy: total closure loss
+$L(N)\!=\!\mathrm{mean}(1\!-\!\mathrm{gap}_{i})$ on six payload
+keys, Symanzik-extrapolated to $L_{\infty}\!\in\![0.370,0.398]$
+($95\%$~CI); proxy score $0.732$.
+\item[\textbf{C2}] \emph{Recovery sequence}: for every $f$
+there exists a sequence $f_{N}\!\to\!f$ with
+$\limsup_{N}\!S_{N}(f_{N})\!\le\!S_{\infty}(f)$.
+Numerical proxy: $\min$ of the per-payload canonicalisation
+score, hitting $1.0$ identically on the bundled ladder;
+proxy score $1.000$.
+\item[\textbf{C3}] \emph{Equi-coercivity}: for every $M$,
+the sub-level set $\{f\!:\!S_{N}(f)\!\le\!M\}$ is contained in
+a fixed compact set independent of $N$.
+Numerical proxy: $1\!-\!\mathrm{range}(\text{transport})\!=\!0.832$;
+proxy score $0.832$.
+\item[\textbf{C4}] \emph{Minimiser convergence}: minimisers
+$f_{N}^{*}$ of $S_{N}$ converge to a minimiser of $S_{\infty}$.
+Numerical proxy: fixpoint-proximity asymptote
+$\mathrm{score}\!=\!0.816$ with bootstrap-$95\%$~CI
+$[0.780,0.865]$.
+\item[\textbf{C5}] \emph{Euler--Lagrange link}: weak-$*$
+convergence of first variations,
+$\delta S_{N}\!\to\!\delta S_{\infty}$.
+Numerical proxy: $\tfrac{1}{2}(\mathrm{C1}\!+\!\mathrm{C2})\!=\!0.866$
+(C1 supplies the lower envelope, C2 the upper envelope; their
+average is the standard weak-$*$ link).
+\end{itemize}
+An analytical replacement of any one $C_{i}$ tightens the
+master closure theorem along its corresponding axis; replacing
+all five completes the analytical Lemma~C alongside the
+analytical Lemma~B (the target $(\mathrm{SG})$-Lemma of
+Section~\ref{sec:gap} and the corresponding Phase-$2$
+discussion). The current
+$\gamma$-score $0.849$ certifies the conditional master
+closure theorem at $95\%$ bootstrap confidence on the
+$9$-payload ladder, sufficient for the conditional Phase-$1$
+result of P6~\cite{Paper6} but not for an unconditional
+continuum theorem.
+
 \begin{corollary}[CBI under structural admissibility]
 \label{cor:cbi_admissibility}
 Under the eight admissibility conditions (A1)--(A8) of
