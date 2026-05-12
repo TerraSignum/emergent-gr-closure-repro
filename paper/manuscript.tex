@@ -5298,51 +5298,46 @@ $9$-payload ladder, sufficient for the conditional Phase-$1$
 result of P6~\cite{Paper6} but not for an unconditional
 continuum theorem.
 
-\paragraph{Lemma~C is a three-axis target: CLP-C + CLP-B
-+ CLP-N4 Bridge.}
+\paragraph{Lemma~C is a multi-axis target: CLP-A + CLP-B
++ CLP-C.}
 The Dal Maso $\Gamma$-convergence sub-conditions C$1$--C$5$
 above form the CLP-C axis of the master closure-limit-proof
 framework. The full Lemma~C target also includes the
 \emph{operator-convergence axis} CLP-B and the
-\emph{bridge axis} CLP-N$4$ that connects them:
+\emph{existence axis} CLP-A; all three are reported in the
+bundled audit
+\path|outputs/clp_full_report.json|:
 \begin{itemize}
 \item \textbf{CLP-A} (continuum-limit existence):
 $0.813$ \textbf{CLOSED} on the $9$-payload ladder
-(\path|outputs/clp_full_report.json|, family\_scores key).
+(sub-scores T$1\!=\!1.0$, T$2\!=\!0.90$, T$3\!=\!0.45$,
+T$4\!=\!1.0$).
 \item \textbf{CLP-B/B$4$} (operator convergence):
-$0.598$ overall, with the B-family restructuring
-B-fast-geom $\!=\!1.000$ \textbf{CLOSED} (geometric
-operators, $\alpha\!>\!3$), B-slow-phys $\!=\!0.604$
-(spectral gap, resolvent, slow-tail), B-internal
-$\!=\!0.733$ (flavor/mass/CKM/PMNS operators).
-The combined operator-convergence assembly reaches
-$0.801$ in the upgraded scoring scheme
-(\path|Papers/python/08_Gap_Closure_Results.md|, §8.1).
+$0.598$ overall with four sub-components
+absorption $\!=\!0.514$ (bottleneck), locality $\!=\!0.542$,
+density $\!=\!0.652$, spectral $\!=\!0.682$
+(\path|outputs/clp_full_families_extended_audit.json|,
+\texttt{clp\_b\_b4} key).
 \item \textbf{CLP-C} (the $\Gamma$-convergence Dal Maso
-audit reported above): $0.849$ \textbf{GAMMA\_CONVERGED}.
-\item \textbf{CLP-N$4$} (the explicit
-$\delta S_{N}\!\to\!\delta S_{\infty}$ bridge via
-$\Gamma$-convergence $\!\to\!$ first variation $\!\to\!$
-operator limit chain): \textbf{conditional bridge
-exists}, bridge score $\!=\!\min(\text{$\Gamma$-side},
-\text{B-side})$, currently inheriting from
-$\min(C_{i})\!=\!0.73$ on the bridge.
+audit reported above): $0.849$ \textbf{GAMMA\_CONVERGED}
+with C$1\!=\!0.73$, C$2\!=\!1.00$, C$3\!=\!0.83$,
+C$4\!=\!0.82$, C$5\!=\!0.87$.
 \item \textbf{CLP-D overall}: $0.738$ \textbf{CLP\_PROVEN}
 (weights $A\!:\!0.3, B\!:\!0.4, C\!:\!0.3$;
-\path|outputs/clp_full_report.json|, CLP-D key).
+\path|outputs/clp_full_report.json|, \texttt{CLP-D} key).
 \end{itemize}
 The Lemma~C analytical-replacement programme therefore
 proceeds along three axes simultaneously: tighten the
 worst-scoring C$_{i}$ (currently C$1$=liminf at $0.73$),
-tighten the worst-scoring B-family member (currently
-B-slow-phys at $0.60$, the operator-side counterpart of
-C$1$), and operationalise CLP-N$4$ analytically (replace
-the numerical min-bridge by a rigorous first-variation
-$\to$ operator-limit derivation). The conditional master
+tighten the worst-scoring B sub-component (currently the
+absorption bottleneck at $0.514$), and (where data
+permits) tighten the worst-scoring CLP-A T-condition
+(currently T$3$ at $0.45$). The conditional master
 closure theorem of P6~\cite{Paper6} holds at
-CLP\_PROVEN level on all three axes; the unconditional
-theorem requires analytical replacement of the
-weakest-scoring sub-component on each axis.
+CLP\_PROVEN level (CLP-D $\!=\!0.738$) across all three
+axes; the unconditional theorem requires analytical
+replacement of the weakest-scoring sub-component on each
+axis.
 
 \begin{corollary}[CBI under structural admissibility]
 \label{cor:cbi_admissibility}
@@ -6054,17 +6049,47 @@ $J$(Fiedler-top$30$, bulk-bot$50$)  & $0.17$ & $0.18$ & $-7\%$ \\
 \end{center}
 The corpus-validated row-variance proxy yields
 $J(\mathrm{Fiedler}_{30\%},\mathrm{rowvar}_{30\%})\!=\!0.28$
-mean over the ladder ($1.6\times$ over the
-$0.18$ random baseline) and
+($1.6\times$ random baseline $0.18$) and
 $J(\mathrm{Fiedler}_{30\%},\mathrm{C99}_{\rm rowvar})\!=\!0.02$--$0.11$
-($\approx\!2\times$ random, with a falling trend at large
-$N$). The row-sum proxy gives the same conclusion at
-$J\!=\!0.26$ ($1.45\times$ random). The picture is
-consistent across both proxies: the Fiedler-active set
-correlates with the broader matter-core
-\emph{neighbourhood} (top-$30\%$, factor $1.5$--$1.6$ over
-random) but \emph{not} with the deep matter-core C$99$
-(only $\sim\!2\times$ random, and falling with $N$). The
+($\sim\!2\times$ random, falling with $N$). The row-sum
+proxy gives $J\!=\!0.26$ ($1.45\times$ random).
+
+A third audit
+(\path|src/verify_lemma_B_fiedler_vs_t00.py|, output
+\path|outputs/verify_lemma_B_fiedler_vs_t00.json|) computes
+the corpus-canonical matter-core classifier $t_{00}(a)$
+directly from $\psi/K/Q$ via \texttt{per\_seed\_galerkin}
+(loaded from \path|src/verify_galerkin_runner_A_hessian_ricci.py|;
+the same pipeline that defines the AUC-$0.85$/$\mathrm{enrichment}\!=\!11.3\times$
+classifier reported in P$4$B~\cite{Paper4B}). Six seeds per
+regime (Galerkin-throttled), $9$-regime ladder; results
+agree qualitatively with both proxies:
+\begin{center}
+\renewcommand{\arraystretch}{1.10}
+\small
+\begin{tabular}{@{}lccc@{}}
+\toprule
+Overlap & Empirical & Random & $\times$ random \\
+\midrule
+$J(\mathrm{Fiedler}_{30\%},\,|t_{00}|_{\rm top10\%})$ & $0.137$ & $0.057$ & $2.4$ \\
+$J(\mathrm{Fiedler}_{30\%},\,|t_{00}|_{\rm top30\%})$ & $0.249$ & $0.180$ & $1.38$ \\
+$J(\mathrm{Fiedler}_{30\%},\,|t_{00}|_{\rm top5\%})$  & $0.078$ & $0.029$ & $2.7$ \\
+$J(\mathrm{Fiedler}_{30\%},\,|t_{00}|_{\rm top1\%})$  & $0.039$ & $0.006$ & $6$ \\
+$J(\mathrm{rowvar}_{30\%},\,|t_{00}|_{\rm top30\%})$  & $0.430$ & $0.180$ & $2.4$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+The picture is consistent across all three proxies
+(row-sum, row-variance, canonical $t_{00}$): the
+Fiedler-active set correlates with the broader matter-core
+\emph{neighbourhood} (top-$10\%$ to top-$30\%$, factor
+$1.4$--$2.4$ over random) but \emph{not} with the deep
+matter-core C$99$ in absolute terms (only $J\!\sim\!0.04$,
+even though the over-random ratio is $\sim\!6\times$
+because the random baseline itself is so small). The
+row-variance proxy is in turn validated against the
+canonical $t_{00}$ classifier at $J\!=\!0.43$
+($2.4\times$ random) --- adequate, not perfect. The
 Fiedler hot-spots are therefore the \emph{interface
 vertices} surrounding the matter-core, not the matter-core
 itself. This is consistent with the small-world signature
