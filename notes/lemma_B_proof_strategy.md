@@ -920,43 +920,63 @@ companion paper).
 
 ## Cross-sector independence of the 3/8 conjecture
 
+**Branch scope.** The entire Phase-2 ladder (N ∈ [50, 512])
+sits *pre-inversion* of the chirality flip — empirical
+inversion at N_inversion ≈ 591–600 (memory:
+project_chirality_flip_pi_over_4 2026-05-05). All Phase-2
+data therefore characterise the **vacuum branch**
+(θ_chir < π/4). The post-inversion (matter-branch) regime
+N ≥ 600 is *not* yet covered and is registered as an open
+audit obligation (FB-w4 below).
+
 The weighted-Laplacian asymptote `lambda_w_inf = 3/8 = (d-1)/(2d)`
 isolates a **pure spectral-graph identity** in the carrier
 dimension `d=4` alone. It does **not** factor through any
 System-R primitive (γ, α_ξ, β_π, ε²_sync, D_Ω) or any
-matter-sector observable. Numerical checks (reproduced in
-this memo's Y2 cross-connection audit):
+matter-sector observable. Numerical checks (Y2 cross-
+connection audit, both branches):
 
-  - `3/8 / Λ_t   = 3/8 / (α_ξ²)   = 0.463` (no clean rational)
-  - `3/8 / Λ_trace = 3/8 / (161/200) = 0.466` (no clean rational)
-  - `Λ_t − 3/8 = 0.435` (no clean rational)
-  - Closest alternative `(d−1)/(2d) ± γ`: at least
-    +6.7% off (gamma + 1/d = 0.350; gamma + (d-1)/(2d) = 0.475).
+  - `3/8 / Λ_t^vac = 3/8 / (33/40)   = 5/11 ≈ 0.4545` (trivially
+    rational; numerators/denominators share no physical
+    primes — coincidence of two reducible rationals, not a
+    System-R relation)
+  - `3/8 / Λ_t^mat = 3/8 / (α_ξ²)    = 0.4630` (no rational)
+  - `3/8 / T_00^vac = 3/8 / (84/100) = 0.4464` (no rational)
+  - `3/8 / Λ_trace = 3/8 / (161/200) = 0.4658` (no rational)
+  - Closest System-R combination `γ + 1/d = 0.350`:
+    +6.7% off; no clean rational within 5%.
 
 This confirms the **sector-decomposition principle**: the
-geometric closures (`Λ_t = α_ξ² = 81/100`, `Λ_μν trace
-= 161/200`, `Λ_t^vac = 33/40`) live in the System-R
-coefficient algebra (α_ξ-dependent), while the spectral-
-gap asymptote lives in the dimensional-graph algebra
-(d-dependent). They share *no* algebraic cross-term and
-must be derived from disjoint analytical mechanisms:
+geometric closures (`Λ_t^vac = 33/40`, `Λ_t^mat = α_ξ² =
+81/100`, `Λ_μν trace = 161/200`, `T_00^vac = 84/100`) live
+in the System-R coefficient algebra (α_ξ-dependent,
+branch-resolved at θ_chir = π/4), while the spectral-gap
+asymptote lives in the dimensional-graph algebra
+(d-dependent only). They share *no* algebraic cross-term
+and must be derived from disjoint analytical mechanisms:
 
   - Λ_t: branch-resolved Lagrangian (chirality-locked,
-    P4-B anisotropic source).
+    P4-B anisotropic source; jumps 33/40 ↔ 81/100 at the
+    flip).
   - 3/8: small-world spectral theory on the τ=0.10
     skeleton, Friedman-Bulk + isolated-eigenvalue
-    decomposition (Lemma B Step 4).
+    decomposition (Lemma B Step 4). **Currently certified
+    on the vacuum branch only.**
 
 The independence is a *feature*, not a defect: it permits
 Lemma B (analytical) to be settled without re-opening any
 Lambda-closure, and conversely a future revision of Λ_t
-would not propagate into the spectral-gap target.
+would not propagate into the spectral-gap target. Whether
+the **value** of `lambda_w_inf` itself jumps across θ_chir = π/4
+is an open empirical question (FB-w4).
 
 ## Falsification triggers for the 3/8 weighted-Laplacian conjecture
 
 The 3/8 = (d−1)/(2d) conjecture for
 `lambda_inf^weighted` is empirical (Symanzik-1 fit at 1.0%
-relative residual). Three explicit falsifiers:
+relative residual). It is currently certified on the
+vacuum branch only (N < 591..600 = N_inversion). Four
+explicit falsifiers:
 
 - **(FB-w1)** On an extended ladder N ≥ 1024 the cross-seed
   mean λ_2(L_w) drops outside [0.365, 0.385] (i.e., outside
@@ -974,6 +994,23 @@ relative residual). Three explicit falsifiers:
   N. (Pointwise check at the overlap N=50: λ_2 = 0.515 for
   both canonical and alt; consistency holds.)
 
-Trigger (FB-w1) is the deciding empirical falsifier; if a
-future ladder runs reach N ≥ 1024 and the asymptote moves
-outside [0.365, 0.385], the conjecture must be retracted.
+- **(FB-w4)** Post-inversion regime (N ≥ N_inversion ≈
+  591–600, θ_chir > π/4 → matter branch). A future ladder
+  N ∈ [600, 1024] that yields a Symanzik-1 asymptote
+  outside [0.365, 0.385] would either falsify the conjecture
+  outright OR force a **branch-resolved** restatement
+  `lambda_w_inf^vac = 3/8` (already empirical) and
+  `lambda_w_inf^mat = …` (to be determined). The pre-flip
+  evidence does not predict the post-flip value because the
+  3/8 mechanism (small-world spectral geometry of the
+  τ=0.10 skeleton) plausibly survives the chirality flip,
+  but the |Ξ|/K/Q field-content does jump (cf. Λ_t
+  33/40 ↔ 81/100). A jump in the skeleton edge-distribution
+  would translate to a jump in λ_w_inf.
+
+Trigger (FB-w1) is the deciding empirical falsifier *within
+the vacuum branch*; FB-w4 is the deciding test for the
+universality across the chirality flip. The current data
+do not distinguish between (a) `lambda_w_inf = 3/8`
+universally and (b) `lambda_w_inf` branch-resolved with
+`vac = 3/8`.
