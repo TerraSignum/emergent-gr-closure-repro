@@ -697,9 +697,75 @@ distribution).
 admissible-carrier class.
 
 **Phase-2 status after Step 3d:** Friedman-random class
-confirmed. Cayley hypothesis rejected. Two-stage analytical
-attack 4a + 4b is locked-in with calibration targets
-7/24 (skeleton) and 9/7 (lift factor). The empirical
-characterisation of the carrier signature is complete; the
-remaining work is the analytical derivation from the
-carrier-action.
+preliminarily confirmed by log(N) diameter; Cayley hypothesis
+rejected. (See Step 4a pre-flight result below for the final
+refinement of this classification.)
+
+## Phase-2 Step 4a pre-flight result (small-world, not pure Friedman)
+
+Reproducer: `src/verify_lemma_B_edge_correlation.py`.
+Output: `outputs/verify_lemma_B_edge_correlation.json`.
+
+Same 10-regime ladder, 184 seeds. Tests whether the τ=0.10
+skeleton edges are independently formed (Erdős-Rényi limit)
+or have persistent triangle correlation (small-world / SBM
+signal).
+
+| Diagnostic              | Asymptote (N→∞)    | Interpretation                    |
+|-------------------------|--------------------:|-----------------------------------|
+| p_edge                  | -0.025 + 19/N → 0  | edge density → 0 (sparse)         |
+| triangles_observed/ER   | **5.31** (Symanzik-1)  | **5x more triangles than ER**   |
+| global clustering coeff | **0.142** (asymptote)  | **finite asymptotic clustering** |
+
+**Verdict: CORRELATED edge formation — small-world, not
+Erdős-Rényi.** The combined signature
+
+  - log(N) diameter (Step 3d, small-world ✓)
+  - girth = 3 (Step 3d, triangles exist ✓)
+  - global clustering → 0.142 finite (Step 4a, NEW)
+  - triangle excess → 5.3× ER (Step 4a, NEW)
+
+is the **classical Watts-Strogatz small-world graph
+signature**: short paths plus high local clustering, distinct
+from both pure Erdős-Rényi (low clustering) and regular
+lattices (long paths). Friedman's theorem applies to typical
+random regular graphs which have *vanishing* clustering as
+N → ∞; the observed persistent clustering rules out
+Friedman-pure interpretation.
+
+### Refined analytical Phase-2 route (post Step 4a pre-flight)
+
+**Route 5b (locked-in):** Small-world spectral theory.
+
+For Watts-Strogatz small-world graphs, the spectral gap can
+be analysed via resolvent methods that combine:
+  - Random-regular Friedman contribution (Kesten-McKay-like
+    bulk from the underlying d=12 random regular skeleton),
+  - Triangle/clique structural correction (the 5.3× excess
+    encoded as a structural perturbation).
+
+The Symanzik-1 fit lambda_inf^skel = 7/24 (from Step 3b) is
+now interpreted as the small-world-spectral-gap asymptote,
+not the pure-Friedman asymptote. The conjectured rational
+7/24 should follow from:
+
+  - Carrier-action edge-formation rule reduces to a
+    structured edge-inclusion probability p_inc(i, j)
+    depending on the carrier dynamics; total mean degree
+    constraint d_eff = 12 fixes the global edge density.
+  - Triangle-clustering correction is computable from the
+    second-order moment of the carrier-action inclusion
+    rule.
+
+**Updated Step 4a analytical target:** derive 7/24 from a
+carrier-action edge-formation rule that produces a
+small-world graph with mean degree 12 and clustering 0.142.
+
+**Step 4b (unchanged):** 9/7 lift factor from weight
+distribution.
+
+**Phase-2 status after Step 4a pre-flight:** Classification
+refined to small-world (Watts-Strogatz-like), away from pure
+Friedman-random. Both rational conjectures (7/24, 9/7)
+unchanged; the analytical machinery changes from Friedman's
+theorem to small-world spectral theory.

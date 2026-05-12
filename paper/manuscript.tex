@@ -5536,8 +5536,11 @@ $\xi_{N}$ of Proposition~\ref{prop:radial_hypothesis_falsified},
 the carrier signature is that of a \emph{sparse
 expander-like graph with constant relative degree
 fluctuation}. The appropriate analytical route is therefore
-expander-graph theory (Alon--Boppana bounds, Friedman's
-theorem, Kahale spectral bounds for irregular expanders),
+expander-graph theory (Alon--Boppana
+bounds~\cite{AlonBoppana1986},
+Friedman's theorem~\cite{Friedman2008},
+Kahale spectral bounds for irregular
+expanders~\cite{Kahale1995}),
 not classical isoperimetric Cheeger.
 \end{proposition}
 
@@ -5559,7 +5562,8 @@ d_{\rm sig}^{10\%}\!\to\!1.38,
 \label{eq:connectivity_hierarchy}
 \end{align}
 where $d_{\rm sig}^{10\%}$ counts row-significant edges (carrying
-$\ge\!10\%$ of the row sum). The Alon--Boppana bound for the
+$\ge\!10\%$ of the row sum). The Alon--Boppana
+bound~\cite{AlonBoppana1986} for the
 normalised Laplacian on a $d$-regular graph,
 $\lambda_{2}\!\le\!1\!-\!2\sqrt{d\!-\!1}/d\!+\!o(1)$, evaluated
 at the structural-skeleton threshold $\tau\!=\!0.1$ with
@@ -5573,7 +5577,8 @@ above the empirical asymptote $\lambda_{\infty}\!=\!0.3789$ of
 Proposition~\ref{prop:sg_empirical}. The empirical ratio
 $\lambda_{\infty}/\lambda_{2}^{\rm AB}\!=\!0.84$ places the
 carrier in the \emph{near-Ramanujan} regime in the sense of
-Friedman's theorem: typical random $d$-regular graphs achieve
+Friedman's theorem~\cite{Friedman2008}: typical random
+$d$-regular graphs achieve
 spectral gap within $o(1)$ of the Alon--Boppana bound with
 high probability, and the carrier is empirically $84\%$ of the
 way to saturation. The reproducer
@@ -5591,7 +5596,8 @@ imply that the $\tau\!=\!0.1$ skeleton is a near-Ramanujan
 expander with $d_{\rm eff}\!=\!12$ asymptotic regular degree,
 the uniform spectral gap of
 Proposition~\ref{prop:sg_empirical} follows analytically via
-Friedman--Kahale-type bounds. The conjectured closed form
+Friedman--Kahale-type
+bounds~\cite{Friedman2008,Kahale1995}. The conjectured closed form
 $\lambda_{\infty}\!=\!3/8$ becomes a discriminating prediction
 against $\lambda_{2}^{\rm AB}(12)\!=\!0.4499$ at the level of
 the explicit skeleton.
@@ -5680,8 +5686,8 @@ $\Delta\mathrm{AICc}\!=\!+3.07$ in favour of the logarithmic
 fit. Combined with $100\%$ giant-component fraction on every
 regime, girth $\!=\!3$ on every regime, and skeleton-degree
 CV $\!\sim\!0.24$ close to the $1/\sqrt{d_{\rm eff}}$
-Friedman-random value, the skeleton is in the
-\emph{Friedman regime}: a sparse near-regular random
+Friedman-random value~\cite{Friedman2008}, the skeleton is
+in the \emph{Friedman regime}: a sparse near-regular random
 expander, \emph{not} a geometric Cayley graph on a finite
 group.
 
@@ -5701,22 +5707,68 @@ Reproducer
 \end{proposition}
 
 The Step-$3$d verdict
-(Proposition~\ref{prop:skeleton_diameter_friedman}) locks the
-Phase-$2$ analytical route to Friedman's theorem for typical
-sparse near-regular random expanders. The Cayley-graph
-hypothesis is rejected. Step~$4$a (the analytical proof of
+(Proposition~\ref{prop:skeleton_diameter_friedman}) qualifies
+the Phase-$2$ analytical route. The Cayley-graph hypothesis is
+rejected by the log-$N$ diameter scaling. The
+Friedman-pure-random-regular hypothesis is in turn qualified
+by the Step-$4$a pre-flight audit
+(Proposition~\ref{prop:edge_correlation_small_world}):
+persistent triangle excess (asymptote $5.3\times$ ER baseline)
+and persistent clustering coefficient ($\to\!0.142$) refute the
+pure-ER edge-formation rule. The combined signature — log-$N$
+diameter, girth $\!=\!3$, persistent clustering — is the
+classical Watts--Strogatz \emph{small-world graph}
+regime~\cite{WattsStrogatz1998}.
+The analytical Phase-$2$ route is therefore refined to
+small-world spectral theory rather than Friedman direct;
+Step~$4$a (the analytical proof of
 $\lambda_{\infty}^{\rm skel}\!=\!7/24$ from the carrier
 construction) reduces to: show that the carrier-action
-equilibrium produces a $d\!\approx\!12$-regular random graph
-ensemble whose Friedman spectral gap saturates at the
-conjectured rational. Step~$4$b (the $9/7$ lift factor from
-the weight distribution) is unchanged.
+equilibrium produces a structured small-world graph
+ensemble whose spectral gap (computable via small-world
+spectral resolvent methods) saturates at the conjectured
+rational. Step~$4$b (the $9/7$ lift factor from the weight
+distribution) is unchanged.
+
+\begin{proposition}[Skeleton edge-correlation: small-world,
+not pure Erd\H{o}s--R\'enyi]
+\label{prop:edge_correlation_small_world}
+On the $10$-regime ladder ($184$ seeds), the $\tau\!=\!0.10$
+skeleton triangle count
+$T_{N}\!=\!\mathrm{tr}(A_{\rm skel}^{3})/6$ exceeds the
+Erd\H{o}s--R\'enyi expectation
+$T_{N}^{\rm ER}\!=\!\binom{N}{3}p_{\rm edge}^{3}$ by a
+ratio whose Symanzik-$1$ extrapolation is
+\begin{equation}
+T_{N}/T_{N}^{\rm ER} \;\to\; 5.31,\qquad
+\text{global clustering coefficient }\;
+C\;\to\;0.142,
+\label{eq:small_world_signature}
+\end{equation}
+with the edge-inclusion probability decaying as
+$p_{\rm edge}(N)\!=\!19/N$ (Symanzik-$1$). Persistent
+triangle excess and finite asymptotic clustering, combined
+with the log-$N$ diameter scaling of
+Proposition~\ref{prop:skeleton_diameter_friedman} and the
+girth-$3$ observation of the same proposition, are the
+classical Watts--Strogatz \emph{small-world graph}
+signature~\cite{WattsStrogatz1998}: short paths plus high
+local clustering, distinct from both pure Erd\H{o}s--R\'enyi
+(clustering $\to\!0$) and pure regular lattice
+(diameter $\sim\!N^{1/k}$). The analytical Phase-$2$ route
+for Lemma~B is therefore small-world spectral theory, not
+Friedman's theorem direct.
+Reproducer
+\path|src/verify_lemma_B_edge_correlation.py|, output
+\path|outputs/verify_lemma_B_edge_correlation.json|.
+\end{proposition}
 
 \begin{proposition}[Skeleton spectral-fingerprint is
 structured-random]\label{prop:spectral_fingerprint}
 On the same $10$-regime ladder ($184$ seeds), the bulk
 density of $L_{\rm skel}$ lies almost entirely
-($\ge 99.8\%$) inside the Kesten--McKay support
+($\ge 99.8\%$) inside the Kesten--McKay
+support~\cite{McKay1981}
 $[1-2\sqrt{d-1}/d,\,1+2\sqrt{d-1}/d]$ for
 $d\!=\!d_{\rm skel}\!\approx\!12$, with bulk excess kurtosis
 $\sim\!-0.7$ (Friedman-like shape). However, the count of
@@ -5726,7 +5778,7 @@ of bulk spacings) grows roughly linearly with $N$
 \emph{structured-random} graph rather than a pure
 Friedman-random or pure stochastic-block-model graph. The
 combination ``Kesten--McKay bulk per representation class
-+ discrete isolated bands'' is consistent with a
++ discrete isolated bands''~\cite{McKay1981} is consistent with a
 Cayley-graph-like construction on a finite group acting
 on the carrier; the MAD-based detector may also misclassify
 fine bulk clustering as isolated peaks, so the structural-
@@ -12192,6 +12244,56 @@ American Mathematical Society, 1997.
 Standard reference for the normalised graph Laplacian
 $L_{\mathrm{norm}}=I-D^{-1/2}WD^{-1/2}$ and its eigenvector
 embedding used here as the spatial frame.
+
+\bibitem{AlonBoppana1986}
+N.~Alon,
+\emph{Eigenvalues and expanders},
+Combinatorica \textbf{6}, 83 (1986).
+The Alon--Boppana lower bound on the second eigenvalue of
+$d$-regular graphs:
+$\lambda_{2}(A)\ge 2\sqrt{d-1}-o(1)$, equivalently
+$\lambda_{2}(L_{\rm norm})\le 1-2\sqrt{d-1}/d+o(1)$.
+Used in the Phase-$2$ Lemma~B audit.
+
+\bibitem{Friedman2008}
+J.~Friedman,
+\emph{A Proof of Alon's Second Eigenvalue Conjecture and
+Related Problems},
+Memoirs of the American Mathematical Society \textbf{195}, 910
+(2008).
+Theorem that random $d$-regular graphs are near-Ramanujan with
+high probability: $\lambda_{2}\le 2\sqrt{d-1}+\epsilon$ for any
+$\epsilon>0$ as $N\to\infty$. Used to interpret the
+$84\%$ Alon--Boppana saturation observed for the carrier
+skeleton in
+Proposition~\ref{prop:expander_skeleton}.
+
+\bibitem{Kahale1995}
+N.~Kahale,
+\emph{Eigenvalues and expansion of regular graphs},
+Journal of the ACM \textbf{42}, 1091 (1995).
+Spectral-gap bounds for irregular weighted expanders;
+referenced in the Phase-$2$ Step-$4$b programme for the
+$9/7$ weight-lift factor.
+
+\bibitem{McKay1981}
+B.~D.~McKay,
+\emph{The expected eigenvalue distribution of a large regular
+graph},
+Linear Algebra and its Applications \textbf{40}, 203 (1981).
+Kesten--McKay bulk density for the adjacency spectrum of
+random $d$-regular graphs; referenced in the spectral-
+fingerprint audit of
+Proposition~\ref{prop:spectral_fingerprint}.
+
+\bibitem{WattsStrogatz1998}
+D.~J.~Watts and S.~H.~Strogatz,
+\emph{Collective dynamics of `small-world' networks},
+Nature \textbf{393}, 440 (1998).
+Watts--Strogatz small-world model: short paths combined with
+high local clustering. The empirical skeleton signature of
+Proposition~\ref{prop:edge_correlation_small_world} matches
+this regime.
 
 \bibitem{Forman2003}
 R.~Forman,

@@ -1,0 +1,219 @@
+{
+  "headline": "Lemma B Phase-2 Step 4a pre-flight: edge-formation rule audit on the tau=0.10 skeleton. Tests whether the carrier-action produces Erd\u0151s-R\u00e9nyi-independent edge inclusions or correlated structured edges via triangle excess and global clustering coefficient.",
+  "method": "For each snapshot: skeleton A_skel = 1[Xi > 0.10]; p_edge = #edges / C(N,2); triangle count = trace(A^3)/6; expected_ER = C(N,3) p_edge^3; excess = obs / ER; clustering coefficient = 3 * triangles / triples. Per regime: cross-seed mean. AICc model selection (const vs Symanzik-1) for N-scaling.",
+  "tau_skeleton": 0.1,
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_seeds_loaded": 28,
+      "n_seeds_valid": 28,
+      "status": "OK",
+      "p_edge_mean": 0.370204081632653,
+      "p_edge_std": 0.05815643566272925,
+      "triangle_excess_ratio_mean": 1.1970866570900889,
+      "triangle_excess_ratio_std": 0.07864110189756116,
+      "global_clustering_coeff_mean": 0.4406586929581282,
+      "global_clustering_coeff_std": 0.04524994382588295,
+      "triangles_observed_mean": 1242.4642857142858,
+      "triangles_observed_std": 463.7811969854413,
+      "triangles_expected_ER_mean": 1063.2439127506395,
+      "triangles_expected_ER_std": 447.3826907678392
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_seeds_loaded": 24,
+      "n_seeds_valid": 24,
+      "status": "OK",
+      "p_edge_mean": 0.2646742724867725,
+      "p_edge_std": 0.06887691364483348,
+      "triangle_excess_ratio_mean": 1.3853215091691595,
+      "triangle_excess_ratio_std": 0.17834832448519028,
+      "global_clustering_coeff_mean": 0.35729723161522875,
+      "global_clustering_coeff_std": 0.05458464231210029,
+      "triangles_observed_mean": 1179.5833333333333,
+      "triangles_observed_std": 688.0820803329806,
+      "triangles_expected_ER_mean": 920.6256183310194,
+      "triangles_expected_ER_std": 612.573685920459
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "n_seeds_loaded": 24,
+      "n_seeds_valid": 24,
+      "status": "OK",
+      "p_edge_mean": 0.24246870109546168,
+      "p_edge_std": 0.0467016621382745,
+      "triangle_excess_ratio_mean": 1.4089939055225276,
+      "triangle_excess_ratio_std": 0.1308508292604479,
+      "global_clustering_coeff_mean": 0.33911974838816356,
+      "global_clustering_coeff_std": 0.04169822737123843,
+      "triangles_observed_mean": 1268.0416666666667,
+      "triangles_observed_std": 530.3872645174645,
+      "triangles_expected_ER_mean": 936.0585772539658,
+      "triangles_expected_ER_std": 444.8142303061958
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "n_seeds_loaded": 24,
+      "n_seeds_valid": 24,
+      "status": "OK",
+      "p_edge_mean": 0.20367183017785426,
+      "p_edge_std": 0.04435363663544289,
+      "triangle_excess_ratio_mean": 1.5505709801003376,
+      "triangle_excess_ratio_std": 0.17058536015031042,
+      "global_clustering_coeff_mean": 0.3111471011972433,
+      "global_clustering_coeff_std": 0.03759509610884263,
+      "triangles_observed_mean": 1334.0833333333333,
+      "triangles_observed_std": 650.7779903727716,
+      "triangles_expected_ER_mean": 911.9470017737261,
+      "triangles_expected_ER_std": 514.3479131134451
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds_loaded": 24,
+      "n_seeds_valid": 24,
+      "status": "OK",
+      "p_edge_mean": 0.161489898989899,
+      "p_edge_std": 0.03896628621837209,
+      "triangle_excess_ratio_mean": 1.810168512418184,
+      "triangle_excess_ratio_std": 0.25139581869238725,
+      "global_clustering_coeff_mean": 0.28496908720771513,
+      "global_clustering_coeff_std": 0.030150649183886002,
+      "triangles_observed_mean": 1318.3333333333333,
+      "triangles_observed_std": 735.9844437549448,
+      "triangles_expected_ER_mean": 796.7225796109242,
+      "triangles_expected_ER_std": 551.2652033883755
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "n_seeds_loaded": 12,
+      "n_seeds_valid": 12,
+      "status": "OK",
+      "p_edge_mean": 0.08527107939632546,
+      "p_edge_std": 0.01664574505208393,
+      "triangle_excess_ratio_mean": 2.514759064478157,
+      "triangle_excess_ratio_std": 0.23446909957055345,
+      "global_clustering_coeff_mean": 0.2161305573299814,
+      "global_clustering_coeff_std": 0.024948688271080408,
+      "triangles_observed_mean": 566.1666666666666,
+      "triangles_observed_std": 307.6618076375225,
+      "triangles_expected_ER_mean": 235.2834547961576,
+      "triangles_expected_ER_std": 157.34949005324276
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_seeds_loaded": 8,
+      "n_seeds_valid": 8,
+      "status": "OK",
+      "p_edge_mean": 0.07581658291457287,
+      "p_edge_std": 0.013274316975001798,
+      "triangle_excess_ratio_mean": 2.9943428853045404,
+      "triangle_excess_ratio_std": 0.36640722951579663,
+      "global_clustering_coeff_mean": 0.22372205018489594,
+      "global_clustering_coeff_std": 0.010853588274380458,
+      "triangles_observed_mean": 1747.0,
+      "triangles_observed_std": 736.3221344726,
+      "triangles_expected_ER_mean": 621.5066312214337,
+      "triangles_expected_ER_std": 374.7211854471294
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_seeds_loaded": 12,
+      "n_seeds_valid": 12,
+      "status": "OK",
+      "p_edge_mean": 0.05127655228758169,
+      "p_edge_std": 0.010935087710051854,
+      "triangle_excess_ratio_mean": 3.9215286657415986,
+      "triangle_excess_ratio_std": 0.38901633515057954,
+      "global_clustering_coeff_mean": 0.20080310150309968,
+      "global_clustering_coeff_std": 0.027588947378759176,
+      "triangles_observed_mean": 1569.75,
+      "triangles_observed_std": 706.6360931779653,
+      "triangles_expected_ER_mean": 416.873108490028,
+      "triangles_expected_ER_std": 217.26316599396498
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_seeds_loaded": 12,
+      "n_seeds_valid": 12,
+      "status": "OK",
+      "p_edge_mean": 0.04843924191750279,
+      "p_edge_std": 0.009057580114897936,
+      "triangle_excess_ratio_mean": 4.285686477517909,
+      "triangle_excess_ratio_std": 0.5929644606463146,
+      "global_clustering_coeff_mean": 0.2038224615463425,
+      "global_clustering_coeff_std": 0.00918161250516567,
+      "triangles_observed_mean": 2219.4166666666665,
+      "triangles_observed_std": 923.1163088673982,
+      "triangles_expected_ER_mean": 556.1065617661912,
+      "triangles_expected_ER_std": 316.94089348706353
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_seeds_loaded": 12,
+      "n_seeds_valid": 12,
+      "status": "OK",
+      "p_edge_mean": 0.02369039974722766,
+      "p_edge_std": 0.007117309780708685,
+      "triangle_excess_ratio_mean": 7.330197991288064,
+      "triangle_excess_ratio_std": 1.1078704599050666,
+      "global_clustering_coeff_mean": 0.17169386923975472,
+      "global_clustering_coeff_std": 0.026265994620196676,
+      "triangles_observed_mean": 2435.8333333333335,
+      "triangles_observed_std": 1744.5560953139254,
+      "triangles_expected_ER_mean": 373.4010383813239,
+      "triangles_expected_ER_std": 335.01384845422075
+    }
+  ],
+  "scaling_fits": {
+    "p_edge": {
+      "const": {
+        "c": 0.1527002640645851,
+        "AICc": -41.8257670845004
+      },
+      "symanzik_1": {
+        "c_inf": -0.025175335947462258,
+        "a": 19.039633095253983,
+        "AICc": -79.23800670734438
+      },
+      "preferred": "symanzik_1",
+      "asymptote": -0.025175335947462258
+    },
+    "triangle_excess_ratio": {
+      "const": {
+        "c": 2.8398656648630567,
+        "AICc": 14.4807767682445
+      },
+      "symanzik_1": {
+        "c_inf": 5.306199819896074,
+        "a": -263.99403515120406,
+        "AICc": 6.375477056995513
+      },
+      "preferred": "symanzik_1",
+      "asymptote": 5.306199819896074
+    },
+    "global_clustering_coeff": {
+      "const": {
+        "c": 0.27493639011705534,
+        "AICc": -47.54580382470898
+      },
+      "symanzik_1": {
+        "c_inf": 0.1421177105817577,
+        "a": 14.2167836756526,
+        "AICc": -79.69614136174472
+      },
+      "preferred": "symanzik_1",
+      "asymptote": 0.1421177105817577
+    }
+  },
+  "verdict": "CORRELATED \u2014 strong triangle excess (5.31) or clustering (0.142); structured edge formation"
+}
