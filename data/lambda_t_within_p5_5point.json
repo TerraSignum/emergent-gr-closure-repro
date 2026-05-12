@@ -1,0 +1,83 @@
+{
+  "method": "within_P5_5point_symanzik2_lambda_t",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "N",
+      "n_seeds_per_N",
+      "mean_per_N"
+    ],
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "ladder": {
+    "N": [
+      50,
+      64,
+      72,
+      84,
+      100
+    ],
+    "n_seeds_per_N": [
+      28,
+      24,
+      24,
+      24,
+      24
+    ],
+    "mean_per_N": [
+      0.8712252283544256,
+      0.8548431132828659,
+      0.8401786981440195,
+      0.8383391914133815,
+      0.8317892689872274
+    ]
+  },
+  "symanzik2_fit_on_means": {
+    "y_inf": 0.818415434082442,
+    "c2": 133.76249779479048,
+    "r2": 0.968073293596801
+  },
+  "bootstrap_5000": {
+    "n_boot_valid": 5000,
+    "median": 0.8184372596318106,
+    "CI95": [
+      0.8058583283311127,
+      0.829642420855186
+    ],
+    "CI68": [
+      0.8123605520216821,
+      0.8243910653859361
+    ],
+    "c2_median": 132.217880715398
+  },
+  "targets_in_CI95": {
+    "alpha_xi_sq_algebraic_0.81": true,
+    "alpha_xi_sq_measured_0.811475": true,
+    "alpha_xi_sq_minus_half_gamma_sq_0.805": false,
+    "alpha_xi_sq_plus_gamma_sq_0.82": true
+  },
+  "targets_in_CI68": {
+    "alpha_xi_sq_algebraic_0.81": false,
+    "alpha_xi_sq_measured_0.811475": false,
+    "alpha_xi_sq_minus_half_gamma_sq_0.805": false,
+    "alpha_xi_sq_plus_gamma_sq_0.82": true
+  },
+  "comparison_to_7point_fit": {
+    "asymptote_median_7pt": 0.811742741607193,
+    "CI95_7pt": [
+      0.801092781932126,
+      0.8226373790033402
+    ],
+    "ladder_7pt_N": [
+      50,
+      64,
+      72,
+      84,
+      100,
+      200,
+      300
+    ]
+  },
+  "purpose": "Within-regime canonical-configuration ladder (N<=100) Symanzik fit on Lambda_t. The 5-point fit is orthogonal to the 7-point fit by restricting to uniformly-configured runs and excluding the snapshot-source large-N tail."
+}

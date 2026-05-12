@@ -1,0 +1,268 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "per_component": {
+    "absorption": {
+      "free_powerlaw": {
+        "model": "free_powerlaw",
+        "n_params": 3,
+        "alpha": 1.7171836569031087,
+        "prefactor": 2144.53724425014,
+        "gap_inf": 0.5137480973781337,
+        "rss": 0.007825467201737931,
+        "n_points": 9,
+        "AICc": -52.62836773843892,
+        "BIC": -56.83669400643026
+      },
+      "symanzik_2plus4": {
+        "model": "symanzik_2plus4",
+        "n_params": 3,
+        "gap_inf": 0.5114041327974365,
+        "c_2": 47281.07091466,
+        "c_4": -5914550209.216389,
+        "rss": 0.0076671969562552705,
+        "n_points": 9,
+        "AICc": -52.81225886917906,
+        "BIC": -57.0205851371704
+      },
+      "symanzik_2": {
+        "model": "symanzik_2",
+        "n_params": 2,
+        "gap_inf": 0.5143876035822765,
+        "c_2": 11657.420905045223,
+        "rss": 0.007839556209947003,
+        "n_points": 9,
+        "AICc": -57.41217866489088,
+        "BIC": -59.017729510218444
+      },
+      "best_by_AICc": "symanzik_2",
+      "bootstrap_on_best": {
+        "n_resamples": 2000,
+        "median": 0.5136711031911878,
+        "CI95": [
+          0.4879619239211306,
+          0.5397654271596372
+        ],
+        "std": 0.013168371860801291
+      }
+    },
+    "locality": {
+      "free_powerlaw": {
+        "model": "free_powerlaw",
+        "n_params": 3,
+        "alpha": 1.6880994827068367,
+        "prefactor": 1822.4776547518322,
+        "gap_inf": 0.5409263220318332,
+        "rss": 0.008694918557259509,
+        "n_points": 9,
+        "AICc": -51.68016967656267,
+        "BIC": -55.88849594455401
+      },
+      "symanzik_2plus4": {
+        "model": "symanzik_2plus4",
+        "n_params": 3,
+        "gap_inf": 0.5385062991981806,
+        "c_2": 49472.2678503149,
+        "c_4": -6256995961.4795685,
+        "rss": 0.008519983045688951,
+        "n_points": 9,
+        "AICc": -51.863089548795514,
+        "BIC": -56.07141581678685
+      },
+      "symanzik_2": {
+        "model": "symanzik_2",
+        "n_params": 2,
+        "gap_inf": 0.5416625095593433,
+        "c_2": 11786.048888813752,
+        "rss": 0.008712878906438242,
+        "n_points": 9,
+        "AICc": -56.4615983207893,
+        "BIC": -58.06714916611686
+      },
+      "best_by_AICc": "symanzik_2",
+      "bootstrap_on_best": {
+        "n_resamples": 2000,
+        "median": 0.5410737860303244,
+        "CI95": [
+          0.5139438572814164,
+          0.5682423544204128
+        ],
+        "std": 0.01385829366228375
+      }
+    },
+    "density": {
+      "free_powerlaw": {
+        "model": "free_powerlaw",
+        "n_params": 3,
+        "alpha": 1.6082562685192527,
+        "prefactor": 846.6364163591365,
+        "gap_inf": 0.6510540510446137,
+        "rss": 0.005197362222316909,
+        "n_points": 9,
+        "AICc": -56.31145761935174,
+        "BIC": -60.51978388734308
+      },
+      "symanzik_2plus4": {
+        "model": "symanzik_2plus4",
+        "n_params": 3,
+        "gap_inf": 0.6492096500795294,
+        "c_2": 39872.89548743793,
+        "c_4": -5156279154.725178,
+        "rss": 0.005083253456887656,
+        "n_points": 9,
+        "AICc": -56.51125519910087,
+        "BIC": -60.71958146709221
+      },
+      "symanzik_2": {
+        "model": "symanzik_2",
+        "n_params": 2,
+        "gap_inf": 0.6518106269370174,
+        "c_2": 8816.352307945945,
+        "rss": 0.0052142512568902006,
+        "n_points": 9,
+        "AICc": -61.08225917767223,
+        "BIC": -62.68781002299979
+      },
+      "best_by_AICc": "symanzik_2",
+      "bootstrap_on_best": {
+        "n_resamples": 2000,
+        "median": 0.6513331640468761,
+        "CI95": [
+          0.6296438688771968,
+          0.6719301093754566
+        ],
+        "std": 0.010728961703607726
+      }
+    },
+    "spectral": {
+      "free_powerlaw": {
+        "model": "free_powerlaw",
+        "n_params": 3,
+        "alpha": 1.5667698401694703,
+        "prefactor": 441.11556722021066,
+        "gap_inf": 0.6815822539825667,
+        "rss": 0.00239052559822842,
+        "n_points": 9,
+        "AICc": -63.3011993907847,
+        "BIC": -67.50952565877604
+      },
+      "symanzik_2plus4": {
+        "model": "symanzik_2plus4",
+        "n_params": 3,
+        "gap_inf": 0.6804672063223856,
+        "c_2": 26178.475277975853,
+        "c_4": -3369633623.165334,
+        "rss": 0.0023436378204855727,
+        "n_points": 9,
+        "AICc": -63.47947958988068,
+        "BIC": -67.68780585787202
+      },
+      "symanzik_2": {
+        "model": "symanzik_2",
+        "n_params": 2,
+        "gap_inf": 0.6821669473195411,
+        "c_2": 5882.993017089633,
+        "rss": 0.0023995822082180296,
+        "n_points": 9,
+        "AICc": -68.0671669262455,
+        "BIC": -69.67271777157306
+      },
+      "best_by_AICc": "symanzik_2",
+      "bootstrap_on_best": {
+        "n_resamples": 2000,
+        "median": 0.6816618367385242,
+        "CI95": [
+          0.6673476551831015,
+          0.6959328085753989
+        ],
+        "std": 0.007306412853103915
+      }
+    },
+    "variational": {
+      "free_powerlaw": {
+        "model": "free_powerlaw",
+        "n_params": 3,
+        "alpha": 1.1365843447748991,
+        "prefactor": 70.68448728211803,
+        "gap_inf": 0.4828492424688128,
+        "rss": 0.0089729426458999,
+        "n_points": 9,
+        "AICc": -51.396895618885914,
+        "BIC": -55.60522188687725
+      },
+      "symanzik_2plus4": {
+        "model": "symanzik_2plus4",
+        "n_params": 3,
+        "gap_inf": 0.48099750858724033,
+        "c_2": 84142.52369363731,
+        "c_4": -11976670447.508877,
+        "rss": 0.008495830559089503,
+        "n_points": 9,
+        "AICc": -51.88863902064878,
+        "BIC": -56.09696528864012
+      },
+      "symanzik_2": {
+        "model": "symanzik_2",
+        "n_params": 2,
+        "gap_inf": 0.48703888876257406,
+        "c_2": 12006.401552393467,
+        "rss": 0.009202576557642086,
+        "n_points": 9,
+        "AICc": -55.969467157737704,
+        "BIC": -57.57501800306527
+      },
+      "best_by_AICc": "symanzik_2",
+      "bootstrap_on_best": {
+        "n_resamples": 2000,
+        "median": 0.48581472223731903,
+        "CI95": [
+          0.45623084532467656,
+          0.5109372715917341
+        ],
+        "std": 0.014179795177897437
+      }
+    }
+  },
+  "joint_shared_alpha": {
+    "model": "joint_shared_alpha",
+    "alpha_shared": 1.515448544721542,
+    "n_params": 11,
+    "n_points_total": 45,
+    "per_component": {
+      "absorption": {
+        "gap_inf": 0.5130644931553756,
+        "prefactor": 640.530420372097,
+        "rss": 0.007838111708291785
+      },
+      "density": {
+        "gap_inf": 0.6507872957288425,
+        "prefactor": 485.87813274234554,
+        "rss": 0.0051990303832895705
+      },
+      "locality": {
+        "gap_inf": 0.540316789439603,
+        "prefactor": 648.1113946387684,
+        "rss": 0.008704613280518622
+      },
+      "spectral": {
+        "gap_inf": 0.6814792555156748,
+        "prefactor": 324.52798419854275,
+        "rss": 0.0023907504931280055
+      },
+      "variational": {
+        "gap_inf": 0.48550009243200726,
+        "prefactor": 670.9896468319669,
+        "rss": 0.009047785877488612
+      }
+    },
+    "total_rss": 0.0331802917427166,
+    "AICc": -294.5607761085345,
+    "BIC": -282.687488721061
+  },
+  "joint_vs_individual_AICc_delta": 3.274414451715984,
+  "joint_vs_individual_BIC_delta": 3.551665176780432,
+  "verdict": "INDIVIDUAL_PREFERRED_AICc>+2"
+}

@@ -1,0 +1,11 @@
+{
+  "criterion": "Emergent-time + Lorentz-signature recompute",
+  "lorentz_signature_DERIVED": true,
+  "time_dilation_DERIVED": true,
+  "macroscopic_time_rate_DERIVED": true,
+  "irreversibility_channels_count": 5,
+  "irreversibility_total_pct": 100.10000000000001,
+  "Gamow_channel_dominates": true,
+  "fitted_parameters": 0,
+  "verdict": "PASS"
+}

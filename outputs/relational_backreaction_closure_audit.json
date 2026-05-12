@@ -1,0 +1,248 @@
+{
+  "method": "relational_backreaction_kappa_train_holdout",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "form": "G_00(a) = (1 - kappa_t) * T_00(a)",
+  "global_kappa_t": 0.9870000000000001,
+  "per_regime_kappa": [
+    {
+      "regime": "P1",
+      "N": 28,
+      "kappa_optimal": 0.9420000000000002,
+      "is_train": true
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "kappa_optimal": 0.9510000000000001,
+      "is_train": true
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "kappa_optimal": 0.9590000000000001,
+      "is_train": true
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "kappa_optimal": 0.9740000000000001,
+      "is_train": true
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "kappa_optimal": 0.9730000000000001,
+      "is_train": true
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "kappa_optimal": 0.9850000000000001,
+      "is_train": true
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "kappa_optimal": 0.9820000000000001,
+      "is_train": true
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "kappa_optimal": 0.9860000000000001,
+      "is_train": true
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "kappa_optimal": 0.9900000000000001,
+      "is_train": true
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "kappa_optimal": 0.9910000000000001,
+      "is_train": true
+    },
+    {
+      "regime": "P6N128",
+      "N": 128,
+      "kappa_optimal": 0.9880000000000001,
+      "is_train": false
+    },
+    {
+      "regime": "P8N128",
+      "N": 128,
+      "kappa_optimal": 0.9900000000000001,
+      "is_train": false
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "kappa_optimal": 0.9700000000000001,
+      "is_train": false
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "kappa_optimal": 0.9760000000000001,
+      "is_train": false
+    }
+  ],
+  "train_kappa_mean": 0.9733,
+  "train_kappa_std": 0.016272983746074342,
+  "train_kappa_CV_percent": 1.671939149910032,
+  "holdout_kappa_mean": 0.9810000000000001,
+  "delta_00_back_per_regime": [
+    {
+      "regime": "P1",
+      "N": 28,
+      "subset": "train",
+      "delta_00_back_median": 0.041897318737615596,
+      "delta_00_back_mean": 0.04422464512678142,
+      "delta_00_back_p90": 0.06083521326391225,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "subset": "train",
+      "delta_00_back_median": 0.03799404592542309,
+      "delta_00_back_mean": 0.05676722109513261,
+      "delta_00_back_p90": 0.0995926363312692,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "subset": "train",
+      "delta_00_back_median": 0.02722872142874675,
+      "delta_00_back_mean": 0.03597304014871191,
+      "delta_00_back_p90": 0.04299793761738525,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "subset": "train",
+      "delta_00_back_median": 0.016411159192493294,
+      "delta_00_back_mean": 0.018908660728347286,
+      "delta_00_back_p90": 0.03589377078506781,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "subset": "train",
+      "delta_00_back_median": 0.016473032006950557,
+      "delta_00_back_mean": 0.01740242612736667,
+      "delta_00_back_p90": 0.03184232243822254,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "subset": "train",
+      "delta_00_back_median": 0.004792093127686138,
+      "delta_00_back_mean": 0.00691924860506007,
+      "delta_00_back_p90": 0.016118542629222823,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "subset": "train",
+      "delta_00_back_median": 0.006469456933839191,
+      "delta_00_back_mean": 0.011209473547925314,
+      "delta_00_back_p90": 0.02645833001783484,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "subset": "train",
+      "delta_00_back_median": 0.004541695985557983,
+      "delta_00_back_mean": 0.007259406282062035,
+      "delta_00_back_p90": 0.01689753835814882,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "subset": "train",
+      "delta_00_back_median": 0.003640679886659049,
+      "delta_00_back_mean": 0.004849866238881605,
+      "delta_00_back_p90": 0.008679673432301105,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "subset": "train",
+      "delta_00_back_median": 0.004450616779357364,
+      "delta_00_back_mean": 0.006191908132866266,
+      "delta_00_back_p90": 0.01093601322453726,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P6N128",
+      "N": 128,
+      "subset": "holdout",
+      "delta_00_back_median": 0.003685555493486865,
+      "delta_00_back_mean": 0.0059591540430456,
+      "delta_00_back_p90": 0.011966441474820755,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P8N128",
+      "N": 128,
+      "subset": "holdout",
+      "delta_00_back_median": 0.0038779017756516874,
+      "delta_00_back_mean": 0.005775948225926445,
+      "delta_00_back_p90": 0.010843562088830068,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "subset": "holdout",
+      "delta_00_back_median": 0.020189535356165945,
+      "delta_00_back_mean": 0.023824007311709923,
+      "delta_00_back_p90": 0.04353614074946576,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "subset": "holdout",
+      "delta_00_back_median": 0.009963189131453266,
+      "delta_00_back_mean": 0.013661654652167218,
+      "delta_00_back_p90": 0.026368564674615652,
+      "median_passes_0p05": true,
+      "mean_passes_0p10": true
+    }
+  ],
+  "tail_lift_p90_kappa_zero": 0.9840744077462468,
+  "tail_lift_p90_kappa_global": 0.03274582282035278,
+  "DoD_criteria_pass_count": 6,
+  "DoD_criteria_total": 6,
+  "verdict": "RELATIONAL_BACKREACTION_THEOREM_VERIFIED"
+}

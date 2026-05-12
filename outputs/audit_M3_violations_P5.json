@@ -1,0 +1,61 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Topology / vortex / triangle-phase diagnostic; algebraic discrete-Wilson-loop / homology test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "regime": "P5",
+  "N": 50,
+  "n_seeds": 4,
+  "definitions": {
+    "raw_count_rate": "fraction of off-diagonal triples with Xi_ij * Xi_jk > Xi_ik + tol",
+    "significant_count_rate": "same, with absolute slack > 0.05",
+    "penalty_residual_L2": "sqrt(sum max(0, slack)^2 / n^3) -- gradient-flow penalty",
+    "penalty_residual_max": "max slack value across all valid triples"
+  },
+  "pre_stabilisation": {
+    "raw_count_rate": [
+      0.07723639455782313,
+      0.0016731833240927374
+    ],
+    "significant_count_rate": [
+      0.011407312925170067,
+      0.0002992846976254772
+    ],
+    "penalty_residual_L2": [
+      0.024732411632388592,
+      0.0022836459193027337
+    ],
+    "penalty_residual_max": [
+      0.7010594215879956,
+      0.10463229819182888
+    ]
+  },
+  "post_stabilisation": {
+    "raw_count_rate": [
+      0.16208333333333333,
+      0.0030787832594162483
+    ],
+    "significant_count_rate": [
+      0.03677721088435374,
+      0.0076546719771275265
+    ],
+    "penalty_residual_L2": [
+      0.020156352893253453,
+      0.0029254220999649964
+    ],
+    "penalty_residual_max": [
+      0.3119049684769584,
+      0.05999677256484727
+    ]
+  },
+  "documented_band_significant_pre": [
+    0.03,
+    0.05
+  ],
+  "documented_band_significant_post": [
+    0.0,
+    0.005
+  ],
+  "documented_penalty_bound_post": 0.07
+}

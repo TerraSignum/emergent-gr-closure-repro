@@ -1,0 +1,35 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Gravity / black-hole observable; matter-side per Einstein-eq source coupling",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Black-hole horizon threshold. Defect compactness C = r_s / r_core controls whether the relational defect is in the BH state. Both canonical regimes P1 and P2' satisfy C >> 1 with a small core ratio r_core/r_s well inside the horizon, so both register as compactness-transitioned BLACK_HOLE states.",
+  "definitions": {
+    "C": "compactness = r_schwarzschild / r_core",
+    "is_BH": "True if r_core <= r_s and the full Schwarzschild metric is reproduced inside r_s"
+  },
+  "canonical": {
+    "compactness_lattice": 9.579836,
+    "r_schwarzschild_lu": 5.918645,
+    "r_core_lu": 0.1544558,
+    "r_core_over_r_s": 0.026096,
+    "compression_to_BH": 38.3193,
+    "r_schwarzschild_m": 1.6337169261184894e-33,
+    "is_black_hole": true,
+    "compactness_status": "BLACK_HOLE"
+  },
+  "extended": {
+    "compactness_lattice": 10.492609,
+    "r_schwarzschild_lu": 6.586877,
+    "r_core_lu": 0.15694087,
+    "r_core_over_r_s": 0.023826,
+    "compression_to_BH": 41.9704,
+    "r_schwarzschild_m": 1.5662678112981593e-33,
+    "is_black_hole": true,
+    "compactness_status": "BLACK_HOLE"
+  },
+  "framing": "The horizon condition is a compactness transition of a relational defect, not an imposed GR horizon. The two regimes pass independently with sub-percent core/horizon ratios."
+}

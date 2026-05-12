@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+*.egg-info/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs (regenerable)
+outputs/recompute_gr_summary.json
+outputs/gap_comparison_table.json
+outputs/gap_comparison_table.csv

@@ -1,0 +1,102 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "title": "Nine-point curvature-side and topological-witness ladders for Einstein-gap exponent alpha = 2/3",
+  "lattice_ladder": {
+    "N_values": [
+      18,
+      28,
+      30,
+      36,
+      42,
+      50,
+      60,
+      72,
+      84
+    ],
+    "regime_labels": [
+      "P0",
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ]
+  },
+  "primary_curvature_side_witness": {
+    "observable": "mean_ricci_scalar_R_bar",
+    "source": "h3c_vollausbau lattice run; R_bar aggregate from per-regime A2-npz",
+    "values": [
+      0.17,
+      0.145,
+      0.163,
+      0.145,
+      0.117,
+      0.111,
+      0.07,
+      0.067,
+      0.049
+    ],
+    "monotonic_decreases": "7 of 8 sequential pairs strictly decreasing",
+    "fit_alpha_2_over_3_full_9": {
+      "Rbar_infty": -0.004,
+      "r2_loglog": 0.83
+    },
+    "fit_alpha_2_over_3_skip_N18": {
+      "Rbar_infty": -0.046,
+      "r2_loglog": 0.93
+    },
+    "loo_alpha_2_over_3_range": [
+      -0.046,
+      0.01
+    ],
+    "DoD_threshold": 0.05,
+    "verdict": "load_bearing_curvature_side_witness"
+  },
+  "secondary_topological_witness": {
+    "observable": "chirality_balance_deviation",
+    "source": "h3c_vollausbau/src/chirality_multi_n.py reproducing src/worldformula/physics/real_xi_observable_cp_locking.py:331-344",
+    "values": [
+      0.069,
+      0.065,
+      0.069,
+      0.072,
+      0.063,
+      0.052,
+      0.028,
+      0.05,
+      0.037
+    ],
+    "fit_alpha_2_over_3_full_9": {
+      "Delta_infty": 0.022,
+      "r2_loglog": 0.55
+    },
+    "fit_alpha_2_over_3_skip_N18": {
+      "Delta_infty": 0.006,
+      "r2_loglog": 0.65
+    },
+    "verdict": "topological_index_witness_heuristically_bridged_to_DeltaE"
+  },
+  "reviewer_hedging": {
+    "interpretation": "Both ladders are indirect witnesses tied to Delta_E by the curvature/chirality bridge; they are not pointwise tensor-residual identifications.",
+    "free_fit_caveat": "Power-law fits without a fixed alpha do not uniquely select alpha=2/3; the value alpha=2/3 is fixed analytically by Theorem 15.18 P2.",
+    "skip_N18_caveat": "N=18 is a finite-size boundary regime; skip-N18 variants improve R^2 but introduce a finite-size selection.",
+    "chirality_bridge_status": "Empirically established: Pearson r(chirality_dev, R_bar) = 0.89, r^2 = 0.80 across all 9 regimes; robust to skip-N=18 (r=0.89, r^2=0.79). Linear regression: chirality_dev = 0.31 * R_bar + 0.02. The Atiyah-Singer-type formal index theorem on emergent geometry that would turn this empirical correlation into an analytic identity is future work."
+  },
+  "chirality_curvature_correlation": {
+    "Pearson_r_full_9": 0.8923,
+    "Pearson_r_squared_full_9": 0.7961,
+    "Pearson_r_skip_N18": 0.8878,
+    "Pearson_r_squared_skip_N18": 0.7883,
+    "linear_regression_slope": 0.3108,
+    "linear_regression_intercept": 0.0203,
+    "interpretation": "Chirality-deviation tracks ~31% of the Ricci-scalar amplitude across the 9-point ladder, with a small positive intercept ~0.02 consistent with a distinct topological floor; the correlation r=0.89 is the empirical content of the chirality-curvature bridge."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "method": "per_channel_bootstrap_CI",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "n_boot": 2000,
+  "channels": {
+    "Lambda_t": {
+      "n_resamples": 2000,
+      "asymptote_median": 0.8055817677184318,
+      "asymptote_CI95": [
+        0.7630245760324985,
+        0.8664847757281401
+      ],
+      "decay_exponent_median": 0.08589158041889774,
+      "decay_exponent_CI95": [
+        0.030692115665743463,
+        0.15693559800557366
+      ],
+      "system_R_prediction": 0.81,
+      "prediction_in_CI": true
+    },
+    "3|Lambda_s|": {
+      "n_resamples": 2000,
+      "asymptote_median": -0.03368634884876667,
+      "asymptote_CI95": [
+        -0.32580614234567684,
+        0.3045752851778959
+      ],
+      "decay_exponent_median": 2.274286771197171,
+      "decay_exponent_CI95": [
+        1.6836348929985039,
+        2.714009214357237
+      ],
+      "system_R_prediction": 0.015000000000000003,
+      "prediction_in_CI": true
+    },
+    "shear": {
+      "n_resamples": 2000,
+      "asymptote_median": 0.001227526074516481,
+      "asymptote_CI95": [
+        -0.0018822879624852214,
+        0.005634937810996048
+      ],
+      "decay_exponent_median": 1.3935447067013602,
+      "decay_exponent_CI95": [
+        1.2212517299718297,
+        1.6367093186748751
+      ],
+      "system_R_prediction": 0.0,
+      "prediction_in_CI": true
+    },
+    "anisotropy": {
+      "n_resamples": 2000,
+      "asymptote_median": -0.028865472255954955,
+      "asymptote_CI95": [
+        -0.22559724034318235,
+        0.20375714616735935
+      ],
+      "decay_exponent_median": 2.2625456928357943,
+      "decay_exponent_CI95": [
+        1.6877101355897997,
+        2.6998690679152744
+      ],
+      "system_R_prediction": 0.0,
+      "prediction_in_CI": true
+    }
+  },
+  "verdict": "ALL_FOUR_CHANNELS_BOOTSTRAP_CONSISTENT_WITH_SYSTEM_R"
+}

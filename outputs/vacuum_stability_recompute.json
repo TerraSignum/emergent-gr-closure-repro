@@ -1,0 +1,12 @@
+{
+  "criterion": "Vacuum-stability + reheating recompute",
+  "all_regimes_absolutely_stable": true,
+  "n_regimes_checked": 3,
+  "B_infinite_in_all_regimes": true,
+  "T_RH_ratio": 1.021,
+  "T_RH_PRECISE": true,
+  "Gamma_grav_GeV": 1890000000000000.0,
+  "T_RH_GeV": 6.61e+16,
+  "fitted_parameters": 0,
+  "verdict": "PASS"
+}

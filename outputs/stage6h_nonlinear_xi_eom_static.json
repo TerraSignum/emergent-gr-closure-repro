@@ -1,0 +1,83 @@
+{
+  "method": "stage6h_nonlinear_xi_eom_static_shooting",
+  "branch_metadata": {
+    "causal_wave_branch": "vacuum",
+    "branch_rationale": "Lepton/quark mass or CP-mixing observable; vacuum-QFT-anchored",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "action_coefficients": {
+    "zeta_1": 1.0,
+    "zeta_3": 0.5,
+    "omega_0": 0.83996,
+    "a_K": 0.55,
+    "a_Q": 0.45,
+    "m_Xi_sq": 0.1
+  },
+  "test_parameters": {
+    "GM": 1.0,
+    "m_Xi": 0.31622776601683794,
+    "r_S": 2.0,
+    "r_core_over_rS": 0.5,
+    "R_inf_over_rS": 100.0,
+    "n_r_grid": 200
+  },
+  "weak_field_deviations": {
+    "median_dev_vs_lin": 0.07507591775906677,
+    "max_dev_vs_lin": 0.758574991751472,
+    "median_dev_vs_yukawa_corrected_lin": 2.114081801143719e-06,
+    "max_dev_vs_yukawa_corrected_lin": 0.03946894997902567
+  },
+  "samples": [
+    {
+      "r_over_rS": 1.4895379112961247,
+      "Xi_full": 0.8036681759141505,
+      "Xi_lin": 0.328650857144114,
+      "Xi_yuk": 0.7382937107338925,
+      "rel_dev_vs_lin": 1.445355484229699,
+      "rel_dev_vs_yuk": 0.08854804562167173
+    },
+    {
+      "r_over_rS": 1.9963844297962117,
+      "Xi_full": 0.8945858360992399,
+      "Xi_lin": 0.49909447044621624,
+      "Xi_yuk": 0.8582885223803847,
+      "rel_dev_vs_lin": 0.7924178468646106,
+      "rel_dev_vs_yuk": 0.04229034033705586
+    },
+    {
+      "r_over_rS": 4.93611168279485,
+      "Xi_full": 0.9933875366157152,
+      "Xi_lin": 0.7974113909363989,
+      "Xi_yuk": 0.9910709837545065,
+      "rel_dev_vs_lin": 0.24576542034241805,
+      "rel_dev_vs_yuk": 0.0023374237558977003
+    },
+    {
+      "r_over_rS": 10.129430453180056,
+      "Xi_full": 0.9998793015980385,
+      "Xi_lin": 0.9012777663441031,
+      "Xi_yuk": 0.999837016146341,
+      "rel_dev_vs_lin": 0.10940193904249704,
+      "rel_dev_vs_yuk": 4.229234466680206e-05
+    },
+    {
+      "r_over_rS": 50.04525599663687,
+      "Xi_full": 0.9999999999999998,
+      "Xi_lin": 0.9800180860286297,
+      "Xi_yuk": 0.9999999999999997,
+      "rel_dev_vs_lin": 0.02038933184625566,
+      "rel_dev_vs_yuk": 1.110223024625157e-16
+    },
+    {
+      "r_over_rS": 100.00000000000001,
+      "Xi_full": 1.0,
+      "Xi_lin": 0.99,
+      "Xi_yuk": 1.0,
+      "rel_dev_vs_lin": 0.01010101010101011,
+      "rel_dev_vs_yuk": 0.0
+    }
+  ],
+  "closure_threshold": 0.1,
+  "verdict": "LINEARISED_DERIVATION_ROBUST_AT_WEAK_FIELD: max deviation < 0.10 for r > 2 r_S"
+}

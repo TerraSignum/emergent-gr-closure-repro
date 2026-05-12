@@ -1,0 +1,79 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Gravity / black-hole observable; matter-side per Einstein-eq source coupling",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Hawking-spectrum detail of the relational defect black hole. Distilled from outputs_black_hole_thermo/bht08_hawking_spectrum_detail.json (Bose/Fermi greybody-factor sweep at x=omega/T in {0.2, 0.5, 1, 1.5, 2, 3, 4, 5, 8}; Page energy-fractions; Hawking luminosity; evaporation time). Both regimes are bundled.",
+  "canonical": {
+    "T_hawking_GeV": 3.1450854492984847e+18,
+    "T_hawking_K": 3.6497144096384265e+31,
+    "M_BH_GeV": 1.1782365654065491e+58,
+    "r_S_m": 31201.692549353902,
+    "page_scalar_fraction": 0.165,
+    "page_fermion_fraction": 0.685,
+    "page_vector_fraction": 0.15,
+    "L_hawking_W": 8.308e+129,
+    "t_evap_s": 1.1e+25,
+    "t_evap_yr": 3.5e+17,
+    "spectrum_x_omega_over_T": [
+      {
+        "x": 0.2,
+        "n_bose": 4.516656,
+        "n_fermi": 0.450166
+      },
+      {
+        "x": 0.5,
+        "n_bose": 1.541494,
+        "n_fermi": 0.377541
+      },
+      {
+        "x": 1.0,
+        "n_bose": 0.581977,
+        "n_fermi": 0.268941
+      },
+      {
+        "x": 1.5,
+        "n_bose": 0.287217,
+        "n_fermi": 0.182426
+      },
+      {
+        "x": 2.0,
+        "n_bose": 0.156518,
+        "n_fermi": 0.119203
+      },
+      {
+        "x": 3.0,
+        "n_bose": 0.052396,
+        "n_fermi": 0.047426
+      },
+      {
+        "x": 4.0,
+        "n_bose": 0.018649,
+        "n_fermi": 0.017985
+      },
+      {
+        "x": 5.0,
+        "n_bose": 0.006783,
+        "n_fermi": 0.006693
+      },
+      {
+        "x": 8.0,
+        "n_bose": 0.000335,
+        "n_fermi": 0.000335
+      }
+    ]
+  },
+  "extended": {
+    "T_hawking_GeV": 3.43e+18,
+    "T_hawking_K": 3.98e+31,
+    "page_scalar_fraction": 0.165,
+    "page_fermion_fraction": 0.685,
+    "page_vector_fraction": 0.15,
+    "L_hawking_W": 7.55e+129
+  },
+  "framing": "The Hawking spectrum follows the standard Bose/Fermi distributions n(x) = 1/(e^x +/- 1) with greybody factors Gamma_l. The Page-curve scalar/fermion/vector fractions of the radiation energy are 16.5% / 68.5% / 15.0% respectively (consistent with the standard 4d greybody result). The evaporation time t_evap is parametrically much longer than the cosmological horizon time at the lattice's M_BH ~ 10^58 GeV; the bundled value is for traceability of the BHT-08 output.",
+  "spectrum_normalization": "n_bose = 1/(e^x - 1), n_fermi = 1/(e^x + 1) at unit greybody factor Gamma_l = 1. The full bundled spectrum_canonical of the upstream BHT-08 file additionally tabulates dE_boson_rel and dE_fermion_rel with full greybody-factor weighting for nine x-points; the same shape is reproduced in this bundled subset."
+}

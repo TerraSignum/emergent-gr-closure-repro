@@ -1,0 +1,144 @@
+{
+  "method": "Stage 6f sensitivity matrix on the bulk-percentile asymptote",
+  "branch_metadata": {
+    "causal_wave_branch": "running",
+    "branch_rationale": "K/Q closure stage; chirality-running coefficient diagnostic",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "input_file": "outputs\\stage6f_full_tensor_norm_audit.json",
+  "p5n128_inclusion_caveat": "P5N128 is excluded from the cleaned ladder by a pre-registered artefact criterion: only the old K/Q-persistence-buggy 4-seed run exists for that regime (see K_Q_BUG_FIX_README). The exclusion is therefore by criterion, not by post-hoc residual selection. The include-P5N128 row of the sensitivity matrix below is reported only as a robustness-check, with the explicit warning that the included data point is K/Q-buggy.",
+  "sensitivity_per_percentile": {
+    "median": {
+      "cleaned_unconstrained": {
+        "y_inf": 0.01880500714872455,
+        "b": 1.16741591046322
+      },
+      "cleaned_nonneg_constrained": {
+        "y_inf": 0.01880500714872455,
+        "b": 1.16741591046322,
+        "constraint_active": false
+      },
+      "cleaned_huber_robust": {
+        "y_inf": 0.018875424254184012,
+        "b": 1.1598123597305046
+      },
+      "cleaned_LORO_spread": {
+        "y_inf_min": 0.018422700955156128,
+        "y_inf_max": 0.019658898568637305,
+        "y_inf_mean": 0.018822727835387847,
+        "y_inf_std": 0.0003508023491636545
+      },
+      "include_p5n128_unconstrained": "P5N128 K/Q-bug data not retained in cleaned audit by pre-registered exclusion criterion; sensitivity-row not computed because including K/Q-buggy data would propagate the upstream bug downstream. The exclusion criterion is documented in K_Q_BUG_FIX_README and is artefact-based, not residual-based."
+    },
+    "mean": {
+      "cleaned_unconstrained": {
+        "y_inf": -0.000139812606608162,
+        "b": 6.633789820827026
+      },
+      "cleaned_nonneg_constrained": {
+        "y_inf": 0.0,
+        "b": 6.62389748527426,
+        "constraint_active": true
+      },
+      "cleaned_huber_robust": {
+        "y_inf": -0.000139812606608162,
+        "b": 6.633789820827026
+      },
+      "cleaned_LORO_spread": {
+        "y_inf_min": -0.00790009722714654,
+        "y_inf_max": 0.007955821514442556,
+        "y_inf_mean": -0.00027134350998792066,
+        "y_inf_std": 0.003917344279490053
+      },
+      "include_p5n128_unconstrained": "P5N128 K/Q-bug data not retained in cleaned audit by pre-registered exclusion criterion; sensitivity-row not computed because including K/Q-buggy data would propagate the upstream bug downstream. The exclusion criterion is documented in K_Q_BUG_FIX_README and is artefact-based, not residual-based."
+    },
+    "p90": {
+      "cleaned_unconstrained": {
+        "y_inf": -0.11711785134931581,
+        "b": 26.451538535278345
+      },
+      "cleaned_nonneg_constrained": {
+        "y_inf": 0.0,
+        "b": 18.164953277533105,
+        "constraint_active": true
+      },
+      "cleaned_huber_robust": {
+        "y_inf": -0.07362718503887894,
+        "b": 21.732998845200317
+      },
+      "cleaned_LORO_spread": {
+        "y_inf_min": -0.19588431169074755,
+        "y_inf_max": -0.05525235060291757,
+        "y_inf_mean": -0.11896172490356938,
+        "y_inf_std": 0.03491932829042276
+      },
+      "include_p5n128_unconstrained": "P5N128 K/Q-bug data not retained in cleaned audit by pre-registered exclusion criterion; sensitivity-row not computed because including K/Q-buggy data would propagate the upstream bug downstream. The exclusion criterion is documented in K_Q_BUG_FIX_README and is artefact-based, not residual-based."
+    },
+    "p95": {
+      "cleaned_unconstrained": {
+        "y_inf": -0.1349389917783698,
+        "b": 42.24009051363411
+      },
+      "cleaned_nonneg_constrained": {
+        "y_inf": 0.0,
+        "b": 32.69258390312988,
+        "constraint_active": true
+      },
+      "cleaned_huber_robust": {
+        "y_inf": -0.11726405294062528,
+        "b": 41.13973302880538
+      },
+      "cleaned_LORO_spread": {
+        "y_inf_min": -0.19327872745611818,
+        "y_inf_max": -0.11321602584026766,
+        "y_inf_mean": -0.13658967271482755,
+        "y_inf_std": 0.02165816202765371
+      },
+      "include_p5n128_unconstrained": "P5N128 K/Q-bug data not retained in cleaned audit by pre-registered exclusion criterion; sensitivity-row not computed because including K/Q-buggy data would propagate the upstream bug downstream. The exclusion criterion is documented in K_Q_BUG_FIX_README and is artefact-based, not residual-based."
+    },
+    "p99": {
+      "cleaned_unconstrained": {
+        "y_inf": 0.11568465834247121,
+        "b": 48.08036187938258
+      },
+      "cleaned_nonneg_constrained": {
+        "y_inf": 0.11568465834247121,
+        "b": 48.08036187938258,
+        "constraint_active": false
+      },
+      "cleaned_huber_robust": {
+        "y_inf": 0.057236352228203634,
+        "b": 52.866107164945674
+      },
+      "cleaned_LORO_spread": {
+        "y_inf_min": 0.04873121809347659,
+        "y_inf_max": 0.24177103921939735,
+        "y_inf_mean": 0.11893891702692452,
+        "y_inf_std": 0.049595314278491696
+      },
+      "include_p5n128_unconstrained": "P5N128 K/Q-bug data not retained in cleaned audit by pre-registered exclusion criterion; sensitivity-row not computed because including K/Q-buggy data would propagate the upstream bug downstream. The exclusion criterion is documented in K_Q_BUG_FIX_README and is artefact-based, not residual-based."
+    },
+    "sup": {
+      "cleaned_unconstrained": {
+        "y_inf": 0.4341998461135556,
+        "b": 35.86952410032586
+      },
+      "cleaned_nonneg_constrained": {
+        "y_inf": 0.4341998461135556,
+        "b": 35.86952410032586,
+        "constraint_active": false
+      },
+      "cleaned_huber_robust": {
+        "y_inf": 0.44805675114503246,
+        "b": 36.02206488922942
+      },
+      "cleaned_LORO_spread": {
+        "y_inf_min": 0.366039282484351,
+        "y_inf_max": 0.5816944001932248,
+        "y_inf_mean": 0.43776092116397536,
+        "y_inf_std": 0.05543872092102655
+      },
+      "include_p5n128_unconstrained": "P5N128 K/Q-bug data not retained in cleaned audit by pre-registered exclusion criterion; sensitivity-row not computed because including K/Q-buggy data would propagate the upstream bug downstream. The exclusion criterion is documented in K_Q_BUG_FIX_README and is artefact-based, not residual-based."
+    }
+  }
+}

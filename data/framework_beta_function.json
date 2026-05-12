@@ -1,0 +1,40 @@
+{
+  "method": "framework_internal_beta_function",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "mode_counting": {
+    "N_gauge": 2,
+    "n_fermion": 2,
+    "n_scalar": 2,
+    "N_gen": 3
+  },
+  "coefficients": {
+    "b0_one_loop": 5.333333333333333,
+    "b1_two_loop": 29.0,
+    "C_F": 0.75,
+    "asymptotic_freedom_one_loop": true,
+    "asymptotic_freedom_two_loop": true
+  },
+  "running_predictions": {
+    "log_ratio_M_Pl_v_EW": 38.44247961336007,
+    "P1": {
+      "alpha_UV": 0.422884,
+      "alpha_IR_1loop": 0.02857493525934595,
+      "alpha_IR_2loop": 0.033450348384948654
+    },
+    "P2prime": {
+      "alpha_UV": 0.202952,
+      "alpha_IR_1loop": 0.026625299042563593,
+      "alpha_IR_2loop": 0.028656729605851007
+    }
+  },
+  "comparison_to_SM": {
+    "b0_QCD_n_f_5": 7.666666666666666,
+    "framework_b0_over_QCD": 0.6956521739130435,
+    "framework_uses_SM_coupling_input": false,
+    "note": "The framework's b0/b1 are computed from its own mode counting (N_gauge=2, n_f=2, n_s=2). The SM b0_QCD with n_f=5 is shown only for reference. The Wilson-area-law cross-check in the GAU module uses SM alpha_s(M_Z) as input separately; this beta-function is independent of that consistency check."
+  }
+}

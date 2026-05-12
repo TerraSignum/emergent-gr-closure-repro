@@ -1,0 +1,135 @@
+{
+  "headline": "Sharpened-open-problem audit for (A1)+(A8): M0-M3 + admissibility provably do not imply uniform Ahlfors-regularity (star-graph counterexample); the missing structural axiom is uniform spectral gap of the Xi-weighted graph Laplacian, which is empirically certified on the canonical-physics ladder.",
+  "counterexample_section": {
+    "method": "Constant-Xi C_N(alpha=0.5) counterexample: M0-M3 + admissibility hold uniformly, but the doubling ratio across rho = -log(alpha) grows linearly with N, so no uniform doubling constant exists.",
+    "per_N": [
+      {
+        "n_nodes": 10,
+        "alpha": 0.5,
+        "d_threshold": 0.6931471805599453,
+        "rho_below": 0.34657359027997264,
+        "rho_above": 1.0397207708399179,
+        "ball_below_threshold": 1,
+        "ball_above_threshold": 10,
+        "doubling_ratio_across_threshold": 10.0,
+        "M0_diag_one": true,
+        "M1_symmetric": true,
+        "M2_xi_le_1": true,
+        "M3_submult_triangle": true,
+        "admissible_xi_ge_xi_min": true
+      },
+      {
+        "n_nodes": 50,
+        "alpha": 0.5,
+        "d_threshold": 0.6931471805599453,
+        "rho_below": 0.34657359027997264,
+        "rho_above": 1.0397207708399179,
+        "ball_below_threshold": 1,
+        "ball_above_threshold": 50,
+        "doubling_ratio_across_threshold": 50.0,
+        "M0_diag_one": true,
+        "M1_symmetric": true,
+        "M2_xi_le_1": true,
+        "M3_submult_triangle": true,
+        "admissible_xi_ge_xi_min": true
+      },
+      {
+        "n_nodes": 100,
+        "alpha": 0.5,
+        "d_threshold": 0.6931471805599453,
+        "rho_below": 0.34657359027997264,
+        "rho_above": 1.0397207708399179,
+        "ball_below_threshold": 1,
+        "ball_above_threshold": 100,
+        "doubling_ratio_across_threshold": 100.0,
+        "M0_diag_one": true,
+        "M1_symmetric": true,
+        "M2_xi_le_1": true,
+        "M3_submult_triangle": true,
+        "admissible_xi_ge_xi_min": true
+      },
+      {
+        "n_nodes": 500,
+        "alpha": 0.5,
+        "d_threshold": 0.6931471805599453,
+        "rho_below": 0.34657359027997264,
+        "rho_above": 1.0397207708399179,
+        "ball_below_threshold": 1,
+        "ball_above_threshold": 500,
+        "doubling_ratio_across_threshold": 500.0,
+        "M0_diag_one": true,
+        "M1_symmetric": true,
+        "M2_xi_le_1": true,
+        "M3_submult_triangle": true,
+        "admissible_xi_ge_xi_min": true
+      },
+      {
+        "n_nodes": 1000,
+        "alpha": 0.5,
+        "d_threshold": 0.6931471805599453,
+        "rho_below": 0.34657359027997264,
+        "rho_above": 1.0397207708399179,
+        "ball_below_threshold": 1,
+        "ball_above_threshold": 1000,
+        "doubling_ratio_across_threshold": 1000.0,
+        "M0_diag_one": true,
+        "M1_symmetric": true,
+        "M2_xi_le_1": true,
+        "M3_submult_triangle": true,
+        "admissible_xi_ge_xi_min": true
+      }
+    ],
+    "doubling_ratio_growth": [
+      10.0,
+      50.0,
+      100.0,
+      500.0,
+      1000.0
+    ],
+    "M3_holds_on_all_N": true,
+    "admissibility_holds_on_all_N": true,
+    "doubling_ratio_grows_with_N": true,
+    "verdict": "M0M3_ADMISSIBILITY_DO_NOT_IMPLY_A8"
+  },
+  "spectral_gap_section": {
+    "method": "Empirical spectral-gap audit on canonical-physics P5/P5N ladder; lambda_2 of the Xi-weighted normalised graph Laplacian on the first-seed snapshot of each regime.",
+    "per_regime": [
+      {
+        "regime": "P5",
+        "N": 50,
+        "lambda_2": null,
+        "status": "SNAPSHOT_NOT_AVAILABLE"
+      },
+      {
+        "regime": "P5N64",
+        "N": 64,
+        "lambda_2": 0.4707082933483448,
+        "status": "OK"
+      },
+      {
+        "regime": "P5N100",
+        "N": 100,
+        "lambda_2": 0.41790182686869176,
+        "status": "OK"
+      },
+      {
+        "regime": "P5N200",
+        "N": 200,
+        "lambda_2": 0.42174743662945285,
+        "status": "OK"
+      },
+      {
+        "regime": "P5N300",
+        "N": 300,
+        "lambda_2": 0.39903226835161265,
+        "status": "OK"
+      }
+    ],
+    "lambda_min_across_ladder": 0.39903226835161265,
+    "lambda_median_across_ladder": 0.4198246317490723,
+    "uniform_lower_bound_empirical": 0.39903226835161265,
+    "spectral_gap_certified_above_1e-3": true,
+    "verdict": "UNIFORM_SPECTRAL_GAP_EMPIRICALLY_CERTIFIED"
+  },
+  "summary_verdict": "SHARPENED: open problem now reduces to deriving uniform spectral gap from M0-M3 + carrier-action construction."
+}

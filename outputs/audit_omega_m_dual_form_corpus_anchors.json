@@ -1,0 +1,125 @@
+{
+  "method": "audit_omega_m_dual_form_corpus_anchors",
+  "data_source_policy": "ONLY anchors with explicit source provenance (corpus-internal references or external arxiv/journal citations). No fabricated or memory-recalled values.",
+  "framework_constants": {
+    "gamma": 0.1,
+    "N_gen": 3,
+    "d": 4
+  },
+  "branch_predictions": {
+    "matter": {
+      "fraction": "47/150",
+      "value": 0.31333333333333335,
+      "form": "gamma N_gen + gamma^2 d / N_gen"
+    },
+    "vacuum": {
+      "fraction": "19/60",
+      "value": 0.3166666666666667,
+      "form": "gamma N_gen + gamma^2 (d+1) / N_gen"
+    },
+    "delta": {
+      "fraction": "1/300",
+      "value": 0.003333333333333355,
+      "form": "gamma^2 / N_gen"
+    }
+  },
+  "anchors": {
+    "Planck 2018 PR3 baseline (corpus reference)": {
+      "value": 0.3166,
+      "sigma": 0.0084,
+      "source": "Planck Collaboration 2020, A&A 641, A6",
+      "provenance": "Papers/data/reference_planck_2018_baseline_lcdm.json (SHA256 4eb730ac... gepinnt)",
+      "subset": "CMB",
+      "type": "corpus_internal",
+      "z_to_matter": 0.38888888888888573,
+      "z_to_vacuum": -0.007936507936513671
+    },
+    "PDG 2024 cosmology compact (corpus reference)": {
+      "value": 0.315,
+      "sigma": 0.007,
+      "source": "PDG 2024 review, Cosmological Parameters",
+      "provenance": "Papers/data/reference_pdg_2024_cosmology_compact.json",
+      "subset": "CMB",
+      "type": "corpus_internal",
+      "z_to_matter": 0.23809523809523567,
+      "z_to_vacuum": -0.23809523809524358
+    },
+    "Planck PR4 NPIPE CamSpec TTTEEE": {
+      "value": 0.315,
+      "sigma": 0.0068,
+      "source": "Rosenberg, Gratton, Efstathiou 2022, MNRAS 517, 4620 (Table 5 PR4_12.6 TTTEEE)",
+      "arxiv": "2205.10869",
+      "subset": "CMB",
+      "type": "external_arxiv",
+      "z_to_matter": 0.2450980392156838,
+      "z_to_vacuum": -0.24509803921569195
+    },
+    "DESI Y1 + Planck CMB + ACT lensing combined": {
+      "value": 0.307,
+      "sigma": 0.005,
+      "source": "DESI Collaboration 2024, JCAP",
+      "arxiv": "2404.03002",
+      "subset": "Combined",
+      "type": "external_arxiv",
+      "z_to_matter": -1.2666666666666715,
+      "z_to_vacuum": -1.9333333333333425
+    },
+    "DESI Y1 BAO alone": {
+      "value": 0.295,
+      "sigma": 0.015,
+      "source": "DESI Collaboration 2024, JCAP",
+      "arxiv": "2404.03002",
+      "subset": "Late",
+      "type": "external_arxiv",
+      "z_to_matter": -1.2222222222222245,
+      "z_to_vacuum": -1.4444444444444482
+    },
+    "Pantheon+ SNe Ia alone (flat LCDM)": {
+      "value": 0.334,
+      "sigma": 0.018,
+      "source": "Brout et al. 2022, ApJ 938, 110",
+      "arxiv": "2202.04077",
+      "subset": "Late",
+      "type": "external_arxiv",
+      "z_to_matter": 1.1481481481481481,
+      "z_to_vacuum": 0.9629629629629618
+    }
+  },
+  "cmb_subset_combined": {
+    "n_anchors": 3,
+    "value": 0.3154034340755217,
+    "sigma": 0.004217990366336655,
+    "z_to_matter": 0.4907789165925057,
+    "z_to_vacuum": -0.2994868364865775,
+    "P_matter": 0.48111254401209425,
+    "P_vacuum": 0.5188874559879058
+  },
+  "late_subset_combined": {
+    "n_anchors": 2,
+    "value": 0.31098360655737706,
+    "sigma": 0.011523319193960636,
+    "internal_BAO_SNe_tension_sigma": 1.6644794391276492,
+    "z_to_matter": -0.20391058655979832,
+    "z_to_vacuum": -0.49317909307486146,
+    "P_matter": 0.5251844310174579,
+    "P_vacuum": 0.47481556898254207,
+    "caveat": "The late-universe subset has BAO (DESI Y1, 0.295) and SNe (Pantheon+, 0.334) at 1.66sigma internal tension; the inverse-variance combination is naive and the result should be read as a directional indicator rather than a precise late-universe estimate."
+  },
+  "direction_of_split_test": {
+    "predicted_diff": 0.003333333333333355,
+    "predicted_diff_form": "gamma^2 / N_gen",
+    "observed_diff_CMB_minus_Late": 0.004419827518144626,
+    "sigma_diff": 0.012271036141109293,
+    "z_split_equals_zero_null": 0.3601837259151839,
+    "z_split_equals_prediction_null": 0.08854135643618538,
+    "direction_match": true
+  },
+  "discrimination_thresholds": {
+    "delta": 0.003333333333333355,
+    "sigma_for_3sigma": 0.0011111111111111183,
+    "sigma_for_5sigma": 0.000666666666666671,
+    "best_current_single_anchor_sigma": 0.005,
+    "best_current_sigma_over_delta": 1.4999999999999905
+  },
+  "verdict": "INCONCLUSIVE_DUE_TO_LATE_SUBSET_TENSION: the naive BAO+SNe average gives split = +0.00442 +- 0.01227, matching predicted Delta at 0.09sigma \u2014 but this is an artefact of naive inverse-variance averaging two 1.66sigma-tension late-universe datasets. Subset-by-subset: BAO-only gives split = +0.02040 (+6.1x predicted, 1.31sigma above zero, direction matches but magnitude 6.1x off); SNe-only gives split = -0.01860 (WRONG direction (CMB < Late), 1.01sigma from zero, actively against the chirality-flip prediction). The naive-average match is therefore an interpolation between the two extremes; current late-universe data cannot honestly test the prediction without first resolving the BAO-vs-SNe tension. CMB-only-side discrimination at sigma_Om <= 0.001 (CMB-S4-class) would test the prediction without late-universe input."
+}

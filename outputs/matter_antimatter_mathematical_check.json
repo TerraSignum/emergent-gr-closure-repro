@@ -1,0 +1,114 @@
+{
+  "method": "matter_antimatter_three_check_audit",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "snapshot_file": "C:\\Users\\user\\Desktop\\Emergence\\results_d1_p5n100_snapshot_16seeds\\P5N100.snapshots.npz",
+  "check_T_time_reversal": {
+    "verdict": "FAIL: direction does NOT flip (asymmetry not time-arrow related)",
+    "forward": {
+      "label": "forward",
+      "n_nodes_total": 160,
+      "fisher_xi_to_t00_chi2": 863.8145619121843,
+      "fisher_xi_to_t00_p": 1.5179875040085292e-51,
+      "fisher_t00_to_xi_chi2": 185.95342641019053,
+      "fisher_t00_to_xi_p": 1.317639852193242e-11,
+      "n_sig_xi_to_t00": 62,
+      "frac_sig_xi_to_t00": 0.3875,
+      "n_sig_t00_to_xi": 8,
+      "frac_sig_t00_to_xi": 0.05,
+      "directional_ratio": 7.75
+    },
+    "reversed": {
+      "label": "reversed",
+      "n_nodes_total": 160,
+      "fisher_xi_to_t00_chi2": 779.8642906595146,
+      "fisher_xi_to_t00_p": 2.392059904176584e-40,
+      "fisher_t00_to_xi_chi2": 125.31432095936248,
+      "fisher_t00_to_xi_p": 5.4873337165062635e-05,
+      "n_sig_xi_to_t00": 53,
+      "frac_sig_xi_to_t00": 0.33125,
+      "n_sig_t00_to_xi": 7,
+      "frac_sig_t00_to_xi": 0.04375,
+      "directional_ratio": 7.571428571428571
+    }
+  },
+  "check_C_charge_conjugation": {
+    "verdict": "PASS: significant directional difference between +/- winding",
+    "results": {
+      "plus": {
+        "label": "winding+1",
+        "n_nodes_total": 73,
+        "fisher_xi_to_t00_chi2": 286.38209958911597,
+        "fisher_xi_to_t00_p": 3.5443668760210494e-11,
+        "fisher_t00_to_xi_chi2": 85.96849771323767,
+        "fisher_t00_to_xi_p": 0.015609358982846157,
+        "n_sig_xi_to_t00": 15,
+        "frac_sig_xi_to_t00": 0.2054794520547945,
+        "n_sig_t00_to_xi": 3,
+        "frac_sig_t00_to_xi": 0.0410958904109589,
+        "directional_ratio": 5.0
+      },
+      "zero": {
+        "label": "winding=0",
+        "n_nodes_total": 288,
+        "fisher_xi_to_t00_chi2": 1457.3985705780776,
+        "fisher_xi_to_t00_p": 7.949484019760929e-78,
+        "fisher_t00_to_xi_chi2": 313.3943758429803,
+        "fisher_t00_to_xi_p": 5.066961417033951e-12,
+        "n_sig_xi_to_t00": 112,
+        "frac_sig_xi_to_t00": 0.3888888888888889,
+        "n_sig_t00_to_xi": 15,
+        "frac_sig_t00_to_xi": 0.052083333333333336,
+        "directional_ratio": 7.466666666666667
+      },
+      "minus": {
+        "label": "winding-1",
+        "n_nodes_total": 38,
+        "fisher_xi_to_t00_chi2": 210.48389756007282,
+        "fisher_xi_to_t00_p": 1.4490983719582613e-14,
+        "fisher_t00_to_xi_chi2": 21.579781097812155,
+        "fisher_t00_to_xi_p": 0.08767106495868819,
+        "n_sig_xi_to_t00": 13,
+        "frac_sig_xi_to_t00": 0.34210526315789475,
+        "n_sig_t00_to_xi": 0,
+        "frac_sig_t00_to_xi": 0.0,
+        "directional_ratio": 13.0
+      }
+    }
+  },
+  "check_P_defect_family": {
+    "verdict": "PASS: vortex vs no-vortex show distinct directional preferences",
+    "results": {
+      "vortex": {
+        "label": "vortex",
+        "n_nodes_total": 111,
+        "fisher_xi_to_t00_chi2": 496.86599714918873,
+        "fisher_xi_to_t00_p": 4.2713786100685704e-23,
+        "fisher_t00_to_xi_chi2": 107.54827881104984,
+        "fisher_t00_to_xi_p": 0.006602304811419765,
+        "n_sig_xi_to_t00": 28,
+        "frac_sig_xi_to_t00": 0.25225225225225223,
+        "n_sig_t00_to_xi": 3,
+        "frac_sig_t00_to_xi": 0.02702702702702703,
+        "directional_ratio": 9.333333333333334
+      },
+      "no_vortex": {
+        "label": "no_vortex",
+        "n_nodes_total": 288,
+        "fisher_xi_to_t00_chi2": 1457.3985705780776,
+        "fisher_xi_to_t00_p": 7.949484019760929e-78,
+        "fisher_t00_to_xi_chi2": 313.3943758429803,
+        "fisher_t00_to_xi_p": 5.066961417033951e-12,
+        "n_sig_xi_to_t00": 112,
+        "frac_sig_xi_to_t00": 0.3888888888888889,
+        "n_sig_t00_to_xi": 15,
+        "frac_sig_t00_to_xi": 0.052083333333333336,
+        "directional_ratio": 7.466666666666667
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "method": "lambda_t_running_per_regime",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5",
+      "P6",
+      "P5N64",
+      "P7",
+      "P8",
+      "P5N100"
+    ],
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "lambda_t_structural": 0.81,
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "lambda_t_med": 0.8323082043119896,
+      "lambda_t_mean": 0.879588686546614,
+      "residual_at_lambda_struct_median": -0.0223082043119896,
+      "residual_at_lambda_struct_mean": -0.06958868654661396,
+      "g00_median": 0.025506011152375656,
+      "t00_median": 0.8585060509110314,
+      "g00_mean": 0.027860601065916573,
+      "t00_mean": 0.9074492876125306
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "lambda_t_med": 0.8129282489909723,
+      "lambda_t_mean": 0.8208763022187563,
+      "residual_at_lambda_struct_median": -0.0029282489909722154,
+      "residual_at_lambda_struct_mean": -0.010876302218756202,
+      "g00_median": 0.01425303517466794,
+      "t00_median": 0.8285954985255585,
+      "g00_mean": 0.016189931107035687,
+      "t00_mean": 0.8370662333257919
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "lambda_t_med": 0.8269667448372822,
+      "lambda_t_mean": 0.8562922659002226,
+      "residual_at_lambda_struct_median": -0.016966744837282055,
+      "residual_at_lambda_struct_mean": -0.04629226590022249,
+      "g00_median": 0.016558835016036257,
+      "t00_median": 0.8446894182600003,
+      "g00_mean": 0.0213158528595201,
+      "t00_mean": 0.8776081187597427
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "lambda_t_med": 0.825364670001052,
+      "lambda_t_mean": 0.8414692396034322,
+      "residual_at_lambda_struct_median": -0.01536467000105185,
+      "residual_at_lambda_struct_mean": -0.03146923960343216,
+      "g00_median": 0.01340814640948472,
+      "t00_median": 0.8392428726981114,
+      "g00_mean": 0.01644545501503177,
+      "t00_mean": 0.8579146946184638
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "lambda_t_med": 0.8139028373232702,
+      "lambda_t_mean": 0.8175056921010312,
+      "residual_at_lambda_struct_median": -0.0039028373232700697,
+      "residual_at_lambda_struct_mean": -0.0075056921010311995,
+      "g00_median": 0.00905194650292842,
+      "t00_median": 0.8232147303333244,
+      "g00_mean": 0.01068222186101146,
+      "t00_mean": 0.8281879139620427
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "lambda_t_med": 0.8336016117128631,
+      "lambda_t_mean": 0.8454897718361434,
+      "residual_at_lambda_struct_median": -0.023601611712863013,
+      "residual_at_lambda_struct_mean": -0.03548977183614323,
+      "g00_median": 0.0092725371627172,
+      "t00_median": 0.8449384967874567,
+      "g00_mean": 0.011473654878977193,
+      "t00_mean": 0.8569634267151204
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+﻿====================================================================================
+Emergent Einstein dynamics from relational metric closure -- summary
+====================================================================================
+
+--- (1) Metric construction ---
+  d_ij = d_ij = -ell_0 * log(Xi_ij)
+  ell_0 = 1.0
+  Axioms:
+    M1: Symmetry: Xi_ij = Xi_ji.
+    M2: Normalization: Xi_ii = 1.
+    M3: Sub-multiplicativity: Xi_ij * Xi_jk <= Xi_ik (for the metric inequality d_ik <= d_ij + d_jk).
+
+--- (2) A1 fast-slow regime checks ---
+  P1: lambda_triangle = 1.04 (>=1.0?)  epsilon = 0.07 (<=0.10?)  -- PASS
+  Verdict (P1): lambda_triangle = 1.04 >= 1.0 and epsilon = 0.07 <= 0.10; A1 fast-slow flow stabilizes a quasi-metric tube on P1.
+
+--- (3) CLP scores ---
+  CLP-A (Tightness / pre-compactness): 0.8157  >= 0.7  -- PASS
+  CLP-B (Operator convergence): 0.8046  >= 0.7  -- PASS
+  CLP-C (Gamma convergence): 0.8712  >= 0.7  -- PASS
+  CLP-D (Einstein-gap bridge (Delta_E -> 0)): 0.8300  >= 0.7  -- PASS
+  Aggregate: PASS
+
+--- (4) Einstein-gap two-point Richardson extrapolation ---
+  Target exponent (universality): 0.66670  (2/3)
+  Two clean points:
+    N = 1534    Delta_E = 0.139633   (canonical (P1))
+    N = 2254    Delta_E = 0.100766   (extended (P2'))
+  Richardson candidates (all must pass |gap_inf| <= 0.05):
+    alpha = 0.6667 (Ricci-order analytical): gap_inf = -0.03213  PASS
+    alpha = 1.0000 (conservative): gap_inf = +0.01796  PASS
+    alpha = 0.8477 (empirical 2-point fit): gap_inf = +0.00000  PASS
+  Aggregate: PASS (>=3 N-points needed for definitive single-exponent ID)
+
+--- (5) PPN parameters ---
+  gamma_PPN = 1.000000  +/- 0.0001
+  beta_PPN  = 1.000000   +/- 0.0001
+  Tier:    EXACT (within experimental uncertainty)
+
+
+Saved: C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\recompute_gr_summary.json
+--- Acceptance ---
+  PASS: emergent-Einstein closure consistent under all five axes (P1 regime).

@@ -1,0 +1,91 @@
+{
+  "method": "HH_q_inverse_alpha_xi_squared",
+  "framework_constants": {
+    "gamma": 0.1,
+    "alpha_xi": 0.9
+  },
+  "canonical_ladder_n": 9,
+  "fit_at_q_inverse_alpha_xi_squared": {
+    "q_predicted": 1.2345679012345678,
+    "q_form": "1/alpha_xi^2 = 100/81",
+    "c_best_fit": 3.391750753367678,
+    "rms_rel_pct": 9.175616000961623
+  },
+  "fit_at_q_11_9_for_comparison": {
+    "q": 1.2222222222222223,
+    "c_best_fit": 3.195387473126118,
+    "rms_rel_pct": 9.227328497861308
+  },
+  "best_c_match": {
+    "label": "alpha_xi^2 * 4 = 81/25",
+    "value": 3.24,
+    "c_fit": 3.391750753367678,
+    "rel_err_pct": 4.474112763651755
+  },
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "delta_emp": 0.02824505411046796,
+      "delta_pred": 0.02709755444929818,
+      "rel_err_pct": -4.062656975914594
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "delta_emp": 0.02082878745486272,
+      "delta_pred": 0.019978924716512216,
+      "rel_err_pct": -4.0802314594270435
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "delta_emp": 0.017910928553759975,
+      "delta_pred": 0.017275111061240703,
+      "rel_err_pct": -3.5498857058742352
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "delta_emp": 0.014582250012288411,
+      "delta_pred": 0.01428139037517701,
+      "rel_err_pct": -2.063190775482983
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "delta_emp": 0.011504170968850258,
+      "delta_pred": 0.011515641275160589,
+      "rel_err_pct": 0.09970563147391368
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "delta_emp": 0.006737887183055236,
+      "delta_pred": 0.008490438889209535,
+      "rel_err_pct": 26.010404427098475
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "delta_emp": 0.004967134398437101,
+      "delta_pred": 0.004893799336257694,
+      "rel_err_pct": -1.4764058367835027
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "delta_emp": 0.0030962967547755182,
+      "delta_pred": 0.0029665354437511497,
+      "rel_err_pct": -4.190855118270995
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "delta_emp": 0.0015870007164950906,
+      "delta_pred": 0.0015333673109982915,
+      "rel_err_pct": -3.379545134374551
+    }
+  ],
+  "verdict": "BOTH_COMPARABLE: q=1/alpha_xi^2 (RMS 9.18%) and q=11/9 (RMS 9.23%) fit comparably on canonical ladder; structural ambiguity remains."
+}

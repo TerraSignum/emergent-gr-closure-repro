@@ -1,0 +1,370 @@
+{
+  "method": "axis_identification_2plus1",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "regimes_used": [
+      "P1",
+      "P3",
+      "P4",
+      "P5",
+      "P5N64",
+      "P6",
+      "P7",
+      "P8",
+      "P5N100",
+      "P5N72",
+      "P5N84",
+      "P5N200",
+      "P6N128",
+      "P8N128"
+    ],
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "n_regimes": 13,
+  "per_regime": [
+    {
+      "regime": "P1",
+      "N": 28,
+      "n_nodes": 896,
+      "Ls_sortedA_means": [
+        -0.5864860897534919,
+        -0.5775508367851749,
+        0.5963682189952945
+      ],
+      "Ls_fiedler1_mean": -0.32238699789898956,
+      "Ls_fiedler2_mean": -0.1898894340719623,
+      "Ls_fiedler3_mean": -0.0553922755724208,
+      "Ls_fiedler1_std": 1.1316754910649645,
+      "Ls_fiedler2_std": 1.0655842044112145,
+      "Ls_fiedler3_std": 1.1572484549475077,
+      "largest_T_axis_distribution": {
+        "F0": 205,
+        "F1": 301,
+        "F2": 390
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 392,
+        "F1": 282,
+        "F2": 222
+      }
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "n_nodes": 1008,
+      "Ls_sortedA_means": [
+        -0.2857808933963966,
+        -0.2846322711264531,
+        0.30126830499523993
+      ],
+      "Ls_fiedler1_mean": -0.14163584588404626,
+      "Ls_fiedler2_mean": -0.07202946535350625,
+      "Ls_fiedler3_mean": -0.05547954829005672,
+      "Ls_fiedler1_std": 0.6613623372916043,
+      "Ls_fiedler2_std": 0.6206009884279008,
+      "Ls_fiedler3_std": 0.6815219513274068,
+      "largest_T_axis_distribution": {
+        "F0": 255,
+        "F1": 341,
+        "F2": 412
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 401,
+        "F1": 343,
+        "F2": 264
+      }
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "n_nodes": 1176,
+      "Ls_sortedA_means": [
+        -0.17827731871579297,
+        -0.1794120281845552,
+        0.1925243449921853
+      ],
+      "Ls_fiedler1_mean": -0.07161418099607593,
+      "Ls_fiedler2_mean": -0.04349148943065968,
+      "Ls_fiedler3_mean": -0.050059331481427626,
+      "Ls_fiedler1_std": 0.37494328195870874,
+      "Ls_fiedler2_std": 0.36471281076145,
+      "Ls_fiedler3_std": 0.3246693531700007,
+      "largest_T_axis_distribution": {
+        "F0": 344,
+        "F1": 378,
+        "F2": 454
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 424,
+        "F1": 415,
+        "F2": 337
+      }
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_nodes": 1400,
+      "Ls_sortedA_means": [
+        -0.13897211549372368,
+        -0.14056498006879184,
+        0.15022291372309943
+      ],
+      "Ls_fiedler1_mean": -0.03870998229667193,
+      "Ls_fiedler2_mean": -0.06284462814266101,
+      "Ls_fiedler3_mean": -0.027759571400083068,
+      "Ls_fiedler1_std": 0.26470029430023495,
+      "Ls_fiedler2_std": 0.3315394258407972,
+      "Ls_fiedler3_std": 0.2976230236807603,
+      "largest_T_axis_distribution": {
+        "F0": 405,
+        "F1": 466,
+        "F2": 529
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 548,
+        "F1": 454,
+        "F2": 398
+      }
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_nodes": 1536,
+      "Ls_sortedA_means": [
+        -0.09778543301642123,
+        -0.09942636828870467,
+        0.10580225341603366
+      ],
+      "Ls_fiedler1_mean": -0.043215611054375956,
+      "Ls_fiedler2_mean": -0.02541299004325663,
+      "Ls_fiedler3_mean": -0.022780946791459727,
+      "Ls_fiedler1_std": 0.2953994499796198,
+      "Ls_fiedler2_std": 0.27904964006876976,
+      "Ls_fiedler3_std": 0.3110736069094481,
+      "largest_T_axis_distribution": {
+        "F0": 435,
+        "F1": 510,
+        "F2": 591
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 550,
+        "F1": 508,
+        "F2": 478
+      }
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "n_nodes": 1680,
+      "Ls_sortedA_means": [
+        -0.07321975754947532,
+        -0.0746593632952008,
+        0.08117362778114508
+      ],
+      "Ls_fiedler1_mean": -0.024619450127208828,
+      "Ls_fiedler2_mean": -0.024730290086792353,
+      "Ls_fiedler3_mean": -0.017355752849529695,
+      "Ls_fiedler1_std": 0.18546782930459074,
+      "Ls_fiedler2_std": 0.2203856968358583,
+      "Ls_fiedler3_std": 0.17573631109343016,
+      "largest_T_axis_distribution": {
+        "F0": 497,
+        "F1": 574,
+        "F2": 609
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 617,
+        "F1": 575,
+        "F2": 488
+      }
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_nodes": 1440,
+      "Ls_sortedA_means": [
+        -0.04011541677976396,
+        -0.04156366517450275,
+        0.04638206144410736
+      ],
+      "Ls_fiedler1_mean": -0.012495722383955929,
+      "Ls_fiedler2_mean": -0.01645377428353834,
+      "Ls_fiedler3_mean": -0.006347523842665158,
+      "Ls_fiedler1_std": 0.12403926611703285,
+      "Ls_fiedler2_std": 0.12215034901203976,
+      "Ls_fiedler3_std": 0.121333206331627,
+      "largest_T_axis_distribution": {
+        "F0": 433,
+        "F1": 481,
+        "F2": 526
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 487,
+        "F1": 527,
+        "F2": 426
+      }
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_nodes": 1344,
+      "Ls_sortedA_means": [
+        -0.029141930260227007,
+        -0.03043981157041103,
+        0.03409130399784569
+      ],
+      "Ls_fiedler1_mean": -0.009312377312534285,
+      "Ls_fiedler2_mean": -0.008713298889585563,
+      "Ls_fiedler3_mean": -0.007464761630672574,
+      "Ls_fiedler1_std": 0.07683045095802764,
+      "Ls_fiedler2_std": 0.09287786210126682,
+      "Ls_fiedler3_std": 0.08490782106650849,
+      "largest_T_axis_distribution": {
+        "F0": 421,
+        "F1": 437,
+        "F2": 486
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 485,
+        "F1": 427,
+        "F2": 432
+      }
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_nodes": 2400,
+      "Ls_sortedA_means": [
+        -0.031047672754768142,
+        -0.03232228432013646,
+        0.035568713394498255
+      ],
+      "Ls_fiedler1_mean": -0.01354486071840409,
+      "Ls_fiedler2_mean": -0.011915195658900762,
+      "Ls_fiedler3_mean": -0.0023411873031015935,
+      "Ls_fiedler1_std": 0.10812407874663742,
+      "Ls_fiedler2_std": 0.11343622915240739,
+      "Ls_fiedler3_std": 0.10186441854263935,
+      "largest_T_axis_distribution": {
+        "F0": 641,
+        "F1": 863,
+        "F2": 896
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 893,
+        "F1": 755,
+        "F2": 752
+      }
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_nodes": 3072,
+      "Ls_sortedA_means": [
+        -0.003028841666877172,
+        -0.0034375954352511284,
+        0.004322831229972131
+      ],
+      "Ls_fiedler1_mean": -0.0010888126944020478,
+      "Ls_fiedler2_mean": -0.0008833775503822757,
+      "Ls_fiedler3_mean": -0.00017141562737184215,
+      "Ls_fiedler1_std": 0.019025790605572898,
+      "Ls_fiedler2_std": 0.014555005461691261,
+      "Ls_fiedler3_std": 0.01553773942349568,
+      "largest_T_axis_distribution": {
+        "F0": 934,
+        "F1": 1033,
+        "F2": 1105
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 1105,
+        "F1": 1010,
+        "F2": 957
+      }
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_nodes": 6144,
+      "Ls_sortedA_means": [
+        -0.0009623806797193408,
+        -0.0011674197399626361,
+        0.0015695498654665376
+      ],
+      "Ls_fiedler1_mean": -0.0003036647213041617,
+      "Ls_fiedler2_mean": -0.00016697397500702724,
+      "Ls_fiedler3_mean": -8.961185790424074e-05,
+      "Ls_fiedler1_std": 0.006180967546163596,
+      "Ls_fiedler2_std": 0.005080319536271562,
+      "Ls_fiedler3_std": 0.004249960935641385,
+      "largest_T_axis_distribution": {
+        "F0": 1971,
+        "F1": 2008,
+        "F2": 2165
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 2126,
+        "F1": 2015,
+        "F2": 2003
+      }
+    },
+    {
+      "regime": "P6N128",
+      "N": 128,
+      "n_nodes": 512,
+      "Ls_sortedA_means": [
+        -0.010631326155769262,
+        -0.011656354610720489,
+        0.01361223057702766
+      ],
+      "Ls_fiedler1_mean": -0.003210506914545503,
+      "Ls_fiedler2_mean": -0.0034073072055270394,
+      "Ls_fiedler3_mean": -0.0020576360693895226,
+      "Ls_fiedler1_std": 0.024497148000244433,
+      "Ls_fiedler2_std": 0.04151687278643168,
+      "Ls_fiedler3_std": 0.024940195212700585,
+      "largest_T_axis_distribution": {
+        "F0": 144,
+        "F1": 177,
+        "F2": 191
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 187,
+        "F1": 159,
+        "F2": 166
+      }
+    },
+    {
+      "regime": "P8N128",
+      "N": 128,
+      "n_nodes": 512,
+      "Ls_sortedA_means": [
+        -0.007055926230789607,
+        -0.008061292823391169,
+        0.009737090005551018
+      ],
+      "Ls_fiedler1_mean": -0.0025366428092031272,
+      "Ls_fiedler2_mean": -0.001042876368083045,
+      "Ls_fiedler3_mean": -0.0018006098713435972,
+      "Ls_fiedler1_std": 0.021527010473893736,
+      "Ls_fiedler2_std": 0.02277429033513377,
+      "Ls_fiedler3_std": 0.018815695377861527,
+      "largest_T_axis_distribution": {
+        "F0": 144,
+        "F1": 170,
+        "F2": 198
+      },
+      "smallest_T_axis_distribution": {
+        "F0": 179,
+        "F1": 175,
+        "F2": 158
+      }
+    }
+  ],
+  "cross_regime_fiedler_means": {
+    "F1": -0.05266728121628598,
+    "F2": -0.03546008469691248,
+    "F3": -0.019161551737494318
+  }
+}

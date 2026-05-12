@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+title: "Emergent Einstein dynamics from relational metric closure"
+message: "If you use this software or data, please cite it using the metadata below."
+authors:
+  - family-names: Bucciarelli
+    given-names: Sandro
+version: 0.1.0
+date-released: 2026-04-26
+license: MIT
+repository-code: "https://github.com/[anonymized]/emergent-gr-closure-repro"
+abstract: >-
+  A reproducible Python package implementing the emergent-Einstein
+  closure on a finite correlation lattice. Stages: (1) the metric
+  d_ij = -ell_0 * log(Xi_ij) under axioms M1-M3; (2) an A1 fast-slow
+  metric closure that stabilizes a quasi-metric tube on the canonical
+  regime P1; (3) four aggregate Continuum-Limit-Program scores from
+  the canonical multi-N audit refresh, all above the 0.70 closure-
+  domain threshold; (4) the Einstein-identity gap convergence
+  Delta_E(N) <= C_0 * N^(-alpha_gap) with structural target
+  alpha_gap = 2/3, verified by a two-point Richardson extrapolation
+  across the two clean lattice points (N1=1534 and N2=2254) under
+  three candidate exponents (Ricci-order 2/3, linear 1.0, empirical
+  2-point fit 0.8477), all of which yield |gap_inf| < 0.05; (5) the
+  PPN parameters gamma_PPN = beta_PPN = 1 inside the experimental
+  constraints from Cassini and LLR.
+keywords:
+  - emergent gravity
+  - continuum limit
+  - Einstein gap
+  - PPN
+  - reproducibility
+references:
+  - type: article
+    title: "Emergent Einstein dynamics from relational metric closure on finite correlation lattices"
+    authors:
+      - family-names: Bucciarelli
+        given-names: Sandro
+    year: 2026
+    notes: "Accompanying preprint; see paper/manuscript.pdf in this repository."

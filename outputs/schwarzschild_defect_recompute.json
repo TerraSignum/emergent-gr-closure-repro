@@ -1,0 +1,38 @@
+{
+  "G_N_ratio": 0.999791,
+  "G_N_residual_pct": 0.021,
+  "G_N_tier_label": "EXACT",
+  "G_N_tier_recomputed": "EXACT",
+  "G_N_tier_label_consistent": true,
+  "tier_thresholds_pct": {
+    "EXACT": 0.4,
+    "PRECISE": 2.5
+  },
+  "d_eff_spec": 3.169925,
+  "d_spatial": 3,
+  "d_spacetime": 4,
+  "metric_canonical": {
+    "tensor_projector_closure": 0.7743177867885542,
+    "einstein_identity_gap": 0.13963333288697544
+  },
+  "metric_extended": {
+    "tensor_projector_closure": 0.7311596102033571,
+    "einstein_identity_gap": 0.10076589340055708
+  },
+  "jacobson_einstein": {
+    "canonical_status_label": "EMERGENT_GR",
+    "canonical_status_recomputed": "EMERGENT_GR",
+    "canonical_status_label_consistent": true,
+    "canonical_checks": [
+      3,
+      3
+    ],
+    "extended_status_label": "EMERGENT_GR",
+    "extended_status_recomputed": "EMERGENT_GR",
+    "extended_status_label_consistent": true,
+    "extended_checks": [
+      3,
+      3
+    ]
+  }
+}

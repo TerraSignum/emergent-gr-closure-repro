@@ -1,0 +1,160 @@
+{
+  "method": "M3_supnorm_defect_topology",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "regimes_used": [
+      "P5",
+      "P5N100",
+      "P5N200",
+      "P5N300"
+    ],
+    "branch_rationale": "Topology / vortex / triangle-phase diagnostic; algebraic discrete-Wilson-loop / homology test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "rows": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_top_triples": 20,
+      "n_node_slots": 60,
+      "defect_counts": {
+        "vortex": 14,
+        "dwall": 0,
+        "dense": 6,
+        "t00_spike": 18,
+        "any_defect": 34,
+        "no_defect": 26,
+        "n_triples": 20,
+        "n_node_slots": 60
+      },
+      "fractions": {
+        "vortex": 0.23333333333333334,
+        "dwall": 0.0,
+        "dense": 0.1,
+        "t00_spike": 0.3,
+        "any_defect": 0.5666666666666667,
+        "no_defect": 0.43333333333333335
+      }
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_top_triples": 20,
+      "n_node_slots": 60,
+      "defect_counts": {
+        "vortex": 6,
+        "dwall": 0,
+        "dense": 6,
+        "t00_spike": 12,
+        "any_defect": 22,
+        "no_defect": 38,
+        "n_triples": 20,
+        "n_node_slots": 60
+      },
+      "fractions": {
+        "vortex": 0.1,
+        "dwall": 0.0,
+        "dense": 0.1,
+        "t00_spike": 0.2,
+        "any_defect": 0.36666666666666664,
+        "no_defect": 0.6333333333333333
+      }
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_top_triples": 20,
+      "n_node_slots": 60,
+      "defect_counts": {
+        "vortex": 10,
+        "dwall": 0,
+        "dense": 8,
+        "t00_spike": 28,
+        "any_defect": 36,
+        "no_defect": 24,
+        "n_triples": 20,
+        "n_node_slots": 60
+      },
+      "fractions": {
+        "vortex": 0.16666666666666666,
+        "dwall": 0.0,
+        "dense": 0.13333333333333333,
+        "t00_spike": 0.4666666666666667,
+        "any_defect": 0.6,
+        "no_defect": 0.4
+      }
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_top_triples": 20,
+      "n_node_slots": 60,
+      "defect_counts": {
+        "vortex": 6,
+        "dwall": 0,
+        "dense": 0,
+        "t00_spike": 26,
+        "any_defect": 26,
+        "no_defect": 34,
+        "n_triples": 20,
+        "n_node_slots": 60
+      },
+      "fractions": {
+        "vortex": 0.1,
+        "dwall": 0.0,
+        "dense": 0.0,
+        "t00_spike": 0.43333333333333335,
+        "any_defect": 0.43333333333333335,
+        "no_defect": 0.5666666666666667
+      }
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_top_triples": 20,
+      "n_node_slots": 60,
+      "defect_counts": {
+        "vortex": 0,
+        "dwall": 0,
+        "dense": 24,
+        "t00_spike": 44,
+        "any_defect": 44,
+        "no_defect": 16,
+        "n_triples": 20,
+        "n_node_slots": 60
+      },
+      "fractions": {
+        "vortex": 0.0,
+        "dwall": 0.0,
+        "dense": 0.4,
+        "t00_spike": 0.7333333333333333,
+        "any_defect": 0.7333333333333333,
+        "no_defect": 0.26666666666666666
+      }
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_top_triples": 20,
+      "n_node_slots": 60,
+      "defect_counts": {
+        "vortex": 32,
+        "dwall": 0,
+        "dense": 38,
+        "t00_spike": 42,
+        "any_defect": 56,
+        "no_defect": 4,
+        "n_triples": 20,
+        "n_node_slots": 60
+      },
+      "fractions": {
+        "vortex": 0.5333333333333333,
+        "dwall": 0.0,
+        "dense": 0.6333333333333333,
+        "t00_spike": 0.7,
+        "any_defect": 0.9333333333333333,
+        "no_defect": 0.06666666666666667
+      }
+    }
+  ]
+}

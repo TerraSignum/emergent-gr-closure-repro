@@ -1,0 +1,91 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "2.0.0",
+  "release": "v0.1.0",
+  "description": "Einstein-identity gap Delta_E(N) convergence: two-point Richardson extrapolation across the only two clean lattice sizes currently available (N1=1534 in the canonical regime; N2=2254 in the extended regime). Three independent candidate exponents \u2014 analytical Ricci-order (alpha=2/3), conservative (alpha=1.0), and empirical 2-point fit (alpha=0.8477) \u2014 all yield a continuum-limit gap below the 0.05 closure-domain threshold. A definitive single-exponent identification requires >=3 independent N points; that data is in flight in a parallel lattice run.",
+  "honest_two_point_data": [
+    {
+      "N": 1534,
+      "Delta_E": 0.139633,
+      "regime_label": "canonical",
+      "source": "companion lattice-extrapolation run"
+    },
+    {
+      "N": 2254,
+      "Delta_E": 0.100766,
+      "regime_label": "extended",
+      "source": "companion lattice-extrapolation run"
+    }
+  ],
+  "two_point_diagnostics": {
+    "N_ratio": 1.4694,
+    "gap_ratio": 1.3857,
+    "convergence_direction_correct": true,
+    "comment": "gap decreases as N increases, consistent with continuum-limit convergence"
+  },
+  "richardson_candidates": [
+    {
+      "exponent_name": "Ricci-order analytical",
+      "alpha": 0.6667,
+      "alpha_form": "2/3",
+      "gap_inf": -0.032128,
+      "passes_005": true,
+      "rationale": "From the Ricci-tensor-leading discretization argument; analytical structural target"
+    },
+    {
+      "exponent_name": "conservative",
+      "alpha": 1.0,
+      "gap_inf": 0.017958,
+      "passes_005": true,
+      "rationale": "Linear-order discretization error; conservative bound"
+    },
+    {
+      "exponent_name": "empirical 2-point fit",
+      "alpha": 0.8477,
+      "gap_inf": 1e-06,
+      "passes_005": true,
+      "rationale": "Direct power-law fit on the 2 available points; not yet independently determined because >=3 points are required to fix alpha"
+    }
+  ],
+  "all_candidates_pass_005_threshold": true,
+  "closure_threshold": 0.05,
+  "alpha_target_for_universality_claim": 0.6667,
+  "alpha_target_form": "2/3",
+  "data_poverty_caveat": "Only 2 N-points are clean at the present audit date; >=3 N-points are required to independently fix alpha and run a Richardson stability analysis. Lattice runs at N approximately 3500-9400 (regimes P3-P8) are in flight and will replace this two-point Richardson with a multi-point fit when complete.",
+  "pending_lattice_extensions": [
+    {
+      "regime_label": "anchor_3",
+      "N_target": 3917,
+      "status": "lattice_run_complete_einstein_gap_assembly_pending"
+    },
+    {
+      "regime_label": "anchor_4",
+      "N_target": 6038,
+      "status": "lattice_run_complete_pending_full_assembly"
+    },
+    {
+      "regime_label": "anchor_5",
+      "N_target": 9379,
+      "status": "lattice_run_in_progress"
+    },
+    {
+      "regime_label": "anchor_6",
+      "N_target": 14181,
+      "status": "lattice_run_in_progress"
+    },
+    {
+      "regime_label": "anchor_7",
+      "N_target": 20793,
+      "status": "lattice_run_in_progress"
+    },
+    {
+      "regime_label": "anchor_8",
+      "N_target": 28014,
+      "status": "lattice_run_in_progress"
+    }
+  ]
+}

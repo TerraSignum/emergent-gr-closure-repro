@@ -1,0 +1,61 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Discrete Riemannian-embedding-stress series across seven lattice sizes. The geometric coherence c_g(N) is the canonical Kruskal-Shepard MDS coherence score, c_g = 1 / (1 + stress), where 'stress' is the normalized embedding stress of the lattice distance matrix in the smallest non-trivial Euclidean target dimension d_target = min(3, N-1). The complementary quantity sigma(N) := 1 - c_g(N) = stress / (1 + stress) is the obstruction to expressing the discrete distance matrix as inner products of a Riemannian metric on a smooth 3-manifold; it is the discrete macroscopic-metric-quality deficit. Distilled from the bundled A2-extension run set (results_a2_real/ and results_a2_real_p[3-6]_extension/) of the canonical pipeline.",
+  "definitions": {
+    "geometric_coherence": "c_g(N) = 1 / (1 + stress(N)), Kruskal-Shepard MDS coherence in target dimension min(3, N-1).",
+    "einstein_metric_stress": "sigma(N) = 1 - c_g(N) = stress(N) / (1 + stress(N)). Vanishing sigma is the obstruction-free condition for extracting a Riemannian metric on a smooth 3-manifold from the lattice distance matrix; the Einstein equations are exact only when sigma -> 0.",
+    "relation_to_tensor_closure_gap": "sigma(N) tracks the macroscopic tensor-closure deficit reported by the canonical multi-N pipeline (companion multi-anchor extension run), with regime-by-regime agreement to ~0.02 in absolute units. sigma(N) is the more direct definition; the canonical tensor-closure gap is a closely-related composite of the same MDS-stress geometry.",
+    "relation_to_einstein_identity_gap": "sigma(N) is NOT the Einstein-identity gap ||G_munu - 8 pi G T_munu|| / ||G_munu||; the latter is a separate, narrower quantity that is bundled at the two canonical regimes only, and that DOES converge under Richardson extrapolation. sigma(N) is the broader discrete-Riemannian-embedding axis that characterizes whether a Riemannian metric exists at all on the lattice; it does not vanish at the available lattice sizes."
+  },
+  "raw_series": [
+    {
+      "index": 1,
+      "N": 409.5,
+      "geometric_coherence": 0.741337,
+      "einstein_metric_stress": 0.258663
+    },
+    {
+      "index": 2,
+      "N": 1539.0,
+      "geometric_coherence": 0.720751,
+      "einstein_metric_stress": 0.279249
+    },
+    {
+      "index": 3,
+      "N": 2254.0,
+      "geometric_coherence": 0.680853,
+      "einstein_metric_stress": 0.319147
+    },
+    {
+      "index": 4,
+      "N": 3917.5,
+      "geometric_coherence": 0.663378,
+      "einstein_metric_stress": 0.336622
+    },
+    {
+      "index": 5,
+      "N": 6038.5,
+      "geometric_coherence": 0.681011,
+      "einstein_metric_stress": 0.318989
+    },
+    {
+      "index": 6,
+      "N": 9379.5,
+      "geometric_coherence": 0.684141,
+      "einstein_metric_stress": 0.315859
+    },
+    {
+      "index": 7,
+      "N": 14181.0,
+      "geometric_coherence": 0.700832,
+      "einstein_metric_stress": 0.299168
+    }
+  ],
+  "framing": "Across seven lattice sizes spanning a factor of 35 in N, sigma(N) lies in [0.259, 0.337] with a non-monotonic profile that bottoms out near N approximately 4000 and recovers slowly at larger N. The minimum coherence c_g approximately 0.66 corresponds to ~34% obstruction to a clean Euclidean 3-embedding; the lattice has robust but imperfect geometric coherence in this range. Combined with the two-point Einstein-identity-gap Richardson result (which DOES converge), this gives a complementary picture: the Einstein equations close to <5% on the narrow Einstein-identity-gap axis, while the broader Riemannian-embedding axis retains a finite-resolution stress floor at the available lattice sizes."
+}

@@ -1,0 +1,160 @@
+{
+  "method": "feedback_hypothesis_critical_test",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "ladder_N": [
+    50,
+    64,
+    72,
+    84,
+    100,
+    200,
+    300
+  ],
+  "Lambda_t": [
+    0.879588686546614,
+    0.8562922659002226,
+    0.8473569151728749,
+    0.8274902833504618,
+    0.8454897718361434,
+    0.8094653711133861,
+    0.8167228715304735
+  ],
+  "alpha_xi_eff_per_N": [
+    0.9378638955342156,
+    0.9253606139771795,
+    0.9205199156850844,
+    0.9096649291637343,
+    0.9195051777103506,
+    0.8997029349254042,
+    0.903727210794537
+  ],
+  "gamma_eff_C1_per_N": [
+    0.062136104465784436,
+    0.0746393860228205,
+    0.0794800843149156,
+    0.09033507083626569,
+    0.08049482228964944,
+    0.10029706507459579,
+    0.096272789205463
+  ],
+  "alpha2_plus_gamma2_per_N": [
+    0.883449582024797,
+    0.8618633038460863,
+    0.853673998975581,
+    0.835650708373455,
+    0.8519691882515856,
+    0.8195248723759638,
+    0.825991321471873
+  ],
+  "two_alpha_gamma_per_N": [
+    0.11655041797520312,
+    0.13813669615391377,
+    0.146326001024419,
+    0.1643492916265451,
+    0.1480308117484144,
+    0.18047512762403617,
+    0.174008678528127
+  ],
+  "C1_sum_per_N": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+  ],
+  "fits": {
+    "symanzik2": {
+      "a": 0.813429391911504,
+      "c2": 168.98773214543138,
+      "r2": 0.8863410609423813,
+      "rss": 0.0004031275729216253,
+      "AICc": -61.33517345934074
+    },
+    "damped_oscillator": {
+      "a": 0.9018244366381497,
+      "b": 0.17405385157923564,
+      "c": 0.03965024257145025,
+      "tau": 500.0,
+      "omega": 0.5,
+      "rss": 0.0004047106368327724,
+      "AICc_k4": -40.30773860560626,
+      "AICc_k5": 1.6922613943937392
+    }
+  },
+  "cross_regime": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "alpha_eff": 0.9162255472162706
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "alpha_eff": 0.90862970207244
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "alpha_eff": 0.9113499646742458
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "alpha_eff": 0.9060272221425846
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "alpha_eff": 0.9063947049161778
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "alpha_eff": 0.912309270100874
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "alpha_eff": 0.9016253373718888
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "alpha_eff": 0.9093771191520502
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "alpha_eff": 0.9084958282793884
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "alpha_eff": 0.9021656374099327
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "alpha_eff": 0.9130178594709213
+    }
+  ],
+  "lyapunov": {
+    "slope": -0.012761463379917052,
+    "intercept": -3.1460260957605843,
+    "tau": 78.36091913829556,
+    "r2": 0.49069364551525907
+  },
+  "verdict_scores": {
+    "reading_A_score": 2,
+    "reading_B_score": 1,
+    "reading_C_score": 1,
+    "feedback_score": 1
+  },
+  "honest_assessment": "The four readings are empirically degenerate on the present data. The discriminating test is a perturbed initial-condition lattice run, which is not part of this analysis. The feedback interpretation is parsimonious and consistent with all observed patterns but cannot be uniquely selected without lattice-runner modification."
+}

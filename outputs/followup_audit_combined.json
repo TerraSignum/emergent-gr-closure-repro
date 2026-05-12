@@ -1,0 +1,706 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "A_combined_O1_Own1": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "baseline": {
+        "median": 0.04332885485563631,
+        "mean": 0.2804133221622677,
+        "lift_t00": 10.0
+      },
+      "O1_plus_Own1": {
+        "median": 0.13636632923290892,
+        "mean": 0.23789449848257138,
+        "lift_t00": 7.5
+      },
+      "improvement": {
+        "median_relative_pct": 214.72405556818012,
+        "mean_relative_pct": -15.162911430824186
+      }
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "baseline": {
+        "median": 0.024258792226763234,
+        "mean": 0.066978233696168,
+        "lift_t00": 5.813148788927335
+      },
+      "O1_plus_Own1": {
+        "median": 0.041460514069027905,
+        "mean": 0.06741666852661277,
+        "lift_t00": 5.813148788927335
+      },
+      "improvement": {
+        "median_relative_pct": 70.90922615383576,
+        "mean_relative_pct": 0.654593001711023
+      }
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "baseline": {
+        "median": 0.03184686203059375,
+        "mean": 0.10019094018111821,
+        "lift_t00": 7.75
+      },
+      "O1_plus_Own1": {
+        "median": 0.03587001004313281,
+        "mean": 0.09218659509362807,
+        "lift_t00": 6.75
+      },
+      "improvement": {
+        "median_relative_pct": 12.632792545382374,
+        "mean_relative_pct": -7.989090703231687
+      }
+    }
+  ],
+  "B_O5_kappa_sweep": [
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "kappa": 0.001,
+      "baseline_mean": 0.10019094018111821,
+      "baseline_median": 0.03184686203059375,
+      "modified_mean": 0.09985848257669826,
+      "modified_median": 0.031409281520042874,
+      "lift_t00_modified": 7.75,
+      "lambda_t_effective_mean": 0.81081,
+      "mean_relative_pct": -0.33182401903700987,
+      "median_relative_pct": -1.37401452655058
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "kappa": 0.01,
+      "baseline_mean": 0.10019094018111821,
+      "baseline_median": 0.03184686203059375,
+      "modified_mean": 0.09755611867734242,
+      "modified_median": 0.02889701602332543,
+      "lift_t00_modified": 7.75,
+      "lambda_t_effective_mean": 0.8181000000000002,
+      "mean_relative_pct": -2.6298001585899358,
+      "median_relative_pct": -9.262595493504348
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "kappa": 0.05,
+      "baseline_mean": 0.10019094018111821,
+      "baseline_median": 0.03184686203059375,
+      "modified_mean": 0.10019824276653296,
+      "modified_median": 0.02780586768552556,
+      "lift_t00_modified": 7.5,
+      "lambda_t_effective_mean": 0.8505,
+      "mean_relative_pct": 0.007288668418066593,
+      "median_relative_pct": -12.688830507653162
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "kappa": 0.1,
+      "baseline_mean": 0.10019094018111821,
+      "baseline_median": 0.03184686203059375,
+      "modified_mean": 0.12049880838219627,
+      "modified_median": 0.038230350020992176,
+      "lift_t00_modified": 7.0,
+      "lambda_t_effective_mean": 0.891,
+      "mean_relative_pct": 20.26916621838952,
+      "median_relative_pct": 20.044323312815283
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "kappa": 0.5,
+      "baseline_mean": 0.10019094018111821,
+      "baseline_median": 0.03184686203059375,
+      "modified_mean": 0.4006341608618733,
+      "modified_median": 0.1830687334490215,
+      "lift_t00_modified": 6.25,
+      "lambda_t_effective_mean": 1.215,
+      "mean_relative_pct": 299.87064712401616,
+      "median_relative_pct": 474.840727708608
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "kappa": 1.0,
+      "baseline_mean": 0.10019094018111821,
+      "baseline_median": 0.03184686203059375,
+      "modified_mean": 0.7917845196460438,
+      "modified_median": 0.38830951706109956,
+      "lift_t00_modified": 5.75,
+      "lambda_t_effective_mean": 1.6200000000000003,
+      "mean_relative_pct": 690.2755660488971,
+      "median_relative_pct": 1119.3022869508122
+    }
+  ],
+  "C1_gravity_nucleation_lead_lag": [
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_time_steps": 64,
+      "lead_lag_analysis": {
+        "eta_p_vs_active_fraction": [
+          {
+            "seed": 0,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          },
+          {
+            "seed": 1,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          },
+          {
+            "seed": 2,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          },
+          {
+            "seed": 3,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          }
+        ],
+        "eta_p_vs_negative_triangle": [
+          {
+            "seed": 0,
+            "best_lag": 0,
+            "corr_at_best_lag": 0.9849306098714989,
+            "corr_lag_0": 0.9849306098714989
+          },
+          {
+            "seed": 1,
+            "best_lag": 0,
+            "corr_at_best_lag": 0.9956112427927988,
+            "corr_lag_0": 0.9956112427927988
+          },
+          {
+            "seed": 2,
+            "best_lag": 0,
+            "corr_at_best_lag": 0.7511631507792423,
+            "corr_lag_0": 0.7511631507792423
+          },
+          {
+            "seed": 3,
+            "best_lag": 0,
+            "corr_at_best_lag": 0.9942098550913817,
+            "corr_lag_0": 0.9942098550913817
+          }
+        ],
+        "active_fraction_vs_negative_triangle": [
+          {
+            "seed": 0,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          },
+          {
+            "seed": 1,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          },
+          {
+            "seed": 2,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          },
+          {
+            "seed": 3,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          }
+        ]
+      },
+      "interpretation": "best_lag > 0 means second series leads first. Nucleation hypothesis: eta_p (energy density proxy) should LEAD active_fraction (cluster activation) i.e. best_lag > 0 in 'eta_p_vs_active_fraction'."
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_time_steps": 88,
+      "lead_lag_analysis": {
+        "eta_p_vs_active_fraction": [
+          {
+            "seed": 0,
+            "best_lag": 4,
+            "corr_at_best_lag": 0.21161085557558248,
+            "corr_lag_0": 0.1637180299062012
+          },
+          {
+            "seed": 1,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          },
+          {
+            "seed": 2,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          },
+          {
+            "seed": 3,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          }
+        ],
+        "eta_p_vs_negative_triangle": [
+          {
+            "seed": 0,
+            "best_lag": 0,
+            "corr_at_best_lag": 0.48891289780434105,
+            "corr_lag_0": 0.48891289780434105
+          },
+          {
+            "seed": 1,
+            "best_lag": 0,
+            "corr_at_best_lag": 0.9097650199972407,
+            "corr_lag_0": 0.9097650199972407
+          },
+          {
+            "seed": 2,
+            "best_lag": 0,
+            "corr_at_best_lag": 0.9807360358557756,
+            "corr_lag_0": 0.9807360358557756
+          },
+          {
+            "seed": 3,
+            "best_lag": 0,
+            "corr_at_best_lag": 0.9189925334983655,
+            "corr_lag_0": 0.9189925334983655
+          }
+        ],
+        "active_fraction_vs_negative_triangle": [
+          {
+            "seed": 0,
+            "best_lag": -3,
+            "corr_at_best_lag": 0.4884382963883217,
+            "corr_lag_0": 0.366783799922637
+          },
+          {
+            "seed": 1,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          },
+          {
+            "seed": 2,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          },
+          {
+            "seed": 3,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          }
+        ]
+      },
+      "interpretation": "best_lag > 0 means second series leads first. Nucleation hypothesis: eta_p (energy density proxy) should LEAD active_fraction (cluster activation) i.e. best_lag > 0 in 'eta_p_vs_active_fraction'."
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_time_steps": 64,
+      "lead_lag_analysis": {
+        "eta_p_vs_active_fraction": [
+          {
+            "seed": 0,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          },
+          {
+            "seed": 1,
+            "best_lag": 1,
+            "corr_at_best_lag": 0.32156029703560296,
+            "corr_lag_0": 0.3084621846329198
+          },
+          {
+            "seed": 2,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.3102534272035011,
+            "corr_lag_0": 0.1336652103664357
+          },
+          {
+            "seed": 3,
+            "best_lag": -2,
+            "corr_at_best_lag": 0.29831131259849125,
+            "corr_lag_0": 0.2697309601946596
+          }
+        ],
+        "eta_p_vs_negative_triangle": [
+          {
+            "seed": 0,
+            "best_lag": -1,
+            "corr_at_best_lag": -0.9331395774470568,
+            "corr_lag_0": -0.9310175492754265
+          },
+          {
+            "seed": 1,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.48683826551102044,
+            "corr_lag_0": 0.2651091079766682
+          },
+          {
+            "seed": 2,
+            "best_lag": 0,
+            "corr_at_best_lag": 0.5653042936487631,
+            "corr_lag_0": 0.5653042936487631
+          },
+          {
+            "seed": 3,
+            "best_lag": -2,
+            "corr_at_best_lag": 0.8616803163891715,
+            "corr_lag_0": 0.8409228874347829
+          }
+        ],
+        "active_fraction_vs_negative_triangle": [
+          {
+            "seed": 0,
+            "best_lag": -8,
+            "corr_at_best_lag": 0.0,
+            "corr_lag_0": 0.0
+          },
+          {
+            "seed": 1,
+            "best_lag": -3,
+            "corr_at_best_lag": 0.789138827127185,
+            "corr_lag_0": 0.2916175399711271
+          },
+          {
+            "seed": 2,
+            "best_lag": -2,
+            "corr_at_best_lag": -0.19626684326910634,
+            "corr_lag_0": -0.06966755713928283
+          },
+          {
+            "seed": 3,
+            "best_lag": -1,
+            "corr_at_best_lag": 0.3638724805724446,
+            "corr_lag_0": 0.30605735986191246
+          }
+        ]
+      },
+      "interpretation": "best_lag > 0 means second series leads first. Nucleation hypothesis: eta_p (energy density proxy) should LEAD active_fraction (cluster activation) i.e. best_lag > 0 in 'eta_p_vs_active_fraction'."
+    }
+  ],
+  "C2_spatial_cluster_of_heavy_tail": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "per_seed": [
+        {
+          "seed": 0,
+          "n_top_decile": 5,
+          "mean_xi_inside_top10": 0.15849651823295036,
+          "mean_xi_global": 0.10588783336015183,
+          "ratio_inside_global": 1.4968340856863398,
+          "n_connected_components": 2,
+          "largest_component_size": 4,
+          "size_distribution": [
+            4,
+            1
+          ]
+        },
+        {
+          "seed": 1,
+          "n_top_decile": 5,
+          "mean_xi_inside_top10": 0.17652959653783146,
+          "mean_xi_global": 0.11537169639741146,
+          "ratio_inside_global": 1.530094486343985,
+          "n_connected_components": 2,
+          "largest_component_size": 3,
+          "size_distribution": [
+            3,
+            2
+          ]
+        },
+        {
+          "seed": 2,
+          "n_top_decile": 5,
+          "mean_xi_inside_top10": 0.24853232020163538,
+          "mean_xi_global": 0.12639317383590112,
+          "ratio_inside_global": 1.9663429017480805,
+          "n_connected_components": 1,
+          "largest_component_size": 5,
+          "size_distribution": [
+            5
+          ]
+        },
+        {
+          "seed": 3,
+          "n_top_decile": 5,
+          "mean_xi_inside_top10": 0.3353147975869497,
+          "mean_xi_global": 0.11333796854294276,
+          "ratio_inside_global": 2.9585389776939746,
+          "n_connected_components": 1,
+          "largest_component_size": 5,
+          "size_distribution": [
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "per_seed": [
+        {
+          "seed": 0,
+          "n_top_decile": 9,
+          "mean_xi_inside_top10": 0.059507090128317404,
+          "mean_xi_global": 0.03687151035955,
+          "ratio_inside_global": 1.6139043274343283,
+          "n_connected_components": 7,
+          "largest_component_size": 2,
+          "size_distribution": [
+            2,
+            2,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 1,
+          "n_top_decile": 9,
+          "mean_xi_inside_top10": 0.13034790566061996,
+          "mean_xi_global": 0.05031452762260769,
+          "ratio_inside_global": 2.590661421653715,
+          "n_connected_components": 2,
+          "largest_component_size": 7,
+          "size_distribution": [
+            7,
+            2
+          ]
+        },
+        {
+          "seed": 2,
+          "n_top_decile": 9,
+          "mean_xi_inside_top10": 0.06657941910658458,
+          "mean_xi_global": 0.04866048082054838,
+          "ratio_inside_global": 1.368244168242361,
+          "n_connected_components": 4,
+          "largest_component_size": 4,
+          "size_distribution": [
+            4,
+            3,
+            1,
+            1
+          ]
+        },
+        {
+          "seed": 3,
+          "n_top_decile": 9,
+          "mean_xi_inside_top10": 0.12558754059478267,
+          "mean_xi_global": 0.05482509870490083,
+          "ratio_inside_global": 2.2906942907802987,
+          "n_connected_components": 3,
+          "largest_component_size": 4,
+          "size_distribution": [
+            4,
+            3,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "per_seed": [
+        {
+          "seed": 0,
+          "n_top_decile": 10,
+          "mean_xi_inside_top10": 0.14264037956434558,
+          "mean_xi_global": 0.05451135156280404,
+          "ratio_inside_global": 2.6167096480813843,
+          "n_connected_components": 2,
+          "largest_component_size": 8,
+          "size_distribution": [
+            8,
+            2
+          ]
+        },
+        {
+          "seed": 1,
+          "n_top_decile": 10,
+          "mean_xi_inside_top10": 0.12556793616504794,
+          "mean_xi_global": 0.04268349864800452,
+          "ratio_inside_global": 2.9418379500837455,
+          "n_connected_components": 2,
+          "largest_component_size": 8,
+          "size_distribution": [
+            8,
+            2
+          ]
+        },
+        {
+          "seed": 2,
+          "n_top_decile": 10,
+          "mean_xi_inside_top10": 0.10970990196432259,
+          "mean_xi_global": 0.041330307286068575,
+          "ratio_inside_global": 2.6544661573639714,
+          "n_connected_components": 2,
+          "largest_component_size": 8,
+          "size_distribution": [
+            8,
+            2
+          ]
+        },
+        {
+          "seed": 3,
+          "n_top_decile": 10,
+          "mean_xi_inside_top10": 0.12796062499802366,
+          "mean_xi_global": 0.057515294694660775,
+          "ratio_inside_global": 2.224810386130255,
+          "n_connected_components": 1,
+          "largest_component_size": 10,
+          "size_distribution": [
+            10
+          ]
+        }
+      ]
+    }
+  ],
+  "C3_seed_reproducibility": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_seeds": 4,
+      "pair_jaccards": [
+        {
+          "i": 0,
+          "j": 1,
+          "jaccard": 0.0
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "jaccard": 0.0
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "jaccard": 0.1111111111111111
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "jaccard": 0.1111111111111111
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "jaccard": 0.0
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "jaccard": 0.0
+        }
+      ],
+      "mean_jaccard": 0.037037037037037035,
+      "expected_jaccard_random": 0.05263157894736843,
+      "lift_over_random": 0.7037037037037035
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_seeds": 4,
+      "pair_jaccards": [
+        {
+          "i": 0,
+          "j": 1,
+          "jaccard": 0.058823529411764705
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "jaccard": 0.058823529411764705
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "jaccard": 0.125
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "jaccard": 0.058823529411764705
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "jaccard": 0.0
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "jaccard": 0.125
+        }
+      ],
+      "mean_jaccard": 0.07107843137254902,
+      "expected_jaccard_random": 0.05263157894736843,
+      "lift_over_random": 1.350490196078431
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds": 4,
+      "pair_jaccards": [
+        {
+          "i": 0,
+          "j": 1,
+          "jaccard": 0.0
+        },
+        {
+          "i": 0,
+          "j": 2,
+          "jaccard": 0.05263157894736842
+        },
+        {
+          "i": 0,
+          "j": 3,
+          "jaccard": 0.05263157894736842
+        },
+        {
+          "i": 1,
+          "j": 2,
+          "jaccard": 0.05263157894736842
+        },
+        {
+          "i": 1,
+          "j": 3,
+          "jaccard": 0.1111111111111111
+        },
+        {
+          "i": 2,
+          "j": 3,
+          "jaccard": 0.05263157894736842
+        }
+      ],
+      "mean_jaccard": 0.05360623781676413,
+      "expected_jaccard_random": 0.05263157894736843,
+      "lift_over_random": 1.0185185185185182
+    }
+  ]
+}

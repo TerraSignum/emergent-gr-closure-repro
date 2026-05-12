@@ -1,0 +1,98 @@
+================================================================================
+Test G_v3: 4-cycle Wilson-loop calibration via primary +1
+================================================================================
+
+--- P5N64 N=64 (n_seeds=24, n_tri/seed=4571) ---
+  Phi-loop calib:    asym = +0.0358 +/- 0.0102
+  Phi-loop uncalib:  asym = +0.0038 +/- 0.0144
+  Phi diff (c-u):    +0.0321
+  D-mismatch calib:  asym = +0.0314
+  D-mismatch uncal:  asym = +0.0190
+  Joint calib:       asym = +0.0424 +/- 0.0108
+  Joint uncalib:     asym = -0.0024 +/- 0.0176
+  Joint diff (c-u):  +0.0448
+  asym(all):         +0.0251
+--- P5N72 N=72 (n_seeds=24, n_tri/seed=5195) ---
+  Phi-loop calib:    asym = +0.0007 +/- 0.0084
+  Phi-loop uncalib:  asym = +0.0025 +/- 0.0111
+  Phi diff (c-u):    -0.0018
+  D-mismatch calib:  asym = +0.0047
+  D-mismatch uncal:  asym = -0.0025
+  Joint calib:       asym = -0.0005 +/- 0.0091
+  Joint uncalib:     asym = -0.0082 +/- 0.0166
+  Joint diff (c-u):  +0.0077
+  asym(all):         +0.0012
+--- P5N84 N=84 (n_seeds=24, n_tri/seed=6402) ---
+  Phi-loop calib:    asym = +0.0069 +/- 0.0066
+  Phi-loop uncalib:  asym = +0.0058 +/- 0.0092
+  Phi diff (c-u):    +0.0011
+  D-mismatch calib:  asym = -0.0016
+  D-mismatch uncal:  asym = +0.0151
+  Joint calib:       asym = -0.0013 +/- 0.0094
+  Joint uncalib:     asym = +0.0148 +/- 0.0129
+  Joint diff (c-u):  -0.0161
+  asym(all):         +0.0066
+--- P5N100 N=100 (n_seeds=24, n_tri/seed=8122) ---
+  Phi-loop calib:    asym = -0.0014 +/- 0.0074
+  Phi-loop uncalib:  asym = +0.0111 +/- 0.0070
+  Phi diff (c-u):    -0.0125
+  D-mismatch calib:  asym = +0.0020
+  D-mismatch uncal:  asym = +0.0035
+  Joint calib:       asym = -0.0023 +/- 0.0078
+  Joint uncalib:     asym = +0.0131 +/- 0.0126
+  Joint diff (c-u):  -0.0153
+  asym(all):         +0.0027
+--- P5N128 N=128 (n_seeds=12, n_tri/seed=12973) ---
+  Phi-loop calib:    asym = -0.0051 +/- 0.0101
+  Phi-loop uncalib:  asym = +0.0096 +/- 0.0053
+  Phi diff (c-u):    -0.0147
+  D-mismatch calib:  asym = +0.0044
+  D-mismatch uncal:  asym = -0.0044
+  Joint calib:       asym = -0.0012 +/- 0.0095
+  Joint uncalib:     asym = +0.0043 +/- 0.0076
+  Joint diff (c-u):  -0.0055
+  asym(all):         -0.0001
+--- P5N200 N=200 (n_seeds=8, n_tri/seed=24298) ---
+  Phi-loop calib:    asym = -0.0030 +/- 0.0064
+  Phi-loop uncalib:  asym = -0.0169 +/- 0.0084
+  Phi diff (c-u):    +0.0140
+  D-mismatch calib:  asym = -0.0105
+  D-mismatch uncal:  asym = -0.0046
+  Joint calib:       asym = -0.0114 +/- 0.0070
+  Joint uncalib:     asym = -0.0265 +/- 0.0111
+  Joint diff (c-u):  +0.0151
+  asym(all):         -0.0076
+--- P5N256 N=256 (n_seeds=2, n_tri/seed=37421) ---
+  Phi-loop calib:    asym = -0.0072 +/- 0.0088
+  Phi-loop uncalib:  asym = -0.0022 +/- 0.0011
+  Phi diff (c-u):    -0.0050
+  D-mismatch calib:  asym = -0.0216
+  D-mismatch uncal:  asym = +0.0105
+  Joint calib:       asym = -0.0256 +/- 0.0026
+  Joint uncalib:     asym = +0.0108 +/- 0.0052
+  Joint diff (c-u):  -0.0364
+  asym(all):         -0.0055
+--- P5N300 N=300 (n_seeds=2, n_tri/seed=51334) ---
+  Phi-loop calib:    asym = +0.0018 +/- 0.0098
+  Phi-loop uncalib:  asym = -0.0329 +/- 0.0009
+  Phi diff (c-u):    +0.0347
+  D-mismatch calib:  asym = -0.0036
+  D-mismatch uncal:  asym = -0.0159
+  Joint calib:       asym = +0.0118 +/- 0.0032
+  Joint uncalib:     asym = -0.0306 +/- 0.0022
+  Joint diff (c-u):  +0.0423
+  asym(all):         -0.0098
+
+================================================================================
+Cross-regime synthesis
+================================================================================
+  phi_loop_calib               = +0.00357 +/- 0.00454  (0.79σ vs 0)
+  phi_loop_uncalib             = -0.00241 +/- 0.00499  (0.48σ vs 0)
+  phi_diff (calib-uncalib)     = +0.00598 +/- 0.00630  (0.95σ vs 0)
+  d_mismatch_calib             = +0.00063 +/- 0.00503  (0.13σ vs 0)
+  d_mismatch_uncalib           = +0.00258 +/- 0.00387  (0.67σ vs 0)
+  joint_calib                  = +0.00148 +/- 0.00651  (0.23σ vs 0)
+  joint_uncalib                = -0.00310 +/- 0.00581  (0.53σ vs 0)
+  joint diff (c-u)             = +0.00459 +/- 0.00949  (0.48σ vs 0)
+
+Saved C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\audit_test_G_v3_calibrator_match.json

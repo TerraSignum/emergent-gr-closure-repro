@@ -1,0 +1,108 @@
+{
+  "method": "particle_mode_hypothesis_test",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5",
+      "P5N100",
+      "P5N72",
+      "P5N84",
+      "P5N200",
+      "P6N128",
+      "P8N128"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "predictions": {
+    "long_trans_ratio_for_massive_spin1": 1.0,
+    "spatial_coherence_for_propagating_mode": ">0.6",
+    "random_3D_baseline": 0.5
+  },
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_nodes": 1400,
+      "n_neighbor_pairs": 12698,
+      "long_to_trans_ratio_median": 1.2877849104043542,
+      "long_to_trans_ratio_mean": 2.118081270229564,
+      "long_to_trans_ratio_std": 4.689734762697949,
+      "neighbor_axis_alignment_mean": 0.5171145881660603,
+      "neighbor_axis_alignment_med": 0.5186156795321597,
+      "neighbor_axis_alignment_std": 0.292597683393878,
+      "alignment_excess_over_random": 0.017114588166060263,
+      "anisotropy_magnitude_mean": 0.28919502921682333
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_nodes": 2400,
+      "n_neighbor_pairs": 19185,
+      "long_to_trans_ratio_median": 1.2665806175322198,
+      "long_to_trans_ratio_mean": 1.8342482812853314,
+      "long_to_trans_ratio_std": 2.4168968574779446,
+      "neighbor_axis_alignment_mean": 0.5342990763149412,
+      "neighbor_axis_alignment_med": 0.5479339129461632,
+      "neighbor_axis_alignment_std": 0.2959942240089305,
+      "alignment_excess_over_random": 0.034299076314941224,
+      "anisotropy_magnitude_mean": 0.06661638614926632
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_nodes": 3072,
+      "n_neighbor_pairs": 20084,
+      "long_to_trans_ratio_median": 1.1480460500590766,
+      "long_to_trans_ratio_mean": 1.6476815601803392,
+      "long_to_trans_ratio_std": 2.669795897641241,
+      "neighbor_axis_alignment_mean": 0.5484962361900612,
+      "neighbor_axis_alignment_med": 0.5693317252979287,
+      "neighbor_axis_alignment_std": 0.29668079924749247,
+      "alignment_excess_over_random": 0.04849623619006116,
+      "anisotropy_magnitude_mean": 0.007351672896849304
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_nodes": 6144,
+      "n_neighbor_pairs": 37189,
+      "long_to_trans_ratio_median": 1.1256337245446737,
+      "long_to_trans_ratio_mean": 1.5548260698305671,
+      "long_to_trans_ratio_std": 2.0477879547634887,
+      "neighbor_axis_alignment_mean": 0.5527722333064612,
+      "neighbor_axis_alignment_med": 0.5752186484682558,
+      "neighbor_axis_alignment_std": 0.29735045099125723,
+      "alignment_excess_over_random": 0.05277223330646119,
+      "anisotropy_magnitude_mean": 0.002531930545185883
+    },
+    {
+      "regime": "P6N128",
+      "N": 128,
+      "n_nodes": 512,
+      "n_neighbor_pairs": 3669,
+      "long_to_trans_ratio_median": 1.193521900334317,
+      "long_to_trans_ratio_mean": 1.672621851800472,
+      "long_to_trans_ratio_std": 2.084958000768988,
+      "neighbor_axis_alignment_mean": 0.5459423818263751,
+      "neighbor_axis_alignment_med": 0.5658979983685509,
+      "neighbor_axis_alignment_std": 0.2965751020048799,
+      "alignment_excess_over_random": 0.04594238182637511,
+      "anisotropy_magnitude_mean": 0.024243556732796913
+    },
+    {
+      "regime": "P8N128",
+      "N": 128,
+      "n_nodes": 512,
+      "n_neighbor_pairs": 3097,
+      "long_to_trans_ratio_median": 1.1701064815099396,
+      "long_to_trans_ratio_mean": 1.7284240101637187,
+      "long_to_trans_ratio_std": 2.7783686437498707,
+      "neighbor_axis_alignment_mean": 0.5546521261323876,
+      "neighbor_axis_alignment_med": 0.5818622535433864,
+      "neighbor_axis_alignment_std": 0.2970153858057725,
+      "alignment_excess_over_random": 0.05465212613238757,
+      "anisotropy_magnitude_mean": 0.01679301623634061
+    }
+  ]
+}

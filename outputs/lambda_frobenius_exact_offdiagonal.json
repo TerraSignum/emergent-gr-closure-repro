@@ -1,0 +1,91 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "status": "ok",
+  "regimes": [
+    {
+      "label": "P0",
+      "n_lattice": 18,
+      "R_bar": 0.1650035751410924,
+      "T_00_mean": 1.4623798663005714,
+      "T_ii_mean": -0.49052082954433174,
+      "n_seeds": 4,
+      "K_rec_value": 1.6602092218168114
+    },
+    {
+      "label": "P1",
+      "n_lattice": 28,
+      "R_bar": 0.14780416873075558,
+      "T_00_mean": 1.4045751071684536,
+      "T_ii_mean": -0.4479603589893051,
+      "n_seeds": 4,
+      "K_rec_value": 1.6697907901425633
+    },
+    {
+      "label": "P2prime",
+      "n_lattice": 30,
+      "R_bar": 0.15817978492048598,
+      "T_00_mean": 1.4095085365938682,
+      "T_ii_mean": -0.4536323673711122,
+      "n_seeds": 4,
+      "K_rec_value": 1.669822449793165
+    },
+    {
+      "label": "P3",
+      "n_lattice": 36,
+      "R_bar": 0.1516265466235002,
+      "T_00_mean": 1.375785786600975,
+      "T_ii_mean": -0.42906835693184364,
+      "n_seeds": 4,
+      "K_rec_value": 1.673376894576527
+    },
+    {
+      "label": "P4",
+      "n_lattice": 42,
+      "R_bar": 0.13226528720615013,
+      "T_00_mean": 1.3985373298701103,
+      "T_ii_mean": -0.448959420688285,
+      "n_seeds": 4,
+      "K_rec_value": 1.6782575187928994
+    },
+    {
+      "label": "P5",
+      "n_lattice": 50,
+      "R_bar": 0.10650901833536285,
+      "T_00_mean": 1.3789962534480733,
+      "T_ii_mean": -0.42986107559222503,
+      "n_seeds": 4,
+      "K_rec_value": 1.685722357303941
+    },
+    {
+      "label": "P6",
+      "n_lattice": 60,
+      "R_bar": 0.07843896481521238,
+      "T_00_mean": 1.3547273207378518,
+      "T_ii_mean": -0.4119959310212888,
+      "n_seeds": 4,
+      "K_rec_value": 1.6920421158739862
+    },
+    {
+      "label": "P7",
+      "n_lattice": 72,
+      "R_bar": 0.06366151740658309,
+      "T_00_mean": 1.3186109135007327,
+      "T_ii_mean": -0.3806216869010498,
+      "n_seeds": 4,
+      "K_rec_value": 1.695833707218999
+    },
+    {
+      "label": "P8",
+      "n_lattice": 84,
+      "R_bar": 0.052074566377716125,
+      "T_00_mean": 1.3495755391776232,
+      "T_ii_mean": -0.4068795390788777,
+      "n_seeds": 4,
+      "K_rec_value": 1.7017747771197473
+    }
+  ]
+}

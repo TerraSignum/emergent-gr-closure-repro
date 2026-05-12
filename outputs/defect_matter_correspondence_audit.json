@@ -1,0 +1,479 @@
+{
+  "method": "heavy_tail_residual_vs_topological_defect_overlap",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P0",
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P5N64",
+      "P7",
+      "P8",
+      "P5N100"
+    ],
+    "branch_rationale": "Matter-localisation / matter-core diagnostic; directly measures post-flip matter-side localization",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "structural_lambda": {
+    "t": 0.81,
+    "s": -0.005
+  },
+  "per_regime": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "n_nodes_total": 72,
+      "winding_summary": {
+        "n_nonzero_total": 8,
+        "fraction_nonzero": 0.1111111111111111,
+        "max_abs_winding": 1.0000000000000002,
+        "winding_distinct_values": 13
+      },
+      "overlap_top10_residual_vs_nonzero_winding": {
+        "n_total": 72,
+        "n_top": 8,
+        "n_defect": 8,
+        "n_overlap": 0,
+        "expected_random": 0.8888888888888888,
+        "lift": 0.0,
+        "z_score": -1.0606601717798212
+      },
+      "overlap_top10_residual_vs_top10_walldegree": {
+        "n_total": 72,
+        "n_top": 8,
+        "n_defect": 12,
+        "n_overlap": 2,
+        "expected_random": 1.3333333333333333,
+        "lift": 1.5,
+        "z_score": 0.670820393249937
+      },
+      "overlap_top10_residual_vs_top10_ampdev": {
+        "n_total": 72,
+        "n_top": 8,
+        "n_defect": 8,
+        "n_overlap": 0,
+        "expected_random": 0.8888888888888888,
+        "lift": 0.0,
+        "z_score": -1.0606601717798212
+      },
+      "mean_residual_at_vortex_nodes": 1.6381377833749298,
+      "mean_residual_at_non_vortex_nodes": 3.8732322322411186,
+      "vortex_vs_non_vortex_residual_ratio": 0.4229381780258178
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "n_nodes_total": 112,
+      "winding_summary": {
+        "n_nonzero_total": 26,
+        "fraction_nonzero": 0.23214285714285715,
+        "max_abs_winding": 1.0000000000000002,
+        "winding_distinct_values": 12
+      },
+      "overlap_top10_residual_vs_nonzero_winding": {
+        "n_total": 112,
+        "n_top": 12,
+        "n_defect": 26,
+        "n_overlap": 4,
+        "expected_random": 2.7857142857142856,
+        "lift": 1.435897435897436,
+        "z_score": 0.878661094519419
+      },
+      "overlap_top10_residual_vs_top10_walldegree": {
+        "n_total": 112,
+        "n_top": 12,
+        "n_defect": 37,
+        "n_overlap": 5,
+        "expected_random": 3.9642857142857144,
+        "lift": 1.2612612612612613,
+        "z_score": 0.6727363333239659
+      },
+      "overlap_top10_residual_vs_top10_ampdev": {
+        "n_total": 112,
+        "n_top": 12,
+        "n_defect": 12,
+        "n_overlap": 1,
+        "expected_random": 1.2857142857142858,
+        "lift": 0.7777777777777777,
+        "z_score": -0.28221347318022305
+      },
+      "mean_residual_at_vortex_nodes": 0.7703223618989851,
+      "mean_residual_at_non_vortex_nodes": 0.5222637494296731,
+      "vortex_vs_non_vortex_residual_ratio": 1.4749680841149688
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "n_nodes_total": 120,
+      "winding_summary": {
+        "n_nonzero_total": 46,
+        "fraction_nonzero": 0.38333333333333336,
+        "max_abs_winding": 1.0000000000000002,
+        "winding_distinct_values": 11
+      },
+      "overlap_top10_residual_vs_nonzero_winding": {
+        "n_total": 120,
+        "n_top": 12,
+        "n_defect": 46,
+        "n_overlap": 2,
+        "expected_random": 4.6,
+        "lift": 0.4347826086956522,
+        "z_score": -1.6272262462733655
+      },
+      "overlap_top10_residual_vs_top10_walldegree": {
+        "n_total": 120,
+        "n_top": 12,
+        "n_defect": 20,
+        "n_overlap": 2,
+        "expected_random": 2.0,
+        "lift": 1.0,
+        "z_score": 0.0
+      },
+      "overlap_top10_residual_vs_top10_ampdev": {
+        "n_total": 120,
+        "n_top": 12,
+        "n_defect": 12,
+        "n_overlap": 4,
+        "expected_random": 1.2,
+        "lift": 3.3333333333333335,
+        "z_score": 2.8400428907675277
+      },
+      "mean_residual_at_vortex_nodes": 0.7194512205139926,
+      "mean_residual_at_non_vortex_nodes": 1.910249270497015,
+      "vortex_vs_non_vortex_residual_ratio": 0.3766268788192252
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "n_nodes_total": 144,
+      "winding_summary": {
+        "n_nonzero_total": 31,
+        "fraction_nonzero": 0.2152777777777778,
+        "max_abs_winding": 1.0000000000000002,
+        "winding_distinct_values": 17
+      },
+      "overlap_top10_residual_vs_nonzero_winding": {
+        "n_total": 144,
+        "n_top": 15,
+        "n_defect": 31,
+        "n_overlap": 3,
+        "expected_random": 3.2291666666666665,
+        "lift": 0.9290322580645162,
+        "z_score": -0.1521018977088867
+      },
+      "overlap_top10_residual_vs_top10_walldegree": {
+        "n_total": 144,
+        "n_top": 15,
+        "n_defect": 44,
+        "n_overlap": 6,
+        "expected_random": 4.583333333333333,
+        "lift": 1.309090909090909,
+        "z_score": 0.8389664435757184
+      },
+      "overlap_top10_residual_vs_top10_ampdev": {
+        "n_total": 144,
+        "n_top": 15,
+        "n_defect": 15,
+        "n_overlap": 1,
+        "expected_random": 1.5625,
+        "lift": 0.64,
+        "z_score": -0.5023255813953488
+      },
+      "mean_residual_at_vortex_nodes": 0.6472974508652816,
+      "mean_residual_at_non_vortex_nodes": 0.7185423626781209,
+      "vortex_vs_non_vortex_residual_ratio": 0.900848000739583
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "n_nodes_total": 168,
+      "winding_summary": {
+        "n_nonzero_total": 41,
+        "fraction_nonzero": 0.24404761904761904,
+        "max_abs_winding": 1.0000000000000002,
+        "winding_distinct_values": 18
+      },
+      "overlap_top10_residual_vs_nonzero_winding": {
+        "n_total": 168,
+        "n_top": 17,
+        "n_defect": 41,
+        "n_overlap": 5,
+        "expected_random": 4.148809523809524,
+        "lift": 1.2051649928263988,
+        "z_score": 0.5069719780405011
+      },
+      "overlap_top10_residual_vs_top10_walldegree": {
+        "n_total": 168,
+        "n_top": 17,
+        "n_defect": 33,
+        "n_overlap": 2,
+        "expected_random": 3.3392857142857144,
+        "lift": 0.5989304812834224,
+        "z_score": -0.8623833647623425
+      },
+      "overlap_top10_residual_vs_top10_ampdev": {
+        "n_total": 168,
+        "n_top": 17,
+        "n_defect": 17,
+        "n_overlap": 1,
+        "expected_random": 1.7202380952380953,
+        "lift": 0.5813148788927335,
+        "z_score": -0.610961920145969
+      },
+      "mean_residual_at_vortex_nodes": 0.28323766127773253,
+      "mean_residual_at_non_vortex_nodes": 0.15869730401748489,
+      "vortex_vs_non_vortex_residual_ratio": 1.7847666854285444
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_nodes_total": 200,
+      "winding_summary": {
+        "n_nonzero_total": 53,
+        "fraction_nonzero": 0.265,
+        "max_abs_winding": 1.0000000000000002,
+        "winding_distinct_values": 23
+      },
+      "overlap_top10_residual_vs_nonzero_winding": {
+        "n_total": 200,
+        "n_top": 20,
+        "n_defect": 53,
+        "n_overlap": 1,
+        "expected_random": 5.3,
+        "lift": 0.18867924528301888,
+        "z_score": -2.296495488186467
+      },
+      "overlap_top10_residual_vs_top10_walldegree": {
+        "n_total": 200,
+        "n_top": 20,
+        "n_defect": 39,
+        "n_overlap": 8,
+        "expected_random": 3.9,
+        "lift": 2.0512820512820515,
+        "z_score": 2.439115456503397
+      },
+      "overlap_top10_residual_vs_top10_ampdev": {
+        "n_total": 200,
+        "n_top": 20,
+        "n_defect": 20,
+        "n_overlap": 1,
+        "expected_random": 2.0,
+        "lift": 0.5,
+        "z_score": -0.7856742013183862
+      },
+      "mean_residual_at_vortex_nodes": 0.10875219703815725,
+      "mean_residual_at_non_vortex_nodes": 0.34230474822742313,
+      "vortex_vs_non_vortex_residual_ratio": 0.31770578001419836
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "n_nodes_total": 240,
+      "winding_summary": {
+        "n_nonzero_total": 61,
+        "fraction_nonzero": 0.25416666666666665,
+        "max_abs_winding": 1.0000000000000002,
+        "winding_distinct_values": 17
+      },
+      "overlap_top10_residual_vs_nonzero_winding": {
+        "n_total": 240,
+        "n_top": 24,
+        "n_defect": 61,
+        "n_overlap": 3,
+        "expected_random": 6.1,
+        "lift": 0.49180327868852464,
+        "z_score": -1.5319854018906538
+      },
+      "overlap_top10_residual_vs_top10_walldegree": {
+        "n_total": 240,
+        "n_top": 24,
+        "n_defect": 24,
+        "n_overlap": 1,
+        "expected_random": 2.4,
+        "lift": 0.4166666666666667,
+        "z_score": -1.004106793461182
+      },
+      "overlap_top10_residual_vs_top10_ampdev": {
+        "n_total": 240,
+        "n_top": 24,
+        "n_defect": 24,
+        "n_overlap": 2,
+        "expected_random": 2.4,
+        "lift": 0.8333333333333334,
+        "z_score": -0.2868876552746234
+      },
+      "mean_residual_at_vortex_nodes": 0.04399197257430385,
+      "mean_residual_at_non_vortex_nodes": 0.09544086638030588,
+      "vortex_vs_non_vortex_residual_ratio": 0.4609343381168378
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_nodes_total": 256,
+      "winding_summary": {
+        "n_nonzero_total": 34,
+        "fraction_nonzero": 0.1328125,
+        "max_abs_winding": 1.0000000000000002,
+        "winding_distinct_values": 15
+      },
+      "overlap_top10_residual_vs_nonzero_winding": {
+        "n_total": 256,
+        "n_top": 26,
+        "n_defect": 34,
+        "n_overlap": 4,
+        "expected_random": 3.453125,
+        "lift": 1.158371040723982,
+        "z_score": 0.3334121949274675
+      },
+      "overlap_top10_residual_vs_top10_walldegree": {
+        "n_total": 256,
+        "n_top": 26,
+        "n_defect": 51,
+        "n_overlap": 8,
+        "expected_random": 5.1796875,
+        "lift": 1.5444947209653093,
+        "z_score": 1.4609810056045296
+      },
+      "overlap_top10_residual_vs_top10_ampdev": {
+        "n_total": 256,
+        "n_top": 26,
+        "n_defect": 26,
+        "n_overlap": 0,
+        "expected_random": 2.640625,
+        "lift": 0.0,
+        "z_score": -1.808695652173913
+      },
+      "mean_residual_at_vortex_nodes": 0.2958772936162073,
+      "mean_residual_at_non_vortex_nodes": 0.17406886659260418,
+      "vortex_vs_non_vortex_residual_ratio": 1.6997714721075716
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_nodes_total": 288,
+      "winding_summary": {
+        "n_nonzero_total": 83,
+        "fraction_nonzero": 0.2881944444444444,
+        "max_abs_winding": 1.0000000000000002,
+        "winding_distinct_values": 19
+      },
+      "overlap_top10_residual_vs_nonzero_winding": {
+        "n_total": 288,
+        "n_top": 29,
+        "n_defect": 83,
+        "n_overlap": 9,
+        "expected_random": 8.35763888888889,
+        "lift": 1.0768591607810551,
+        "z_score": 0.27771741525334004
+      },
+      "overlap_top10_residual_vs_top10_walldegree": {
+        "n_total": 288,
+        "n_top": 29,
+        "n_defect": 32,
+        "n_overlap": 5,
+        "expected_random": 3.2222222222222223,
+        "lift": 1.5517241379310345,
+        "z_score": 1.1077005007736487
+      },
+      "overlap_top10_residual_vs_top10_ampdev": {
+        "n_total": 288,
+        "n_top": 29,
+        "n_defect": 29,
+        "n_overlap": 7,
+        "expected_random": 2.920138888888889,
+        "lift": 2.3971462544589777,
+        "z_score": 2.6548277498949058
+      },
+      "mean_residual_at_vortex_nodes": 0.09788826161714784,
+      "mean_residual_at_non_vortex_nodes": 0.1325654063651993,
+      "vortex_vs_non_vortex_residual_ratio": 0.7384148270739597
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_nodes_total": 336,
+      "winding_summary": {
+        "n_nonzero_total": 104,
+        "fraction_nonzero": 0.30952380952380953,
+        "max_abs_winding": 1.0000000000000002,
+        "winding_distinct_values": 28
+      },
+      "overlap_top10_residual_vs_nonzero_winding": {
+        "n_total": 336,
+        "n_top": 34,
+        "n_defect": 104,
+        "n_overlap": 11,
+        "expected_random": 10.523809523809524,
+        "lift": 1.0452488687782806,
+        "z_score": 0.18633139236709992
+      },
+      "overlap_top10_residual_vs_top10_walldegree": {
+        "n_total": 336,
+        "n_top": 34,
+        "n_defect": 35,
+        "n_overlap": 5,
+        "expected_random": 3.5416666666666665,
+        "lift": 1.411764705882353,
+        "z_score": 0.8635858520274836
+      },
+      "overlap_top10_residual_vs_top10_ampdev": {
+        "n_total": 336,
+        "n_top": 34,
+        "n_defect": 34,
+        "n_overlap": 3,
+        "expected_random": 3.4404761904761907,
+        "lift": 0.8719723183391003,
+        "z_score": -0.26420771439558416
+      },
+      "mean_residual_at_vortex_nodes": 0.053825549074628255,
+      "mean_residual_at_non_vortex_nodes": 0.07287426473340995,
+      "vortex_vs_non_vortex_residual_ratio": 0.7386084685935964
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_nodes_total": 400,
+      "winding_summary": {
+        "n_nonzero_total": 112,
+        "fraction_nonzero": 0.28,
+        "max_abs_winding": 1.0000000000000002,
+        "winding_distinct_values": 19
+      },
+      "overlap_top10_residual_vs_nonzero_winding": {
+        "n_total": 400,
+        "n_top": 40,
+        "n_defect": 112,
+        "n_overlap": 13,
+        "expected_random": 11.2,
+        "lift": 1.1607142857142858,
+        "z_score": 0.6681531047810613
+      },
+      "overlap_top10_residual_vs_top10_walldegree": {
+        "n_total": 400,
+        "n_top": 40,
+        "n_defect": 42,
+        "n_overlap": 6,
+        "expected_random": 4.2,
+        "lift": 1.4285714285714286,
+        "z_score": 0.9786222541720243
+      },
+      "overlap_top10_residual_vs_top10_ampdev": {
+        "n_total": 400,
+        "n_top": 40,
+        "n_defect": 40,
+        "n_overlap": 4,
+        "expected_random": 4.0,
+        "lift": 1.0,
+        "z_score": 0.0
+      },
+      "mean_residual_at_vortex_nodes": 0.08627927868843212,
+      "mean_residual_at_non_vortex_nodes": 0.10560103076160722,
+      "vortex_vs_non_vortex_residual_ratio": 0.8170306489072661
+    }
+  ]
+}

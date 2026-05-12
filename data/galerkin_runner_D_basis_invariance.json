@@ -1,0 +1,58 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "title": "Runner D: Basis-invariance test",
+  "backend": "cupy",
+  "results": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "seed": 0,
+      "spectral_mean": 0.17339227557281872,
+      "ricci_mean": 0.1733922755728187,
+      "stress_mean": 0.17339227557281872,
+      "max_rel_dev": 1.6007388751278334e-16,
+      "verdict": "INVARIANT"
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "seed": 1,
+      "spectral_mean": 0.37169812316035616,
+      "ricci_mean": 0.37169812316035616,
+      "stress_mean": 0.3716981231603562,
+      "max_rel_dev": 1.4934471758769006e-16,
+      "verdict": "INVARIANT"
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "seed": 0,
+      "spectral_mean": 0.052197865586289464,
+      "ricci_mean": 0.052197865586289464,
+      "stress_mean": 0.052197865586289464,
+      "max_rel_dev": 0.0,
+      "verdict": "INVARIANT"
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "seed": 1,
+      "spectral_mean": 0.09817027596180199,
+      "ricci_mean": 0.09817027596180197,
+      "stress_mean": 0.09817027596180201,
+      "max_rel_dev": 2.8272891507841535e-16,
+      "verdict": "INVARIANT"
+    }
+  ],
+  "summary": {
+    "n_invariant": 4,
+    "n_ok": 0,
+    "n_fail": 0,
+    "n_total": 4
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "method": "distance_metric_robustness",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5",
+      "P5N100",
+      "P5N84",
+      "P5N200"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "metrics": [
+    "d_log",
+    "d_lin",
+    "d_sqrt",
+    "d_inv"
+  ],
+  "per_regime": {
+    "P5": {
+      "N": 50,
+      "by_metric": {
+        "d_log": {
+          "n_nodes": 1400,
+          "Lambda_t_mean": 0.8712252283544256,
+          "Frob_residual_med": 0.02124296891837829
+        },
+        "d_lin": {
+          "n_nodes": 1400,
+          "Lambda_t_mean": 0.8337926660084142,
+          "Frob_residual_med": 0.02595874103996161
+        },
+        "d_sqrt": {
+          "n_nodes": 1400,
+          "Lambda_t_mean": 0.8261543241972186,
+          "Frob_residual_med": 0.013654881119773674
+        },
+        "d_inv": {
+          "n_nodes": 1400,
+          "Lambda_t_mean": 0.8874558757817004,
+          "Frob_residual_med": 0.031912442554328735
+        }
+      }
+    },
+    "P5N100": {
+      "N": 100,
+      "by_metric": {
+        "d_log": {
+          "n_nodes": 2400,
+          "Lambda_t_mean": 0.8317892689872273,
+          "Frob_residual_med": 0.022987368846225088
+        },
+        "d_lin": {
+          "n_nodes": 2400,
+          "Lambda_t_mean": 0.8156867646972834,
+          "Frob_residual_med": 0.017290576075443008
+        },
+        "d_sqrt": {
+          "n_nodes": 2400,
+          "Lambda_t_mean": 0.8179084872149505,
+          "Frob_residual_med": 0.019179501020895946
+        },
+        "d_inv": {
+          "n_nodes": 2400,
+          "Lambda_t_mean": 0.8380936017595289,
+          "Frob_residual_med": 0.027180065112895512
+        }
+      }
+    },
+    "P5N84": {
+      "N": 84,
+      "by_metric": {}
+    },
+    "P5N200": {
+      "N": 200,
+      "by_metric": {}
+    },
+    "P5N256": {
+      "N": 256,
+      "by_metric": {
+        "d_log": {
+          "n_nodes": 3072,
+          "Lambda_t_mean": 0.8086673305117603,
+          "Frob_residual_med": 0.019673347982548724
+        },
+        "d_lin": {
+          "n_nodes": 3072,
+          "Lambda_t_mean": 0.8036877491413108,
+          "Frob_residual_med": 0.018412093681399472
+        },
+        "d_sqrt": {
+          "n_nodes": 3072,
+          "Lambda_t_mean": 0.8059727999585938,
+          "Frob_residual_med": 0.018764033584640377
+        },
+        "d_inv": {
+          "n_nodes": 3072,
+          "Lambda_t_mean": 0.810384899434669,
+          "Frob_residual_med": 0.020248933482655218
+        }
+      }
+    },
+    "P5N512": {
+      "N": 512,
+      "by_metric": {
+        "d_log": {
+          "n_nodes": 6144,
+          "Lambda_t_mean": 0.8031087962131371,
+          "Frob_residual_med": 0.02210515911267813
+        },
+        "d_lin": {
+          "n_nodes": 6144,
+          "Lambda_t_mean": 0.8007591616511748,
+          "Frob_residual_med": 0.0218864075024019
+        },
+        "d_sqrt": {
+          "n_nodes": 6144,
+          "Lambda_t_mean": 0.8019668321106863,
+          "Frob_residual_med": 0.021911659523760944
+        },
+        "d_inv": {
+          "n_nodes": 6144,
+          "Lambda_t_mean": 0.8039115745527643,
+          "Frob_residual_med": 0.022254045633193116
+        }
+      }
+    }
+  },
+  "verdict": "DISTANCE_METRIC_ROBUST_CV<15%",
+  "cv_per_regime_pct": [
+    2.9819291984840826,
+    1.1351278863738186,
+    0.31668368418601284,
+    0.14826531703046686
+  ]
+}

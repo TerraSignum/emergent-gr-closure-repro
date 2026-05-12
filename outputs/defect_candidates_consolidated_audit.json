@@ -1,0 +1,495 @@
+{
+  "method": "consolidated_three_defect_candidate_overlap_audit",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P0",
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P5N64",
+      "P7",
+      "P8",
+      "P5N100"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "candidates_tested": [
+    "per-node triangle-defect count (metric strain / frustration)",
+    "per-node wall_map row-sum (domain-wall connectivity)",
+    "per-node T_00 (source energy density, matter-localisation test)"
+  ],
+  "structural_lambda": {
+    "t": 0.81,
+    "s": -0.005
+  },
+  "per_regime": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "n_nodes_total": 72,
+      "has_triangle_data": false,
+      "has_wall_data": true,
+      "overlap_top10_residual_vs_top10_triangle_defect": {
+        "n_total": 72,
+        "n_top": 8,
+        "n_defect": 0,
+        "n_overlap": 0,
+        "expected_random": NaN,
+        "lift": NaN,
+        "z_score": NaN
+      },
+      "overlap_top10_residual_vs_top10_wall_degree": {
+        "n_total": 72,
+        "n_top": 8,
+        "n_defect": 12,
+        "n_overlap": 2,
+        "expected_random": 1.3333333333333333,
+        "lift": 1.5,
+        "z_score": 0.670820393249937
+      },
+      "overlap_top10_residual_vs_top10_t00": {
+        "n_total": 72,
+        "n_top": 8,
+        "n_defect": 8,
+        "n_overlap": 6,
+        "expected_random": 0.8888888888888888,
+        "lift": 6.75,
+        "z_score": 6.098795987733972
+      },
+      "summary_means_at_top10_residual": {
+        "triangle_defect_top10": 0.0,
+        "triangle_defect_bot90": 0.0,
+        "wall_degree_top10": 9.0,
+        "wall_degree_bot90": 8.375,
+        "t00_top10": 4.220179766101365,
+        "t00_bot90": 1.147397184276918
+      }
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "n_nodes_total": 112,
+      "has_triangle_data": false,
+      "has_wall_data": true,
+      "overlap_top10_residual_vs_top10_triangle_defect": {
+        "n_total": 112,
+        "n_top": 12,
+        "n_defect": 0,
+        "n_overlap": 0,
+        "expected_random": NaN,
+        "lift": NaN,
+        "z_score": NaN
+      },
+      "overlap_top10_residual_vs_top10_wall_degree": {
+        "n_total": 112,
+        "n_top": 12,
+        "n_defect": 37,
+        "n_overlap": 5,
+        "expected_random": 3.9642857142857144,
+        "lift": 1.2612612612612613,
+        "z_score": 0.6727363333239659
+      },
+      "overlap_top10_residual_vs_top10_t00": {
+        "n_total": 112,
+        "n_top": 12,
+        "n_defect": 12,
+        "n_overlap": 11,
+        "expected_random": 1.2857142857142858,
+        "lift": 8.555555555555555,
+        "z_score": 9.595258088127581
+      },
+      "summary_means_at_top10_residual": {
+        "triangle_defect_top10": 0.0,
+        "triangle_defect_bot90": 0.0,
+        "wall_degree_top10": 13.833333333333334,
+        "wall_degree_bot90": 13.8,
+        "t00_top10": 1.6587362240987147,
+        "t00_bot90": 0.8858697395772955
+      }
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "n_nodes_total": 120,
+      "has_triangle_data": false,
+      "has_wall_data": true,
+      "overlap_top10_residual_vs_top10_triangle_defect": {
+        "n_total": 120,
+        "n_top": 12,
+        "n_defect": 0,
+        "n_overlap": 0,
+        "expected_random": NaN,
+        "lift": NaN,
+        "z_score": NaN
+      },
+      "overlap_top10_residual_vs_top10_wall_degree": {
+        "n_total": 120,
+        "n_top": 12,
+        "n_defect": 20,
+        "n_overlap": 2,
+        "expected_random": 2.0,
+        "lift": 1.0,
+        "z_score": 0.0
+      },
+      "overlap_top10_residual_vs_top10_t00": {
+        "n_total": 120,
+        "n_top": 12,
+        "n_defect": 12,
+        "n_overlap": 11,
+        "expected_random": 1.2,
+        "lift": 9.166666666666668,
+        "z_score": 9.940150117686349
+      },
+      "summary_means_at_top10_residual": {
+        "triangle_defect_top10": 0.0,
+        "triangle_defect_bot90": 0.0,
+        "wall_degree_top10": 13.666666666666666,
+        "wall_degree_bot90": 13.87037037037037,
+        "t00_top10": 2.890783738963174,
+        "t00_bot90": 0.9515930852960409
+      }
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "n_nodes_total": 144,
+      "has_triangle_data": false,
+      "has_wall_data": true,
+      "overlap_top10_residual_vs_top10_triangle_defect": {
+        "n_total": 144,
+        "n_top": 15,
+        "n_defect": 0,
+        "n_overlap": 0,
+        "expected_random": NaN,
+        "lift": NaN,
+        "z_score": NaN
+      },
+      "overlap_top10_residual_vs_top10_wall_degree": {
+        "n_total": 144,
+        "n_top": 15,
+        "n_defect": 44,
+        "n_overlap": 6,
+        "expected_random": 4.583333333333333,
+        "lift": 1.309090909090909,
+        "z_score": 0.8389664435757184
+      },
+      "overlap_top10_residual_vs_top10_t00": {
+        "n_total": 144,
+        "n_top": 15,
+        "n_defect": 15,
+        "n_overlap": 15,
+        "expected_random": 1.5625,
+        "lift": 9.6,
+        "z_score": 12.0
+      },
+      "summary_means_at_top10_residual": {
+        "triangle_defect_top10": 0.0,
+        "triangle_defect_bot90": 0.0,
+        "wall_degree_top10": 17.066666666666666,
+        "wall_degree_bot90": 17.426356589147286,
+        "t00_top10": 1.9898866980336167,
+        "t00_bot90": 0.8725446662056872
+      }
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "n_nodes_total": 168,
+      "has_triangle_data": false,
+      "has_wall_data": true,
+      "overlap_top10_residual_vs_top10_triangle_defect": {
+        "n_total": 168,
+        "n_top": 17,
+        "n_defect": 0,
+        "n_overlap": 0,
+        "expected_random": NaN,
+        "lift": NaN,
+        "z_score": NaN
+      },
+      "overlap_top10_residual_vs_top10_wall_degree": {
+        "n_total": 168,
+        "n_top": 17,
+        "n_defect": 33,
+        "n_overlap": 2,
+        "expected_random": 3.3392857142857144,
+        "lift": 0.5989304812834224,
+        "z_score": -0.8623833647623425
+      },
+      "overlap_top10_residual_vs_top10_t00": {
+        "n_total": 168,
+        "n_top": 17,
+        "n_defect": 17,
+        "n_overlap": 16,
+        "expected_random": 1.7202380952380953,
+        "lift": 9.301038062283736,
+        "z_score": 12.113203689505616
+      },
+      "summary_means_at_top10_residual": {
+        "triangle_defect_top10": 0.0,
+        "triangle_defect_bot90": 0.0,
+        "wall_degree_top10": 20.058823529411764,
+        "wall_degree_bot90": 20.443708609271525,
+        "t00_top10": 1.1507988757843441,
+        "t00_bot90": 0.8453779939954095
+      }
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_nodes_total": 200,
+      "has_triangle_data": false,
+      "has_wall_data": true,
+      "overlap_top10_residual_vs_top10_triangle_defect": {
+        "n_total": 200,
+        "n_top": 20,
+        "n_defect": 0,
+        "n_overlap": 0,
+        "expected_random": NaN,
+        "lift": NaN,
+        "z_score": NaN
+      },
+      "overlap_top10_residual_vs_top10_wall_degree": {
+        "n_total": 200,
+        "n_top": 20,
+        "n_defect": 39,
+        "n_overlap": 8,
+        "expected_random": 3.9,
+        "lift": 2.0512820512820515,
+        "z_score": 2.439115456503397
+      },
+      "overlap_top10_residual_vs_top10_t00": {
+        "n_total": 200,
+        "n_top": 20,
+        "n_defect": 20,
+        "n_overlap": 20,
+        "expected_random": 2.0,
+        "lift": 10.0,
+        "z_score": 14.142135623730951
+      },
+      "summary_means_at_top10_residual": {
+        "triangle_defect_top10": 0.0,
+        "triangle_defect_bot90": 0.0,
+        "wall_degree_top10": 26.0,
+        "wall_degree_bot90": 24.155555555555555,
+        "t00_top10": 1.2911105661826272,
+        "t00_bot90": 0.8648202566602976
+      }
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "n_nodes_total": 240,
+      "has_triangle_data": false,
+      "has_wall_data": true,
+      "overlap_top10_residual_vs_top10_triangle_defect": {
+        "n_total": 240,
+        "n_top": 24,
+        "n_defect": 0,
+        "n_overlap": 0,
+        "expected_random": NaN,
+        "lift": NaN,
+        "z_score": NaN
+      },
+      "overlap_top10_residual_vs_top10_wall_degree": {
+        "n_total": 240,
+        "n_top": 24,
+        "n_defect": 24,
+        "n_overlap": 1,
+        "expected_random": 2.4,
+        "lift": 0.4166666666666667,
+        "z_score": -1.004106793461182
+      },
+      "overlap_top10_residual_vs_top10_t00": {
+        "n_total": 240,
+        "n_top": 24,
+        "n_defect": 24,
+        "n_overlap": 21,
+        "expected_random": 2.4,
+        "lift": 8.75,
+        "z_score": 13.34027597026999
+      },
+      "summary_means_at_top10_residual": {
+        "triangle_defect_top10": 0.0,
+        "triangle_defect_bot90": 0.0,
+        "wall_degree_top10": 30.166666666666668,
+        "wall_degree_bot90": 29.25,
+        "t00_top10": 0.9678265341837734,
+        "t00_bot90": 0.8225373110082385
+      }
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_nodes_total": 256,
+      "has_triangle_data": true,
+      "has_wall_data": true,
+      "overlap_top10_residual_vs_top10_triangle_defect": {
+        "n_total": 256,
+        "n_top": 26,
+        "n_defect": 256,
+        "n_overlap": 26,
+        "expected_random": 26.0,
+        "lift": 1.0,
+        "z_score": 0.0
+      },
+      "overlap_top10_residual_vs_top10_wall_degree": {
+        "n_total": 256,
+        "n_top": 26,
+        "n_defect": 51,
+        "n_overlap": 8,
+        "expected_random": 5.1796875,
+        "lift": 1.5444947209653093,
+        "z_score": 1.4609810056045296
+      },
+      "overlap_top10_residual_vs_top10_t00": {
+        "n_total": 256,
+        "n_top": 26,
+        "n_defect": 26,
+        "n_overlap": 25,
+        "expected_random": 2.640625,
+        "lift": 9.467455621301776,
+        "z_score": 15.315050167224081
+      },
+      "summary_means_at_top10_residual": {
+        "triangle_defect_top10": 4096.0,
+        "triangle_defect_bot90": 4096.0,
+        "wall_degree_top10": 31.923076923076923,
+        "wall_degree_bot90": 31.234782608695653,
+        "t00_top10": 1.1811451497731797,
+        "t00_bot90": 0.8432952369930062
+      }
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_nodes_total": 288,
+      "has_triangle_data": false,
+      "has_wall_data": true,
+      "overlap_top10_residual_vs_top10_triangle_defect": {
+        "n_total": 288,
+        "n_top": 29,
+        "n_defect": 0,
+        "n_overlap": 0,
+        "expected_random": NaN,
+        "lift": NaN,
+        "z_score": NaN
+      },
+      "overlap_top10_residual_vs_top10_wall_degree": {
+        "n_total": 288,
+        "n_top": 29,
+        "n_defect": 32,
+        "n_overlap": 5,
+        "expected_random": 3.2222222222222223,
+        "lift": 1.5517241379310345,
+        "z_score": 1.1077005007736487
+      },
+      "overlap_top10_residual_vs_top10_t00": {
+        "n_total": 288,
+        "n_top": 29,
+        "n_defect": 29,
+        "n_overlap": 28,
+        "expected_random": 2.920138888888889,
+        "lift": 9.58858501783591,
+        "z_score": 16.319847521268855
+      },
+      "summary_means_at_top10_residual": {
+        "triangle_defect_top10": 0.0,
+        "triangle_defect_bot90": 0.0,
+        "wall_degree_top10": 35.793103448275865,
+        "wall_degree_bot90": 35.85328185328186,
+        "t00_top10": 1.0614529160947863,
+        "t00_bot90": 0.8351247007079877
+      }
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_nodes_total": 336,
+      "has_triangle_data": false,
+      "has_wall_data": true,
+      "overlap_top10_residual_vs_top10_triangle_defect": {
+        "n_total": 336,
+        "n_top": 34,
+        "n_defect": 0,
+        "n_overlap": 0,
+        "expected_random": NaN,
+        "lift": NaN,
+        "z_score": NaN
+      },
+      "overlap_top10_residual_vs_top10_wall_degree": {
+        "n_total": 336,
+        "n_top": 34,
+        "n_defect": 35,
+        "n_overlap": 5,
+        "expected_random": 3.5416666666666665,
+        "lift": 1.411764705882353,
+        "z_score": 0.8635858520274836
+      },
+      "overlap_top10_residual_vs_top10_t00": {
+        "n_total": 336,
+        "n_top": 34,
+        "n_defect": 34,
+        "n_overlap": 20,
+        "expected_random": 3.4404761904761907,
+        "lift": 5.813148788927335,
+        "z_score": 9.932781911466417
+      },
+      "summary_means_at_top10_residual": {
+        "triangle_defect_top10": 0.0,
+        "triangle_defect_bot90": 0.0,
+        "wall_degree_top10": 41.55882352941177,
+        "wall_degree_bot90": 41.67218543046358,
+        "t00_top10": 0.9110213194816249,
+        "t00_bot90": 0.8188622987710964
+      }
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_nodes_total": 400,
+      "has_triangle_data": true,
+      "has_wall_data": true,
+      "overlap_top10_residual_vs_top10_triangle_defect": {
+        "n_total": 400,
+        "n_top": 40,
+        "n_defect": 400,
+        "n_overlap": 40,
+        "expected_random": 40.0,
+        "lift": 1.0,
+        "z_score": 0.0
+      },
+      "overlap_top10_residual_vs_top10_wall_degree": {
+        "n_total": 400,
+        "n_top": 40,
+        "n_defect": 42,
+        "n_overlap": 6,
+        "expected_random": 4.2,
+        "lift": 1.4285714285714286,
+        "z_score": 0.9786222541720243
+      },
+      "overlap_top10_residual_vs_top10_t00": {
+        "n_total": 400,
+        "n_top": 40,
+        "n_defect": 40,
+        "n_overlap": 31,
+        "expected_random": 4.0,
+        "lift": 7.75,
+        "z_score": 15.0
+      },
+      "summary_means_at_top10_residual": {
+        "triangle_defect_top10": 10000.0,
+        "triangle_defect_bot90": 10000.0,
+        "wall_degree_top10": 49.825,
+        "wall_degree_bot90": 49.46944444444444,
+        "t00_top10": 1.005715057365417,
+        "t00_bot90": 0.8404354677539765
+      }
+    }
+  ]
+}

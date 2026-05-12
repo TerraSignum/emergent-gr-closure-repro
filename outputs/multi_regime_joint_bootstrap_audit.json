@@ -1,0 +1,115 @@
+{
+  "method": "multi_regime_joint_bootstrap",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "dense_cell_axis": {
+    "n_points": 9,
+    "metrics": {
+      "absorption": {
+        "fit": {
+          "gap_inf": 0.5143876035822765,
+          "c_2": 11657.420905045223,
+          "rss": 0.007839556209947003,
+          "n_points": 9
+        },
+        "bootstrap": {
+          "median": 0.5136711031911878,
+          "CI95": [
+            0.4879619239211306,
+            0.5397654271596372
+          ],
+          "n_resamples": 2000
+        }
+      },
+      "locality": {
+        "fit": {
+          "gap_inf": 0.5416625095593433,
+          "c_2": 11786.048888813752,
+          "rss": 0.008712878906438242,
+          "n_points": 9
+        },
+        "bootstrap": {
+          "median": 0.5410737860303244,
+          "CI95": [
+            0.5139438572814164,
+            0.5682423544204128
+          ],
+          "n_resamples": 2000
+        }
+      },
+      "density": {
+        "fit": {
+          "gap_inf": 0.6518106269370174,
+          "c_2": 8816.352307945945,
+          "rss": 0.0052142512568902006,
+          "n_points": 9
+        },
+        "bootstrap": {
+          "median": 0.6513331640468761,
+          "CI95": [
+            0.6296438688771968,
+            0.6719301093754566
+          ],
+          "n_resamples": 2000
+        }
+      },
+      "spectral": {
+        "fit": {
+          "gap_inf": 0.6821669473195411,
+          "c_2": 5882.993017089633,
+          "rss": 0.0023995822082180296,
+          "n_points": 9
+        },
+        "bootstrap": {
+          "median": 0.6816618367385242,
+          "CI95": [
+            0.6673476551831015,
+            0.6959328085753989
+          ],
+          "n_resamples": 2000
+        }
+      },
+      "variational": {
+        "fit": {
+          "gap_inf": 0.48703888876257406,
+          "c_2": 12006.401552393467,
+          "rss": 0.009202576557642086,
+          "n_points": 9
+        },
+        "bootstrap": {
+          "median": 0.48581472223731903,
+          "CI95": [
+            0.45623084532467656,
+            0.5109372715917341
+          ],
+          "n_resamples": 2000
+        }
+      }
+    }
+  },
+  "lattice_n_axis": {
+    "n_points": 10,
+    "lambda_t_fit": {
+      "gap_inf": 0.8200944344851557,
+      "c_2": 111.10941348024521,
+      "rss": 0.00885304104034715,
+      "n_points": 10
+    },
+    "lambda_t_bootstrap": {
+      "median": 0.8187257230692269,
+      "CI95": [
+        0.7884421173261672,
+        0.8386030904536055
+      ],
+      "n_resamples": 2000
+    }
+  },
+  "cross_axis_check": {
+    "lambda_t_consistent_with_alpha_xi_sq": true,
+    "all_dc_above_threshold_count": 5,
+    "n_dc_metrics": 5
+  }
+}

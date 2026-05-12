@@ -1,0 +1,85 @@
+{
+  "method": "R_time_relative_scale_vs_T_00_and_EPS_D",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5",
+      "P6",
+      "P5N64",
+      "P7",
+      "P8",
+      "P5N100"
+    ],
+    "branch_rationale": "Source-side Einstein-equation residual structure test. Compares the median absolute R_time = T_00 - G_00 magnitude to the structural target Lambda_t = alpha_xi^2 = 81/100, the asymptotic time-time channel of the cosmological back-reaction tensor Lambda_munu, and to the lattice cutoff scale eps_d = gamma^2 = 1/100. The parent paper records Lambda_t -> 0.809 versus alpha_xi^2 = 0.810 at N=200; 3*|Lambda_s| -> 0.011 versus 3*gamma^2/2 = 0.015; shear -> 0. Regime range N=50..100 is the small-N approach-to-asymptote diagnostic; the verdict RELATIVE_CLOSURE_HOLDS confirms the source-side residual sits within the cutoff bound.",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "lambda_t_struct": 0.81,
+  "eps_d": 0.01,
+  "d_min": 0.1,
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "median_abs_R_time": 0.02262713200290256,
+      "median_abs_T_00": 0.8585060509110314,
+      "median_abs_G_00": 0.025506011152375656,
+      "median_T_minus_G": 0.8323082043119896,
+      "relative_R_over_T": 0.026356403637331445,
+      "relative_R_over_EPS_D": 2.262713200290256
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "median_abs_R_time": 0.016579970329383797,
+      "median_abs_T_00": 0.8285954985255585,
+      "median_abs_G_00": 0.01425303517466794,
+      "median_T_minus_G": 0.8129282489909723,
+      "relative_R_over_T": 0.02000972773673882,
+      "relative_R_over_EPS_D": 1.6579970329383797
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "median_abs_R_time": 0.020820092808184143,
+      "median_abs_T_00": 0.8446894182600003,
+      "median_abs_G_00": 0.016558835016036257,
+      "median_T_minus_G": 0.8269667448372822,
+      "relative_R_over_T": 0.024648222598871953,
+      "relative_R_over_EPS_D": 2.082009280818414
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "median_abs_R_time": 0.019214755339251377,
+      "median_abs_T_00": 0.8392428726981114,
+      "median_abs_G_00": 0.01340814640948472,
+      "median_T_minus_G": 0.825364670001052,
+      "relative_R_over_T": 0.022895345274100674,
+      "relative_R_over_EPS_D": 1.9214755339251377
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "median_abs_R_time": 0.01800204505240488,
+      "median_abs_T_00": 0.8232147303333244,
+      "median_abs_G_00": 0.00905194650292842,
+      "median_T_minus_G": 0.8139028373232702,
+      "relative_R_over_T": 0.021867982178982327,
+      "relative_R_over_EPS_D": 1.800204505240488
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "median_abs_R_time": 0.025410640159715947,
+      "median_abs_T_00": 0.8449384967874567,
+      "median_abs_G_00": 0.009353287424723522,
+      "median_T_minus_G": 0.8336016117128631,
+      "relative_R_over_T": 0.030073952431247743,
+      "relative_R_over_EPS_D": 2.5410640159715947
+    }
+  ],
+  "mean_relative_R_over_T": 0.024308605642878827,
+  "mean_relative_R_over_EPS_D": 2.0442439281973783,
+  "verdict": "RELATIVE_CLOSURE_HOLDS"
+}

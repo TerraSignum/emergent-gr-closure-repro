@@ -1,0 +1,121 @@
+{
+  "method": "clp_all_components_extended",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "n_points": 9,
+  "by_metric": {
+    "absorption": {
+      "fit": {
+        "alpha": 1.7171836569031087,
+        "prefactor": 2144.53724425014,
+        "gap_inf": 0.5137480973781337,
+        "n_points": 9
+      },
+      "bootstrap": {
+        "n_resamples": 2000,
+        "asymptote_median": 0.5124309996699712,
+        "asymptote_CI95": [
+          0.47169956592205403,
+          0.7140092663629245
+        ],
+        "alpha_median": 2.512245042114718,
+        "alpha_CI95": [
+          0.10000356030847124,
+          4.999996196833074
+        ]
+      },
+      "threshold_0p5_in_CI": true
+    },
+    "locality": {
+      "fit": {
+        "alpha": 1.6880994827068367,
+        "prefactor": 1822.4776547518322,
+        "gap_inf": 0.5409263220318332,
+        "n_points": 9
+      },
+      "bootstrap": {
+        "n_resamples": 2000,
+        "asymptote_median": 0.5393622836356624,
+        "asymptote_CI95": [
+          0.4921987591390553,
+          0.7379347177759574
+        ],
+        "alpha_median": 2.48617490741196,
+        "alpha_CI95": [
+          0.10000356030847124,
+          4.999996221261638
+        ]
+      },
+      "threshold_0p5_in_CI": true
+    },
+    "density": {
+      "fit": {
+        "alpha": 1.6082562685192527,
+        "prefactor": 846.6364163591365,
+        "gap_inf": 0.6510540510446137,
+        "n_points": 9
+      },
+      "bootstrap": {
+        "n_resamples": 2000,
+        "asymptote_median": 0.649620716804036,
+        "asymptote_CI95": [
+          0.6046855302226714,
+          0.7755054063374468
+        ],
+        "alpha_median": 2.279122431945536,
+        "alpha_CI95": [
+          0.10000356030847124,
+          4.999996131643427
+        ]
+      },
+      "threshold_0p5_in_CI": false
+    },
+    "spectral": {
+      "fit": {
+        "alpha": 1.5667698401694703,
+        "prefactor": 441.11556722021066,
+        "gap_inf": 0.6815822539825667,
+        "n_points": 9
+      },
+      "bootstrap": {
+        "n_resamples": 2000,
+        "asymptote_median": 0.680727557674826,
+        "asymptote_CI95": [
+          0.6392094531231934,
+          0.766677281816299
+        ],
+        "alpha_median": 2.1798350169190415,
+        "alpha_CI95": [
+          0.10000356030847124,
+          4.999996166886202
+        ]
+      },
+      "threshold_0p5_in_CI": false
+    },
+    "variational": {
+      "fit": {
+        "alpha": 1.1365843447748991,
+        "prefactor": 70.68448728211803,
+        "gap_inf": 0.4828492424688128,
+        "n_points": 9
+      },
+      "bootstrap": {
+        "n_resamples": 2000,
+        "asymptote_median": 0.4807470828185784,
+        "asymptote_CI95": [
+          0.37697022093931937,
+          0.5164166030138424
+        ],
+        "alpha_median": 1.7010899318617425,
+        "alpha_CI95": [
+          0.10000356030847124,
+          4.999995926404542
+        ]
+      },
+      "threshold_0p5_in_CI": true
+    }
+  }
+}

@@ -1,0 +1,113 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "ladder": [
+    50,
+    60,
+    64,
+    72,
+    72,
+    84,
+    84,
+    100,
+    200,
+    300
+  ],
+  "y_observed": [
+    0.0318411337914067,
+    0.028491032810895323,
+    0.02963885103699213,
+    0.02838604588884681,
+    0.029074484458974852,
+    0.02705026318697112,
+    0.02743324809002802,
+    0.026042028717455982,
+    0.02192342524494404,
+    0.02132852748931138
+  ],
+  "models": [
+    {
+      "model": "Sym-2 a + b/N + c/N^2 (FOR REFERENCE)",
+      "params": 3,
+      "rmse": 0.0005500049454146982,
+      "aicc": -140.1116657623019,
+      "a_inf": 0.018218000172869488,
+      "b": 0.8910340958361391,
+      "c": -11.501495800751387
+    },
+    {
+      "model": "M6 c*N^-1/3 + d*N^-2/3 + e/N",
+      "params": 3,
+      "rmse": 0.000572418351223871,
+      "aicc": -139.31280901312712,
+      "c": 0.23398376306733482,
+      "d": -0.8719898941548481,
+      "e": 1.6158420534709164
+    },
+    {
+      "model": "M3 two-power (c*N^-1/3 + d*N^-2/3)",
+      "params": 2,
+      "rmse": 0.0007221400058711792,
+      "aicc": -138.95154476414078,
+      "c": 0.16130376983902267,
+      "d": -0.1769530387150819
+    },
+    {
+      "model": "M1 Federer + 1/N (y=c*N^-1/3 + d/N)",
+      "params": 2,
+      "rmse": 0.0007937478058338795,
+      "aicc": -137.06060972701363,
+      "c": 0.14178775220159753,
+      "d": -0.39339775999015875
+    },
+    {
+      "model": "M5 c*N^-1/3 * (1 + a*log(N)/N)",
+      "params": 2,
+      "rmse": 0.0008058324496482886,
+      "aicc": -136.7584086040288,
+      "c": 0.13907664895534583,
+      "a": -2.4187414882693696
+    },
+    {
+      "model": "M4 c*N^-1/3 * (1 + a/N)",
+      "params": 2,
+      "rmse": 0.0008650498660105967,
+      "aicc": -135.3401823682512,
+      "c": 0.13495539641153306,
+      "a": -8.32827489278246
+    },
+    {
+      "model": "M2 Federer + 1/N^2 (y=c*N^-1/3 + d/N^2)",
+      "params": 2,
+      "rmse": 0.0009913945527129234,
+      "aicc": -132.61367362437463,
+      "c": 0.12893681018434733,
+      "d": -11.327355140928239
+    },
+    {
+      "model": "M0 pure Federer y=c*N^(-1/3)",
+      "params": 1,
+      "rmse": 0.0013873766528987998,
+      "aicc": -129.10681230214186,
+      "c": 0.11965421845117118
+    }
+  ],
+  "best_model": "Sym-2 a + b/N + c/N^2 (FOR REFERENCE)",
+  "best_aicc": -140.1116657623019,
+  "numerical_coincidence_check": {
+    "form_tested": "d ?= -D(Omega) * gram_min_eigenvalue_comparison",
+    "D_Omega": 0.8375,
+    "D_Omega_rational": "67/80",
+    "P1_comparison_deviation": 0.21138,
+    "P2prime_comparison_deviation": 0.23559,
+    "comparison_quantity_definition": "gram_min_eigenvalue_comparison = |sigma_min_family - sigma_min_reference| / |sigma_min_reference|, a relative spectral deviation between the vortex-skeleton family and the dense-defect-cell reference profile. It is dimensionless and lies in [0, infinity), NOT a direct eigenvalue.",
+    "empirical_c": 0.16130376983902267,
+    "empirical_d": -0.1769530387150819,
+    "P1_match_diff_pct": 0.043916332537951235,
+    "P2prime_match_diff_pct": 11.502253045617445,
+    "verdict": "P1 numerical match at 0.04 %, P2-prime mismatch at 11.5 %. Both quantities are dimensionless and live in the 0.2-range; we report the match as a numerical observation worth deeper audit, NOT as an established structural identity. There is no a-priori reason a sub-leading Federer coefficient on the lattice ladder should equal a relative-deviation between two graph profiles. The conclusion that both Federer orders vanish asymptotically does not depend on this coefficient identification."
+  }
+}

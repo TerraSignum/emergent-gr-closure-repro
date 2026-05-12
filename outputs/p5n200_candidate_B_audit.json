@@ -1,0 +1,34 @@
+{
+  "method": "p5n200_candidate_B_with_decomposition",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "regime": "P5N200",
+  "N": 200,
+  "n_seeds_used": 2,
+  "n_nodes": 400,
+  "T00_rec_over_T00": {
+    "median": 0.596385838894384,
+    "mean": 0.7007276017232763,
+    "std": 0.1660180211173878,
+    "CV_pct": 23.692233716654684
+  },
+  "candidate_B_residual": {
+    "median": 0.3954290763201458,
+    "mean": 0.29063538924775306,
+    "p90": 0.4032738858872407,
+    "dod_median_pass": false,
+    "dod_mean_pass": false
+  },
+  "absolute_means": {
+    "T00": 0.4236367041090736,
+    "G00": 0.003684100041056323,
+    "T00rec": 0.2975312499999562,
+    "T_minus_G": 0.4199526040680172
+  },
+  "Lambda_eff_reference": 0.314,
+  "rel_offset_T00rec_pct": -5.244824840778272
+}

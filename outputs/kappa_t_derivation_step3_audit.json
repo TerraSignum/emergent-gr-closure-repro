@@ -1,0 +1,78 @@
+{
+  "method": "kappa_t_derivation_step_3_4_lattice_verification",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5",
+      "P5N64",
+      "P5N72",
+      "P5N84",
+      "P5N100"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "gamma_sq": 0.010000000000000002,
+  "four_over_pi": 1.2732395447351628,
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "weighted_mean_1_minus_x": 0.9225108667959763,
+      "weighted_mean_xi_dev_sq": 0.4678835412221169,
+      "predicted_1_minus_x_at_gamma_sq": 0.00467883541222117,
+      "ratio_observed_to_predicted": 197.16677025790813,
+      "R_bar_Hess_median": 0.049620499051157375,
+      "implicit_norm_R_bar_over_gamma_sq": 4.9620499051157365,
+      "ratio_implicit_norm_to_4_over_pi": 3.8971848821643817
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "weighted_mean_1_minus_x": 0.9464601371393793,
+      "weighted_mean_xi_dev_sq": 0.4697406403998918,
+      "predicted_1_minus_x_at_gamma_sq": 0.004697406403998919,
+      "ratio_observed_to_predicted": 201.48568289378886,
+      "R_bar_Hess_median": 0.032122239631979896,
+      "implicit_norm_R_bar_over_gamma_sq": 3.2122239631979888,
+      "ratio_implicit_norm_to_4_over_pi": 2.5228748011169726
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "weighted_mean_1_minus_x": 0.9562045384976852,
+      "weighted_mean_xi_dev_sq": 0.4731149029776633,
+      "predicted_1_minus_x_at_gamma_sq": 0.004731149029776634,
+      "ratio_observed_to_predicted": 202.1083107886858,
+      "R_bar_Hess_median": 0.02875983353495329,
+      "implicit_norm_R_bar_over_gamma_sq": 2.8759833534953283,
+      "ratio_implicit_norm_to_4_over_pi": 2.258792043796865
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "weighted_mean_1_minus_x": 0.9735250293258562,
+      "weighted_mean_xi_dev_sq": 0.4446034676103546,
+      "predicted_1_minus_x_at_gamma_sq": 0.004446034676103547,
+      "ratio_observed_to_predicted": 218.9647855331264,
+      "R_bar_Hess_median": 0.01944495032331274,
+      "implicit_norm_R_bar_over_gamma_sq": 1.9444950323312737,
+      "ratio_implicit_norm_to_4_over_pi": 1.5272028271284441
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "weighted_mean_1_minus_x": NaN,
+      "weighted_mean_xi_dev_sq": 0.4500240528943376,
+      "predicted_1_minus_x_at_gamma_sq": 0.004500240528943377,
+      "ratio_observed_to_predicted": NaN,
+      "R_bar_Hess_median": NaN,
+      "implicit_norm_R_bar_over_gamma_sq": NaN,
+      "ratio_implicit_norm_to_4_over_pi": NaN
+    }
+  ],
+  "mean_obs_over_predicted_step3": NaN,
+  "mean_implicit_norm_over_4_over_pi_step4": NaN,
+  "verdict": "NEITHER_STEP_HOLDS_DIRECTLY"
+}

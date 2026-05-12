@@ -1,0 +1,60 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Gravity / black-hole observable; matter-side per Einstein-eq source coupling",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Binary defect inspiral. A pair of relational defects radiates gravitational waves under the standard Peters formula P = (32/5) eta^2 (M/d)^5; the inspiral time tau = (5/256) d^4 / (eta M^3) and the chirp mass M_c = (M1 M2)^{3/5}/(M1+M2)^{1/5} follow in lattice units (lu). The waveform structure (inspiral-merger-ringdown) is identical in functional form to the GR result; only the chirp mass and symmetric mass ratio differ from astrophysical mergers. Distilled from outputs_black_hole_thermo/bht07_merger_gw_signal.json and outputs_theory_closure/c1_schwarzschild_defect.json (scd05.binary_defect).",
+  "canonical": {
+    "M1_lu": 2.959941,
+    "M2_lu": 2.959941,
+    "d_sep_lu": 3.0891,
+    "M_chirp_lu": 2.576778,
+    "eta_symmetric": 0.25,
+    "E_bind_lu": -2.83616393,
+    "omega_orb_lu": 0.44813035,
+    "T_orb_lu": 14.0209,
+    "f_gw_lu": 0.14264432,
+    "P_gw_lu": 10.338352729783,
+    "tau_inspiral_lu": 0.0343,
+    "M_chirp_kg": 1.8950552546911858e-08,
+    "f_ISCO_Hz": 2.008268446263112e+41,
+    "f_ringdown_Hz": 2.33016298099418e+41,
+    "h_strain_1Mpc": 8.703413855909873e-70,
+    "E_GW_J": 195645238.30728573,
+    "ringdown_Q": 3.1
+  },
+  "extended": {
+    "M1_lu": 3.294127,
+    "M2_lu": 3.294127,
+    "d_sep_lu": 3.1388,
+    "M_chirp_lu": 2.867704,
+    "eta_symmetric": 0.25,
+    "E_bind_lu": -3.4571185,
+    "omega_orb_lu": 0.46156785,
+    "T_orb_lu": 13.6127,
+    "f_gw_lu": 0.14692161,
+    "P_gw_lu": 16.29594713978,
+    "tau_inspiral_lu": 0.0265,
+    "M_chirp_kg": 1.8950553962941123e-08,
+    "f_ISCO_Hz": 2.0082682962006444e+41,
+    "f_ringdown_Hz": 2.3301628068790076e+41,
+    "h_strain_1Mpc": 8.703414506249155e-70,
+    "E_GW_J": 195645252.92635196,
+    "ringdown_Q": 3.1
+  },
+  "binary_formula": {
+    "binding": "E = -G M1 M2 / d",
+    "gw_power": "P = (32/5) eta^2 (M/d)^5    [Peters 1964]",
+    "inspiral": "tau = (5/256) d^4 / (eta M^3)",
+    "chirp_mass": "M_c = (M1 M2)^{3/5} / (M1+M2)^{1/5}"
+  },
+  "waveform_universal": "Defect-merger waveform has the same functional form as the GR inspiral-merger-ringdown; only M_chirp and eta differ.",
+  "astrophysical_calibration": {
+    "f_ISCO_solar_Hz": 2197.9,
+    "GW150914_f_ISCO_Hz": 150.0,
+    "M_total_for_100Hz_Msun": 43.96
+  }
+}

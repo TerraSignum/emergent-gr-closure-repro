@@ -1,0 +1,79 @@
+==============================================================================
+Triangle phase-class audit (SM-baryon-analog classification)
+==============================================================================
+  SM reference:
+    m_p/m_n = 0.99862  (Neutron 1.3 MeV heavier)
+    m_Delta++/m_p = 1.313
+    BBN n_p/n_n freezeout = 7.0
+
+
+--- P5N64 N=64  (n_triangles_total=16000) ---
+  Frequencies:  PPP=0.128  PPN=0.379  PNN=0.362  NNN=0.131  amb=0.000
+  Mass proxy <|psi|^2>: PPP=0.2403  PPN=0.2404  PNN=0.2407  NNN=0.2408
+  Pi3 binding proxy:   PPP=0.0064  PPN=0.0080  PNN=0.0081  NNN=0.0074
+  P1 BBN test n(PPN)/n(PNN) = 1.047  (SM ref ~7.0)
+  P2 mass inv  m(PPN)/m(PNN) = 0.99870  (SM 0.99862, m_p < m_n => ratio < 1)
+  P3 Delta     m(PPP)/m(PPN) = 1.000  (SM 1.313)
+  P4 asym 3    (PPP-NNN)/sum = -0.011
+  P4 asym 2    (PPN-PNN)/sum = +0.023
+
+--- P5N72 N=72  (n_triangles_total=16000) ---
+  Frequencies:  PPP=0.124  PPN=0.387  PNN=0.365  NNN=0.125  amb=0.000
+  Mass proxy <|psi|^2>: PPP=0.2360  PPN=0.2360  PNN=0.2358  NNN=0.2357
+  Pi3 binding proxy:   PPP=0.0070  PPN=0.0071  PNN=0.0072  NNN=0.0081
+  P1 BBN test n(PPN)/n(PNN) = 1.059  (SM ref ~7.0)
+  P2 mass inv  m(PPN)/m(PNN) = 1.00087  (SM 0.99862, m_p < m_n => ratio < 1)
+  P3 Delta     m(PPP)/m(PPN) = 1.000  (SM 1.313)
+  P4 asym 3    (PPP-NNN)/sum = -0.004
+  P4 asym 2    (PPN-PNN)/sum = +0.029
+
+--- P5N84 N=84  (n_triangles_total=16000) ---
+  Frequencies:  PPP=0.127  PPN=0.377  PNN=0.370  NNN=0.126  amb=0.000
+  Mass proxy <|psi|^2>: PPP=0.2301  PPN=0.2302  PNN=0.2301  NNN=0.2302
+  Pi3 binding proxy:   PPP=0.0065  PPN=0.0059  PNN=0.0060  NNN=0.0059
+  P1 BBN test n(PPN)/n(PNN) = 1.018  (SM ref ~7.0)
+  P2 mass inv  m(PPN)/m(PNN) = 1.00056  (SM 0.99862, m_p < m_n => ratio < 1)
+  P3 Delta     m(PPP)/m(PPN) = 1.000  (SM 1.313)
+  P4 asym 3    (PPP-NNN)/sum = +0.004
+  P4 asym 2    (PPN-PNN)/sum = +0.009
+
+--- P5N100 N=100  (n_triangles_total=16000) ---
+  Frequencies:  PPP=0.120  PPN=0.374  PNN=0.375  NNN=0.130  amb=0.000
+  Mass proxy <|psi|^2>: PPP=0.2255  PPN=0.2253  PNN=0.2253  NNN=0.2253
+  Pi3 binding proxy:   PPP=0.0042  PPN=0.0046  PNN=0.0046  NNN=0.0049
+  P1 BBN test n(PPN)/n(PNN) = 0.999  (SM ref ~7.0)
+  P2 mass inv  m(PPN)/m(PNN) = 1.00009  (SM 0.99862, m_p < m_n => ratio < 1)
+  P3 Delta     m(PPP)/m(PPN) = 1.001  (SM 1.313)
+  P4 asym 3    (PPP-NNN)/sum = -0.041
+  P4 asym 2    (PPN-PNN)/sum = -0.001
+
+--- P5N128 N=128  (n_triangles_total=8000) ---
+  Frequencies:  PPP=0.123  PPN=0.386  PNN=0.376  NNN=0.116  amb=0.000
+  Mass proxy <|psi|^2>: PPP=0.2200  PPN=0.2199  PNN=0.2198  NNN=0.2198
+  Pi3 binding proxy:   PPP=0.0019  PPN=0.0017  PNN=0.0017  NNN=0.0015
+  P1 BBN test n(PPN)/n(PNN) = 1.027  (SM ref ~7.0)
+  P2 mass inv  m(PPN)/m(PNN) = 1.00046  (SM 0.99862, m_p < m_n => ratio < 1)
+  P3 Delta     m(PPP)/m(PPN) = 1.001  (SM 1.313)
+  P4 asym 3    (PPP-NNN)/sum = +0.030
+  P4 asym 2    (PPN-PNN)/sum = +0.013
+
+--- P5N200 N=200  (n_triangles_total=8000) ---
+  Frequencies:  PPP=0.131  PPN=0.362  PNN=0.385  NNN=0.122  amb=0.000
+  Mass proxy <|psi|^2>: PPP=0.2118  PPN=0.2118  PNN=0.2117  NNN=0.2113
+  Pi3 binding proxy:   PPP=0.0026  PPN=0.0023  PNN=0.0022  NNN=0.0020
+  P1 BBN test n(PPN)/n(PNN) = 0.939  (SM ref ~7.0)
+  P2 mass inv  m(PPN)/m(PNN) = 1.00046  (SM 0.99862, m_p < m_n => ratio < 1)
+  P3 Delta     m(PPP)/m(PPN) = 1.000  (SM 1.313)
+  P4 asym 3    (PPP-NNN)/sum = +0.038
+  P4 asym 2    (PPN-PNN)/sum = -0.032
+
+==============================================================================
+Cross-regime synthesis
+==============================================================================
+  P2 m(PPN)/m(PNN): mean = 1.00019 +/- 0.00071  (SM 0.99862)
+  P1 n(PPN)/n(PNN): mean = 1.015 +/- 0.039  (SM-BBN 7.0)
+  P3 m(PPP)/m(PPN): mean = 1.000 +/- 0.000  (SM 1.313)
+  P4 baryon-asym 3wave: +0.0027 +/- 0.0264
+  P4 baryon-asym 2wave: +0.0070 +/- 0.0197
+
+Saved C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\audit_M3_triangle_phase_classes.json

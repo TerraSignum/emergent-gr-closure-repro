@@ -1,0 +1,61 @@
+================================================================================
+3-body resonance audit: 3-edge + 2-edge + 1-edge spatial colocation
+================================================================================
+
+--- P5N64 N=64 (n_seeds=24) ---
+  type3 edges =   944, type2 =     0, type1 =    0
+  frac_resonance_nodes = 0.000, independent baseline = 0.000, LIFT = nan
+  asym_all      = +0.02508
+  asym_resonance= +nan +/- nan  (n_res_tri=0)
+  asym_non_res  = +0.02508 +/- 0.00929  (n_non_tri=4571)
+--- P5N72 N=72 (n_seeds=24) ---
+  type3 edges =  1104, type2 =     0, type1 =    0
+  frac_resonance_nodes = 0.000, independent baseline = 0.000, LIFT = nan
+  asym_all      = +0.00115
+  asym_resonance= +nan +/- nan  (n_res_tri=0)
+  asym_non_res  = +0.00115 +/- 0.00814  (n_non_tri=5195)
+--- P5N84 N=84 (n_seeds=24) ---
+  type3 edges =  1373, type2 =     0, type1 =    0
+  frac_resonance_nodes = 0.000, independent baseline = 0.000, LIFT = nan
+  asym_all      = +0.00663
+  asym_resonance= +nan +/- nan  (n_res_tri=0)
+  asym_non_res  = +0.00663 +/- 0.00548  (n_non_tri=6402)
+--- P5N100 N=100 (n_seeds=24) ---
+  type3 edges =  1758, type2 =     0, type1 =    0
+  frac_resonance_nodes = 0.000, independent baseline = 0.000, LIFT = nan
+  asym_all      = +0.00272
+  asym_resonance= +nan +/- nan  (n_res_tri=0)
+  asym_non_res  = +0.00272 +/- 0.00601  (n_non_tri=8122)
+--- P5N128 N=128 (n_seeds=12) ---
+  type3 edges =  2634, type2 =     0, type1 =    0
+  frac_resonance_nodes = 0.000, independent baseline = 0.000, LIFT = nan
+  asym_all      = -0.00007
+  asym_resonance= +nan +/- nan  (n_res_tri=0)
+  asym_non_res  = -0.00007 +/- 0.00669  (n_non_tri=12973)
+--- P5N200 N=200 (n_seeds=8) ---
+  type3 edges =  5030, type2 =     0, type1 =    0
+  frac_resonance_nodes = 0.000, independent baseline = 0.000, LIFT = nan
+  asym_all      = -0.00756
+  asym_resonance= +nan +/- nan  (n_res_tri=0)
+  asym_non_res  = -0.00756 +/- 0.00526  (n_non_tri=24298)
+--- P5N256 N=256 (n_seeds=2) ---
+  type3 edges =  7443, type2 =     0, type1 =    0
+  frac_resonance_nodes = 0.000, independent baseline = 0.000, LIFT = nan
+  asym_all      = -0.00554
+  asym_resonance= +nan +/- nan  (n_res_tri=0)
+  asym_non_res  = -0.00554 +/- 0.00625  (n_non_tri=37421)
+--- P5N300 N=300 (n_seeds=2) ---
+  type3 edges =  9730, type2 =     0, type1 =    0
+  frac_resonance_nodes = 0.000, independent baseline = 0.000, LIFT = nan
+  asym_all      = -0.00975
+  asym_resonance= +nan +/- nan  (n_res_tri=0)
+  asym_non_res  = -0.00975 +/- 0.00612  (n_non_tri=51334)
+
+================================================================================
+Cross-regime synthesis
+================================================================================
+  3-body LIFT cross-regime = nan +/- nan
+  asym_all cross-regime         = +0.00158 +/- 0.01028
+  asym_non_resonance cross-regime= +0.00158 +/- 0.01028
+
+Saved C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\audit_3body_resonance.json

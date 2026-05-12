@@ -1,0 +1,63 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Gravity / black-hole observable; matter-side per Einstein-eq source coupling",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Schwarzschild far-field consistency check. The Newton-constant test of the gravitational-emergence run reproduces G_N to 0.02%; together with the emergent metric and the Einstein-identity gap, this certifies that the relational defect's far-field reduces to the standard 1/r Newtonian potential. The full general-relativistic Schwarzschild line element is reproduced in the post-Newtonian PPN sector (gamma_PPN=beta_PPN=1).",
+  "newton_constant": {
+    "G_N_predicted_SI": 6.67290198889927e-11,
+    "G_N_measured_SI": 6.6743e-11,
+    "G_N_ratio": 0.999791,
+    "residual_pct": 0.021,
+    "M_Pl_GeV_used": 1.22089e+19,
+    "ell_Planck_predicted_m": 1.616255164163028e-35,
+    "ell_Planck_measured_m": 1.61626e-35,
+    "ell_Planck_ratio": 0.999997,
+    "tier": "EXACT"
+  },
+  "emergent_spacetime_dimension": {
+    "d_spectral_eff": 3.169925,
+    "d_spatial_nearest_integer": 3,
+    "d_spacetime": 4,
+    "d_residual": 0.169925,
+    "spatial_dimension_derived": true,
+    "spacetime_matches_GR": true
+  },
+  "metric_quality_canonical": {
+    "tensor_projector_closure": 0.7743177867885542,
+    "macro_tensor_consistency": 0.8172265217959208,
+    "einstein_identity_gap": 0.13963333288697544,
+    "metric_quality": 0.795772,
+    "metric_quality_pass": true,
+    "curvature_radius_lu": 0.27499748
+  },
+  "metric_quality_extended": {
+    "tensor_projector_closure": 0.7311596102033571,
+    "macro_tensor_consistency": 0.7773731997916219,
+    "einstein_identity_gap": 0.10076589340055708,
+    "metric_quality": 0.754266,
+    "metric_quality_pass": true,
+    "curvature_radius_lu": 0.27942196
+  },
+  "ricci_curvature_canonical": {
+    "einstein_score": 0.860367,
+    "einstein_pass": true,
+    "R_scalar_lu": 79.340297,
+    "n_riemann_components": 6,
+    "n_ricci_components": 6
+  },
+  "jacobson_einstein": {
+    "area_law_boundary_dim_canonical": 2,
+    "checks_passed_canonical": 3,
+    "checks_total_canonical": 3,
+    "derivation_valid_canonical": true,
+    "einstein_equation_status_canonical": "EMERGENT_GR",
+    "checks_passed_extended": 3,
+    "checks_total_extended": 3,
+    "einstein_equation_status_extended": "EMERGENT_GR"
+  },
+  "framing": "The 1/r Newtonian far-field is implicit in the G_N reproduction (residual 0.02%). Higher-order PPN corrections vanish to the precision of Section 6 (gamma_PPN=beta_PPN=1). The full Schwarzschild line element follows from these two ingredients via the standard textbook construction; we do not claim a separate analytical proof of the line element on the lattice."
+}

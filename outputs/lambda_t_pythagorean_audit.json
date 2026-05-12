@@ -1,0 +1,44 @@
+{
+  "method": "lambda_t_pythagorean_from_C1",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "system_R": {
+    "alpha_xi_rational": [
+      9,
+      10
+    ],
+    "gamma_rational": [
+      1,
+      10
+    ],
+    "C1_identity": "alpha_xi + gamma = 1",
+    "secondary_identity": "gamma = 2*eps_sync^2"
+  },
+  "Lambda_t_structural_rational": [
+    41,
+    50
+  ],
+  "Lambda_t_structural_decimal": 0.82,
+  "equivalent_forms": [
+    "alpha_xi^2 + gamma^2",
+    "1 - 2*alpha_xi*gamma",
+    "1 - 4*alpha_xi*eps_sync^2"
+  ],
+  "Lambda_t_empirical_asymptote_Symanzik24": 0.823,
+  "Lambda_t_per_regime_spread": [
+    0.813,
+    0.84
+  ],
+  "rel_offset_C1_form_pct": 0.3645200486026735,
+  "rel_offset_naive_alpha2_pct": 1.5795868772782384,
+  "improvement_factor_alpha2_to_C1form": 4.333333333333297,
+  "inside_per_regime_spread": true,
+  "q_ir_governance_target": 0.818779,
+  "q_ir_to_Lambda_t_R_rel_pct": 0.14890243902438008,
+  "verdict": "LAMBDA_T_DERIVED_FROM_C1_PARAMETER_FREE",
+  "caveat": "This is an algebraic consequence of C1 closure, not a first-principles derivation of why the diagonal-only closure should be picked up by the per-direction Galerkin Lambda_t fit. The interpretation that alpha_xi^2 + gamma^2 captures the diagonal Pythagorean sum while 2*alpha_xi*gamma spreads into off-diagonal shear remains a phenomenological reading until a Hilbert-variation derivation is constructed."
+}

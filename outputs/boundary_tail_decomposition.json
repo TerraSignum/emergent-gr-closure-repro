@@ -1,0 +1,282 @@
+{
+  "method": "boundary_tail_decomposition_per_node_residual",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P0",
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P5N64",
+      "P7",
+      "P8",
+      "P5N100"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "closure_threshold": 0.05,
+  "structural_lambda": {
+    "t": 0.81,
+    "s": -0.005
+  },
+  "per_regime": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "n_seeds": 4,
+      "n_nodes_total": 72,
+      "full_mean": 3.624888404589319,
+      "full_median": 0.25944508154724005,
+      "p75": 1.9600370892711525,
+      "p90": 15.002436733006956,
+      "p95": 16.585764726882495,
+      "p99": 26.783506078872467,
+      "trimmed_mean_top10pct_dropped": 1.4941284872373903,
+      "trimmed_mean_top20pct_dropped": 0.485069722108724,
+      "boundary_classification": {
+        "definition": "top tertile of nodes by amplitude on top-3 highest-eigenvalue spectral modes",
+        "boundary_fraction": 0.3333333333333333,
+        "boundary_mean": 5.718162786007473,
+        "boundary_median": 0.6265406197777734,
+        "interior_mean": 2.578251213880243,
+        "interior_median": 0.18982992930706716,
+        "top_decile_overlap_with_boundary": 0.5
+      }
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "n_seeds": 4,
+      "n_nodes_total": 112,
+      "full_mean": 0.5798487844671919,
+      "full_median": 0.10642523183000692,
+      "p75": 0.3363812291071817,
+      "p90": 1.5496386718301072,
+      "p95": 3.6701652517626924,
+      "p99": 5.679207202027457,
+      "trimmed_mean_top10pct_dropped": 0.19915302670551355,
+      "trimmed_mean_top20pct_dropped": 0.12101957118538655,
+      "boundary_classification": {
+        "definition": "top tertile of nodes by amplitude on top-3 highest-eigenvalue spectral modes",
+        "boundary_fraction": 0.33035714285714285,
+        "boundary_mean": 0.7568941657115807,
+        "boundary_median": 0.11695743622410355,
+        "interior_mean": 0.49250639638662674,
+        "interior_median": 0.1006319574030697,
+        "top_decile_overlap_with_boundary": 0.5
+      }
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "n_seeds": 4,
+      "n_nodes_total": 120,
+      "full_mean": 1.4537766846701898,
+      "full_median": 0.12621576843199867,
+      "p75": 0.9367585083073584,
+      "p90": 4.2562134693944875,
+      "p95": 8.046918583217895,
+      "p99": 15.897179465665877,
+      "trimmed_mean_top10pct_dropped": 0.5228184290651607,
+      "trimmed_mean_top20pct_dropped": 0.23921919997131025,
+      "boundary_classification": {
+        "definition": "top tertile of nodes by amplitude on top-3 highest-eigenvalue spectral modes",
+        "boundary_fraction": 0.3333333333333333,
+        "boundary_mean": 1.3831165137286539,
+        "boundary_median": 0.21379723211762475,
+        "interior_mean": 1.489106770140958,
+        "interior_median": 0.09825209920850275,
+        "top_decile_overlap_with_boundary": 0.25
+      }
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "n_seeds": 4,
+      "n_nodes_total": 144,
+      "full_mean": 0.703204916385079,
+      "full_median": 0.046093498249937206,
+      "p75": 0.23385693496140614,
+      "p90": 1.6975393583710428,
+      "p95": 4.10871496229366,
+      "p99": 11.018723759871811,
+      "trimmed_mean_top10pct_dropped": 0.1497032487881849,
+      "trimmed_mean_top20pct_dropped": 0.07518007866727407,
+      "boundary_classification": {
+        "definition": "top tertile of nodes by amplitude on top-3 highest-eigenvalue spectral modes",
+        "boundary_fraction": 0.3333333333333333,
+        "boundary_mean": 0.5706323076226911,
+        "boundary_median": 0.03574677244473608,
+        "interior_mean": 0.7694912207662732,
+        "interior_median": 0.052135604518807416,
+        "top_decile_overlap_with_boundary": 0.2
+      }
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "n_seeds": 4,
+      "n_nodes_total": 168,
+      "full_mean": 0.18909108168218824,
+      "full_median": 0.04094269865691587,
+      "p75": 0.09434780634121889,
+      "p90": 0.3583828353835833,
+      "p95": 1.0305097082339403,
+      "p99": 2.462575003499328,
+      "trimmed_mean_top10pct_dropped": 0.06355885418609494,
+      "trimmed_mean_top20pct_dropped": 0.04145292111612552,
+      "boundary_classification": {
+        "definition": "top tertile of nodes by amplitude on top-3 highest-eigenvalue spectral modes",
+        "boundary_fraction": 0.3333333333333333,
+        "boundary_mean": 0.1414990709743926,
+        "boundary_median": 0.03830131913875412,
+        "interior_mean": 0.21288708703608603,
+        "interior_median": 0.040951970957137984,
+        "top_decile_overlap_with_boundary": 0.23529411764705882
+      }
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_seeds": 4,
+      "n_nodes_total": 200,
+      "full_mean": 0.2804133221622677,
+      "full_median": 0.04332885485563631,
+      "p75": 0.16065206455149422,
+      "p90": 0.604144771793107,
+      "p95": 1.2161529981542216,
+      "p99": 3.3395076210917582,
+      "trimmed_mean_top10pct_dropped": 0.09765692672193167,
+      "trimmed_mean_top20pct_dropped": 0.058084284626502294,
+      "boundary_classification": {
+        "definition": "top tertile of nodes by amplitude on top-3 highest-eigenvalue spectral modes",
+        "boundary_fraction": 0.335,
+        "boundary_mean": 0.1431003153048491,
+        "boundary_median": 0.039004924454850834,
+        "interior_mean": 0.34958603990247117,
+        "interior_median": 0.05503494902230246,
+        "top_decile_overlap_with_boundary": 0.25
+      }
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "n_seeds": 4,
+      "n_nodes_total": 240,
+      "full_mean": 0.08236427253794702,
+      "full_median": 0.028008420270925618,
+      "p75": 0.04331509329108428,
+      "p90": 0.12201494890786324,
+      "p95": 0.358737820038861,
+      "p99": 0.9779247266062187,
+      "trimmed_mean_top10pct_dropped": 0.03169633360238001,
+      "trimmed_mean_top20pct_dropped": 0.02642701371429072,
+      "boundary_classification": {
+        "definition": "top tertile of nodes by amplitude on top-3 highest-eigenvalue spectral modes",
+        "boundary_fraction": 0.3333333333333333,
+        "boundary_mean": 0.06120443410956746,
+        "boundary_median": 0.026643800701660787,
+        "interior_mean": 0.0929441917521368,
+        "interior_median": 0.028183794220690693,
+        "top_decile_overlap_with_boundary": 0.08333333333333333
+      }
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_seeds": 4,
+      "n_nodes_total": 256,
+      "full_mean": 0.19024654830667642,
+      "full_median": 0.032563447899527836,
+      "p75": 0.06219457346051059,
+      "p90": 0.3426567774593928,
+      "p95": 1.137350386772042,
+      "p99": 2.530177665306298,
+      "trimmed_mean_top10pct_dropped": 0.04973064441062829,
+      "trimmed_mean_top20pct_dropped": 0.03203013401927795,
+      "boundary_classification": {
+        "definition": "top tertile of nodes by amplitude on top-3 highest-eigenvalue spectral modes",
+        "boundary_fraction": 0.33203125,
+        "boundary_mean": 0.14778123025805157,
+        "boundary_median": 0.030127753204963904,
+        "interior_mean": 0.2113550397343555,
+        "interior_median": 0.033894935756058696,
+        "top_decile_overlap_with_boundary": 0.2692307692307692
+      }
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_seeds": 4,
+      "n_nodes_total": 288,
+      "full_mean": 0.12257164589961504,
+      "full_median": 0.028452573154449632,
+      "p75": 0.052389067485638416,
+      "p90": 0.1718864562043907,
+      "p95": 0.5127673860362407,
+      "p99": 1.7499518052483227,
+      "trimmed_mean_top10pct_dropped": 0.03713759705314054,
+      "trimmed_mean_top20pct_dropped": 0.027958340108291038,
+      "boundary_classification": {
+        "definition": "top tertile of nodes by amplitude on top-3 highest-eigenvalue spectral modes",
+        "boundary_fraction": 0.3333333333333333,
+        "boundary_mean": 0.10058601983530997,
+        "boundary_median": 0.027947620930380557,
+        "interior_mean": 0.13356445893176758,
+        "interior_median": 0.028995962966179276,
+        "top_decile_overlap_with_boundary": 0.20689655172413793
+      }
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_seeds": 4,
+      "n_nodes_total": 336,
+      "full_mean": 0.066978233696168,
+      "full_median": 0.024258792226763234,
+      "p75": 0.04044311214421693,
+      "p90": 0.061668931247708725,
+      "p95": 0.11702590436323562,
+      "p99": 1.07488934886228,
+      "trimmed_mean_top10pct_dropped": 0.02664892080517447,
+      "trimmed_mean_top20pct_dropped": 0.02340678048247579,
+      "boundary_classification": {
+        "definition": "top tertile of nodes by amplitude on top-3 highest-eigenvalue spectral modes",
+        "boundary_fraction": 0.3333333333333333,
+        "boundary_mean": 0.029616808092608502,
+        "boundary_median": 0.02286861663893454,
+        "interior_mean": 0.08565894649794774,
+        "interior_median": 0.025552506238356268,
+        "top_decile_overlap_with_boundary": 0.20588235294117646
+      }
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds": 4,
+      "n_nodes_total": 400,
+      "full_mean": 0.10019094018111821,
+      "full_median": 0.03184686203059375,
+      "p75": 0.05080907058388863,
+      "p90": 0.12836150890631318,
+      "p95": 0.328558166923975,
+      "p99": 1.3601705273523619,
+      "trimmed_mean_top10pct_dropped": 0.03444469698907951,
+      "trimmed_mean_top20pct_dropped": 0.028815875882420815,
+      "boundary_classification": {
+        "definition": "top tertile of nodes by amplitude on top-3 highest-eigenvalue spectral modes",
+        "boundary_fraction": 0.3325,
+        "boundary_mean": 0.13989560625465236,
+        "boundary_median": 0.028884501242403163,
+        "interior_mean": 0.08041296045160491,
+        "interior_median": 0.0333124908103416,
+        "top_decile_overlap_with_boundary": 0.35
+      }
+    }
+  ]
+}

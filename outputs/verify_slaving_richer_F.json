@@ -1,0 +1,68 @@
+{
+  "method": "Iter-21 slaving richer-F aggregator scan: tests four richer functional forms beyond the G4 4-param sigmoid -- linear-6-feature with intercept, polynomial degree-3 cross-terms, random-forest (depth=8, n_estimators=64), and global spectral projection on the top-12 Xi-Laplacian eigenvectors. Reports R^2 per regime to identify which aggregator (if any) captures the per-node K, Q variance from Xi-graph topology.",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5N64",
+      "P5N72",
+      "P5N84",
+      "P5N100"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "stand": "2026-05-05",
+  "literature": [
+    "Haken 1983 (Synergetics; slaving principle)",
+    "Mori 1965 (Continued-fraction time-correlation functions)",
+    "Zwanzig 2001 (Nonequilibrium statistical mechanics)",
+    "Breiman 2001 (Random forests)"
+  ],
+  "rows": [
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "R2_A_linear_6feat": 0.11568683403950186,
+      "R2_A_polynomial_degree_3": 0.9564508474792837,
+      "R2_A_random_forest": 0.8328234399748069,
+      "R2_A_spectral_top12": 0.23234302798798523,
+      "R2_Q_spectral_top12": 0.14985090244525856,
+      "n_features_polynomial": 84,
+      "n_modes_spectral": 12
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "R2_A_linear_6feat": 0.08949893609432902,
+      "R2_A_polynomial_degree_3": 0.696481390483785,
+      "R2_A_random_forest": 0.8325571654615059,
+      "R2_A_spectral_top12": 0.19895501673319826,
+      "R2_Q_spectral_top12": 0.19356529900069042,
+      "n_features_polynomial": 84,
+      "n_modes_spectral": 12
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "R2_A_linear_6feat": 0.027636863157696534,
+      "R2_A_polynomial_degree_3": 0.6670942690488845,
+      "R2_A_random_forest": 0.7954029912857075,
+      "R2_A_spectral_top12": 0.22472809293004603,
+      "R2_Q_spectral_top12": 0.06596439430864776,
+      "n_features_polynomial": 84,
+      "n_modes_spectral": 12
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "R2_A_linear_6feat": 0.01717564491232393,
+      "R2_A_polynomial_degree_3": 0.5482918863518804,
+      "R2_A_random_forest": 0.7835196426724997,
+      "R2_A_spectral_top12": 0.16620122610732835,
+      "R2_Q_spectral_top12": 0.22705312542122347,
+      "n_features_polynomial": 84,
+      "n_modes_spectral": 12
+    }
+  ],
+  "verdict": "Best richer-F aggregator: random_forest (<R^2>_A = 0.811). Comparison vs G4 baseline 4-param sigmoid (<R^2> ~ 0.10): linear_6feat = 0.062, poly_3 = 0.717, spectral_top12 = 0.206, RF = 0.811. RICHER-F captures variance: the random_forest aggregator achieves R^2 > 0.7, indicating the per-node K, Q variance is a non-trivial computable function of Xi-graph topology beyond simple degree."
+}

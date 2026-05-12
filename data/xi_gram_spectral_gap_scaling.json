@@ -1,0 +1,608 @@
+{
+  "method": "xi_gram_spectral_gap_n_scaling",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "regimes_used": [
+      "P0",
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ],
+    "branch_rationale": "Statistical / spectral / topology diagnostic on lattice state; no branch projection in formulas",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Cross-regime Xi-Gram eigenvalue gap with Wigner-Dyson gap-ratio classification on P0..P8.",
+  "ladder_N": [
+    18,
+    28,
+    30,
+    36,
+    42,
+    50,
+    60,
+    72,
+    84
+  ],
+  "per_regime": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "n_seeds": 24,
+      "status": "OK",
+      "relative_spectral_gap": {
+        "mean": 0.45824179070096765,
+        "std": 0.08425335220465845,
+        "min": 0.2741051565921876,
+        "max": 0.5755718861043533
+      },
+      "absolute_spectral_gap": {
+        "mean": 0.17584009859721017,
+        "std": 0.04083294870515009
+      },
+      "log_spacing_top6_std": {
+        "mean": 0.09036022470763265,
+        "std": 0.022629487829551122
+      },
+      "gap_ratio_mean": {
+        "mean": 0.4634608589554518,
+        "std": 0.06365791852933508,
+        "n_seeds_valid": 24
+      },
+      "spectral_classes": [
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GUE",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE"
+      ],
+      "spectral_class_majority": "GOE",
+      "shuffled_gap_ratio_mean": {
+        "mean": 0.4289689348523475,
+        "std": 0.0744548168970574
+      },
+      "shuffled_spectral_class_majority": "Poisson"
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "n_seeds": 32,
+      "status": "OK",
+      "relative_spectral_gap": {
+        "mean": 0.537126496504515,
+        "std": 0.057452134879358324,
+        "min": 0.40405399175262874,
+        "max": 0.6322971195238136
+      },
+      "absolute_spectral_gap": {
+        "mean": 0.18955923195579225,
+        "std": 0.027521917496574864
+      },
+      "log_spacing_top6_std": {
+        "mean": 0.10124210267134615,
+        "std": 0.023888869916179795
+      },
+      "gap_ratio_mean": {
+        "mean": 0.4644705313918923,
+        "std": 0.04958804123184704,
+        "n_seeds_valid": 32
+      },
+      "spectral_classes": [
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "Poisson",
+        "Poisson"
+      ],
+      "spectral_class_majority": "GOE",
+      "shuffled_gap_ratio_mean": {
+        "mean": 0.4515694581982933,
+        "std": 0.06406429646984078
+      },
+      "shuffled_spectral_class_majority": "Poisson"
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "n_seeds": 28,
+      "status": "OK",
+      "relative_spectral_gap": {
+        "mean": 0.680557593243896,
+        "std": 0.05365202086006818,
+        "min": 0.5625365633102999,
+        "max": 0.7633604529917954
+      },
+      "absolute_spectral_gap": {
+        "mean": 0.2791488916548797,
+        "std": 0.046794147753085366
+      },
+      "log_spacing_top6_std": {
+        "mean": 0.16698893353110542,
+        "std": 0.031283399393352174
+      },
+      "gap_ratio_mean": {
+        "mean": 0.4601974142906909,
+        "std": 0.050061946683028324,
+        "n_seeds_valid": 28
+      },
+      "spectral_classes": [
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GUE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson"
+      ],
+      "spectral_class_majority": "GOE",
+      "shuffled_gap_ratio_mean": {
+        "mean": 0.44799050444495425,
+        "std": 0.06079407043807249
+      },
+      "shuffled_spectral_class_majority": "GOE"
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "n_seeds": 28,
+      "status": "OK",
+      "relative_spectral_gap": {
+        "mean": 0.7354623815675768,
+        "std": 0.03488592528584219,
+        "min": 0.6630077511898118,
+        "max": 0.7989657558759666
+      },
+      "absolute_spectral_gap": {
+        "mean": 0.30688184565271254,
+        "std": 0.03812143944564199
+      },
+      "log_spacing_top6_std": {
+        "mean": 0.20110517936280764,
+        "std": 0.024524802026137438
+      },
+      "gap_ratio_mean": {
+        "mean": 0.46344350571303705,
+        "std": 0.05115625037590914,
+        "n_seeds_valid": 28
+      },
+      "spectral_classes": [
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson"
+      ],
+      "spectral_class_majority": "GOE",
+      "shuffled_gap_ratio_mean": {
+        "mean": 0.4475330788290686,
+        "std": 0.04604527698451384
+      },
+      "shuffled_spectral_class_majority": "GOE"
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "n_seeds": 28,
+      "status": "OK",
+      "relative_spectral_gap": {
+        "mean": 0.707741890518248,
+        "std": 0.05074990925776554,
+        "min": 0.5998485980600006,
+        "max": 0.801285050355395
+      },
+      "absolute_spectral_gap": {
+        "mean": 0.2620356486655938,
+        "std": 0.04504347235561367
+      },
+      "log_spacing_top6_std": {
+        "mean": 0.18839844131597763,
+        "std": 0.03325094312002704
+      },
+      "gap_ratio_mean": {
+        "mean": 0.4578659016101943,
+        "std": 0.0491175908345305,
+        "n_seeds_valid": 28
+      },
+      "spectral_classes": [
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GOE"
+      ],
+      "spectral_class_majority": "GOE",
+      "shuffled_gap_ratio_mean": {
+        "mean": 0.4558723943529781,
+        "std": 0.04669892217338656
+      },
+      "shuffled_spectral_class_majority": "Poisson"
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_seeds": 28,
+      "status": "OK",
+      "relative_spectral_gap": {
+        "mean": 0.6739175822242899,
+        "std": 0.03813436587113841,
+        "min": 0.581562286675596,
+        "max": 0.761590219481933
+      },
+      "absolute_spectral_gap": {
+        "mean": 0.20895520482865243,
+        "std": 0.029104792108394593
+      },
+      "log_spacing_top6_std": {
+        "mean": 0.17036548088806017,
+        "std": 0.022484148151252985
+      },
+      "gap_ratio_mean": {
+        "mean": 0.4724358952342231,
+        "std": 0.03884964305259587,
+        "n_seeds_valid": 28
+      },
+      "spectral_classes": [
+        "Poisson",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE"
+      ],
+      "spectral_class_majority": "GOE",
+      "shuffled_gap_ratio_mean": {
+        "mean": 0.45951852350245076,
+        "std": 0.04311687265964643
+      },
+      "shuffled_spectral_class_majority": "GOE"
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "n_seeds": 28,
+      "status": "OK",
+      "relative_spectral_gap": {
+        "mean": 0.6237832511415977,
+        "std": 0.040556260827522665,
+        "min": 0.5277744443193071,
+        "max": 0.6922360441397792
+      },
+      "absolute_spectral_gap": {
+        "mean": 0.1492962897103171,
+        "std": 0.02358535776487983
+      },
+      "log_spacing_top6_std": {
+        "mean": 0.15061292808445487,
+        "std": 0.019586508903800776
+      },
+      "gap_ratio_mean": {
+        "mean": 0.48008648096807116,
+        "std": 0.03671764067106113,
+        "n_seeds_valid": 28
+      },
+      "spectral_classes": [
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GUE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE"
+      ],
+      "spectral_class_majority": "GOE",
+      "shuffled_gap_ratio_mean": {
+        "mean": 0.47210989432067196,
+        "std": 0.044774665715160034
+      },
+      "shuffled_spectral_class_majority": "GOE"
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_seeds": 20,
+      "status": "OK",
+      "relative_spectral_gap": {
+        "mean": 0.5960899717999488,
+        "std": 0.030806500459580652,
+        "min": 0.5392354629712505,
+        "max": 0.657956372316795
+      },
+      "absolute_spectral_gap": {
+        "mean": 0.11860228196928853,
+        "std": 0.018948887390457345
+      },
+      "log_spacing_top6_std": {
+        "mean": 0.1397769032740431,
+        "std": 0.013895593691524315
+      },
+      "gap_ratio_mean": {
+        "mean": 0.4894669163858481,
+        "std": 0.043194941912165975,
+        "n_seeds_valid": 20
+      },
+      "spectral_classes": [
+        "GOE",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE"
+      ],
+      "spectral_class_majority": "GOE",
+      "shuffled_gap_ratio_mean": {
+        "mean": 0.4607098018325493,
+        "std": 0.04029647340176156
+      },
+      "shuffled_spectral_class_majority": "GOE"
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_seeds": 16,
+      "status": "OK",
+      "relative_spectral_gap": {
+        "mean": 0.563174957068995,
+        "std": 0.035490670193066245,
+        "min": 0.48230151076470157,
+        "max": 0.6099325936070058
+      },
+      "absolute_spectral_gap": {
+        "mean": 0.09367973243059553,
+        "std": 0.015357915379281288
+      },
+      "log_spacing_top6_std": {
+        "mean": 0.12837387096913597,
+        "std": 0.015010850993463293
+      },
+      "gap_ratio_mean": {
+        "mean": 0.5004749325472708,
+        "std": 0.03190630525377656,
+        "n_seeds_valid": 16
+      },
+      "spectral_classes": [
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "Poisson",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE",
+        "GOE"
+      ],
+      "spectral_class_majority": "GOE",
+      "shuffled_gap_ratio_mean": {
+        "mean": 0.4698200558341143,
+        "std": 0.03134462744737221
+      },
+      "shuffled_spectral_class_majority": "GOE"
+    }
+  ],
+  "loglog_fit_relative_gap": {
+    "slope": 0.09535848101234962,
+    "intercept": -0.8452706802244322,
+    "C_prefactor": 0.4294411012635503,
+    "r2": 0.09619748324495458,
+    "n_points": 9
+  },
+  "loglog_fit_absolute_gap": {
+    "slope": -0.4876569535544483,
+    "intercept": 0.13875912780819508,
+    "C_prefactor": 1.1488473412960578,
+    "r2": 0.36439145591552313,
+    "n_points": 9
+  },
+  "gap_ratio_cross_regime_summary": {
+    "regimes_with_valid_gr": [
+      18,
+      28,
+      30,
+      36,
+      42,
+      50,
+      60,
+      72,
+      84
+    ],
+    "values": [
+      0.4634608589554518,
+      0.4644705313918923,
+      0.4601974142906909,
+      0.46344350571303705,
+      0.4578659016101943,
+      0.4724358952342231,
+      0.48008648096807116,
+      0.4894669163858481,
+      0.5004749325472708
+    ],
+    "mean": 0.47243360412185326,
+    "std": 0.013831129167344566
+  },
+  "honest_caveats": [
+    "Xi-Gram eigenvalues are not a Hamiltonian spectrum; the 'spectral gap' here is the algebraic mode-amplitude distance, not a dynamical mass gap.",
+    "Atas-Bogomolny-Roux gap-ratio (2013) is computed on the full Xi-Gram spectrum without unfolding; classification thresholds (Poisson 0.386, GOE 0.530, GUE 0.603) are benchmarks, not statistical tests.",
+    "Shuffled control phase-randomises off-diagonal Xi entries; non-trivial correlation should produce distinguishable spectral statistics.",
+    "P5N64/P5N72/P5N84/P5N100 etc. are deliberately not included here because they share P5 physics and would bias the cross-regime ladder."
+  ]
+}

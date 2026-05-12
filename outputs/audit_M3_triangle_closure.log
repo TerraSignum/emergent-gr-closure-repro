@@ -1,0 +1,50 @@
+==============================================================================
+Triangle-closure audit: bi-edge -> tri-edge bound-state transition
+==============================================================================
+  System-R rationals: alpha_xi=0.9, beta_pi=0.9375, gamma=0.1, D=0.8375, eps^2=0.05
+
+  reg     #s  n_pers   n_tri   n_null   Pi3_t0   Pi3_tF  T2_gain  T3_R31_t0  T3_R31_tF   T4_S_t0   T4_S_tF
+----------------------------------------------------------------------------------------------------------
+  P5N64    8    1886    4557     4270  0.00741  0.00769  +0.0387     0.8572     0.8600    0.0133    0.0134
+  P5N72    8    2222    5287     4899  0.00696  0.00721  +0.0380     0.8483     0.8512    0.0141    0.0142
+  P5N84    8    2750    6424     5849  0.00605  0.00626  +0.0365     0.8317     0.8346    0.0143    0.0145
+  P5N100   8    3519    8132     7267  0.00431  0.00447  +0.0388     0.7897     0.7933    0.0128    0.0129
+  P5N128   4    5300   13140    11832  0.00144  0.00165  +0.1335     0.6568     0.6698    0.0084    0.0090
+  P5N200   4   10152   24868    21814  0.00238  0.00255  +0.0744     0.6925     0.7011    0.0113    0.0117
+
+==============================================================================
+T5: Cross-regime cube-root triangle-Xi vs algebraic candidates
+==============================================================================
+  Mean cube-root <Pi3>^(1/3) cross-regime = 0.1079 +/- 0.0359
+  Per regime:
+    P5N64   cube=0.1488
+    P5N72   cube=0.1427
+    P5N84   cube=0.1285
+    P5N100  cube=0.1056
+    P5N128  cube=0.0585
+    P5N200  cube=0.0633
+  Algebraic candidates:
+    alpha_xi^2 * beta_pi       = 0.7594 (diff=-0.6515)
+    alpha_xi * beta_pi^2       = 0.7910 (diff=-0.6831)
+    alpha_xi * beta_pi * gamma = 0.0844 (diff=+0.0235)
+    alpha_xi^3                 = 0.7290 (diff=-0.6211)
+    beta_pi^3                  = 0.8240 (diff=-0.7161)
+    D * gamma * beta_pi        = 0.0785 (diff=+0.0294)
+    alpha_xi * eps^2           = 0.0450 (diff=+0.0629)
+    gamma^3                    = 0.0010 (diff=+0.1069)
+    alpha_xi^2 * gamma         = 0.0810 (diff=+0.0269)
+
+==============================================================================
+Interpretation
+==============================================================================
+  T1 lift: persistent-triangle count over Bernoulli null.
+    T1 >> 1 => persistent edges cluster into triangles, NOT random pairs.
+  T2 log(Pi3 gain): Xi-triple-product growth over trajectory.
+    T2 > 0 => triangle Xi-product GROWS => 3-body binding gain.
+  T3 R31: cube-root triangle Xi vs persistent edge mean.
+    R31 > 1 => triangle is tighter (geometric mean) than the average edge.
+  T4 M3 slack inside triangle:
+    T4 > 0 means the triangle is M3-violating internally.
+    T4_tF > T4_t0 => binding violation INCREASES => bound state grows.
+
+Saved C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\audit_M3_triangle_closure.json

@@ -1,0 +1,11 @@
+{
+  "criterion": "Spacetime dimension + arrow-of-time recompute",
+  "d_spacetime_equals_4": true,
+  "d_spatial_equals_3": true,
+  "lorentzian_possible": true,
+  "S_bounce_canonical": 37.99,
+  "P_forward_over_P_backward_recomputed": 9.94705994100418e+32,
+  "asymmetry_OoM_recomputed": 32,
+  "fitted_parameters": 0,
+  "verdict": "PASS"
+}

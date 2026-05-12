@@ -1,0 +1,138 @@
+{
+  "method": "M3_multi_N_within_P5",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "regimes_used": [
+      "P5",
+      "P5N64",
+      "P5N72",
+      "P5N84",
+      "P5N100",
+      "P5N128",
+      "P5N200",
+      "P5N300",
+      "P5N256",
+      "P5N512"
+    ],
+    "branch_rationale": "Topology / vortex / triangle-phase diagnostic; algebraic discrete-Wilson-loop / homology test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "ladder": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_seeds": 28,
+      "raw_count_rate": 0.16096817298347912,
+      "significant_count_rate": 0.031225097181729836,
+      "penalty_residual_L2_mean": 0.018123602349664935,
+      "penalty_residual_L2_std": 0.004126937491997885,
+      "penalty_residual_sup_mean": 0.32683428250496815,
+      "penalty_residual_sup_std": 0.0702683898884604
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_seeds": 24,
+      "raw_count_rate": 0.13045068217699266,
+      "significant_count_rate": 0.0178991455453149,
+      "penalty_residual_L2_mean": 0.013448186651614047,
+      "penalty_residual_L2_std": 0.004539971663404791,
+      "penalty_residual_sup_mean": 0.30919765650191405,
+      "penalty_residual_sup_std": 0.07794623141531046
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "n_seeds": 24,
+      "raw_count_rate": 0.1159794414635964,
+      "significant_count_rate": 0.014215850659512632,
+      "penalty_residual_L2_mean": 0.011957091468619846,
+      "penalty_residual_L2_std": 0.0029449086610776193,
+      "penalty_residual_sup_mean": 0.3318797161955156,
+      "penalty_residual_sup_std": 0.08660331758299827
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "n_seeds": 24,
+      "raw_count_rate": 0.09832943854395515,
+      "significant_count_rate": 0.010631958729225848,
+      "penalty_residual_L2_mean": 0.01024394892544561,
+      "penalty_residual_L2_std": 0.00280639998112124,
+      "penalty_residual_sup_mean": 0.31952216236589553,
+      "penalty_residual_sup_std": 0.09157934110661146
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds": 24,
+      "raw_count_rate": 0.07905165601594173,
+      "significant_count_rate": 0.007025785061499347,
+      "penalty_residual_L2_mean": 0.00839422673783539,
+      "penalty_residual_L2_std": 0.0027511217510013102,
+      "penalty_residual_sup_mean": 0.3198513407202899,
+      "penalty_residual_sup_std": 0.07763598594706808
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "n_seeds": 12,
+      "raw_count_rate": 0.0561543576584177,
+      "significant_count_rate": 0.0015623860819480898,
+      "penalty_residual_L2_mean": 0.004128478608481519,
+      "penalty_residual_L2_std": 0.0010439413658227252,
+      "penalty_residual_sup_mean": 0.2710950870317152,
+      "penalty_residual_sup_std": 0.07866991055763829
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_seeds": 8,
+      "raw_count_rate": 0.030018336632658238,
+      "significant_count_rate": 0.0014901527841226334,
+      "penalty_residual_L2_mean": 0.0038739327655872295,
+      "penalty_residual_L2_std": 0.0008158632651245172,
+      "penalty_residual_sup_mean": 0.30283194455439616,
+      "penalty_residual_sup_std": 0.08510629063409854
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_seeds": 12,
+      "raw_count_rate": 0.01656903199579009,
+      "significant_count_rate": 0.0006126125115036699,
+      "penalty_residual_L2_mean": 0.002468055549108524,
+      "penalty_residual_L2_std": 0.0005016575252601925,
+      "penalty_residual_sup_mean": 0.3032689155950305,
+      "penalty_residual_sup_std": 0.057001060112401775
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_seeds": 12,
+      "raw_count_rate": 0.02034426303329731,
+      "significant_count_rate": 0.0006581280396016673,
+      "penalty_residual_L2_mean": 0.002592667118989707,
+      "penalty_residual_L2_std": 0.0006231433335331475,
+      "penalty_residual_sup_mean": 0.30684042738923095,
+      "penalty_residual_sup_std": 0.08209341673839357
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_seeds": 12,
+      "raw_count_rate": 0.007370258320223067,
+      "significant_count_rate": 0.00014306503851540617,
+      "penalty_residual_L2_mean": 0.0011980532922626472,
+      "penalty_residual_L2_std": 0.0003968943932318663,
+      "penalty_residual_sup_mean": 0.2729952987607677,
+      "penalty_residual_sup_std": 0.051391209082079774
+    }
+  ],
+  "definitions": {
+    "raw_count_rate": "fraction of off-diagonal triples with Xi_ij * Xi_jk > Xi_ik + tol",
+    "significant_count_rate": "same, with absolute slack > 0.05",
+    "penalty_residual_L2": "sqrt(sum max(0, slack)^2 / n^3) -- gradient-flow penalty",
+    "penalty_residual_sup": "max slack value across all valid triples"
+  }
+}

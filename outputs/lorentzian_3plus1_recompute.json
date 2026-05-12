@@ -1,0 +1,67 @@
+{
+  "criterion": "Lorentzian 3+1 causal-ordering recompute",
+  "lorentzian_metric_exists": {
+    "canonical": true,
+    "extended": true
+  },
+  "proper_time_well_defined": {
+    "canonical": true,
+    "extended": true
+  },
+  "decomposition": "3+1",
+  "d_spacetime": 4,
+  "d_spatial": 3,
+  "light_cone_fuzziness": {
+    "canonical": 0.169925,
+    "extended": 0.169925
+  },
+  "arrow_of_time": {
+    "canonical": true,
+    "extended": true,
+    "S_bounce_canonical": 37.9954,
+    "S_bounce_extended": 36.2903,
+    "strength_canonical": "EXTREMELY_STRONG",
+    "strength_extended": "EXTREMELY_STRONG"
+  },
+  "planck_time_ratio": 1.000019,
+  "tolman_consistency": {
+    "canonical": true,
+    "extended": true
+  },
+  "metric_quality_table": {
+    "description": "Three different metric-quality observables, all bundled in this companion package. They probe complementary facets of the discrete-to-continuum bridge.",
+    "axes": [
+      {
+        "name": "Riemannian-embedding stress (spatial only)",
+        "symbol": "sigma(N) = 1 - geometric_coherence(N)",
+        "value_canonical": 0.279249,
+        "value_extended": 0.319147,
+        "scope": "Kruskal-Shepard MDS in 3-D Euclidean target dimension; signature-blind; bottoms out at sigma_inf ~ 0.30 under two-point Richardson, i.e. does NOT vanish at the available lattice sizes.",
+        "data_file": "data/einstein_metric_stress_multiN.json"
+      },
+      {
+        "name": "Lorentzian light-cone fuzziness (3+1 causal-ordering)",
+        "symbol": "f_LC = d_eff_residual",
+        "value_canonical": 0.169925,
+        "value_extended": 0.169925,
+        "scope": "Spectral-dimension residual of the 3+1 emergent-spacetime layer; the right 3+1-aware metric-quality complement to sigma(N).",
+        "data_file": "data/lorentzian_3plus1.json"
+      },
+      {
+        "name": "Einstein-identity gap",
+        "symbol": "Delta_E = ||G_munu - 8 pi G T_munu|| / ||G_munu||",
+        "value_canonical": 0.139633,
+        "value_extended": 0.100766,
+        "scope": "Direct test of the Einstein equations on the Lorentzian 3+1 manifold; converges under two-point Richardson at alpha = 0.848 to gap_inf ~ 1e-6.",
+        "data_file": "data/einstein_gap_results.json"
+      }
+    ],
+    "differences": {
+      "sigma_minus_lightcone_canonical": 0.109324,
+      "sigma_minus_lightcone_extended": 0.149222,
+      "lightcone_minus_einstein_gap_canonical": 0.030292,
+      "lightcone_minus_einstein_gap_extended": 0.069159,
+      "interpretation": "sigma is roughly the sum of (i) a 3-D vs 3+1 dimension/signature-mismatch contribution, captured at canonical regime by sigma - f_LC ~ 0.11, and (ii) the 3+1-Lorentzian intrinsic light-cone fuzziness f_LC ~ 0.17. The Einstein-identity gap is in the same range as f_LC and converges, while sigma does not."
+    }
+  }
+}

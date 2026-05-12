@@ -1,0 +1,195 @@
+\contentsline {section}{\numberline {1}Summary of secondary results}{4}{section.1}%
+\contentsline {paragraph}{CLP four-axis continuum-limit audit.}{4}{section*.2}%
+\contentsline {paragraph}{Multi-path Einstein-gap evidence chain.}{4}{section*.3}%
+\contentsline {paragraph}{Source-side decomposition: $\Lambda _{\mathrm {lat}}^{\infty }=19/15$ and $w_{\mathrm {eff}}=-0.310$.}{4}{section*.4}%
+\contentsline {paragraph}{Conventional-vs-strict source-tensor convention.}{5}{section*.5}%
+\contentsline {paragraph}{Matter-localised closure of the factor fields $K, Q$.}{5}{section*.6}%
+\contentsline {paragraph}{Non-linear $\Xi $-EOM consistency check.}{5}{section*.7}%
+\contentsline {paragraph}{Persistent-triangle winding-class fraction $f_{\mathrm {neg}}=2/(2 N_{\mathrm {gen}}+1)$.}{6}{section*.8}%
+\contentsline {paragraph}{Sub-leading $\gamma ^{2}/c_{X}$ structural corrections.}{6}{section*.9}%
+\contentsline {paragraph}{Per-regime running and chirality-flip phase diagram.}{6}{section*.10}%
+\contentsline {paragraph}{Local matter-core promotion of the chirality-flip (per-node enrichment classifier).}{7}{section*.11}%
+\contentsline {paragraph}{Post-flip System-$\mathcal R^{(M)}$ composition at the chirality inversion.}{9}{section*.12}%
+\contentsline {paragraph}{Post-flip dark-sector and rare-process predictions.}{9}{section*.13}%
+\contentsline {paragraph}{$\alpha _{\rm EM}$ as the universal low-energy Yukawa-amplitude.}{11}{section*.14}%
+\contentsline {paragraph}{Reconciliation with existing low-energy closures.}{11}{section*.15}%
+\contentsline {paragraph}{Independent factor-field audit of the chirality flow.}{11}{section*.16}%
+\contentsline {paragraph}{Theoretical derivation of $a_{\rm vac}\!=\!143/144$ and $a_{\rm mat}\!=\!23/48$ from Cl$(1,3)$ projector decomposition.}{13}{section*.17}%
+\contentsline {paragraph}{$D_{\Omega }$ lattice-resonance and the C2 violation.}{13}{section*.18}%
+\contentsline {paragraph}{Fast-slow decomposition: connection to existing framework structure.}{14}{section*.19}%
+\contentsline {paragraph}{Clean structural derivation: $D_{\Omega }^{(V)}\!=\!67/80$ from $(d, N_{\rm gen})$ alone.}{14}{section*.20}%
+\contentsline {paragraph}{First-principles structural form for $\theta _{\rm chir}(N)$ running.}{16}{section*.21}%
+\contentsline {section}{\numberline {2}Scope and what this paper does \emph {not} claim}{16}{section.2}%
+\contentsline {paragraph}{How to read this paper.}{16}{section*.22}%
+\contentsline {paragraph}{Scope.}{18}{section*.23}%
+\contentsline {paragraph}{Non-claims.}{18}{section*.24}%
+\contentsline {paragraph}{Endpoint hierarchy and multiple-testing policy.}{18}{section*.25}%
+\contentsline {paragraph}{Companion-paper dependencies.}{19}{section*.26}%
+\contentsline {paragraph}{Robustness diagnostics at a glance.}{19}{section*.27}%
+\contentsline {section}{\numberline {3}Relational metric construction}{21}{section.3}%
+\contentsline {paragraph}{Notation cross-reference.}{21}{section*.28}%
+\contentsline {paragraph}{Multi-$N$ trend on the within-$P_5$ ladder.}{22}{section*.29}%
+\contentsline {paragraph}{V1/V2 metric decision (one geometry).}{24}{section*.30}%
+\contentsline {paragraph}{Quantitative defect-side analysis.}{25}{section*.31}%
+\contentsline {paragraph}{Exact metric vs.\ $\epsilon $-quasimetric on the finite lattice.}{26}{section*.32}%
+\contentsline {paragraph}{Explicit framing of M3.}{27}{section*.33}%
+\contentsline {paragraph}{Empirical M3-violation residual and robustness to small violations.}{27}{section*.34}%
+\contentsline {section}{\numberline {4}Fast-slow metric closure}{28}{section.4}%
+\contentsline {section}{\numberline {5}Spacetime emergence and the Schwarzschild defect}{29}{section.5}%
+\contentsline {paragraph}{Effective spectral dimension.}{29}{section*.35}%
+\contentsline {paragraph}{Curvature-fixed-point theorem (restated).}{29}{section*.36}%
+\contentsline {paragraph}{Operative closure rule.}{29}{section*.37}%
+\contentsline {paragraph}{Reproducible certificate.}{29}{section*.38}%
+\contentsline {paragraph}{Discrete Riemannian-embedding-stress profile.}{30}{section*.39}%
+\contentsline {paragraph}{Causal-ordering layer with 3+1 decomposition (the right metric-quality complement).}{30}{section*.40}%
+\contentsline {paragraph}{Metric-is-gravitational-field identification.}{31}{section*.41}%
+\contentsline {paragraph}{Schwarzschild defect.}{31}{section*.42}%
+\contentsline {section}{\numberline {6}Continuum-limit closure scores}{33}{section.6}%
+\contentsline {section}{\numberline {7}Einstein-gap convergence and universality}{34}{section.7}%
+\contentsline {paragraph}{Frobenius-decomposed proxy across the regime ensemble.}{35}{section*.43}%
+\contentsline {paragraph}{Two-point Richardson cross-check (legacy).}{37}{section*.44}%
+\contentsline {paragraph}{Five-point chirality-deviation convergence witness.}{37}{section*.45}%
+\contentsline {paragraph}{Within-canonical-regime extension.}{37}{section*.46}%
+\contentsline {paragraph}{Multi-point Richardson on the within-$\mathcal {P}_{5}$ ladder.}{38}{section*.47}%
+\contentsline {paragraph}{Cross-observable consistency check at $\alpha _{\xi }^{2}$.}{39}{section*.48}%
+\contentsline {paragraph}{Branch-resolved structural reading.}{39}{section*.49}%
+\contentsline {paragraph}{Cross-sector confirmation in factor-field observables.}{40}{section*.50}%
+\contentsline {paragraph}{Cosmological z=0 cross-check and the $\Omega _{m}$ dual-form prediction.}{40}{section*.51}%
+\contentsline {paragraph}{Nine-point curvature-side and topological-witness ladders.}{41}{section*.53}%
+\contentsline {paragraph}{Chirality--curvature bridge: empirical correlation plus index-theorem reading.}{42}{section*.54}%
+\contentsline {paragraph}{Eight-point source-side test: an effective time--time constant $\Lambda _{\mathrm {eff}}$, \emph {not} a pure cosmological constant.}{42}{section*.55}%
+\contentsline {paragraph}{Physical reading of $\Lambda _{\mathrm {lat}}$: the Planck-scale source.}{44}{section*.56}%
+\contentsline {paragraph}{Is $\Lambda $ an observable in this construction? Falsification handles.}{45}{section*.57}%
+\contentsline {paragraph}{Quantitative strength of the $\Lambda $ observable test.}{45}{section*.58}%
+\contentsline {paragraph}{Is $\Lambda $ derived from first principles?}{46}{section*.59}%
+\contentsline {paragraph}{Direct first-principles evaluation with the exact framework $K_{\mathrm {rec}}$ definition.}{46}{section*.60}%
+\contentsline {paragraph}{Within-canonical-regime multi-$N$ validation of asymptotic rational landings.}{47}{section*.61}%
+\contentsline {paragraph}{Structural hints from $\mathcal R$ rational match analysis (not definitive identifications).}{47}{section*.62}%
+\contentsline {paragraph}{Diagonal-block Frobenius residual: limit of the 00-only check (negative result, principal scope).}{51}{section*.63}%
+\contentsline {paragraph}{Exact per-node off-diagonal Frobenius residual: the negative result holds.}{51}{section*.64}%
+\contentsline {paragraph}{$K_{\mathrm {rec}}$ convention disclosure (governs the proxy and row-mean readouts).}{51}{section*.65}%
+\contentsline {paragraph}{Anisotropy of the diagonal-block source: \textbf {the principal physical finding}.}{52}{section*.66}%
+\contentsline {paragraph}{Structural $\mathcal R$ identification of $\Lambda _{\mu \nu }$.}{52}{section*.67}%
+\contentsline {paragraph}{$\mathcal R$ idealised vs measured causal-wave coefficients.}{53}{section*.68}%
+\contentsline {paragraph}{Direct multi-$N$ closure on the Hessian-Ricci pipeline (Runner\nobreakspace {}A).}{54}{section*.69}%
+\contentsline {paragraph}{Universal matter-core density-contrast law and its tensor-structure non-equivalence.}{55}{section*.70}%
+\contentsline {paragraph}{Relational backreaction in the time-time sector.}{57}{section*.71}%
+\contentsline {paragraph}{Train/holdout verification of the backreaction theorem.}{57}{section*.72}%
+\contentsline {paragraph}{Continuum Backreaction Identity (CBI).}{59}{section*.73}%
+\contentsline {paragraph}{Continuum-limit framework underlying the CBI.}{60}{section*.74}%
+\contentsline {paragraph}{In-repo numerical witnesses of (A1)--(A8).}{61}{section*.75}%
+\contentsline {paragraph}{Status of the continuum-limit closure.}{62}{section*.76}%
+\contentsline {paragraph}{Sharpened open problem: insufficiency of M0--M3 plus admissibility, and the spectral-gap missing-axiom.}{62}{section*.77}%
+\contentsline {paragraph}{Falsification handles for the CBI.}{64}{section*.78}%
+\contentsline {paragraph}{Conditionality on the bounded-operator readout.}{65}{section*.79}%
+\contentsline {paragraph}{Relation to existing structural identities.}{65}{section*.80}%
+\contentsline {paragraph}{CBI in the framework's existing thermodynamic / holographic context.}{65}{section*.81}%
+\contentsline {paragraph}{Spatial-component coefficient-invariance theorem.}{67}{section*.82}%
+\contentsline {paragraph}{Honest closure-status of the structural form.}{67}{section*.83}%
+\contentsline {paragraph}{Three-principal-axis spatial closure (independent residuals).}{68}{section*.84}%
+\contentsline {paragraph}{Full principal-frame Einstein closure with relational backreaction.}{68}{section*.85}%
+\contentsline {paragraph}{Closure-defect hierarchy versus source-active heavy-tail support: two disjoint sub-structures on the lattice.}{69}{section*.86}%
+\contentsline {paragraph}{Per-node phase coherence: $\rho $-anti-coherence identifies $\Delta $-cores as phase-defect nodes.}{71}{section*.87}%
+\contentsline {paragraph}{POST-flip layer hierarchy across five independent diagnostics.}{72}{section*.88}%
+\contentsline {subsection}{\numberline {7.1}Federer-prefactor closure: cross-anchor theorem chain and physical factorisation}{75}{subsection.7.1}%
+\contentsline {paragraph}{(A1) Cosmological-tensor time-time diagonal $\Lambda _{t}\!=\!\alpha _{\xi }^{2}$.}{75}{section*.89}%
+\contentsline {paragraph}{(A2) Leading-prefactor physical factorisation $c\!=\!2\gamma \,\Lambda _{t}$.}{75}{section*.90}%
+\contentsline {paragraph}{(A3) Sub-leading topological coupling $d/c\!=\!-(1+\gamma )$.}{76}{section*.91}%
+\contentsline {paragraph}{Empirical AICc validation on the twelve-point ladder.}{76}{section*.92}%
+\contentsline {paragraph}{Status: empirically-derived PRECISE-tier closure.}{76}{section*.93}%
+\contentsline {paragraph}{Reconstruction-load reformulation of the time-time sector.}{79}{section*.94}%
+\contentsline {paragraph}{Discrete Bianchi recovery in the continuum limit.}{79}{section*.95}%
+\contentsline {paragraph}{Three-level conservation dictionary.}{80}{section*.96}%
+\contentsline {paragraph}{Robustness analyses.}{82}{section*.97}%
+\contentsline {paragraph}{Continuum-limit-proof on the extended nine-point ladder.}{82}{section*.98}%
+\contentsline {paragraph}{Hilbert-variation correspondence (DEC framework).}{83}{section*.99}%
+\contentsline {paragraph}{Closure of the emergent Einstein dynamics.}{84}{section*.100}%
+\contentsline {paragraph}{Renormalised gravitating stress-energy tensor.}{85}{section*.101}%
+\contentsline {paragraph}{IR-average reduction is regime-non-uniform.}{86}{section*.102}%
+\contentsline {paragraph}{Open-2: Bianchi conservation on the discrete geometry.}{86}{section*.103}%
+\contentsline {paragraph}{Cross-check: per-regime $\Lambda $ running.}{87}{section*.104}%
+\contentsline {paragraph}{Asymptotic Einstein-tensor closure with 2+1 spatial anisotropy.}{87}{section*.105}%
+\contentsline {paragraph}{Direct unit-budget redistribution measurement.}{88}{section*.106}%
+\contentsline {paragraph}{q\textsubscript {IR} cross-arm at the same magnitude.}{88}{section*.107}%
+\contentsline {paragraph}{Robustness annexes: $\Lambda _{\mu \nu }$-strategy and basis invariance.}{89}{section*.108}%
+\contentsline {paragraph}{Classical energy-condition test of the anisotropic source.}{90}{section*.109}%
+\contentsline {paragraph}{Trace anomaly and continuum extrapolation.}{90}{section*.110}%
+\contentsline {paragraph}{Vortex-background structural decomposition.}{91}{section*.111}%
+\contentsline {paragraph}{Regressor-choice-ambiguity audit: $N$-correlation artefact caveat for the intercept identification.}{92}{section*.112}%
+\contentsline {paragraph}{Per-seed dispersion test of the constant-hypothesis.}{92}{section*.113}%
+\contentsline {paragraph}{Per-seed robustness of the principal margins.}{93}{section*.114}%
+\contentsline {paragraph}{Geometric vortex quantization and independent vortex-density confirmation.}{94}{section*.115}%
+\contentsline {paragraph}{Dark-matter\,+\,dark-energy mixture reconciliation (principal reading).}{95}{section*.116}%
+\contentsline {paragraph}{FRW self-consistency of the lattice DM\,+\,DE decomposition.}{96}{section*.117}%
+\contentsline {paragraph}{Spectral-embedding off-diagonal $T_{ij}$ test --- spatial-isotropy caveat resolution.}{97}{section*.118}%
+\contentsline {paragraph}{Multi-$N$ off-diagonal Frobenius convergence: direct full-tensor witness of $\|G_{\mu \nu } - 8\pi G\, T_{\mu \nu }\|_F \to 0$.}{98}{section*.119}%
+\contentsline {paragraph}{Cosmic-string-network EOS comparison (secondary, EOS-class only).}{99}{section*.120}%
+\contentsline {paragraph}{Cross-validation against the companion 9-layer cc-dressing pipeline.}{100}{section*.121}%
+\contentsline {paragraph}{Explicit Look-Elsewhere quantification of the three $\mathcal R$ rational identifications.}{100}{section*.122}%
+\contentsline {paragraph}{Honest caveats on the multi-$N$ evidence chain.}{101}{section*.123}%
+\contentsline {paragraph}{First-principles 2-loop $\beta $-function.}{102}{section*.124}%
+\contentsline {paragraph}{Multi-point rigorous $\Delta _{E}$ ladders.}{102}{section*.125}%
+\contentsline {paragraph}{Seven-point Riemannian-embedding-stress ladder (informational, structurally distinct from $\Delta _{E}$).}{103}{section*.126}%
+\contentsline {paragraph}{Nine-point tensor-closure-gap ladder (complementary, larger-$N$ extension).}{103}{section*.127}%
+\contentsline {paragraph}{Five-point CLP-B operator-convergence ladder (canonical multi-$N$ convergence diagnostic).}{103}{section*.128}%
+\contentsline {paragraph}{Closure-status summary (multi-diagnostic combination).}{104}{section*.129}%
+\contentsline {section}{\numberline {8}Discrete-graph correlation of stress-energy and Galerkin curvature on the $\Xi $-graph}{114}{section.8}%
+\contentsline {paragraph}{Setup.}{114}{section*.130}%
+\contentsline {paragraph}{(i) Eigenvector-centrality correlations $\rho _{\rm S}(\mathrm {EC}, T_{00})$ and $\rho _{\rm S}(\mathrm {EC}, G_{00})$.}{114}{section*.131}%
+\contentsline {paragraph}{(ii) Per-decile degree concentration of the matter-core.}{114}{section*.132}%
+\contentsline {paragraph}{(iii) Cycle-rank ($H_1$) of the matter-core subgraph.}{115}{section*.133}%
+\contentsline {paragraph}{Synthesis.}{115}{section*.134}%
+\contentsline {paragraph}{Relation to the topological-defect background.}{115}{section*.135}%
+\contentsline {paragraph}{Vietoris--Rips persistence diagram and triangle filtration.}{116}{section*.136}%
+\contentsline {section}{\numberline {9}Parametrized post-Newtonian (PPN) limits and 2PN extension}{116}{section.9}%
+\contentsline {paragraph}{End of the principal proof core.}{117}{section*.137}%
+\contentsline {section}{\numberline {A}Black-hole sector: supporting numerical readouts}{117}{appendix.A}%
+\contentsline {paragraph}{Scope statement (not a principal claim of this paper).}{117}{section*.138}%
+\contentsline {paragraph}{Prerequisite: causal-ordering layer with $3{+}1$ decomposition.}{117}{section*.139}%
+\contentsline {paragraph}{Summary of bundled readouts.}{117}{section*.140}%
+\contentsline {section}{\numberline {B}Annex: preliminary cosmology, cosmological-constant dressing, and vacuum-stability readouts}{118}{appendix.B}%
+\contentsline {paragraph}{Inflation-adjacent readouts (supporting, not principal).}{118}{section*.141}%
+\contentsline {paragraph}{Cosmological-constant-problem-adjacent readout (supporting, not principal).}{118}{section*.142}%
+\contentsline {paragraph}{Vacuum stability and reheating.}{119}{section*.143}%
+\contentsline {paragraph}{Persistent-triangle winding-class fraction $f_{\mathrm {neg}}\!=\!2/(2N_{\mathrm {gen}}+1)$ on the $\Xi _{ij}$-subgraph.}{119}{section*.144}%
+\contentsline {section}{\numberline {C}Action-based Bianchi methodological note}{119}{appendix.C}%
+\contentsline {paragraph}{Field content of the residual IR action.}{119}{section*.145}%
+\contentsline {paragraph}{Backreaction action with explicit $K,Q,\omega $ couplings.}{120}{section*.146}%
+\contentsline {paragraph}{Field-by-field variations.}{120}{section*.147}%
+\contentsline {paragraph}{Discrete Noether identity and Bianchi.}{121}{section*.148}%
+\contentsline {paragraph}{What this note does and does not establish.}{121}{section*.149}%
+\contentsline {section}{\numberline {D}Reproducibility package}{121}{appendix.D}%
+\contentsline {paragraph}{Research-audit reproducers (Section\nobreakspace {}\ref {sec:xi-graph-topology}).}{122}{section*.150}%
+\contentsline {section}{\numberline {E}Falsification}{122}{appendix.E}%
+\contentsline {paragraph}{(F1) Metric axiom violation.}{122}{section*.151}%
+\contentsline {paragraph}{(F2) Fast-slow-flow thresholds fail.}{122}{section*.152}%
+\contentsline {paragraph}{(F3) CLP score below threshold.}{122}{section*.153}%
+\contentsline {paragraph}{(F4) Einstein-gap two-point Richardson out of band.}{122}{section*.154}%
+\contentsline {paragraph}{(F5) PPN outside experimental band.}{122}{section*.155}%
+\contentsline {paragraph}{(F6) Newton constant outside the $1\%$ band.}{122}{section*.156}%
+\contentsline {paragraph}{(F7) Schwarzschild ground-truth residual non-converging.}{123}{section*.157}%
+\contentsline {paragraph}{(F8) Frame dependence of the per-node Frobenius residual.}{123}{section*.158}%
+\contentsline {paragraph}{(F9) Discrete Bianchi conservation.}{123}{section*.159}%
+\contentsline {section}{\numberline {F}Limitations}{123}{appendix.F}%
+\contentsline {paragraph}{Working hypothesis: matter-nucleation interpretation of the heavy tail.}{125}{section*.160}%
+\contentsline {paragraph}{Per-node lead-lag test (direct, snapshot-resolved): five independent lines of evidence, all pointing toward $\Xi $-first condensation but not yet at statistical significance.}{125}{section*.161}%
+\contentsline {paragraph}{$\mathcal {P}_{5}N_{512}$ twelve-seed thirteen-snapshot verdict: matter--$\Xi $ co-localisation confirmed at machine precision; lead-lag asymmetry is null.}{127}{section*.162}%
+\contentsline {paragraph}{$\Xi $-EOM bounce/flip diagnostic at the chirality flip ($N_{\rm flip}\!\approx \!173$): null on $\Xi $ itself, transition in chirality-mixing observables only.}{127}{section*.163}%
+\contentsline {paragraph}{Sixteen-seed expansion (B2): Granger-directional significance is established; best-lag magnitude remains marginal.}{127}{section*.164}%
+\contentsline {paragraph}{Outlook: candidate higher-order terms for the matter-localised mean residual.}{128}{section*.165}%
+\contentsline {paragraph}{Persistent-triangle winding-class fraction $f_{\mathrm {neg}}=2/(2 N_{\mathrm {gen}}+1)$.}{131}{section*.166}%
+\contentsline {section}{\numberline {G}Summary of falsifiable predictions and connection to existing emergent-gravity literature}{131}{appendix.G}%
+\contentsline {paragraph}{(1) Dark-energy equation of state.}{132}{section*.167}%
+\contentsline {paragraph}{(2) Lattice-cosmological-epoch identification.}{132}{section*.168}%
+\contentsline {paragraph}{(3) Source-side anisotropy and physical admissibility.}{132}{section*.169}%
+\contentsline {paragraph}{Connection to existing emergent-gravity literature.}{132}{section*.170}%
+\contentsline {paragraph}{Branch restriction.}{134}{section*.173}%
+\contentsline {paragraph}{Structural-rational identification of the prefactors.}{134}{section*.174}%
+\contentsline {section}{\numberline {A}Connection to existing emergent-gravity programs}{135}{appendix.A}%
+\contentsline {paragraph}{Jacobson 1995 (entropic/thermodynamic).}{135}{section*.177}%
+\contentsline {paragraph}{Verlinde 2010 (entropic gravity).}{135}{section*.178}%
+\contentsline {paragraph}{Padmanabhan (gravity as thermodynamics).}{135}{section*.179}%
+\contentsline {paragraph}{Causal Set Theory (Bombelli, Sorkin).}{135}{section*.180}%
+\contentsline {paragraph}{Loop Quantum Gravity / spin foams.}{135}{section*.181}%
+\contentsline {paragraph}{Relation to lattice gauge theory.}{135}{section*.182}%
+\contentsline {paragraph}{Position of this paper.}{136}{section*.183}%

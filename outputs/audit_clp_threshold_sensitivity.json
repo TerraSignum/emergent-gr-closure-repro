@@ -1,0 +1,91 @@
+{
+  "method": "clp_threshold_sensitivity_scan",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "per_family": [
+    {
+      "family": "CLP-A",
+      "value": 0.8132,
+      "threshold": 0.7,
+      "margin": 0.11320000000000008,
+      "max_threshold_pass": 0.8132,
+      "status": "CLOSED"
+    },
+    {
+      "family": "CLP-B",
+      "value": 0.5975,
+      "threshold": 0.5,
+      "margin": 0.09750000000000003,
+      "max_threshold_pass": 0.5975,
+      "status": "above_threshold"
+    },
+    {
+      "family": "CLP-C",
+      "value": 0.8491,
+      "threshold": 0.7,
+      "margin": 0.1491,
+      "max_threshold_pass": 0.8491,
+      "status": "GAMMA_CONVERGED"
+    },
+    {
+      "family": "CLP-D",
+      "value": 0.7377,
+      "threshold": 0.7,
+      "margin": 0.03770000000000007,
+      "max_threshold_pass": 0.7377,
+      "status": "CLP_PROVEN"
+    }
+  ],
+  "clp_b_sub_components": [
+    {
+      "name": "absorption",
+      "asymptote": 0.5144,
+      "ci95": [
+        0.488,
+        0.5398
+      ],
+      "margin_vs_0p50": 0.014399999999999968,
+      "ci95_low_margin_vs_0p50": -0.01200000000000001,
+      "ci95_low_above_0p50": false
+    },
+    {
+      "name": "locality",
+      "asymptote": 0.5417,
+      "ci95": [
+        0.5139,
+        0.5682
+      ],
+      "margin_vs_0p50": 0.04169999999999996,
+      "ci95_low_margin_vs_0p50": 0.013900000000000023,
+      "ci95_low_above_0p50": true
+    },
+    {
+      "name": "density",
+      "asymptote": 0.6518,
+      "ci95": [
+        0.6296,
+        0.6719
+      ],
+      "margin_vs_0p50": 0.15180000000000005,
+      "ci95_low_margin_vs_0p50": 0.12960000000000005,
+      "ci95_low_above_0p50": true
+    },
+    {
+      "name": "spectral",
+      "asymptote": 0.6822,
+      "ci95": [
+        0.6673,
+        0.6959
+      ],
+      "margin_vs_0p50": 0.18220000000000003,
+      "ci95_low_margin_vs_0p50": 0.1673,
+      "ci95_low_above_0p50": true
+    }
+  ],
+  "all_families_above_threshold": true,
+  "lowest_family": "CLP-D",
+  "lowest_family_margin": 0.03770000000000007
+}

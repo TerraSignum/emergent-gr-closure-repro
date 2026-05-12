@@ -1,0 +1,329 @@
+{
+  "method": "tail_residual_eigendirection_alignment",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "regimes_used": [
+      "P5",
+      "P6",
+      "P5N64",
+      "P7",
+      "P8",
+      "P5N100"
+    ],
+    "branch_rationale": "Statistical / spectral / topology diagnostic on lattice state; no branch projection in formulas",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "lambda_t": 0.81,
+  "lambda_s": -0.005,
+  "tail_fraction": 0.1,
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "tail": {
+        "n": 20,
+        "argmax_direction_counts": {
+          "i=0_smallest_eigval": 1,
+          "i=1_middle_eigval": 0,
+          "i=2_largest_eigval": 19,
+          "fraction_largest": 0.95
+        },
+        "time_to_spatial_ratio": {
+          "median": 0.23353222480457467,
+          "mean": 0.23482853908484508
+        },
+        "off_to_spatial_ratio": {
+          "median": 0.008643135201403165,
+          "mean": 0.01110880130392312
+        },
+        "sign_R_along_largest_T_eigval_pos_frac": 0.0,
+        "mean_signed_projection_per_direction": [
+          0.5686597736889896,
+          0.5728687480707922,
+          -0.5901632780712551
+        ]
+      },
+      "bulk": {
+        "n": 180,
+        "argmax_direction_counts": {
+          "i=0_smallest_eigval": 14,
+          "i=1_middle_eigval": 11,
+          "i=2_largest_eigval": 155,
+          "fraction_largest": 0.8611111111111112
+        },
+        "time_to_spatial_ratio": {
+          "median": 0.39001596071877564,
+          "mean": 0.5890112898108961
+        },
+        "off_to_spatial_ratio": {
+          "median": 0.23520024773553255,
+          "mean": 0.29251289778130724
+        },
+        "sign_R_along_largest_T_eigval_pos_frac": 0.005555555555555556,
+        "mean_signed_projection_per_direction": [
+          0.06288897618105778,
+          0.0976314451574145,
+          -0.7419955415861756
+        ]
+      }
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "tail": {
+        "n": 24,
+        "argmax_direction_counts": {
+          "i=0_smallest_eigval": 0,
+          "i=1_middle_eigval": 0,
+          "i=2_largest_eigval": 24,
+          "fraction_largest": 1.0
+        },
+        "time_to_spatial_ratio": {
+          "median": 0.23175935613722914,
+          "mean": 0.23988879437308605
+        },
+        "off_to_spatial_ratio": {
+          "median": 0.02065903391218903,
+          "mean": 0.029155677203119332
+        },
+        "sign_R_along_largest_T_eigval_pos_frac": 0.0,
+        "mean_signed_projection_per_direction": [
+          0.5561880432333374,
+          0.5589392639500871,
+          -0.6141183528710557
+        ]
+      },
+      "bulk": {
+        "n": 216,
+        "argmax_direction_counts": {
+          "i=0_smallest_eigval": 53,
+          "i=1_middle_eigval": 37,
+          "i=2_largest_eigval": 126,
+          "fraction_largest": 0.5833333333333334
+        },
+        "time_to_spatial_ratio": {
+          "median": 0.8888087749887441,
+          "mean": 1.1511890201631265
+        },
+        "off_to_spatial_ratio": {
+          "median": 0.359344400596631,
+          "mean": 0.38235190285331355
+        },
+        "sign_R_along_largest_T_eigval_pos_frac": 0.027777777777777776,
+        "mean_signed_projection_per_direction": [
+          -0.3028126789457146,
+          -0.23304144603076207,
+          -0.6652336931310755
+        ]
+      }
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "tail": {
+        "n": 25,
+        "argmax_direction_counts": {
+          "i=0_smallest_eigval": 0,
+          "i=1_middle_eigval": 0,
+          "i=2_largest_eigval": 25,
+          "fraction_largest": 1.0
+        },
+        "time_to_spatial_ratio": {
+          "median": 0.23417100006997832,
+          "mean": 0.23420591436343494
+        },
+        "off_to_spatial_ratio": {
+          "median": 0.005619957585224824,
+          "mean": 0.009829165293471099
+        },
+        "sign_R_along_largest_T_eigval_pos_frac": 0.0,
+        "mean_signed_projection_per_direction": [
+          0.5668583596887449,
+          0.5729453336196767,
+          -0.5917744191627285
+        ]
+      },
+      "bulk": {
+        "n": 231,
+        "argmax_direction_counts": {
+          "i=0_smallest_eigval": 31,
+          "i=1_middle_eigval": 26,
+          "i=2_largest_eigval": 174,
+          "fraction_largest": 0.7532467532467533
+        },
+        "time_to_spatial_ratio": {
+          "median": 0.6279534115689545,
+          "mean": 0.8874586461582213
+        },
+        "off_to_spatial_ratio": {
+          "median": 0.28223095823446315,
+          "mean": 0.3266756375123587
+        },
+        "sign_R_along_largest_T_eigval_pos_frac": 0.021645021645021644,
+        "mean_signed_projection_per_direction": [
+          -0.1754002652682839,
+          -0.11247277255201625,
+          -0.7030145126457106
+        ]
+      }
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "tail": {
+        "n": 28,
+        "argmax_direction_counts": {
+          "i=0_smallest_eigval": 1,
+          "i=1_middle_eigval": 0,
+          "i=2_largest_eigval": 27,
+          "fraction_largest": 0.9642857142857143
+        },
+        "time_to_spatial_ratio": {
+          "median": 0.25915379455039267,
+          "mean": 0.27954360579108617
+        },
+        "off_to_spatial_ratio": {
+          "median": 0.01388699555219276,
+          "mean": 0.019613421012660087
+        },
+        "sign_R_along_largest_T_eigval_pos_frac": 0.0,
+        "mean_signed_projection_per_direction": [
+          0.5695241190648515,
+          0.5583457804686389,
+          -0.594448326976055
+        ]
+      },
+      "bulk": {
+        "n": 260,
+        "argmax_direction_counts": {
+          "i=0_smallest_eigval": 54,
+          "i=1_middle_eigval": 36,
+          "i=2_largest_eigval": 170,
+          "fraction_largest": 0.6538461538461539
+        },
+        "time_to_spatial_ratio": {
+          "median": 0.7336039617903897,
+          "mean": 0.9863956316479027
+        },
+        "off_to_spatial_ratio": {
+          "median": 0.25982088286443505,
+          "mean": 0.29493093985311525
+        },
+        "sign_R_along_largest_T_eigval_pos_frac": 0.026923076923076925,
+        "mean_signed_projection_per_direction": [
+          -0.23004305391366286,
+          -0.16837752400107026,
+          -0.6696792469345253
+        ]
+      }
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "tail": {
+        "n": 33,
+        "argmax_direction_counts": {
+          "i=0_smallest_eigval": 5,
+          "i=1_middle_eigval": 3,
+          "i=2_largest_eigval": 25,
+          "fraction_largest": 0.7575757575757576
+        },
+        "time_to_spatial_ratio": {
+          "median": 0.2822391280544831,
+          "mean": 1.9987186609274727
+        },
+        "off_to_spatial_ratio": {
+          "median": 0.02484923427758552,
+          "mean": 0.12072456308087391
+        },
+        "sign_R_along_largest_T_eigval_pos_frac": 0.030303030303030304,
+        "mean_signed_projection_per_direction": [
+          0.203253181395757,
+          0.21370936827792802,
+          -0.5746696186371564
+        ]
+      },
+      "bulk": {
+        "n": 303,
+        "argmax_direction_counts": {
+          "i=0_smallest_eigval": 73,
+          "i=1_middle_eigval": 44,
+          "i=2_largest_eigval": 186,
+          "fraction_largest": 0.6138613861386139
+        },
+        "time_to_spatial_ratio": {
+          "median": 1.021495398877239,
+          "mean": 1.3685551584981712
+        },
+        "off_to_spatial_ratio": {
+          "median": 0.2713077725283112,
+          "mean": 0.29569978446386236
+        },
+        "sign_R_along_largest_T_eigval_pos_frac": 0.009900990099009901,
+        "mean_signed_projection_per_direction": [
+          -0.34026263946586877,
+          -0.2642668569409356,
+          -0.6875611169161251
+        ]
+      }
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "tail": {
+        "n": 40,
+        "argmax_direction_counts": {
+          "i=0_smallest_eigval": 0,
+          "i=1_middle_eigval": 0,
+          "i=2_largest_eigval": 40,
+          "fraction_largest": 1.0
+        },
+        "time_to_spatial_ratio": {
+          "median": 0.2578725589798784,
+          "mean": 0.29566680189861494
+        },
+        "off_to_spatial_ratio": {
+          "median": 0.013627276245515862,
+          "mean": 0.016706992160961127
+        },
+        "sign_R_along_largest_T_eigval_pos_frac": 0.0,
+        "mean_signed_projection_per_direction": [
+          0.5510123106782955,
+          0.5630252636356519,
+          -0.614954869522542
+        ]
+      },
+      "bulk": {
+        "n": 360,
+        "argmax_direction_counts": {
+          "i=0_smallest_eigval": 73,
+          "i=1_middle_eigval": 51,
+          "i=2_largest_eigval": 236,
+          "fraction_largest": 0.6555555555555556
+        },
+        "time_to_spatial_ratio": {
+          "median": 1.5215582012519726,
+          "mean": 1.735238861894994
+        },
+        "off_to_spatial_ratio": {
+          "median": 0.23741677212887605,
+          "mean": 0.25923156313243373
+        },
+        "sign_R_along_largest_T_eigval_pos_frac": 0.011111111111111112,
+        "mean_signed_projection_per_direction": [
+          -0.31902468553020963,
+          -0.25910284761742014,
+          -0.6924416250883165
+        ]
+      }
+    }
+  ],
+  "aggregate": {
+    "tail_argmax_largest_eigval_fraction": 0.9453102453102454,
+    "tail_sign_positive_fraction": 0.005050505050505051,
+    "tail_mean_signed_projection_largest": -0.5966881442067987
+  },
+  "verdict": "TAIL_ANISOTROPIC_ALIGNED_LARGEST_T_EIGVAL",
+  "rationale": "Tail residual preferentially aligned with the largest T-eigval direction. A tensorial correction of the form Lambda_munu - alpha * T_T_largest_eigval projector might close."
+}

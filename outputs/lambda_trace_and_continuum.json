@@ -1,0 +1,126 @@
+{
+  "method": "trace_anomaly_and_continuum_extrapolation_alpha_2_3",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "signature_convention": "(-, +, +, +); T^mu_mu = -rho + 3 p",
+  "K_rec_convention": "row-mean Definition 12.20",
+  "per_regime": [
+    {
+      "label": "P0",
+      "N": 18,
+      "rho": 1.4624,
+      "p": -0.4905,
+      "trace_anomaly": -2.9339,
+      "trace_over_rho": -2.006222647702407,
+      "w_eff": -0.3354075492341357
+    },
+    {
+      "label": "P1",
+      "N": 28,
+      "rho": 1.4046,
+      "p": -0.448,
+      "trace_anomaly": -2.7486,
+      "trace_over_rho": -1.9568560444254592,
+      "w_eff": -0.3189520148084864
+    },
+    {
+      "label": "P2prime",
+      "N": 30,
+      "rho": 1.4095,
+      "p": -0.4536,
+      "trace_anomaly": -2.7702999999999998,
+      "trace_over_rho": -1.965448740688187,
+      "w_eff": -0.3218162468960624
+    },
+    {
+      "label": "P3",
+      "N": 36,
+      "rho": 1.3758,
+      "p": -0.4291,
+      "trace_anomaly": -2.6631,
+      "trace_over_rho": -1.9356737897950285,
+      "w_eff": -0.31189126326500943
+    },
+    {
+      "label": "P4",
+      "N": 42,
+      "rho": 1.3985,
+      "p": -0.449,
+      "trace_anomaly": -2.7455,
+      "trace_over_rho": -1.9631748301751875,
+      "w_eff": -0.32105827672506254
+    },
+    {
+      "label": "P5",
+      "N": 50,
+      "rho": 1.379,
+      "p": -0.4299,
+      "trace_anomaly": -2.6687000000000003,
+      "trace_over_rho": -1.9352429296591735,
+      "w_eff": -0.3117476432197244
+    },
+    {
+      "label": "P6",
+      "N": 60,
+      "rho": 1.3547,
+      "p": -0.412,
+      "trace_anomaly": -2.5907,
+      "trace_over_rho": -1.9123791245294162,
+      "w_eff": -0.3041263748431387
+    },
+    {
+      "label": "P7",
+      "N": 72,
+      "rho": 1.3186,
+      "p": -0.3806,
+      "trace_anomaly": -2.4604,
+      "trace_over_rho": -1.8659183983012286,
+      "w_eff": -0.2886394661004095
+    },
+    {
+      "label": "P8",
+      "N": 84,
+      "rho": 1.3496,
+      "p": -0.4069,
+      "trace_anomaly": -2.5702999999999996,
+      "trace_over_rho": -1.9044902193242441,
+      "w_eff": -0.30149673977474806
+    }
+  ],
+  "asymptotic_window_N_geq_42": {
+    "rho_mean": 1.36008,
+    "p_mean": -0.41567999999999994,
+    "trace_mean": -2.6071199999999997,
+    "trace_over_rho": -1.9168872419269454,
+    "w_eff_mean": -0.30541370013261665
+  },
+  "alpha_2_3_continuum_extrapolation": {
+    "rho_inf": 1.2687568767379223,
+    "rho_r2": 0.8772495315159334,
+    "p_inf": -0.34704188525271484,
+    "p_r2": 0.8445986844476671,
+    "trace_inf": -2.309882532496067,
+    "trace_r2": 0.8553980043397518,
+    "trace_inf_over_rho_inf": -1.8205872022029657,
+    "w_eff_inf": -0.2768518415148581,
+    "w_eff_r2": 0.7992508498168804,
+    "SEC_margin_inf": 0.22763122097977773,
+    "SEC_margin_inf_over_rho_inf": 0.1794127977970344
+  },
+  "comparative_reference": {
+    "radiation_w_plus_1_3": "T^mu_mu = 0 (conformal)",
+    "pure_cosmological_constant_w_neg_1": "T^mu_mu = -4 rho",
+    "SEC_saturation_w_neg_1_3": "T^mu_mu = -2 rho exactly",
+    "lattice_continuum": "T^mu_mu / rho = -1.917 (asymp window); w_eff_inf = -0.277 (alpha=2/3 fit)"
+  },
+  "headline": "The emergent lattice source is non-conformal (T^mu_mu / rho = -1.917, neither 0 nor -4) and approaches the SEC-saturation line w = -1/3 from the SEC-positive side in the N -> infty limit (w_eff_inf = -0.277, +5.6% above saturation). All four classical energy conditions remain admissible in the strict continuum limit.",
+  "reviewer_hedging": {
+    "diagonal_block_only": "T_ij off-diagonal Frobenius residual still open; trace and w_eff use the spatial-isotropy-averaged T_ii.",
+    "alpha_fixed_not_fit": "alpha = 2/3 is the analytically-fixed Einstein-gap exponent of Theorem 15.18 P2; r^2 is consistency, not exponent identification.",
+    "K_rec_convention": "Row-mean Def 12.20 throughout; switching to proxy shifts T_00 down by ~0.57 (not T_ii or w_eff if T_00 is recomputed self-consistently).",
+    "small_r2_w_eff": "r^2 of the w_eff(N) extrapolation is moderate (0.80) -- the per-regime spread of w_eff is comparable to the alpha=2/3 trend; the continuum limit is reported with that uncertainty band."
+  }
+}

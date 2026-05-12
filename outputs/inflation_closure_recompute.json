@@ -1,0 +1,10 @@
+{
+  "criterion": "Inflation closure recompute",
+  "primary_n_s_EXACT_via_loop_class": true,
+  "cascade_range_contains_Planck": true,
+  "tensor_scalar_r_below_BICEP_bound": true,
+  "N_efolds_above_horizon_flatness_typical": true,
+  "extended_regime_explicitly_rejected": true,
+  "fitted_parameters": 0,
+  "verdict": "PASS"
+}

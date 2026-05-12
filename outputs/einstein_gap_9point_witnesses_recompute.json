@@ -1,0 +1,41 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "criterion": "Nine-point curvature-side and topological-witness ladders for Theorem 15.18 P2",
+  "primary_R_bar": {
+    "label": "R_bar (load-bearing curvature-side)",
+    "Delta_infty_full": -0.00415452248202534,
+    "C_full": 1.3757498477311003,
+    "r2_full": 0.8281404504973701,
+    "Delta_infty_skip_N18": -0.04616973631731311,
+    "r2_skip_N18": 0.9225317919160072,
+    "loo_Delta_infty_min": -0.04616973631731311,
+    "loo_Delta_infty_max": 0.009985792171632576,
+    "DoD_threshold": 0.05,
+    "pass_full": true,
+    "pass_skip_N18": true
+  },
+  "secondary_chirality_balance": {
+    "label": "1 - <chirality_balance>_N (topological index witness)",
+    "Delta_infty_full": 0.022088108561139755,
+    "C_full": 0.39209597056312157,
+    "r2_full": 0.5544801657633643,
+    "Delta_infty_skip_N18": 0.00573842756049342,
+    "r2_skip_N18": 0.6598165213082237,
+    "loo_Delta_infty_min": 0.00573842756049342,
+    "loo_Delta_infty_max": 0.031198643980087794,
+    "DoD_threshold": 0.05,
+    "pass_full": true,
+    "pass_skip_N18": true
+  },
+  "reviewer_hedging": {
+    "interpretation": "Both ladders are indirect witnesses tied to Delta_E by the curvature/chirality bridge; they are not pointwise tensor-residual identifications.",
+    "free_fit_caveat": "Power-law fits without a fixed alpha do not uniquely select alpha=2/3; the value alpha=2/3 is fixed analytically by Theorem 15.18 P2.",
+    "skip_N18_caveat": "N=18 is a finite-size boundary regime; skip-N18 variants improve R^2 but introduce a finite-size selection.",
+    "chirality_bridge_status": "Empirically established: Pearson r(chirality_dev, R_bar) = 0.89, r^2 = 0.80 across all 9 regimes; robust to skip-N=18 (r=0.89, r^2=0.79). Linear regression: chirality_dev = 0.31 * R_bar + 0.02. The Atiyah-Singer-type formal index theorem on emergent geometry that would turn this empirical correlation into an analytic identity is future work."
+  },
+  "consistent_with_bundled": true
+}

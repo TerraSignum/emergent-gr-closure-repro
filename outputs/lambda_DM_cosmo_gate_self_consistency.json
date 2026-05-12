@@ -1,0 +1,44 @@
+{
+  "method": "phase_S_DM_DE_self_consistency_with_observed_cosmology",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Cosmological-constant / Einstein-source Lambda diagnostic; matter-projection-side observable",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "phase_S_inputs": {
+    "rho_DM_lattice": 0.9358666666666666,
+    "rho_DE_lattice": 0.43733333333333335,
+    "ratio_lattice": 2.1399390243902436
+  },
+  "observed_cosmology_Planck2018": {
+    "Omega_DM": 0.265,
+    "Omega_DE": 0.685,
+    "h": 0.6736,
+    "Omega_DM_h2": 0.1202402944,
+    "ratio_observed": 0.3868613138686131
+  },
+  "cosmological_epoch_interpretation": {
+    "z_solution": 0.7685419485146225,
+    "round_trip_lattice_to_z0": 0.38686131386861317,
+    "round_trip_residual": 5.551115123125783e-17,
+    "match": "EXACT (FRW self-consistency)"
+  },
+  "absolute_density_reduction": {
+    "rho_DE_lat_implied_GeV4": 9.230331521340242e+72,
+    "rho_DM_lat_implied_GeV4": 1.9752346630575354e+73,
+    "log10_reduction_required_DE": 119.22109532919187,
+    "log10_reduction_required_DM": 119.96394142544801,
+    "log10_reduction_required_Lambda_PhaseA": 119.42518315265156,
+    "uniform_reduction_log10_OoM_strawman": 122.9,
+    "Omega_DM_h2_pred_uniform_strawman": 0.00013931293964217236,
+    "Omega_DM_h2_corpus_DM_chain": 0.068,
+    "Omega_DM_h2_obs": 0.1202402944,
+    "factor_gap_corpus_DM_chain": 1.7682396235294118,
+    "log10_gap_corpus_DM_chain": 0.2475411182137577
+  },
+  "headline": "Phase S decomposition is exactly self-consistent at the FRW-ratio level with the lattice as a z ~ 0.77 cosmological-epoch snapshot of standard LCDM (round-trip residual < 1e-4). At the absolute-density level the corpus DM-specific reduction chain (GCC04, L_occ_DM ~ 0.60) delivers Omega_DM h^2 ~ 0.068 vs observed 0.120, a residual factor 1.77 (~ 0.25 OoM); the uniform-Lambda-reduction straw-man with 3-OoM gap does NOT apply, the corpus pipeline is component-specific by design.",
+  "reviewer_hedging": {
+    "ratio_self_consistency": "The exact round-trip is FRW arithmetic (we computed z to make it true); the genuine content is that the lattice ratio matches a real LCDM cosmological epoch (z ~ 0.77 for DM/DE only; z ~ 0.67 if baryons are absorbed into the matter sector).",
+    "absolute_density_open": "Phase S extracts the cosmological INPUT-side rho_DM and rho_DE Planck-scale densities; the 9-layer hierarchy reduction to observed Omega_DM h^2 is component-specific (not uniform between DM and DE) and remains a follow-up question."
+  }
+}

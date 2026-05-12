@@ -1,0 +1,87 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "audit": "median-floor-truncation-artefact",
+  "stand": "2026-05-04",
+  "ladder": [
+    50,
+    60,
+    64,
+    72,
+    72,
+    84,
+    84,
+    100,
+    200,
+    300
+  ],
+  "median_values": [
+    0.0318411337914067,
+    0.028491032810895323,
+    0.02963885103699213,
+    0.02838604588884681,
+    0.029074484458974852,
+    0.02705026318697112,
+    0.02743324809002802,
+    0.026042028717455982,
+    0.02192342524494404,
+    0.02132852748931138
+  ],
+  "fits": {
+    "symanzik2": {
+      "a_inf": 0.018218000172869488,
+      "b": 0.8910340958361391,
+      "c": -11.501495800751387,
+      "rmse": 0.0005500049454146982,
+      "aic": -144.1116657623019
+    },
+    "powerlaw": {
+      "c": 0.0739858032245385,
+      "alpha": 0.22366311152668303,
+      "rmse": 0.0006417830963935569,
+      "aic": -143.0252033489068
+    },
+    "federer_one_third": {
+      "c": 0.11965421845117118,
+      "alpha": 0.3333333333333333,
+      "rmse": 0.0013873766528987998,
+      "aic": -129.60681230214186
+    }
+  },
+  "bundle_bootstrap": {
+    "powerlaw_alpha_central": 0.33533164971255836,
+    "powerlaw_alpha_95CI": [
+      0.28501778616832507,
+      0.49043362533595214
+    ],
+    "one_third_in_CI": true,
+    "symanzik2_y_inf_central": 0.01880500714872455,
+    "symanzik2_y_inf_95CI": [
+      0.01717542555328587,
+      0.022789441414825244
+    ]
+  },
+  "forward_test": {
+    "synthetic_form": "y_synth(N) = c_true * N^(-1/3), true asymptote = 0",
+    "n_seeds": 2000,
+    "c_true": 0.11965421845117118,
+    "symanzik2_apparent_y_inf_mean": 0.013561508244909957,
+    "symanzik2_apparent_y_inf_median": 0.013532192125572134,
+    "symanzik2_apparent_y_inf_95CI": [
+      0.009687309766606256,
+      0.017693868036822793
+    ],
+    "z_score_obs_vs_synthetic": 2.589500938757499
+  },
+  "analytical_basis_projection": {
+    "target": "N^(-1/3) on actual N-grid",
+    "symanzik2_basis": "{1, 1/N, 1/N^2}",
+    "projected_a_coefficient": 0.11270451684206222,
+    "projected_b_coefficient": 12.36889397352873,
+    "projected_c_coefficient": -224.95252905690265,
+    "interpretation": "Even with true asymptote zero, projection onto {1,1/N,1/N^2} absorbs N^(-1/3) into a non-zero a-coefficient. This is the Symanzik-2 truncation artefact."
+  }
+}

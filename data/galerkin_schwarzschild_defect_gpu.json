@@ -1,0 +1,56 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "title": "Schwarzschild-defect ground-truth test for per-node Galerkin",
+  "backend": "cupy",
+  "m_core": 2.96,
+  "ell_0": 1.0,
+  "lambda_t": 0.0,
+  "lambda_s": 0.0,
+  "comparison_bundled_scd02": {
+    "g_00_test_p1": 2.83273036,
+    "g_00_exact_p1": 2.83192948,
+    "g_00_relative_error": 0.000283
+  },
+  "trend": [
+    {
+      "N": 30,
+      "mean_frob": 0.04051955265125601,
+      "median_frob": 0.006148269624121272,
+      "mean_r_bar": -0.042709901370311235,
+      "mean_g_einstein_00": -0.021354950685155617
+    },
+    {
+      "N": 50,
+      "mean_frob": 0.48184963157524724,
+      "median_frob": 0.008468164785752713,
+      "mean_r_bar": -0.48061085903933465,
+      "mean_g_einstein_00": -0.24030542951966732
+    },
+    {
+      "N": 80,
+      "mean_frob": 0.023443258162172992,
+      "median_frob": 0.002592521774262781,
+      "mean_r_bar": -0.023734371234458467,
+      "mean_g_einstein_00": -0.011867185617229234
+    },
+    {
+      "N": 120,
+      "mean_frob": 0.04395762205810578,
+      "median_frob": 0.002300750270793042,
+      "mean_r_bar": -0.04759178866319184,
+      "mean_g_einstein_00": -0.02379589433159592
+    },
+    {
+      "N": 150,
+      "mean_frob": 0.22090853976439245,
+      "median_frob": 0.011546462565864286,
+      "mean_r_bar": -0.2317481835223316,
+      "mean_g_einstein_00": -0.1158740917611658
+    }
+  ]
+}

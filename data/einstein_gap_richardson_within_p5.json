@@ -1,0 +1,106 @@
+{
+  "title": "Extended multi-point Richardson and Symanzik-2 fit on the within-P5 lattice ladder for the Einstein-gap axis Lambda_t = T_00^rec/T_00.",
+  "ladder": {
+    "N": [
+      50,
+      64,
+      72,
+      84,
+      100,
+      200,
+      256,
+      300,
+      512
+    ],
+    "Lambda_t_mean": [
+      0.8712252283544256,
+      0.8548431132828659,
+      0.8401786981440195,
+      0.8383391914133815,
+      0.8317892689872274,
+      0.8187615599410338,
+      0.8086673305117603,
+      0.8149589944469212,
+      0.8031087962131372
+    ]
+  },
+  "alpha_xi_constants": {
+    "algebraic": {
+      "alpha_xi": 0.9,
+      "alpha_xi_squared": 0.81
+    },
+    "measured": {
+      "alpha_xi": 0.900819,
+      "alpha_xi_squared": 0.8114748707610001
+    }
+  },
+  "target_alpha_xi_squared_measured": 0.8114748707610001,
+  "all_pairs_richardson": {
+    "2/3": {
+      "n_pairs": 36,
+      "median": 0.7855047263452405,
+      "CI95": [
+        0.7190226918264337,
+        0.8275969705114992
+      ],
+      "alpha_xi_sq_in_CI": true
+    },
+    "1": {
+      "n_pairs": 36,
+      "median": 0.7963361774035889,
+      "CI95": [
+        0.7637740240640245,
+        0.8303350120459329
+      ],
+      "alpha_xi_sq_in_CI": true
+    },
+    "Symanzik2": {
+      "n_pairs": 36,
+      "median": 0.8129126321046829,
+      "CI95": [
+        0.7918700576948248,
+        0.8319925257592247
+      ],
+      "alpha_xi_sq_in_CI": true
+    }
+  },
+  "free_alpha_pairs": {
+    "median": 1.560925748737354,
+    "CI95": [
+      -0.5226726898986664,
+      2.719895629173848
+    ],
+    "n_valid_pairs": 22
+  },
+  "symanzik2_multipoint_fit": {
+    "y_inf": 0.8108963641282843,
+    "c2": 162.09262705490323,
+    "rss": 0.00019773871210123224,
+    "r2": 0.950665745174306,
+    "model": "y(N) = y_inf + c2/N^2"
+  },
+  "comparison_to_two_point": {
+    "original_2pt_dense_cell": {
+      "N1": 1539,
+      "y1_Delta_E": 0.139633,
+      "N2": 2254,
+      "y2_Delta_E": 0.100766,
+      "candidate_alphas": [
+        "2/3",
+        "1",
+        "0.8477"
+      ],
+      "all_below_threshold_0.05": true
+    },
+    "extension_within_P5_lattice": {
+      "n_pairs": 108,
+      "alpha_set": [
+        "2/3",
+        "1",
+        "Symanzik2"
+      ],
+      "all_pairs_above_zero": true,
+      "scope": "within-regime canonical, n=7 sizes, extends the 2-pt construction to 21 pairs"
+    }
+  }
+}

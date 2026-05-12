@@ -1,0 +1,79 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "system_R_coefficients": {
+    "alpha_xi": "9/10",
+    "gamma": "1/10",
+    "beta_pi": "15/16",
+    "D_Omega": "67/80",
+    "eps_sync_sq": "1/20",
+    "d_spacetime": "4",
+    "N_gen": "3"
+  },
+  "C1_C2_C3_verification": {
+    "C1_lhs": "1",
+    "C1_target": "1",
+    "C1_exact": true,
+    "C2_lhs": "67/80",
+    "C2_target": "67/80",
+    "C2_exact": true,
+    "C3_lhs": "1/20",
+    "C3_target": "1/20",
+    "C3_exact": true
+  },
+  "all_consistency_exact": true,
+  "identifications": {
+    "proxy": {
+      "convention": "proxy K_rec = 0.5 + 0.5 |<exp i phi>|",
+      "formula": "alpha_xi/2 - 2*gamma",
+      "rational": "1/4",
+      "decimal": 0.25,
+      "structural_meaning": "Bekenstein-Hawking 1/d_spacetime area-entropy constant (Lemma 1 of Section 16d.7 of the parent corpus, spinor-trace 1/4 in d=4). Algebraically EXACT under System R. Identical to row L7 of Table 1 in causal-wave-landings-repro.",
+      "empirical": {
+        "value": 0.251,
+        "ci95": [
+          0.202,
+          0.297
+        ],
+        "n_seeds": 232
+      }
+    },
+    "row_mean": {
+      "convention": "row-mean Definition 12.20 K_rec = a_K * K + a_Q * (1-Q)",
+      "formula": "alpha_xi + eps_sync_sq - gamma  (= G_NET - beta_pi)",
+      "rational": "17/20",
+      "decimal": 0.85,
+      "G_NET_str": "143/80",
+      "G_NET_minus_beta_pi_str": "17/20",
+      "match_check": true,
+      "structural_meaning": "Non-scalar Clifford-channel reaction rate of the Section-16d transport equation. On modes with vanishing common-holonomy projection (Pi_common * C = 0), the local reaction operator reduces to -gamma + alpha_xi + eps_sync_sq. Since g_munu, G_munu, T_munu transform as rank-2 tensors in the non-scalar Clifford subgroup of the Lorentz group, the cosmological-constant combination Lambda = T_00 - G_00 (8 pi G = 1 lattice convention) is the natural constant in exactly that channel.",
+      "empirical": {
+        "value": 0.851,
+        "ci95": [
+          0.841,
+          0.862
+        ],
+        "n_seeds": 232
+      }
+    },
+    "section_14_1": {
+      "convention": "Section-14.1 Laplace-Beltrami discrete form",
+      "formula": "1 + eps_sync_sq * d_spacetime",
+      "rational": "6/5",
+      "decimal": 1.2,
+      "structural_meaning": "1.64% match at the look-elsewhere boundary; reported as numerical observation without structural identification. The Section-14.1 form requires a neighborhood-aware Laplace-Beltrami normalisation that does not appear in the parent corpus's Lemma library.",
+      "empirical": {
+        "value": 1.22,
+        "ci95": [
+          1.087,
+          1.356
+        ],
+        "n_seeds": 232
+      }
+    }
+  },
+  "summary": "Two structurally-motivated convention-dependent rational identifications for Lambda_lat^infty: 1/4 = Bekenstein-Hawking constant (proxy convention, identical to row L7 of the causal-wave-landings-repro table); 17/20 = non-scalar Clifford-channel reaction rate (row-mean Definition 12.20 convention). The third convention (Section 14.1 Laplace-Beltrami) sits at the look-elsewhere boundary and is reported without structural identification."
+}

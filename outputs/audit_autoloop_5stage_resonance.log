@@ -1,0 +1,97 @@
+================================================================================
+Autoloop 5-stage resonance audit
+================================================================================
+
+C:\Users\user\Desktop\Emergence\.venv\Lib\site-packages\numpy\_core\fromnumeric.py:3824: RuntimeWarning: Mean of empty slice
+  return _methods._mean(a, axis=axis, dtype=dtype,
+C:\Users\user\Desktop\Emergence\.venv\Lib\site-packages\numpy\_core\_methods.py:142: RuntimeWarning: invalid value encountered in scalar divide
+  ret = ret.dtype.type(ret / rcount)
+C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\src\audit_autoloop_5stage_resonance.py:474: RuntimeWarning: Mean of empty slice
+  "travel_lattice_units": np.nanmean([d["S5"]["travel_lattice_units"]
+C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\src\audit_autoloop_5stage_resonance.py:476: RuntimeWarning: Mean of empty slice
+  "spread_avg": np.nanmean([d["S5"]["spread_avg"] for d in per_seed]),
+--- P5N64 N=64 (n_seeds=24) ---
+  S1+S2 (top-K subgraph):
+    K=  64: type[3,2,1]=[    6,   57,   1]  lift=0.00  asym(res/all/non)=+nan/+0.0263/+0.0263
+    K= 128: type[3,2,1]=[   35,   93,   0]  lift=nan  asym(res/all/non)=+nan/+0.0352/+0.0352
+    K= 256: type[3,2,1]=[  182,   74,   0]  lift=nan  asym(res/all/non)=+nan/+0.0315/+0.0315
+    K= 512: type[3,2,1]=[  508,    4,   0]  lift=nan  asym(res/all/non)=+nan/+0.0163/+0.0163
+  S3 (em-time transitions/seed): 1->2=0.0, 2->3=0.0, 3->2=0.0, net_to_3=+0.0
+  S4 (formation events): n=0, phi_drift PPN=+0.0000, PNN=+0.0000
+  S5 (traveling type1): n_t1/snap=0.0, travel=nan, spread=nan
+--- P5N72 N=72 (n_seeds=24) ---
+  S1+S2 (top-K subgraph):
+    K=  72: type[3,2,1]=[    6,   65,   1]  lift=0.00  asym(res/all/non)=+nan/+0.1175/+0.1175
+    K= 144: type[3,2,1]=[   35,  109,   0]  lift=nan  asym(res/all/non)=+nan/+0.0790/+0.0790
+    K= 288: type[3,2,1]=[  195,   93,   0]  lift=nan  asym(res/all/non)=+nan/+0.0597/+0.0597
+    K= 576: type[3,2,1]=[  567,    9,   0]  lift=nan  asym(res/all/non)=+nan/+0.0096/+0.0096
+  S3 (em-time transitions/seed): 1->2=0.0, 2->3=0.0, 3->2=0.1, net_to_3=-0.1
+  S4 (formation events): n=0, phi_drift PPN=+0.0000, PNN=+0.0000
+  S5 (traveling type1): n_t1/snap=0.0, travel=nan, spread=nan
+--- P5N84 N=84 (n_seeds=24) ---
+  S1+S2 (top-K subgraph):
+    K=  84: type[3,2,1]=[    6,   76,   2]  lift=0.00  asym(res/all/non)=+nan/+0.1417/+0.1417
+    K= 168: type[3,2,1]=[   36,  132,   0]  lift=0.00  asym(res/all/non)=+nan/+0.0774/+0.0774
+    K= 336: type[3,2,1]=[  211,  125,   0]  lift=nan  asym(res/all/non)=+nan/+0.0213/+0.0213
+    K= 672: type[3,2,1]=[  659,   13,   0]  lift=nan  asym(res/all/non)=+nan/+0.0153/+0.0153
+  S3 (em-time transitions/seed): 1->2=0.0, 2->3=0.0, 3->2=0.2, net_to_3=-0.2
+  S4 (formation events): n=0, phi_drift PPN=-0.0000, PNN=-0.0000
+  S5 (traveling type1): n_t1/snap=0.0, travel=nan, spread=nan
+--- P5N100 N=100 (n_seeds=24) ---
+  S1+S2 (top-K subgraph):
+    K= 100: type[3,2,1]=[    6,   92,   2]  lift=0.00  asym(res/all/non)=+nan/+0.0407/+0.0407
+    K= 200: type[3,2,1]=[   36,  164,   0]  lift=nan  asym(res/all/non)=+nan/-0.0474/-0.0474
+    K= 400: type[3,2,1]=[  243,  157,   0]  lift=nan  asym(res/all/non)=+nan/+0.0295/+0.0295
+    K= 800: type[3,2,1]=[  776,   24,   0]  lift=nan  asym(res/all/non)=+nan/+0.0095/+0.0095
+  S3 (em-time transitions/seed): 1->2=0.0, 2->3=0.4, 3->2=0.4, net_to_3=+0.0
+  S4 (formation events): n=1, phi_drift PPN=+0.0000, PNN=-0.0000
+  S5 (traveling type1): n_t1/snap=0.0, travel=nan, spread=nan
+--- P5N128 N=128 (n_seeds=12) ---
+  S1+S2 (top-K subgraph):
+    K= 128: type[3,2,1]=[    5,  120,   2]  lift=0.00  asym(res/all/non)=+nan/-0.2727/-0.2727
+    K= 256: type[3,2,1]=[   42,  214,   0]  lift=nan  asym(res/all/non)=+nan/-0.0541/-0.0541
+    K= 512: type[3,2,1]=[  298,  214,   0]  lift=nan  asym(res/all/non)=+nan/-0.0087/-0.0087
+    K=1024: type[3,2,1]=[  988,   36,   0]  lift=nan  asym(res/all/non)=+nan/-0.0070/-0.0070
+  S3 (em-time transitions/seed): 1->2=0.0, 2->3=0.9, 3->2=0.7, net_to_3=+0.2
+  S4 (formation events): n=2, phi_drift PPN=-0.0000, PNN=-0.0000
+  S5 (traveling type1): n_t1/snap=0.0, travel=nan, spread=nan
+--- P5N200 N=200 (n_seeds=8) ---
+  S1+S2 (top-K subgraph):
+    K= 200: type[3,2,1]=[    6,  191,   3]  lift=0.00  asym(res/all/non)=+nan/-0.2333/-0.2333
+    K= 400: type[3,2,1]=[   40,  360,   0]  lift=nan  asym(res/all/non)=+nan/+0.0037/+0.0037
+    K= 800: type[3,2,1]=[  399,  401,   0]  lift=nan  asym(res/all/non)=+nan/+0.0073/+0.0073
+    K=1600: type[3,2,1]=[ 1512,   88,   0]  lift=nan  asym(res/all/non)=+nan/-0.0242/-0.0242
+  S3 (em-time transitions/seed): 1->2=0.0, 2->3=1.4, 3->2=1.4, net_to_3=+0.0
+  S4 (formation events): n=1, phi_drift PPN=+0.0000, PNN=+0.0000
+  S5 (traveling type1): n_t1/snap=0.0, travel=nan, spread=nan
+C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\src\audit_autoloop_5stage_resonance.py:468: RuntimeWarning: Mean of empty slice
+  "phi_drift_PNN": np.nanmean([d["S4"]["phi_drift_PNN"]
+--- P5N256 N=256 (n_seeds=2) ---
+  S1+S2 (top-K subgraph):
+    K= 256: type[3,2,1]=[    4,  246,   5]  lift=0.00  asym(res/all/non)=+nan/+0.0000/+0.0000
+    K= 512: type[3,2,1]=[   26,  486,   0]  lift=nan  asym(res/all/non)=+nan/-0.8333/-0.8333
+    K=1024: type[3,2,1]=[  454,  570,   0]  lift=nan  asym(res/all/non)=+nan/-0.0538/-0.0538
+    K=2048: type[3,2,1]=[ 1882,  166,   0]  lift=nan  asym(res/all/non)=+nan/+0.0127/+0.0127
+  S3 (em-time transitions/seed): 1->2=0.0, 2->3=1.0, 3->2=0.5, net_to_3=+0.5
+  S4 (formation events): n=2, phi_drift PPN=-0.0000, PNN=+nan
+  S5 (traveling type1): n_t1/snap=0.0, travel=nan, spread=nan
+C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\src\audit_autoloop_5stage_resonance.py:466: RuntimeWarning: Mean of empty slice
+  "phi_drift_PPN": np.nanmean([d["S4"]["phi_drift_PPN"]
+--- P5N300 N=300 (n_seeds=2) ---
+  S1+S2 (top-K subgraph):
+    K= 300: type[3,2,1]=[    0,  297,   3]  lift=nan  asym(res/all/non)=+nan/+nan/+nan
+    K= 600: type[3,2,1]=[   36,  564,   0]  lift=nan  asym(res/all/non)=+nan/-0.3667/-0.3667
+    K=1200: type[3,2,1]=[  546,  654,   0]  lift=nan  asym(res/all/non)=+nan/-0.0124/-0.0124
+    K=2400: type[3,2,1]=[ 2219,  181,   0]  lift=nan  asym(res/all/non)=+nan/+0.0186/+0.0186
+  S3 (em-time transitions/seed): 1->2=0.0, 2->3=1.0, 3->2=0.5, net_to_3=+0.5
+  S4 (formation events): n=1, phi_drift PPN=+nan, PNN=+0.0000
+  S5 (traveling type1): n_t1/snap=0.0, travel=nan, spread=nan
+
+================================================================================
+Cross-regime synthesis
+================================================================================
+  S2 lift_3body @ K=N (sparsest): 0.00 +/- 0.00
+  S3 net_to_3 cross-regime mean: +0.12 +/- 0.25
+  S4 phi-drift PPN-PNN diff: -0.00000
+
+Saved C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\audit_autoloop_5stage_resonance.json

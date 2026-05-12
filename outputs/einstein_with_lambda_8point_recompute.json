@@ -1,0 +1,24 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "criterion": "Eight-point source-side consistency check on T_00 of full Einstein equation with cosmological term",
+  "Lambda_eff_asymptotic_mean": 0.31416,
+  "Lambda_eff_asymptotic_std": 0.010238281105732555,
+  "Lambda_eff_asymptotic_cv_percent": 3.2589384726676074,
+  "Lambda_const_used": 0.314,
+  "max_abs_residual_N_geq_30": 0.018799999999999983,
+  "pointwise_pass_count_all_8": 7,
+  "pointwise_pass_count_N_geq_30": 7,
+  "DoD_threshold": 0.05,
+  "consistent_with_bundled": true,
+  "reviewer_hedging": {
+    "G_00_only": "Test is on the time-time diagonal component only; a Frobenius residual over all components is open.",
+    "Lambda_empirical_extraction": "Lambda_lat = 0.314 is extracted as the asymptotic mean of T_00 - G_00, not as an algebraic identity from corpus ingredients.",
+    "physical_scale_algebra": "With canonical scale anchor alpha_m ~ 1.046e-34 m (outputs_scale_anchor/scale_anchor_bundle.json, scheme_B, canonical regime), Lambda_lat = 0.314 corresponds to Lambda_phys = Lambda_lat / (alpha_m^-1 in GeV^-1)^2 ~ 1.12e36 GeV^2, equivalent to rho_Lambda^lat-implied = Lambda_phys * M_Pl^2 / (8 pi) ~ 6.6e72 GeV^4 -- i.e. the Planck-scale vacuum-energy density.",
+    "DEE_input_side_verification": "Path 5 thus verifies the INPUT side of a nine-layer hierarchy-reduction construction. The construction reduces this Planck-scale input by ~123 orders to rho_Lambda^pred = 2.32e-47 GeV^4 (vs Planck 2018 2.49e-47, ratio 0.93). The ~3 orders subleading between 10^119.4 (naive scale algebra) and 10^122.9 (9-layer reduction) come from Coleman-Weinberg, lattice form factor, Gamow-vacuum-sequestration layers and the alpha_m/l_Pl ~ 6.5 cell-volume factor.",
+    "scope": "Path 5 verifies the INPUT side of the hierarchy-reduction construction (Planck-scale Lambda from the lattice Hilbert variation), not the reduction itself. The internal agreement with the observed Planck-2018 rho_Lambda is established by the hierarchy-reduction construction separately."
+  }
+}

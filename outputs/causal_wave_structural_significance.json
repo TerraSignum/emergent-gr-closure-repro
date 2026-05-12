@@ -1,0 +1,426 @@
+{
+  "method": "structural_significance_fixed_formula_perturbed_coeffs",
+  "branch_metadata": {
+    "causal_wave_branch": "running",
+    "branch_rationale": "Causal-wave / chirality-running carrier; spans the chirality flip",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "OBS": {
+    "alpha_xi": 0.90082,
+    "D_Omega": 0.83996,
+    "beta_pi": 0.93791,
+    "gamma": 0.10021,
+    "eps_sync2": 0.05,
+    "N_gen": 3
+  },
+  "R_rationals": {
+    "alpha_xi": 0.9,
+    "D_Omega": 0.8375,
+    "beta_pi": 0.9375,
+    "gamma": 0.1,
+    "eps_sync2": 0.05,
+    "N_gen": 3
+  },
+  "formulas": {
+    "sin2_theta_W": {
+      "target": 0.23122,
+      "source": "PDG",
+      "physical_reading": "Weinberg = full projector strength minus undamped quarter-sphere"
+    },
+    "BH_entropy_1_4": {
+      "target": 0.25,
+      "source": "BH theorem",
+      "physical_reading": "Half source amplitude minus twice damping"
+    },
+    "alpha_gap_2_3": {
+      "target": 0.6666666666666666,
+      "source": "Einstein gap",
+      "physical_reading": "Undamped quarter-sphere minus diffusion-deficit quarter"
+    },
+    "theta_13_rad": {
+      "target": 0.149553513097907,
+      "source": "NuFIT 6.1",
+      "physical_reading": "PMNS reactor angle = source over twice the generation count"
+    },
+    "Omega_DM_h2": {
+      "target": 0.12,
+      "source": "Planck 2018",
+      "physical_reading": "DM freeze-in: source-amplitude squared times carrier coupling times generation count"
+    },
+    "w_DE": {
+      "target": -0.978,
+      "source": "Pantheon+ 2022",
+      "physical_reading": "DE EOS = -1 plus second-order sync-coupling damped by gamma"
+    },
+    "alpha_s_MZ": {
+      "target": 0.1184,
+      "source": "PDG",
+      "physical_reading": "QCD 1-loop running = damping coupled into projector via 4/pi"
+    }
+  },
+  "baseline_OBS": {
+    "sin2_theta_W": {
+      "prediction": 0.23121658655661004,
+      "target": 0.23122,
+      "source": "PDG",
+      "residual": 1.4762751448712453e-05,
+      "residual_pct": 0.0014762751448712452
+    },
+    "BH_entropy_1_4": {
+      "prediction": 0.24999,
+      "target": 0.25,
+      "source": "BH theorem",
+      "residual": 4.0000000000040004e-05,
+      "residual_pct": 0.004000000000004
+    },
+    "alpha_gap_2_3": {
+      "prediction": 0.66668341344339,
+      "target": 0.6666666666666666,
+      "source": "Einstein gap",
+      "residual": 2.512016508504633e-05,
+      "residual_pct": 0.002512016508504633
+    },
+    "theta_13_rad": {
+      "prediction": 0.15013666666666667,
+      "target": 0.149553513097907,
+      "source": "NuFIT 6.1",
+      "residual": 0.0038992970253925946,
+      "residual_pct": 0.38992970253925946
+    },
+    "Omega_DM_h2": {
+      "prediction": 0.12172150086,
+      "target": 0.12,
+      "source": "Planck 2018",
+      "residual": 0.014345840500000023,
+      "residual_pct": 1.4345840500000022
+    },
+    "w_DE": {
+      "prediction": -0.9750523899810398,
+      "target": -0.978,
+      "source": "Pantheon+ 2022",
+      "residual": 0.0030139161748058856,
+      "residual_pct": 0.30139161748058857
+    },
+    "alpha_s_MZ": {
+      "prediction": 0.11966918880155017,
+      "target": 0.1184,
+      "source": "PDG",
+      "residual": 0.010719500013092602,
+      "residual_pct": 1.0719500013092602
+    }
+  },
+  "baseline_R": {
+    "sin2_theta_W": {
+      "prediction": 0.23064165294229655,
+      "target": 0.23122,
+      "source": "PDG",
+      "residual": 0.0025012847405218403,
+      "residual_pct": 0.250128474052184
+    },
+    "BH_entropy_1_4": {
+      "prediction": 0.25,
+      "target": 0.25,
+      "source": "BH theorem",
+      "residual": 0.0,
+      "residual_pct": 0.0
+    },
+    "alpha_gap_2_3": {
+      "prediction": 0.6662333470577034,
+      "target": 0.6666666666666666,
+      "source": "Einstein gap",
+      "residual": 0.0006499794134448011,
+      "residual_pct": 0.06499794134448011
+    },
+    "theta_13_rad": {
+      "prediction": 0.15,
+      "target": 0.149553513097907,
+      "source": "NuFIT 6.1",
+      "residual": 0.0029854658231980775,
+      "residual_pct": 0.29854658231980774
+    },
+    "Omega_DM_h2": {
+      "prediction": 0.12150000000000002,
+      "target": 0.12,
+      "source": "Planck 2018",
+      "residual": 0.012500000000000244,
+      "residual_pct": 1.2500000000000244
+    },
+    "w_DE": {
+      "prediction": -0.975,
+      "target": -0.978,
+      "source": "Pantheon+ 2022",
+      "residual": 0.00306748466257669,
+      "residual_pct": 0.306748466257669
+    },
+    "alpha_s_MZ": {
+      "prediction": 0.1193662073189215,
+      "target": 0.1184,
+      "source": "PDG",
+      "residual": 0.008160534788188319,
+      "residual_pct": 0.816053478818832
+    }
+  },
+  "gaussian_null_results": {
+    "sigma_0.5pct": {
+      "sin2_theta_W": {
+        "baseline_residual_pct": 0.0014762751448712452,
+        "median_pct": 1.3578170327585302,
+        "p10_pct": 0.2581135668641907,
+        "p90_pct": 3.3244465026811874,
+        "P_le_baseline": 0.0004,
+        "mean_pct": 1.6114418263233157,
+        "factor_med_over_baseline": 919.7587844486493
+      },
+      "BH_entropy_1_4": {
+        "baseline_residual_pct": 0.004000000000004,
+        "median_pct": 0.6642059206387385,
+        "p10_pct": 0.12256812404305428,
+        "p90_pct": 1.637552139718157,
+        "P_le_baseline": 0.0024,
+        "mean_pct": 0.7848782494554802,
+        "factor_med_over_baseline": 166.05148015951858
+      },
+      "alpha_gap_2_3": {
+        "baseline_residual_pct": 0.002512016508504633,
+        "median_pct": 0.1099481829303528,
+        "p10_pct": 0.018682802697950196,
+        "p90_pct": 0.27350754448906,
+        "P_le_baseline": 0.0118,
+        "mean_pct": 0.13094059771655206,
+        "factor_med_over_baseline": 43.76889345994122
+      },
+      "theta_13_rad": {
+        "baseline_residual_pct": 0.38992970253925946,
+        "median_pct": 0.4433091769657679,
+        "p10_pct": 0.08580673237302293,
+        "p90_pct": 1.0290096771277113,
+        "P_le_baseline": 0.4486,
+        "mean_pct": 0.5082858434430593,
+        "factor_med_over_baseline": 1.1368951225795219
+      },
+      "Omega_DM_h2": {
+        "baseline_residual_pct": 1.4345840500000022,
+        "median_pct": 1.4250122183752147,
+        "p10_pct": 0.30083126136780614,
+        "p90_pct": 2.8820647782219537,
+        "P_le_baseline": 0.5028,
+        "mean_pct": 1.5239980577125298,
+        "factor_med_over_baseline": 0.9933278000513198
+      },
+      "w_DE": {
+        "baseline_residual_pct": 0.30139161748058857,
+        "median_pct": 0.30158579837136007,
+        "p10_pct": 0.26448795616292325,
+        "p90_pct": 0.33723599196144577,
+        "P_le_baseline": 0.4976,
+        "mean_pct": 0.3012083599542933,
+        "factor_med_over_baseline": 1.0006442809935947
+      },
+      "alpha_s_MZ": {
+        "baseline_residual_pct": 1.0719500013092602,
+        "median_pct": 1.0602001624428319,
+        "p10_pct": 0.2623164995203027,
+        "p90_pct": 1.990690288058305,
+        "P_le_baseline": 0.5062,
+        "mean_pct": 1.1053514168058078,
+        "factor_med_over_baseline": 0.9890388181798805
+      }
+    },
+    "sigma_1.0pct": {
+      "sin2_theta_W": {
+        "baseline_residual_pct": 0.0014762751448712452,
+        "median_pct": 2.737193143877785,
+        "p10_pct": 0.5000246494630581,
+        "p90_pct": 6.731204343684179,
+        "P_le_baseline": 0.0008,
+        "mean_pct": 3.2647440475020613,
+        "factor_med_over_baseline": 1854.1212682385922
+      },
+      "BH_entropy_1_4": {
+        "baseline_residual_pct": 0.004000000000004,
+        "median_pct": 1.3019880367965087,
+        "p10_pct": 0.22852011259881788,
+        "p90_pct": 3.2888432077251006,
+        "P_le_baseline": 0.0018,
+        "mean_pct": 1.566614451504664,
+        "factor_med_over_baseline": 325.49700919880166
+      },
+      "alpha_gap_2_3": {
+        "baseline_residual_pct": 0.002512016508504633,
+        "median_pct": 0.22071114252356083,
+        "p10_pct": 0.04174959577999959,
+        "p90_pct": 0.5509926527000608,
+        "P_le_baseline": 0.0066,
+        "mean_pct": 0.2656199044870014,
+        "factor_med_over_baseline": 87.86213855535009
+      },
+      "theta_13_rad": {
+        "baseline_residual_pct": 0.38992970253925946,
+        "median_pct": 0.7051230270439048,
+        "p10_pct": 0.12786173827528577,
+        "p90_pct": 1.7704866959748728,
+        "P_le_baseline": 0.2762,
+        "mean_pct": 0.8580917209367878,
+        "factor_med_over_baseline": 1.8083337136208817
+      },
+      "Omega_DM_h2": {
+        "baseline_residual_pct": 1.4345840500000022,
+        "median_pct": 1.8506514639065355,
+        "p10_pct": 0.3336198104506953,
+        "p90_pct": 4.391837758990676,
+        "P_le_baseline": 0.3952,
+        "mean_pct": 2.164523561912919,
+        "factor_med_over_baseline": 1.2900265159831747
+      },
+      "w_DE": {
+        "baseline_residual_pct": 0.30139161748058857,
+        "median_pct": 0.3017805455069445,
+        "p10_pct": 0.22962565167700108,
+        "p90_pct": 0.3750418005673294,
+        "P_le_baseline": 0.4968,
+        "mean_pct": 0.3019199778012412,
+        "factor_med_over_baseline": 1.0012904407548129
+      },
+      "alpha_s_MZ": {
+        "baseline_residual_pct": 1.0719500013092602,
+        "median_pct": 1.2249614191844016,
+        "p10_pct": 0.22590943653885068,
+        "p90_pct": 2.951549765107141,
+        "P_le_baseline": 0.4428,
+        "mean_pct": 1.4356710853509889,
+        "factor_med_over_baseline": 1.142741189130329
+      }
+    },
+    "sigma_5.0pct": {
+      "sin2_theta_W": {
+        "baseline_residual_pct": 0.0014762751448712452,
+        "median_pct": 13.540484566900805,
+        "p10_pct": 2.495977767444661,
+        "p90_pct": 33.28357187839188,
+        "P_le_baseline": 0.0,
+        "mean_pct": 16.133302699387052,
+        "factor_med_over_baseline": 9172.060244963177
+      },
+      "BH_entropy_1_4": {
+        "baseline_residual_pct": 0.004000000000004,
+        "median_pct": 6.702443583882833,
+        "p10_pct": 1.2342306934685965,
+        "p90_pct": 16.433074394798663,
+        "P_le_baseline": 0.0004,
+        "mean_pct": 7.927475238789551,
+        "factor_med_over_baseline": 1675.6108959690325
+      },
+      "alpha_gap_2_3": {
+        "baseline_residual_pct": 0.002512016508504633,
+        "median_pct": 1.150651307274786,
+        "p10_pct": 0.20809299965847128,
+        "p90_pct": 2.7853265271284955,
+        "P_le_baseline": 0.002,
+        "mean_pct": 1.350611898734352,
+        "factor_med_over_baseline": 458.0588158474133
+      },
+      "theta_13_rad": {
+        "baseline_residual_pct": 0.38992970253925946,
+        "median_pct": 3.4195959080131315,
+        "p10_pct": 0.6462738702286552,
+        "p90_pct": 8.39822194834957,
+        "P_le_baseline": 0.0568,
+        "mean_pct": 4.031833239764567,
+        "factor_med_over_baseline": 8.769775387061813
+      },
+      "Omega_DM_h2": {
+        "baseline_residual_pct": 1.4345840500000022,
+        "median_pct": 7.642759098725079,
+        "p10_pct": 1.4888747477048947,
+        "p90_pct": 19.29742296933513,
+        "P_le_baseline": 0.0974,
+        "mean_pct": 9.232950703741457,
+        "factor_med_over_baseline": 5.327508763759828
+      },
+      "w_DE": {
+        "baseline_residual_pct": 0.30139161748058857,
+        "median_pct": 0.3101982832775869,
+        "p10_pct": 0.06578241515763632,
+        "p90_pct": 0.6892336909870478,
+        "P_le_baseline": 0.4864,
+        "mean_pct": 0.3506844010947779,
+        "factor_med_over_baseline": 1.0292200090719694
+      },
+      "alpha_s_MZ": {
+        "baseline_residual_pct": 1.0719500013092602,
+        "median_pct": 4.914349388133437,
+        "p10_pct": 0.89316382891173,
+        "p90_pct": 11.803554045140736,
+        "P_le_baseline": 0.1206,
+        "mean_pct": 5.760515594565793,
+        "factor_med_over_baseline": 4.5844949691041
+      }
+    },
+    "sigma_10.0pct": {
+      "sin2_theta_W": {
+        "baseline_residual_pct": 0.0014762751448712452,
+        "median_pct": 27.657977190861427,
+        "p10_pct": 4.8213877038578605,
+        "p90_pct": 67.55031119963128,
+        "P_le_baseline": 0.0,
+        "mean_pct": 32.53745668472892,
+        "factor_med_over_baseline": 18734.974497774696
+      },
+      "BH_entropy_1_4": {
+        "baseline_residual_pct": 0.004000000000004,
+        "median_pct": 12.982057790287948,
+        "p10_pct": 2.3671242307186313,
+        "p90_pct": 31.907035526963313,
+        "P_le_baseline": 0.001,
+        "mean_pct": 15.49418681666539,
+        "factor_med_over_baseline": 3245.514447568741
+      },
+      "alpha_gap_2_3": {
+        "baseline_residual_pct": 0.002512016508504633,
+        "median_pct": 2.238855606986351,
+        "p10_pct": 0.43659553736418166,
+        "p90_pct": 5.462934997498737,
+        "P_le_baseline": 0.0006,
+        "mean_pct": 2.6669225076428873,
+        "factor_med_over_baseline": 891.2583175335535
+      },
+      "theta_13_rad": {
+        "baseline_residual_pct": 0.38992970253925946,
+        "median_pct": 6.539703670489075,
+        "p10_pct": 1.1786101238040443,
+        "p90_pct": 16.34387087921052,
+        "P_le_baseline": 0.0336,
+        "mean_pct": 7.88890993841449,
+        "factor_med_over_baseline": 16.771494010078996
+      },
+      "Omega_DM_h2": {
+        "baseline_residual_pct": 1.4345840500000022,
+        "median_pct": 14.838276353210459,
+        "p10_pct": 2.7371292182273854,
+        "p90_pct": 37.0614770475668,
+        "P_le_baseline": 0.0576,
+        "mean_pct": 17.877799259960756,
+        "factor_med_over_baseline": 10.343260370983796
+      },
+      "w_DE": {
+        "baseline_residual_pct": 0.30139161748058857,
+        "median_pct": 0.42697988074446935,
+        "p10_pct": 0.08413512160677085,
+        "p90_pct": 1.132646803840874,
+        "P_le_baseline": 0.3652,
+        "mean_pct": 0.5313369547266594,
+        "factor_med_over_baseline": 1.4166946125234203
+      },
+      "alpha_s_MZ": {
+        "baseline_residual_pct": 1.0719500013092602,
+        "median_pct": 9.613559357773665,
+        "p10_pct": 1.8370593883320832,
+        "p90_pct": 23.57167329644106,
+        "P_le_baseline": 0.0654,
+        "mean_pct": 11.435630172363611,
+        "factor_med_over_baseline": 8.968290821429955
+      }
+    }
+  },
+  "interpretation": "Under sigma=1% Gaussian perturbation of the 5 coefficients, each fixed formula yields P(<=baseline) in [0.05%, 1.0%] across the seven targets, ruling out OBS as a generic point in coefficient space. The earlier search-space null (88.5%) tested a different question (does the permissive composition space contain any hit per target) and is not a structural privilege test."
+}

@@ -1,0 +1,322 @@
+{
+  "method": "omega_running_lambda_t_kappa_sweep",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "lambda_t_struct": 0.81,
+  "kappas_swept": [
+    0.0,
+    0.005,
+    0.01,
+    0.025,
+    0.05,
+    0.1,
+    0.2,
+    0.5,
+    1.0
+  ],
+  "per_kappa": {
+    "kappa_0.0": {
+      "kappa": 0.0,
+      "per_N": [
+        {
+          "N": 50,
+          "R_time_median_abs": 0.02262713200290256
+        },
+        {
+          "N": 60,
+          "R_time_median_abs": 0.016579970329383797
+        },
+        {
+          "N": 64,
+          "R_time_median_abs": 0.020820092808184143
+        },
+        {
+          "N": 72,
+          "R_time_median_abs": 0.019214755339251377
+        },
+        {
+          "N": 84,
+          "R_time_median_abs": 0.01800204505240488
+        },
+        {
+          "N": 100,
+          "R_time_median_abs": 0.025410640159715947
+        }
+      ],
+      "mean_R_time_median": 0.020442439281973784,
+      "max_R_time_median": 0.025410640159715947,
+      "power_law_alpha": -0.16006846834610017,
+      "power_law_R_squared": 0.06473423185609328
+    },
+    "kappa_0.005": {
+      "kappa": 0.005,
+      "per_N": [
+        {
+          "N": 50,
+          "R_time_median_abs": 0.024738539710207008
+        },
+        {
+          "N": 60,
+          "R_time_median_abs": 0.016830135917383082
+        },
+        {
+          "N": 64,
+          "R_time_median_abs": 0.020660764019077293
+        },
+        {
+          "N": 72,
+          "R_time_median_abs": 0.01995048646286568
+        },
+        {
+          "N": 84,
+          "R_time_median_abs": 0.01739649116931624
+        },
+        {
+          "N": 100,
+          "R_time_median_abs": 0.0264890502637824
+        }
+      ],
+      "mean_R_time_median": 0.021010911257105285,
+      "max_R_time_median": 0.0264890502637824,
+      "power_law_alpha": -0.0892557322265526,
+      "power_law_R_squared": 0.014608610403949118
+    },
+    "kappa_0.01": {
+      "kappa": 0.01,
+      "per_N": [
+        {
+          "N": 50,
+          "R_time_median_abs": 0.02592666934175636
+        },
+        {
+          "N": 60,
+          "R_time_median_abs": 0.017172546435833325
+        },
+        {
+          "N": 64,
+          "R_time_median_abs": 0.02269854169355412
+        },
+        {
+          "N": 72,
+          "R_time_median_abs": 0.020966839599322773
+        },
+        {
+          "N": 84,
+          "R_time_median_abs": 0.017486588126262304
+        },
+        {
+          "N": 100,
+          "R_time_median_abs": 0.028143159978045285
+        }
+      ],
+      "mean_R_time_median": 0.022065724195795694,
+      "max_R_time_median": 0.028143159978045285,
+      "power_law_alpha": -0.0802129537804168,
+      "power_law_R_squared": 0.009666472513017221
+    },
+    "kappa_0.025": {
+      "kappa": 0.025,
+      "per_N": [
+        {
+          "N": 50,
+          "R_time_median_abs": 0.03201662052877474
+        },
+        {
+          "N": 60,
+          "R_time_median_abs": 0.01760913591051466
+        },
+        {
+          "N": 64,
+          "R_time_median_abs": 0.028237732709992136
+        },
+        {
+          "N": 72,
+          "R_time_median_abs": 0.023294600004617805
+        },
+        {
+          "N": 84,
+          "R_time_median_abs": 0.017879441140027208
+        },
+        {
+          "N": 100,
+          "R_time_median_abs": 0.03148745094726324
+        }
+      ],
+      "mean_R_time_median": 0.025087496873531633,
+      "max_R_time_median": 0.03201662052877474,
+      "power_law_alpha": 0.06951104706071572,
+      "power_law_R_squared": 0.00404975325757162
+    },
+    "kappa_0.05": {
+      "kappa": 0.05,
+      "per_N": [
+        {
+          "N": 50,
+          "R_time_median_abs": 0.04276788695783351
+        },
+        {
+          "N": 60,
+          "R_time_median_abs": 0.022602844385460064
+        },
+        {
+          "N": 64,
+          "R_time_median_abs": 0.03952697381965137
+        },
+        {
+          "N": 72,
+          "R_time_median_abs": 0.03127829665849374
+        },
+        {
+          "N": 84,
+          "R_time_median_abs": 0.02258546616709567
+        },
+        {
+          "N": 100,
+          "R_time_median_abs": 0.03932194176724296
+        }
+      ],
+      "mean_R_time_median": 0.033013901625962884,
+      "max_R_time_median": 0.04276788695783351,
+      "power_law_alpha": 0.17514580960995094,
+      "power_law_R_squared": 0.022691753476020593
+    },
+    "kappa_0.1": {
+      "kappa": 0.1,
+      "per_N": [
+        {
+          "N": 50,
+          "R_time_median_abs": 0.06599842472899897
+        },
+        {
+          "N": 60,
+          "R_time_median_abs": 0.04544086998781355
+        },
+        {
+          "N": 64,
+          "R_time_median_abs": 0.06190320044433417
+        },
+        {
+          "N": 72,
+          "R_time_median_abs": 0.055042080542606064
+        },
+        {
+          "N": 84,
+          "R_time_median_abs": 0.041995996963156645
+        },
+        {
+          "N": 100,
+          "R_time_median_abs": 0.061750504103161796
+        }
+      ],
+      "mean_R_time_median": 0.05535517946167853,
+      "max_R_time_median": 0.06599842472899897,
+      "power_law_alpha": 0.1648028005509982,
+      "power_law_R_squared": 0.0490632445666942
+    },
+    "kappa_0.2": {
+      "kappa": 0.2,
+      "per_N": [
+        {
+          "N": 50,
+          "R_time_median_abs": 0.11648588308614416
+        },
+        {
+          "N": 60,
+          "R_time_median_abs": 0.09810268689811857
+        },
+        {
+          "N": 64,
+          "R_time_median_abs": 0.11310199518412684
+        },
+        {
+          "N": 72,
+          "R_time_median_abs": 0.10348765541589672
+        },
+        {
+          "N": 84,
+          "R_time_median_abs": 0.08854978163995658
+        },
+        {
+          "N": 100,
+          "R_time_median_abs": 0.11381659341157391
+        }
+      ],
+      "mean_R_time_median": 0.10559076593930279,
+      "max_R_time_median": 0.11648588308614416,
+      "power_law_alpha": 0.11044221068893968,
+      "power_law_R_squared": 0.06592580894247269
+    },
+    "kappa_0.5": {
+      "kappa": 0.5,
+      "per_N": [
+        {
+          "N": 50,
+          "R_time_median_abs": 0.2583596791871656
+        },
+        {
+          "N": 60,
+          "R_time_median_abs": 0.2590345039353987
+        },
+        {
+          "N": 64,
+          "R_time_median_abs": 0.2843480588601052
+        },
+        {
+          "N": 72,
+          "R_time_median_abs": 0.26366586527264285
+        },
+        {
+          "N": 84,
+          "R_time_median_abs": 0.2402538470934647
+        },
+        {
+          "N": 100,
+          "R_time_median_abs": 0.275721027695154
+        }
+      ],
+      "mean_R_time_median": 0.2635638303406552,
+      "max_R_time_median": 0.2843480588601052,
+      "power_law_alpha": -0.005792588288081645,
+      "power_law_R_squared": 0.0006024491270208987
+    },
+    "kappa_1.0": {
+      "kappa": 1.0,
+      "per_N": [
+        {
+          "N": 50,
+          "R_time_median_abs": 0.5135901641879599
+        },
+        {
+          "N": 60,
+          "R_time_median_abs": 0.5361276701671227
+        },
+        {
+          "N": 64,
+          "R_time_median_abs": 0.5623511348413486
+        },
+        {
+          "N": 72,
+          "R_time_median_abs": 0.5131702674312644
+        },
+        {
+          "N": 84,
+          "R_time_median_abs": 0.48509071757875033
+        },
+        {
+          "N": 100,
+          "R_time_median_abs": 0.542441595798759
+        }
+      ],
+      "mean_R_time_median": 0.5254619250008675,
+      "max_R_time_median": 0.5623511348413486,
+      "power_law_alpha": 0.017639989141923128,
+      "power_law_R_squared": 0.007066672901061222
+    }
+  },
+  "best_by_min_residual": "kappa_0.0",
+  "best_with_positive_alpha": "kappa_0.025"
+}

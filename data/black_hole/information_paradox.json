@@ -1,0 +1,34 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Gravity / black-hole observable; matter-side per Einstein-eq source coupling",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Information-paradox resolution for the relational-defect black hole. Unitarity is preserved by construction: the carrier evolution on the underlying correlator graph is unitary on a finite-dimensional Hilbert space per patch, and the horizon is a high-compactness defect state, not a true singularity. Information is therefore scrambled, not destroyed; the canonical arrow of time supports rather than violates unitarity. Distilled from outputs_black_hole_thermo/bht04_information_paradox.json.",
+  "unitarity_status": "PRESERVED",
+  "unitarity_mechanism": "Correlator graph evolution is unitary by construction (finite-dimensional Hilbert space per patch). The black-hole horizon is a high-compactness defect state, not a singularity. Information is scrambled, not destroyed.",
+  "canonical": {
+    "S_BH_lu": 110.0511,
+    "scrambling_time_lu": 517.3441,
+    "page_time_lu": 1154.4937,
+    "arrow_supports_unitarity": true
+  },
+  "extended": {
+    "S_BH_lu": 136.3041,
+    "scrambling_time_lu": 669.9194,
+    "page_time_lu": 1591.3415,
+    "arrow_supports_unitarity": true
+  },
+  "page_curve_check": {
+    "expected_ratio_page_over_scrambling": 2.0,
+    "canonical_ratio": 2.2316,
+    "extended_ratio": 2.3753,
+    "page_curve_consistent": true,
+    "tolerance_pct": 25.0,
+    "comment": "Both regimes lie within ~25% of the textbook Page-curve relation tau_Page = 2 * tau_scr; quantitative deviations are expected lattice-discreteness corrections."
+  },
+  "singularity_resolution": "The lattice has minimum length (Planck-scale lattice spacing). No physical singularity forms; the defect core has finite size r_core > 0. The classical singularity is replaced by a maximal-density defect state.",
+  "framing": "The information paradox is resolved at the level of unitarity (mechanism + scrambling/Page times), not at the level of an explicit greybody-factor calculation. The explicit Hawking spectrum with greybody factors is documented in the wider Emergence program's black-hole-thermodynamics module."
+}

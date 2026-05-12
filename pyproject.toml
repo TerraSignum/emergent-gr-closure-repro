@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "emergent-gr-closure-repro"
+version = "0.1.0"
+description = "Reproducibility package for the emergent-Einstein closure: Xi-to-distance metric, A1 fast-slow regime check, four CLP axes, Einstein-gap 2/3 exponent, PPN benchmarks."
+authors = [
+    { name = "Sandro Bucciarelli", email = "sandro.bucciarelli89@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["emergent gravity", "continuum limit", "Einstein gap", "PPN", "reproducibility"]
+dependencies = [
+    "matplotlib>=3.8",
+    "numpy>=1.26",
+]
+
+[project.urls]
+Repository = "https://github.com/[anonymized]/emergent-gr-closure-repro"
+Homepage = "https://github.com/[anonymized]/emergent-gr-closure-repro"
+Issues = "https://github.com/[anonymized]/emergent-gr-closure-repro/issues"
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+testpaths = ["tests"]
+addopts = "-ra"

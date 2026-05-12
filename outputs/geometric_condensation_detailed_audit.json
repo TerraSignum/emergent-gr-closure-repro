@@ -1,0 +1,217 @@
+{
+  "method": "geometric_condensation_detailed_audit",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "snapshot_file": "C:\\Users\\user\\Desktop\\Emergence\\results_d1_p5n100_snapshot\\P5N100.snapshots.npz",
+  "n_seeds": 4,
+  "n_snap": 17,
+  "n_lat": 100,
+  "snapshot_steps": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    64
+  ],
+  "structural_lambda": {
+    "t": 0.81,
+    "s": -0.005
+  },
+  "test_1_granger_F": [
+    {
+      "seed": 0,
+      "F_Xi_predicts_T00_candidates": 2.001643206719821,
+      "F_T00_predicts_Xi_candidates": 2.453808220200126,
+      "F_ratio_candidates": 0.8157292775539615,
+      "F_Xi_predicts_T00_noncandidates": 2.6702805673555363,
+      "F_T00_predicts_Xi_noncandidates": 1.7393146721764228,
+      "F_ratio_noncandidates": 1.53524868735465
+    },
+    {
+      "seed": 1,
+      "F_Xi_predicts_T00_candidates": 5.022255095473875,
+      "F_T00_predicts_Xi_candidates": 4.536998822908801,
+      "F_ratio_candidates": 1.1069553446024396,
+      "F_Xi_predicts_T00_noncandidates": 5.361752061670632,
+      "F_T00_predicts_Xi_noncandidates": 1.9759609465043966,
+      "F_ratio_noncandidates": 2.713490907376444
+    },
+    {
+      "seed": 2,
+      "F_Xi_predicts_T00_candidates": 4.496996309583601,
+      "F_T00_predicts_Xi_candidates": 3.751672557889248,
+      "F_ratio_candidates": 1.1986643930657115,
+      "F_Xi_predicts_T00_noncandidates": 3.7938824603854897,
+      "F_T00_predicts_Xi_noncandidates": 3.5254236733847515,
+      "F_ratio_noncandidates": 1.0761493686638213
+    },
+    {
+      "seed": 3,
+      "F_Xi_predicts_T00_candidates": 4.337815916590509,
+      "F_T00_predicts_Xi_candidates": -0.5017387151509985,
+      "F_ratio_candidates": 4337815916.590509,
+      "F_Xi_predicts_T00_noncandidates": 4.308151030348044,
+      "F_T00_predicts_Xi_noncandidates": 2.3368471553946266,
+      "F_ratio_noncandidates": 1.8435741594834945
+    }
+  ],
+  "test_2_magnitude_derivative_correlation": [
+    {
+      "seed": 0,
+      "subset": "candidates",
+      "corr_per_lag": {
+        "-3": 0.20706420123019584,
+        "-2": 0.06983806242893956,
+        "-1": 0.021563496593382712,
+        "0": 0.07045196527792048,
+        "1": -0.12402088406044043,
+        "2": -0.08786705547183628,
+        "3": -0.11671486970528963
+      }
+    },
+    {
+      "seed": 0,
+      "subset": "non_cands",
+      "corr_per_lag": {
+        "-3": 0.038004332446964106,
+        "-2": 0.03651068100673938,
+        "-1": 0.07792850812779824,
+        "0": 0.20435660784159948,
+        "1": -0.012300946820779677,
+        "2": 0.0020796996434944435,
+        "3": -0.04445731377423824
+      }
+    },
+    {
+      "seed": 1,
+      "subset": "candidates",
+      "corr_per_lag": {
+        "-3": -0.04942379721861788,
+        "-2": -0.14889346792182495,
+        "-1": -0.0068585318199237575,
+        "0": -0.3402797076915965,
+        "1": 0.04488770687699623,
+        "2": -0.07997752435682794,
+        "3": 0.12259201211930655
+      }
+    },
+    {
+      "seed": 1,
+      "subset": "non_cands",
+      "corr_per_lag": {
+        "-3": -0.09001153991715914,
+        "-2": -0.09831433141841268,
+        "-1": -0.10981841562093239,
+        "0": 0.1573021373085586,
+        "1": -0.04488201123340742,
+        "2": -0.058879169968624266,
+        "3": -0.08389984935550446
+      }
+    },
+    {
+      "seed": 2,
+      "subset": "candidates",
+      "corr_per_lag": {
+        "-3": 0.03565984244029764,
+        "-2": 0.029814351277579487,
+        "-1": 0.030601084089590343,
+        "0": -0.16793001776387098,
+        "1": 0.08329962429230006,
+        "2": 0.06871729679693792,
+        "3": 0.0782901177958169
+      }
+    },
+    {
+      "seed": 2,
+      "subset": "non_cands",
+      "corr_per_lag": {
+        "-3": 0.09346609072588226,
+        "-2": 0.06312375421916833,
+        "-1": 0.08272703123319544,
+        "0": 0.009894894722115155,
+        "1": -0.02902564642087111,
+        "2": -0.11678067032420818,
+        "3": -0.12066783126053338
+      }
+    },
+    {
+      "seed": 3,
+      "subset": "candidates",
+      "corr_per_lag": {
+        "-3": 0.05009948183108905,
+        "-2": -0.018449242366701035,
+        "-1": 0.022961524513946285,
+        "0": 0.01961354099753162,
+        "1": 0.014743062484880238,
+        "2": 0.007465587171696347,
+        "3": -0.01479778454553049
+      }
+    },
+    {
+      "seed": 3,
+      "subset": "non_cands",
+      "corr_per_lag": {
+        "-3": -0.0011026913204000733,
+        "-2": 0.11366612747914213,
+        "-1": -0.0417796486164035,
+        "0": 0.14909328326250387,
+        "1": -0.015388899752935354,
+        "2": -0.04210263522798728,
+        "3": -0.05981579350789955
+      }
+    }
+  ],
+  "test_3_bootstrap": {
+    "candidate_mean_lag": 0.55,
+    "ci_95_low": -0.45,
+    "ci_95_high": 1.575,
+    "p_value_mean_geq_zero": 0.8698,
+    "n_candidates_pooled": 40,
+    "n_bootstrap_samples": 5000
+  },
+  "test_4_robustness_residual_cuts": [
+    {
+      "cut_pct": 5,
+      "n_nodes_pooled": 20,
+      "mean_lag": 1.15,
+      "sem": 0.7009814548188846
+    },
+    {
+      "cut_pct": 10,
+      "n_nodes_pooled": 40,
+      "mean_lag": 0.55,
+      "sem": 0.5049133589042777
+    },
+    {
+      "cut_pct": 15,
+      "n_nodes_pooled": 60,
+      "mean_lag": 0.4666666666666667,
+      "sem": 0.39261705025144816
+    }
+  ],
+  "test_5_figure": "C:\\Users\\user\\Desktop\\Emergence\\emergent-gr-closure-repro\\paper\\figures\\fig15_geometric_condensation_evidence.pdf",
+  "verdict": {
+    "mean_lag": 0.55,
+    "ci_95": [
+      -0.45,
+      1.575
+    ],
+    "p_geq_zero": 0.8698,
+    "geometric_condensation_supported": false
+  }
+}

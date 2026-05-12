@@ -1,0 +1,213 @@
+{
+  "method": "diagonal_block_Frobenius_under_FRW_de_Sitter_isotropy_bound",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "8_pi_G_convention": "absorbed_into_lattice_units",
+  "lambda_conventions": {
+    "proxy": {
+      "rational": "1/4",
+      "decimal": 0.25
+    },
+    "row_mean": {
+      "rational": "17/20",
+      "decimal": 0.85
+    },
+    "section_14_1": {
+      "rational": "6/5",
+      "decimal": 1.2
+    }
+  },
+  "results": {
+    "proxy": {
+      "Lambda": 0.25,
+      "per_regime": [
+        {
+          "N": 28,
+          "regime": "P1",
+          "r_00": -0.12119999999999997,
+          "frob_diag": 1.0827547090638765,
+          "rel_residual": 7.467273855612942
+        },
+        {
+          "N": 30,
+          "regime": "P2prime",
+          "r_00": -0.08279999999999998,
+          "frob_diag": 1.012829383460018,
+          "rel_residual": 6.213677199141214
+        },
+        {
+          "N": 36,
+          "regime": "P3",
+          "r_00": -0.07589999999999997,
+          "frob_diag": 1.0003715509749365,
+          "rel_residual": 6.899114144654734
+        },
+        {
+          "N": 42,
+          "regime": "P4",
+          "r_00": -0.07669999999999999,
+          "frob_diag": 1.001814134458084,
+          "rel_residual": 8.562513969727213
+        },
+        {
+          "N": 50,
+          "regime": "P5",
+          "r_00": -0.06819999999999998,
+          "frob_diag": 0.9865115103231183,
+          "rel_residual": 8.887491083992057
+        },
+        {
+          "N": 60,
+          "regime": "P6",
+          "r_00": -0.06709999999999999,
+          "frob_diag": 0.9845352406084813,
+          "rel_residual": 14.064789151549732
+        },
+        {
+          "N": 72,
+          "regime": "P7",
+          "r_00": -0.06310000000000004,
+          "frob_diag": 0.9773568642005848,
+          "rel_residual": 14.587415883590817
+        },
+        {
+          "N": 84,
+          "regime": "P8",
+          "r_00": -0.04569999999999996,
+          "frob_diag": 0.9462842913205312,
+          "rel_residual": 19.3119243126639
+        }
+      ],
+      "asymptotic_rel_residual": 13.082826880304745
+    },
+    "row_mean": {
+      "Lambda": 0.85,
+      "per_regime": [
+        {
+          "N": 28,
+          "regime": "P1",
+          "r_00": 0.4788,
+          "frob_diag": 2.16869494396976,
+          "rel_residual": 14.956516854963864
+        },
+        {
+          "N": 30,
+          "regime": "P2prime",
+          "r_00": 0.5172,
+          "frob_diag": 2.1129466060456896,
+          "rel_residual": 12.962862613777236
+        },
+        {
+          "N": 36,
+          "regime": "P3",
+          "r_00": 0.5241,
+          "frob_diag": 2.103069956040455,
+          "rel_residual": 14.503930731313483
+        },
+        {
+          "N": 42,
+          "regime": "P4",
+          "r_00": 0.5233,
+          "frob_diag": 2.10421281243129,
+          "rel_residual": 17.98472489257513
+        },
+        {
+          "N": 50,
+          "regime": "P5",
+          "r_00": 0.5318,
+          "frob_diag": 2.0921006094354064,
+          "rel_residual": 18.847753238156816
+        },
+        {
+          "N": 60,
+          "regime": "P6",
+          "r_00": 0.5328999999999999,
+          "frob_diag": 2.090538122111147,
+          "rel_residual": 29.864830315873526
+        },
+        {
+          "N": 72,
+          "regime": "P7",
+          "r_00": 0.5368999999999999,
+          "frob_diag": 2.084866048454912,
+          "rel_residual": 31.117403708282268
+        },
+        {
+          "N": 84,
+          "regime": "P8",
+          "r_00": 0.5543,
+          "frob_diag": 2.060372286748198,
+          "rel_residual": 42.04841401526935
+        }
+      ],
+      "asymptotic_rel_residual": 27.97262523403142
+    },
+    "section_14_1": {
+      "Lambda": 1.2,
+      "per_regime": [
+        {
+          "N": 28,
+          "regime": "P1",
+          "r_00": 0.8288,
+          "frob_diag": 2.8448053993199602,
+          "rel_residual": 19.61934758151697
+        },
+        {
+          "N": 30,
+          "regime": "P2prime",
+          "r_00": 0.8671999999999999,
+          "frob_diag": 2.7929309622688487,
+          "rel_residual": 17.134545780790482
+        },
+        {
+          "N": 36,
+          "regime": "P3",
+          "r_00": 0.8741,
+          "frob_diag": 2.783731890825695,
+          "rel_residual": 19.19815097121169
+        },
+        {
+          "N": 42,
+          "regime": "P4",
+          "r_00": 0.8733,
+          "frob_diag": 2.7847965024396304,
+          "rel_residual": 23.80167950803103
+        },
+        {
+          "N": 50,
+          "regime": "P5",
+          "r_00": 0.8818000000000001,
+          "frob_diag": 2.7735113051869824,
+          "rel_residual": 24.98658833501786
+        },
+        {
+          "N": 60,
+          "regime": "P6",
+          "r_00": 0.8828999999999998,
+          "frob_diag": 2.7720551293219264,
+          "rel_residual": 39.600787561741804
+        },
+        {
+          "N": 72,
+          "regime": "P7",
+          "r_00": 0.8869,
+          "frob_diag": 2.7667682302643275,
+          "rel_residual": 41.29504821290041
+        },
+        {
+          "N": 84,
+          "regime": "P8",
+          "r_00": 0.9042999999999999,
+          "frob_diag": 2.7439230965899903,
+          "rel_residual": 55.99843054265286
+        }
+      ],
+      "asymptotic_rel_residual": 37.1365068320688
+    }
+  },
+  "caveat_off_diagonal_exact_test_future_work": true,
+  "reproducible_inputs": "data/einstein_with_lambda_8point.json"
+}

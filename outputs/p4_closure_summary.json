@@ -1,0 +1,157 @@
+{
+  "method": "p4_closure_summary",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "audit_inventory": {
+    "E1_per_direction_closure": {
+      "file": "discrete_bianchi_scaling_audit.json",
+      "exists": true,
+      "verdict": "DISCRETE_BIANCHI_RECOVERED_IN_CONTINUUM"
+    },
+    "A1_bianchi_bootstrap": {
+      "file": "bianchi_bootstrap_CI_audit.json",
+      "exists": true,
+      "verdict": "BIANCHI_RECOVERY_BOOTSTRAP_CONFIRMED"
+    },
+    "A3_per_channel_bootstrap": {
+      "file": "per_channel_bootstrap_CI_audit.json",
+      "exists": true,
+      "verdict": "ALL_FOUR_CHANNELS_BOOTSTRAP_CONSISTENT_WITH_SYSTEM_R"
+    },
+    "B1_frame_invariance": {
+      "file": "2plus1_frame_invariance_audit.json",
+      "exists": true,
+      "verdict": "[no verdict]"
+    },
+    "B2_distance_metric": {
+      "file": "distance_metric_robustness_audit.json",
+      "exists": true,
+      "verdict": "DISTANCE_METRIC_ROBUST_CV<15%"
+    },
+    "B3_mask_threshold": {
+      "file": "mask_threshold_robustness_audit.json",
+      "exists": true,
+      "verdict": "MASK_THRESHOLD_ROBUST_CV<10%"
+    },
+    "E1_within_P5": {
+      "file": "within_P5_bootstrap_audit.json",
+      "exists": true,
+      "verdict": "[no verdict]"
+    },
+    "E2_pythagorean_skeptical": {
+      "file": "skeptical_audit_pythagorean.json",
+      "exists": true,
+      "verdict": "PYTH_CONSISTENT_WEAK_PER_REGIME"
+    }
+  },
+  "tier_status": {
+    "bianchi_recovery": {
+      "asymptote_CI": [
+        -0.0001920110452205322,
+        0.001685051861728177
+      ],
+      "decay_exponent_CI": [
+        1.378184978135905,
+        1.6808484647054098
+      ],
+      "verdict": "BIANCHI_RECOVERY_BOOTSTRAP_CONFIRMED"
+    },
+    "per_channel": "ALL_FOUR_CHANNELS_BOOTSTRAP_CONSISTENT_WITH_SYSTEM_R",
+    "distance_metric": {
+      "max_cv_pct": 2.70402126083568,
+      "verdict": "DISTANCE_METRIC_ROBUST_CV<15%"
+    },
+    "mask_threshold": {
+      "max_cv_pct": 5.060062281565528,
+      "verdict": "MASK_THRESHOLD_ROBUST_CV<10%"
+    },
+    "within_P5": {
+      "method": "within_P5_bootstrap",
+      "n_boot": 2000,
+      "ladder": [
+        [
+          50,
+          4
+        ],
+        [
+          64,
+          4
+        ],
+        [
+          72,
+          4
+        ],
+        [
+          84,
+          4
+        ],
+        [
+          100,
+          4
+        ],
+        [
+          200,
+          2
+        ]
+      ],
+      "asymptote_median": 0.8080674213171661,
+      "asymptote_CI95": [
+        0.7932026398254884,
+        0.8237455654452411
+      ],
+      "alpha_xi_sq_in_CI": true,
+      "predictions_in_CI": {
+        "alpha_xi_sq_0.810": true,
+        "alpha_xi_sq_plus_gamma_sq_0.820": true,
+        "alpha_xi_sq_minus_half_gamma_sq_0.805": true
+      },
+      "per_regime_seeds": {
+        "N=50": [
+          0.8553001752325312,
+          0.8986773838376746,
+          0.8913157992188502,
+          0.8730613878974001
+        ],
+        "N=64": [
+          0.8479727497543547,
+          0.812798327234092,
+          0.8700084311137231,
+          0.8943895554987203
+        ],
+        "N=72": [
+          0.8200939174774065,
+          0.8569946467945141,
+          0.8296072103283785,
+          0.8827318860912006
+        ],
+        "N=84": [
+          0.8007377774422038,
+          0.8466791240394779,
+          0.8242063713133346,
+          0.8383378606068312
+        ],
+        "N=100": [
+          0.8383229539537728,
+          0.8183826713707231,
+          0.8804744345807219,
+          0.8447790274393554
+        ],
+        "N=200": [
+          0.8034563365249903,
+          0.8154744057017821
+        ]
+      }
+    },
+    "frame_invariance": {
+      "P_2_neg_sorted_mean": 0.4936174886621316,
+      "P_2_neg_sorted_std": 0.13285414119500014,
+      "P_2_neg_random_mean": 0.40032233205782314,
+      "P_2_neg_random_std": 0.11104208463778706,
+      "P_2_neg_isotropic_baseline": 0.375,
+      "verdict": "NO_STRONG_2PLUS1_PATTERN"
+    }
+  }
+}

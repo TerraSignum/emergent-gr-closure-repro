@@ -1,0 +1,295 @@
+{
+  "method": "per_channel_symanzik_anisotropy",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "regimes_used": [
+      "P1",
+      "P3",
+      "P4",
+      "P5",
+      "P5N64",
+      "P6",
+      "P7",
+      "P8",
+      "P5N100",
+      "P5N72",
+      "P5N84",
+      "P5N200"
+    ],
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "predictions": {
+    "alpha_xi_sq": 0.81,
+    "3_gamma_sq_half": 0.015000000000000003,
+    "shear": 0.0,
+    "anisotropy": 0.0,
+    "asymptotic_total": 0.8250000000000001
+  },
+  "per_regime": [
+    {
+      "regime": "P1",
+      "N": 28,
+      "n_nodes": 896,
+      "Lambda_t_mean": 1.0645400050810454,
+      "Lambda_s_axis_means_sorted": [
+        -0.5979572924153013,
+        -0.5694686492800678,
+        0.5997572341519967
+      ],
+      "Lambda_s_axis_stds_sorted": [
+        1.5000697901356221,
+        1.4847301464321987,
+        1.4856343497541769
+      ],
+      "Lambda_s_3sum_abs_mean": 1.7735241785364406,
+      "Lambda_s_3sum_signed_mean": -0.5676687075433726,
+      "anisotropy_index_mean": 1.1977145265672984,
+      "anisotropy_index_std": 2.9838667967529378,
+      "shear_mean": 0.03281721912497854
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "n_nodes": 1008,
+      "Lambda_t_mean": 0.9274311701353513,
+      "Lambda_s_axis_means_sorted": [
+        -0.29307271142937225,
+        -0.27891928354526985,
+        0.3028471354470322
+      ],
+      "Lambda_s_axis_stds_sorted": [
+        0.858412171961971,
+        0.8523515066158746,
+        0.854187963434832
+      ],
+      "Lambda_s_3sum_abs_mean": 0.880316492773836,
+      "Lambda_s_3sum_signed_mean": -0.2691448595276093,
+      "anisotropy_index_mean": 0.5959198468764043,
+      "anisotropy_index_std": 1.711916974452764,
+      "shear_mean": 0.016670051362985626
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "n_nodes": 1176,
+      "Lambda_t_mean": 0.8846321142853492,
+      "Lambda_s_axis_means_sorted": [
+        -0.18502047375383396,
+        -0.1742026808033757,
+        0.19405815264904677
+      ],
+      "Lambda_s_axis_stds_sorted": [
+        0.5125115833921317,
+        0.509751771931932,
+        0.5115426669530861
+      ],
+      "Lambda_s_3sum_abs_mean": 0.5583530760005838,
+      "Lambda_s_3sum_signed_mean": -0.16516500190816324,
+      "anisotropy_index_mean": 0.37907862640288054,
+      "anisotropy_index_std": 1.023777436167699,
+      "shear_mean": 0.01305213340835987
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_nodes": 1400,
+      "Lambda_t_mean": 0.8712252283544256,
+      "Lambda_s_axis_means_sorted": [
+        -0.14482090834230013,
+        -0.13661562392373305,
+        0.15212235042661687
+      ],
+      "Lambda_s_axis_stds_sorted": [
+        0.4504723594671044,
+        0.4490457384368263,
+        0.44986699091655424
+      ],
+      "Lambda_s_3sum_abs_mean": 0.4385862426006094,
+      "Lambda_s_3sum_signed_mean": -0.129314181839416,
+      "anisotropy_index_mean": 0.29694325876891714,
+      "anisotropy_index_std": 0.9001658928603401,
+      "shear_mean": 0.009920264574854863
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_nodes": 1536,
+      "Lambda_t_mean": 0.8548431132828659,
+      "Lambda_s_axis_means_sorted": [
+        -0.102297105655753,
+        -0.09645059661303078,
+        0.10733815437969142
+      ],
+      "Lambda_s_axis_stds_sorted": [
+        0.3759208083777301,
+        0.3749340049783546,
+        0.3759556153857634
+      ],
+      "Lambda_s_3sum_abs_mean": 0.30999959080231504,
+      "Lambda_s_3sum_signed_mean": -0.09140954788909232,
+      "anisotropy_index_mean": 0.2096352600354444,
+      "anisotropy_index_std": 0.7518243189722049,
+      "shear_mean": 0.007239712542797949
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "n_nodes": 1680,
+      "Lambda_t_mean": 0.8436524581954475,
+      "Lambda_s_axis_means_sorted": [
+        -0.0776696230753894,
+        -0.07203852014633402,
+        0.0830026501581924
+      ],
+      "Lambda_s_axis_stds_sorted": [
+        0.2924268155839911,
+        0.2913578915816913,
+        0.2922191729336152
+      ],
+      "Lambda_s_3sum_abs_mean": 0.23706689308997728,
+      "Lambda_s_3sum_signed_mean": -0.06670549306353088,
+      "anisotropy_index_mean": 0.16067227323358188,
+      "anisotropy_index_std": 0.5846107459815864,
+      "shear_mean": 0.007303580299027654
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_nodes": 1440,
+      "Lambda_t_mean": 0.8315051248517175,
+      "Lambda_s_axis_means_sorted": [
+        -0.04432158467137523,
+        -0.03952703890129649,
+        0.04855160306251244
+      ],
+      "Lambda_s_axis_stds_sorted": [
+        0.16026889240801265,
+        0.15977282972655535,
+        0.1603221645520146
+      ],
+      "Lambda_s_3sum_abs_mean": 0.136466706062808,
+      "Lambda_s_3sum_signed_mean": -0.03529702051015942,
+      "anisotropy_index_mean": 0.0928731877338877,
+      "anisotropy_index_std": 0.32054225232771544,
+      "shear_mean": 0.005854989777259794
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_nodes": 1344,
+      "Lambda_t_mean": 0.826028660837763,
+      "Lambda_s_axis_means_sorted": [
+        -0.032452207684903145,
+        -0.028707213059665303,
+        0.035668982911776045
+      ],
+      "Lambda_s_axis_stds_sorted": [
+        0.12850329270866268,
+        0.12815706055277565,
+        0.12872866267288072
+      ],
+      "Lambda_s_3sum_abs_mean": 0.09993582595321537,
+      "Lambda_s_3sum_signed_mean": -0.025490437832792427,
+      "anisotropy_index_mean": 0.06812119059667926,
+      "anisotropy_index_std": 0.25721402788522596,
+      "shear_mean": 0.004650220906784651
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_nodes": 2400,
+      "Lambda_t_mean": 0.8317892689872273,
+      "Lambda_s_axis_means_sorted": [
+        -0.034159712903282395,
+        -0.03072485644350158,
+        0.03708332566637761
+      ],
+      "Lambda_s_axis_stds_sorted": [
+        0.13640999488024402,
+        0.1357624072255587,
+        0.13620724580305563
+      ],
+      "Lambda_s_3sum_abs_mean": 0.10487998652610865,
+      "Lambda_s_3sum_signed_mean": -0.027801243680406446,
+      "anisotropy_index_mean": 0.07124303856965998,
+      "anisotropy_index_std": 0.27251987764791197,
+      "shear_mean": 0.004294071552712464
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_nodes": 3072,
+      "Lambda_t_mean": 0.8086673305117603,
+      "Lambda_s_axis_means_sorted": [
+        -0.0041140427789182,
+        -0.0030374869629007095,
+        0.005007923869662735
+      ],
+      "Lambda_s_axis_stds_sorted": [
+        0.02191167536645786,
+        0.02185638073459229,
+        0.021888740358471905
+      ],
+      "Lambda_s_3sum_abs_mean": 0.013294380814030074,
+      "Lambda_s_3sum_signed_mean": -0.0021436058721561652,
+      "anisotropy_index_mean": 0.009121966648580938,
+      "anisotropy_index_std": 0.04379239218108524,
+      "shear_mean": 0.0012913564785767627
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_nodes": 6144,
+      "Lambda_t_mean": 0.8031087962131371,
+      "Lambda_s_axis_means_sorted": [
+        -0.001490945737506325,
+        -0.000988396295870973,
+        0.0019190914791618627
+      ],
+      "Lambda_s_axis_stds_sorted": [
+        0.008908198655385995,
+        0.008871847878576065,
+        0.008921053190883623
+      ],
+      "Lambda_s_3sum_abs_mean": 0.004962052023241598,
+      "Lambda_s_3sum_signed_mean": -0.0005602505542154297,
+      "anisotropy_index_mean": 0.0034100372166681893,
+      "anisotropy_index_std": 0.017826250803228694,
+      "shear_mean": 0.0006181965533505752
+    }
+  ],
+  "symanzik_per_channel": {
+    "Lambda_t": {
+      "asymptote": 0.8115596456117781,
+      "c2": 101.33149859603327,
+      "c4": 74275.84354277067,
+      "R2": 0.9897553921977351,
+      "rel_pct_to_alpha_xi_sq": 0.19254884096024882
+    },
+    "Lambda_s_3sum_abs": {
+      "asymptote": 0.007615952004112503,
+      "c2": 776.544749900914,
+      "c4": 473004.8819240231,
+      "R2": 0.9948641548807203,
+      "abs_distance_to_3gamma_sq_half": 0.0073840479958874996
+    },
+    "shear": {
+      "asymptote": 0.0017750311426477045,
+      "c2": 17.312715451679665,
+      "c4": 5197.8430577807785,
+      "R2": 0.9917436189051537,
+      "abs_distance_to_zero": 0.0017750311426477045
+    },
+    "anisotropy": {
+      "asymptote": 0.005071778848573892,
+      "c2": 528.798236387554,
+      "c4": 316108.68610171013,
+      "R2": 0.9949621821143634,
+      "abs_distance_to_zero": 0.005071778848573892
+    }
+  },
+  "total_trace_asymptote": 0.8209506287585382,
+  "total_trace_distance_pct": 0.4908328777529544,
+  "verdict": "ASYMPTOTIC_DECOMPOSITION_VERIFIED"
+}

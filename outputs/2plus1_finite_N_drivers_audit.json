@@ -1,0 +1,133 @@
+{
+  "method": "2plus1_finite_N_drivers",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P1",
+      "P5",
+      "P5N64",
+      "P5N72",
+      "P5N84",
+      "P5N100",
+      "P5N128",
+      "P5N200",
+      "P5N256",
+      "P5N300",
+      "P5N512"
+    ],
+    "branch_rationale": "Matter-localised anisotropy diagnostic. The (2+1) sign pattern in the per-axis Lambda spatial trace is identified in the parent paper as matter-localised: at heavy-tail T_00 nodes (matter-rich regions) the per-node anisotropy is large, while at low-T_00 vacuum-like regions it is small. Cross-regime mean Spearman correlation between per-node 2+1 strength and local T_00 magnitude is +0.556 with maximum +0.920 at N=28, confirming the matter-source coupling. Regime range N=28..512 spans the chirality flip; mixing pre-flip and post-flip lattice data is intentional for tracking the finite-N convergence towards isotropy as N grows.",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "per_regime": [
+    {
+      "regime": "P1",
+      "N": 28,
+      "n_nodes": 896,
+      "aniso_mean": 1.1977145265672984,
+      "spearman_corr_with_degree": 0.18393821260014973,
+      "spearman_corr_with_t00": 0.9199605562035729,
+      "spearman_corr_with_xi_rowmean": 0.5730404554153642,
+      "spearman_corr_with_psi_squared": 0.09234274196777231
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_nodes": 1400,
+      "aniso_mean": 0.29694325876891714,
+      "spearman_corr_with_degree": 0.36958666095404846,
+      "spearman_corr_with_t00": 0.7675074600985584,
+      "spearman_corr_with_xi_rowmean": 0.511427185130488,
+      "spearman_corr_with_psi_squared": 0.05018207953896188
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_nodes": 1536,
+      "aniso_mean": 0.2096352600354444,
+      "spearman_corr_with_degree": 0.46142838536511405,
+      "spearman_corr_with_t00": 0.7210100501420975,
+      "spearman_corr_with_xi_rowmean": 0.4893018756662477,
+      "spearman_corr_with_psi_squared": 0.0301692679910736
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "n_nodes": 1728,
+      "aniso_mean": 0.11667116427503726,
+      "spearman_corr_with_degree": 0.37165921082372605,
+      "spearman_corr_with_t00": 0.6301834154038312,
+      "spearman_corr_with_xi_rowmean": 0.48139270635499265,
+      "spearman_corr_with_psi_squared": 0.0704659952480938
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "n_nodes": 2016,
+      "aniso_mean": 0.09855043813797655,
+      "spearman_corr_with_degree": 0.3910645202295669,
+      "spearman_corr_with_t00": 0.6011007889280474,
+      "spearman_corr_with_xi_rowmean": 0.4333016034508989,
+      "spearman_corr_with_psi_squared": 0.02999888517025114
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_nodes": 2400,
+      "aniso_mean": 0.07124303856965998,
+      "spearman_corr_with_degree": 0.4028846021510926,
+      "spearman_corr_with_t00": 0.5391658054107301,
+      "spearman_corr_with_xi_rowmean": 0.4263563517979777,
+      "spearman_corr_with_psi_squared": 0.06265606643334487
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "n_nodes": 1536,
+      "aniso_mean": 0.01780887533010493,
+      "spearman_corr_with_degree": 0.4044980035446983,
+      "spearman_corr_with_t00": 0.44737763293695787,
+      "spearman_corr_with_xi_rowmean": 0.3048137956730718,
+      "spearman_corr_with_psi_squared": 0.04745093674699434
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_nodes": 1600,
+      "aniso_mean": 0.018047069763958107,
+      "spearman_corr_with_degree": 0.36048906503346523,
+      "spearman_corr_with_t00": 0.38234019134382485,
+      "spearman_corr_with_xi_rowmean": 0.3180220295007928,
+      "spearman_corr_with_psi_squared": 0.0679615900240586
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_nodes": 3072,
+      "aniso_mean": 0.009121966648580938,
+      "spearman_corr_with_degree": 0.3744325096097614,
+      "spearman_corr_with_t00": 0.4060236024947805,
+      "spearman_corr_with_xi_rowmean": 0.2162357760619615,
+      "spearman_corr_with_psi_squared": 0.03448641748416874
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_nodes": 3600,
+      "aniso_mean": 0.007659512855663465,
+      "spearman_corr_with_degree": 0.35769183485809775,
+      "spearman_corr_with_t00": 0.3542948488396231,
+      "spearman_corr_with_xi_rowmean": 0.22819507805003172,
+      "spearman_corr_with_psi_squared": 0.02487179255697988
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_nodes": 6144,
+      "aniso_mean": 0.0034100372166681893,
+      "spearman_corr_with_degree": 0.3762980502588542,
+      "spearman_corr_with_t00": 0.34512510449232603,
+      "spearman_corr_with_xi_rowmean": 0.12960422848027223,
+      "spearman_corr_with_psi_squared": 0.02620603461943824
+    }
+  ]
+}

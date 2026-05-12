@@ -1,0 +1,137 @@
+{
+  "method": "skeptical_pythagorean_audit",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P1",
+      "P3",
+      "P4",
+      "P5",
+      "P5N64",
+      "P6",
+      "P7",
+      "P8",
+      "P5N100",
+      "P5N72",
+      "P5N84",
+      "P5N200"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "predictions": {
+    "pyth": 0.8200000000000001,
+    "naive": 0.81
+  },
+  "per_regime": [
+    {
+      "regime": "P1",
+      "N": 28,
+      "src": "canonical",
+      "lambda_t_star": 1.0645400050810454
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "src": "canonical",
+      "lambda_t_star": 0.9274311701353513
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "src": "canonical",
+      "lambda_t_star": 0.8846321142853492
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "src": "canonical",
+      "lambda_t_star": 0.8712252283544256
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "src": "canonical",
+      "lambda_t_star": 0.8548431132828659
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "src": "canonical",
+      "lambda_t_star": 0.8436524581954475
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "src": "canonical",
+      "lambda_t_star": 0.8315051248517175
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "src": "canonical",
+      "lambda_t_star": 0.826028660837763
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "src": "canonical",
+      "lambda_t_star": 0.8317892689872273
+    },
+    {
+      "regime": "P6N128",
+      "N": 128,
+      "src": "snapshot_v2",
+      "lambda_t_star": 0.8133620113521592
+    },
+    {
+      "regime": "P8N128",
+      "N": 128,
+      "src": "snapshot_v2",
+      "lambda_t_star": 0.8111715111933084
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "src": "canonical",
+      "lambda_t_star": 0.8031087962131371
+    }
+  ],
+  "T1_symanzik24": {
+    "Lambda_t_inf": 0.8102064893843977,
+    "R2": 0.9894734004787531,
+    "rel_pyth_pct": 1.1943305628783423,
+    "rel_naive_pct": 0.025492516592296448
+  },
+  "T2_bootstrap": {
+    "n_boot": 1000,
+    "median": 0.8079075984889237,
+    "ci_2_5": 0.7995121476286433,
+    "ci_97_5": 0.8198564109235945,
+    "pyth_in_CI": false,
+    "naive_in_CI": true
+  },
+  "T3_per_regime": {
+    "mean": 0.8636074552308166,
+    "std": 0.06940928222384701,
+    "min": 0.8031087962131371,
+    "max": 1.0645400050810454,
+    "in_pyth_band_count": 6
+  },
+  "T4_candidate_comparison": {
+    "rms_pyth": 0.08197108399025414,
+    "rms_naive": 0.0877006711214551,
+    "rms_flat": 0.06940928222384701,
+    "bias_pyth": 0.04360745523081639,
+    "bias_naive": 0.0536074552308164
+  },
+  "T5_jackknife": {
+    "asymptote_range": [
+      0.8053574738904256,
+      0.813215168187368
+    ],
+    "worst_case_offset_pct": 1.785673915801769,
+    "most_influential_regime": "P1"
+  },
+  "verdict": "PYTH_NOT_CLEARLY_SUPPORTED"
+}

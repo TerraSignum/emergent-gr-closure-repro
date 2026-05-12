@@ -1,0 +1,48 @@
+{
+  "method": "Phase_D_extension_unconditional_19_over_15_theorem",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "system_R_inputs": {
+    "alpha_xi": "9/10",
+    "gamma": "1/10",
+    "eps_sync_sq": "1/20",
+    "N_gen": 3
+  },
+  "alpha_2_3_extrapolations": {
+    "var_Xi_inf": -0.015240584894917399,
+    "var_amp_inf": -1.4020829240704536e-05,
+    "grad_psi_squared_inf": 0.4164207396247739,
+    "K_rec_row_mean_inf": 1.7199473497611628
+  },
+  "system_R_algebraic_targets": {
+    "k_rec_target_17_over_20": 0.85,
+    "grad_target_5_over_12": 0.4166666666666667,
+    "Lambda_target_19_over_15": 1.2666666666666666,
+    "identity_check": "17/20 + 5/12 = 19/15 verified in Q"
+  },
+  "empirical_match": {
+    "Lambda_lat_inf_per_discipline": 1.2646874062914404,
+    "Lambda_lat_inf_uniform_alpha23": 1.2763944145053552,
+    "Lambda_target_19_over_15": 1.2666666666666666,
+    "relative_match_percent_per_discipline": 0.1562573980441754,
+    "relative_match_percent_uniform": 0.7679800925280452,
+    "K_rec_component_match_percent_window": 0.20392156862745464,
+    "K_rec_component_match_percent_alpha23": 1.173373515362521,
+    "grad_component_match_percent": 0.0590224900542724
+  },
+  "LOO_jackknife": {
+    "grad_inf_mean": 0.4163530175604736,
+    "grad_inf_std": 0.006739211935331815,
+    "grad_inf_range": [
+      0.40905338866046753,
+      0.43412537565649834
+    ],
+    "target_5_over_12_inside_range": true,
+    "sigma_distance_target": 0.04654091742518234
+  },
+  "verdict": "Phase D-extension unconditional algebraic Theorem in Q under System R: Lambda_lat^row-mean,infty = 17/20 + 5/12 = 19/15 = 3 alpha_xi/2 + eps_sync^2 - gamma (N_gen+1)/N_gen, with empirical lattice extrapolation match 0.16% relative under per-component-appropriate disciplines, with LOO jackknife confirming the gradient sub-component within 0.05 sigma of the rational target. The N_gen = 3 explicit dependence is inherited from the Lemma 5 generation factor.",
+  "open_pieces": "Pointwise Frobenius full-tensor residual identity over all components remains open; larger-N D1 lattice run for tighter verification of the 5/12 identification is the natural next extension."
+}

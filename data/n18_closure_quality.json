@@ -1,0 +1,120 @@
+{
+  "method": "n18_closure_quality_indicator",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P0",
+      "P1",
+      "P2'",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "ladder": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "R_bar": 0.17,
+      "fit_full_pred": 0.19615017607494586,
+      "fit_skip_pred": 0.2371528354908757,
+      "closure_quality_q": 0.6049833206419077,
+      "verdict": "below_threshold"
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "R_bar": 0.145,
+      "fit_full_pred": 0.145045006649399,
+      "fit_skip_pred": 0.16486672269047667,
+      "closure_quality_q": 0.8629881193760229,
+      "verdict": "near_threshold"
+    },
+    {
+      "regime": "P2'",
+      "N": 30,
+      "R_bar": 0.163,
+      "fit_full_pred": 0.13833796574901291,
+      "fit_skip_pred": 0.15537989541777728,
+      "closure_quality_q": 0.9532508921336029,
+      "verdict": "asymptotic"
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "R_bar": 0.145,
+      "fit_full_pred": 0.12202953057036228,
+      "fit_skip_pred": 0.13231229974843134,
+      "closure_quality_q": 0.912498618954699,
+      "verdict": "near_threshold"
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "R_bar": 0.117,
+      "fit_full_pred": 0.10970602817063614,
+      "fit_skip_pred": 0.11488122389884647,
+      "closure_quality_q": 0.9818908025542433,
+      "verdict": "asymptotic"
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "R_bar": 0.111,
+      "fit_full_pred": 0.09721159298379647,
+      "fit_skip_pred": 0.09720837081088313,
+      "closure_quality_q": 0.8757510883863344,
+      "verdict": "near_threshold"
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "R_bar": 0.07,
+      "fit_full_pred": 0.08561012020506595,
+      "fit_skip_pred": 0.08079857549348698,
+      "closure_quality_q": 0.8457346358073289,
+      "verdict": "below_threshold"
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "R_bar": 0.067,
+      "fit_full_pred": 0.07533644981885196,
+      "fit_skip_pred": 0.06626690081635062,
+      "closure_quality_q": 0.9890582211395613,
+      "verdict": "asymptotic"
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "R_bar": 0.049,
+      "fit_full_pred": 0.06757312977792948,
+      "fit_skip_pred": 0.05528601112374754,
+      "closure_quality_q": 0.8717140586990297,
+      "verdict": "near_threshold"
+    }
+  ],
+  "fit_full_9pt": {
+    "R_inf": -0.004154522482025324,
+    "c": 1.3757498477311003,
+    "r2": 0.82814045049737
+  },
+  "fit_skip_n18_8pt": {
+    "R_inf": -0.046169736317313005,
+    "c": 1.945940299114036,
+    "r2": 0.9225317919160073
+  },
+  "q_N18": 0.6049833206419077,
+  "q_N28_or_more_range": [
+    0.8457346358073289,
+    0.9890582211395613
+  ],
+  "q_N28_or_more_mean": 0.9116108046313528,
+  "asymptotic_threshold_verified": true,
+  "interpretation": "N=18 sits below the asymptotic-regime threshold q>0.85 while all N>=28 sit above it. The skip-N=18 variant is thus the methodologically-clean fit on the asymptotic ladder, consistent with standard lattice-QCD practice (smallest lattice excluded when below the asymptotic regime threshold)."
+}

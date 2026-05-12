@@ -1,0 +1,64 @@
+================================================================================
+Event-driven materialization audit (L1, L2, L3, L4)
+================================================================================
+
+--- P5N64 N=64 (n_seeds=8) ---
+  L1 (mode-coincidence): mass_ratio_high/low = nan  (=1 means no signal)
+  L2 (triangle+tail):  frac_with_tail=1.000  mass_ratio_with/without = nan
+  L3 (vortex collisions): n3=1.2 n2=2.6 n_coll=0.00 mass=nan
+  L4 (formation+spin): events=200 (+spin=96, -spin=104) mass(+)/mass(-) = 0.99976
+  L5 (matter/antimatter): n_M/n_A = 2.9799 (binom 3.0; n_M=1494, n_A=506)  mass(M)/mass(A) = 0.99979
+--- P5N72 N=72 (n_seeds=8) ---
+  L1 (mode-coincidence): mass_ratio_high/low = nan  (=1 means no signal)
+  L2 (triangle+tail):  frac_with_tail=1.000  mass_ratio_with/without = nan
+  L3 (vortex collisions): n3=1.0 n2=2.6 n_coll=0.00 mass=nan
+  L4 (formation+spin): events=199 (+spin=102, -spin=97) mass(+)/mass(-) = 0.99851
+  L5 (matter/antimatter): n_M/n_A = 3.1740 (binom 3.0; n_M=1519, n_A=481)  mass(M)/mass(A) = 1.00060
+--- P5N84 N=84 (n_seeds=8) ---
+  L1 (mode-coincidence): mass_ratio_high/low = nan  (=1 means no signal)
+  L2 (triangle+tail):  frac_with_tail=1.000  mass_ratio_with/without = nan
+  L3 (vortex collisions): n3=1.0 n2=2.1 n_coll=0.25 mass=0.2328
+  L4 (formation+spin): events=199 (+spin=99, -spin=100) mass(+)/mass(-) = 1.00050
+  L5 (matter/antimatter): n_M/n_A = 2.9741 (binom 3.0; n_M=1496, n_A=504)  mass(M)/mass(A) = 0.99956
+--- P5N100 N=100 (n_seeds=8) ---
+  L1 (mode-coincidence): mass_ratio_high/low = nan  (=1 means no signal)
+  L2 (triangle+tail):  frac_with_tail=1.000  mass_ratio_with/without = nan
+  L3 (vortex collisions): n3=1.0 n2=2.9 n_coll=0.00 mass=nan
+  L4 (formation+spin): events=195 (+spin=104, -spin=91) mass(+)/mass(-) = 0.99899
+  L5 (matter/antimatter): n_M/n_A = 2.9935 (binom 3.0; n_M=1498, n_A=502)  mass(M)/mass(A) = 1.00005
+--- P5N128 N=128 (n_seeds=4) ---
+  L1 (mode-coincidence): mass_ratio_high/low = nan  (=1 means no signal)
+  L2 (triangle+tail):  frac_with_tail=1.000  mass_ratio_with/without = nan
+  L3 (vortex collisions): n3=2.2 n2=1.8 n_coll=0.25 mass=0.2174
+  L4 (formation+spin): events=171 (+spin=85, -spin=86) mass(+)/mass(-) = 0.99869
+  L5 (matter/antimatter): n_M/n_A = 3.2967 (binom 3.0; n_M=1534, n_A=466)  mass(M)/mass(A) = 0.99980
+--- P5N200 N=200 (n_seeds=4) ---
+  L1 (mode-coincidence): mass_ratio_high/low = nan  (=1 means no signal)
+  L2 (triangle+tail):  frac_with_tail=1.000  mass_ratio_with/without = nan
+  L3 (vortex collisions): n3=0.8 n2=3.0 n_coll=0.00 mass=nan
+  L4 (formation+spin): events=172 (+spin=82, -spin=90) mass(+)/mass(-) = 1.00183
+  L5 (matter/antimatter): n_M/n_A = 2.8979 (binom 3.0; n_M=1486, n_A=514)  mass(M)/mass(A) = 1.00000
+--- P5N256 N=256 (n_seeds=2) ---
+  L1 (mode-coincidence): mass_ratio_high/low = nan  (=1 means no signal)
+  L2 (triangle+tail):  frac_with_tail=1.000  mass_ratio_with/without = nan
+  L3 (vortex collisions): n3=1.5 n2=2.0 n_coll=0.00 mass=nan
+  L4 (formation+spin): events=170 (+spin=81, -spin=88) mass(+)/mass(-) = 1.00082
+  L5 (matter/antimatter): n_M/n_A = 2.9370 (binom 3.0; n_M=1492, n_A=508)  mass(M)/mass(A) = 1.00003
+--- P5N300 N=300 (n_seeds=2) ---
+  L1 (mode-coincidence): mass_ratio_high/low = nan  (=1 means no signal)
+  L2 (triangle+tail):  frac_with_tail=1.000  mass_ratio_with/without = nan
+  L3 (vortex collisions): n3=1.5 n2=1.5 n_coll=0.00 mass=nan
+  L4 (formation+spin): events=188 (+spin=88, -spin=99) mass(+)/mass(-) = 1.00095
+  L5 (matter/antimatter): n_M/n_A = 3.0090 (binom 3.0; n_M=1501, n_A=499)  mass(M)/mass(A) = 0.99957
+
+================================================================================
+Cross-regime synthesis (L1, L2, L3, L4)
+================================================================================
+  L2 frac_with_tail: 1.00000 +/- 0.00000
+  L3 n_collisions per seed: 0.06250 +/- 0.10825
+  L4 spin_outcome_ratio (=1: no signal): 1.00001 +/- 0.00113   (deviation from 1 = 0.00σ)
+  L4 n_events per seed: 186.68750 +/- 12.65513
+  L5 n_matter/n_antimatter (binom 3.0): 3.03276 +/- 0.12516
+  L5 mass_M/mass_A (=1: no signal): 0.99993 +/- 0.00031
+
+Saved C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\audit_event_driven_materialization.json

@@ -1,0 +1,141 @@
+{
+  "method": "per_node_pearson_correlation_residual_00_vs_structural_features",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "lambda_t_reference": 0.81,
+  "n_nodes_total": 1720,
+  "residual_statistics": {
+    "median": -0.0153269345437817,
+    "mean": -0.03148827453399621,
+    "std": 0.10185624869646821,
+    "median_abs": 0.02047607274210783
+  },
+  "per_feature_correlation": [
+    {
+      "feature": "omega_a",
+      "pearson_r": -0.5594268230381766,
+      "r_squared": 0.31295837033458734,
+      "mean": 10.049163431453573,
+      "std": 14.263000531334885
+    },
+    {
+      "feature": "degree",
+      "pearson_r": -0.2976027485653226,
+      "r_squared": 0.08856739595363462,
+      "mean": 15.373255813953488,
+      "std": 4.93977507299356
+    },
+    {
+      "feature": "psi_sq",
+      "pearson_r": -0.09807935181173076,
+      "r_squared": 0.009619559251809254,
+      "mean": 0.2360197532914799,
+      "std": 0.012638815367207666
+    },
+    {
+      "feature": "phase_var",
+      "pearson_r": -0.0856014179185582,
+      "r_squared": 0.007327602749667657,
+      "mean": 3.0345043650323023,
+      "std": 0.7842521515656572
+    },
+    {
+      "feature": "K_row",
+      "pearson_r": -0.10566199317437204,
+      "r_squared": 0.011164456801581044,
+      "mean": 1.3450761920641687,
+      "std": 0.026805838285808438
+    },
+    {
+      "feature": "Q_row",
+      "pearson_r": 0.2957852855107814,
+      "r_squared": 0.08748893512469448,
+      "mean": 0.41660963380210125,
+      "std": 0.07310182747240072
+    },
+    {
+      "feature": "xi_max",
+      "pearson_r": -0.4896650625509276,
+      "r_squared": 0.23977187348300386,
+      "mean": NaN,
+      "std": NaN
+    },
+    {
+      "feature": "xi_min",
+      "pearson_r": 0.07357224441342793,
+      "r_squared": 0.005412875148029177,
+      "mean": 0.10852341305361364,
+      "std": 0.012542765411216244
+    },
+    {
+      "feature": "xi_var",
+      "pearson_r": -0.44880082104646685,
+      "r_squared": 0.20142217697198275,
+      "mean": 0.02227084788495245,
+      "std": 0.01032258545105639
+    },
+    {
+      "feature": "boundary_proxy",
+      "pearson_r": 0.2704945488613891,
+      "r_squared": 0.0731673009637264,
+      "mean": 0.7783565006567604,
+      "std": 0.09984743217526248
+    },
+    {
+      "feature": "r_bar_h",
+      "pearson_r": -0.29512885325852917,
+      "r_squared": 0.08710104002569444,
+      "mean": 0.03235993203735919,
+      "std": 0.023955726345258038
+    },
+    {
+      "feature": "N_value",
+      "pearson_r": 0.06445185577652539,
+      "r_squared": 0.004154041713038029,
+      "mean": 75.43255813953489,
+      "std": 16.86923332551915
+    }
+  ],
+  "top_5_features_by_abs_r": [
+    {
+      "feature": "omega_a",
+      "pearson_r": -0.5594268230381766,
+      "r_squared": 0.31295837033458734,
+      "mean": 10.049163431453573,
+      "std": 14.263000531334885
+    },
+    {
+      "feature": "xi_max",
+      "pearson_r": -0.4896650625509276,
+      "r_squared": 0.23977187348300386,
+      "mean": NaN,
+      "std": NaN
+    },
+    {
+      "feature": "xi_var",
+      "pearson_r": -0.44880082104646685,
+      "r_squared": 0.20142217697198275,
+      "mean": 0.02227084788495245,
+      "std": 0.01032258545105639
+    },
+    {
+      "feature": "degree",
+      "pearson_r": -0.2976027485653226,
+      "r_squared": 0.08856739595363462,
+      "mean": 15.373255813953488,
+      "std": 4.93977507299356
+    },
+    {
+      "feature": "Q_row",
+      "pearson_r": 0.2957852855107814,
+      "r_squared": 0.08748893512469448,
+      "mean": 0.41660963380210125,
+      "std": 0.07310182747240072
+    }
+  ],
+  "verdict": "WEAK_BUT_DETECTABLE = omega_a (|r|=0.559)"
+}

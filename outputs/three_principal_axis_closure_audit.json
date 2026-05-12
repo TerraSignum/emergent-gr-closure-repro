@@ -1,0 +1,106 @@
+{
+  "method": "three_principal_axis_symanzik_with_bootstrap",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "regimes_loaded": [
+    "P0",
+    "P1",
+    "P2prime",
+    "P3",
+    "P4",
+    "P5",
+    "P6",
+    "P5N64",
+    "P7",
+    "P8",
+    "P5N100"
+  ],
+  "n_pts": 11,
+  "fits": {
+    "R_diag1_median_abs": {
+      "d_inf": 0.0,
+      "c_2": 33.4436725285328,
+      "c_4": 5924.751412111121,
+      "R_squared": 0.9719488570629718
+    },
+    "R_diag2_median_abs": {
+      "d_inf": 0.0,
+      "c_2": 34.37470544424788,
+      "c_4": 2331.6037801493558,
+      "R_squared": 0.9636980694741144
+    },
+    "R_diag3_median_abs": {
+      "d_inf": 0.0,
+      "c_2": 67.51051965721284,
+      "c_4": -5103.907659909432,
+      "R_squared": 0.9623061495369554
+    },
+    "R_diag1_mean_abs": {
+      "d_inf": 0.0,
+      "c_2": 319.3893927098824,
+      "c_4": 106607.73081537437,
+      "R_squared": 0.9437306748375307
+    },
+    "R_diag2_mean_abs": {
+      "d_inf": 0.0,
+      "c_2": 326.5872675863083,
+      "c_4": 95941.76852628554,
+      "R_squared": 0.9413684211287382
+    },
+    "R_diag3_mean_abs": {
+      "d_inf": 0.0,
+      "c_2": 361.4117477986793,
+      "c_4": 83275.16675733539,
+      "R_squared": 0.9394705820455119
+    }
+  },
+  "bootstraps": {
+    "R_diag1_median_abs": {
+      "n_resamples": 1000,
+      "mean": 0.004210527215267234,
+      "median": 0.0027826482607225082,
+      "ci_2_5": 0.0,
+      "ci_97_5": 0.016496945613495916
+    },
+    "R_diag2_median_abs": {
+      "n_resamples": 1000,
+      "mean": 0.0036340498222202796,
+      "median": 0.0015175621096423274,
+      "ci_2_5": 0.0,
+      "ci_97_5": 0.01487028993670677
+    },
+    "R_diag3_median_abs": {
+      "n_resamples": 1000,
+      "mean": 0.0035200625270901697,
+      "median": 0.0002818272791410784,
+      "ci_2_5": 0.0,
+      "ci_97_5": 0.016183927695497057
+    },
+    "R_diag1_mean_abs": {
+      "n_resamples": 1000,
+      "mean": 0.024188741817521283,
+      "median": 0.0,
+      "ci_2_5": 0.0,
+      "ci_97_5": 0.11530816362654506
+    },
+    "R_diag2_mean_abs": {
+      "n_resamples": 1000,
+      "mean": 0.023336869161124055,
+      "median": 0.0,
+      "ci_2_5": 0.0,
+      "ci_97_5": 0.11393043142913666
+    },
+    "R_diag3_mean_abs": {
+      "n_resamples": 1000,
+      "mean": 0.024235158272698377,
+      "median": 0.0,
+      "ci_2_5": 0.0,
+      "ci_97_5": 0.11716925314456303
+    }
+  },
+  "verdict": "ALL_THREE_PRINCIPAL_AXES_CLOSE"
+}

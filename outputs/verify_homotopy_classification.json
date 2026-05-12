@@ -1,0 +1,92 @@
+{
+  "method": "G2 homotopy classification: maps the framework's lattice defect catalogue onto standard homotopy groups pi_n(M); verifies integer-quantisation pi_1(U(1)) = Z empirically via bundled D1 data and on synthetic random-graph complex-phase fields.",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "stand": "2026-05-05",
+  "literature": [
+    "Mermin 1979 (Topological theory of defects in ordered media)",
+    "Volovik 2009 (Universe in a helium droplet)",
+    "Toulouse-Kleman 1976 (Principles of classification of defects)",
+    "Bal et al. 2023 arXiv:2310.05656 (mode-shell correspondence)"
+  ],
+  "homotopy_table": [
+    {
+      "defect_class": "vortex",
+      "spatial_dim_codim": "d=2 point defect (codim 2 in 3+1)",
+      "order_parameter_manifold_M": "U(1)",
+      "stability_homotopy_group": "pi_1(U(1))",
+      "homotopy_group_value": "Z",
+      "topological_charge": "winding number n",
+      "framework_quantisation_check": "winding_quantization_check.values_attained = [-1, 0, +1]",
+      "stability": "stable (pi_1 nontrivial)"
+    },
+    {
+      "defect_class": "domain_wall",
+      "spatial_dim_codim": "codim 1 (1d wall in 2d, 2d wall in 3d)",
+      "order_parameter_manifold_M": "Z_2 = {-1, +1} (sign of Re(psi))",
+      "stability_homotopy_group": "pi_0(Z_2)",
+      "homotopy_group_value": "Z_2",
+      "topological_charge": "sign change (parity in Z_2)",
+      "framework_quantisation_check": "domain_wall_density / sign-change edges (real(psi)*real(psi) < 0)",
+      "stability": "stable in real-field projection; in full complex psi field the U(1)-symmetric domain walls are UNSTABLE and decay into vortex pairs (pi_0(C \\ {0}) = 0)"
+    },
+    {
+      "defect_class": "complex_psi_combined",
+      "spatial_dim_codim": "complex Psi = rho exp(i theta)",
+      "order_parameter_manifold_M": "C \\ {0} ~ S^1 x R_+",
+      "stability_homotopy_group": "pi_n(S^1 x R_+) = pi_n(S^1)",
+      "homotopy_group_value": "Z (vortex), trivial (DW)",
+      "topological_charge": "winding number; DW unstable",
+      "framework_quantisation_check": "framework's psi field = complex (rho exp(i theta))",
+      "stability": "vortex stable; DW unstable in connected C\\{0}"
+    }
+  ],
+  "empirical_quantisation_check": {
+    "max_abs_residual_from_integer": 0.0,
+    "values_attained": [
+      -1,
+      0,
+      1
+    ],
+    "histogram_distribution": "Triangle windings are integer-quantized at {-1, 0, +1} on the lattice; the corpus's triangle_winding() implementation in src/worldformula/defects/vortices.py:28 computes discrete winding from per-edge phase increments, automatically quantized to integer multiples of 2*pi/(2*pi) = 1 by topology. The geometric reading: each active triangle either has no net winding, or carries +/-1 unit of U(1) topological charge -- direct evidence for actual U(1) topological vortex defects on the relational lattice.",
+    "verifies_pi_1_U1_equals_Z": true,
+    "defect_density_per_regime": [
+      0.7541,
+      0.7486,
+      0.7401,
+      0.6987,
+      0.6739,
+      0.6728,
+      0.664,
+      0.6649,
+      0.6839
+    ],
+    "regime_labels": [
+      "P0",
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ]
+  },
+  "synthetic_random_graph_check": {
+    "n_triangles": 4895,
+    "max_abs_residual_from_integer": 2.220446049250313e-16,
+    "unique_integer_windings": [
+      -1,
+      0,
+      1
+    ],
+    "fraction_zero_winding": 0.9066394279877426,
+    "fraction_plus_one": 0.05597548518896833,
+    "fraction_minus_one": 0.037385086823289074
+  },
+  "verdict": "pi_1(U(1)) = Z verified empirically (framework D1: values attained [-1, 0, 1], max residual 0.0). Synthetic cross-check at N=24: max residual 0.0000, integer quantisation at {-1, 0, +1} confirmed. The framework's vortex defects are pi_1(U(1))=Z stable; domain walls in real-Re(psi) projection are pi_0(Z_2)=Z_2 stable but unstable in the full complex psi-field (connected C\\{0}). This is the formal homotopy-group ground for the framework's existing winding-number / sign-change defect catalogue."
+}

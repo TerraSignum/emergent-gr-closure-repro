@@ -1,0 +1,136 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "title": "Runner A: Hessian-Ricci tensor Galerkin Frobenius",
+  "backend": "cupy",
+  "lambda_struct": {
+    "t": 0.81,
+    "s": -0.005000000000000001
+  },
+  "trend": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "blind_frob_mean": 4.103717865079576,
+      "blind_frob_median": 1.8601056691080424,
+      "struct_frob_mean": 3.6248884045893135,
+      "struct_frob_median": 1.3221797723516142,
+      "t_off_F_mean": 1.774579124206937,
+      "r_bar_h_mean": -0.7635581693912155,
+      "blind_lam_t": 1.870596555841908,
+      "blind_lam_s": -0.6715558653731655
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "blind_frob_mean": 0.6429476630885488,
+      "blind_frob_median": 0.24591347328718874,
+      "struct_frob_mean": 0.579848784467192,
+      "struct_frob_median": 0.15171513944127277,
+      "t_off_F_mean": 0.37303129945925423,
+      "r_bar_h_mean": 0.06968730080028465,
+      "blind_lam_t": 0.933833212518734,
+      "blind_lam_s": -0.09751646016196175
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "blind_frob_mean": 1.6631543694217106,
+      "blind_frob_median": 0.5998327941478993,
+      "struct_frob_mean": 1.4537766846701885,
+      "struct_frob_median": 0.31069031696029814,
+      "t_off_F_mean": 0.9840400590810622,
+      "r_bar_h_mean": -0.038266230079626186,
+      "blind_lam_t": 1.164645265702567,
+      "blind_lam_s": -0.2604924726694021
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "blind_frob_mean": 0.8452706649820266,
+      "blind_frob_median": 0.2862153633406329,
+      "struct_frob_mean": 0.7032049163850792,
+      "struct_frob_median": 0.08164491127510605,
+      "t_off_F_mean": 0.43188079204769264,
+      "r_bar_h_mean": 0.02352492941873039,
+      "blind_lam_t": 0.977171996478398,
+      "blind_lam_s": -0.12154854165425434
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "blind_frob_mean": 0.21182427611907328,
+      "blind_frob_median": 0.07455114951159002,
+      "struct_frob_mean": 0.18909108168218877,
+      "struct_frob_median": 0.03951722427485533,
+      "t_off_F_mean": 0.14220503768529988,
+      "r_bar_h_mean": 0.05792149682583815,
+      "blind_lam_t": 0.847322930049228,
+      "blind_lam_s": -0.027958902328478905
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "blind_frob_mean": 0.31689206296383543,
+      "blind_frob_median": 0.10943337558060207,
+      "struct_frob_mean": 0.28041332216226755,
+      "struct_frob_median": 0.05070184675471433,
+      "t_off_F_mean": 0.2077627348519546,
+      "r_bar_h_mean": 0.055721202131833146,
+      "blind_lam_t": 0.8795886865466139,
+      "blind_lam_s": -0.04567901710030882
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "blind_frob_mean": 0.21609562546056077,
+      "blind_frob_median": 0.07434369242313311,
+      "struct_frob_mean": 0.1902465483066764,
+      "struct_frob_median": 0.03299846511468243,
+      "t_off_F_mean": 0.14438193395135843,
+      "r_bar_h_mean": 0.04263170571904022,
+      "blind_lam_t": 0.8562922659002226,
+      "blind_lam_s": -0.028824835770294998
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "blind_frob_mean": 0.08669672161243518,
+      "blind_frob_median": 0.035082175224219546,
+      "struct_frob_mean": 0.08236427253794688,
+      "struct_frob_median": 0.02804467868377309,
+      "t_off_F_mean": 0.05382523090148822,
+      "r_bar_h_mean": 0.03237986221407136,
+      "blind_lam_t": 0.8208763022187562,
+      "blind_lam_s": -0.009105207037820988
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "blind_frob_mean": 0.13563132424823793,
+      "blind_frob_median": 0.050178688850812815,
+      "struct_frob_mean": 0.12257164589961496,
+      "struct_frob_median": 0.02856465978963739,
+      "t_off_F_mean": 0.07795144782163807,
+      "r_bar_h_mean": 0.03289091003006353,
+      "blind_lam_t": 0.8414692396034322,
+      "blind_lam_s": -0.01703555549449226
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "blind_frob_mean": 0.0683738370903949,
+      "blind_frob_median": 0.028041757258737008,
+      "struct_frob_mean": 0.06697823369616819,
+      "struct_frob_median": 0.026146089755988165,
+      "t_off_F_mean": 0.0415151025287132,
+      "r_bar_h_mean": 0.02136444372202293,
+      "blind_lam_t": 0.8175056921010313,
+      "blind_lam_s": -0.006983660234458901
+    }
+  ]
+}

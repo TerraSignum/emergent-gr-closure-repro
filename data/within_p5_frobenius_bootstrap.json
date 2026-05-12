@@ -1,0 +1,84 @@
+{
+  "method": "within_p5_frobenius_bootstrap_symanzik2",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "N",
+      "n_seeds_per_N",
+      "blind_frob_median_per_N"
+    ],
+    "branch_rationale": "Within-P5 Galerkin / Einstein-residual diagnostic; matter-projection source-side test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Symanzik-2 bootstrap CI on the within-P5 7-point Frobenius asymptote at fixed P5 physics.",
+  "ladder": {
+    "N": [
+      50,
+      64,
+      72,
+      84,
+      100,
+      200,
+      300
+    ],
+    "n_seeds_per_N": [
+      4,
+      4,
+      4,
+      4,
+      4,
+      2,
+      2
+    ],
+    "blind_frob_median_per_N": [
+      0.1094333755806021,
+      0.07434369242313307,
+      0.05319887258060185,
+      0.030161321283262828,
+      0.035976794112663704,
+      0.01473480048125309,
+      0.014257288463627197
+    ]
+  },
+  "symanzik2_fit_on_means": {
+    "y_inf": 0.007381360362984566,
+    "c2": 251.5405661337642,
+    "r2": 0.9673036050951351
+  },
+  "free_power_law_fit_on_means": {
+    "p": 2.37,
+    "a": 0.011691633983230181,
+    "b": 1057.3921765955274,
+    "rss": 0.0001955103973014949,
+    "r2": 0.9728489157827841
+  },
+  "bootstrap_n5000": {
+    "symanzik2": {
+      "n_valid": 5000,
+      "median": 0.007388943400956582,
+      "CI95": [
+        -3.3213666742095164e-05,
+        0.015219501397581683
+      ],
+      "CI68": [
+        0.003579626653435166,
+        0.011276035999667915
+      ]
+    },
+    "free_power_law": {
+      "n_valid": 5000,
+      "asymp_median": 0.011460277017397526,
+      "asymp_CI95": [
+        -0.000895796005904234,
+        0.018385321886694433
+      ],
+      "p_median": 2.3800000000000003,
+      "p_CI95": [
+        1.21,
+        4.0
+      ]
+    }
+  },
+  "closure_threshold": 0.05,
+  "symanzik2_ci95_upper_below_threshold": true
+}

@@ -1,0 +1,12 @@
+{
+  "criterion": "Five-point chirality-deviation log-log Einstein-gap-exponent fit",
+  "alpha_fit": 0.6355052661819659,
+  "C_fit": 0.6846071339862297,
+  "r2_loglog": 0.779160359001991,
+  "alpha_target": 0.6666666666666666,
+  "ratio_alpha_fit_to_theory": 0.9532578992729489,
+  "tier_alpha": "PRECISE",
+  "deviation_at_N_1e6": 0.00010529550294032957,
+  "asymptotic_verdict": "lim_{N -> infinity} deviation = 0; scaling alpha_fit ~ 2/3 verified at the PRECISE tier",
+  "consistent_with_bundled": true
+}

@@ -1,0 +1,166 @@
+{
+  "method": "classical_energy_condition_test_on_diagonal_block",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "signature_convention": "(-, +, +, +); T_munu = diag(rho, p, p, p); rho = T_00, p = T_ii (spatial-isotropy-averaged)",
+  "K_rec_convention": "row-mean Definition 12.20",
+  "per_regime": [
+    {
+      "label": "P0",
+      "N": 18,
+      "rho_T_00": 1.4624,
+      "p_T_ii": -0.4905,
+      "rho_plus_p": 0.9719,
+      "rho_plus_3p": -0.009100000000000108,
+      "abs_p": 0.4905,
+      "NEC": true,
+      "WEC": true,
+      "SEC": false,
+      "DEC": true,
+      "w_eff": -0.3354075492341357
+    },
+    {
+      "label": "P1",
+      "N": 28,
+      "rho_T_00": 1.4046,
+      "p_T_ii": -0.448,
+      "rho_plus_p": 0.9566000000000001,
+      "rho_plus_3p": 0.06059999999999999,
+      "abs_p": 0.448,
+      "NEC": true,
+      "WEC": true,
+      "SEC": true,
+      "DEC": true,
+      "w_eff": -0.3189520148084864
+    },
+    {
+      "label": "P2prime",
+      "N": 30,
+      "rho_T_00": 1.4095,
+      "p_T_ii": -0.4536,
+      "rho_plus_p": 0.9559,
+      "rho_plus_3p": 0.048699999999999966,
+      "abs_p": 0.4536,
+      "NEC": true,
+      "WEC": true,
+      "SEC": true,
+      "DEC": true,
+      "w_eff": -0.3218162468960624
+    },
+    {
+      "label": "P3",
+      "N": 36,
+      "rho_T_00": 1.3758,
+      "p_T_ii": -0.4291,
+      "rho_plus_p": 0.9466999999999999,
+      "rho_plus_3p": 0.08850000000000002,
+      "abs_p": 0.4291,
+      "NEC": true,
+      "WEC": true,
+      "SEC": true,
+      "DEC": true,
+      "w_eff": -0.31189126326500943
+    },
+    {
+      "label": "P4",
+      "N": 42,
+      "rho_T_00": 1.3985,
+      "p_T_ii": -0.449,
+      "rho_plus_p": 0.9495,
+      "rho_plus_3p": 0.0515000000000001,
+      "abs_p": 0.449,
+      "NEC": true,
+      "WEC": true,
+      "SEC": true,
+      "DEC": true,
+      "w_eff": -0.32105827672506254
+    },
+    {
+      "label": "P5",
+      "N": 50,
+      "rho_T_00": 1.379,
+      "p_T_ii": -0.4299,
+      "rho_plus_p": 0.9491,
+      "rho_plus_3p": 0.08929999999999993,
+      "abs_p": 0.4299,
+      "NEC": true,
+      "WEC": true,
+      "SEC": true,
+      "DEC": true,
+      "w_eff": -0.3117476432197244
+    },
+    {
+      "label": "P6",
+      "N": 60,
+      "rho_T_00": 1.3547,
+      "p_T_ii": -0.412,
+      "rho_plus_p": 0.9427000000000001,
+      "rho_plus_3p": 0.11870000000000003,
+      "abs_p": 0.412,
+      "NEC": true,
+      "WEC": true,
+      "SEC": true,
+      "DEC": true,
+      "w_eff": -0.3041263748431387
+    },
+    {
+      "label": "P7",
+      "N": 72,
+      "rho_T_00": 1.3186,
+      "p_T_ii": -0.3806,
+      "rho_plus_p": 0.938,
+      "rho_plus_3p": 0.17680000000000007,
+      "abs_p": 0.3806,
+      "NEC": true,
+      "WEC": true,
+      "SEC": true,
+      "DEC": true,
+      "w_eff": -0.2886394661004095
+    },
+    {
+      "label": "P8",
+      "N": 84,
+      "rho_T_00": 1.3496,
+      "p_T_ii": -0.4069,
+      "rho_plus_p": 0.9426999999999999,
+      "rho_plus_3p": 0.12890000000000001,
+      "abs_p": 0.4069,
+      "NEC": true,
+      "WEC": true,
+      "SEC": true,
+      "DEC": true,
+      "w_eff": -0.30149673977474806
+    }
+  ],
+  "asymptotic_window_N_geq_42": {
+    "rho_mean": 1.36008,
+    "p_mean": -0.41567999999999994,
+    "rho_plus_p_mean": 0.9443999999999999,
+    "rho_plus_3p_mean": 0.11304000000000003,
+    "w_eff_mean": -0.30541370013261665
+  },
+  "pass_counts": {
+    "NEC": 9,
+    "WEC": 9,
+    "SEC": 8,
+    "DEC": 9,
+    "total_regimes": 9
+  },
+  "headline": "NEC, WEC, DEC robustly satisfied across all 9 regimes; SEC sits AT THE BOUNDARY (rho + 3p ~ +0.10 over N >= 42, regime-by-regime spread 0 ... +0.18). The emergent source is not phantom, not strongly dark-energy, and not ordinary matter -- it lies precisely on the gravitational dividing line between attractive and acceleration-driving sources.",
+  "comparative_reference": {
+    "pure_cosmological_constant_w_neg_1": "SEC violated by 2*rho",
+    "phantom_w_below_neg_1": "NEC violated",
+    "acceleration_threshold_w_neg_1_over_3": "SEC = 0 (boundary)",
+    "pressureless_matter_w_0": "SEC = rho > 0",
+    "radiation_w_plus_1_over_3": "SEC = 2*rho > 0"
+  },
+  "reviewer_hedging": {
+    "diagonal_block_only": "Off-diagonal T_ij not separately reported (no preferred spatial axis on the relational lattice).",
+    "spatial_isotropy": "T_11 = T_22 = T_33 = T_ii enforced by per-node reconstruction.",
+    "K_rec_convention": "Row-mean Def 12.20 throughout; proxy convention shifts T_00 down by ~0.57; T_ii K_rec-independent.",
+    "boundary_sensitivity": "SEC margin is small (asymptotic mean +0.10) and regime-dependent (P0 borderline, P4-P8 progressively safer); the closeness to the SEC boundary is the physically meaningful statement, not the precise per-regime numerical value of the margin."
+  }
+}

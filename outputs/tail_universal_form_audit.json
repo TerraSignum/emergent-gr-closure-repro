@@ -1,0 +1,163 @@
+{
+  "method": "tail_universal_form_search",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Tail / cluster / spectral-truncation diagnostic; branch-blind statistical structure",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "lambda_t": 0.81,
+  "lambda_s": -0.005,
+  "tail_fraction": 0.1,
+  "feature_keys": [
+    "T_00",
+    "grad_T_00",
+    "omega_a",
+    "psi_sq"
+  ],
+  "regime_means_per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "regime_means": {
+        "T_00": 0.9074492876125306,
+        "grad_T_00": 0.4502204585110339,
+        "omega_a": 15.180418450076797,
+        "psi_sq": 0.25229917561847864
+      },
+      "regime_mean_delta": 0.16818207015978243
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "regime_means": {
+        "T_00": 0.8370662333257919,
+        "grad_T_00": 0.11845765922062416,
+        "omega_a": 7.619687794751784,
+        "psi_sq": 0.243783378924143
+      },
+      "regime_mean_delta": 0.07439064833758666
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "regime_means": {
+        "T_00": 0.8776081187597427,
+        "grad_T_00": 0.3283241643945691,
+        "omega_a": 13.794838499459624,
+        "psi_sq": 0.2407489313588188
+      },
+      "regime_mean_delta": 0.12075005189502352
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "regime_means": {
+        "T_00": 0.8579146946184638,
+        "grad_T_00": 0.2221061554332204,
+        "omega_a": 11.071399626218547,
+        "psi_sq": 0.23564450070576942
+      },
+      "regime_mean_delta": 0.08930901569048044
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "regime_means": {
+        "T_00": 0.8281879139620427,
+        "grad_T_00": 0.1008271225611211,
+        "omega_a": 5.8918112005015155,
+        "psi_sq": 0.23016336547257202
+      },
+      "regime_mean_delta": 0.05931365072594043
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "regime_means": {
+        "T_00": 0.8569634267151204,
+        "grad_T_00": 0.14950083840687467,
+        "omega_a": 9.30015507440811,
+        "psi_sq": 0.2253847404148798
+      },
+      "regime_mean_delta": 0.07595389587841078
+    }
+  ],
+  "fits_per_form": {
+    "raw": {
+      "R_squared_pooled": 0.7693431553556418,
+      "intercept": -0.4579101456035517,
+      "coeffs": {
+        "T_00": 0.7053295197187182,
+        "grad_T_00": 0.018698677669641704,
+        "omega_a": 0.002961460350336842,
+        "psi_sq": 0.3482872873074713
+      }
+    },
+    "ratio": {
+      "R_squared_pooled": 0.7174263492290192,
+      "intercept": 0.1404539734982038,
+      "coeffs": {
+        "T_00": 0.7433740772871782,
+        "grad_T_00": 0.0009733749949847881,
+        "omega_a": 0.016006978318866105,
+        "psi_sq": -0.6222363020236281
+      }
+    },
+    "log_ratio": {
+      "R_squared_pooled": 0.8128861510955971,
+      "intercept": 0.25316549395972776,
+      "coeffs": {
+        "T_00": 1.0231816802768736,
+        "grad_T_00": 0.03782636451222354,
+        "omega_a": 0.021504120320568254,
+        "psi_sq": -0.46706230635547225
+      }
+    },
+    "ratio_target_norm": {
+      "R_squared_pooled": 0.7069763069046411,
+      "intercept": 7.9581273398803045,
+      "coeffs": {
+        "T_00": 3.2224607285800757,
+        "grad_T_00": 0.2698241361473699,
+        "omega_a": 0.4323017306663788,
+        "psi_sq": -8.961125677884805
+      }
+    }
+  },
+  "best_form": "log_ratio",
+  "best_R_squared_pooled": 0.8128861510955971,
+  "per_regime_R_squared_using_best": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "R_squared_in_regime": -1.8373275919678305
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "R_squared_in_regime": 0.8721204353984398
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "R_squared_in_regime": 0.6028037436797562
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "R_squared_in_regime": 0.8731224385737505
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "R_squared_in_regime": 0.8161992313772651
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "R_squared_in_regime": 0.7599303617226314
+    }
+  ],
+  "verdict": "TAIL_UNIVERSAL_FORM_HOLDS_LOG_RATIO"
+}

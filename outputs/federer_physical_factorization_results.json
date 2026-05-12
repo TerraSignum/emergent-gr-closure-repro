@@ -1,0 +1,178 @@
+{
+  "method": "federer_physical_factorization_empirical_test",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "regimes_used": [
+      "P5",
+      "P6",
+      "P5N64",
+      "P7",
+      "P5N72",
+      "P8",
+      "P5N84",
+      "P5N100",
+      "P5N128",
+      "P5N200",
+      "P5N256",
+      "P5N300"
+    ],
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "stand": "2026-05-04",
+  "system_R": {
+    "alpha_xi": 0.9,
+    "gamma": 0.1,
+    "alpha_xi_squared": 0.81,
+    "two_alpha_xi_gamma": 0.18000000000000002,
+    "c_TF": 0.16200000000000003,
+    "one_plus_gamma": 1.1
+  },
+  "per_regime": {
+    "P5": {
+      "N": 50,
+      "y_emp": 0.0318411337914067,
+      "lambda_t_emp": 0.8221559646482269,
+      "shear_emp": 0.012389639903396988,
+      "lambda_t_ratio_to_alpha_xi_sq": 1.015007363763243,
+      "pred_const": 0.030843677127683152,
+      "pred_F1": 0.03130655941013431,
+      "pred_F2": 0.0021230114050479784
+    },
+    "P6": {
+      "N": 60,
+      "y_emp": 0.028491032810895323,
+      "lambda_t_emp": 0.8171965903058869,
+      "shear_emp": 0.00897728672778498,
+      "lambda_t_ratio_to_alpha_xi_sq": 1.0088846793899837,
+      "pred_const": 0.029753552454980348,
+      "pred_F1": 0.03001790322925591,
+      "pred_F2": 0.0014839231753252735
+    },
+    "P5N64": {
+      "N": 64,
+      "y_emp": 0.02963885103699213,
+      "lambda_t_emp": 0.8161163913755328,
+      "shear_emp": 0.008418799653767154,
+      "lambda_t_ratio_to_alpha_xi_sq": 1.0075511004636206,
+      "pred_const": 0.0293625,
+      "pred_F1": 0.02958421918736306,
+      "pred_F2": 0.0013733166935207667
+    },
+    "P7": {
+      "N": 72,
+      "y_emp": 0.02838604588884681,
+      "lambda_t_emp": 0.8208965917017217,
+      "shear_emp": 0.007063734080555281,
+      "lambda_t_ratio_to_alpha_xi_sq": 1.0134525823478044,
+      "pred_const": 0.02864432347419311,
+      "pred_F1": 0.02902966359452684,
+      "pred_F2": 0.0011240882441061525
+    },
+    "P5N72": {
+      "N": 72,
+      "y_emp": 0.029074484458974852,
+      "lambda_t_emp": 0.8235097767150369,
+      "shear_emp": 0.007494906509676001,
+      "lambda_t_ratio_to_alpha_xi_sq": 1.0166787366852306,
+      "pred_const": 0.02864432347419311,
+      "pred_F1": 0.029122074602945747,
+      "pred_F2": 0.0011927029248444165
+    },
+    "P8": {
+      "N": 84,
+      "y_emp": 0.02705026318697112,
+      "lambda_t_emp": 0.8158995382731908,
+      "shear_emp": 0.005664665157229219,
+      "lambda_t_ratio_to_alpha_xi_sq": 1.007283380584186,
+      "pred_const": 0.027699525339623388,
+      "pred_F1": 0.02790127152467317,
+      "pred_F2": 0.0008717140892397358
+    },
+    "P5N84": {
+      "N": 84,
+      "y_emp": 0.02743324809002802,
+      "lambda_t_emp": 0.822302665166957,
+      "shear_emp": 0.006308214588144438,
+      "lambda_t_ratio_to_alpha_xi_sq": 1.0151884755147618,
+      "pred_const": 0.027699525339623388,
+      "pred_F1": 0.028120238902014778,
+      "pred_F2": 0.0009707474990671596
+    },
+    "P5N100": {
+      "N": 100,
+      "y_emp": 0.026042028717455982,
+      "lambda_t_emp": 0.8196475847656411,
+      "shear_emp": 0.005306275063305909,
+      "lambda_t_ratio_to_alpha_xi_sq": 1.0119105984761,
+      "pred_const": 0.026630530677018552,
+      "pred_F1": 0.026947716235117984,
+      "pred_F2": 0.0007850495603003697
+    },
+    "P5N128": {
+      "N": 128,
+      "y_emp": 0.024334076564535644,
+      "lambda_t_emp": 0.7888642486244262,
+      "shear_emp": 0.002920974878894499,
+      "lambda_t_ratio_to_alpha_xi_sq": 0.9739064797832421,
+      "pred_const": 0.02512868595575397,
+      "pred_F1": 0.024472990080746944,
+      "pred_F2": 0.0004077792245354796
+    },
+    "P5N200": {
+      "N": 200,
+      "y_emp": 0.02192342524494404,
+      "lambda_t_emp": 0.8165202167940959,
+      "shear_emp": 0.0021725318239484534,
+      "lambda_t_ratio_to_alpha_xi_sq": 1.0080496503630814,
+      "pred_const": 0.022491010726667173,
+      "pred_F1": 0.022672055499329158,
+      "pred_F2": 0.00027145798086916916
+    },
+    "P5N256": {
+      "N": 256,
+      "y_emp": 0.020635083591786257,
+      "lambda_t_emp": 0.8177139638569066,
+      "shear_emp": 0.001637301057050649,
+      "lambda_t_ratio_to_alpha_xi_sq": 1.0095234121690204,
+      "pred_const": 0.02109348145629723,
+      "pred_F1": 0.021294363374285138,
+      "pred_F2": 0.00019186877491818728
+    },
+    "P5N300": {
+      "N": 300,
+      "y_emp": 0.02132852748931138,
+      "lambda_t_emp": 0.8138908624208222,
+      "shear_emp": 0.0013439502148977888,
+      "lambda_t_ratio_to_alpha_xi_sq": 1.004803533852867,
+      "pred_const": 0.020223153907920607,
+      "pred_F1": 0.020320296512329042,
+      "pred_F2": 0.00015099395578033865
+    }
+  },
+  "fit_quality": {
+    "H_const": {
+      "rmse": 0.0007153849500153897,
+      "aicc": -173.82455444450702,
+      "free_params": 0,
+      "form": "c = c_TF (System-R constant)"
+    },
+    "H_F1": {
+      "rmse": 0.0007683294355833591,
+      "aicc": -172.1110071409911,
+      "free_params": 0,
+      "form": "c(N) = 2*gamma*Lambda_t_emp(N)"
+    },
+    "H_F2": {
+      "rmse": 0.02559831210720398,
+      "aicc": -87.96549271158386,
+      "free_params": 0,
+      "form": "c(N) = alpha_xi*shear_emp(N)"
+    }
+  },
+  "deltas": {
+    "F1_minus_const": 1.7135473035159237,
+    "F2_minus_const": 85.85906173292315,
+    "F1_minus_F2": -84.14551442940723
+  }
+}

@@ -1,0 +1,57 @@
+================================================================================
+L6-L9 deeper-localization audits (full-seed)
+================================================================================
+
+--- P5N64 N=64 (n_seeds=24) ---
+  L6 K-Q field: skew=-0.0082 +/- 0.0654  kurt=-0.0525  third=+0.00000
+  L7 T00 localization: frac_inside_all3=0.001  frac_outside_all=0.750  asym_inside3=-0.1104  asym_outside=+0.0246
+  L8 direction asym: act_fwd/act_bwd = 1.00000 +/- 0.00000
+  L9 Hopf-corr: mass_high/mass_low = 1.00006 +/- 0.00093
+--- P5N72 N=72 (n_seeds=24) ---
+  L6 K-Q field: skew=+0.0751 +/- 0.0623  kurt=-0.0206  third=+0.00000
+  L7 T00 localization: frac_inside_all3=0.001  frac_outside_all=0.744  asym_inside3=+0.3407  asym_outside=-0.0001
+  L8 direction asym: act_fwd/act_bwd = 1.00000 +/- 0.00000
+  L9 Hopf-corr: mass_high/mass_low = 1.00059 +/- 0.00109
+--- P5N84 N=84 (n_seeds=24) ---
+  L6 K-Q field: skew=-0.0184 +/- 0.0501  kurt=-0.1529  third=-0.00000
+  L7 T00 localization: frac_inside_all3=0.001  frac_outside_all=0.751  asym_inside3=+0.2262  asym_outside=+0.0064
+  L8 direction asym: act_fwd/act_bwd = 1.00000 +/- 0.00000
+  L9 Hopf-corr: mass_high/mass_low = 1.00082 +/- 0.00094
+--- P5N100 N=100 (n_seeds=24) ---
+  L6 K-Q field: skew=+0.0475 +/- 0.0462  kurt=-0.1252  third=+0.00000
+  L7 T00 localization: frac_inside_all3=0.002  frac_outside_all=0.765  asym_inside3=+0.2277  asym_outside=+0.0016
+  L8 direction asym: act_fwd/act_bwd = 1.00000 +/- 0.00000
+  L9 Hopf-corr: mass_high/mass_low = 1.00116 +/- 0.00085
+--- P5N128 N=128 (n_seeds=12) ---
+  L6 K-Q field: skew=+0.0389 +/- 0.0538  kurt=-0.2062  third=+0.00000
+  L7 T00 localization: frac_inside_all3=0.001  frac_outside_all=0.775  asym_inside3=+0.2222  asym_outside=+0.0055
+  L8 direction asym: act_fwd/act_bwd = 1.00000 +/- 0.00000
+  L9 Hopf-corr: mass_high/mass_low = 0.99832 +/- 0.00072
+--- P5N200 N=200 (n_seeds=8) ---
+  L6 K-Q field: skew=+0.0328 +/- 0.0708  kurt=-0.0103  third=+0.00000
+  L7 T00 localization: frac_inside_all3=0.001  frac_outside_all=0.767  asym_inside3=-0.2000  asym_outside=-0.0012
+  L8 direction asym: act_fwd/act_bwd = 1.00000 +/- 0.00000
+  L9 Hopf-corr: mass_high/mass_low = 1.00016 +/- 0.00033
+--- P5N256 N=256 (n_seeds=2) ---
+  L6 K-Q field: skew=+0.0201 +/- 0.1448  kurt=+0.1658  third=+0.00000
+  L7 T00 localization: frac_inside_all3=0.001  frac_outside_all=0.769  asym_inside3=-1.0000  asym_outside=-0.0035
+  L8 direction asym: act_fwd/act_bwd = 1.00000 +/- 0.00000
+  L9 Hopf-corr: mass_high/mass_low = 1.00077 +/- 0.00039
+--- P5N300 N=300 (n_seeds=2) ---
+  L6 K-Q field: skew=+0.1794 +/- 0.0381  kurt=+0.1968  third=+0.00000
+  L7 T00 localization: frac_inside_all3=0.001  frac_outside_all=0.775  asym_inside3=+1.0000  asym_outside=-0.0096
+  L8 direction asym: act_fwd/act_bwd = 1.00000 +/- 0.00000
+  L9 Hopf-corr: mass_high/mass_low = 0.99852 +/- 0.00089
+
+================================================================================
+Cross-regime synthesis L6-L9 (full-seeds)
+================================================================================
+  L6 K-Q skewness (=0: symmetric): +0.04591 +/- 0.05770  (sigma vs ref 0.0: 0.80)
+  L6 K-Q kurtosis (=0: gaussian): -0.02565 +/- 0.13504  (sigma vs ref 0.0: 0.19)
+  L7 asym INSIDE-T00-3 (PPN-PNN frac): +0.08831 +/- 0.53131  (sigma vs ref 0.0: 0.17)
+  L7 asym OUTSIDE-T00-0 (PPN-PNN frac): +0.00298 +/- 0.00946  (sigma vs ref 0.0: 0.31)
+  L7 mass_inside3/mass_outside0 (=1: no localization): 0.98934 +/- 0.00512
+  L8 activity_ratio fwd/bwd (=1: symmetric): +1.00000 +/- 0.00000  (sigma vs ref 1.0: nan)
+  L9 mass_high/low_Hopf (=1: no Hopf coupling): +1.00005 +/- 0.00100  (sigma vs ref 1.0: 0.05)
+
+Saved C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\audit_L6_L9_field_localization.json

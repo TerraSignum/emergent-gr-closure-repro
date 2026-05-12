@@ -1,0 +1,97 @@
+================================================================================
+Defect-Localization Dual Audit: Test U (M3-min-defect) + Test M (psi-singularity)
+================================================================================
+
+--- P5N64 N=64 (n_seeds=24) ---
+  Test U (M3 delta_min sign):
+    Δ>0 triangles n_avg=3373  asym=+0.0253 +/- 0.0099
+    Δ<0 triangles n_avg=1198  asym=+0.0230 +/- 0.0103
+    Diff (Δ>0 - Δ<0) = +0.0023
+  Test M (psi-singularity corners):
+    0 sing-corners (n_avg=3759):     asym=+0.0213
+    1 sing-corner  (n_avg=770):     asym=+0.0410
+    2+ sing-corners (n_avg=42):    asym=+0.0452 +/- 0.0594
+  asym_all = +0.0251
+--- P5N72 N=72 (n_seeds=24) ---
+  Test U (M3 delta_min sign):
+    Δ>0 triangles n_avg=3683  asym=-0.0014 +/- 0.0091
+    Δ<0 triangles n_avg=1513  asym=+0.0081 +/- 0.0089
+    Diff (Δ>0 - Δ<0) = -0.0095
+  Test M (psi-singularity corners):
+    0 sing-corners (n_avg=4377):     asym=+0.0001
+    1 sing-corner  (n_avg=783):     asym=+0.0042
+    2+ sing-corners (n_avg=35):    asym=+0.0978 +/- 0.0510
+  asym_all = +0.0012
+--- P5N84 N=84 (n_seeds=24) ---
+  Test U (M3 delta_min sign):
+    Δ>0 triangles n_avg=4198  asym=+0.0028 +/- 0.0054
+    Δ<0 triangles n_avg=2204  asym=+0.0144 +/- 0.0089
+    Diff (Δ>0 - Δ<0) = -0.0115
+  Test M (psi-singularity corners):
+    0 sing-corners (n_avg=5340):     asym=+0.0045
+    1 sing-corner  (n_avg=1008):     asym=+0.0106
+    2+ sing-corners (n_avg=54):    asym=+0.1409 +/- 0.0538
+  asym_all = +0.0066
+--- P5N100 N=100 (n_seeds=24) ---
+  Test U (M3 delta_min sign):
+    Δ>0 triangles n_avg=4918  asym=+0.0030 +/- 0.0078
+    Δ<0 triangles n_avg=3204  asym=+0.0019 +/- 0.0061
+    Diff (Δ>0 - Δ<0) = +0.0011
+  Test M (psi-singularity corners):
+    0 sing-corners (n_avg=6976):     asym=+0.0009
+    1 sing-corner  (n_avg=1109):     asym=+0.0189
+    2+ sing-corners (n_avg=37):    asym=-0.1416 +/- 0.0430
+  asym_all = +0.0027
+--- P5N128 N=128 (n_seeds=12) ---
+  Test U (M3 delta_min sign):
+    Δ>0 triangles n_avg=6896  asym=+0.0014 +/- 0.0091
+    Δ<0 triangles n_avg=6077  asym=-0.0016 +/- 0.0057
+    Diff (Δ>0 - Δ<0) = +0.0030
+  Test M (psi-singularity corners):
+    0 sing-corners (n_avg=11026):     asym=+0.0023
+    1 sing-corner  (n_avg=1847):     asym=-0.0148
+    2+ sing-corners (n_avg=100):    asym=+0.0186 +/- 0.0429
+  asym_all = -0.0001
+--- P5N200 N=200 (n_seeds=8) ---
+  Test U (M3 delta_min sign):
+    Δ>0 triangles n_avg=12927  asym=-0.0089 +/- 0.0050
+    Δ<0 triangles n_avg=11371  asym=-0.0060 +/- 0.0064
+    Diff (Δ>0 - Δ<0) = -0.0029
+  Test M (psi-singularity corners):
+    0 sing-corners (n_avg=21165):     asym=-0.0050
+    1 sing-corner  (n_avg=2993):     asym=-0.0238
+    2+ sing-corners (n_avg=141):    asym=-0.0704 +/- 0.0551
+  asym_all = -0.0076
+--- P5N256 N=256 (n_seeds=2) ---
+  Test U (M3 delta_min sign):
+    Δ>0 triangles n_avg=20890  asym=-0.0051 +/- 0.0052
+    Δ<0 triangles n_avg=16530  asym=-0.0061 +/- 0.0075
+    Diff (Δ>0 - Δ<0) = +0.0010
+  Test M (psi-singularity corners):
+    0 sing-corners (n_avg=32122):     asym=-0.0044
+    1 sing-corner  (n_avg=5124):     asym=-0.0114
+    2+ sing-corners (n_avg=174):    asym=-0.0677 +/- 0.0152
+  asym_all = -0.0055
+--- P5N300 N=300 (n_seeds=2) ---
+  Test U (M3 delta_min sign):
+    Δ>0 triangles n_avg=30970  asym=-0.0055 +/- 0.0092
+    Δ<0 triangles n_avg=20364  asym=-0.0166 +/- 0.0012
+    Diff (Δ>0 - Δ<0) = +0.0110
+  Test M (psi-singularity corners):
+    0 sing-corners (n_avg=44382):     asym=-0.0089
+    1 sing-corner  (n_avg=6599):     asym=-0.0190
+    2+ sing-corners (n_avg=354):    asym=+0.0631 +/- 0.1125
+  asym_all = -0.0098
+
+================================================================================
+Cross-regime synthesis
+================================================================================
+  Test U: asym (Δ_min > 0) = +0.00145 +/- 0.00349
+  Test U: asym (Δ_min < 0) = +0.00214 +/- 0.00418
+  Test U: Diff (>0)-(<0) = -0.00069 +/- 0.00544 (0.13σ)
+  Test M: asym (0 sing) = +0.00134 +/- 0.00304
+  Test M: asym (≥2 sing) = +0.01074 +/- 0.03173
+  Test M: Diff (≥2)-(0) = +0.00940 +/- 0.03188 (0.29σ)
+  asym_all (baseline) = +0.00158 +/- 0.00363
+
+Saved C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\audit_defect_localization_dual.json

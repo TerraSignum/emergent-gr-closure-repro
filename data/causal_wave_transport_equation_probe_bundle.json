@@ -1,0 +1,179 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "running",
+    "branch_rationale": "Causal-wave / chirality-running carrier; spans the chirality flip",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "package": "Causal Wave Transport Equation Probe",
+  "verdict": "REACTION_RELEASE_READING_PREFERRED_TO_FULL_TRANSPORT",
+  "modules": {
+    "operator_reading": {
+      "step": "operator_reading",
+      "tag": "operator_reading",
+      "physics_result": {
+        "transport_operator_reading_status": "BOUNDED_TRANSPORT_OPERATOR_BUILT",
+        "alpha_xi": 0.900819,
+        "diffusion_omega": 0.839964,
+        "beta_projector": 0.937913,
+        "gamma_damping": 0.100206,
+        "epsilon_sync2": 0.05,
+        "hard_formula": "dC/dtau = D(Omega) DeltaC - Gamma C + alpha Xi C + beta Pi_common C + epsilon sync2 C"
+      },
+      "input_provenance": {
+        "sources": [
+          "wave_carrier_universality_step2",
+          "carrier_phase_audit",
+          "spectral_fit_step",
+          "wave_mode_kernel_step"
+        ],
+        "real_vs_synthetic": "REAL_ONLY",
+        "fixed_labeling_scheme": "transport_first_labeling"
+      },
+      "real_vs_synthetic": "REAL_ONLY",
+      "seed_coverage_used": "bounded operator reading only",
+      "normalization_check": {
+        "sync2_kept_small_and_secondary": true
+      },
+      "mapping_consistency_check": {
+        "transport_operator_not_equated_with_final_pde_theory": true
+      },
+      "honesty_guard": {
+        "no_free_coefficient_scan": true
+      },
+      "claim_limit": "TRANSPORT_OPERATOR_READING_ONLY",
+      "validation_pass": true
+    },
+    "candidate_family": {
+      "step": "candidate_family",
+      "tag": "candidate_family",
+      "physics_result": {
+        "transport_candidate_family_status": "TRANSPORT_CANDIDATES_EVALUATED",
+        "best_candidate_name": "xi_reaction_transport",
+        "best_transport_score": 0.899693
+      },
+      "input_provenance": {
+        "sources": [
+          "operator_reading",
+          "wave_carrier_universality_step1"
+        ],
+        "real_vs_synthetic": "REAL_ONLY",
+        "fixed_labeling_scheme": "transport_first_labeling"
+      },
+      "real_vs_synthetic": "REAL_ONLY",
+      "seed_coverage_used": "transport family only",
+      "normalization_check": {
+        "candidate_family_built_from_fixed_bounded_terms_only": true
+      },
+      "mapping_consistency_check": {
+        "sync2_kept_as_small_response_term_only": true
+      },
+      "honesty_guard": {
+        "static_readout_kept_as_control": true
+      },
+      "claim_limit": "TRANSPORT_CANDIDATE_FAMILY_ONLY",
+      "validation_pass": true,
+      "candidate_rows": [
+        {
+          "candidate_name": "static_projector_readout",
+          "transport_score": 0.853515,
+          "physical_reading": "projector reading without explicit transport law"
+        },
+        {
+          "candidate_name": "xi_reaction_transport",
+          "transport_score": 0.899693,
+          "physical_reading": "Xi drives local reaction but not explicit common projection transport"
+        },
+        {
+          "candidate_name": "xi_projector_transport",
+          "transport_score": 0.881358,
+          "physical_reading": "Xi plus common projector transport without explicit Omega damping"
+        },
+        {
+          "candidate_name": "xi_projector_omega_transport",
+          "transport_score": 0.884985,
+          "physical_reading": "Xi plus common projector transport plus Omega-world damping/release"
+        },
+        {
+          "candidate_name": "xi_projector_omega_sync2_transport",
+          "transport_score": 0.895195,
+          "physical_reading": "same bounded transport equation with small sync2 response term"
+        }
+      ],
+      "best_row": {
+        "candidate_name": "xi_reaction_transport",
+        "transport_score": 0.899693,
+        "physical_reading": "Xi drives local reaction but not explicit common projection transport"
+      }
+    },
+    "rational_match": {
+      "step": "rational_match",
+      "tag": "support_assessment",
+      "physics_result": {
+        "transport_support_status": "REACTION_RELEASE_READING_PREFERRED_TO_FULL_TRANSPORT",
+        "best_candidate_name": "xi_reaction_transport",
+        "best_transport_score": 0.899693,
+        "delta_vs_microkernel_world_formula_score": 0.037062
+      },
+      "input_provenance": {
+        "sources": [
+          "candidate_family",
+          "wave_mode_kernel_step"
+        ],
+        "real_vs_synthetic": "REAL_ONLY",
+        "fixed_labeling_scheme": "transport_first_labeling"
+      },
+      "real_vs_synthetic": "REAL_ONLY",
+      "seed_coverage_used": "transport support assessment only",
+      "normalization_check": {
+        "transport_score_compared_to_current_microkernel_reference": true
+      },
+      "mapping_consistency_check": {
+        "bounded_transport_not_read_as_replacement_of_microkernel": true
+      },
+      "honesty_guard": {
+        "delta_vs_microkernel_kept_explicit": true
+      },
+      "claim_limit": "TRANSPORT_SUPPORT_ONLY",
+      "validation_pass": true
+    },
+    "convention_scan": {
+      "step": "convention_scan",
+      "tag": "integrated_assessment",
+      "physics_result": {
+        "causal_wave_transport_equation_probe_status": "REACTION_RELEASE_READING_PREFERRED_TO_FULL_TRANSPORT",
+        "best_candidate_name": "xi_reaction_transport",
+        "best_transport_score": 0.899693,
+        "hard_formula": "dC/dtau = D(Omega) DeltaC - Gamma C + alpha Xi C + beta Pi_common C + epsilon sync2 C",
+        "hardest_remaining_blocker": "SN_DISTANCE_SIDEARM_BREAKING_INCONSISTENCY"
+      },
+      "input_provenance": {
+        "sources": [
+          "operator_reading",
+          "candidate_family",
+          "rational_match"
+        ],
+        "real_vs_synthetic": "REAL_ONLY",
+        "fixed_labeling_scheme": "transport_first_labeling"
+      },
+      "real_vs_synthetic": "REAL_ONLY",
+      "seed_coverage_used": "integrated transport assessment only",
+      "normalization_check": {
+        "sn_sidearm_breaker_retained": true
+      },
+      "mapping_consistency_check": {
+        "transport_reading_kept_inside_nested_spine": true
+      },
+      "honesty_guard": {
+        "not_promoted_to_final_world_formula": true
+      },
+      "claim_limit": "TRANSPORT_PROBE_INTEGRATED_ONLY",
+      "validation_pass": true
+    }
+  },
+  "dataset": {
+    "dataset_version": "2026-04-16.real_xi.causal_wave_transport_equation_probe.v1",
+    "real_vs_synthetic": "REAL_ONLY",
+    "fixed_labeling_scheme": "transport_first_labeling",
+    "design_rule": "bounded_transport_equation_probe_only"
+  }
+}

@@ -1,0 +1,241 @@
+{
+  "method": "M3_defect_quantitative_audit_Q1Q2Q3Q4",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "regimes_used": [
+      "P5",
+      "P5N64",
+      "P5N100",
+      "P5N200",
+      "P5N300"
+    ],
+    "branch_rationale": "Topology / vortex / triangle-phase diagnostic; algebraic discrete-Wilson-loop / homology test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "rows": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "Q1_per_vortex_budget": {
+        "n_vortex": 5,
+        "n_nonvortex": 45,
+        "vortex_budget_mean": 11.605277956262293,
+        "vortex_budget_std": 1.3000906739775013,
+        "vortex_budget_cv_pct": 11.202581091786456,
+        "nonvortex_budget_mean": 10.334280185895862,
+        "ratio_vortex_over_nonvortex": 1.1229885146815624
+      },
+      "Q2_deficit_angle": {
+        "deficit_mean_rad": 0.1394043848878273,
+        "deficit_std_rad": 0.015616889262564954,
+        "deficit_cv_pct": 11.202581091786454,
+        "deficit_total_rad": 0.6970219244391366,
+        "deficit_total_over_2pi": 0.11093448471791416
+      },
+      "Q3_lensing_correlation": {
+        "spearman_rho_budget_vs_LT_proxy": 0.5183673469387755,
+        "spearman_p": 0.00011521384750859051,
+        "interpretation": "M3-slack-budget rank correlates with T_00-spike rank (LT-proxy) -> matter-vortex are co-localised."
+      },
+      "Q4_total_invariant": {
+        "S_total": 523.0689981466253,
+        "S_total_per_node": 10.461379962932506,
+        "n_lat": 50
+      }
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "Q1_per_vortex_budget": {
+        "n_vortex": 7,
+        "n_nonvortex": 57,
+        "vortex_budget_mean": 12.202571948910945,
+        "vortex_budget_std": 1.3443155195287024,
+        "vortex_budget_cv_pct": 11.016657186345702,
+        "nonvortex_budget_mean": 11.731322363756703,
+        "ratio_vortex_over_nonvortex": 1.040170201665427
+      },
+      "Q2_deficit_angle": {
+        "deficit_mean_rad": 0.1016717640812885,
+        "deficit_std_rad": 0.011200829704145715,
+        "deficit_cv_pct": 11.016657186345698,
+        "deficit_total_rad": 0.7117023485690195,
+        "deficit_total_over_2pi": 0.11327094678487055
+      },
+      "Q3_lensing_correlation": {
+        "spearman_rho_budget_vs_LT_proxy": 0.45947802197802196,
+        "spearman_p": 0.0001338344656689763,
+        "interpretation": "M3-slack-budget rank correlates with T_00-spike rank (LT-proxy) -> matter-vortex are co-localised."
+      },
+      "Q4_total_invariant": {
+        "S_total": 754.1033783765088,
+        "S_total_per_node": 11.78286528713295,
+        "n_lat": 64
+      }
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "Q1_per_vortex_budget": {
+        "n_vortex": 10,
+        "n_nonvortex": 90,
+        "vortex_budget_mean": 14.965544286930319,
+        "vortex_budget_std": 1.1297708889155889,
+        "vortex_budget_cv_pct": 7.549146674887316,
+        "nonvortex_budget_mean": 15.551343758728358,
+        "ratio_vortex_over_nonvortex": 0.9623312634016432
+      },
+      "Q2_deficit_angle": {
+        "deficit_mean_rad": 0.06069368198041821,
+        "deficit_std_rad": 0.004581855075091422,
+        "deficit_cv_pct": 7.5491466748873135,
+        "deficit_total_rad": 0.6069368198041821,
+        "deficit_total_over_2pi": 0.09659699501631054
+      },
+      "Q3_lensing_correlation": {
+        "spearman_rho_budget_vs_LT_proxy": 0.3707890789078907,
+        "spearman_p": 0.00014611934416489366,
+        "interpretation": "M3-slack-budget rank correlates with T_00-spike rank (LT-proxy) -> matter-vortex are co-localised."
+      },
+      "Q4_total_invariant": {
+        "S_total": 1549.2763811548555,
+        "S_total_per_node": 15.492763811548555,
+        "n_lat": 100
+      }
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "Q1_per_vortex_budget": {
+        "n_vortex": 20,
+        "n_nonvortex": 180,
+        "vortex_budget_mean": 11.726237962505028,
+        "vortex_budget_std": 2.298179029155028,
+        "vortex_budget_cv_pct": 19.598604740100953,
+        "nonvortex_budget_mean": 10.213966113663863,
+        "ratio_vortex_over_nonvortex": 1.148059219309344
+      },
+      "Q2_deficit_angle": {
+        "deficit_mean_rad": 0.0355411249710241,
+        "deficit_std_rad": 0.006965564603256334,
+        "deficit_cv_pct": 19.598604740100956,
+        "deficit_total_rad": 0.710822499420482,
+        "deficit_total_over_2pi": 0.11313091444370563
+      },
+      "Q3_lensing_correlation": {
+        "spearman_rho_budget_vs_LT_proxy": 0.6354263856596416,
+        "spearman_p": 5.164769995717901e-24,
+        "interpretation": "M3-slack-budget rank correlates with T_00-spike rank (LT-proxy) -> matter-vortex are co-localised."
+      },
+      "Q4_total_invariant": {
+        "S_total": 2073.0386597095962,
+        "S_total_per_node": 10.36519329854798,
+        "n_lat": 200
+      }
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "Q1_per_vortex_budget": {
+        "n_vortex": 30,
+        "n_nonvortex": 270,
+        "vortex_budget_mean": 17.800576376211755,
+        "vortex_budget_std": 2.7944966036420023,
+        "vortex_budget_cv_pct": 15.698910780082928,
+        "nonvortex_budget_mean": 17.196398660976573,
+        "ratio_vortex_over_nonvortex": 1.035133967707217
+      },
+      "Q2_deficit_angle": {
+        "deficit_mean_rad": 0.021603892078205723,
+        "deficit_std_rad": 0.0033915757423829203,
+        "deficit_cv_pct": 15.698910780082931,
+        "deficit_total_rad": 0.6481167623461717,
+        "deficit_total_over_2pi": 0.10315098642810841
+      },
+      "Q3_lensing_correlation": {
+        "spearman_rho_budget_vs_LT_proxy": 0.5205795619951332,
+        "spearman_p": 3.092414087127998e-22,
+        "interpretation": "M3-slack-budget rank correlates with T_00-spike rank (LT-proxy) -> matter-vortex are co-localised."
+      },
+      "Q4_total_invariant": {
+        "S_total": 5177.044929750028,
+        "S_total_per_node": 17.256816432500095,
+        "n_lat": 300
+      }
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "Q1_per_vortex_budget": {
+        "n_vortex": 26,
+        "n_nonvortex": 230,
+        "vortex_budget_mean": 12.664545973313947,
+        "vortex_budget_std": 2.351320526069716,
+        "vortex_budget_cv_pct": 18.56616519079557,
+        "nonvortex_budget_mean": 14.072932924691925,
+        "ratio_vortex_over_nonvortex": 0.8999222863553292
+      },
+      "Q2_deficit_angle": {
+        "deficit_mean_rad": 0.02231422089319866,
+        "deficit_std_rad": 0.00414289511207028,
+        "deficit_cv_pct": 18.566165190795562,
+        "deficit_total_rad": 0.5801697432231652,
+        "deficit_total_over_2pi": 0.09233688246632239
+      },
+      "Q3_lensing_correlation": {
+        "spearman_rho_budget_vs_LT_proxy": 0.5478027008468757,
+        "spearman_p": 1.8929234546368754e-21,
+        "interpretation": "M3-slack-budget rank correlates with T_00-spike rank (LT-proxy) -> matter-vortex are co-localised."
+      },
+      "Q4_total_invariant": {
+        "S_total": 3566.0527679853053,
+        "S_total_per_node": 13.929893624942599,
+        "n_lat": 256
+      }
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "Q1_per_vortex_budget": {
+        "n_vortex": 52,
+        "n_nonvortex": 460,
+        "vortex_budget_mean": 9.839512297948167,
+        "vortex_budget_std": 1.5937482267465775,
+        "vortex_budget_cv_pct": 16.19743111738294,
+        "nonvortex_budget_mean": 8.649534454482888,
+        "ratio_vortex_over_nonvortex": 1.1375770973255719
+      },
+      "Q2_deficit_angle": {
+        "deficit_mean_rad": 0.013767798339126698,
+        "deficit_std_rad": 0.002230029652360239,
+        "deficit_cv_pct": 16.197431117382934,
+        "deficit_total_rad": 0.7159255136345883,
+        "deficit_total_over_2pi": 0.11394308438054886
+      },
+      "Q3_lensing_correlation": {
+        "spearman_rho_budget_vs_LT_proxy": 0.46944308545335944,
+        "spearman_p": 2.0138131206017168e-29,
+        "interpretation": "M3-slack-budget rank correlates with T_00-spike rank (LT-proxy) -> matter-vortex are co-localised."
+      },
+      "Q4_total_invariant": {
+        "S_total": 4490.440488555432,
+        "S_total_per_node": 8.770391579209829,
+        "n_lat": 512
+      }
+    }
+  ],
+  "Q4_invariance_summary": {
+    "S_per_node_per_N": [
+      10.461379962932506,
+      11.78286528713295,
+      15.492763811548555,
+      10.36519329854798,
+      17.256816432500095,
+      13.929893624942599,
+      8.770391579209829
+    ],
+    "mean": 12.579900570973502,
+    "cv_pct": 22.628071292177975,
+    "verdict": "INVARIANT"
+  }
+}

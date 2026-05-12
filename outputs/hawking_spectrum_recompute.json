@@ -1,0 +1,10 @@
+{
+  "criterion": "Hawking-spectrum greybody-factor table recompute",
+  "max_dev_bose_relative": 0.001714074341021005,
+  "max_dev_fermi_relative": 0.001044074341021008,
+  "page_fractions_sum_to_one": true,
+  "T_hawking_GeV_canonical": 3.1450854492984847e+18,
+  "L_hawking_W_canonical": 8.308e+129,
+  "t_evap_s_canonical": 1.1e+25,
+  "spectrum_consistent": true
+}

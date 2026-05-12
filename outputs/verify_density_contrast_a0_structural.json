@@ -1,0 +1,49 @@
+{
+  "bundle": "density_contrast_a0_structural",
+  "description": "Structural-rational candidate identification for the coefficients of the universal density-contrast law Delta_core = a_0 + a_1 log r + a_2 log^2 r, evaluated on the matter-branch ladder N in {60,64,72,84,100}.",
+  "primitives": {
+    "gamma": 0.1,
+    "alpha_xi": 0.9,
+    "N_gen": 3,
+    "d": 4,
+    "eps_sync_sq": 0.05
+  },
+  "empirical_fit": {
+    "a_0": 0.19,
+    "a_1": 2.032,
+    "a_2": -1.265,
+    "R2_pooled": 0.9,
+    "ladder": [
+      60,
+      64,
+      72,
+      84,
+      100
+    ],
+    "source": "main P4 manuscript Eq.(density-contrast-law)"
+  },
+  "structural_candidates": {
+    "a_0": {
+      "form": "gamma * (1 + alpha_xi) = gamma * (2 - gamma)",
+      "rational": "19/100",
+      "value": 0.19,
+      "rel_err_pct": 0.0,
+      "tier": "EXACT"
+    },
+    "a_1": {
+      "form": "2 + N_gen * gamma^2",
+      "rational": "203/100",
+      "value": 2.03,
+      "rel_err_pct": -0.09842519685040471,
+      "tier": "PRECISE"
+    },
+    "a_2_via_ratio": {
+      "form": "a_1 * (-5 / (2 d))",
+      "rational": "-5/(2d) = -5/8 of a_1",
+      "value": -1.2687499999999998,
+      "rel_err_pct": 0.29644268774702925,
+      "tier": "APPROXIMATE"
+    }
+  },
+  "verdict": "a_0 closes EXACTLY to the System-R rational gamma*(1+alpha_xi) = 19/100; a_1 closes PRECISELY to 2 + N_gen*gamma^2 = 203/100; a_2 has no clean structural rational at the present empirical fit precision (R^2=0.90 on the 5-point matter-branch ladder)."
+}

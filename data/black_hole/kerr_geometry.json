@@ -1,0 +1,40 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Gravity / black-hole observable; matter-side per Einstein-eq source coupling",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Kerr-defect geometry of the rotating relational defect. The Kerr line element is reconstructed from the angular momentum J extracted via causal-asymmetry of the rotating defect lattice modes; the dimensionless spin chi = J/M^2 (in lattice-mass units M_lu == 1) is the directly observable quantity. The auxiliary field a_kerr_lu records the Kerr length parameter under a separate Kerr-coordinate normalization used for the metric line element. The inner/outer horizons r_minus/r_plus, the equatorial ergosphere r_ergo_equator, the horizon angular velocity Omega_horizon, the innermost stable circular orbit r_ISCO, and the Lense-Thirring frame-dragging angular velocity Omega_LT are derived in closed form from the Kerr metric.",
+  "units_convention": "chi_spin = J_lu / M_lu^2 with M_lu == 1 (so chi numerically equals J_lu in this normalization). a_kerr_lu uses the metric-line-element convention; the two fields are consistent up to the M-normalization choice and are not equal as numbers.",
+  "canonical": {
+    "J_lu": 0.03381034,
+    "a_kerr_lu": 0.01142264,
+    "chi_spin": 0.03381034,
+    "chi_below_extremal": true,
+    "r_plus_lu": 5.918623,
+    "r_minus_lu": 2.2e-05,
+    "r_ergo_equator_lu": 5.918645,
+    "r_ergo_pole_lu": 5.918623,
+    "omega_horizon_lu": 0.00032608,
+    "r_ISCO_lu": 17.427816,
+    "omega_lense_thirring_lu": 0.0183473943
+  },
+  "extended": {
+    "J_lu": 0.04002952,
+    "a_kerr_lu": 0.01215178,
+    "chi_spin": 0.04002952,
+    "chi_below_extremal": true,
+    "r_plus_lu": 6.586855,
+    "r_minus_lu": 2.2e-05,
+    "r_ergo_equator_lu": 6.586877,
+    "r_ergo_pole_lu": 6.586855,
+    "omega_horizon_lu": 0.00028008,
+    "r_ISCO_lu": 19.327966,
+    "omega_lense_thirring_lu": 0.0207066753
+  },
+  "kerr_metric": "ds^2 = -(1 - r_S r/Sigma) dt^2 - (2 r_S r a sin^2(theta)/Sigma) dt dphi + (Sigma/Delta) dr^2 + Sigma dtheta^2 + [(r^2 + a^2) sin^2(theta) + r_S r a^2 sin^4(theta)/Sigma] dphi^2",
+  "derivation": "Angular momentum J from CVI-based causal asymmetry of the rotating defect lattice modes; Kerr parameter a = J/M.",
+  "framing": "The Kerr horizon and ISCO are determined by (M, a) on the lattice; no Kerr ansatz is imposed externally. The two regimes give independent Kerr structures with sub-extremal spin (chi < 0.05 in both)."
+}

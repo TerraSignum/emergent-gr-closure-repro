@@ -1,0 +1,156 @@
+{
+  "method": "clp_full_families_extended",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "n_payloads": 9,
+  "clp_a": {
+    "step": "CLP-A",
+    "tag": "tightness",
+    "n_payloads": 9,
+    "T3_fit_symanzik2": {
+      "gap_inf": 0.4507848056508046,
+      "c_2": 19810.3219584489,
+      "rss": 0.009373190408364668,
+      "n_points": 9,
+      "model": "symanzik_2"
+    },
+    "T3_bootstrap": {
+      "median": 0.4473718411765063,
+      "CI95": [
+        0.417722187411966,
+        0.4752315292151706
+      ],
+      "n_resamples": 2000
+    },
+    "T1_score": 1.0,
+    "T2_score": 0.8951,
+    "T3_score": 0.450785,
+    "T4_score": 1.0,
+    "tightness_score": 0.814255,
+    "tightness_status": "CLOSED"
+  },
+  "clp_b_b4": {
+    "step": "CLP-B/B4",
+    "tag": "slow_decomposition",
+    "sub_components": {
+      "absorption": {
+        "fit": {
+          "gap_inf": 0.5143876035822765,
+          "c_2": 11657.420905045223,
+          "rss": 0.007839556209947003,
+          "n_points": 9,
+          "model": "symanzik_2"
+        },
+        "bootstrap": {
+          "median": 0.5136711031911878,
+          "CI95": [
+            0.4879619239211306,
+            0.5397654271596372
+          ],
+          "n_resamples": 2000
+        },
+        "score_clipped": 0.5143876035822765
+      },
+      "locality": {
+        "fit": {
+          "gap_inf": 0.5416625095593433,
+          "c_2": 11786.048888813752,
+          "rss": 0.008712878906438242,
+          "n_points": 9,
+          "model": "symanzik_2"
+        },
+        "bootstrap": {
+          "median": 0.5410737860303244,
+          "CI95": [
+            0.5139438572814164,
+            0.5682423544204128
+          ],
+          "n_resamples": 2000
+        },
+        "score_clipped": 0.5416625095593433
+      },
+      "density": {
+        "fit": {
+          "gap_inf": 0.6518106269370174,
+          "c_2": 8816.352307945945,
+          "rss": 0.0052142512568902006,
+          "n_points": 9,
+          "model": "symanzik_2"
+        },
+        "bootstrap": {
+          "median": 0.6513331640468761,
+          "CI95": [
+            0.6296438688771968,
+            0.6719301093754566
+          ],
+          "n_resamples": 2000
+        },
+        "score_clipped": 0.6518106269370174
+      },
+      "spectral": {
+        "fit": {
+          "gap_inf": 0.6821669473195411,
+          "c_2": 5882.993017089633,
+          "rss": 0.0023995822082180296,
+          "n_points": 9,
+          "model": "symanzik_2"
+        },
+        "bootstrap": {
+          "median": 0.6816618367385242,
+          "CI95": [
+            0.6673476551831015,
+            0.6959328085753989
+          ],
+          "n_resamples": 2000
+        },
+        "score_clipped": 0.6821669473195411
+      }
+    },
+    "bottleneck": "absorption",
+    "family_score_mean": 0.597507,
+    "family_score_min": 0.514388,
+    "above_threshold_0p5_count": 4,
+    "n_components": 4
+  },
+  "clp_c": {
+    "step": "CLP-C",
+    "tag": "gamma_convergence",
+    "n_payloads": 9,
+    "C1_loss_fit": {
+      "gap_inf": 0.38324058254351734,
+      "c_2": -5018.033832499663,
+      "rss": 0.002340607775191848,
+      "n_points": 9,
+      "model": "symanzik_2"
+    },
+    "C1_monotonic_fraction": 1.0,
+    "C1_score": 0.731732,
+    "C2_score": 1.0,
+    "C3_score": 0.832107,
+    "C4_fp_fit": {
+      "gap_inf": 0.8160470224189817,
+      "c_2": -23596.00555527142,
+      "rss": 0.020556249786740116,
+      "n_points": 9,
+      "model": "symanzik_2"
+    },
+    "C4_score": 0.816047,
+    "C5_score": 0.865866,
+    "gamma_convergence_score": 0.84915,
+    "gamma_convergence_status": "GAMMA_CONVERGED"
+  },
+  "clp_d": {
+    "step": "CLP-D",
+    "tag": "assembly",
+    "families": {
+      "CLP-A": 0.814255,
+      "CLP-B/B4": 0.597507,
+      "CLP-C": 0.84915
+    },
+    "clp_overall_score": 0.738024,
+    "verdict": "CLP_PROVEN"
+  }
+}

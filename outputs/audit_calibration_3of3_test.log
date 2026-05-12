@@ -1,0 +1,69 @@
+================================================================================
+Calibration 3/3 vs 3/2+1 hypothesis test
+================================================================================
+
+--- P5N64 N=64 (n_seeds=24) ---
+  Equilateral score: <eq>=0.554 +/- 0.136
+  Fractions: calibrated=0.028 (127/seed), transitional=0.629 (2875), uncalib=0.343 (1569)
+  asym_calibrated   = +nan +/- nan  (prediction: PPN-rich for matter)
+  asym_uncalibrated = +0.0257 +/- 0.0145  (prediction: PNN-rich for antimatter)
+  asym_transitional = +0.0244
+  Diff (calib - uncalib) = +nan
+--- P5N72 N=72 (n_seeds=24) ---
+  Equilateral score: <eq>=0.554 +/- 0.136
+  Fractions: calibrated=0.027 (142/seed), transitional=0.628 (3264), uncalib=0.344 (1789)
+  asym_calibrated   = +nan +/- nan  (prediction: PPN-rich for matter)
+  asym_uncalibrated = +0.0045 +/- 0.0098  (prediction: PNN-rich for antimatter)
+  asym_transitional = -0.0009
+  Diff (calib - uncalib) = +nan
+--- P5N84 N=84 (n_seeds=24) ---
+  Equilateral score: <eq>=0.552 +/- 0.137
+  Fractions: calibrated=0.027 (170/seed), transitional=0.623 (3987), uncalib=0.350 (2245)
+  asym_calibrated   = +nan +/- nan  (prediction: PPN-rich for matter)
+  asym_uncalibrated = +0.0095 +/- 0.0095  (prediction: PNN-rich for antimatter)
+  asym_transitional = +0.0047
+  Diff (calib - uncalib) = +nan
+--- P5N100 N=100 (n_seeds=24) ---
+  Equilateral score: <eq>=0.553 +/- 0.136
+  Fractions: calibrated=0.027 (220/seed), transitional=0.624 (5072), uncalib=0.348 (2830)
+  asym_calibrated   = +nan +/- nan  (prediction: PPN-rich for matter)
+  asym_uncalibrated = -0.0048 +/- 0.0083  (prediction: PNN-rich for antimatter)
+  asym_transitional = +0.0082
+  Diff (calib - uncalib) = +nan
+--- P5N128 N=128 (n_seeds=12) ---
+  Equilateral score: <eq>=0.552 +/- 0.136
+  Fractions: calibrated=0.027 (347/seed), transitional=0.627 (8130), uncalib=0.347 (4496)
+  asym_calibrated   = +nan +/- nan  (prediction: PPN-rich for matter)
+  asym_uncalibrated = -0.0052 +/- 0.0087  (prediction: PNN-rich for antimatter)
+  asym_transitional = +0.0036
+  Diff (calib - uncalib) = +nan
+--- P5N200 N=200 (n_seeds=8) ---
+  Equilateral score: <eq>=0.552 +/- 0.138
+  Fractions: calibrated=0.027 (660/seed), transitional=0.625 (15183), uncalib=0.348 (8456)
+  asym_calibrated   = +nan +/- nan  (prediction: PPN-rich for matter)
+  asym_uncalibrated = -0.0052 +/- 0.0048  (prediction: PNN-rich for antimatter)
+  asym_transitional = -0.0092
+  Diff (calib - uncalib) = +nan
+--- P5N256 N=256 (n_seeds=2) ---
+  Equilateral score: <eq>=0.554 +/- 0.137
+  Fractions: calibrated=0.030 (1118/seed), transitional=0.625 (23386), uncalib=0.345 (12916)
+  asym_calibrated   = +nan +/- nan  (prediction: PPN-rich for matter)
+  asym_uncalibrated = -0.0009 +/- 0.0132  (prediction: PNN-rich for antimatter)
+  asym_transitional = -0.0088
+  Diff (calib - uncalib) = +nan
+--- P5N300 N=300 (n_seeds=2) ---
+  Equilateral score: <eq>=0.555 +/- 0.135
+  Fractions: calibrated=0.027 (1373/seed), transitional=0.634 (32538), uncalib=0.339 (17423)
+  asym_calibrated   = +nan +/- nan  (prediction: PPN-rich for matter)
+  asym_uncalibrated = -0.0103 +/- 0.0009  (prediction: PNN-rich for antimatter)
+  asym_transitional = -0.0094
+  Diff (calib - uncalib) = +nan
+
+================================================================================
+Cross-regime synthesis
+================================================================================
+  asym_uncalibrated cross-regime: +0.00164 +/- 0.00382  (0.43σ)
+  frac_calibrated cross-regime: 0.0275 +/- 0.0010
+  Symanzik f_calibrated = a + b/N: a_inf = 0.02792, b = -0.0471
+
+Saved C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\audit_calibration_3of3_test.json

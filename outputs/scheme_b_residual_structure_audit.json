@@ -1,0 +1,119 @@
+{
+  "method": "scheme_b_residual_structure",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5",
+      "P6",
+      "P5N64",
+      "P7",
+      "P8",
+      "P5N100"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "universal_law": {
+    "A0": 0.234,
+    "A1": 1.304
+  },
+  "tail_fraction": 0.1,
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_tail": 20,
+      "mean_residual_after_B": 0.10215675571688299,
+      "median_residual_after_B": 0.18011470968774035,
+      "sigma_residual_after_B": 0.18848668577990726,
+      "fraction_positive": 0.8,
+      "KS_D_vs_zero_normal": 0.46395247919577237,
+      "KS_p_value": 0.00020701775101856362,
+      "subbin_low_T_mean": 0.20543596236271622,
+      "subbin_mid_T_mean": 0.19999662013957517,
+      "subbin_high_T_mean": -0.048682547584511085
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "n_tail": 24,
+      "mean_residual_after_B": -0.016492385032280874,
+      "median_residual_after_B": -0.017906691882488418,
+      "sigma_residual_after_B": 0.07045618204628767,
+      "fraction_positive": 0.4583333333333333,
+      "KS_D_vs_zero_normal": 0.15075582479896016,
+      "KS_p_value": 0.6299403973492353,
+      "subbin_low_T_mean": -0.07695249680603101,
+      "subbin_mid_T_mean": -0.02188477293048263,
+      "subbin_high_T_mean": 0.049360114639671014
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_tail": 25,
+      "mean_residual_after_B": 0.08665938781873588,
+      "median_residual_after_B": 0.11405489276057168,
+      "sigma_residual_after_B": 0.07491953317592971,
+      "fraction_positive": 0.92,
+      "KS_D_vs_zero_normal": 0.48109093029050687,
+      "KS_p_value": 9.675394675276318e-06,
+      "subbin_low_T_mean": 0.10799587147782391,
+      "subbin_mid_T_mean": 0.1505410337235434,
+      "subbin_high_T_mean": 0.010909939317495336
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_tail": 28,
+      "mean_residual_after_B": 0.008854170069147136,
+      "median_residual_after_B": 0.02939150755198683,
+      "sigma_residual_after_B": 0.09364289509337718,
+      "fraction_positive": 0.6071428571428571,
+      "KS_D_vs_zero_normal": 0.14747154510356114,
+      "KS_p_value": 0.5541045838185007,
+      "subbin_low_T_mean": -0.052028430636787054,
+      "subbin_mid_T_mean": 0.041736931055769866,
+      "subbin_high_T_mean": 0.034054025816527445
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_tail": 33,
+      "mean_residual_after_B": -0.0353079974919734,
+      "median_residual_after_B": -0.01095581372761989,
+      "sigma_residual_after_B": 0.09289255826728818,
+      "fraction_positive": 0.45454545454545453,
+      "KS_D_vs_zero_normal": 0.19522010978961823,
+      "KS_p_value": 0.14291533905566678,
+      "subbin_low_T_mean": -0.012761290125583035,
+      "subbin_mid_T_mean": -0.1389684676309858,
+      "subbin_high_T_mean": 0.045805765280648635
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_tail": 40,
+      "mean_residual_after_B": -0.020229148131905024,
+      "median_residual_after_B": -0.018997018159800913,
+      "sigma_residual_after_B": 0.1203159520852701,
+      "fraction_positive": 0.425,
+      "KS_D_vs_zero_normal": 0.10457788730345652,
+      "KS_p_value": 0.8023570813792438,
+      "subbin_low_T_mean": -0.06385433115965253,
+      "subbin_mid_T_mean": -0.009594809477831744,
+      "subbin_high_T_mean": 0.010405207357935329
+    }
+  ],
+  "pooled": {
+    "n_tail_total": 170,
+    "mean": 0.012278761696800658,
+    "median": 0.027591469043005322,
+    "sigma": 0.12166491452432221,
+    "fraction_positive": 0.5823529411764706,
+    "KS_D": 0.09221344775364004,
+    "KS_p": 0.10485036166546817
+  },
+  "verdict": "SCHEME_B_RESIDUAL_HAS_T_00_SUB_BIN_STRUCTURE",
+  "rationale": "Residual after subtraction varies systematically with T_00 sub-bin \u2014 the universal slope a_1 may itself be T_00-dependent (suggesting nonlinear correction term)."
+}

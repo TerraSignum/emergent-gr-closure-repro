@@ -1,0 +1,139 @@
+{
+  "method": "stage1_algebraic_search_for_2_over_7",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "targets": {
+    "2/7 (f_neg)": 0.2857142857142857,
+    "5/7 (f_pos)": 0.7142857142857143,
+    "5/2 (ratio)": 2.5,
+    "ln(5/2)": 0.9162907318741551,
+    "-pi/200 (asym)": -0.015707963267948967,
+    "-1/64": -0.015625
+  },
+  "tolerance_relative": 0.001,
+  "matches_pure_rational_2elem": [
+    {
+      "expression": "5/2",
+      "value": 2.5,
+      "target": "5/2 (ratio)",
+      "target_value": 2.5,
+      "rel_error": 0.0,
+      "fraction": "5/2"
+    },
+    {
+      "expression": "2/7",
+      "value": 0.2857142857142857,
+      "target": "2/7 (f_neg)",
+      "target_value": 0.2857142857142857,
+      "rel_error": 0.0,
+      "fraction": "2/7"
+    },
+    {
+      "expression": "5/7",
+      "value": 0.7142857142857143,
+      "target": "5/7 (f_pos)",
+      "target_value": 0.7142857142857143,
+      "rel_error": 0.0,
+      "fraction": "5/7"
+    }
+  ],
+  "matches_3elem": [
+    {
+      "expression": "(beta_pi-1)/4",
+      "value": -0.015625,
+      "target": "-1/64",
+      "target_value": -0.015625,
+      "rel_error": 0.0
+    },
+    {
+      "expression": "(N_gen-1)/7",
+      "value": 0.2857142857142857,
+      "target": "2/7 (f_neg)",
+      "target_value": 0.2857142857142857,
+      "rel_error": 0.0
+    },
+    {
+      "expression": "(N_gen+2)/7",
+      "value": 0.7142857142857143,
+      "target": "5/7 (f_pos)",
+      "target_value": 0.7142857142857143,
+      "rel_error": 0.0
+    },
+    {
+      "expression": "(1+4)/7",
+      "value": 0.7142857142857143,
+      "target": "5/7 (f_pos)",
+      "target_value": 0.7142857142857143,
+      "rel_error": 0.0
+    },
+    {
+      "expression": "2/(3+4)",
+      "value": 0.2857142857142857,
+      "target": "2/7 (f_neg)",
+      "target_value": 0.2857142857142857,
+      "rel_error": 0.0
+    },
+    {
+      "expression": "(2+3)/7",
+      "value": 0.7142857142857143,
+      "target": "5/7 (f_pos)",
+      "target_value": 0.7142857142857143,
+      "rel_error": 0.0
+    }
+  ],
+  "matches_with_pi": [],
+  "matches_specials": [
+    {
+      "expression": "2/(2*N_gen + 1)",
+      "value": 0.2857142857142857,
+      "target": "2/7 (f_neg)",
+      "target_value": 0.2857142857142857,
+      "rel_error": 0.0
+    },
+    {
+      "expression": "1 - 5/7",
+      "value": 0.2857142857142857,
+      "target": "2/7 (f_neg)",
+      "target_value": 0.2857142857142857,
+      "rel_error": 0.0
+    },
+    {
+      "expression": "1 - 5/(2*N_gen+1)",
+      "value": 0.2857142857142857,
+      "target": "2/7 (f_neg)",
+      "target_value": 0.2857142857142857,
+      "rel_error": 0.0
+    },
+    {
+      "expression": "(N_gen-1)/(2*N_gen+1)",
+      "value": 0.2857142857142857,
+      "target": "2/7 (f_neg)",
+      "target_value": 0.2857142857142857,
+      "rel_error": 0.0
+    },
+    {
+      "expression": "2/(N_gen + 4)",
+      "value": 0.2857142857142857,
+      "target": "2/7 (f_neg)",
+      "target_value": 0.2857142857142857,
+      "rel_error": 0.0
+    },
+    {
+      "expression": "5/(2*N_gen + 1)",
+      "value": 0.7142857142857143,
+      "target": "5/7 (f_pos)",
+      "target_value": 0.7142857142857143,
+      "rel_error": 0.0
+    },
+    {
+      "expression": "1 - 2/(2*N_gen + 1)",
+      "value": 0.7142857142857143,
+      "target": "5/7 (f_pos)",
+      "target_value": 0.7142857142857143,
+      "rel_error": 0.0
+    }
+  ]
+}

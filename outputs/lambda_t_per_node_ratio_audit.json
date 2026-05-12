@@ -1,0 +1,182 @@
+{
+  "method": "per_node_lambda_t_over_T_00_falsification_test",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P0",
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P5N64",
+      "P7",
+      "P8",
+      "P5N100",
+      "P6N128",
+      "P8N128"
+    ],
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "per_regime": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "n_nodes": 72,
+      "mean_ratio": 1.0934454684783437,
+      "median_ratio": 0.9398594670573583,
+      "std_ratio": 0.5706629501310407,
+      "CV_percent": 52.18942933891203,
+      "spearman_lambda_t_vs_T_00": 0.9473921152485691,
+      "pearson_lambda_t_vs_T_00": 0.897527852905796
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "n_nodes": 112,
+      "mean_ratio": 0.9569718916014524,
+      "median_ratio": 0.9450285745726551,
+      "std_ratio": 0.04853605785093322,
+      "CV_percent": 5.0718373524754385,
+      "spearman_lambda_t_vs_T_00": 0.945108825639799,
+      "pearson_lambda_t_vs_T_00": 0.9844329812869933
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "n_nodes": 120,
+      "mean_ratio": 0.9894713706215434,
+      "median_ratio": 0.9527566192609225,
+      "std_ratio": 0.13345349942836252,
+      "CV_percent": 13.487353286890228,
+      "spearman_lambda_t_vs_T_00": 0.9481075074657961,
+      "pearson_lambda_t_vs_T_00": 0.9787926029434464
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "n_nodes": 144,
+      "mean_ratio": 0.9729493339430143,
+      "median_ratio": 0.9591622294601223,
+      "std_ratio": 0.09301749411793495,
+      "CV_percent": 9.560363615335286,
+      "spearman_lambda_t_vs_T_00": 0.94371031267583,
+      "pearson_lambda_t_vs_T_00": 0.9665612760292701
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "n_nodes": 168,
+      "mean_ratio": 0.9673580291190662,
+      "median_ratio": 0.9700980775677905,
+      "std_ratio": 0.011533351543028118,
+      "CV_percent": 1.192252629931761,
+      "spearman_lambda_t_vs_T_00": 0.9488082161965167,
+      "pearson_lambda_t_vs_T_00": 0.9956301873186008
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_nodes": 200,
+      "mean_ratio": 0.9693674373690249,
+      "median_ratio": 0.9701276771946409,
+      "std_ratio": 0.011225524984207536,
+      "CV_percent": 1.1580257961495908,
+      "spearman_lambda_t_vs_T_00": 0.9422530563264082,
+      "pearson_lambda_t_vs_T_00": 0.9975852545894895
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "n_nodes": 240,
+      "mean_ratio": 0.9810814153677089,
+      "median_ratio": 0.9825355118179702,
+      "std_ratio": 0.008665818964441475,
+      "CV_percent": 0.8832925411387524,
+      "spearman_lambda_t_vs_T_00": 0.9816238129134185,
+      "pearson_lambda_t_vs_T_00": 0.9949830923969436
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_nodes": 256,
+      "mean_ratio": 0.9762789151571482,
+      "median_ratio": 0.9805342127701655,
+      "std_ratio": 0.012981524688439527,
+      "CV_percent": 1.3296942591810392,
+      "spearman_lambda_t_vs_T_00": 0.9540333886472877,
+      "pearson_lambda_t_vs_T_00": 0.9947507595923034
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_nodes": 288,
+      "mean_ratio": 0.9812950778018451,
+      "median_ratio": 0.9836993264133216,
+      "std_ratio": 0.009980705964002447,
+      "CV_percent": 1.0170952845661652,
+      "spearman_lambda_t_vs_T_00": 0.960378914837097,
+      "pearson_lambda_t_vs_T_00": 0.996067808847896
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_nodes": 336,
+      "mean_ratio": 0.98746835045051,
+      "median_ratio": 0.9889131565089968,
+      "std_ratio": 0.007387051263798869,
+      "CV_percent": 0.7480798002719475,
+      "spearman_lambda_t_vs_T_00": 0.9827883684586817,
+      "pearson_lambda_t_vs_T_00": 0.9964483861751199
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_nodes": 400,
+      "mean_ratio": 0.9865670760236783,
+      "median_ratio": 0.9890295428964448,
+      "std_ratio": 0.010061277447314231,
+      "CV_percent": 1.0198270033362389,
+      "spearman_lambda_t_vs_T_00": 0.9663540397127481,
+      "pearson_lambda_t_vs_T_00": 0.9944422144250903
+    },
+    {
+      "regime": "P6N128",
+      "N": 128,
+      "n_nodes": 512,
+      "mean_ratio": 0.9837060031974455,
+      "median_ratio": 0.9861727653750985,
+      "std_ratio": 0.011371181434742745,
+      "CV_percent": 1.1559532419017238,
+      "spearman_lambda_t_vs_T_00": 0.8790189479120175,
+      "pearson_lambda_t_vs_T_00": 0.9827915499375364
+    },
+    {
+      "regime": "P8N128",
+      "N": 128,
+      "n_nodes": 512,
+      "mean_ratio": 0.9851594287816487,
+      "median_ratio": 0.9876830836551156,
+      "std_ratio": 0.011349951473108607,
+      "CV_percent": 1.1520928635018135,
+      "spearman_lambda_t_vs_T_00": 0.8868006917979881,
+      "pearson_lambda_t_vs_T_00": 0.9660433475554627
+    }
+  ],
+  "pooled": {
+    "n_nodes_total": 3360,
+    "pearson_lambda_t_vs_T_00": 0.9164154946373296,
+    "spearman_lambda_t_vs_T_00": 0.9616256919311307,
+    "linear_fit_intercept": -0.21095436233230383,
+    "linear_fit_slope": 1.2712053305869206,
+    "linear_fit_R_squared": 0.8398173588113829,
+    "mean_ratio": 0.9832187655439111,
+    "median_ratio": 0.9837845301336663,
+    "std_ratio": 0.09210201097402841,
+    "CV_percent": 9.367397592648478
+  },
+  "verdict": "STRUCTURAL_PER_NODE_PROPORTIONALITY_CONFIRMED"
+}

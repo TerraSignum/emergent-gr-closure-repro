@@ -1,0 +1,100 @@
+{
+  "criterion": "Discrete Riemannian-embedding-stress profile",
+  "definition": {
+    "geometric_coherence": "c_g(N) = 1 / (1 + stress(N)), Kruskal-Shepard MDS coherence in target dimension min(3, N-1).",
+    "einstein_metric_stress": "sigma(N) = 1 - c_g(N) = stress(N) / (1 + stress(N)). Vanishing sigma is the obstruction-free condition for extracting a Riemannian metric on a smooth 3-manifold from the lattice distance matrix; the Einstein equations are exact only when sigma -> 0.",
+    "relation_to_tensor_closure_gap": "sigma(N) tracks the macroscopic tensor-closure deficit reported by the canonical multi-N pipeline (companion multi-anchor extension run), with regime-by-regime agreement to ~0.02 in absolute units. sigma(N) is the more direct definition; the canonical tensor-closure gap is a closely-related composite of the same MDS-stress geometry.",
+    "relation_to_einstein_identity_gap": "sigma(N) is NOT the Einstein-identity gap ||G_munu - 8 pi G T_munu|| / ||G_munu||; the latter is a separate, narrower quantity that is bundled at the two canonical regimes only, and that DOES converge under Richardson extrapolation. sigma(N) is the broader discrete-Riemannian-embedding axis that characterizes whether a Riemannian metric exists at all on the lattice; it does not vanish at the available lattice sizes."
+  },
+  "identity_check": [
+    {
+      "N": 409.5,
+      "c_g": 0.741337,
+      "sigma": 0.258663,
+      "identity_residual": 0.0,
+      "identity_passes": true
+    },
+    {
+      "N": 1539.0,
+      "c_g": 0.720751,
+      "sigma": 0.279249,
+      "identity_residual": 5.551115123125783e-17,
+      "identity_passes": true
+    },
+    {
+      "N": 2254.0,
+      "c_g": 0.680853,
+      "sigma": 0.319147,
+      "identity_residual": 5.551115123125783e-17,
+      "identity_passes": true
+    },
+    {
+      "N": 3917.5,
+      "c_g": 0.663378,
+      "sigma": 0.336622,
+      "identity_residual": 0.0,
+      "identity_passes": true
+    },
+    {
+      "N": 6038.5,
+      "c_g": 0.681011,
+      "sigma": 0.318989,
+      "identity_residual": 5.551115123125783e-17,
+      "identity_passes": true
+    },
+    {
+      "N": 9379.5,
+      "c_g": 0.684141,
+      "sigma": 0.315859,
+      "identity_residual": 0.0,
+      "identity_passes": true
+    },
+    {
+      "N": 14181.0,
+      "c_g": 0.700832,
+      "sigma": 0.299168,
+      "identity_residual": 0.0,
+      "identity_passes": true
+    }
+  ],
+  "all_identity_pass": true,
+  "regime_profile": {
+    "N_at_max_stress": 3917.5,
+    "max_stress": 0.336622,
+    "N_at_min_stress": 409.5,
+    "min_stress": 0.258663,
+    "stress_range": [
+      0.258663,
+      0.336622
+    ],
+    "N_range": [
+      409.5,
+      14181.0
+    ],
+    "n_points": 7
+  },
+  "richardson_endpoints": {
+    "N1": 409.5,
+    "sigma1": 0.258663,
+    "N2": 14181.0,
+    "sigma2": 0.299168,
+    "candidates": [
+      {
+        "alpha": 0.6666666666666666,
+        "sigma_inf": 0.30337660020582574,
+        "c_coefficient": -2.4657114019492927
+      },
+      {
+        "alpha": 1.0,
+        "sigma_inf": 0.3003724292560723,
+        "c_coefficient": -17.080011280361628
+      },
+      {
+        "alpha": 0.848,
+        "sigma_inf": 0.3012771002381057,
+        "c_coefficient": -6.994306108786875
+      }
+    ]
+  },
+  "verdict": "sigma(N) = 1 - geometric_coherence holds to floating-point precision on all 7 rows; the regime profile is non-monotonic with sigma in [0.26, 0.34]; the two-point Richardson under N^(-alpha) ansatze gives sigma_inf ~ 0.30 at all three canonical exponents, i.e. no clean convergence to zero on the broad Riemannian-embedding axis (this is consistent with the canonical tensor-closure gap series)."
+}

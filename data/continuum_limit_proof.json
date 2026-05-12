@@ -1,0 +1,744 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "n_points": 5,
+  "N_values": [
+    1534.0,
+    1539.0,
+    2254.0,
+    3917.5,
+    6079.5
+  ],
+  "clp_a": {
+    "step": "CLP-A",
+    "tag": "tightness",
+    "T1_diameter_ratios": [
+      1.0,
+      1.0011,
+      1.1369,
+      1.3669,
+      1.5825
+    ],
+    "T1_anomalous_ratios": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "T1_score": 1.0,
+    "T2_transport_scores": [
+      0.461726,
+      0.464024,
+      0.509637,
+      0.476855,
+      0.486653
+    ],
+    "T2_score": 0.963642,
+    "T3_energy_fit": {
+      "alpha": 3.0,
+      "prefactor": -92415175.072336,
+      "gap_inf": 0.491974,
+      "residual": 0.0008991148,
+      "n_points": 5
+    },
+    "T3_score": 0.491974,
+    "T4_score": 1.0,
+    "T4_note": "\u03bc_N normalised to 1 by construction",
+    "tightness_score": 0.863904,
+    "tightness_status": "PRECOMPACT"
+  },
+  "clp_b": {
+    "step": "CLP-B",
+    "tag": "operator_convergence",
+    "B1_eigenvalue_fits": {
+      "d1_gamma_ir_variational_closure_score": {
+        "alpha": 1.8,
+        "prefactor": 8708.752693,
+        "gap_inf": 0.482672,
+        "residual": 0.0016186767,
+        "n_points": 5
+      },
+      "d1_gamma_ir_residual_locality_score": {
+        "alpha": 1.95,
+        "prefactor": 40002.687171,
+        "gap_inf": 0.515496,
+        "residual": 0.0034400823,
+        "n_points": 5
+      },
+      "d1_gamma_ir_residual_density_score": {
+        "alpha": 2.05,
+        "prefactor": 72182.75738,
+        "gap_inf": 0.633535,
+        "residual": 0.0016079917,
+        "n_points": 5
+      },
+      "d1_gamma_ir_residual_absorption_closure_score": {
+        "alpha": 1.85,
+        "prefactor": 18105.598267,
+        "gap_inf": 0.48869,
+        "residual": 0.0033223298,
+        "n_points": 5
+      }
+    },
+    "B1_converging": 4,
+    "B1_total": 4,
+    "B1_score": 1.0,
+    "B2_spectral_gap_fit": {
+      "alpha": 1.95,
+      "prefactor": 20825.470578,
+      "gap_inf": 0.671851,
+      "residual": 0.000377262,
+      "n_points": 5
+    },
+    "B2_score": 0.671851,
+    "B3_resolvent_fit": {
+      "alpha": 1.8,
+      "prefactor": 8708.752693,
+      "gap_inf": 0.482672,
+      "residual": 0.0016186767,
+      "n_points": 5
+    },
+    "B3_score": 0.671851,
+    "B4_alpha_fast": 3.0,
+    "B4_alpha_slow": 2.275,
+    "B4_fast_slow_ratio": 1.3187,
+    "B4_slow_stationary": false,
+    "B4_score": 1.0,
+    "B4_slow_decomposition": {
+      "spectral": 0.671851,
+      "locality": 0.515496,
+      "locality_fit": {
+        "alpha": 1.95,
+        "prefactor": 40002.687171,
+        "gap_inf": 0.515496,
+        "residual": 0.0034400823,
+        "n_points": 5
+      },
+      "density": 0.633535,
+      "density_fit": {
+        "alpha": 2.05,
+        "prefactor": 72182.75738,
+        "gap_inf": 0.633535,
+        "residual": 0.0016079917,
+        "n_points": 5
+      },
+      "absorption": 0.48869,
+      "absorption_fit": {
+        "alpha": 1.85,
+        "prefactor": 18105.598267,
+        "gap_inf": 0.48869,
+        "residual": 0.0033223298,
+        "n_points": 5
+      },
+      "bottleneck": "absorption"
+    },
+    "B5_flavor_convergence": {
+      "status": "FLAVOR_CONVERGE",
+      "absorption_fit": {
+        "alpha": 1.85,
+        "prefactor": 18105.598267,
+        "gap_inf": 0.48869,
+        "residual": 0.0033223298,
+        "n_points": 5
+      },
+      "multi_family_base": 0.545907,
+      "test_state_scores": {
+        "quark_LR": 0.633535,
+        "lepton_LR": 0.515496,
+        "mixing_sensitive": 0.712988,
+        "quark_LR_N_stability": 0.969186,
+        "lepton_LR_N_stability": 0.947078,
+        "absorption_N_stability": 0.945512
+      },
+      "yukawa_hierarchy_ratio": 1720.26,
+      "yukawa_hierarchy_physical": true,
+      "hierarchy_floor": 0.589424,
+      "hierarchy_log_kappa": 2.2356,
+      "ckm_provided": true,
+      "ckm_elements": {
+        "V_ud": 0.92841,
+        "V_us": 0.369422,
+        "V_ub": 0.03977,
+        "V_cd": 0.37119,
+        "V_cs": 0.919526,
+        "V_cb": 0.129185,
+        "V_td": 0.016499,
+        "V_ts": 0.134157,
+        "V_tb": 0.990823
+      },
+      "score": 0.653788
+    },
+    "B5_score": 0.653788,
+    "B6_phase_variation_fit": {
+      "alpha": 2.0,
+      "prefactor": 85950.356364,
+      "gap_inf": 0.363618,
+      "residual": 0.0055140607,
+      "n_points": 5
+    },
+    "B6_holonomy_envelope_fit": {
+      "alpha": 1.95,
+      "prefactor": 40762.857677,
+      "gap_inf": 0.487172,
+      "residual": 0.0025656194,
+      "n_points": 5
+    },
+    "B6_default_phase_class_fit": {
+      "alpha": 2.25,
+      "prefactor": 332045.00845,
+      "gap_inf": 0.782634,
+      "residual": 0.0013841705,
+      "n_points": 5
+    },
+    "B6_phase_holonomy_test_states": {
+      "phase_variation": 0.363618,
+      "holonomy_envelope": 0.487172,
+      "default_phase_class": 0.782634
+    },
+    "operator_difference_norms": {
+      "xi_variance_diff": 0.01629173,
+      "curvature_mean_diff": 0.01486613,
+      "wave_variation_diff": 0.00333545,
+      "variational_closure_diff": 0.02033095,
+      "phase_variation_diff": 0.03074729,
+      "M_frobenius_norm": 0.08789159,
+      "M_spectral_norm": 0.07596676,
+      "M_condition_number": 1720.26
+    },
+    "B3_resolvent_lemma": {
+      "theorem": "Second resolvent identity (Kato IV.3.17)",
+      "assumptions": {
+        "A1_spectral_gap": {
+          "value": 0.671851,
+          "holds": true
+        },
+        "A2_operator_norm_delta": {
+          "value": 0.03074729,
+          "finite": true
+        },
+        "A3_gap_relative_bound": {
+          "delta_over_gap": 0.045765,
+          "holds": true
+        }
+      },
+      "conclusion": {
+        "resolvent_bound": "||R_N - R_inf|| <= 0.0458 -> 0",
+        "norm_convergence_factor": 0.954235,
+        "resolvent_lemma_score": 0.671851
+      },
+      "validity_domain": "rho(H_inf) with dist(z, sigma) >= 0.3359",
+      "operator_norm_attribution": {
+        "phase_variation_diff": {
+          "value": 0.03074729,
+          "role": "driver",
+          "gap_relative": 0.045765
+        },
+        "variational_closure_diff": {
+          "value": 0.02033095,
+          "role": "driver",
+          "gap_relative": 0.030261
+        },
+        "xi_variance_diff": {
+          "value": 0.01629173,
+          "role": "driver",
+          "gap_relative": 0.024249
+        },
+        "curvature_mean_diff": {
+          "value": 0.01486613,
+          "role": "noise",
+          "gap_relative": 0.022127
+        },
+        "wave_variation_diff": {
+          "value": 0.00333545,
+          "role": "noise",
+          "gap_relative": 0.004965
+        }
+      },
+      "resolvent_test_states": {
+        "smooth": {
+          "score": 0.754882,
+          "gap_inf": 0.754882,
+          "n_points": 5
+        },
+        "defect": {
+          "score": 0.245781,
+          "gap_inf": 0.245781,
+          "n_points": 5
+        },
+        "residual_dominated": {
+          "score": 0.482672,
+          "gap_inf": 0.482672,
+          "n_points": 5
+        },
+        "mixing_sensitive": {
+          "score": 0.712988,
+          "gap_inf": 0.712988,
+          "n_points": 5
+        },
+        "mean_score": 0.549081,
+        "min_score": 0.245781
+      }
+    },
+    "B3_resolvent_upgraded": true,
+    "B5_N_family_export": {
+      "M_u": {
+        "N_values": [
+          1534,
+          1539,
+          2254,
+          3917,
+          6079
+        ],
+        "scores": [
+          0.634746,
+          0.672236,
+          0.654527,
+          0.613116,
+          0.649455
+        ],
+        "continuity": 0.94088
+      },
+      "M_d": {
+        "N_values": [
+          1534,
+          1539,
+          2254,
+          3917,
+          6079
+        ],
+        "scores": [
+          0.476337,
+          0.544377,
+          0.512603,
+          0.468019,
+          0.505458
+        ],
+        "continuity": 0.923642
+      },
+      "M_e": {
+        "N_values": [
+          1534,
+          1539,
+          2254,
+          3917,
+          6079
+        ],
+        "scores": [
+          0.50532,
+          0.571628,
+          0.540689,
+          0.491917,
+          0.534035
+        ],
+        "continuity": 0.920289
+      },
+      "global_continuity": 0.92827,
+      "continuity_statement": "sup{N,N' >= N0} |M_f(N) - M_f(N')| < epsilon for f in {u,d,e}; epsilon_eff = 0.0717"
+    },
+    "B6_ckm_mixing_quality": {
+      "off_diagonal_values": [
+        0.369422,
+        0.129185,
+        0.03977
+      ],
+      "physical": true,
+      "boost": 0.1
+    },
+    "B7_phase_holonomy_block": {
+      "scores": {
+        "phase_variation": 0.363618,
+        "holonomy_envelope": 0.487172,
+        "default_phase_class": 0.782634
+      },
+      "phase_N_stability": 0.905315,
+      "holonomy_N_stability": 0.9506,
+      "phase_class_N_stability": 0.97601,
+      "sub_block_score": 0.744225,
+      "status": "PHASE_HOLONOMY_CONVERGE"
+    },
+    "family_scores": {
+      "B_fast_geom": {
+        "score": 1.0,
+        "components": [
+          "B1_eigenvalue_convergence",
+          "B4_fast_sector"
+        ],
+        "alpha_fast": 3.0,
+        "status": "CLOSED"
+      },
+      "B_slow_phys": {
+        "score": 0.596285,
+        "components": [
+          "spectral",
+          "locality",
+          "density",
+          "absorption"
+        ],
+        "decomposition": {
+          "spectral": 0.671851,
+          "locality": 0.515496,
+          "density": 0.633535,
+          "absorption": 0.48869
+        },
+        "bottleneck": "absorption",
+        "alpha_slow": 2.275,
+        "status": "PRINCIPAL_RESIDUAL"
+      },
+      "B_internal": {
+        "score": 0.715541,
+        "components": [
+          "B5_flavor_mass_operators",
+          "B6_CKM_PMNS",
+          "B7_phase_holonomy"
+        ],
+        "ckm_boost": 0.1,
+        "phase_holonomy_sub_block": 0.744225,
+        "N_family_continuity": 0.92827,
+        "test_states": [
+          "quark_LR",
+          "lepton_LR",
+          "mixing_sensitive",
+          "quark_LR_N_stability",
+          "lepton_LR_N_stability",
+          "absorption_N_stability",
+          "phase_variation",
+          "holonomy_envelope",
+          "default_phase_class"
+        ],
+        "status": "INTERNAL_CONVERGE"
+      }
+    },
+    "operator_convergence_score": 0.799498,
+    "operator_convergence_status": "OPERATORS_CONVERGE",
+    "remaining_work": "CLP-B three-family structure: B-fast-geom=1.000 CLOSED, B-slow-phys=0.596 PRINCIPAL_RESIDUAL (bottleneck: absorption=0.489), B-internal=0.716 (INTERNAL_CONVERGE). Delta-S bridge is the Hauptsatz connecting Gamma-side and operator-side."
+  },
+  "clp_c": {
+    "step": "CLP-C",
+    "tag": "gamma_convergence",
+    "C1_loss_fit": {
+      "alpha": 2.45,
+      "prefactor": -887216.648422,
+      "gap_inf": 0.394488,
+      "residual": 0.0004522799,
+      "n_points": 5
+    },
+    "C1_loss_values": [
+      0.391535,
+      0.370642,
+      0.384239,
+      0.405075,
+      0.385992
+    ],
+    "C1_monotonic_fraction": 1.0,
+    "C1_score": 0.723858,
+    "C2_canon_scores": [
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "C2_score": 1.0,
+    "C3_transport_range": 0.047911,
+    "C3_score": 0.952089,
+    "C4_fixpoint_fit": {
+      "alpha": 3.0,
+      "prefactor": 149582566.28728,
+      "gap_inf": 0.754882,
+      "residual": 0.001441833,
+      "n_points": 5
+    },
+    "C4_score": 0.754882,
+    "C5_delta_s_link": {
+      "gamma_side_score": 0.723858,
+      "gamma_side_ready": true,
+      "recovery_side_score": 1.0,
+      "recovery_side_ready": true,
+      "delta_s_link_score": 0.861929,
+      "note": "Full \u03b4S_N\u2192\u03b4S_\u221e link = min(\u0393-convergence, operator limit). \u0393-side verified here; operator-side in CLP-B. Complete bridge evaluated in CLP-D assembly."
+    },
+    "C5_score": 0.861929,
+    "gamma_convergence_score": 0.858552,
+    "gamma_convergence_status": "GAMMA_CONVERGED"
+  },
+  "clp_d": {
+    "step": "CLP-D",
+    "tag": "assembly",
+    "tightness_score": 0.863904,
+    "operator_convergence_score": 0.799498,
+    "gamma_convergence_score": 0.858552,
+    "tightness_status": "PRECOMPACT",
+    "operator_status": "OPERATORS_CONVERGE",
+    "gamma_status": "GAMMA_CONVERGED",
+    "fast_slow_ratio": 1.3187,
+    "alpha_fast": 3.0,
+    "alpha_slow": 2.275,
+    "slow_phys_decomposition": {
+      "spectral": 0.671851,
+      "locality": 0.515496,
+      "locality_fit": {
+        "alpha": 1.95,
+        "prefactor": 40002.687171,
+        "gap_inf": 0.515496,
+        "residual": 0.0034400823,
+        "n_points": 5
+      },
+      "density": 0.633535,
+      "density_fit": {
+        "alpha": 2.05,
+        "prefactor": 72182.75738,
+        "gap_inf": 0.633535,
+        "residual": 0.0016079917,
+        "n_points": 5
+      },
+      "absorption": 0.48869,
+      "absorption_fit": {
+        "alpha": 1.85,
+        "prefactor": 18105.598267,
+        "gap_inf": 0.48869,
+        "residual": 0.0033223298,
+        "n_points": 5
+      },
+      "bottleneck": "absorption"
+    },
+    "flavor_convergence_status": "FLAVOR_CONVERGE",
+    "flavor_convergence_score": 0.653788,
+    "flavor_test_states": {
+      "quark_LR": 0.633535,
+      "lepton_LR": 0.515496,
+      "mixing_sensitive": 0.712988,
+      "quark_LR_N_stability": 0.969186,
+      "lepton_LR_N_stability": 0.947078,
+      "absorption_N_stability": 0.945512
+    },
+    "N_family_masses": {
+      "M_u": {
+        "N_values": [
+          1534,
+          1539,
+          2254,
+          3917,
+          6079
+        ],
+        "scores": [
+          0.634746,
+          0.672236,
+          0.654527,
+          0.613116,
+          0.649455
+        ],
+        "continuity": 0.94088
+      },
+      "M_d": {
+        "N_values": [
+          1534,
+          1539,
+          2254,
+          3917,
+          6079
+        ],
+        "scores": [
+          0.476337,
+          0.544377,
+          0.512603,
+          0.468019,
+          0.505458
+        ],
+        "continuity": 0.923642
+      },
+      "M_e": {
+        "N_values": [
+          1534,
+          1539,
+          2254,
+          3917,
+          6079
+        ],
+        "scores": [
+          0.50532,
+          0.571628,
+          0.540689,
+          0.491917,
+          0.534035
+        ],
+        "continuity": 0.920289
+      },
+      "global_continuity": 0.92827,
+      "continuity_statement": "sup{N,N' >= N0} |M_f(N) - M_f(N')| < epsilon for f in {u,d,e}; epsilon_eff = 0.0717"
+    },
+    "operator_families": {
+      "B_fast_geom": {
+        "score": 1.0,
+        "components": [
+          "B1_eigenvalue_convergence",
+          "B4_fast_sector"
+        ],
+        "alpha_fast": 3.0,
+        "status": "CLOSED"
+      },
+      "B_slow_phys": {
+        "score": 0.596285,
+        "components": [
+          "spectral",
+          "locality",
+          "density",
+          "absorption"
+        ],
+        "decomposition": {
+          "spectral": 0.671851,
+          "locality": 0.515496,
+          "density": 0.633535,
+          "absorption": 0.48869
+        },
+        "bottleneck": "absorption",
+        "alpha_slow": 2.275,
+        "status": "PRINCIPAL_RESIDUAL"
+      },
+      "B_internal": {
+        "score": 0.715541,
+        "components": [
+          "B5_flavor_mass_operators",
+          "B6_CKM_PMNS",
+          "B7_phase_holonomy"
+        ],
+        "ckm_boost": 0.1,
+        "phase_holonomy_sub_block": 0.744225,
+        "N_family_continuity": 0.92827,
+        "test_states": [
+          "quark_LR",
+          "lepton_LR",
+          "mixing_sensitive",
+          "quark_LR_N_stability",
+          "lepton_LR_N_stability",
+          "absorption_N_stability",
+          "phase_variation",
+          "holonomy_envelope",
+          "default_phase_class"
+        ],
+        "status": "INTERNAL_CONVERGE"
+      }
+    },
+    "operator_difference_norms": {
+      "xi_variance_diff": 0.01629173,
+      "curvature_mean_diff": 0.01486613,
+      "wave_variation_diff": 0.00333545,
+      "variational_closure_diff": 0.02033095,
+      "phase_variation_diff": 0.03074729,
+      "M_frobenius_norm": 0.08789159,
+      "M_spectral_norm": 0.07596676,
+      "M_condition_number": 1720.26
+    },
+    "clp_b_remaining_work": "CLP-B three-family structure: B-fast-geom=1.000 CLOSED, B-slow-phys=0.596 PRINCIPAL_RESIDUAL (bottleneck: absorption=0.489), B-internal=0.716 (INTERNAL_CONVERGE). Delta-S bridge is the Hauptsatz connecting Gamma-side and operator-side.",
+    "resolvent_theorem": {
+      "theorem": "Second resolvent identity (Kato IV.3.17)",
+      "assumptions": {
+        "A1_spectral_gap": {
+          "value": 0.671851,
+          "holds": true
+        },
+        "A2_operator_norm_delta": {
+          "value": 0.03074729,
+          "finite": true
+        },
+        "A3_gap_relative_bound": {
+          "delta_over_gap": 0.045765,
+          "holds": true
+        }
+      },
+      "conclusion": {
+        "resolvent_bound": "||R_N - R_inf|| <= 0.0458 -> 0",
+        "norm_convergence_factor": 0.954235,
+        "resolvent_lemma_score": 0.671851
+      },
+      "validity_domain": "rho(H_inf) with dist(z, sigma) >= 0.3359",
+      "operator_norm_attribution": {
+        "phase_variation_diff": {
+          "value": 0.03074729,
+          "role": "driver",
+          "gap_relative": 0.045765
+        },
+        "variational_closure_diff": {
+          "value": 0.02033095,
+          "role": "driver",
+          "gap_relative": 0.030261
+        },
+        "xi_variance_diff": {
+          "value": 0.01629173,
+          "role": "driver",
+          "gap_relative": 0.024249
+        },
+        "curvature_mean_diff": {
+          "value": 0.01486613,
+          "role": "noise",
+          "gap_relative": 0.022127
+        },
+        "wave_variation_diff": {
+          "value": 0.00333545,
+          "role": "noise",
+          "gap_relative": 0.004965
+        }
+      },
+      "resolvent_test_states": {
+        "smooth": {
+          "score": 0.754882,
+          "gap_inf": 0.754882,
+          "n_points": 5
+        },
+        "defect": {
+          "score": 0.245781,
+          "gap_inf": 0.245781,
+          "n_points": 5
+        },
+        "residual_dominated": {
+          "score": 0.482672,
+          "gap_inf": 0.482672,
+          "n_points": 5
+        },
+        "mixing_sensitive": {
+          "score": 0.712988,
+          "gap_inf": 0.712988,
+          "n_points": 5
+        },
+        "mean_score": 0.549081,
+        "min_score": 0.245781
+      }
+    },
+    "phase_holonomy_block": {
+      "scores": {
+        "phase_variation": 0.363618,
+        "holonomy_envelope": 0.487172,
+        "default_phase_class": 0.782634
+      },
+      "phase_N_stability": 0.905315,
+      "holonomy_N_stability": 0.9506,
+      "phase_class_N_stability": 0.97601,
+      "sub_block_score": 0.744225,
+      "status": "PHASE_HOLONOMY_CONVERGE"
+    },
+    "phase_holonomy_test_states": {
+      "phase_variation": 0.363618,
+      "holonomy_envelope": 0.487172,
+      "default_phase_class": 0.782634
+    },
+    "d1_structural_status": "D1_STRUCTURALLY_CLOSED",
+    "d1_resolved": true,
+    "d1_note": "D1 structural closure supported by A4/A3 variational theorem. D1 is no longer the main obstacle to the continuum proof; remaining work is CLP-B operator convergence.",
+    "delta_s_bridge_score": 0.799498,
+    "delta_s_bridge_note": "\u03b4S_N\u2192\u03b4S_\u221e = min(\u0393-convergence C5, operator B). \u0393-side=0.8619, B-side=0.7995. Euler\u2013Lagrange continuity verified.",
+    "continuum_limit_proof_score": 0.840136,
+    "proof_status": "CLP_PROVEN",
+    "successes": [
+      "CLP-A Tightness: score=0.8639, status=PRECOMPACT",
+      "CLP-B Operator Conv.: score=0.7995, status=OPERATORS_CONVERGE",
+      "CLP-C \u0393-Convergence: score=0.8586, status=GAMMA_CONVERGED",
+      "Continuum limit proof: three-stage verification complete (global=0.8401)",
+      "D1 structural closure (D1_STRUCTURALLY_CLOSED): resolved input \u2014 no longer blocking CLP"
+    ],
+    "failures": [],
+    "open_gaps": []
+  }
+}

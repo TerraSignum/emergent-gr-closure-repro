@@ -1,0 +1,80 @@
+{
+  "method": "alpha_xi_eff_N_dependence_analysis",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "static_rational": 0.9,
+  "single_point_measured": 0.900819,
+  "within_P5_alpha_xi_eff_per_N": {
+    "50": 0.9378638955342156,
+    "64": 0.9253606139771795,
+    "72": 0.9205199156850844,
+    "84": 0.9096649291637343,
+    "100": 0.9195051777103506,
+    "200": 0.8997029349254042,
+    "300": 0.903727210794537
+  },
+  "within_P5_drift_range": 0.038160960608811356,
+  "within_P5_drift_relative_pct": 4.236251745224219,
+  "cross_regime_alpha_xi_eff": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "alpha_xi_eff": 0.9162255472162706
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "alpha_xi_eff": 0.90862970207244
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "alpha_xi_eff": 0.9113499646742458
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "alpha_xi_eff": 0.9060272221425846
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "alpha_xi_eff": 0.9063947049161778
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "alpha_xi_eff": 0.912309270100874
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "alpha_xi_eff": 0.9016253373718888
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "alpha_xi_eff": 0.9093771191520502
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "alpha_xi_eff": 0.9084958282793884
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "alpha_xi_eff": 0.9021656374099327
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "alpha_xi_eff": 0.9130178594709213
+    }
+  ],
+  "verdict": "STRONG",
+  "interpretation": "alpha_xi_eff drifts >2% over within-P5 \u2014 substantial finite-N dynamics inconsistent with strict-rational claim"
+}

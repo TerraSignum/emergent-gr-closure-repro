@@ -1,0 +1,44 @@
+{
+  "method": "stage6b_structural_grounds_for_2_7",
+  "branch_metadata": {
+    "causal_wave_branch": "running",
+    "branch_rationale": "K/Q closure stage; chirality-running coefficient diagnostic",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "2.0.0",
+  "supersedes": "stage6b_solve_4_problems.json (which contained Wilson-loop hardcoded -pi/2 ansatz and corresponding higher-order corrections; both empirically falsified by P5N512)",
+  "problem_2_so_2N_plus_1_short_roots": {
+    "framework": "B_N = so(2N+1) Lie algebra short-root fraction",
+    "N_gen": 3,
+    "rank_B_N": 3,
+    "cartan_dim": 3,
+    "long_roots_count": 12,
+    "short_roots_count": 6,
+    "total_roots": 18,
+    "total_dim_B_N": 21,
+    "short_root_fraction": 0.2857142857142857,
+    "f_neg_target_2_over_7": 0.2857142857142857,
+    "match_exact": true,
+    "physical_reading": "Persistent-triangle phase classes = directions in B_N root system. Long roots (2N(N-1)=12 for N=3) are primary matter classes. Short roots (2N=6 for N=3) are secondary antimatter classes. Singlet (N Cartan, of which 1 trace) brings total to 2N+1=7 vector-rep components. This is a structural-correspondence statement, not a first-principles derivation of the dynamics.",
+    "alternative_form_rank_minus_1_over_dim_vec": 0.2857142857142857
+  },
+  "problem_3_klein_quartic_237": {
+    "framework": "(2,3,7) hyperbolic triangle group / Klein quartic",
+    "klein_quartic_genus": 3,
+    "klein_quartic_euler_characteristic": -4,
+    "klein_quartic_area_8pi": 25.132741228718345,
+    "automorphism_group_order_PSL2_7": 168,
+    "n_fundamental_triangles": 336,
+    "fundamental_triangle_area_pi_over_42": 0.07479982508547135,
+    "n_type_7_vertices": 24,
+    "n_type_3_vertices": 56,
+    "n_type_2_vertices": 84,
+    "total_vertices": 164,
+    "total_edges": 504,
+    "euler_check_chi": -4,
+    "euler_consistent": true,
+    "type_7_angular_share_two_triangles": 0.2857142857142857,
+    "match_to_2_over_7": true,
+    "structural_note": "Klein quartic is the smallest Hurwitz surface (maximum automorphism group order 84(g-1)=168 for g=3).  The persistent-triangle subgraph on the lattice may approximate a (2,3,7)-tessellated hyperbolic surface; this is a structural conjecture, not derived here."
+  }
+}

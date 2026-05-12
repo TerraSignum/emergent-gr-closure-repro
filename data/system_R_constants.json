@@ -1,0 +1,68 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "System-R structural constants used in the Lambda_munu and Einstein-gap analyses, in both the algebraic-rounded form and the lattice-measured form.",
+  "convention": "algebraic_rounded values are the closed-form Pythagoras + integer-uniqueness derivation; lattice_measured values are extracted from the canonical regime fits.",
+  "constants": {
+    "alpha_xi": {
+      "algebraic_rounded": 0.9,
+      "algebraic_form": "9/10",
+      "lattice_measured": 0.900819,
+      "comment": "Phase-coherence amplitude on the canonical regime."
+    },
+    "gamma": {
+      "algebraic_rounded": 0.1,
+      "algebraic_form": "1/10",
+      "lattice_measured": 0.100206,
+      "comment": "Pythagorean complement of alpha_xi (alpha_xi^2 + gamma^2 = 1 to leading order)."
+    },
+    "epsilon_sync_squared": {
+      "algebraic_rounded": 0.05,
+      "algebraic_form": "1/20",
+      "lattice_measured": 0.05,
+      "comment": "Causal-wave dark-energy admixture parameter."
+    },
+    "beta_pi": {
+      "algebraic_rounded": 0.9375,
+      "algebraic_form": "15/16",
+      "lattice_measured": 0.937913,
+      "comment": "PMNS-bridge coefficient."
+    },
+    "D_Omega": {
+      "algebraic_rounded": 0.8375,
+      "algebraic_form": "67/80",
+      "lattice_measured": 0.839964,
+      "comment": "DM/DE branching coefficient on the canonical regime."
+    }
+  },
+  "derived_quantities": {
+    "alpha_xi_squared": {
+      "algebraic_rounded": 0.81,
+      "lattice_measured": 0.811475,
+      "comment": "Asymptotic Lambda_t = T_00^rec / T_00 on the within-P5 ladder."
+    },
+    "alpha_xi_sq_minus_half_gamma_sq": {
+      "algebraic_rounded": 0.805,
+      "algebraic_form": "161/200",
+      "lattice_measured": 0.806455,
+      "comment": "Lambda^mu_mu trace asymptote under the 2+1 anisotropy."
+    },
+    "alpha_xi_sq_plus_gamma_sq": {
+      "algebraic_rounded": 0.82,
+      "algebraic_form": "82/100",
+      "lattice_measured": 0.821517,
+      "comment": "Pythagoras-complementarity sum (target hypothesis was retracted on 12-point ladder)."
+    }
+  },
+  "reference": {
+    "paper_06": "Konsolidiertes_Dossier",
+    "memory_keys": [
+      "project_lambda_munu_2plus1_2026_04_30",
+      "project_lambda_t_asymptotic_alpha_xi_2026_04_30",
+      "project_p4_closure_session_2026_04_30"
+    ]
+  }
+}

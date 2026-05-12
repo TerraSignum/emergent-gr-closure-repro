@@ -1,0 +1,176 @@
+{
+  "method": "per_direction_closure_certificate",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "structural_lambda": {
+    "t": 0.81,
+    "s": -0.005
+  },
+  "system_R_origin": {
+    "lambda_t": "alpha_xi^2 = (9/10)^2 = 81/100",
+    "lambda_s": "-gamma^2/2 = -(1/10)^2/2 = -1/200"
+  },
+  "regimes": [
+    50,
+    60,
+    64,
+    72,
+    84,
+    100
+  ],
+  "median_power_law_fits": {
+    "traceless_R_TF": {
+      "alpha": 2.2167857943729286,
+      "R_squared": 0.7313188409766291
+    },
+    "off_diagonal_R_off": {
+      "alpha": 1.447808358466995,
+      "R_squared": 0.9350177256403339
+    },
+    "trace_R_trace": {
+      "alpha": 0.5347813528759148,
+      "R_squared": 0.8260491869285937,
+      "max_value_across_N": 0.009148980611905218
+    },
+    "time_time_R_time": {
+      "alpha": -0.16006846834610017,
+      "R_squared": 0.06473423185609328,
+      "stagnates_at_constant_offset": true,
+      "constant_offset_value_approx": 0.02
+    }
+  },
+  "lambda_t_running": {
+    "lambda_t_best_per_N": [
+      {
+        "N": 50,
+        "lambda_t_best_median_closure": 0.8323082043119896
+      },
+      {
+        "N": 60,
+        "lambda_t_best_median_closure": 0.8129282489909723
+      },
+      {
+        "N": 64,
+        "lambda_t_best_median_closure": 0.8269667448372822
+      },
+      {
+        "N": 72,
+        "lambda_t_best_median_closure": 0.825364670001052
+      },
+      {
+        "N": 84,
+        "lambda_t_best_median_closure": 0.8139028373232702
+      },
+      {
+        "N": 100,
+        "lambda_t_best_median_closure": 0.8336016117128631
+      }
+    ],
+    "lambda_t_best_mean_across_N": 0.8241787195295717,
+    "lambda_t_best_std_across_N": 0.008126354512945456,
+    "max_deviation_from_structural_0p81": 0.023601611712863013,
+    "linear_drift_total_across_N": 0.002296722111306696,
+    "interpretation": "Lambda_t_best(N) sits at ~0.821 +/- 0.009 across N=50..100 with no systematic drift. Lambda_t = 0.81 (System-R), 0.811 (L9), 0.8122 (h113), 0.8164, 0.8185 (asymp), 0.819 (w_eff_kzm), 0.821 (best-fit) all give negative power-law alpha for R_time_median(N). NO Lambda_t choice produces N-convergence. The R_time stagnation at offset ~0.018 is OPEN; whether it is a lattice-discretisation bias OR a missing physical term is not yet decided by the data."
+  },
+  "within_spatial_decomposition": {
+    "fraction_traceless_avg": 0.8939540656060373,
+    "fraction_trace_avg": 0.10604593439396277,
+    "fraction_time_total_avg": 0.058546465879316605,
+    "fraction_off_total_avg": 0.00047710780336561914
+  },
+  "verdicts_absolute_norm": {
+    "traceless_R_TF": "CLOSES",
+    "off_diagonal_R_off": "CLOSES",
+    "trace_R_trace": "CLOSES",
+    "time_time_R_time": "OPEN_STAGNATION_AT_OFFSET_~0.018_ABS_BUT_~2.4pct_REL"
+  },
+  "relative_frobenius_residual_pipeline_norm": {
+    "definition": "Delta(a) = ||R||_F / ||T||_F = sqrt(R_00^2 + sum R_ii^2 + R_off^2) / sqrt(T_00^2 + sum lambda_i^2)",
+    "thresholds": {
+      "median_max": 0.05,
+      "mean_max": 0.1
+    },
+    "per_regime": [
+      {
+        "regime": "P5",
+        "N": 50,
+        "delta_median": 0.050206341992379715,
+        "delta_mean": 0.16818207015978243,
+        "delta_p90": 0.5163097204470795,
+        "delta_max": 0.9575599994026603,
+        "median_passes_threshold_0p05": false,
+        "mean_passes_threshold_0p10": false
+      },
+      {
+        "regime": "P6",
+        "N": 60,
+        "delta_median": 0.03391939445884708,
+        "delta_mean": 0.07439064833758666,
+        "delta_p90": 0.15008875494982798,
+        "delta_max": 0.8453517933725081,
+        "median_passes_threshold_0p05": true,
+        "mean_passes_threshold_0p10": true
+      },
+      {
+        "regime": "P5N64",
+        "N": 64,
+        "delta_median": 0.03827426305703561,
+        "delta_mean": 0.12075005189502352,
+        "delta_p90": 0.3418402588677212,
+        "delta_max": 0.9144493584629525,
+        "median_passes_threshold_0p05": true,
+        "mean_passes_threshold_0p10": false
+      },
+      {
+        "regime": "P7",
+        "N": 72,
+        "delta_median": 0.0337994635636666,
+        "delta_mean": 0.08930901569048044,
+        "delta_p90": 0.18869233313670156,
+        "delta_max": 0.9194852185486526,
+        "median_passes_threshold_0p05": true,
+        "mean_passes_threshold_0p10": true
+      },
+      {
+        "regime": "P8",
+        "N": 84,
+        "delta_median": 0.02938088662741073,
+        "delta_mean": 0.05931365072594043,
+        "delta_p90": 0.07847176508162726,
+        "delta_max": 0.8219025109517004,
+        "median_passes_threshold_0p05": true,
+        "mean_passes_threshold_0p10": true
+      },
+      {
+        "regime": "P5N100",
+        "N": 100,
+        "delta_median": 0.03780444065996909,
+        "delta_mean": 0.07595389587841078,
+        "delta_p90": 0.14515128697755178,
+        "delta_max": 0.9810470248018469,
+        "median_passes_threshold_0p05": true,
+        "mean_passes_threshold_0p10": true
+      }
+    ],
+    "delta_median_power_law": {
+      "alpha": 0.42240141415440013,
+      "r_squared": 0.3345834641698511
+    },
+    "delta_mean_power_law": {
+      "alpha": 1.1227511470684046,
+      "r_squared": 0.5411814416969682
+    },
+    "verdict": "MEDIAN_CLOSURE_HOLDS_FROM_N>=60"
+  },
+  "R_time_relative_scale": {
+    "mean_relative_R_over_T": 0.024308605642878827,
+    "verdict": "RELATIVE_CLOSURE_HOLDS",
+    "note": "|R_time_med| / |T_00_med| ~ 2.4% across regimes; the absolute R_time_median offset of ~0.020 is small relative to the |T_00| ~ 0.84 scale and below the pipeline 5% closure threshold."
+  },
+  "overall_verdict": "MEDIAN_CLOSURE_HOLDS_FROM_N>=60",
+  "honest_caveat": "Two normalisations report different verdicts:\n  - ABSOLUTE per-eigendirection: PARTIAL_MEDIAN_CLOSURE; the R_time absolute residual stagnates at ~0.018-0.025 with no Lambda_t candidate (0.81, 0.811, 0.8114, 0.8122, 0.8164, 0.8185, 0.819, 0.821) producing N-convergence. omega_a-running with kappa in [0, 1] does NOT bring N-convergence either.\n  - RELATIVE Frobenius (matches pipeline normalisation): MEDIAN_CLOSURE_HOLDS_FROM_N>=60; Delta_median <= 0.05 holds at all N>=60. Power-law alpha = +0.42 (R^2=0.33) for median, +1.12 (R^2=0.54) for mean: positive convergence rates.\nThe relative norm IS the pipeline-canonical closure observable. The absolute residual stagnation indicates a finite |R_time| ~ 0.02 floor that is small (2.4%) relative to |T_00| ~ 0.84. Heavy-tail mean is dominated by ~10% geometric-condensation nodes (separate structural feature, not closure failure). Caveat: 6 N-points (50..100) is statistically dilute; bootstrap p-values are missing; N=50 is marginal (Delta_med = 0.0502, just above 0.05)."
+}

@@ -1,0 +1,68 @@
+{
+  "method": "chirality_weighted_aicc_model_selection",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "ladder_N": [
+    50,
+    72,
+    84,
+    128,
+    200,
+    256,
+    300
+  ],
+  "deviation_means": [
+    0.0518861352624691,
+    0.05403091318990849,
+    0.02723213205690367,
+    0.02882361821566659,
+    0.02629605610563379,
+    0.03370873439217581,
+    0.013739978450333812
+  ],
+  "fits": {
+    "M1_free": {
+      "p": 1.0,
+      "a": 0.01593935866284793,
+      "b": 1.8853469959609932,
+      "rss": 0.00045372223612821994,
+      "r2": 0.640732760280891,
+      "k": 3,
+      "AICc": -53.507548576361415
+    },
+    "M2_fixed_2/3": {
+      "a": 0.007842748704792285,
+      "b": 0.6040805900833087,
+      "rss": 0.00045851331957448734,
+      "r2": 0.6369390750965528,
+      "k": 2,
+      "alpha": 0.6666666666666666,
+      "AICc": -60.4340195579329
+    },
+    "M3_fixed_1": {
+      "a": 0.01593935866284793,
+      "b": 1.8853469959609932,
+      "rss": 0.00045372223612821994,
+      "r2": 0.640732760280891,
+      "k": 2,
+      "alpha": 1.0,
+      "AICc": -60.507548576361415
+    },
+    "M4_symanzik_2": {
+      "a": 0.023956479151351025,
+      "b": 80.30676831030368,
+      "rss": 0.0004921767272294266,
+      "r2": 0.6102836489685916,
+      "k": 2,
+      "alpha": 2.0,
+      "AICc": -59.93807997337254
+    }
+  },
+  "best_model": "M3_fixed_1",
+  "best_AICc": -60.507548576361415,
+  "delta_AICc_2over3_vs_free": -6.926470981571484,
+  "interpretation": "Fixed-alpha=2/3 beats free fit by Delta-AICc = 6.93; data support alpha=2/3 over the 3-param free fit at AICc-significant level."
+}

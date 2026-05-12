@@ -1,0 +1,80 @@
+{
+  "method": "tail_universal_simplified_T_00_log_ratio_test",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Tail / cluster / spectral-truncation diagnostic; branch-blind statistical structure",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "lambda_t": 0.81,
+  "lambda_s": -0.005,
+  "tail_fraction": 0.1,
+  "excluded_regimes": [
+    "P5"
+  ],
+  "all_regimes_fit": {
+    "label": "all_regimes",
+    "n_pooled": 170,
+    "fit_1param_T": {
+      "a0": 0.2610573374915495,
+      "a1_logT": 1.222985488642874,
+      "R_squared": 0.7916898283216371
+    },
+    "fit_3param": {
+      "a0": 0.25049149780685726,
+      "a_logT": 1.0092008105108345,
+      "a_loggradT": 0.04128116762357781,
+      "a_logomega": 0.021293565978885987,
+      "R_squared": 0.8084353403363745
+    }
+  },
+  "kept_regimes_fit": {
+    "label": "excluding_['P5']",
+    "n_pooled": 150,
+    "fit_1param_T": {
+      "a0": 0.2343462248915933,
+      "a1_logT": 1.303686510098281,
+      "R_squared": 0.8356240343419141
+    },
+    "fit_3param": {
+      "a0": 0.2260281658356695,
+      "a_logT": 1.0288349475933967,
+      "a_loggradT": 0.048091163461545294,
+      "a_logomega": 0.020843123351569903,
+      "R_squared": 0.8556013096830704
+    }
+  },
+  "per_regime_R_squared_1param": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "R_squared": -2.35720327788422
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "R_squared": 0.8661141430819852
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "R_squared": 0.47741856186384624
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "R_squared": 0.8365199272585817
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "R_squared": 0.8509710594511599
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "R_squared": 0.7044192585707725
+    }
+  ],
+  "verdict_1param": "SIMPLIFIED_UNIVERSAL_FORM_HOLDS_T_00_ONLY"
+}

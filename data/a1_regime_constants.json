@@ -1,0 +1,41 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "anchor_0",
+      "canonical",
+      "extended"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "A1 fast-slow metric closure: the projected gradient flow on the triangle penalty converges to the sub-multiplicative regime; this stabilizes a quasi-metric tube on which the slow physics evolves.",
+  "fast_slow_equation": "y_dot = -lambda_triangle * G_triangle(y) + epsilon * R_slow(y)",
+  "lambda_triangle_threshold": 1.0,
+  "epsilon_separation_threshold": 0.1,
+  "regimes": {
+    "anchor_0": {
+      "role": "reference / small-N reference",
+      "lambda_triangle": 0.93,
+      "epsilon": 0.06,
+      "status": "PASS_BELOW_THRESHOLD"
+    },
+    "canonical": {
+      "role": "canonical producer / A1-B / dense-cell",
+      "lambda_triangle": 1.04,
+      "epsilon": 0.07,
+      "status": "PASS"
+    },
+    "extended": {
+      "role": "stress / control regime",
+      "lambda_triangle": 0.85,
+      "epsilon": 0.13,
+      "status": "DRIFT"
+    }
+  },
+  "verdict_canonical": "lambda_triangle = 1.04 >= 1.0 and epsilon = 0.07 <= 0.10; A1 fast-slow flow stabilizes a quasi-metric tube on P1.",
+  "verdict_P0": "lambda_triangle = 0.93 close to threshold; small-N reference activation reading.",
+  "verdict_extended": "Drift regime; no A1 fast-slow stabilization."
+}

@@ -1,0 +1,164 @@
+{
+  "method": "direct effective-Bianchi audit on source side",
+  "branch_metadata": {
+    "causal_wave_branch": "running",
+    "regimes_used": [
+      "P1",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ],
+    "branch_rationale": "K/Q closure stage; chirality-running coefficient diagnostic",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "ladder": [
+    {
+      "regime": "P1",
+      "N": 28,
+      "n_seeds": 8
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "n_seeds": 8
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "n_seeds": 8
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_seeds": 8
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "n_seeds": 8
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_seeds": 8
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_seeds": 8
+    }
+  ],
+  "per_regime": [
+    {
+      "regime": "P1",
+      "N": 28,
+      "n_seeds": 8,
+      "n_nodes": 224,
+      "B_eff_time_med": 2.7482739947487045,
+      "B_eff_time_mean": 5.152557337539455,
+      "B_eff_spat_med": 1.9179582701226612,
+      "B_eff_full_med": 3.9070775510592597,
+      "B_eff_full_p90": 13.436766270950107,
+      "B_eff_full_p95": 22.716540874910482
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "n_seeds": 8,
+      "n_nodes": 288,
+      "B_eff_time_med": 2.1049493662631633,
+      "B_eff_time_mean": 4.04481283391978,
+      "B_eff_spat_med": 1.2379986494963804,
+      "B_eff_full_med": 2.6299824000020626,
+      "B_eff_full_p90": 10.352503002172593,
+      "B_eff_full_p95": 14.285445205695323
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "n_seeds": 8,
+      "n_nodes": 336,
+      "B_eff_time_med": 0.8235832630618131,
+      "B_eff_time_mean": 1.39858678264249,
+      "B_eff_spat_med": 0.39615017635530786,
+      "B_eff_full_med": 0.9739311082455205,
+      "B_eff_full_p90": 3.1551168836762598,
+      "B_eff_full_p95": 4.932899466812909
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_seeds": 8,
+      "n_nodes": 400,
+      "B_eff_time_med": 1.0508118628311165,
+      "B_eff_time_mean": 2.028904435020199,
+      "B_eff_spat_med": 0.5144694418040627,
+      "B_eff_full_med": 1.2091082616777036,
+      "B_eff_full_p90": 4.438459247231272,
+      "B_eff_full_p95": 6.751499655170579
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "n_seeds": 8,
+      "n_nodes": 480,
+      "B_eff_time_med": 0.47435703041900334,
+      "B_eff_time_mean": 0.8782675522323015,
+      "B_eff_spat_med": 0.10926217728919112,
+      "B_eff_full_med": 0.5045710729979151,
+      "B_eff_full_p90": 1.7906641966664227,
+      "B_eff_full_p95": 2.679034806978722
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "n_seeds": 8,
+      "n_nodes": 576,
+      "B_eff_time_med": 0.47604100576960134,
+      "B_eff_time_mean": 0.923979558675136,
+      "B_eff_spat_med": 0.10652722652325564,
+      "B_eff_full_med": 0.5072148577744187,
+      "B_eff_full_p90": 1.9044499227910996,
+      "B_eff_full_p95": 2.9092564600448827
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "n_seeds": 8,
+      "n_nodes": 672,
+      "B_eff_time_med": 0.38023766146628185,
+      "B_eff_time_mean": 0.648582051201941,
+      "B_eff_spat_med": 0.05989362661824118,
+      "B_eff_full_med": 0.4024450610424518,
+      "B_eff_full_p90": 1.282935616847929,
+      "B_eff_full_p95": 1.9599368468429397
+    }
+  ],
+  "B_eff_time_med_symanzik_24": {
+    "y_inf": -0.029740582038122427,
+    "R2": 0.9210476570125254,
+    "alpha_power_law": 1.8763886497564026,
+    "alpha_R2": 0.9006931367252193
+  },
+  "B_eff_spat_med_symanzik_24": {
+    "y_inf": -0.19738318629319934,
+    "R2": 0.948964536745656,
+    "alpha_power_law": 3.28236966218204,
+    "alpha_R2": 0.9352764370360624
+  },
+  "B_eff_full_med_symanzik_24": {
+    "y_inf": -0.05156522297768959,
+    "R2": 0.94444839687733,
+    "alpha_power_law": 2.140145249349981,
+    "alpha_R2": 0.910009654815068
+  },
+  "B_eff_full_p90_symanzik_24": {
+    "y_inf": -0.7046282762807538,
+    "R2": 0.9040681609587591,
+    "alpha_power_law": 2.1787290109201862,
+    "alpha_R2": 0.8871125122733984
+  }
+}

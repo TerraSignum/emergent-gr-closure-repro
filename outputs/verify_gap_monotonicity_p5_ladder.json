@@ -1,0 +1,115 @@
+{
+  "method": "Gap-monotonicity audit on the canonical $\\mathcal P_5/\\mathcal P_5 N$ physics ladder; scores s_k = 1 - Delta_{rho_k}(N), rates r_k = ds_k/dL where L = N^{1/3}.",
+  "n_regimes": 10,
+  "score_keys": [
+    "median",
+    "mean",
+    "p95",
+    "p99",
+    "sup"
+  ],
+  "r_bar": 0.10862850193157976,
+  "r_bar_bootstrap_CI95": [
+    0.07468948575577469,
+    0.16695908390441971
+  ],
+  "g_prime": -0.10862850193157976,
+  "g_prime_bootstrap_CI95": [
+    -0.16695908390441971,
+    -0.07468948575577469
+  ],
+  "per_score": [
+    {
+      "score_key": "median",
+      "rate": 0.004265897970783248,
+      "rate_positive": true
+    },
+    {
+      "score_key": "mean",
+      "rate": 0.023895018611231212,
+      "rate_positive": true
+    },
+    {
+      "score_key": "p95",
+      "rate": 0.148977698434702,
+      "rate_positive": true
+    },
+    {
+      "score_key": "p99",
+      "rate": 0.22433952516027325,
+      "rate_positive": true
+    },
+    {
+      "score_key": "sup",
+      "rate": 0.14166436948090916,
+      "rate_positive": true
+    }
+  ],
+  "n_positive_score_rates": 5,
+  "gap_per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "L": 3.6840314986403864,
+      "G": 0.5790392936660756
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "L": 3.9999999999999996,
+      "G": 0.544464189977812
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "L": 4.160167646103808,
+      "G": 0.46290440855830917
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "L": 4.379519139887889,
+      "G": 0.44952570755468235
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "L": 4.641588833612778,
+      "G": 0.40901392996634045
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "L": 5.039684199579492,
+      "G": 0.22837383982288417
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "L": 5.848035476425731,
+      "G": 0.2164233882808564
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "L": 6.3496042078727974,
+      "G": 0.20462900043611965
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "L": 6.694329500821694,
+      "G": 0.13481800683292433
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "L": 7.999999999999999,
+      "G": 0.15326417210044097
+    }
+  ],
+  "g_monotone_decreasing_steps": 8,
+  "g_total_steps": 9,
+  "hypothesis_r_bar_gt_zero_certified": true,
+  "verdict": "GAP_MONOTONE_DECREASING_CERTIFIED"
+}

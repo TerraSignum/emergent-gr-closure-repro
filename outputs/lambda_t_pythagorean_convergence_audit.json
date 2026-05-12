@@ -1,0 +1,174 @@
+{
+  "method": "lambda_t_pythagorean_convergence",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P1",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P5N64",
+      "P7",
+      "P5N72",
+      "P8",
+      "P5N84",
+      "P5N100",
+      "P6N128",
+      "P8N128"
+    ],
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "pythagorean_prediction": 0.8200000000000001,
+  "naive_prediction": 0.81,
+  "cross_term_excluded": 0.18000000000000002,
+  "per_regime": [
+    {
+      "regime": "P1",
+      "N": 28,
+      "lambda_t_star": 0.9338332125187341,
+      "median_T00": 0.8732911170356148,
+      "median_G00": 0.04701121685660718,
+      "n_nodes": 112,
+      "rel_offset_pyth_pct": 13.88209908765049,
+      "rel_offset_naive_pct": 15.288050928238766
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "lambda_t_star": 0.9771719964783979,
+      "median_T00": 0.856366582745391,
+      "median_G00": 0.0351625211321645,
+      "n_nodes": 144,
+      "rel_offset_pyth_pct": 19.167316643707053,
+      "rel_offset_naive_pct": 20.63851808375282
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "lambda_t_star": 0.847322930049228,
+      "median_T00": 0.8475814269152833,
+      "median_G00": 0.02514155071604989,
+      "n_nodes": 168,
+      "rel_offset_pyth_pct": 3.3320646401497465,
+      "rel_offset_naive_pct": 4.6077691418799915
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "lambda_t_star": 0.879588686546614,
+      "median_T00": 0.8585060509110314,
+      "median_G00": 0.025506011152375656,
+      "n_nodes": 200,
+      "rel_offset_pyth_pct": 7.266912993489509,
+      "rel_offset_naive_pct": 8.591195869952344
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "lambda_t_star": 0.8208763022187563,
+      "median_T00": 0.8285954985255585,
+      "median_G00": 0.01425303517466794,
+      "n_nodes": 240,
+      "rel_offset_pyth_pct": 0.10686612423856472,
+      "rel_offset_naive_pct": 1.3427533603402764
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "lambda_t_star": 0.8562922659002226,
+      "median_T00": 0.8446894182600003,
+      "median_G00": 0.016558835016036257,
+      "n_nodes": 256,
+      "rel_offset_pyth_pct": 4.425886085392987,
+      "rel_offset_naive_pct": 5.7150945555830255
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "lambda_t_star": 0.8414692396034322,
+      "median_T00": 0.8392428726981114,
+      "median_G00": 0.01340814640948472,
+      "n_nodes": 288,
+      "rel_offset_pyth_pct": 2.618199951638069,
+      "rel_offset_naive_pct": 3.8850913090657
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "lambda_t_star": 0.4372506667877664,
+      "median_T00": 0.4284229667330234,
+      "median_G00": 0.014967641855238356,
+      "n_nodes": 288,
+      "rel_offset_pyth_pct": -46.676747952711416,
+      "rel_offset_naive_pct": -46.01843619904118
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "lambda_t_star": 0.8175056921010312,
+      "median_T00": 0.8232147303333244,
+      "median_G00": 0.00905194650292842,
+      "n_nodes": 336,
+      "rel_offset_pyth_pct": -0.3041838901181552,
+      "rel_offset_naive_pct": 0.9266286544482882
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "lambda_t_star": 0.42574892356660854,
+      "median_T00": 0.42550722033102006,
+      "median_G00": 0.009851341224590207,
+      "n_nodes": 336,
+      "rel_offset_pyth_pct": -48.079399565047744,
+      "rel_offset_naive_pct": -47.43840449794956
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "lambda_t_star": 0.8454897718361434,
+      "median_T00": 0.8449384967874567,
+      "median_G00": 0.0092725371627172,
+      "n_nodes": 400,
+      "rel_offset_pyth_pct": 3.108508760505282,
+      "rel_offset_naive_pct": 4.381453313104114
+    },
+    {
+      "regime": "P6N128",
+      "N": 128,
+      "lambda_t_star": 0.4220672912019728,
+      "median_T00": 0.42359251589661784,
+      "median_G00": 0.00583828033738639,
+      "n_nodes": 512,
+      "rel_offset_pyth_pct": -48.52837912171064,
+      "rel_offset_naive_pct": -47.89292701210213
+    },
+    {
+      "regime": "P8N128",
+      "N": 128,
+      "lambda_t_star": 0.42076316930560387,
+      "median_T00": 0.4229826446797641,
+      "median_G00": 0.005181107076866939,
+      "n_nodes": 512,
+      "rel_offset_pyth_pct": -48.68741837736539,
+      "rel_offset_naive_pct": -48.053929715357555
+    }
+  ],
+  "symanzik_24_fit": {
+    "Lambda_t_inf": 0.4789896161275379,
+    "c_2": 1192.9490473120422,
+    "c_4": -667108.3500437221,
+    "R2": 0.486243955174924,
+    "n_points": 13
+  },
+  "distance_to_predictions": {
+    "abs_to_pyth": 0.3410103838724622,
+    "abs_to_naive": 0.3310103838724622,
+    "rel_pyth_pct": 41.586632179568554,
+    "rel_naive_pct": 40.865479490427425,
+    "improvement_factor": 0.9706753797745349
+  },
+  "verdict": "NAIVE_BETTER_OR_TIE"
+}

@@ -1,0 +1,137 @@
+{
+  "method": "direct_lattice_continuum_test_delta_d_ratio_vs_gamma_sq_4_pi",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P0",
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P5N64",
+      "P5N72",
+      "P7",
+      "P5N84",
+      "P8",
+      "P5N100",
+      "P6N128",
+      "P8N128"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "predicted_value": 0.01273239544735163,
+  "per_regime": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "weighted_mean_x_ab": 0.4824940134483988,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 3689.4991201263606
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "weighted_mean_x_ab": 0.19362009759763169,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 1420.6886905001459
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "weighted_mean_x_ab": 0.2337923155433864,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 1736.2005524421231
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "weighted_mean_x_ab": 0.1438152506973511,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 1029.5223376624313
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "weighted_mean_x_ab": 0.07772119870918408,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 510.4208672324129
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "weighted_mean_x_ab": 0.0774891332040238,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 508.598229017005
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "weighted_mean_x_ab": 0.035718607058752544,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 180.53328383059375
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "weighted_mean_x_ab": 0.053539862860620534,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 320.5010995928261
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "weighted_mean_x_ab": 0.043795461502314795,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 243.96875029061684
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "weighted_mean_x_ab": 0.04073773901855499,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 219.95345406137653
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "weighted_mean_x_ab": 0.02647497067414367,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 107.93393343473736
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "weighted_mean_x_ab": 0.02315654649837653,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 81.87109090452536
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "weighted_mean_x_ab": 0.026565869129833677,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 108.64784823628332
+    },
+    {
+      "regime": "P6N128",
+      "N": 128,
+      "weighted_mean_x_ab": 0.015244166967980498,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 19.72740739175928
+    },
+    {
+      "regime": "P8N128",
+      "N": 128,
+      "weighted_mean_x_ab": 0.013613824263039328,
+      "predicted": 0.01273239544735163,
+      "rel_err_percent": 6.922725730067059
+    }
+  ],
+  "symanzik_continuum_limit": 0.00893010688242638,
+  "rel_err_continuum_vs_prediction": -29.863104555994095,
+  "verdict": "NO_DIRECT_LATTICE_CONFIRMATION"
+}

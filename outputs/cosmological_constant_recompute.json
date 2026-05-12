@@ -1,0 +1,13 @@
+{
+  "criterion": "Cosmological-constant 9-layer closure recompute",
+  "hierarchy_orders": 122,
+  "rho_final_GeV4": 2.322331161573956e-47,
+  "rho_observed_GeV4": 2.49066e-47,
+  "ratio": 0.93,
+  "residual_log10_OoM": -0.03,
+  "residual_pct": 7.0,
+  "tier": "PRECISE",
+  "n_layers_total": 9,
+  "fitted_parameters": 0,
+  "verdict": "PASS"
+}

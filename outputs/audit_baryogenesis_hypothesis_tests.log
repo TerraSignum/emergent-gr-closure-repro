@@ -1,0 +1,61 @@
+================================================================================
+Three falsification tests for the per-regime baryogenesis hypothesis
+================================================================================
+
+--- P5N64 N=64 (n_seeds=8) ---
+  Stufe A: T2_persistent=+0.0389+-0.0043  T2_random=+0.0400+-0.0057  specificity=-0.0011
+  Stufe B: K_real=1.580 null_mean=1.596 null_std=0.026 z=-0.42
+  Stufe C: m(PPN)/m(PNN)=0.99852  asym(PPN-PNN)=+0.0235  freq[PPP,PPN,PNN,NNN]=[0.130,0.378,0.361,0.131]
+--- P5N72 N=72 (n_seeds=8) ---
+  Stufe A: T2_persistent=+0.0374+-0.0062  T2_random=+0.0398+-0.0068  specificity=-0.0024
+  Stufe B: K_real=1.840 null_mean=1.842 null_std=0.005 z=-0.32
+  Stufe C: m(PPN)/m(PNN)=1.00083  asym(PPN-PNN)=+0.0173  freq[PPP,PPN,PNN,NNN]=[0.115,0.386,0.373,0.126]
+--- P5N84 N=84 (n_seeds=8) ---
+  Stufe A: T2_persistent=+0.0367+-0.0041  T2_random=+0.0385+-0.0077  specificity=-0.0018
+  Stufe B: K_real=1.686 null_mean=1.681 null_std=0.014 z=-0.33
+  Stufe C: m(PPN)/m(PNN)=1.00147  asym(PPN-PNN)=-0.0095  freq[PPP,PPN,PNN,NNN]=[0.124,0.374,0.381,0.122]
+--- P5N100 N=100 (n_seeds=8) ---
+  Stufe A: T2_persistent=+0.0387+-0.0050  T2_random=+0.0387+-0.0044  specificity=-0.0000
+  Stufe B: K_real=1.705 null_mean=1.706 null_std=0.009 z=-0.07
+  Stufe C: m(PPN)/m(PNN)=0.99923  asym(PPN-PNN)=+0.0083  freq[PPP,PPN,PNN,NNN]=[0.119,0.381,0.375,0.125]
+--- P5N128 N=128 (n_seeds=4) ---
+  Stufe A: T2_persistent=+0.1271+-0.0123  T2_random=+0.1396+-0.0192  specificity=-0.0124
+  Stufe B: K_real=1.657 null_mean=1.657 null_std=0.005 z=-0.22
+  Stufe C: m(PPN)/m(PNN)=1.00071  asym(PPN-PNN)=+0.0242  freq[PPP,PPN,PNN,NNN]=[0.117,0.391,0.372,0.120]
+--- P5N200 N=200 (n_seeds=4) ---
+  Stufe A: T2_persistent=+0.0732+-0.0052  T2_random=+0.1122+-0.0262  specificity=-0.0390
+  Stufe B: K_real=1.538 null_mean=1.539 null_std=0.008 z=-0.11
+  Stufe C: m(PPN)/m(PNN)=1.00075  asym(PPN-PNN)=-0.0286  freq[PPP,PPN,PNN,NNN]=[0.124,0.366,0.388,0.123]
+--- P5N256 N=256 (n_seeds=2) ---
+  Stufe A: T2_persistent=+0.0741+-0.0091  T2_random=+0.1076+-0.0102  specificity=-0.0335
+  Stufe B: K_real=1.553 null_mean=1.551 null_std=0.009 z=+0.03
+  Stufe C: m(PPN)/m(PNN)=0.99961  asym(PPN-PNN)=-0.0034  freq[PPP,PPN,PNN,NNN]=[0.134,0.365,0.367,0.134]
+--- P5N300 N=300 (n_seeds=2) ---
+  Stufe A: T2_persistent=+0.0690+-0.0007  T2_random=+0.0843+-0.0009  specificity=-0.0153
+  Stufe B: K_real=1.890 null_mean=1.880 null_std=0.009 z=+1.45
+  Stufe C: m(PPN)/m(PNN)=0.99920  asym(PPN-PNN)=-0.0283  freq[PPP,PPN,PNN,NNN]=[0.124,0.354,0.374,0.147]
+
+================================================================================
+Cross-regime synthesis (Stufe A, B, C falsification)
+================================================================================
+  Stufe A: T2_persistent cross-regime = +0.0619 +/- 0.0293
+           T2_random cross-regime     = +0.0751 +/- 0.0384
+           Specificity (pers-random)  = -0.0132 +/- 0.0144
+           Significance (mean/std)    = -0.92 sigma
+  Stufe B: K_vortex real mean = 1.681 +/- 0.121
+           K_vortex null mean = 1.681 +/- 0.118
+           Z-score cross-regime = +0.00 +/- 0.57
+  Stufe C: m(PPN)/m(PNN) cross-regime = 1.00004 +/- 0.00097  (SM 0.99862)
+           PPN-PNN asym cross-regime  = +0.0004 +/- 0.0201
+
+           N-trend in m(PPN)/m(PNN):
+             N=  64  ratio=0.99852  asym=+0.0235  n_tri=6400
+             N=  72  ratio=1.00083  asym=+0.0173  n_tri=6400
+             N=  84  ratio=1.00147  asym=-0.0095  n_tri=6400
+             N= 100  ratio=0.99923  asym=+0.0083  n_tri=6400
+             N= 128  ratio=1.00071  asym=+0.0242  n_tri=3200
+             N= 200  ratio=1.00075  asym=-0.0286  n_tri=3200
+             N= 256  ratio=0.99961  asym=-0.0034  n_tri=1600
+             N= 300  ratio=0.99920  asym=-0.0283  n_tri=1600
+
+Saved C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\audit_baryogenesis_hypothesis_tests.json

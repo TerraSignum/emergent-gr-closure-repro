@@ -1,0 +1,80 @@
+{
+  "method": "per_component_extrapolation_discipline_audit",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "Theorem_15_18_P2_scope": "alpha = 2/3 fixed for Einstein-gap convergence Delta_E and quantities with N^(-2/3) decay; NOT universal for all lattice quantities.",
+  "audit": {
+    "R_bar": {
+      "dynamic_range_percent": 105.01446480231438,
+      "best_alpha": 0.05,
+      "best_r2": 0.9094224241519446,
+      "r2_at_alpha_2_3": 0.82814045049737,
+      "classification": "WEAK trend (alpha-amplified artifact when forced)",
+      "recommended_discipline": "extrapolation does not apply (non-decay character)"
+    },
+    "T_00": {
+      "dynamic_range_percent": 10.39292683514418,
+      "best_alpha": 0.5500000000000003,
+      "best_r2": 0.8778648215705472,
+      "r2_at_alpha_2_3": 0.8772495315159334,
+      "classification": "CLEAR power-law decay",
+      "recommended_discipline": "alpha = 2/3 extrapolation (Theorem 15.18 P2)"
+    },
+    "|T_ii|": {
+      "dynamic_range_percent": 25.36413991178582,
+      "best_alpha": 0.3200000000000001,
+      "best_r2": 0.8501884449892251,
+      "r2_at_alpha_2_3": 0.8445986844476671,
+      "classification": "MODERATE decay",
+      "recommended_discipline": "alpha = 2/3 extrapolation (Theorem 15.18 P2)"
+    },
+    "N_KZM": {
+      "dynamic_range_percent": 136.04762556452718,
+      "best_alpha": 0.05,
+      "best_r2": 0.7882595543365654,
+      "r2_at_alpha_2_3": 0.6601056841810389,
+      "classification": "WEAK trend (alpha-amplified artifact when forced)",
+      "recommended_discipline": "extrapolation does not apply (non-decay character)"
+    },
+    "v_dens": {
+      "dynamic_range_percent": 51.3619247884982,
+      "best_alpha": 4.999999999999938,
+      "best_r2": 0.31680199087136984,
+      "r2_at_alpha_2_3": 0.11563038738249742,
+      "classification": "PLATEAU or non-monotonic (steep best-alpha is artifact)",
+      "recommended_discipline": "asymptotic-window mean (P_late regimes)"
+    },
+    "K_rec": {
+      "dynamic_range_percent": 2.4750773461670725,
+      "best_alpha": 0.05,
+      "best_r2": 0.9762857410929157,
+      "r2_at_alpha_2_3": 0.9160581036417589,
+      "classification": "PLATEAU (very flat trajectory)",
+      "recommended_discipline": "asymptotic-window mean (P_late regimes)"
+    },
+    "grad^2 Psi": {
+      "dynamic_range_percent": 25.368094881931835,
+      "best_alpha": 0.3200000000000001,
+      "best_r2": 0.8501899123288212,
+      "r2_at_alpha_2_3": 0.8446080352843311,
+      "classification": "MODERATE decay",
+      "recommended_discipline": "alpha = 2/3 extrapolation (Theorem 15.18 P2)"
+    },
+    "var(Xi)": {
+      "dynamic_range_percent": 142.59348034515818,
+      "best_alpha": 0.5800000000000003,
+      "best_r2": 0.9886206804909107,
+      "r2_at_alpha_2_3": 0.9882180663289144,
+      "classification": "CLEAR power-law decay",
+      "recommended_discipline": "alpha = 2/3 extrapolation (Theorem 15.18 P2)"
+    }
+  },
+  "phase_D_U_disciplines": {
+    "K_rec_to_17_over_20": "asymptotic-window mean (plateau)",
+    "grad_squared_Psi_to_5_over_12": "alpha = 2/3 extrapolation (Theorem 15.18 P2, moderate N^(-2/3) decay)",
+    "Lambda_to_19_over_15": "sum of per-component-discipline values, 0.16% match to rational target"
+  }
+}

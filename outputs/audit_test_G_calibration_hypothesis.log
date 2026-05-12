@@ -1,0 +1,117 @@
+================================================================================
+Test G: +1 as primary defect, calibration condition hypothesis
+================================================================================
+
+--- P5N64 N=64 (n_seeds=24) ---
+  Class counts (mean per seed):
+    pure-3       = 0
+    3+1          = 0
+    3+2          = 0
+  P_G3 asym(pure3)         = +nan +/- nan
+  P_G1 asym(calibrated)    = +0.0246 +/- 0.0092
+  P_G2 asym(uncalibrated)  = +0.0257 +/- 0.0109
+      Diff calib - uncalib = -0.0011
+      asym(low_extras)     = +0.0228
+      asym(high_extras)    = +0.0273
+      Diff low - high      = -0.0045
+      asym(all)            = +0.0251
+--- P5N72 N=72 (n_seeds=24) ---
+  Class counts (mean per seed):
+    pure-3       = 0
+    3+1          = 0
+    3+2          = 0
+  P_G3 asym(pure3)         = +nan +/- nan
+  P_G1 asym(calibrated)    = -0.0032 +/- 0.0090
+  P_G2 asym(uncalibrated)  = +0.0054 +/- 0.0101
+      Diff calib - uncalib = -0.0086
+      asym(low_extras)     = +0.0004
+      asym(high_extras)    = +0.0007
+      Diff low - high      = -0.0004
+      asym(all)            = +0.0012
+--- P5N84 N=84 (n_seeds=24) ---
+  Class counts (mean per seed):
+    pure-3       = 0
+    3+1          = 0
+    3+2          = 0
+  P_G3 asym(pure3)         = +nan +/- nan
+  P_G1 asym(calibrated)    = +0.0014 +/- 0.0062
+  P_G2 asym(uncalibrated)  = +0.0120 +/- 0.0078
+      Diff calib - uncalib = -0.0106
+      asym(low_extras)     = +0.0028
+      asym(high_extras)    = +0.0108
+      Diff low - high      = -0.0080
+      asym(all)            = +0.0066
+--- P5N100 N=100 (n_seeds=24) ---
+  Class counts (mean per seed):
+    pure-3       = 0
+    3+1          = 0
+    3+2          = 0
+  P_G3 asym(pure3)         = +nan +/- nan
+  P_G1 asym(calibrated)    = +0.0020 +/- 0.0086
+  P_G2 asym(uncalibrated)  = +0.0032 +/- 0.0057
+      Diff calib - uncalib = -0.0012
+      asym(low_extras)     = -0.0034
+      asym(high_extras)    = +0.0090
+      Diff low - high      = -0.0123
+      asym(all)            = +0.0027
+--- P5N128 N=128 (n_seeds=12) ---
+  Class counts (mean per seed):
+    pure-3       = 0
+    3+1          = 0
+    3+2          = 0
+  P_G3 asym(pure3)         = +nan +/- nan
+  P_G1 asym(calibrated)    = +0.0012 +/- 0.0092
+  P_G2 asym(uncalibrated)  = -0.0013 +/- 0.0058
+      Diff calib - uncalib = +0.0024
+      asym(low_extras)     = +0.0024
+      asym(high_extras)    = -0.0025
+      Diff low - high      = +0.0049
+      asym(all)            = -0.0001
+--- P5N200 N=200 (n_seeds=8) ---
+  Class counts (mean per seed):
+    pure-3       = 0
+    3+1          = 0
+    3+2          = 0
+  P_G3 asym(pure3)         = +nan +/- nan
+  P_G1 asym(calibrated)    = -0.0062 +/- 0.0071
+  P_G2 asym(uncalibrated)  = -0.0089 +/- 0.0062
+      Diff calib - uncalib = +0.0027
+      asym(low_extras)     = -0.0081
+      asym(high_extras)    = -0.0069
+      Diff low - high      = -0.0012
+      asym(all)            = -0.0076
+--- P5N256 N=256 (n_seeds=2) ---
+  Class counts (mean per seed):
+    pure-3       = 0
+    3+1          = 0
+    3+2          = 0
+  P_G3 asym(pure3)         = +nan +/- nan
+  P_G1 asym(calibrated)    = -0.0023 +/- 0.0051
+  P_G2 asym(uncalibrated)  = -0.0088 +/- 0.0074
+      Diff calib - uncalib = +0.0064
+      asym(low_extras)     = -0.0103
+      asym(high_extras)    = -0.0000
+      Diff low - high      = -0.0102
+      asym(all)            = -0.0055
+--- P5N300 N=300 (n_seeds=2) ---
+  Class counts (mean per seed):
+    pure-3       = 0
+    3+1          = 0
+    3+2          = 0
+  P_G3 asym(pure3)         = +nan +/- nan
+  P_G1 asym(calibrated)    = -0.0057 +/- 0.0077
+  P_G2 asym(uncalibrated)  = -0.0138 +/- 0.0046
+      Diff calib - uncalib = +0.0080
+      asym(low_extras)     = -0.0081
+      asym(high_extras)    = -0.0115
+      Diff low - high      = +0.0033
+      asym(all)            = -0.0098
+
+================================================================================
+Cross-regime synthesis (Test G predictions)
+================================================================================
+  P_G1 calibrated 3+1 asym cross-regime: +0.00146 +/- 0.00327  (0.45σ vs 0)
+  P_G2 uncalibrated 3+1 asym cross-regime: +0.00170 +/- 0.00427  (0.40σ vs 0)
+  Diff (calibrated - uncalibrated) cross-regime: -0.00023 +/- 0.00219
+
+Saved C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\audit_test_G_calibration_hypothesis.json

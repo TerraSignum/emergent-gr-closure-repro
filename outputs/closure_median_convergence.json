@@ -1,0 +1,111 @@
+{
+  "method": "power_law_fit_per_eigendirection_residual",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "N_values": [
+    50,
+    60,
+    64,
+    72,
+    84,
+    100
+  ],
+  "fits": {
+    "R_TF_norm_median_abs": {
+      "alpha": 2.2167857943729286,
+      "A": 128.20916266409176,
+      "r_squared": 0.7313188409766291,
+      "y_pred": [
+        0.02196172722673125,
+        0.014660157350919925,
+        0.012705886028448006,
+        0.009786125259407473,
+        0.006953509912027954,
+        0.004724408857454299
+      ]
+    },
+    "R_trace_median_abs": {
+      "alpha": 0.5347813528759148,
+      "A": 0.0708024163450583,
+      "r_squared": 0.8260491869285937,
+      "y_pred": [
+        0.0087391783413438,
+        0.007927311943928261,
+        0.00765837643408972,
+        0.007190867631004835,
+        0.0066218509280679605,
+        0.0060323339183990165
+      ]
+    },
+    "R_time_median_abs": {
+      "alpha": -0.16006846834610017,
+      "A": 0.010254648029289219,
+      "r_squared": 0.06473423185609328,
+      "y_pred": [
+        0.01918104591832969,
+        0.019749072575220062,
+        0.019954149451317547,
+        0.020333920748742625,
+        0.020841894665101682,
+        0.021431752997059895
+      ]
+    },
+    "R_off_median_abs": {
+      "alpha": 1.447808358466995,
+      "A": 2.4338565682013305,
+      "r_squared": 0.9350177256403339,
+      "y_pred": [
+        0.008443295864111794,
+        0.006484443909047828,
+        0.005905987420730989,
+        0.0049800473045499265,
+        0.003983890072826989,
+        0.003095125504200267
+      ]
+    },
+    "R_TF_norm_mean_abs": {
+      "alpha": 1.7308707255145392,
+      "A": 152.99747695938072,
+      "r_squared": 0.45758656538637055,
+      "y_pred": [
+        0.17538272959888004,
+        0.12791878455233535,
+        0.1143984728853298,
+        0.09330003859998814,
+        0.07145055146503372,
+        0.0528375677876498
+      ]
+    },
+    "R_trace_mean_abs": {
+      "alpha": 1.417489517675233,
+      "A": 9.22988357109128,
+      "r_squared": 0.45806521872699013,
+      "y_pred": [
+        0.036051559066599854,
+        0.027841040652695114,
+        0.025407096819341123,
+        0.021500416755710825,
+        0.017280269272169038,
+        0.013496376573912838
+      ]
+    },
+    "R_time_mean_abs": {
+      "alpha": 0.7464258973224485,
+      "A": 0.9801705751079467,
+      "r_squared": 0.2815337753289898,
+      "y_pred": [
+        0.05286234816747853,
+        0.04613638028373675,
+        0.043966526164379065,
+        0.040266194360905984,
+        0.035889695031177136,
+        0.031510106144237195
+      ]
+    }
+  },
+  "interpretation": "The median closure observable |R_TF|_med(N) and |R_trace|_med(N) and |R_time|_med(N) are tested for power-law decay. alpha >= 1.0 with R^2 >= 0.7 signals convergent median closure. Mean values are reported but NOT used as primary closure observable, since the heavy-tail (top ~10% of nodes by T_00 magnitude) dominates the mean and is identified as a separate structural feature (geometric-condensation), not a closure failure."
+}

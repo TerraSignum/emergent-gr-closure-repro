@@ -1,0 +1,56 @@
+{
+  "method": "discrete_atiyah_singer_finite_N",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Algebraic / topological / index-theory diagnostic; branch-independent geometric structure",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "ladder_N": [
+    18,
+    28,
+    30,
+    36,
+    42,
+    50,
+    60,
+    72,
+    84
+  ],
+  "chir_deviation_per_regime": [
+    0.069,
+    0.065,
+    0.069,
+    0.072,
+    0.063,
+    0.052,
+    0.028,
+    0.05,
+    0.037
+  ],
+  "R_bar_per_regime": [
+    0.17,
+    0.145,
+    0.163,
+    0.145,
+    0.117,
+    0.111,
+    0.07,
+    0.067,
+    0.049
+  ],
+  "full_9_point": {
+    "pearson_r": 0.8922640708230699,
+    "pearson_r_squared": 0.7961351720817563,
+    "regression_slope": 0.3107816030652202,
+    "regression_intercept": 0.020302164180151853,
+    "regression_r2": 0.7961351720817564
+  },
+  "skip_N18_8_point": {
+    "pearson_r": 0.8878412489625209,
+    "pearson_r_squared": 0.788262083359329,
+    "regression_slope": 0.3312362662171522,
+    "regression_intercept": 0.01860226964871618,
+    "regression_r2": 0.7882620833593292
+  },
+  "interpretation": "Empirical Pearson r ~ 0.89 (full 9-point) and ~ 0.89 (skip-N=18) demonstrates a quantitative chirality-curvature tracking relationship across the lattice ladder. The linear-regression slope ~ 0.31 and small positive intercept ~ 0.02 are the empirical content of an Atiyah-Singer-type discrete-geometry relationship on the relational lattice; a closed-theorem identification would require a formal discrete index theorem, but the present empirical demonstration is robust to skip-N=18, free of finite-size selection in the leading correlation."
+}

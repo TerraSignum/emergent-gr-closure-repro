@@ -1,0 +1,27 @@
+{
+  "method": "ADM_extrinsic_curvature_correction_test",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "snapshot_file": "C:\\Users\\user\\Desktop\\Emergence\\results_d1_p5n100_snap_dense\\P5N100.snapshots.npz",
+  "n_snapshot_triples": 252,
+  "delta_time_static": {
+    "median": 0.3935340199960473,
+    "mean": 0.3858918417930513
+  },
+  "delta_time_ADM": {
+    "median": 0.39353400718881837,
+    "mean": 0.3858903512687465
+  },
+  "K_correction_stats": {
+    "median_abs": 8.496270734940428e-13,
+    "mean_abs": 1.4905244931978914e-06,
+    "std": 1.4324199455628699e-05
+  },
+  "best_lambda_t_static": 0.41646598000395274,
+  "best_lambda_t_ADM": 0.4164659928111817,
+  "verdict": "ADM_K_TERM_NEGLIGIBLE"
+}

@@ -1,0 +1,208 @@
+{
+  "method": "three_more_solution_paths",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "path_D_cross_seed": {
+    "per_regime": [
+      {
+        "regime": "P0",
+        "N": 18,
+        "delta_med_pooled": 0.2696771243683061,
+        "delta_mean_pooled": 0.527736732904633,
+        "delta_med_cross_seed_avg": 0.5046027395345514,
+        "delta_mean_cross_seed_avg": 0.5277367329046329
+      },
+      {
+        "regime": "P1",
+        "N": 28,
+        "delta_med_pooled": 0.1262972736561671,
+        "delta_mean_pooled": 0.26692252896615853,
+        "delta_med_cross_seed_avg": 0.271628700796805,
+        "delta_mean_cross_seed_avg": 0.2669225289661585
+      },
+      {
+        "regime": "P2prime",
+        "N": 30,
+        "delta_med_pooled": 0.14007561478526204,
+        "delta_mean_pooled": 0.3731839790643959,
+        "delta_med_cross_seed_avg": 0.3937026622624774,
+        "delta_mean_cross_seed_avg": 0.37318397906439604
+      },
+      {
+        "regime": "P3",
+        "N": 36,
+        "delta_med_pooled": 0.055411646910730764,
+        "delta_mean_pooled": 0.2279396541692635,
+        "delta_med_cross_seed_avg": 0.20881412631248072,
+        "delta_mean_cross_seed_avg": 0.2279396541692635
+      },
+      {
+        "regime": "P4",
+        "N": 42,
+        "delta_med_pooled": 0.048072213703588704,
+        "delta_mean_pooled": 0.13322081411623446,
+        "delta_med_cross_seed_avg": 0.10064145686606989,
+        "delta_mean_cross_seed_avg": 0.13322081411623443
+      },
+      {
+        "regime": "P5",
+        "N": 50,
+        "delta_med_pooled": 0.050206341992379715,
+        "delta_mean_pooled": 0.16818207015978243,
+        "delta_med_cross_seed_avg": 0.14562242818703053,
+        "delta_mean_cross_seed_avg": 0.16818207015978243
+      },
+      {
+        "regime": "P6",
+        "N": 60,
+        "delta_med_pooled": 0.03391939445884708,
+        "delta_mean_pooled": 0.07439064833758666,
+        "delta_med_cross_seed_avg": 0.04482893401866686,
+        "delta_mean_cross_seed_avg": 0.07439064833758667
+      },
+      {
+        "regime": "P5N64",
+        "N": 64,
+        "delta_med_pooled": 0.03827426305703561,
+        "delta_mean_pooled": 0.12075005189502352,
+        "delta_med_cross_seed_avg": 0.0897103660543438,
+        "delta_mean_cross_seed_avg": 0.12075005189502352
+      },
+      {
+        "regime": "P7",
+        "N": 72,
+        "delta_med_pooled": 0.0337994635636666,
+        "delta_mean_pooled": 0.08930901569048044,
+        "delta_med_cross_seed_avg": 0.05467329600524906,
+        "delta_mean_cross_seed_avg": 0.08930901569048044
+      },
+      {
+        "regime": "P8",
+        "N": 84,
+        "delta_med_pooled": 0.02938088662741073,
+        "delta_mean_pooled": 0.05931365072594043,
+        "delta_med_cross_seed_avg": 0.039719476660812936,
+        "delta_mean_cross_seed_avg": 0.05931365072594043
+      },
+      {
+        "regime": "P5N100",
+        "N": 100,
+        "delta_med_pooled": 0.03780444065996909,
+        "delta_mean_pooled": 0.07595389587841078,
+        "delta_med_cross_seed_avg": 0.04671855079521431,
+        "delta_mean_cross_seed_avg": 0.07595389587841081
+      }
+    ],
+    "fit_med_pooled": {
+      "d_inf": 0.015122051917054983,
+      "c_2": 87.89471689264163,
+      "c_4": -1562.3905705789562,
+      "R_squared": 0.9620761782710823
+    },
+    "fit_med_cs_avg": {
+      "d_inf": 0.0,
+      "c_2": 319.1527562031966,
+      "c_4": -50276.25264506245,
+      "R_squared": 0.9187269628471176
+    },
+    "fit_mean_pooled": {
+      "d_inf": 0.034438652609334146,
+      "c_2": 275.76897601731105,
+      "c_4": -37636.46024267332,
+      "R_squared": 0.9331521920192609
+    },
+    "fit_mean_cs_avg": {
+      "d_inf": 0.034438652609334174,
+      "c_2": 275.76897601731105,
+      "c_4": -37636.46024267335,
+      "R_squared": 0.9331521920192608
+    }
+  },
+  "path_E_rg_lambda": {
+    "per_regime": [
+      {
+        "regime": "P0",
+        "N": 18,
+        "opt_lambda_t_med": 0.8394692533717545,
+        "opt_lambda_s_med": -0.015498537799582487
+      },
+      {
+        "regime": "P1",
+        "N": 28,
+        "opt_lambda_t_med": 0.825607935488251,
+        "opt_lambda_s_med": -0.00943152726862027
+      },
+      {
+        "regime": "P2prime",
+        "N": 30,
+        "opt_lambda_t_med": 0.8305587581117491,
+        "opt_lambda_s_med": -0.011530981439442279
+      },
+      {
+        "regime": "P3",
+        "N": 36,
+        "opt_lambda_t_med": 0.8208853272634083,
+        "opt_lambda_s_med": 0.002189825794229997
+      },
+      {
+        "regime": "P4",
+        "N": 42,
+        "opt_lambda_t_med": 0.821551361100085,
+        "opt_lambda_s_med": -0.00010785578229952357
+      },
+      {
+        "regime": "P5",
+        "N": 50,
+        "opt_lambda_t_med": 0.8323082043119896,
+        "opt_lambda_s_med": -0.0008409176933521852
+      },
+      {
+        "regime": "P6",
+        "N": 60,
+        "opt_lambda_t_med": 0.8129282489909723,
+        "opt_lambda_s_med": 0.0015171245855836665
+      },
+      {
+        "regime": "P5N64",
+        "N": 64,
+        "opt_lambda_t_med": 0.8269667448372822,
+        "opt_lambda_s_med": 0.0015718889733798776
+      },
+      {
+        "regime": "P7",
+        "N": 72,
+        "opt_lambda_t_med": 0.825364670001052,
+        "opt_lambda_s_med": 0.001061345800586153
+      },
+      {
+        "regime": "P8",
+        "N": 84,
+        "opt_lambda_t_med": 0.8139028373232702,
+        "opt_lambda_s_med": 0.0008224664083350158
+      },
+      {
+        "regime": "P5N100",
+        "N": 100,
+        "opt_lambda_t_med": 0.8336016117128631,
+        "opt_lambda_s_med": 0.0008157920613551374
+      }
+    ],
+    "lambda_t_running_fit": {
+      "d_inf": 0.8234583058282612,
+      "c_2": 0.5040011281631962,
+      "c_4": 1535.4425029660495,
+      "R_squared": 0.3361853918381672
+    },
+    "lambda_s_running_fit": {
+      "d_inf": 0.003731088499405806,
+      "c_2": -11.322475956006206,
+      "c_4": 1610.265449475193,
+      "R_squared": 0.8151848100572121
+    }
+  },
+  "path_K_delta_curv": {}
+}

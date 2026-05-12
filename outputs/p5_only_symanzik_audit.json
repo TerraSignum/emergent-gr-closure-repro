@@ -1,0 +1,163 @@
+{
+  "method": "p5_only_5point_symanzik_plus_kappa_algebraic",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "p5_within_regime_fits": {
+    "R_time_median_abs": {
+      "fit": {
+        "d_inf": 0.0,
+        "c_2": 2422.5352101776703,
+        "c_4": -6096382.41879362,
+        "R_squared": 0.2639108171887844
+      },
+      "bootstrap": {
+        "median": 0.0,
+        "ci_2_5": 0.0,
+        "ci_97_5": 1.4426261722801463
+      }
+    },
+    "R_trace_median_abs": {
+      "fit": {
+        "d_inf": 0.004679567193670564,
+        "c_2": 16.814918780151128,
+        "c_4": -13975.132698865587,
+        "R_squared": 0.9773347303104186
+      },
+      "bootstrap": {
+        "median": 0.0049085214277956105,
+        "ci_2_5": 0.003166837675479106,
+        "ci_97_5": 0.006162107666146387
+      }
+    },
+    "R_TF_norm_median_abs": {
+      "fit": {
+        "d_inf": 0.006827312176856497,
+        "c_2": -32.04329313085744,
+        "c_4": 246443.86348608148,
+        "R_squared": 0.9873804454345566
+      },
+      "bootstrap": {
+        "median": 0.006512649208322237,
+        "ci_2_5": 0.0,
+        "ci_97_5": 0.009328198363944653
+      }
+    },
+    "R_off_median_abs": {
+      "fit": {
+        "d_inf": 0.0012200605223828126,
+        "c_2": 22.376863939453095,
+        "c_4": -6360.041353921387,
+        "R_squared": 0.9970139998946727
+      },
+      "bootstrap": {
+        "median": 0.001150945829418239,
+        "ci_2_5": 0.0006210965618470122,
+        "ci_97_5": 0.0014865832604509586
+      }
+    }
+  },
+  "n_components_pass_95ci_upper_below_0p05": 3,
+  "kappa_t_observed": 0.987,
+  "kappa_algebraic_candidates": [
+    {
+      "label": "1 - gamma^2 * 4/pi",
+      "value": 0.9872676045526484,
+      "rel_error_percent": 0.02711292326731549
+    },
+    {
+      "label": "1 - gamma^2 * pi/eps_sync2 / 50",
+      "value": 0.9874336293856408,
+      "rel_error_percent": 0.04393408162521211
+    },
+    {
+      "label": "alpha_xi * (1 + gamma) - 0.005",
+      "value": 0.9850000000000001,
+      "rel_error_percent": 0.20263424518742562
+    },
+    {
+      "label": "1 - gamma^2 - gamma^3",
+      "value": 0.989,
+      "rel_error_percent": 0.20263424518743686
+    },
+    {
+      "label": "1 - gamma^2 * (1 + gamma)",
+      "value": 0.989,
+      "rel_error_percent": 0.20263424518743686
+    },
+    {
+      "label": "1 - gamma^2 - eps_sync2*gamma",
+      "value": 0.985,
+      "rel_error_percent": 0.20263424518743686
+    },
+    {
+      "label": "alpha_xi^gamma",
+      "value": 0.9895192582062144,
+      "rel_error_percent": 0.2552439925242613
+    },
+    {
+      "label": "1 - gamma^2",
+      "value": 0.99,
+      "rel_error_percent": 0.3039513677811553
+    },
+    {
+      "label": "alpha_xi + gamma*(1-gamma)",
+      "value": 0.99,
+      "rel_error_percent": 0.3039513677811553
+    },
+    {
+      "label": "alpha_xi^2 + (1-alpha_xi^2)*alpha_xi",
+      "value": 0.981,
+      "rel_error_percent": 0.6079027355623106
+    },
+    {
+      "label": "beta_pi + (1-beta_pi)*alpha_xi",
+      "value": 0.99375,
+      "rel_error_percent": 0.6838905775076022
+    },
+    {
+      "label": "alpha_xi + gamma - 2*gamma^2",
+      "value": 0.98,
+      "rel_error_percent": 0.7092198581560291
+    },
+    {
+      "label": "(alpha_xi + 1)/2 + gamma*(1-gamma)/2",
+      "value": 0.995,
+      "rel_error_percent": 0.8105369807497474
+    },
+    {
+      "label": "1 - gamma * eps_sync2 * pi/4",
+      "value": 0.9960730091830128,
+      "rel_error_percent": 0.9192511836892394
+    },
+    {
+      "label": "1 - gamma^3 * pi",
+      "value": 0.9968584073464102,
+      "rel_error_percent": 0.9988254656950549
+    },
+    {
+      "label": "(1+alpha_xi)/2 + gamma^2*5",
+      "value": 1.0,
+      "rel_error_percent": 1.3171225937183395
+    },
+    {
+      "label": "beta_pi + gamma*(1-beta_pi)*4",
+      "value": 0.9625,
+      "rel_error_percent": 2.482269503546096
+    },
+    {
+      "label": "D + (1-D) * (1+gamma) * 0.5",
+      "value": 0.926875,
+      "rel_error_percent": 6.091691995947313
+    }
+  ],
+  "closest_match": {
+    "label": "1 - gamma^2 * 4/pi",
+    "value": 0.9872676045526484,
+    "rel_error_percent": 0.02711292326731549
+  },
+  "verdict_kappa": "KAPPA_T_RATIONAL_FORM_CANDIDATE_1_-_gamma^2_*_4/pi"
+}

@@ -1,0 +1,52 @@
+{
+  "method": "scheme_b_CLP_style_three_param_powerlaw_with_asymptote",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "fit_form": "Delta(N) = Delta_inf + A * N^(-alpha)",
+  "N_geq_60_subset": [
+    60,
+    64,
+    72,
+    84,
+    100
+  ],
+  "fits": {
+    "raw_median": {
+      "alpha": 0.2,
+      "Delta_inf": 0.02938088662741073,
+      "A": 0.012433972119404614,
+      "ss_res": 5.2100604244584265e-05,
+      "ss_tot": 5.2105507076113436e-05,
+      "R_squared": 9.409430603968261e-05
+    },
+    "raw_mean": {
+      "alpha": 0.7,
+      "Delta_inf": 0.0062435421816779395,
+      "A": 1.5775225708780338,
+      "ss_res": 0.0016747956275519273,
+      "ss_tot": 0.0021452312451812547,
+      "R_squared": 0.21929366294941288
+    },
+    "B_median": {
+      "alpha": 0.2,
+      "Delta_inf": 0.028802317045511734,
+      "A": 0.011343692998163832,
+      "ss_res": 4.982118889724231e-05,
+      "ss_tot": 4.998163027469079e-05,
+      "R_squared": 0.0032100068878649912
+    },
+    "B_mean": {
+      "alpha": 0.4,
+      "Delta_inf": 0.007858094028739378,
+      "A": 0.21773269585235927,
+      "ss_res": 0.00033296835214897735,
+      "ss_tot": 0.00037147149603907506,
+      "R_squared": 0.10365033199222251
+    }
+  },
+  "verdict": "CLP_STYLE_CLOSURE_BELOW_THRESHOLD_LOW_R2"
+}

@@ -1,0 +1,80 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Emergent time and Lorentz signature: structural closure that the relational lattice produces a 3+1 Lorentzian spacetime with a derived signal speed c_Xi^2 = Z_x/Z_tau, a time-dilation formula dtau/dt = 1/sqrt(1 + alpha_K K + alpha_R R) at the local-clock level, an IR-hyperbolic dispersion omega^2(k) = c_Xi^2 |k|^2 + m_eff^2/Z_tau + O(|k|^3), and a Lorentz-violation residual Delta_Lor(k) = o(k^2). Time itself is not a separate axis but emerges as a monotone labeling of the causal partial order, with the macroscopic rate set by the inconsistency-flux ratio dot tau(x,t) = q(x,t)/Q(t). The construction is irreversible by Coleman tunnelling at 95.9% (the Gamow channel) plus four sub-dominant channels (spectral 3.0%, topological 0.5%, gravitational 0.4%, decoherence 0.3%).",
+  "stand": "2026-04-27",
+  "lorentz_signature_closure": {
+    "id": "LORENTZ-1",
+    "claim": "IR-hyperbolic dispersion + Lorentz-defect = o(k^2): the lattice supports an emergent Lorentz signature in the IR",
+    "structural_identity": "omega(k)^2 = c_Xi^2 |k|^2 + m_eff^2 / Z_tau + O(|k|^3); c_Xi^2 = Z_x / Z_tau",
+    "lorentz_violation_residual": "Delta_Lor(k) = o(k^2) for k -> 0",
+    "tier": "DERIVED",
+    "from_axioms": [
+      "A1 transport law (causal modes)"
+    ],
+    "framing": "Lorentz invariance is not postulated but proved as a low-momentum theorem (Paper 4 Theorem 7.9)."
+  },
+  "time_dilation_closure": {
+    "id": "TDIL-1",
+    "claim": "Local time-dilation formula derives gravitational redshift",
+    "structural_identity": "dtau_i / dt = 1 / sqrt(1 + alpha_K K_i + alpha_R R_i)",
+    "interpretation": "K_i is the kinetic-energy density at lattice site i; R_i is the local Ricci-curvature analog. In the weak-field limit alpha_K K + alpha_R R reduces to 2 Phi_N / c^2 with Phi_N the Newton potential, recovering the standard gravitational time dilation dtau/dt = 1/sqrt(1 + 2 Phi_N / c^2).",
+    "tier": "DERIVED",
+    "from_axioms": [
+      "A1 transport law (Xi metric)"
+    ]
+  },
+  "macroscopic_time_rate_closure": {
+    "id": "TRATE-1",
+    "claim": "Macroscopic time rate from local inconsistency flux",
+    "structural_identity": "dot tau(x,t) = q(x,t) / Q(t)",
+    "lipschitz_bound": "|dot tau_i^delta - dot tau_i| <= 2 epsilon / q_min (Lipschitz-continuous in epsilon at fixed q_min)",
+    "monotonicity": "tau_i monotonically non-decreasing along the causal partial order",
+    "tier": "DERIVED"
+  },
+  "irreversibility_channels": {
+    "id": "IRR-CHANNELS",
+    "claim": "Time is irreversible at 95.9% via the Gamow tunnelling channel; four sub-dominant channels make up the remaining 4.1%",
+    "channels": [
+      {
+        "name": "Gamow tunnelling",
+        "share_pct": 95.9,
+        "physics": "Coleman bounce action exp(-S) tunnel rate"
+      },
+      {
+        "name": "spectral",
+        "share_pct": 3.0,
+        "physics": "level-statistics-driven phase mixing"
+      },
+      {
+        "name": "topological",
+        "share_pct": 0.5,
+        "physics": "winding-number flux"
+      },
+      {
+        "name": "gravitational",
+        "share_pct": 0.4,
+        "physics": "Lense-Thirring dragging on the lattice"
+      },
+      {
+        "name": "decoherence",
+        "share_pct": 0.3,
+        "physics": "system-bath spectral overlap"
+      }
+    ],
+    "n_channels": 5,
+    "shares_sum_pct": 100.1,
+    "tier": "DERIVED",
+    "framing": "All five channels appear in the 16-module temporal-emergence bundle of Paper 4 Section 13. The Gamow channel dominates by two orders of magnitude; the four sub-dominant channels are kept for completeness and stress-testing."
+  },
+  "summary": {
+    "n_closures": 4,
+    "fitted_parameters": 0,
+    "framing": "Time emerges as a monotone labeling of the causal partial order, with a derived Lorentz signature in the IR, a local time-dilation formula that reduces to the standard gravitational redshift in the weak-field limit, a macroscopic time-rate identity from the inconsistency flux, and an irreversibility budget dominated 96% by the Coleman bounce channel."
+  }
+}

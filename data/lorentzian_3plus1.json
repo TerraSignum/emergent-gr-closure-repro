@@ -1,0 +1,96 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "release": "v0.1.0",
+  "description": "Lorentzian 3+1 causal-ordering layer of the emergent-spacetime construction. The relational lattice carries (i) a clean causal partial order on Xi-paths, (ii) a 3+1 spatial-temporal decomposition with d_spatial=3 + 1 emergent time direction (d_spacetime=4), (iii) an existence statement for a Lorentzian metric in both regimes, and (iv) a discrete light-cone-fuzziness scalar that quantifies the residual deviation of the lattice light-cone from a perfect Minkowski cone. The light-cone-fuzziness is identified with the spectral-dimension residual d_eff_residual = d_eff - 3.0 in both regimes, which gives the 3+1-aware metric-quality observable that is the right Riemannian-asymptotics complement to the strictly spatial Kruskal-Shepard MDS-stress sigma(N). Distilled from the companion emergent-time bundle covering causal ordering, arrow of time, proper time, thermodynamic time, and an aggregate assessment.",
+  "causal_ordering": {
+    "d_spacetime": 4,
+    "d_spatial": 3,
+    "decomposition": "3+1",
+    "lorentzian_possible": true,
+    "causal_structure_clean": true,
+    "causal_modes_present": true,
+    "causal_mode_mass": 0.0,
+    "light_cone_fuzziness_canonical": 0.169925,
+    "light_cone_fuzziness_extended": 0.169925,
+    "lorentzian_metric_exists_canonical": true,
+    "lorentzian_metric_exists_extended": true,
+    "proper_time_well_defined_canonical": true,
+    "proper_time_well_defined_extended": true,
+    "interpretation": "Massless transport modes -> signal propagation at maximum speed -> defines light cone -> defines causal structure."
+  },
+  "arrow_of_time": {
+    "S_bounce_canonical": 37.9954,
+    "S_bounce_extended": 36.2903,
+    "eta_sommerfeld_canonical": 3.023577,
+    "eta_sommerfeld_extended": 2.88789,
+    "time_asymmetry_ratio_canonical": 1.0054973764389885e+33,
+    "time_asymmetry_ratio_extended": 3.321627714286679e+31,
+    "arrow_of_time_canonical": true,
+    "arrow_of_time_extended": true,
+    "arrow_strength_canonical": "EXTREMELY_STRONG",
+    "arrow_strength_extended": "EXTREMELY_STRONG"
+  },
+  "proper_time": {
+    "alpha_m_canonical": 2.7602887381817507e-34,
+    "alpha_m_extended": 2.377861187630647e-34,
+    "dt_lattice_s_canonical": 9.207332154372445e-43,
+    "dt_lattice_s_extended": 7.9316911555882e-43,
+    "core_crossing_time_s_canonical": 1.4221258475270341e-43,
+    "core_crossing_time_s_extended": 1.2448064750688482e-43,
+    "t_Planck_derived_s": 5.391263045049653e-44,
+    "t_Planck_measured_s": 5.39116e-44,
+    "t_Planck_ratio": 1.000019
+  },
+  "thermodynamic_time": {
+    "beta_effective_canonical": 18.9977,
+    "beta_effective_extended": 18.1451,
+    "T_effective_inv_canonical": 18.9977,
+    "T_effective_inv_extended": 18.1451,
+    "grav_redshift_factor_canonical": 0.92756,
+    "grav_redshift_factor_extended": 0.948279,
+    "tolman_consistency_canonical": true,
+    "tolman_consistency_extended": true
+  },
+  "metric_quality_axes_summary": {
+    "description": "Three different metric-quality observables, all bundled in this companion package. They probe complementary facets of the discrete-to-continuum bridge.",
+    "axes": [
+      {
+        "name": "Riemannian-embedding stress (spatial only)",
+        "symbol": "sigma(N) = 1 - geometric_coherence(N)",
+        "value_canonical": 0.279249,
+        "value_extended": 0.319147,
+        "scope": "Kruskal-Shepard MDS in 3-D Euclidean target dimension; signature-blind; bottoms out at sigma_inf ~ 0.30 under two-point Richardson, i.e. does NOT vanish at the available lattice sizes.",
+        "data_file": "data/einstein_metric_stress_multiN.json"
+      },
+      {
+        "name": "Lorentzian light-cone fuzziness (3+1 causal-ordering)",
+        "symbol": "f_LC = d_eff_residual",
+        "value_canonical": 0.169925,
+        "value_extended": 0.169925,
+        "scope": "Spectral-dimension residual of the 3+1 emergent-spacetime layer; the right 3+1-aware metric-quality complement to sigma(N).",
+        "data_file": "data/lorentzian_3plus1.json"
+      },
+      {
+        "name": "Einstein-identity gap",
+        "symbol": "Delta_E = ||G_munu - 8 pi G T_munu|| / ||G_munu||",
+        "value_canonical": 0.139633,
+        "value_extended": 0.100766,
+        "scope": "Direct test of the Einstein equations on the Lorentzian 3+1 manifold; converges under two-point Richardson at alpha = 0.848 to gap_inf ~ 1e-6.",
+        "data_file": "data/einstein_gap_results.json"
+      }
+    ],
+    "differences": {
+      "sigma_minus_lightcone_canonical": 0.109324,
+      "sigma_minus_lightcone_extended": 0.149222,
+      "lightcone_minus_einstein_gap_canonical": 0.030292,
+      "lightcone_minus_einstein_gap_extended": 0.069159,
+      "interpretation": "sigma is roughly the sum of (i) a 3-D vs 3+1 dimension/signature-mismatch contribution, captured at canonical regime by sigma - f_LC ~ 0.11, and (ii) the 3+1-Lorentzian intrinsic light-cone fuzziness f_LC ~ 0.17. The Einstein-identity gap is in the same range as f_LC and converges, while sigma does not."
+    }
+  },
+  "framing": "The Lorentzian 3+1 causal-ordering layer is the load-bearing prerequisite for both the Einstein-identity-gap closure (Schwarzschild far-field, PPN, Jacobson area-law) AND the black-hole-sector results (Bekenstein-Hawking 1/4, Kerr structure, Penrose process, Peters binary inspiral, information-paradox unitarity). The narrow Einstein-identity-gap and the broader Riemannian-embedding-stress are complementary diagnostics; the light-cone fuzziness sits between them and quantifies the 3+1-aware metric-quality residual."
+}

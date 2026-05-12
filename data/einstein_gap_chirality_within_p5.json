@@ -1,0 +1,119 @@
+{
+  "title": "Extended chirality-balance witness on the within-P5 lattice ladder; recomputes the 5-point fit at fixed regime physics.",
+  "N_values": [
+    50,
+    64,
+    72,
+    84,
+    100,
+    128,
+    200,
+    256,
+    300,
+    512
+  ],
+  "deviation_means": [
+    0.0518861352624691,
+    0.051598713663748796,
+    0.04856812459089166,
+    0.031970500759423204,
+    0.04865172218633307,
+    0.03818259861935458,
+    0.03395787578482512,
+    0.01767943287373086,
+    0.026352695519743174,
+    0.015486518572566443
+  ],
+  "rows": [
+    {
+      "tag": "P5N50",
+      "N": 50,
+      "n_seeds": 28,
+      "deviation": 0.0518861352624691,
+      "source": "d1"
+    },
+    {
+      "tag": "P5N64",
+      "N": 64,
+      "n_seeds": 24,
+      "deviation": 0.051598713663748796,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N72",
+      "N": 72,
+      "n_seeds": 24,
+      "deviation": 0.04856812459089166,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N84",
+      "N": 84,
+      "n_seeds": 24,
+      "deviation": 0.031970500759423204,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N100",
+      "N": 100,
+      "n_seeds": 24,
+      "deviation": 0.04865172218633307,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N128",
+      "N": 128,
+      "n_seeds": 12,
+      "deviation": 0.03818259861935458,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N200",
+      "N": 200,
+      "n_seeds": 8,
+      "deviation": 0.03395787578482512,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N256",
+      "N": 256,
+      "n_seeds": 12,
+      "deviation": 0.01767943287373086,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N300",
+      "N": 300,
+      "n_seeds": 12,
+      "deviation": 0.026352695519743174,
+      "source": "snapshot"
+    },
+    {
+      "tag": "P5N512",
+      "N": 512,
+      "n_seeds": 12,
+      "deviation": 0.015486518572566443,
+      "source": "snapshot"
+    }
+  ],
+  "free_alpha_fit": {
+    "alpha_fit": 0.5178011546024118,
+    "C_fit": 0.4266520982977777,
+    "r2_loglog": 0.8087023123554972,
+    "alpha_target": 0.6666666666666666,
+    "ratio": 0.7767017319036178,
+    "deviation_2over3_relative": 0.2232982680963822,
+    "n_points": 10
+  },
+  "fixed_alpha_2over3_fit": {
+    "alpha_fixed": 0.6666666666666666,
+    "Delta_inf": 0.009787860512450125,
+    "C_2over3": 0.6286274469217688,
+    "r2": 0.7831412056762584
+  },
+  "comparison_to_5point_fit": {
+    "5point_alpha_fit": 0.6355052661819749,
+    "5point_r2": 0.7791603590019913,
+    "5point_relative_to_2over3": 0.04674210073
+  }
+}

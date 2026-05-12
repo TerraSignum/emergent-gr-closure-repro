@@ -1,0 +1,545 @@
+{
+  "method": "M3_supnorm_diagnostics_P1P2P7",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "regimes_used": [
+      "P5",
+      "P5N64",
+      "P5N72",
+      "P5N84",
+      "P5N100",
+      "P5N128",
+      "P5N200",
+      "P5N300"
+    ],
+    "branch_rationale": "Topology / vortex / triangle-phase diagnostic; algebraic discrete-Wilson-loop / homology test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "rows": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "sup_seed0": 0.222863141308664,
+      "top10_median_slack": 0.21738377151340438,
+      "n_unique_indices_top10": 8,
+      "localization_index": 0.8148148148148149,
+      "conditional_sup": {
+        "sup_all": 0.222863141308664,
+        "sup_no_near_unity_pair": 0.222863141308664,
+        "sup_t00_below_median": 0.15723626901406607,
+        "sup_t00_above_p90_overlap": 0.222863141308664
+      },
+      "heavy_tail_correlation": {
+        "top_K": 20,
+        "in_heavy_tail_count": 12,
+        "fraction": 0.6,
+        "expected_random": 0.2709999999999999
+      },
+      "top5_triples": [
+        {
+          "slack": 0.222863141308664,
+          "i": 47,
+          "j": 0,
+          "k": 21
+        },
+        {
+          "slack": 0.222863141308664,
+          "i": 21,
+          "j": 0,
+          "k": 47
+        },
+        {
+          "slack": 0.2199770510379445,
+          "i": 49,
+          "j": 0,
+          "k": 7
+        },
+        {
+          "slack": 0.2199770510379445,
+          "i": 7,
+          "j": 0,
+          "k": 49
+        },
+        {
+          "slack": 0.21738377151340438,
+          "i": 7,
+          "j": 47,
+          "k": 0
+        }
+      ]
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "sup_seed0": 0.3129960918349967,
+      "top10_median_slack": 0.3046303512569019,
+      "n_unique_indices_top10": 8,
+      "localization_index": 0.8148148148148149,
+      "conditional_sup": {
+        "sup_all": 0.3129960918349967,
+        "sup_no_near_unity_pair": 0.3129960918349967,
+        "sup_t00_below_median": 0.15819345653977268,
+        "sup_t00_above_p90_overlap": 0.3129960918349967
+      },
+      "heavy_tail_correlation": {
+        "top_K": 20,
+        "in_heavy_tail_count": 18,
+        "fraction": 0.9,
+        "expected_random": 0.2709999999999999
+      },
+      "top5_triples": [
+        {
+          "slack": 0.3129960918349967,
+          "i": 10,
+          "j": 15,
+          "k": 59
+        },
+        {
+          "slack": 0.3129960918349967,
+          "i": 59,
+          "j": 15,
+          "k": 10
+        },
+        {
+          "slack": 0.310674202005633,
+          "i": 15,
+          "j": 27,
+          "k": 59
+        },
+        {
+          "slack": 0.310674202005633,
+          "i": 59,
+          "j": 27,
+          "k": 15
+        },
+        {
+          "slack": 0.3046303512569019,
+          "i": 59,
+          "j": 27,
+          "k": 10
+        }
+      ]
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "sup_seed0": 0.31315247010350866,
+      "top10_median_slack": 0.28771234653304123,
+      "n_unique_indices_top10": 8,
+      "localization_index": 0.8148148148148149,
+      "conditional_sup": {
+        "sup_all": 0.31315247010350866,
+        "sup_no_near_unity_pair": 0.31315247010350866,
+        "sup_t00_below_median": 0.12453400533788675,
+        "sup_t00_above_p90_overlap": 0.31315247010350866
+      },
+      "heavy_tail_correlation": {
+        "top_K": 20,
+        "in_heavy_tail_count": 16,
+        "fraction": 0.8,
+        "expected_random": 0.2709999999999999
+      },
+      "top5_triples": [
+        {
+          "slack": 0.31315247010350866,
+          "i": 63,
+          "j": 36,
+          "k": 42
+        },
+        {
+          "slack": 0.31315247010350866,
+          "i": 42,
+          "j": 36,
+          "k": 63
+        },
+        {
+          "slack": 0.30701912241559737,
+          "i": 42,
+          "j": 36,
+          "k": 0
+        },
+        {
+          "slack": 0.30701912241559737,
+          "i": 0,
+          "j": 36,
+          "k": 42
+        },
+        {
+          "slack": 0.28771234653304123,
+          "i": 42,
+          "j": 0,
+          "k": 63
+        }
+      ]
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "sup_seed0": 0.19638640218950298,
+      "top10_median_slack": 0.1609113620109746,
+      "n_unique_indices_top10": 13,
+      "localization_index": 0.6296296296296297,
+      "conditional_sup": {
+        "sup_all": 0.19638640218950298,
+        "sup_no_near_unity_pair": 0.19638640218950298,
+        "sup_t00_below_median": 0.06742443069268333,
+        "sup_t00_above_p90_overlap": 0.19638640218950298
+      },
+      "heavy_tail_correlation": {
+        "top_K": 20,
+        "in_heavy_tail_count": 12,
+        "fraction": 0.6,
+        "expected_random": 0.2709999999999999
+      },
+      "top5_triples": [
+        {
+          "slack": 0.19638640218950298,
+          "i": 62,
+          "j": 22,
+          "k": 44
+        },
+        {
+          "slack": 0.19638640218950298,
+          "i": 44,
+          "j": 22,
+          "k": 62
+        },
+        {
+          "slack": 0.18265029823679108,
+          "i": 70,
+          "j": 45,
+          "k": 20
+        },
+        {
+          "slack": 0.18265029823679108,
+          "i": 20,
+          "j": 45,
+          "k": 70
+        },
+        {
+          "slack": 0.1609113620109746,
+          "i": 7,
+          "j": 42,
+          "k": 75
+        }
+      ]
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "sup_seed0": 0.2522322932520169,
+      "top10_median_slack": 0.23949545255662194,
+      "n_unique_indices_top10": 9,
+      "localization_index": 0.7777777777777778,
+      "conditional_sup": {
+        "sup_all": 0.2522322932520169,
+        "sup_no_near_unity_pair": 0.23949545255662194,
+        "sup_t00_below_median": 0.1875974278418674,
+        "sup_t00_above_p90_overlap": 0.2522322932520169
+      },
+      "heavy_tail_correlation": {
+        "top_K": 20,
+        "in_heavy_tail_count": 6,
+        "fraction": 0.3,
+        "expected_random": 0.2709999999999999
+      },
+      "top5_triples": [
+        {
+          "slack": 0.2522322932520169,
+          "i": 39,
+          "j": 63,
+          "k": 17
+        },
+        {
+          "slack": 0.2522322932520169,
+          "i": 17,
+          "j": 63,
+          "k": 39
+        },
+        {
+          "slack": 0.2410231733422164,
+          "i": 25,
+          "j": 93,
+          "k": 60
+        },
+        {
+          "slack": 0.2410231733422164,
+          "i": 60,
+          "j": 93,
+          "k": 25
+        },
+        {
+          "slack": 0.23949545255662194,
+          "i": 79,
+          "j": 14,
+          "k": 93
+        }
+      ]
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "sup_seed0": 0.24721215111489545,
+      "top10_median_slack": 0.21297236489516813,
+      "n_unique_indices_top10": 8,
+      "localization_index": 0.8148148148148149,
+      "conditional_sup": {
+        "sup_all": 0.24721215111489545,
+        "sup_no_near_unity_pair": 0.24721215111489545,
+        "sup_t00_below_median": 0.12185432804709881,
+        "sup_t00_above_p90_overlap": 0.24721215111489545
+      },
+      "heavy_tail_correlation": {
+        "top_K": 20,
+        "in_heavy_tail_count": 18,
+        "fraction": 0.9,
+        "expected_random": 0.2709999999999999
+      },
+      "top5_triples": [
+        {
+          "slack": 0.24721215111489545,
+          "i": 15,
+          "j": 28,
+          "k": 107
+        },
+        {
+          "slack": 0.24721215111489545,
+          "i": 107,
+          "j": 28,
+          "k": 15
+        },
+        {
+          "slack": 0.22012941053457802,
+          "i": 107,
+          "j": 118,
+          "k": 15
+        },
+        {
+          "slack": 0.22012941053457802,
+          "i": 15,
+          "j": 118,
+          "k": 107
+        },
+        {
+          "slack": 0.21297236489516813,
+          "i": 28,
+          "j": 118,
+          "k": 107
+        }
+      ]
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "sup_seed0": 0.25360311205503516,
+      "top10_median_slack": 0.2372149590132544,
+      "n_unique_indices_top10": 11,
+      "localization_index": 0.7037037037037037,
+      "conditional_sup": {
+        "sup_all": 0.25360311205503516,
+        "sup_no_near_unity_pair": 0.25360311205503516,
+        "sup_t00_below_median": 0.1508860351487917,
+        "sup_t00_above_p90_overlap": 0.25360311205503516
+      },
+      "heavy_tail_correlation": {
+        "top_K": 20,
+        "in_heavy_tail_count": 18,
+        "fraction": 0.9,
+        "expected_random": 0.2709999999999999
+      },
+      "top5_triples": [
+        {
+          "slack": 0.25360311205503516,
+          "i": 32,
+          "j": 97,
+          "k": 72
+        },
+        {
+          "slack": 0.25360311205503516,
+          "i": 72,
+          "j": 97,
+          "k": 32
+        },
+        {
+          "slack": 0.24182561092721822,
+          "i": 32,
+          "j": 70,
+          "k": 72
+        },
+        {
+          "slack": 0.24182561092721822,
+          "i": 72,
+          "j": 70,
+          "k": 32
+        },
+        {
+          "slack": 0.2372149590132544,
+          "i": 3,
+          "j": 100,
+          "k": 159
+        }
+      ]
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "sup_seed0": 0.33062885520407703,
+      "top10_median_slack": 0.2807229139949457,
+      "n_unique_indices_top10": 8,
+      "localization_index": 0.8148148148148149,
+      "conditional_sup": {
+        "sup_all": 0.33062885520407703,
+        "sup_no_near_unity_pair": 0.33062885520407703,
+        "sup_t00_below_median": 0.21717214589511122,
+        "sup_t00_above_p90_overlap": 0.33062885520407703
+      },
+      "heavy_tail_correlation": {
+        "top_K": 20,
+        "in_heavy_tail_count": 18,
+        "fraction": 0.9,
+        "expected_random": 0.2709999999999999
+      },
+      "top5_triples": [
+        {
+          "slack": 0.33062885520407703,
+          "i": 192,
+          "j": 268,
+          "k": 231
+        },
+        {
+          "slack": 0.33062885520407703,
+          "i": 231,
+          "j": 268,
+          "k": 192
+        },
+        {
+          "slack": 0.3075901804042899,
+          "i": 231,
+          "j": 34,
+          "k": 192
+        },
+        {
+          "slack": 0.3075901804042899,
+          "i": 192,
+          "j": 34,
+          "k": 231
+        },
+        {
+          "slack": 0.2807229139949457,
+          "i": 112,
+          "j": 235,
+          "k": 159
+        }
+      ]
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "sup_seed0": 0.4339955293766771,
+      "top10_median_slack": 0.37451193389165466,
+      "n_unique_indices_top10": 5,
+      "localization_index": 0.9259259259259259,
+      "conditional_sup": {
+        "sup_all": 0.4339955293766771,
+        "sup_no_near_unity_pair": 0.4339955293766771,
+        "sup_t00_below_median": 0.12518412505193544,
+        "sup_t00_above_p90_overlap": 0.4339955293766771
+      },
+      "heavy_tail_correlation": {
+        "top_K": 20,
+        "in_heavy_tail_count": 20,
+        "fraction": 1.0,
+        "expected_random": 0.2709999999999999
+      },
+      "top5_triples": [
+        {
+          "slack": 0.4339955293766771,
+          "i": 155,
+          "j": 204,
+          "k": 108
+        },
+        {
+          "slack": 0.4339955293766771,
+          "i": 108,
+          "j": 204,
+          "k": 155
+        },
+        {
+          "slack": 0.38981385798326745,
+          "i": 155,
+          "j": 189,
+          "k": 108
+        },
+        {
+          "slack": 0.38981385798326745,
+          "i": 108,
+          "j": 189,
+          "k": 155
+        },
+        {
+          "slack": 0.37451193389165466,
+          "i": 108,
+          "j": 189,
+          "k": 31
+        }
+      ]
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "sup_seed0": 0.21355557278330256,
+      "top10_median_slack": 0.18174893642206746,
+      "n_unique_indices_top10": 10,
+      "localization_index": 0.7407407407407407,
+      "conditional_sup": {
+        "sup_all": 0.21355557278330256,
+        "sup_no_near_unity_pair": 0.21355557278330256,
+        "sup_t00_below_median": 0.10942933726106083,
+        "sup_t00_above_p90_overlap": 0.21355557278330256
+      },
+      "heavy_tail_correlation": {
+        "top_K": 20,
+        "in_heavy_tail_count": 20,
+        "fraction": 1.0,
+        "expected_random": 0.2709999999999999
+      },
+      "top5_triples": [
+        {
+          "slack": 0.21355557278330256,
+          "i": 152,
+          "j": 64,
+          "k": 422
+        },
+        {
+          "slack": 0.21355557278330256,
+          "i": 422,
+          "j": 64,
+          "k": 152
+        },
+        {
+          "slack": 0.19261760887312324,
+          "i": 152,
+          "j": 364,
+          "k": 422
+        },
+        {
+          "slack": 0.19261760887312324,
+          "i": 422,
+          "j": 364,
+          "k": 152
+        },
+        {
+          "slack": 0.18174893642206746,
+          "i": 212,
+          "j": 251,
+          "k": 425
+        }
+      ]
+    }
+  ],
+  "interpretation": {
+    "P1_localization": "If localization_index > 0.5 across N, violations cluster at few nodes (topological).",
+    "P2_conditional": "If sup_no_near_unity_pair << sup_all, near-equal Xi pairs drive the sup; numerical.",
+    "P7_heavy_tail": "If heavy_tail_correlation.fraction >> random expectation (~27%), worst-case triples cluster in matter-localized region; structural."
+  }
+}

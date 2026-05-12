@@ -1,0 +1,276 @@
+{
+  "method": "mask_threshold_robustness",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P1",
+      "P5",
+      "P5N100",
+      "P5N84",
+      "P5N200"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "thresholds": [
+    0.05,
+    0.08,
+    0.1,
+    0.15,
+    0.2,
+    0.3
+  ],
+  "per_regime": {
+    "P1": {
+      "N": 28,
+      "by_threshold": {
+        "0.05": {
+          "n_nodes": 896,
+          "Lambda_t_mean": 1.0777857065293373,
+          "Lambda_s_3sum_mean": 1.842755880575158,
+          "shear_mean": 0.03259256699580617,
+          "Frob_residual_med": 0.034965631183426556
+        },
+        "0.08": {
+          "n_nodes": 896,
+          "Lambda_t_mean": 1.0755512108638272,
+          "Lambda_s_3sum_mean": 1.8338770641467705,
+          "shear_mean": 0.03254742169183688,
+          "Frob_residual_med": 0.03465147566251932
+        },
+        "0.1": {
+          "n_nodes": 896,
+          "Lambda_t_mean": 1.0645400050810454,
+          "Lambda_s_3sum_mean": 1.7735241785364406,
+          "shear_mean": 0.03281721912497854,
+          "Frob_residual_med": 0.03382982800209748
+        },
+        "0.15": {
+          "n_nodes": 896,
+          "Lambda_t_mean": 1.0277476668980277,
+          "Lambda_s_3sum_mean": 1.6003424752701527,
+          "shear_mean": 0.03310272911956807,
+          "Frob_residual_med": 0.0393992019999584
+        },
+        "0.2": {
+          "n_nodes": 896,
+          "Lambda_t_mean": 0.9452738450532551,
+          "Lambda_s_3sum_mean": 1.2107158382294376,
+          "shear_mean": 0.03233078390790101,
+          "Frob_residual_med": 0.05222119343445043
+        },
+        "0.3": {
+          "n_nodes": 896,
+          "Lambda_t_mean": 0.8736867370845713,
+          "Lambda_s_3sum_mean": 0.9805267412992025,
+          "shear_mean": 0.03629855696866705,
+          "Frob_residual_med": 0.08816255748451005
+        }
+      }
+    },
+    "P5": {
+      "N": 50,
+      "by_threshold": {
+        "0.05": {
+          "n_nodes": 1400,
+          "Lambda_t_mean": 0.898102075330724,
+          "Lambda_s_3sum_mean": 0.5523886925504626,
+          "shear_mean": 0.009226955855391095,
+          "Frob_residual_med": 0.030693602721109076
+        },
+        "0.08": {
+          "n_nodes": 1400,
+          "Lambda_t_mean": 0.8836076588253123,
+          "Lambda_s_3sum_mean": 0.4846432685043932,
+          "shear_mean": 0.009580587452112432,
+          "Frob_residual_med": 0.02487106401228134
+        },
+        "0.1": {
+          "n_nodes": 1400,
+          "Lambda_t_mean": 0.8712252283544256,
+          "Lambda_s_3sum_mean": 0.4385862426006094,
+          "shear_mean": 0.009920264574854863,
+          "Frob_residual_med": 0.02124296891837829
+        },
+        "0.15": {
+          "n_nodes": 1400,
+          "Lambda_t_mean": 0.8397753514160881,
+          "Lambda_s_3sum_mean": 0.3562214568772784,
+          "shear_mean": 0.011222965323478868,
+          "Frob_residual_med": 0.02548900189689954
+        },
+        "0.2": {
+          "n_nodes": 1400,
+          "Lambda_t_mean": 0.8087511193018583,
+          "Lambda_s_3sum_mean": 0.30033483540236844,
+          "shear_mean": 0.012865443795412398,
+          "Frob_residual_med": 0.04851204596466059
+        },
+        "0.3": {
+          "n_nodes": 1400,
+          "Lambda_t_mean": 0.7861768560326582,
+          "Lambda_s_3sum_mean": 0.3591986198557883,
+          "shear_mean": 0.014597410074156544,
+          "Frob_residual_med": 0.08300491941227259
+        }
+      }
+    },
+    "P5N100": {
+      "N": 100,
+      "by_threshold": {
+        "0.05": {
+          "n_nodes": 2400,
+          "Lambda_t_mean": 0.8534907013776865,
+          "Lambda_s_3sum_mean": 0.13447492055466712,
+          "shear_mean": 0.00375106220800684,
+          "Frob_residual_med": 0.03630397020580578
+        },
+        "0.08": {
+          "n_nodes": 2400,
+          "Lambda_t_mean": 0.8424935998272417,
+          "Lambda_s_3sum_mean": 0.11938999630419735,
+          "shear_mean": 0.003980805358806835,
+          "Frob_residual_med": 0.027524080259528586
+        },
+        "0.1": {
+          "n_nodes": 2400,
+          "Lambda_t_mean": 0.8317892689872273,
+          "Lambda_s_3sum_mean": 0.10487998652610865,
+          "shear_mean": 0.004294071552712464,
+          "Frob_residual_med": 0.022987368846225088
+        },
+        "0.15": {
+          "n_nodes": 2400,
+          "Lambda_t_mean": 0.8041067788060701,
+          "Lambda_s_3sum_mean": 0.0818028178300667,
+          "shear_mean": 0.004924566678564407,
+          "Frob_residual_med": 0.027869974845949642
+        },
+        "0.2": {
+          "n_nodes": 2400,
+          "Lambda_t_mean": 0.7827272364841059,
+          "Lambda_s_3sum_mean": 0.07743160883084979,
+          "shear_mean": 0.00550383269107323,
+          "Frob_residual_med": 0.04839322185579977
+        },
+        "0.3": {
+          "n_nodes": 2400,
+          "Lambda_t_mean": 0.7597267436586008,
+          "Lambda_s_3sum_mean": 0.08830039172101109,
+          "shear_mean": 0.005430842162122035,
+          "Frob_residual_med": 0.07462731478086462
+        }
+      }
+    },
+    "P5N84": {
+      "N": 84,
+      "by_threshold": {}
+    },
+    "P5N200": {
+      "N": 200,
+      "by_threshold": {}
+    },
+    "P5N256": {
+      "N": 256,
+      "by_threshold": {
+        "0.05": {
+          "n_nodes": 3072,
+          "Lambda_t_mean": 0.8351049583642448,
+          "Lambda_s_3sum_mean": 0.019150149797270585,
+          "shear_mean": 0.0010953638835508467,
+          "Frob_residual_med": 0.029430393742984173
+        },
+        "0.08": {
+          "n_nodes": 3072,
+          "Lambda_t_mean": 0.8210420359865612,
+          "Lambda_s_3sum_mean": 0.015767762150217957,
+          "shear_mean": 0.0011982689487838596,
+          "Frob_residual_med": 0.020680931957761252
+        },
+        "0.1": {
+          "n_nodes": 3072,
+          "Lambda_t_mean": 0.8086673305117603,
+          "Lambda_s_3sum_mean": 0.013294380814030074,
+          "shear_mean": 0.0012913564785767627,
+          "Frob_residual_med": 0.019673347982548724
+        },
+        "0.15": {
+          "n_nodes": 3072,
+          "Lambda_t_mean": 0.7803347907263296,
+          "Lambda_s_3sum_mean": 0.01176314755589935,
+          "shear_mean": 0.0015319488212049619,
+          "Frob_residual_med": 0.038465603617923644
+        },
+        "0.2": {
+          "n_nodes": 3072,
+          "Lambda_t_mean": 0.7627140052375281,
+          "Lambda_s_3sum_mean": 0.0128182835815935,
+          "shear_mean": 0.001664480867561551,
+          "Frob_residual_med": 0.06360817000719644
+        },
+        "0.3": {
+          "n_nodes": 3072,
+          "Lambda_t_mean": 0.7394558737604496,
+          "Lambda_s_3sum_mean": 0.014510249554129516,
+          "shear_mean": 0.0010616778642655005,
+          "Frob_residual_med": 0.08586476910529246
+        }
+      }
+    },
+    "P5N512": {
+      "N": 512,
+      "by_threshold": {
+        "0.05": {
+          "n_nodes": 6144,
+          "Lambda_t_mean": 0.8327656833764876,
+          "Lambda_s_3sum_mean": 0.00692349305069457,
+          "shear_mean": 0.0005048269775616963,
+          "Frob_residual_med": 0.028046004255156867
+        },
+        "0.08": {
+          "n_nodes": 6144,
+          "Lambda_t_mean": 0.816523775117183,
+          "Lambda_s_3sum_mean": 0.005512295671343488,
+          "shear_mean": 0.0005683192108937048,
+          "Frob_residual_med": 0.020629715000575276
+        },
+        "0.1": {
+          "n_nodes": 6144,
+          "Lambda_t_mean": 0.8031087962131371,
+          "Lambda_s_3sum_mean": 0.004962052023241598,
+          "shear_mean": 0.0006181965533505752,
+          "Frob_residual_med": 0.02210515911267813
+        },
+        "0.15": {
+          "n_nodes": 6144,
+          "Lambda_t_mean": 0.7750364281851613,
+          "Lambda_s_3sum_mean": 0.004358503957859783,
+          "shear_mean": 0.0007156842216174457,
+          "Frob_residual_med": 0.04590305371958388
+        },
+        "0.2": {
+          "n_nodes": 6144,
+          "Lambda_t_mean": 0.7597624775558601,
+          "Lambda_s_3sum_mean": 0.004940302226419795,
+          "shear_mean": 0.0007479459429942465,
+          "Frob_residual_med": 0.06758028767916185
+        },
+        "0.3": {
+          "n_nodes": 6144,
+          "Lambda_t_mean": 0.736518944828775,
+          "Lambda_s_3sum_mean": 0.004013587154773527,
+          "shear_mean": 0.0003197774331998755,
+          "Frob_residual_med": 0.0885151850509262
+        }
+      }
+    }
+  },
+  "verdict": "MASK_THRESHOLD_ROBUST_CV<10%",
+  "cv_per_regime_pct": [
+    7.550752525997109,
+    4.753475046938942,
+    4.111446059626281,
+    4.232948993113765,
+    4.231360658383048
+  ]
+}

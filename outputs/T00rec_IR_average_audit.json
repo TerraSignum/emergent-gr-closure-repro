@@ -1,0 +1,243 @@
+{
+  "method": "IR_average_T00rec_vs_Lambda_eff",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P1",
+      "P3",
+      "P4",
+      "P5",
+      "P5N64",
+      "P6",
+      "P7",
+      "P8",
+      "P5N100",
+      "P5N72",
+      "P5N84",
+      "P6N128",
+      "P8N128",
+      "P5N128",
+      "P5N200",
+      "P5N256",
+      "P5N300",
+      "P5N512"
+    ],
+    "branch_rationale": "Source-side time-time component diagnostic. Tests whether the cross-regime mean of T_00^rec on the eighteen-regime ladder converges to the empirical reference Lambda_eff = 0.314, identified in the parent paper as the effective time-time component of the cosmological back-reaction tensor. The cross-regime mean is 0.475 with CV 15.3%, a +51% relative offset against Lambda_eff; the verdict IR_AVERAGE_INCONSISTENT signals that the source-side T_00^rec does not reduce to a single effective constant in the IR. Regime range N=28..512 covers small-N through large-N; the matter-side T_00^rec is evaluated as a finite-N quantity across regimes.",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "Lambda_eff_reference": 0.314,
+  "per_regime": [
+    {
+      "regime": "P1",
+      "N": 28,
+      "mean_T00": 1.067294875954666,
+      "median_T00": 0.8809398295661578,
+      "mean_G00": 0.0027548708736206775,
+      "median_G00": 0.048765387378620094,
+      "mean_T00rec": 0.6529554614301711,
+      "median_T00rec": 0.7263876372423637,
+      "mean_T00_minus_G00": 1.0645400050810454
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "mean_T00": 0.9559038126583368,
+      "median_T00": 0.8571828995348114,
+      "mean_G00": 0.02847264252298563,
+      "median_G00": 0.036619792824704275,
+      "mean_T00rec": 0.5691132338387105,
+      "median_T00rec": 0.7006432536676941,
+      "mean_T00_minus_G00": 0.9274311701353513
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "mean_T00": 0.9157803992154846,
+      "median_T00": 0.8568111732177045,
+      "mean_G00": 0.031148284930135245,
+      "median_G00": 0.030671345124348458,
+      "mean_T00rec": 0.5599569535808201,
+      "median_T00rec": 0.70112541942202,
+      "mean_T00_minus_G00": 0.8846321142853492
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "mean_T00": 0.8977625988526471,
+      "median_T00": 0.8488968013834118,
+      "mean_G00": 0.026537370498221427,
+      "median_G00": 0.023806761846110806,
+      "mean_T00rec": 0.5555054127796377,
+      "median_T00rec": 0.6977981242346833,
+      "mean_T00_minus_G00": 0.8712252283544256
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "mean_T00": 0.8738857453905019,
+      "median_T00": 0.8411979090676449,
+      "mean_G00": 0.01904263210763612,
+      "median_G00": 0.015713235453152858,
+      "mean_T00rec": 0.4998682077958712,
+      "median_T00rec": 0.6439559289577556,
+      "mean_T00_minus_G00": 0.8548431132828659
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "mean_T00": 0.8626035677427396,
+      "median_T00": 0.8381301941515,
+      "mean_G00": 0.01895110954729221,
+      "median_G00": 0.016329262872557853,
+      "mean_T00rec": 0.47916078468153317,
+      "median_T00rec": 0.25,
+      "mean_T00_minus_G00": 0.8436524581954475
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "mean_T00": 0.8470246738629469,
+      "median_T00": 0.836422527386325,
+      "mean_G00": 0.015519549011229351,
+      "median_G00": 0.012451448611328566,
+      "mean_T00rec": 0.4647454450154263,
+      "median_T00rec": 0.25,
+      "mean_T00_minus_G00": 0.8315051248517175
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "mean_T00": 0.8382312954140464,
+      "median_T00": 0.831362670573113,
+      "mean_G00": 0.012202634576283247,
+      "median_G00": 0.009925938116017784,
+      "mean_T00rec": 0.45505712247485425,
+      "median_T00rec": 0.25,
+      "mean_T00_minus_G00": 0.826028660837763
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "mean_T00": 0.8429039778492785,
+      "median_T00": 0.8341355288018872,
+      "mean_G00": 0.011114708862051034,
+      "median_G00": 0.008515007028232987,
+      "mean_T00rec": 0.46522170970623317,
+      "median_T00rec": 0.25,
+      "mean_T00_minus_G00": 0.8317892689872273
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "mean_T00": 0.8572071536977188,
+      "median_T00": 0.841492652999868,
+      "mean_G00": 0.017028455553699293,
+      "median_G00": 0.014021582045730174,
+      "mean_T00rec": 0.5055387435947069,
+      "median_T00rec": 0.6519632821313486,
+      "mean_T00_minus_G00": 0.8401786981440195
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "mean_T00": 0.852291704365819,
+      "median_T00": 0.8392009091981951,
+      "mean_G00": 0.013952512952437563,
+      "median_G00": 0.01151851277287374,
+      "mean_T00rec": 0.5028848163179813,
+      "median_T00rec": 0.6520935445561071,
+      "mean_T00_minus_G00": 0.8383391914133815
+    },
+    {
+      "regime": "P6N128",
+      "N": 128,
+      "mean_T00": 0.8221842055653655,
+      "median_T00": 0.8208401620404873,
+      "mean_G00": 0.00738689364068851,
+      "median_G00": 0.0059897143003607885,
+      "mean_T00rec": 0.4397108209036138,
+      "median_T00rec": 0.25,
+      "mean_T00_minus_G00": 0.8147973119246771
+    },
+    {
+      "regime": "P8N128",
+      "N": 128,
+      "mean_T00": 0.819895885299903,
+      "median_T00": 0.8194955642591759,
+      "mean_G00": 0.006674786853704092,
+      "median_G00": 0.005418494421792474,
+      "mean_T00rec": 0.41446696344236367,
+      "median_T00rec": 0.25,
+      "mean_T00_minus_G00": 0.813221098446199
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "mean_T00": 0.7980076524378026,
+      "median_T00": 0.7990239314626303,
+      "mean_G00": 0.005836437819897718,
+      "median_G00": 0.0048781233430370205,
+      "mean_T00rec": 0.38715224965016715,
+      "median_T00rec": 0.25,
+      "mean_T00_minus_G00": 0.7921712146179049
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "mean_T00": 0.8234158163042429,
+      "median_T00": 0.8233458514384056,
+      "mean_G00": 0.004654256363209066,
+      "median_G00": 0.0036233916486275468,
+      "mean_T00rec": 0.43210892350188024,
+      "median_T00rec": 0.25,
+      "mean_T00_minus_G00": 0.8187615599410338
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "mean_T00": 0.8117764591355264,
+      "median_T00": 0.8146221504988338,
+      "mean_G00": 0.0031091286237661052,
+      "median_G00": 0.002493352658435863,
+      "mean_T00rec": 0.3864862000954325,
+      "median_T00rec": 0.25,
+      "mean_T00_minus_G00": 0.8086673305117603
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "mean_T00": 0.8177094082778326,
+      "median_T00": 0.8196713618630731,
+      "mean_G00": 0.0027504138309112974,
+      "median_G00": 0.0022613070206049827,
+      "mean_T00rec": 0.4154502282922504,
+      "median_T00rec": 0.25,
+      "mean_T00_minus_G00": 0.8149589944469211
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "mean_T00": 0.8044928047984677,
+      "median_T00": 0.8077922373924464,
+      "mean_G00": 0.0013840085853305997,
+      "median_G00": 0.0011346291960933103,
+      "mean_T00rec": 0.364604737215011,
+      "median_T00rec": 0.25,
+      "mean_T00_minus_G00": 0.8031087962131371
+    }
+  ],
+  "cross_regime": {
+    "mean_T00": 0.8615762242679624,
+    "std_T00": 0.06380423775408667,
+    "mean_G00": 0.012695594286283288,
+    "std_G00": 0.009083621067513795,
+    "mean_T00rec": 0.47499933412870354,
+    "std_T00rec": 0.07272592687609708,
+    "mean_T_minus_G": 0.8488806299816792,
+    "std_T_minus_G": 0.06112001284647569,
+    "rel_offset_T00rec_vs_Lambda_eff_percent": 51.27367328939603,
+    "rel_offset_T_minus_G_vs_Lambda_eff_percent": 170.34414967569404
+  },
+  "verdict": "IR_AVERAGE_INCONSISTENT"
+}

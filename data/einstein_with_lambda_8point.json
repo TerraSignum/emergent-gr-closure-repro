@@ -1,0 +1,154 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "title": "Eight-point source-side consistency of the full Einstein equation with cosmological term on T_00",
+  "equation": "G_munu + Lambda * g_munu = 8 pi G * T_munu^Xi",
+  "scope": "time-time component T_00 only; Frobenius residual over all components remains open",
+  "lattice_ladder": {
+    "N_values": [
+      28,
+      30,
+      36,
+      42,
+      50,
+      60,
+      72,
+      84
+    ],
+    "regime_labels": [
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ]
+  },
+  "T_00_Xi_source": "Hilbert variation of corpus-fixed residual IR action L_eff + L_defect + L_res",
+  "corpus_fixed_coefficients": {
+    "zeta_1": 1.0,
+    "zeta_2": 0.75,
+    "zeta_3": 0.5,
+    "a_K": 1.0,
+    "a_Q": 0.5,
+    "T_parity_convention": "EMT-04b: eta_T(Xi) = -1, cos(theta_em) = -1"
+  },
+  "T_00_Xi_values": [
+    0.4437,
+    0.4143,
+    0.3984,
+    0.3852,
+    0.3737,
+    0.3521,
+    0.3466,
+    0.3202
+  ],
+  "R_bar_values": [
+    0.145,
+    0.163,
+    0.145,
+    0.117,
+    0.111,
+    0.07,
+    0.067,
+    0.049
+  ],
+  "G_00_values": [
+    0.0725,
+    0.0815,
+    0.0725,
+    0.0585,
+    0.0555,
+    0.035,
+    0.0335,
+    0.0245
+  ],
+  "Lambda_pointwise": [
+    0.3712,
+    0.3328,
+    0.3259,
+    0.3267,
+    0.3182,
+    0.3171,
+    0.3131,
+    0.2957
+  ],
+  "Lambda_statistics": {
+    "all_8_points": {
+      "mean": 0.325,
+      "std": 0.02,
+      "cv_percent": 6.2
+    },
+    "asymptotic_window_P4_to_P8": {
+      "N_min": 42,
+      "mean": 0.314,
+      "std": 0.01,
+      "cv_percent": 3.3
+    }
+  },
+  "Lambda_const_for_residual_test": 0.314,
+  "residual_pointwise_with_Lambda_const": {
+    "definition": "G_00 + Lambda_const - T_00",
+    "values": [
+      -0.057,
+      -0.019,
+      -0.012,
+      -0.013,
+      -0.004,
+      -0.003,
+      0.001,
+      0.018
+    ],
+    "abs_values": [
+      0.057,
+      0.019,
+      0.012,
+      0.013,
+      0.004,
+      0.003,
+      0.001,
+      0.018
+    ],
+    "DoD_threshold": 0.05,
+    "pointwise_pass_count_for_N_geq_30": 7,
+    "pointwise_pass_count_for_all_8": 7,
+    "max_abs_residual_for_N_geq_30": 0.019,
+    "P1_status": "below_DoD_by_0.007 (finite-size-boundary characteristic)"
+  },
+  "T_00_Xi_powerlaw_fit": {
+    "form": "Delta_infty + C * N^(-alpha)",
+    "free_fit": {
+      "Delta_infty": 0.206,
+      "alpha": 0.571,
+      "r2": 0.967
+    },
+    "fixed_alpha_2_over_3": {
+      "Delta_infty": 0.23,
+      "r2": 0.966
+    }
+  },
+  "reviewer_hedging": {
+    "G_00_only": "Test is on the time-time diagonal component only; a Frobenius residual over all components is open.",
+    "Lambda_empirical_extraction": "Lambda_lat = 0.314 is extracted as the asymptotic mean of T_00 - G_00, not as an algebraic identity from corpus ingredients.",
+    "physical_scale_algebra": "With canonical scale anchor alpha_m ~ 1.046e-34 m (outputs_scale_anchor/scale_anchor_bundle.json, scheme_B, canonical regime), Lambda_lat = 0.314 corresponds to Lambda_phys = Lambda_lat / (alpha_m^-1 in GeV^-1)^2 ~ 1.12e36 GeV^2, equivalent to rho_Lambda^lat-implied = Lambda_phys * M_Pl^2 / (8 pi) ~ 6.6e72 GeV^4 -- i.e. the Planck-scale vacuum-energy density.",
+    "DEE_input_side_verification": "Path 5 thus verifies the INPUT side of a nine-layer hierarchy-reduction construction. The construction reduces this Planck-scale input by ~123 orders to rho_Lambda^pred = 2.32e-47 GeV^4 (vs Planck 2018 2.49e-47, ratio 0.93). The ~3 orders subleading between 10^119.4 (naive scale algebra) and 10^122.9 (9-layer reduction) come from Coleman-Weinberg, lattice form factor, Gamow-vacuum-sequestration layers and the alpha_m/l_Pl ~ 6.5 cell-volume factor.",
+    "scope": "Path 5 verifies the INPUT side of the hierarchy-reduction construction (Planck-scale Lambda from the lattice Hilbert variation), not the reduction itself. The internal agreement with the observed Planck-2018 rho_Lambda is established by the hierarchy-reduction construction separately."
+  },
+  "physical_scale_anchor": {
+    "alpha_m_m": 1.046e-34,
+    "alpha_m_GeVinv": 5.301e-19,
+    "M_Pl_GeV": 1.2209e+19,
+    "Lambda_phys_GeV2": 1.118e+36,
+    "rho_Lambda_lat_implied_GeV4": 6.628e+72,
+    "rho_Lambda_obs_GeV4": 2.49e-47,
+    "log10_ratio_lat_to_obs": 119.43,
+    "DEE_pred_log10_reduction": 122.9,
+    "subleading_orders": 3.5
+  }
+}

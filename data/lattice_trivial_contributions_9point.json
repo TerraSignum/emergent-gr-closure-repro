@@ -1,0 +1,135 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "title": "Nine-point per-regime per-seed-averaged trivial Hilbert-variation contributions to T_00 (variance(Xi), variance(|Psi|), <|grad Psi|^2>_node)",
+  "scope": "Per-regime aggregates of the four scalar quantities that enter the Hilbert variation T_00 = 0.5 Z_Xi var(Xi) + kappa_Xi var(|Psi|) + zeta_1 omega <|grad Psi|^2>_node + zeta_3 omega K_rec, computed per seed (4 seeds per regime) with the per-node Laplace-Beltrami weights that match the Phase F implementation in src/verify_lambda_frobenius_exact_offdiagonal.py.",
+  "lattice_ladder": {
+    "N_values": [
+      18,
+      28,
+      30,
+      36,
+      42,
+      50,
+      60,
+      72,
+      84
+    ],
+    "regime_labels": [
+      "P0",
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ],
+    "n_seeds_per_regime": 4
+  },
+  "var_Xi_values": [
+    0.0868,
+    0.0639,
+    0.0602,
+    0.0482,
+    0.041,
+    0.0403,
+    0.0284,
+    0.0277,
+    0.0207
+  ],
+  "var_amp_values": [
+    0.00025,
+    0.00018,
+    0.00016,
+    0.00011,
+    0.00014,
+    0.00013,
+    0.00011,
+    8e-05,
+    8e-05
+  ],
+  "grad_psi_squared_values": [
+    0.5886,
+    0.5376,
+    0.5444,
+    0.5149,
+    0.5388,
+    0.5158,
+    0.4944,
+    0.4567,
+    0.4883
+  ],
+  "K_rec_row_mean_values": [
+    1.6602,
+    1.6698,
+    1.6698,
+    1.6734,
+    1.6783,
+    1.6857,
+    1.692,
+    1.6958,
+    1.7018
+  ],
+  "alpha_2_3_extrapolations": {
+    "var_Xi_inf": -0.0152,
+    "var_Xi_r2": 0.988,
+    "var_amp_inf": -2e-05,
+    "var_amp_r2": 0.921,
+    "grad_psi_squared_inf": 0.4164,
+    "grad_psi_squared_r2": 0.845,
+    "trivial_total_inf": 0.4088,
+    "trivial_total_r2": 0.905,
+    "K_rec_row_mean_inf": 1.7185,
+    "K_rec_row_mean_r2": 0.997
+  },
+  "system_R_rational_identifications": {
+    "K_rec_inf_via_zeta_3": {
+      "zeta_3_K_rec_inf_extrapolated": 0.85925,
+      "rational_target": "17/20",
+      "rational_value": 0.85,
+      "relative_match_percent": 1.09,
+      "structural_reading": "alpha_xi + eps_sync_sq - gamma = 9/10 + 1/20 - 1/10 = 17/20 (non-scalar Clifford-channel rate, Phase D)"
+    },
+    "grad_psi_squared_inf_via_zeta_1": {
+      "zeta_1_grad_inf_extrapolated": 0.4164,
+      "rational_target": "5/12",
+      "rational_value": 0.41667,
+      "relative_match_percent": 0.06,
+      "structural_reading": "alpha_xi/2 - gamma/N_gen = 9/20 - 1/30 = 5/12 (Lemma 1 spinor-trace minus Lemma 5 generation, N_gen=3)",
+      "LOO_jackknife_mean": 0.4164,
+      "LOO_jackknife_std": 0.0067,
+      "LOO_jackknife_range": [
+        0.4091,
+        0.4341
+      ],
+      "sigma_distance_to_target": 0.05
+    },
+    "Lambda_lat_inf_total": {
+      "value_extrapolated_full_T_00_minus_G_00": 1.2664,
+      "rational_target": "19/15",
+      "rational_value": 1.26667,
+      "relative_match_percent": 0.02,
+      "decomposition": "17/20 + 5/12 = 51/60 + 25/60 = 76/60 = 19/15",
+      "system_R_form": "3 alpha_xi / 2 + eps_sync_sq - gamma * (N_gen + 1) / N_gen = 27/20 + 1/20 - (4/30) = 19/15",
+      "verification_chain": "alpha = 2/3 fixed analytically by Theorem 15.18 P2 (not free parameter); LOO jackknife confirms 19/15 inside range [1.259, 1.284] with 0.05 sigma distance to target"
+    }
+  },
+  "computation_provenance": {
+    "source": "Per-seed scalar contributions extracted from parent corpus D1 NPZ at d1_lattice_payload/d1_p[0-5].npz and d1_lattice_payload/p[6-8]/d1_p[6-8].npz, averaged over 4 seeds per regime",
+    "formulae": {
+      "var_Xi": "numpy.var(xi_matrix) per seed, mean over 4 seeds per regime",
+      "var_amp": "numpy.var(|node_amplitude|) per seed, mean over 4 seeds per regime",
+      "grad_psi_squared": "per-node sum over neighbours of weight_ab * |Psi_b - Psi_a|^2 / sum_b weight_ab, with weight_ab = Xi_ab / d_ab^2 (Laplace-Beltrami) and d_ab = -ell_0 log(Xi_ab); averaged over nodes, then over seeds",
+      "K_rec_row_mean": "a_K * <K(x)> + a_Q * (1 - <Q(x)>) per seed (Definition 12.20), mean over 4 seeds per regime"
+    }
+  },
+  "downstream_uses": [
+    "src/verify_lambda_19_15_breakthrough.py: System-R algebraic Theorem 19/15 = 17/20 + 5/12 verification + LOO jackknife"
+  ]
+}

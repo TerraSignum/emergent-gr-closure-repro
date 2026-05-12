@@ -1,0 +1,114 @@
+{
+  "method": "scheme_B_N_scaling_continuum_extrapolation",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5",
+      "P6",
+      "P5N64",
+      "P7",
+      "P8",
+      "P5N100"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "raw_median": 0.050206341992379715,
+      "raw_mean": 0.16818207015978243,
+      "B_median": 0.049030262900279856,
+      "B_mean": 0.11132479217613098
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "raw_median": 0.03391939445884708,
+      "raw_mean": 0.07439064833758666,
+      "B_median": 0.03204447049080364,
+      "B_mean": 0.04063409808311871
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "raw_median": 0.03827426305703561,
+      "raw_mean": 0.12075005189502352,
+      "B_median": 0.03787602662445471,
+      "B_mean": 0.062315710732625804
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "raw_median": 0.0337994635636666,
+      "raw_mean": 0.08930901569048044,
+      "B_median": 0.033176687111063224,
+      "B_mean": 0.04796049751519646
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "raw_median": 0.02938088662741073,
+      "raw_mean": 0.05931365072594043,
+      "B_median": 0.028802317045511734,
+      "B_mean": 0.03732594663651205
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "raw_median": 0.03780444065996909,
+      "raw_mean": 0.07595389587841078,
+      "B_median": 0.036065935505484634,
+      "B_mean": 0.04552613977341343
+    }
+  ],
+  "fits": {
+    "raw median (all N)": {
+      "alpha": 0.42240141415440013,
+      "A": 0.2206705219207473,
+      "R_squared": 0.3345834641698511
+    },
+    "raw mean (all N)": {
+      "alpha": 1.1227511470684046,
+      "A": 10.826502788344225,
+      "R_squared": 0.5411814416969682
+    },
+    "B median (N>=60)": {
+      "alpha": 0.029585227334202997,
+      "A": 0.0379938883564107,
+      "R_squared": 0.0033184574609482764
+    },
+    "B mean (N>=60)": {
+      "alpha": 0.2836589692708675,
+      "A": 0.15641393822555302,
+      "R_squared": 0.090491365548791
+    },
+    "raw median (N>=60)": {
+      "alpha": 0.02174181744140787,
+      "A": 0.03787049785756875,
+      "R_squared": 0.0017824117410638607
+    },
+    "raw mean (N>=60)": {
+      "alpha": 0.5924920789291283,
+      "A": 1.0506318086726298,
+      "R_squared": 0.21799606708234176
+    }
+  },
+  "continuum_projection_N_geq_60": {
+    "Delta_med_alpha": 0.029585227334202997,
+    "Delta_mean_alpha": 0.2836589692708675,
+    "Delta_med_A": 0.0379938883564107,
+    "Delta_mean_A": 0.15641393822555302,
+    "predicted_at_N_128": {
+      "median": 0.032913302115455643,
+      "mean": 0.03949539329627563
+    },
+    "predicted_at_N_1000": {
+      "median": 0.030971201962289155,
+      "mean": 0.02204441321418004
+    }
+  },
+  "verdict": "SCHEME_B_FINITE_FLOOR_NO_POWER_LAW_CONVERGENCE"
+}

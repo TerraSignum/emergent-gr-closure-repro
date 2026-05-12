@@ -1,0 +1,58 @@
+{
+  "method": "bianchi_bootstrap_CI",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "n_boot": 2000,
+  "n_regimes": 14,
+  "channels": {
+    "B_time": {
+      "n_resamples": 2000,
+      "asymptote_median": 0.0006438979002201095,
+      "asymptote_CI95": [
+        -0.00015406598492750736,
+        0.0014207508872510271
+      ],
+      "asymptote_zero_in_CI": true,
+      "decay_exponent_median": 1.513108567109669,
+      "decay_exponent_CI95": [
+        1.3546329771745478,
+        1.6316241995330625
+      ],
+      "decay_significantly_positive": true
+    },
+    "B_spat": {
+      "n_resamples": 2000,
+      "asymptote_median": -6.786699228468751e-07,
+      "asymptote_CI95": [
+        -0.00043235746771699596,
+        0.0004703149465035657
+      ],
+      "asymptote_zero_in_CI": true,
+      "decay_exponent_median": 2.193565926536495,
+      "decay_exponent_CI95": [
+        1.9233990498419873,
+        2.395690938373449
+      ],
+      "decay_significantly_positive": true
+    },
+    "B_full": {
+      "n_resamples": 2000,
+      "asymptote_median": 0.0005982788884325744,
+      "asymptote_CI95": [
+        -0.0001920110452205322,
+        0.001685051861728177
+      ],
+      "asymptote_zero_in_CI": true,
+      "decay_exponent_median": 1.5606389892166803,
+      "decay_exponent_CI95": [
+        1.378184978135905,
+        1.6808484647054098
+      ],
+      "decay_significantly_positive": true
+    }
+  },
+  "verdict": "BIANCHI_RECOVERY_BOOTSTRAP_CONFIRMED"
+}

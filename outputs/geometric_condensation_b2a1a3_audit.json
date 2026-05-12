@@ -1,0 +1,94 @@
+{
+  "method": "B2_A1_A3_geometric_condensation_audit",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "n_seeds": 16,
+  "n_snapshots": 17,
+  "n_lat": 100,
+  "n_candidates_pooled": 160,
+  "snapshot_steps": [
+    0,
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    28,
+    32,
+    36,
+    40,
+    44,
+    48,
+    52,
+    56,
+    60,
+    64
+  ],
+  "best_lag_pooled_mean": 0.1625,
+  "per_seed_mean_lags": [
+    1.2,
+    1.4,
+    0.9,
+    -1.3,
+    -0.4,
+    -0.4,
+    1.5,
+    0.0,
+    -0.6,
+    -0.4,
+    -1.2,
+    0.3,
+    0.2,
+    0.2,
+    -0.5,
+    1.7
+  ],
+  "hierarchical_bootstrap": {
+    "n_boot": 5000,
+    "ci_95_low": -0.49375,
+    "ci_95_high": 0.8125,
+    "p_geq_zero": 0.6916
+  },
+  "flat_bootstrap": {
+    "ci_95_low": -0.33140624999999996,
+    "ci_95_high": 0.64375
+  },
+  "fisher_combined": {
+    "Xi_to_T00_chi2": 863.8145619121843,
+    "Xi_to_T00_pvalue": 1.5179875040085292e-51,
+    "T00_to_Xi_chi2": 185.95342641019053,
+    "T00_to_Xi_pvalue": 1.317639852193242e-11,
+    "noncand_Xi_to_T00_pvalue": 5.6168045516576795e-49,
+    "noncand_T00_to_Xi_pvalue": 4.350563156614079e-09,
+    "n_per_node_p_lt_005_xi_to_t00": 62,
+    "n_per_node_p_lt_005_t00_to_xi": 8,
+    "n_total_candidates": 160
+  },
+  "robustness_cuts": [
+    {
+      "cut_pct": 5,
+      "n_nodes": 80,
+      "mean_lag": 0.25,
+      "sem": 0.35990450122219925,
+      "n_sigma": 0.6946287116471879
+    },
+    {
+      "cut_pct": 10,
+      "n_nodes": 160,
+      "mean_lag": 0.1625,
+      "sem": 0.24683741802550924,
+      "n_sigma": 0.658328065898042
+    },
+    {
+      "cut_pct": 15,
+      "n_nodes": 240,
+      "mean_lag": 0.07083333333333333,
+      "sem": 0.19990431015261428,
+      "n_sigma": 0.3543361985504793
+    }
+  ]
+}

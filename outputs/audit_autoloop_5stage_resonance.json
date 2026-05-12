@@ -1,0 +1,569 @@
+{
+  "method": "autoloop_5stage_resonance",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5N64",
+      "P5N72",
+      "P5N84",
+      "P5N100",
+      "P5N128",
+      "P5N200",
+      "P5N256",
+      "P5N300"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "rows": [
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_seeds": 24,
+      "S12": {
+        "K64": {
+          "n_type1": 0.9166666666666666,
+          "n_type2": 56.958333333333336,
+          "n_type3": 6.125,
+          "lift_3body": 0.0,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.02631578947368421,
+          "asym_all": 0.02631578947368421
+        },
+        "K128": {
+          "n_type1": 0.0,
+          "n_type2": 93.08333333333333,
+          "n_type3": 34.916666666666664,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.03520171957671959,
+          "asym_all": 0.03520171957671959
+        },
+        "K256": {
+          "n_type1": 0.0,
+          "n_type2": 74.45833333333333,
+          "n_type3": 181.54166666666666,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.031538646227890835,
+          "asym_all": 0.031538646227890835
+        },
+        "K512": {
+          "n_type1": 0.0,
+          "n_type2": 4.166666666666667,
+          "n_type3": 507.8333333333333,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.01626718761656606,
+          "asym_all": 0.01626718761656606
+        }
+      },
+      "S3": {
+        "transitions_1_to_2": 0.0,
+        "transitions_2_to_3": 0.0,
+        "transitions_3_to_2": 0.0,
+        "transitions_2_to_1": 0.0,
+        "net_to_3": 0.0,
+        "net_to_1": 0.0
+      },
+      "S4": {
+        "n_formation_events": 0.16666666666666666,
+        "phi_drift_PPN": 0.0,
+        "phi_drift_PNN": 0.0
+      },
+      "S5": {
+        "n_type1_per_snap_mean": 0.0,
+        "travel_lattice_units": NaN,
+        "spread_avg": NaN
+      }
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "n_seeds": 24,
+      "S12": {
+        "K72": {
+          "n_type1": 1.0,
+          "n_type2": 65.04166666666667,
+          "n_type3": 5.958333333333333,
+          "lift_3body": 0.0,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.11746031746031745,
+          "asym_all": 0.11746031746031745
+        },
+        "K144": {
+          "n_type1": 0.0,
+          "n_type2": 108.79166666666667,
+          "n_type3": 35.208333333333336,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.07898351648351651,
+          "asym_all": 0.07898351648351651
+        },
+        "K288": {
+          "n_type1": 0.0,
+          "n_type2": 93.375,
+          "n_type3": 194.625,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.059707138338179,
+          "asym_all": 0.059707138338179
+        },
+        "K576": {
+          "n_type1": 0.0,
+          "n_type2": 9.208333333333334,
+          "n_type3": 566.7916666666666,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.00964363858784021,
+          "asym_all": 0.00964363858784021
+        }
+      },
+      "S3": {
+        "transitions_1_to_2": 0.0,
+        "transitions_2_to_3": 0.041666666666666664,
+        "transitions_3_to_2": 0.125,
+        "transitions_2_to_1": 0.0,
+        "net_to_3": -0.08333333333333333,
+        "net_to_1": 0.0
+      },
+      "S4": {
+        "n_formation_events": 0.25,
+        "phi_drift_PPN": 4.683753385137379e-17,
+        "phi_drift_PNN": 3.23815048849004e-17
+      },
+      "S5": {
+        "n_type1_per_snap_mean": 0.0,
+        "travel_lattice_units": NaN,
+        "spread_avg": NaN
+      }
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "n_seeds": 24,
+      "S12": {
+        "K84": {
+          "n_type1": 1.5,
+          "n_type2": 76.16666666666667,
+          "n_type3": 6.333333333333333,
+          "lift_3body": 0.0,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.14166666666666666,
+          "asym_all": 0.14166666666666666
+        },
+        "K168": {
+          "n_type1": 0.041666666666666664,
+          "n_type2": 132.375,
+          "n_type3": 35.583333333333336,
+          "lift_3body": 0.0,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.0773524534747445,
+          "asym_all": 0.0773524534747445
+        },
+        "K336": {
+          "n_type1": 0.0,
+          "n_type2": 125.41666666666667,
+          "n_type3": 210.58333333333334,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.021272322413511662,
+          "asym_all": 0.021272322413511662
+        },
+        "K672": {
+          "n_type1": 0.0,
+          "n_type2": 12.833333333333334,
+          "n_type3": 659.1666666666666,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.015258872029375781,
+          "asym_all": 0.015258872029375781
+        }
+      },
+      "S3": {
+        "transitions_1_to_2": 0.0,
+        "transitions_2_to_3": 0.041666666666666664,
+        "transitions_3_to_2": 0.25,
+        "transitions_2_to_1": 0.0,
+        "net_to_3": -0.20833333333333334,
+        "net_to_1": 0.0
+      },
+      "S4": {
+        "n_formation_events": 0.20833333333333334,
+        "phi_drift_PPN": -1.1102230246251565e-16,
+        "phi_drift_PNN": -4.163336342344337e-17
+      },
+      "S5": {
+        "n_type1_per_snap_mean": 0.0,
+        "travel_lattice_units": NaN,
+        "spread_avg": NaN
+      }
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds": 24,
+      "S12": {
+        "K100": {
+          "n_type1": 2.0833333333333335,
+          "n_type2": 92.0,
+          "n_type3": 5.916666666666667,
+          "lift_3body": 0.0,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.040740740740740744,
+          "asym_all": 0.040740740740740744
+        },
+        "K200": {
+          "n_type1": 0.0,
+          "n_type2": 164.25,
+          "n_type3": 35.75,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.0474021349021349,
+          "asym_all": -0.0474021349021349
+        },
+        "K400": {
+          "n_type1": 0.0,
+          "n_type2": 157.08333333333334,
+          "n_type3": 242.91666666666666,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.029464596870798502,
+          "asym_all": 0.029464596870798502
+        },
+        "K800": {
+          "n_type1": 0.0,
+          "n_type2": 23.541666666666668,
+          "n_type3": 776.4583333333334,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.009522203102915251,
+          "asym_all": 0.009522203102915251
+        }
+      },
+      "S3": {
+        "transitions_1_to_2": 0.0,
+        "transitions_2_to_3": 0.375,
+        "transitions_3_to_2": 0.375,
+        "transitions_2_to_1": 0.0,
+        "net_to_3": 0.0,
+        "net_to_1": 0.0
+      },
+      "S4": {
+        "n_formation_events": 0.8333333333333334,
+        "phi_drift_PPN": 7.054542135639015e-17,
+        "phi_drift_PNN": -4.7704895589362195e-18
+      },
+      "S5": {
+        "n_type1_per_snap_mean": 0.0,
+        "travel_lattice_units": NaN,
+        "spread_avg": NaN
+      }
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "n_seeds": 12,
+      "S12": {
+        "K128": {
+          "n_type1": 2.5,
+          "n_type2": 120.33333333333333,
+          "n_type3": 5.166666666666667,
+          "lift_3body": 0.0,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.2727272727272727,
+          "asym_all": -0.2727272727272727
+        },
+        "K256": {
+          "n_type1": 0.0,
+          "n_type2": 213.83333333333334,
+          "n_type3": 42.166666666666664,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.05410984259023474,
+          "asym_all": -0.05410984259023474
+        },
+        "K512": {
+          "n_type1": 0.0,
+          "n_type2": 214.0,
+          "n_type3": 298.0,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.008699766654815422,
+          "asym_all": -0.008699766654815422
+        },
+        "K1024": {
+          "n_type1": 0.0,
+          "n_type2": 35.916666666666664,
+          "n_type3": 988.0833333333334,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.006960927850377464,
+          "asym_all": -0.006960927850377464
+        }
+      },
+      "S3": {
+        "transitions_1_to_2": 0.0,
+        "transitions_2_to_3": 0.9166666666666666,
+        "transitions_3_to_2": 0.6666666666666666,
+        "transitions_2_to_1": 0.0,
+        "net_to_3": 0.25,
+        "net_to_1": 0.0
+      },
+      "S4": {
+        "n_formation_events": 2.0,
+        "phi_drift_PPN": -8.723180907769087e-17,
+        "phi_drift_PNN": -9.25185853854297e-18
+      },
+      "S5": {
+        "n_type1_per_snap_mean": 0.0,
+        "travel_lattice_units": NaN,
+        "spread_avg": NaN
+      }
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_seeds": 8,
+      "S12": {
+        "K200": {
+          "n_type1": 3.0,
+          "n_type2": 191.0,
+          "n_type3": 6.0,
+          "lift_3body": 0.0,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.23333333333333334,
+          "asym_all": -0.23333333333333334
+        },
+        "K400": {
+          "n_type1": 0.0,
+          "n_type2": 360.375,
+          "n_type3": 39.625,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.0037114845938375357,
+          "asym_all": 0.0037114845938375357
+        },
+        "K800": {
+          "n_type1": 0.0,
+          "n_type2": 400.875,
+          "n_type3": 399.125,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.007298243255821492,
+          "asym_all": 0.007298243255821492
+        },
+        "K1600": {
+          "n_type1": 0.0,
+          "n_type2": 88.25,
+          "n_type3": 1511.75,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.024154695735474595,
+          "asym_all": -0.024154695735474595
+        }
+      },
+      "S3": {
+        "transitions_1_to_2": 0.0,
+        "transitions_2_to_3": 1.375,
+        "transitions_3_to_2": 1.375,
+        "transitions_2_to_1": 0.0,
+        "net_to_3": 0.0,
+        "net_to_1": 0.0
+      },
+      "S4": {
+        "n_formation_events": 1.125,
+        "phi_drift_PPN": 1.1102230246251565e-16,
+        "phi_drift_PNN": 5.088522196198634e-17
+      },
+      "S5": {
+        "n_type1_per_snap_mean": 0.0,
+        "travel_lattice_units": NaN,
+        "spread_avg": NaN
+      }
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_seeds": 12,
+      "S12": {
+        "K256": {
+          "n_type1": 4.333333333333333,
+          "n_type2": 246.16666666666666,
+          "n_type3": 5.5,
+          "lift_3body": 0.0,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.09090909090909091,
+          "asym_all": 0.09090909090909091
+        },
+        "K512": {
+          "n_type1": 0.0,
+          "n_type2": 478.5833333333333,
+          "n_type3": 33.416666666666664,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.15894637769637768,
+          "asym_all": -0.15894637769637768
+        },
+        "K1024": {
+          "n_type1": 0.0,
+          "n_type2": 531.4166666666666,
+          "n_type3": 492.5833333333333,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.012108291747366653,
+          "asym_all": 0.012108291747366653
+        },
+        "K2048": {
+          "n_type1": 0.0,
+          "n_type2": 132.25,
+          "n_type3": 1915.75,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.00905777345432185,
+          "asym_all": -0.00905777345432185
+        }
+      },
+      "S3": {
+        "transitions_1_to_2": 0.0,
+        "transitions_2_to_3": 1.0833333333333333,
+        "transitions_3_to_2": 1.0,
+        "transitions_2_to_1": 0.0,
+        "net_to_3": 0.08333333333333333,
+        "net_to_1": 0.0
+      },
+      "S4": {
+        "n_formation_events": 1.3333333333333333,
+        "phi_drift_PPN": -7.840950111415169e-17,
+        "phi_drift_PNN": 6.938893903907228e-18
+      },
+      "S5": {
+        "n_type1_per_snap_mean": 0.0,
+        "travel_lattice_units": NaN,
+        "spread_avg": NaN
+      }
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_seeds": 12,
+      "S12": {
+        "K300": {
+          "n_type1": 5.583333333333333,
+          "n_type2": 290.25,
+          "n_type3": 4.166666666666667,
+          "lift_3body": 0.0,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.42666666666666664,
+          "asym_all": 0.42666666666666664
+        },
+        "K600": {
+          "n_type1": 0.0,
+          "n_type2": 560.25,
+          "n_type3": 39.75,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.025616744366744368,
+          "asym_all": -0.025616744366744368
+        },
+        "K1200": {
+          "n_type1": 0.0,
+          "n_type2": 655.6666666666666,
+          "n_type3": 544.3333333333334,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.019913891365700195,
+          "asym_all": -0.019913891365700195
+        },
+        "K2400": {
+          "n_type1": 0.0,
+          "n_type2": 163.58333333333334,
+          "n_type3": 2236.4166666666665,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": 0.002415854729857083,
+          "asym_all": 0.002415854729857083
+        }
+      },
+      "S3": {
+        "transitions_1_to_2": 0.0,
+        "transitions_2_to_3": 1.8333333333333333,
+        "transitions_3_to_2": 1.25,
+        "transitions_2_to_1": 0.0,
+        "net_to_3": 0.5833333333333334,
+        "net_to_1": 0.0
+      },
+      "S4": {
+        "n_formation_events": 2.5,
+        "phi_drift_PPN": 3.2959746043559335e-17,
+        "phi_drift_PNN": 6.6497733245777616e-18
+      },
+      "S5": {
+        "n_type1_per_snap_mean": 0.0,
+        "travel_lattice_units": NaN,
+        "spread_avg": NaN
+      }
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_seeds": 12,
+      "S12": {
+        "K512": {
+          "n_type1": 10.25,
+          "n_type2": 497.5,
+          "n_type3": 4.25,
+          "lift_3body": 0.0,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.6,
+          "asym_all": -0.6
+        },
+        "K1024": {
+          "n_type1": 0.08333333333333333,
+          "n_type2": 992.25,
+          "n_type3": 31.666666666666668,
+          "lift_3body": 0.0,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.21587301587301586,
+          "asym_all": -0.21587301587301586
+        },
+        "K2048": {
+          "n_type1": 0.0,
+          "n_type2": 1145.5833333333333,
+          "n_type3": 902.4166666666666,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.007554015748608845,
+          "asym_all": -0.007554015748608845
+        },
+        "K4096": {
+          "n_type1": 0.0,
+          "n_type2": 329.0833333333333,
+          "n_type3": 3766.9166666666665,
+          "lift_3body": NaN,
+          "asym_resonance": NaN,
+          "asym_non_resonance": -0.013930658354970255,
+          "asym_all": -0.013930658354970255
+        }
+      },
+      "S3": {
+        "transitions_1_to_2": 0.0,
+        "transitions_2_to_3": 1.6666666666666667,
+        "transitions_3_to_2": 1.75,
+        "transitions_2_to_1": 0.0,
+        "net_to_3": -0.08333333333333333,
+        "net_to_1": 0.0
+      },
+      "S4": {
+        "n_formation_events": 2.8333333333333335,
+        "phi_drift_PPN": -5.788193998175946e-17,
+        "phi_drift_PNN": -1.1564823173178714e-17
+      },
+      "S5": {
+        "n_type1_per_snap_mean": 0.16666666666666666,
+        "travel_lattice_units": 0.0,
+        "spread_avg": NaN
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "vacuum",
+    "branch_rationale": "Lepton/quark mass or CP-mixing observable; vacuum-QFT-anchored",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "title": "Continuum Bianchi closure verification (iter-32 reanchor)",
+  "stand": "2026-05-05",
+  "scaling_summary": {
+    "alpha_min": 1.51,
+    "alpha_max": 2.19,
+    "alpha_median": 1.85,
+    "R_squared": 0.96,
+    "n_regimes": 14,
+    "Symanzik_2_asymptote": 0.0007,
+    "asymptote_class": "effectively_zero_in_continuum"
+  },
+  "structural_status": "DERIVED-IN-CONTINUUM-LIMIT",
+  "verdict": "Discrete divergence ||nabla_mu G^mu nu|| scales as N^(-1.85) on the 14-regime ladder with R^2 = 0.96; Symanzik-2 continuum asymptote 7e-04 is statistically zero. The second Bianchi identity nabla_mu G^mu nu = 0 is therefore recovered in the continuum limit on the relational Xi-graph; the framework's emergent Einstein equation is internally consistent with the geometric Bianchi constraint. Result already integrated in companion paper P4 (Section discrete-bianchi-recovered); reproducer this file plus parent corpus outputs/discrete_bianchi_scaling_audit.json."
+}

@@ -1,0 +1,93 @@
+{
+  "method": "federer_extended_ladder_audit",
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "stand": "2026-05-04",
+  "n_points": 12,
+  "Ns": [
+    50,
+    60,
+    64,
+    72,
+    72,
+    84,
+    84,
+    100,
+    128,
+    200,
+    256,
+    300
+  ],
+  "ys": [
+    0.0318411337914067,
+    0.028491032810895323,
+    0.02963885103699213,
+    0.02838604588884681,
+    0.029074484458974852,
+    0.02705026318697112,
+    0.02743324809002802,
+    0.026042028717455982,
+    0.024334076564535644,
+    0.02192342524494404,
+    0.020635083591786257,
+    0.02132852748931138
+  ],
+  "sources": [
+    "P5(stage6f)",
+    "P6(stage6f)",
+    "P5N64(stage6f)",
+    "P7(stage6f)",
+    "P5N72(stage6f)",
+    "P8(stage6f)",
+    "P5N84(stage6f)",
+    "P5N100(stage6f)",
+    "P5N128(extended,seeds=12)",
+    "P5N200(stage6f)",
+    "P5N256(extended,seeds=2)",
+    "P5N300(stage6f)"
+  ],
+  "tests": {
+    "T_A_closure": {
+      "rmse": 0.0007153849500153878,
+      "aicc": -173.82455444450707,
+      "free_params": 0
+    },
+    "T_B_free_M3": {
+      "rmse": 0.0006873625753192162,
+      "aicc": -169.45023399904463,
+      "free_params": 2,
+      "c_free": 0.15781565993518912,
+      "d_free": -0.1632504690396858
+    },
+    "T_C_federer_only": {
+      "rmse": 0.0013702630872046394,
+      "aicc": -155.82606055493804,
+      "free_params": 1,
+      "c": 0.12033885679141976
+    }
+  },
+  "deltas": {
+    "delta_aicc_TA_vs_TB": -4.374320445462445,
+    "delta_aicc_TA_vs_TC": -17.998493889569033
+  },
+  "per_point_rel_pct": [
+    3.233909691099348,
+    -4.243256821165533,
+    0.941169985498938,
+    -0.9016710957722345,
+    1.5017320453362828,
+    -2.3439468535712265,
+    -0.9613061824365104,
+    -2.2098769517591017,
+    -3.1621605388258556,
+    -2.523610382036575,
+    -2.1731730983370827,
+    5.465881268686983
+  ],
+  "max_abs_rel_pct": 5.465881268686983,
+  "mean_abs_rel_pct": 2.471807909543806,
+  "verdict": "PROOF-CONDITIONAL-PRECISE-AICc-CONSISTENT"
+}

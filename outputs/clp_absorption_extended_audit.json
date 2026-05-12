@@ -1,0 +1,94 @@
+{
+  "method": "clp_absorption_extended",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "payloads": [
+    {
+      "file": "d1_p0.json",
+      "N": 409.5,
+      "abs": 0.5829752291665838,
+      "dir": "d1_lattice_payload"
+    },
+    {
+      "file": "d1_p1.json",
+      "N": 1539.0,
+      "abs": 0.5443768336027307,
+      "dir": "d1_lattice_payload"
+    },
+    {
+      "file": "d1_p2prime.json",
+      "N": 2254.0,
+      "abs": 0.5082975661761139,
+      "dir": "d1_lattice_payload"
+    },
+    {
+      "file": "d1_p3.json",
+      "N": 3917.5,
+      "abs": 0.4680186839119661,
+      "dir": "d1_lattice_payload"
+    },
+    {
+      "file": "d1_p4.json",
+      "N": 6038.5,
+      "abs": 0.4911709071099549,
+      "dir": "d1_lattice_payload"
+    },
+    {
+      "file": "d1_p5.json",
+      "N": 9379.5,
+      "abs": 0.5468032467341895,
+      "dir": "d1_lattice_payload"
+    },
+    {
+      "file": "d1_p6.json",
+      "N": 14181.0,
+      "abs": 0.4829075907327609,
+      "dir": "p6"
+    },
+    {
+      "file": "d1_p7.json",
+      "N": 20793.5,
+      "abs": 0.5622475266089431,
+      "dir": "p7"
+    },
+    {
+      "file": "d1_p8.json",
+      "N": 28014.5,
+      "abs": 0.5207363729112258,
+      "dir": "p8"
+    }
+  ],
+  "fit_subset_excl_P0": {
+    "alpha": 4.475498388434749,
+    "prefactor": 5756199957181.534,
+    "gap_inf": 0.5108770928862182,
+    "residual": 0.007150540926402224,
+    "n_points": 8
+  },
+  "fit_full": {
+    "alpha": 1.7171836569031087,
+    "prefactor": 2144.53724425014,
+    "gap_inf": 0.5137480973781337,
+    "residual": 0.007825467201737931,
+    "n_points": 9
+  },
+  "n_points_used": 9,
+  "bootstrap": {
+    "n_boot": 2000,
+    "asymptote_median": 0.5124309996699712,
+    "asymptote_CI95": [
+      0.47169956592205403,
+      0.7140092663629245
+    ],
+    "0p5_in_CI": true,
+    "alpha_median": 2.512245042114718,
+    "alpha_CI95": [
+      0.10000356030847124,
+      4.999996196833074
+    ]
+  },
+  "verdict": "ABSORPTION_THRESHOLD_REACHED_IN_CI"
+}

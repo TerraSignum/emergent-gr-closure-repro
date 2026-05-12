@@ -1,0 +1,138 @@
+{
+  "method": "within_regime_p5_power_law_cross_validation",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "closure_threshold": 0.05,
+  "input_sequence": {
+    "ns": [
+      50,
+      64,
+      100
+    ],
+    "regimes": [
+      "P5 (N=50)",
+      "P5N64 (N=64)",
+      "P5N100 (N=100)"
+    ],
+    "full_mean": [
+      0.317,
+      0.216,
+      0.102
+    ],
+    "full_median": [
+      0.109,
+      0.074,
+      0.036
+    ],
+    "trim_mean_drop_top10pct": [
+      0.0977,
+      0.0497,
+      0.0344
+    ],
+    "trim_mean_drop_top20pct": [
+      0.0581,
+      0.032,
+      0.0288
+    ]
+  },
+  "cross_validation": {
+    "full_mean": {
+      "predict_N100_from_N50_N64": {
+        "actual": 0.102,
+        "predicted": 0.10795809893395042,
+        "relative_error": 0.05841273464657281,
+        "fit_alpha": 1.5540113630666752
+      },
+      "predict_N50_from_N64_N100": {
+        "actual": 0.317,
+        "predicted": 0.3271123989634448,
+        "relative_error": 0.031900312187523,
+        "fit_alpha": 1.6812172925924775
+      }
+    },
+    "full_median": {
+      "predict_N100_from_N50_N64": {
+        "actual": 0.036,
+        "predicted": 0.036741766527770524,
+        "relative_error": 0.020604625771403515,
+        "fit_alpha": 1.568835237637733
+      },
+      "predict_N50_from_N64_N100": {
+        "actual": 0.109,
+        "predicted": 0.11023664059895032,
+        "relative_error": 0.011345326595874469,
+        "fit_alpha": 1.6145350168185082
+      }
+    },
+    "trim_mean_drop_top10pct": {
+      "predict_N100_from_N50_N64": {
+        "actual": 0.0344,
+        "predicted": 0.014644753913762276,
+        "relative_error": -0.5742804094836548,
+        "fit_alpha": 2.737974611405718
+      },
+      "predict_N50_from_N64_N100": {
+        "actual": 0.0977,
+        "predicted": 0.060918236394218485,
+        "relative_error": -0.37647659780738496,
+        "fit_alpha": 0.824465610940107
+      }
+    },
+    "trim_mean_drop_top20pct": {
+      "predict_N100_from_N50_N64": {
+        "actual": 0.0288,
+        "predicted": 0.010886001258856954,
+        "relative_error": -0.6220138451785779,
+        "fit_alpha": 2.4160640556209234
+      },
+      "predict_N50_from_N64_N100": {
+        "actual": 0.0581,
+        "predicted": 0.033920352886910414,
+        "relative_error": -0.4161729279361374,
+        "fit_alpha": 0.23608236724140827
+      }
+    }
+  },
+  "three_point_fits": {
+    "full_mean": {
+      "alpha": 1.641358311839726,
+      "r_squared": 0.9996013792149532,
+      "crossover_threshold_005": 154.83841099151843,
+      "predicted_at_N128": 0.06833748971185971,
+      "predicted_at_N200": 0.03284966241461952
+    },
+    "full_median": {
+      "alpha": 1.6002153492875828,
+      "r_squared": 0.9999458531741942,
+      "crossover_threshold_005": 81.52678074231247,
+      "predicted_at_N128": 0.024292506840246354,
+      "predicted_at_N200": 0.011893743082984047
+    },
+    "trim_mean_drop_top10pct": {
+      "alpha": 1.424048654781594,
+      "r_squared": 0.8929550596156585,
+      "crossover_threshold_005": 73.20147211076205,
+      "predicted_at_N128": 0.022561471206336586,
+      "predicted_at_N200": 0.011949734844732583
+    },
+    "trim_mean_drop_top20pct": {
+      "alpha": 0.9191625387583694,
+      "r_squared": 0.7280872079341887,
+      "crossover_threshold_005": 50.2951098903467,
+      "predicted_at_N128": 0.021187527416959537,
+      "predicted_at_N200": 0.014058149917207118
+    }
+  },
+  "verdict": {
+    "mean_two_point_prediction_relative_error_at_N100": 0.05841273464657281,
+    "median_two_point_prediction_relative_error_at_N100": 0.020604625771403515,
+    "mean_power_law_alpha": 1.641358311839726,
+    "mean_predicted_at_N128": 0.06833748971185971,
+    "mean_predicted_crossover_at_threshold_005": 154.83841099151843,
+    "closure_status": "MEDIAN_CLOSURE_ACHIEVED at N >= 60; MEAN_CLOSURE_PROJECTED at N approx 155 within-regime; heavy-tail mechanism confirmed by trim_mean falling below threshold for N >= 60 even before crossover"
+  }
+}

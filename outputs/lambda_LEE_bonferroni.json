@@ -1,0 +1,75 @@
+{
+  "method": "Bonferroni_LEE_test_against_System_R_rational_search_space",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "search_space_size": 3359,
+  "search_range": [
+    -0.5,
+    3.0
+  ],
+  "per_lambda_results": {
+    "proxy": {
+      "target": 0.2513,
+      "rational_match": "1/4",
+      "hits_at_0.1pct": 0,
+      "expected_random_at_0.1pct": 0.48235240000000007,
+      "poisson_p_at_0.1pct": 1.0,
+      "hits_at_0.5pct": 2,
+      "expected_random_at_0.5pct": 2.4117620000000004,
+      "poisson_p_at_0.5pct": 0.9103428206363823,
+      "hits_at_1.0pct": 5,
+      "expected_random_at_1.0pct": 4.823524000000001,
+      "poisson_p_at_1.0pct": 0.9919615901885601,
+      "hits_at_2.0pct": 10,
+      "expected_random_at_2.0pct": 9.647048000000002,
+      "poisson_p_at_2.0pct": 0.9999353839677033,
+      "hits_at_5.0pct": 24,
+      "expected_random_at_5.0pct": 24.117620000000006,
+      "poisson_p_at_5.0pct": 0.9999999999664377
+    },
+    "row_mean": {
+      "target": 0.851,
+      "rational_match": "17/20",
+      "hits_at_0.1pct": 1,
+      "expected_random_at_0.1pct": 1.633433714285714,
+      "poisson_p_at_0.1pct": 0.8047420383282421,
+      "hits_at_0.5pct": 9,
+      "expected_random_at_0.5pct": 8.167168571428572,
+      "poisson_p_at_0.5pct": 0.9997161795027102,
+      "hits_at_1.0pct": 17,
+      "expected_random_at_1.0pct": 16.334337142857144,
+      "poisson_p_at_1.0pct": 0.9999999194459254,
+      "hits_at_2.0pct": 33,
+      "expected_random_at_2.0pct": 32.66867428571429,
+      "poisson_p_at_2.0pct": 0.9999999999999936,
+      "hits_at_5.0pct": 81,
+      "expected_random_at_5.0pct": 81.67168571428572,
+      "poisson_p_at_5.0pct": 1.0
+    },
+    "section_14_1": {
+      "target": 1.22,
+      "rational_match": "6/5",
+      "hits_at_0.1pct": 2,
+      "expected_random_at_0.1pct": 2.341702857142857,
+      "poisson_p_at_0.1pct": 0.9038362543938557,
+      "hits_at_0.5pct": 12,
+      "expected_random_at_0.5pct": 11.708514285714287,
+      "poisson_p_at_0.5pct": 0.9999917764970144,
+      "hits_at_1.0pct": 23,
+      "expected_random_at_1.0pct": 23.417028571428574,
+      "poisson_p_at_1.0pct": 0.999999999932374,
+      "hits_at_2.0pct": 47,
+      "expected_random_at_2.0pct": 46.83405714285715,
+      "poisson_p_at_2.0pct": 1.0,
+      "hits_at_5.0pct": 117,
+      "expected_random_at_5.0pct": 117.08514285714286,
+      "poisson_p_at_5.0pct": 1.0
+    }
+  },
+  "joint_p_2pct_independent": 0.9999353839676969,
+  "bonferroni_p_2pct_3trials": 1.0,
+  "verdict": "Path-5 System-R rational identifications carry nontrivial LEE risk at 1-5% tolerance under the search-space scope; the joint Bonferroni-corrected test does NOT formally exclude LEE. The structural identifications (Lemma 1 spinor-trace 1/d_spacetime for 1/4; non-scalar Clifford-channel rate for 17/20) provide identification weight beyond pure numerical match. The 6/5 identification for Section-14.1 sits at the look-elsewhere boundary and is reported without structural promotion."
+}

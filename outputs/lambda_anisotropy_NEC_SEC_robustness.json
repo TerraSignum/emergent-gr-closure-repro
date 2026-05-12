@@ -1,0 +1,99 @@
+{
+  "method": "per_seed_robustness_NEC_SEC_margins",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "labels",
+      "N_values",
+      "NEC_margin_mean",
+      "NEC_margin_std",
+      "SEC_margin_mean",
+      "SEC_margin_std"
+    ],
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "per_regime": {
+    "labels": [
+      "P0",
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P7",
+      "P8"
+    ],
+    "N_values": [
+      18,
+      28,
+      30,
+      36,
+      42,
+      50,
+      60,
+      72,
+      84
+    ],
+    "NEC_margin_mean": [
+      0.9976,
+      0.9562999999999999,
+      0.9553250000000001,
+      0.9468,
+      0.949975,
+      0.948925,
+      0.943225,
+      0.9376749999999999,
+      0.94235
+    ],
+    "NEC_margin_std": [
+      0.018001296249622403,
+      0.015368148880070103,
+      0.011855343380377812,
+      0.004138437708443371,
+      0.001798842220244269,
+      0.0030500000000000687,
+      0.002740285873164921,
+      0.005291108894488337,
+      0.0029456182146820374
+    ],
+    "SEC_margin_mean": [
+      0.0666000000000001,
+      0.06019999999999989,
+      0.048125000000000084,
+      0.0887,
+      0.05197499999999999,
+      0.089175,
+      0.11927500000000002,
+      0.17642499999999994,
+      0.12845000000000006
+    ],
+    "SEC_margin_std": [
+      0.19841869871561998,
+      0.21398478139032856,
+      0.1270446739012173,
+      0.03353137833930095,
+      0.08889197095351194,
+      0.14562317523892507,
+      0.07532026619708661,
+      0.11248017232680015,
+      0.08534547439671304
+    ]
+  },
+  "pooled": {
+    "NEC_margin": {
+      "value": 0.9469970044209503,
+      "sem": 0.0005685113000080375,
+      "chi2_per_dof": 9.696098746205449,
+      "z_score": 1665.7487800287556
+    },
+    "SEC_margin": {
+      "value": 0.09474355005063316,
+      "sem": 0.012639386595922876,
+      "chi2_per_dof": 0.6178306416390374,
+      "z_score": 7.495897789944558
+    }
+  },
+  "verdict": "NEC margin pooled = +0.947 +/- 0.0006 (1666-sigma above zero) -> non-phantom + anisotropy claim solid; SEC margin pooled = +0.095 +/- 0.0126 (7.5-sigma above zero) -> source sits inside SEC-positive region with margin ~ 7% of T_00."
+}

@@ -1,0 +1,173 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5",
+      "P5N64",
+      "P5N72",
+      "P5N84",
+      "P5N100",
+      "P5N128",
+      "P5N200",
+      "P5N300"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "ladder": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "kind": "d1",
+      "kq_default": false,
+      "n_seeds": 28,
+      "G_00_med": 0.023806761846110806,
+      "T_00_med": 0.8488968013834118,
+      "Lambda_t_per_regime": 0.8250929918599933,
+      "Lambda_t_std": 0.008608372208050588,
+      "G_over_T_ratio": 0.028044353338726114,
+      "residual_med": 0.015071062148019608
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "kind": "snap",
+      "kq_default": false,
+      "n_seeds": 24,
+      "G_00_med": 0.015713235453152858,
+      "T_00_med": 0.8411979090676449,
+      "Lambda_t_per_regime": 0.822088269543546,
+      "Lambda_t_std": 0.0128410239968019,
+      "G_over_T_ratio": 0.018679594045316723,
+      "residual_med": 0.014858339018962455
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "kind": "snap",
+      "kq_default": false,
+      "n_seeds": 24,
+      "G_00_med": 0.014021582045730174,
+      "T_00_med": 0.841492652999868,
+      "Lambda_t_per_regime": 0.8251977294300196,
+      "Lambda_t_std": 0.01051376318872555,
+      "G_over_T_ratio": 0.016662750406369116,
+      "residual_med": 0.013275316645486472
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "kind": "snap",
+      "kq_default": false,
+      "n_seeds": 24,
+      "G_00_med": 0.01151851277287374,
+      "T_00_med": 0.8392009091981951,
+      "Lambda_t_per_regime": 0.8255072193048019,
+      "Lambda_t_std": 0.012190422126304164,
+      "G_over_T_ratio": 0.01372557232317464,
+      "residual_med": 0.013153107964282937
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "kind": "snap",
+      "kq_default": false,
+      "n_seeds": 24,
+      "G_00_med": 0.008515007028232987,
+      "T_00_med": 0.8341355288018872,
+      "Lambda_t_per_regime": 0.8234089596663944,
+      "Lambda_t_std": 0.011664346833457491,
+      "G_over_T_ratio": 0.01020818168537137,
+      "residual_med": 0.013431314870923264
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "kind": "snap",
+      "kq_default": false,
+      "n_seeds": 12,
+      "G_00_med": 0.0048781233430370205,
+      "T_00_med": 0.7990239314626303,
+      "Lambda_t_per_regime": 0.7915379188122406,
+      "Lambda_t_std": 0.01175795472232292,
+      "G_over_T_ratio": 0.006105102927402327,
+      "residual_med": 0.01609396728390503
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "kind": "snap",
+      "kq_default": false,
+      "n_seeds": 8,
+      "G_00_med": 0.0036233916486275468,
+      "T_00_med": 0.8233458514384056,
+      "Lambda_t_per_regime": 0.8187204850032062,
+      "Lambda_t_std": 0.007496908970292724,
+      "G_over_T_ratio": 0.004400813634145836,
+      "residual_med": 0.0122943551523788
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "kind": "snap",
+      "kq_default": false,
+      "n_seeds": 12,
+      "G_00_med": 0.0022613070206049827,
+      "T_00_med": 0.8196713618630731,
+      "Lambda_t_per_regime": 0.8159449958554671,
+      "Lambda_t_std": 0.009338490488572052,
+      "G_over_T_ratio": 0.002758797154343836,
+      "residual_med": 0.012536883220731043
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "kind": "snap",
+      "kq_default": false,
+      "n_seeds": 12,
+      "G_00_med": 0.002493352658435863,
+      "T_00_med": 0.8146221504988338,
+      "Lambda_t_per_regime": 0.8090375636900484,
+      "Lambda_t_std": 0.015221348929326911,
+      "G_over_T_ratio": 0.0030607474359849642,
+      "residual_med": 0.0133867662152112
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "kind": "snap",
+      "kq_default": false,
+      "n_seeds": 12,
+      "G_00_med": 0.0011346291960933103,
+      "T_00_med": 0.8077922373924464,
+      "Lambda_t_per_regime": 0.8043887402920177,
+      "Lambda_t_std": 0.015813903171412864,
+      "G_over_T_ratio": 0.0014046052234370234,
+      "residual_med": 0.014306882089847163
+    }
+  ],
+  "symanzik2_fits": {
+    "T_00": {
+      "y_inf": 0.8145763624327527,
+      "c2": 103.44540973998633,
+      "r2": 0.646668996352076
+    },
+    "G_00": {
+      "y_inf": 0.0019781345121821638,
+      "c2": 57.05892512852866,
+      "r2": 0.9864216190124544
+    },
+    "Lambda_t": {
+      "y_inf": 0.8102313628979227,
+      "c2": 49.04768343194775,
+      "r2": 0.31442909973197264
+    }
+  },
+  "asymptotes": {
+    "T_00_inf": 0.8145763624327527,
+    "G_00_inf": 0.0019781345121821638,
+    "Lambda_t_inf": 0.8102313628979227,
+    "T_minus_G_inf": 0.8125982279205705
+  },
+  "framework_target": 0.81
+}

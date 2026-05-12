@@ -1,0 +1,43 @@
+{
+  "method": "DM_plus_DE_mixture_decomposition",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "branch_rationale": "Cosmological-constant / Einstein-source Lambda diagnostic; matter-projection-side observable",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "framework_inputs": {
+    "w_DE_causal_wave": -0.975,
+    "w_DE_formula": "w_DE = -1 + eps_sync^4/gamma = -1 + (0.05)^2/0.1 = -0.975 (causal-wave row 3 of an eight-observable parameter-free closure; closes at 0.05% in the companion loop-class library)",
+    "w_DM_pressureless": 0.0,
+    "w_DM_source": "vortex-topology candidate carrier of pressureless dark matter (cold DM ontology); see Phase Q for the integer-quantized triangle-winding evidence"
+  },
+  "lattice_pooled": {
+    "T_00": 1.3732,
+    "T_ii": -0.4264,
+    "w_eff": -0.3105155840372852
+  },
+  "DM_DE_mixture": {
+    "rho_DM": 0.9358666666666666,
+    "rho_DE": 0.43733333333333335,
+    "f_DM": 0.6815224779104767,
+    "f_DE": 0.3184775220895233,
+    "ratio_DM_DE": 2.1399390243902436,
+    "w_eff_predicted": -0.3105155840372852,
+    "w_eff_residual": 0.0
+  },
+  "cosmological_epoch_comparison": {
+    "ratio_DM_DE_observed_Planck": 0.3868613138686131,
+    "ratio_DM_DE_lattice": 2.1399390243902436,
+    "lattice_DM_dominated": true,
+    "factor_more_DM_lattice_over_observed": 5.531540497008743
+  },
+  "cosmic_string_reading_replaced": {
+    "previous_reading": "Vilenkin-Shellard isotropized cosmic-string-network EOS w_string = -1/3 (Phase P)",
+    "issue": "Inconsistent with the framework's own dark-energy prediction: the framework predicts w_DE = -0.975 (causal-wave row 3), NOT w = -1/3. The cosmic-string-network EOS is not a framework prediction.",
+    "replacement_reading": "Lattice diagonal-block T_munu^Xi as DM + DE mixture with pressureless vortex DM and causal-wave DE; the closeness of w_eff to -1/3 is the arithmetic coincidence of f_DE * w_DE, NOT a Vilenkin-Shellard cosmic-string EOS."
+  },
+  "headline": "Lattice T_munu^Xi reconciled with framework: f_DM = 0.682 (vortex DM, w=0) + f_DE = 0.318 (causal-wave DE, w=-0.975); mixture w_eff = -0.3105 matches lattice -0.3105 exactly. The 'cosmic-string-network EOS' Phase P reading is replaced by this DM+DE mixture.",
+  "references": {
+    "companion_landing_protocol_paper": "loop-class-closure-repro/paper/manuscript.tex; causal-wave row 3 derives w_DE = -0.975 and closes at 0.05% in the loop-class library"
+  }
+}

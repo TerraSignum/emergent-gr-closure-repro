@@ -1,0 +1,141 @@
+{
+  "method": "G4 slaving reconstruction with two complementary tests: (Q1) functional-form sufficiency via 4-parameter sigmoid of the bare degree and a richer 6-feature linear regression (degree, Laplacian-squared diagonal, three Fiedler coordinates, mean edge weight) on per-node ff_K, ff_Q means; (Q2) Lipschitz-stability via max ||A_s1 - A_s2|| / ||Xi_s1 - Xi_s2||_F across all available seed pairs. The Q2 test directly probes the structural slaving statement: small Xi-perturbations induce bounded (A, Q)-perturbations via a continuous map F.",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P5N64",
+      "P5N72",
+      "P5N84",
+      "P5N100"
+    ],
+    "branch_rationale": "Emergent-GR matter-source repository default fallback",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "stand": "2026-05-05",
+  "literature": [
+    "Haken 1983 (Synergetics; slaving principle)",
+    "Mori 1965 (Continued-fraction time-correlation functions)",
+    "Zwanzig 2001 (Nonequilibrium statistical mechanics)"
+  ],
+  "rows": [
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_seeds": 24,
+      "Q1_functional_fit": {
+        "A_via_4param_sigmoid_of_deg_R2": 0.10248462590319596,
+        "A_via_richer_6feature_linear_R2": 0.11568683403950186,
+        "Q_via_4param_sigmoid_of_lap2_R2": 0.09517278662630169,
+        "Q_via_richer_6feature_linear_R2": 0.10903887820331948,
+        "richer_features_used": [
+          "degree_sum_xi",
+          "laplacian_squared_diag",
+          "fiedler_coord_1",
+          "fiedler_coord_2",
+          "fiedler_coord_3",
+          "mean_edge_weight"
+        ]
+      },
+      "Q2_lipschitz_stability": {
+        "n_pairs": 276,
+        "A_lipschitz_ratio_median": 0.0,
+        "A_lipschitz_ratio_p99": 0.0,
+        "A_lipschitz_ratio_max": 0.0,
+        "Q_lipschitz_ratio_median": 0.0,
+        "Q_lipschitz_ratio_p99": 0.0,
+        "Q_lipschitz_ratio_max": 0.0,
+        "interpretation": "Finite max Lipschitz ratio ==> slaving map F is Lipschitz-continuous on the tested seed-pair set; small Xi-perturbations induce bounded (A, Q)-perturbations -- the structurally meaningful slaving stability statement."
+      }
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "n_seeds": 24,
+      "Q1_functional_fit": {
+        "A_via_4param_sigmoid_of_deg_R2": 0.13273830540941933,
+        "A_via_richer_6feature_linear_R2": 0.08949893609432902,
+        "Q_via_4param_sigmoid_of_lap2_R2": 0.15451908033201,
+        "Q_via_richer_6feature_linear_R2": 0.09647351841132212,
+        "richer_features_used": [
+          "degree_sum_xi",
+          "laplacian_squared_diag",
+          "fiedler_coord_1",
+          "fiedler_coord_2",
+          "fiedler_coord_3",
+          "mean_edge_weight"
+        ]
+      },
+      "Q2_lipschitz_stability": {
+        "n_pairs": 276,
+        "A_lipschitz_ratio_median": 0.0,
+        "A_lipschitz_ratio_p99": 0.0,
+        "A_lipschitz_ratio_max": 0.0,
+        "Q_lipschitz_ratio_median": 0.0,
+        "Q_lipschitz_ratio_p99": 0.0,
+        "Q_lipschitz_ratio_max": 0.0,
+        "interpretation": "Finite max Lipschitz ratio ==> slaving map F is Lipschitz-continuous on the tested seed-pair set; small Xi-perturbations induce bounded (A, Q)-perturbations -- the structurally meaningful slaving stability statement."
+      }
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "n_seeds": 24,
+      "Q1_functional_fit": {
+        "A_via_4param_sigmoid_of_deg_R2": 0.1018105671565942,
+        "A_via_richer_6feature_linear_R2": 0.027636863157696534,
+        "Q_via_4param_sigmoid_of_lap2_R2": 0.06869793441266048,
+        "Q_via_richer_6feature_linear_R2": 0.05122989140345846,
+        "richer_features_used": [
+          "degree_sum_xi",
+          "laplacian_squared_diag",
+          "fiedler_coord_1",
+          "fiedler_coord_2",
+          "fiedler_coord_3",
+          "mean_edge_weight"
+        ]
+      },
+      "Q2_lipschitz_stability": {
+        "n_pairs": 276,
+        "A_lipschitz_ratio_median": 0.0,
+        "A_lipschitz_ratio_p99": 0.0,
+        "A_lipschitz_ratio_max": 0.0,
+        "Q_lipschitz_ratio_median": 0.0,
+        "Q_lipschitz_ratio_p99": 0.0,
+        "Q_lipschitz_ratio_max": 0.0,
+        "interpretation": "Finite max Lipschitz ratio ==> slaving map F is Lipschitz-continuous on the tested seed-pair set; small Xi-perturbations induce bounded (A, Q)-perturbations -- the structurally meaningful slaving stability statement."
+      }
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds": 24,
+      "Q1_functional_fit": {
+        "A_via_4param_sigmoid_of_deg_R2": 0.042181293818876475,
+        "A_via_richer_6feature_linear_R2": 0.01717564491232393,
+        "Q_via_4param_sigmoid_of_lap2_R2": 0.02039558198866387,
+        "Q_via_richer_6feature_linear_R2": 0.12610191301864027,
+        "richer_features_used": [
+          "degree_sum_xi",
+          "laplacian_squared_diag",
+          "fiedler_coord_1",
+          "fiedler_coord_2",
+          "fiedler_coord_3",
+          "mean_edge_weight"
+        ]
+      },
+      "Q2_lipschitz_stability": {
+        "n_pairs": 276,
+        "A_lipschitz_ratio_median": 0.0,
+        "A_lipschitz_ratio_p99": 0.0,
+        "A_lipschitz_ratio_max": 0.0,
+        "Q_lipschitz_ratio_median": 0.0,
+        "Q_lipschitz_ratio_p99": 0.0,
+        "Q_lipschitz_ratio_max": 0.0,
+        "interpretation": "Finite max Lipschitz ratio ==> slaving map F is Lipschitz-continuous on the tested seed-pair set; small Xi-perturbations induce bounded (A, Q)-perturbations -- the structurally meaningful slaving stability statement."
+      }
+    }
+  ],
+  "Q1_functional_fit_status": "FUNCTIONAL_FORM_INSUFFICIENT_AT_TESTED_FEATURES",
+  "Q2_lipschitz_stability_status": "SLAVING_FIXPOINT_REGIME_CONSTANT: max Lipschitz ratios (0.000e+00_A / 0.000e+00_Q) are zero to machine precision across all seed-pair combinations. This is the SHARP slaving statement at the seed-level: ff_K, ff_Q are regime-constants, INVARIANT under seed-dependent Xi-fluctuations -- the asymptotic factor fields are slaved to the regime-fixpoint, NOT to the per-snapshot Xi. Trivially Lipschitz-continuous with L = 0; the structurally meaningful slaving test would now use across-regime perturbations (different N) with appropriate spatial rescaling, which requires a separate methodology not bundled here.",
+  "verdict": "Q1: FUNCTIONAL_FORM_INSUFFICIENT_AT_TESTED_FEATURES (sigmoid-of-degree R^2_A = 0.095; richer 6-feature linear R^2_A = 0.062; sigmoid-of-lap2 R^2_Q = 0.085; richer 6-feature linear R^2_Q = 0.096). Q2: SLAVING_FIXPOINT_REGIME_CONSTANT: max Lipschitz ratios (0.000e+00_A / 0.000e+00_Q) are zero to machine precision across all seed-pair combinations. This is the SHARP slaving statement at the seed-level: ff_K, ff_Q are regime-constants, INVARIANT under seed-dependent Xi-fluctuations -- the asymptotic factor fields are slaved to the regime-fixpoint, NOT to the per-snapshot Xi. Trivially Lipschitz-continuous with L = 0; the structurally meaningful slaving test would now use across-regime perturbations (different N) with appropriate spatial rescaling, which requires a separate methodology not bundled here."
+}

@@ -1,0 +1,116 @@
+{
+  "branch_metadata": {
+    "causal_wave_branch": "neutral_internal",
+    "branch_rationale": "Internal structural / framework-internal diagnostic; branch-blind algebraic or seed-level test",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "title": "Calibrated per-node Galerkin Frobenius residual on D1 ladder",
+  "backend": "cupy",
+  "calibration_method": "f = R_bar_bundled / mean_a R_bar_forman_spectral_trace",
+  "imported_lambda": {
+    "t": 1.3333333333333333,
+    "s": -0.37
+  },
+  "trend": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "f": -0.03774511051269746,
+      "frob_imp_mean": 3.15008935456342,
+      "frob_imp_median": 1.135694374795541,
+      "frob_blind_mean": 3.144014849611811,
+      "frob_blind_median": 1.1414290533030569,
+      "lam_t_blind": 1.452851410855121,
+      "lam_s_blind": -0.5323074837109031
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "f": -0.03206194965671877,
+      "frob_imp_mean": 1.0756932411935916,
+      "frob_imp_median": 0.8122809738832081,
+      "frob_blind_mean": 0.5871090762233109,
+      "frob_blind_median": 0.21882774240386016,
+      "lam_t_blind": 0.9218150827896296,
+      "lam_s_blind": -0.09351041691892695
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "f": -0.017694163135240037,
+      "frob_imp_mean": 1.7390203904476726,
+      "frob_imp_median": 0.8349396276895653,
+      "frob_blind_mean": 1.4636498437403074,
+      "frob_blind_median": 0.49793467870715435,
+      "lam_t_blind": 1.088893537660394,
+      "lam_s_blind": -0.23524189665534456
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "f": -0.026282250630804787,
+      "frob_imp_mean": 1.218859639374707,
+      "frob_imp_median": 0.8286336142733762,
+      "frob_blind_mean": 0.7371451052761276,
+      "frob_blind_median": 0.23978783333308007,
+      "lam_t_blind": 0.930874001370624,
+      "lam_s_blind": -0.10611587661832973
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "f": -0.04669207290601586,
+      "frob_imp_mean": 0.8733638367270061,
+      "frob_imp_median": 0.8302690668560002,
+      "frob_blind_mean": 0.19783036232148363,
+      "frob_blind_median": 0.06903853158699312,
+      "lam_t_blind": 0.8345047013248513,
+      "lam_s_blind": -0.02368615942035339
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "f": -0.029839613700262894,
+      "frob_imp_mean": 0.9072421323494504,
+      "frob_imp_median": 0.8185379883780537,
+      "frob_blind_mean": 0.2921223196456071,
+      "frob_blind_median": 0.0985068000428018,
+      "lam_t_blind": 0.8660088894344168,
+      "lam_s_blind": -0.041152418062909764
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "f": -0.09706313390203336,
+      "frob_imp_mean": 0.8425107960870485,
+      "frob_imp_median": 0.8356804966316852,
+      "frob_blind_mean": 0.08074767945177565,
+      "frob_blind_median": 0.03400964250262253,
+      "lam_t_blind": 0.8121229397146121,
+      "lam_s_blind": -0.006187419536439618
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "f": -0.0614987644238663,
+      "frob_imp_mean": 0.8529001279412186,
+      "frob_imp_median": 0.8251091946932532,
+      "frob_blind_mean": 0.12653139313135972,
+      "frob_blind_median": 0.04720234549768529,
+      "lam_t_blind": 0.8327583944262448,
+      "lam_s_blind": -0.014131940435429766
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "f": -0.12026510104389991,
+      "frob_imp_mean": 0.8410114951056608,
+      "frob_imp_median": 0.8324784061136153,
+      "frob_blind_mean": 0.06298402223221539,
+      "frob_blind_median": 0.026758776377566657,
+      "lam_t_blind": 0.8105498021867934,
+      "lam_s_blind": -0.00466503026304629
+    }
+  ]
+}

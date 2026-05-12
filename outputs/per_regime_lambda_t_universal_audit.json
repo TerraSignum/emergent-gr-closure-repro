@@ -1,0 +1,224 @@
+{
+  "method": "per_regime_optimal_lambda_t_test",
+  "branch_metadata": {
+    "causal_wave_branch": "matter",
+    "regimes_used": [
+      "P0",
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6",
+      "P5N64",
+      "P7",
+      "P5N72",
+      "P8",
+      "P5N84",
+      "P5N100",
+      "P5N128",
+      "P6N128",
+      "P8N128",
+      "P5N200",
+      "P5N300",
+      "P5N512"
+    ],
+    "branch_rationale": "Einstein-equation source residual / GR emergence diagnostic; T_00, G_00, Lambda_t are matter-side / source-side per P4 manuscript",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "schema_version": "1.0.0",
+  "alpha_xi_squared_System_R": 0.81,
+  "per_regime": [
+    {
+      "regime": "P0",
+      "N": 18,
+      "T_00_med": 0.918335311214344,
+      "G_00_med": 0.06454700220709689,
+      "Lambda_t_optimal": 0.8502814497797986,
+      "Lambda_t_over_T_00_ratio": 0.9258943213840317,
+      "R_time_med_at_System_R_0p81": 0.05766792556731609,
+      "R_time_med_at_optimal": 0.08019679946742603
+    },
+    {
+      "regime": "P1",
+      "N": 28,
+      "T_00_med": 0.8809398295661578,
+      "G_00_med": 0.048765387378620094,
+      "Lambda_t_optimal": 0.8309578888450257,
+      "Lambda_t_over_T_00_ratio": 0.943262934602756,
+      "R_time_med_at_System_R_0p81": 0.028775102256753837,
+      "R_time_med_at_optimal": 0.03775246148741612
+    },
+    {
+      "regime": "P2prime",
+      "N": 30,
+      "T_00_med": 0.8700652465712815,
+      "G_00_med": 0.042397611756076536,
+      "Lambda_t_optimal": 0.8249089235252515,
+      "Lambda_t_over_T_00_ratio": 0.9481000726968692,
+      "R_time_med_at_System_R_0p81": 0.026063168620470478,
+      "R_time_med_at_optimal": 0.032263911044593085
+    },
+    {
+      "regime": "P3",
+      "N": 36,
+      "T_00_med": 0.8571828995348114,
+      "G_00_med": 0.036619792824704275,
+      "Lambda_t_optimal": 0.8212268295109688,
+      "Lambda_t_over_T_00_ratio": 0.9580532112302337,
+      "R_time_med_at_System_R_0p81": 0.018053667718404887,
+      "R_time_med_at_optimal": 0.020682222426437025
+    },
+    {
+      "regime": "P4",
+      "N": 42,
+      "T_00_med": 0.8568111732177045,
+      "G_00_med": 0.030671345124348458,
+      "Lambda_t_optimal": 0.8252668479396652,
+      "Lambda_t_over_T_00_ratio": 0.9631840407034185,
+      "R_time_med_at_System_R_0p81": 0.019837901896572308,
+      "R_time_med_at_optimal": 0.018565056580386263
+    },
+    {
+      "regime": "P5",
+      "N": 50,
+      "T_00_med": 0.8488968013834118,
+      "G_00_med": 0.023806761846110806,
+      "Lambda_t_optimal": 0.8249196652941342,
+      "Lambda_t_over_T_00_ratio": 0.971754945889532,
+      "R_time_med_at_System_R_0p81": 0.017785252454470324,
+      "R_time_med_at_optimal": 0.016005355406748856
+    },
+    {
+      "regime": "P6",
+      "N": 60,
+      "T_00_med": 0.8381301941515,
+      "G_00_med": 0.016329262872557853,
+      "Lambda_t_optimal": 0.8211793857195977,
+      "Lambda_t_over_T_00_ratio": 0.9797754471200469,
+      "R_time_med_at_System_R_0p81": 0.017349288981845346,
+      "R_time_med_at_optimal": 0.015536734780536077
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "T_00_med": 0.8411979090676449,
+      "G_00_med": 0.015713235453152858,
+      "Lambda_t_optimal": 0.8236767766122,
+      "Lambda_t_over_T_00_ratio": 0.9791712125451373,
+      "R_time_med_at_System_R_0p81": 0.019355526532131684,
+      "R_time_med_at_optimal": 0.01634559777730893
+    },
+    {
+      "regime": "P7",
+      "N": 72,
+      "T_00_med": 0.836422527386325,
+      "G_00_med": 0.012451448611328566,
+      "Lambda_t_optimal": 0.8221364536615227,
+      "Lambda_t_over_T_00_ratio": 0.9829200275494206,
+      "R_time_med_at_System_R_0p81": 0.0193164388452578,
+      "R_time_med_at_optimal": 0.016749551886837577
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "T_00_med": 0.841492652999868,
+      "G_00_med": 0.014021582045730174,
+      "Lambda_t_optimal": 0.8264207382134734,
+      "Lambda_t_over_T_00_ratio": 0.98208907144624,
+      "R_time_med_at_System_R_0p81": 0.019530928061796238,
+      "R_time_med_at_optimal": 0.013953065720360758
+    },
+    {
+      "regime": "P8",
+      "N": 84,
+      "T_00_med": 0.831362670573113,
+      "G_00_med": 0.009925938116017784,
+      "Lambda_t_optimal": 0.8210627153914234,
+      "Lambda_t_over_T_00_ratio": 0.98761075575526,
+      "R_time_med_at_System_R_0p81": 0.019335568533904224,
+      "R_time_med_at_optimal": 0.017042301999319276
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "T_00_med": 0.8392009091981951,
+      "G_00_med": 0.01151851277287374,
+      "Lambda_t_optimal": 0.8269634717297273,
+      "Lambda_t_over_T_00_ratio": 0.9854177499877116,
+      "R_time_med_at_System_R_0p81": 0.01977464055852085,
+      "R_time_med_at_optimal": 0.014131875933135973
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "T_00_med": 0.8341355288018872,
+      "G_00_med": 0.008515007028232987,
+      "Lambda_t_optimal": 0.824539491067358,
+      "Lambda_t_over_T_00_ratio": 0.9884958290311497,
+      "R_time_med_at_System_R_0p81": 0.019101002351142315,
+      "R_time_med_at_optimal": 0.014819438603680457
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "T_00_med": 0.7990239314626303,
+      "G_00_med": 0.0048781233430370205,
+      "Lambda_t_optimal": 0.7936401983558738,
+      "Lambda_t_over_T_00_ratio": 0.9932621128169448,
+      "R_time_med_at_System_R_0p81": 0.02076014637619933,
+      "R_time_med_at_optimal": 0.017610492923751775
+    },
+    {
+      "regime": "P6N128",
+      "N": 128,
+      "T_00_med": 0.8208401620404873,
+      "G_00_med": 0.0059897143003607885,
+      "Lambda_t_optimal": 0.814335185302191,
+      "Lambda_t_over_T_00_ratio": 0.992075221170799,
+      "R_time_med_at_System_R_0p81": 0.014665545386705447,
+      "R_time_med_at_optimal": 0.013954801658261462
+    },
+    {
+      "regime": "P8N128",
+      "N": 128,
+      "T_00_med": 0.8194955642591759,
+      "G_00_med": 0.005418494421792474,
+      "Lambda_t_optimal": 0.8132815160371568,
+      "Lambda_t_over_T_00_ratio": 0.9924172277520055,
+      "R_time_med_at_System_R_0p81": 0.01668879320132055,
+      "R_time_med_at_optimal": 0.015482729159120134
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "T_00_med": 0.8233458514384056,
+      "G_00_med": 0.0036233916486275468,
+      "Lambda_t_optimal": 0.8192561819379154,
+      "Lambda_t_over_T_00_ratio": 0.9950328656015629,
+      "R_time_med_at_System_R_0p81": 0.01595373032720382,
+      "R_time_med_at_optimal": 0.01380440507456765
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "T_00_med": 0.8196713618630731,
+      "G_00_med": 0.0022613070206049827,
+      "Lambda_t_optimal": 0.8171334160853541,
+      "Lambda_t_over_T_00_ratio": 0.9969037032452245,
+      "R_time_med_at_System_R_0p81": 0.015479575004838986,
+      "R_time_med_at_optimal": 0.013280581102117217
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "T_00_med": 0.8077922373924464,
+      "G_00_med": 0.0011346291960933103,
+      "Lambda_t_optimal": 0.8065102705329255,
+      "Lambda_t_over_T_00_ratio": 0.9984129992835049,
+      "R_time_med_at_System_R_0p81": 0.017923109752374933,
+      "R_time_med_at_optimal": 0.01839490643217845
+    }
+  ],
+  "verdict": "PER_REGIME_LAMBDA_T_DOES_NOT_CLOSE"
+}

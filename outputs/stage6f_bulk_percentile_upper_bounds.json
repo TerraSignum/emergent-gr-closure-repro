@@ -1,0 +1,104 @@
+{
+  "method": "Bootstrap upper-bound on Stage 6f bulk-percentile asymptote",
+  "branch_metadata": {
+    "causal_wave_branch": "running",
+    "branch_rationale": "K/Q closure stage; chirality-running coefficient diagnostic",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "n_bootstrap": 2000,
+  "model_class_1": "Symanzik-2: y = y_inf + b/N (unconstrained)",
+  "model_class_2": "Power-law: y = c * N^(-alpha)",
+  "ladder_size": 11,
+  "per_percentile": {
+    "median": {
+      "symanzik2_unconstrained_y_inf": 0.020435277099154523,
+      "symanzik2_y_inf_95CI": [
+        0.01774902006488894,
+        0.02334792985889101
+      ],
+      "symanzik2_y_inf_upper95": 0.02334792985889101,
+      "powerlaw_alpha_central": 0.2460462341227503,
+      "powerlaw_alpha_95CI": [
+        0.17073015086916393,
+        0.4226441009403616
+      ],
+      "powerlaw_alpha_lower95": 0.17073015086916393,
+      "powerlaw_implies_y_inf_zero_if_alpha_strictly_positive": true
+    },
+    "mean": {
+      "symanzik2_unconstrained_y_inf": 0.008107439976004414,
+      "symanzik2_y_inf_95CI": [
+        -0.017108624752126562,
+        0.02057186622805557
+      ],
+      "symanzik2_y_inf_upper95": 0.02057186622805557,
+      "powerlaw_alpha_central": 0.6628771396746295,
+      "powerlaw_alpha_95CI": [
+        0.5094736446364602,
+        1.064353211028905
+      ],
+      "powerlaw_alpha_lower95": 0.5094736446364602,
+      "powerlaw_implies_y_inf_zero_if_alpha_strictly_positive": true
+    },
+    "p90": {
+      "symanzik2_unconstrained_y_inf": -0.064319149059436,
+      "symanzik2_y_inf_95CI": [
+        -0.2786633865868811,
+        0.012645792701881214
+      ],
+      "symanzik2_y_inf_upper95": 0.012645792701881214,
+      "powerlaw_alpha_central": 0.9217894955861388,
+      "powerlaw_alpha_95CI": [
+        0.6154830543754714,
+        2.2861032789414564
+      ],
+      "powerlaw_alpha_lower95": 0.6154830543754714,
+      "powerlaw_implies_y_inf_zero_if_alpha_strictly_positive": true
+    },
+    "p95": {
+      "symanzik2_unconstrained_y_inf": -0.07966691285767938,
+      "symanzik2_y_inf_95CI": [
+        -0.24352724568795364,
+        -0.00944662134305754
+      ],
+      "symanzik2_y_inf_upper95": -0.00944662134305754,
+      "powerlaw_alpha_central": 1.1048539213303237,
+      "powerlaw_alpha_95CI": [
+        0.8555352410746527,
+        1.644829208834366
+      ],
+      "powerlaw_alpha_lower95": 0.8555352410746527,
+      "powerlaw_implies_y_inf_zero_if_alpha_strictly_positive": true
+    },
+    "p99": {
+      "symanzik2_unconstrained_y_inf": 0.07996285372056512,
+      "symanzik2_y_inf_95CI": [
+        -0.016623359950010082,
+        0.4201481102763688
+      ],
+      "symanzik2_y_inf_upper95": 0.4201481102763688,
+      "powerlaw_alpha_central": 0.9821631688668832,
+      "powerlaw_alpha_95CI": [
+        0.5760196161859562,
+        1.1400928663341143
+      ],
+      "powerlaw_alpha_lower95": 0.5760196161859562,
+      "powerlaw_implies_y_inf_zero_if_alpha_strictly_positive": true
+    },
+    "sup": {
+      "symanzik2_unconstrained_y_inf": 0.4339314897541352,
+      "symanzik2_y_inf_95CI": [
+        0.3145309946849786,
+        0.6612956720928511
+      ],
+      "symanzik2_y_inf_upper95": 0.6612956720928511,
+      "powerlaw_alpha_central": 0.4059464654298695,
+      "powerlaw_alpha_95CI": [
+        0.2570640134936535,
+        0.5765085168696557
+      ],
+      "powerlaw_alpha_lower95": 0.2570640134936535,
+      "powerlaw_implies_y_inf_zero_if_alpha_strictly_positive": true
+    }
+  }
+}

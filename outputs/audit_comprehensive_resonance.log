@@ -1,0 +1,58 @@
+================================================================================
+Comprehensive resonance audit — full seeds, all tests
+================================================================================
+Backend: CuPy(GPU)
+
+--- P5N64 N=64 (n_seeds=24, 4.8s) ---
+  T (tail-spin):  asym_tail+ = +0.0226, asym_tail- = +0.0263, diff = -0.0037+-0.0118
+  E (spectral):   asym_3distinct=+0.0134+-0.0127  asym_1mode=+0.0244  n[3d,2d,1m]=[641,2245,522]
+  V (vortex):     density(p5)=0.062  density(p10)=0.109
+  W (wilson bins): asym=[+nan,+0.295,+0.001,+nan]
+--- P5N72 N=72 (n_seeds=24, 1.9s) ---
+  T (tail-spin):  asym_tail+ = +0.0065, asym_tail- = -0.0030, diff = +0.0095+-0.0139
+  E (spectral):   asym_3distinct=-0.0126+-0.0131  asym_1mode=-0.0042  n[3d,2d,1m]=[732,2584,589]
+  V (vortex):     density(p5)=0.056  density(p10)=0.111
+  W (wilson bins): asym=[+nan,+0.259,-0.021,+nan]
+--- P5N84 N=84 (n_seeds=24, 2.5s) ---
+  T (tail-spin):  asym_tail+ = +0.0168, asym_tail- = +0.0009, diff = +0.0159+-0.0114
+  E (spectral):   asym_3distinct=+0.0241+-0.0057  asym_1mode=-0.0063  n[3d,2d,1m]=[870,3150,781]
+  V (vortex):     density(p5)=0.060  density(p10)=0.107
+  W (wilson bins): asym=[+nan,+0.261,-0.017,+nan]
+--- P5N100 N=100 (n_seeds=24, 3.2s) ---
+  T (tail-spin):  asym_tail+ = +0.0020, asym_tail- = +0.0042, diff = -0.0022+-0.0088
+  E (spectral):   asym_3distinct=+0.0067+-0.0103  asym_1mode=-0.0008  n[3d,2d,1m]=[989,3964,1105]
+  V (vortex):     density(p5)=0.050  density(p10)=0.100
+  W (wilson bins): asym=[+nan,+0.220,-0.018,+nan]
+--- P5N128 N=128 (n_seeds=12, 2.8s) ---
+  T (tail-spin):  asym_tail+ = -0.0067, asym_tail- = +0.0042, diff = -0.0109+-0.0141
+  E (spectral):   asym_3distinct=-0.0239+-0.0120  asym_1mode=+0.0091  n[3d,2d,1m]=[1516,6360,1948]
+  V (vortex):     density(p5)=0.055  density(p10)=0.102
+  W (wilson bins): asym=[+nan,+0.251,-0.020,+nan]
+--- P5N200 N=200 (n_seeds=8, 3.1s) ---
+  T (tail-spin):  asym_tail+ = -0.0124, asym_tail- = -0.0028, diff = -0.0096+-0.0083
+  E (spectral):   asym_3distinct=-0.0088+-0.0097  asym_1mode=+0.0052  n[3d,2d,1m]=[2578,11594,4093]
+  V (vortex):     density(p5)=0.050  density(p10)=0.100
+  W (wilson bins): asym=[+nan,+0.234,-0.029,+nan]
+--- P5N256 N=256 (n_seeds=2, 1.2s) ---
+  T (tail-spin):  asym_tail+ = -0.0035, asym_tail- = -0.0082, diff = +0.0046+-0.0065
+  E (spectral):   asym_3distinct=+0.0120+-0.0115  asym_1mode=-0.0218  n[3d,2d,1m]=[3440,17310,7190]
+  V (vortex):     density(p5)=0.051  density(p10)=0.102
+  W (wilson bins): asym=[+nan,+0.241,-0.029,+nan]
+--- P5N300 N=300 (n_seeds=2, 1.5s) ---
+  T (tail-spin):  asym_tail+ = -0.0169, asym_tail- = -0.0027, diff = -0.0142+-0.0002
+  E (spectral):   asym_3distinct=-0.0166+-0.0108  asym_1mode=+0.0064  n[3d,2d,1m]=[5978,24677,7749]
+  V (vortex):     density(p5)=0.050  density(p10)=0.100
+  W (wilson bins): asym=[+nan,+0.267,-0.037,+nan]
+
+================================================================================
+Cross-regime synthesis
+================================================================================
+  T tail-spin asym_diff cross-regime: -0.00133 +/- 0.00349  (0.38σ)
+  E asym_3distinct cross-regime: -0.00071 +/- 0.00563
+  E asym_1mode cross-regime: +0.00150 +/- 0.00444
+  E diff (3distinct - 1mode): -0.00221 +/- 0.00717  (0.31σ)
+  V density(p5) cross-regime: 0.054 +/- 0.005  (binom expectation 0.05)
+  W bin1 asym cross-regime: +0.25359 +/- 0.00752
+  W bin2 asym cross-regime: -0.02108 +/- 0.00378
+
+Saved C:\Users\user\Desktop\Emergence\emergent-gr-closure-repro\outputs\audit_comprehensive_resonance.json

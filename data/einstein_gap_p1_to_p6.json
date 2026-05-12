@@ -1,0 +1,201 @@
+{
+  "audit": "EGE-P3-P6: Rigorous Einstein-identity gap on extension regimes",
+  "stand": "2026-04-28",
+  "method": "Apply the H100 einstein_closure_signal formulas to the bundled A2/C5/E1/D1 extension lattice runs for P3, P4, P5, P6 (and the original P1/P2' for cross-check). Delta_E = |macro_stress_tensor_closure - projector_closure_score| from src/worldformula/hypotheses/h87_h99_mechanisms_common.py.",
+  "branch_metadata": {
+    "causal_wave_branch": "vacuum",
+    "regimes_used": [
+      "P1",
+      "P2prime",
+      "P3",
+      "P4",
+      "P5",
+      "P6"
+    ],
+    "branch_rationale": "P1 release / HBR anchor is vacuum-projection-side",
+    "schema": "worldformula/branch_metadata/v1"
+  },
+  "regimes": [
+    {
+      "regime": "P1",
+      "N": 1539.0,
+      "projector_closure_score": 0.7768507382403437,
+      "macro_stress_tensor_closure": 0.8431839550285225,
+      "einstein_identity_gap": 0.06633321678817883,
+      "c5_source": "results_c5_fix4\\c5_p1.json",
+      "e1_source": "results_e1_real\\e1_p1.json",
+      "d1_inputs": {
+        "joint_closure": 0.6946295011825857,
+        "macro_closure_profile": 0.7114411603482309,
+        "reconstruction_consistency": 0.858842859005424,
+        "reconstruction_coherence": 0.8424894324251341
+      },
+      "c5_inputs": {
+        "far_field_exponent": -1.0000000000000002,
+        "poisson_residual": 0.7034583227233193,
+        "curvature_load_corr": 0.20853583203842074,
+        "newton_like_pass": 1.0
+      },
+      "e1_input": {
+        "e1_cycle_residual_to_geometry_score": 0.9193780978659325
+      }
+    },
+    {
+      "regime": "P2prime",
+      "N": 2254.0,
+      "projector_closure_score": 0.7688541205893173,
+      "macro_stress_tensor_closure": 0.8131296133723506,
+      "einstein_identity_gap": 0.04427549278303322,
+      "c5_source": "results_c5_fix4\\c5_p2prime.json",
+      "e1_source": "results_e1_real\\e1_p2prime.json",
+      "d1_inputs": {
+        "joint_closure": 0.6859261187584339,
+        "macro_closure_profile": 0.7078198604507114,
+        "reconstruction_consistency": 0.8472070890426335,
+        "reconstruction_coherence": 0.8344634141054909
+      },
+      "c5_inputs": {
+        "far_field_exponent": -1.0,
+        "poisson_residual": 0.725693208744587,
+        "curvature_load_corr": 0.18900066107754715,
+        "newton_like_pass": 0.9285714285714286
+      },
+      "e1_input": {
+        "e1_cycle_residual_to_geometry_score": 0.9177665416471759
+      }
+    },
+    {
+      "regime": "P3",
+      "N": 3917.5,
+      "projector_closure_score": 0.7528511313712238,
+      "macro_stress_tensor_closure": 0.3767710826405412,
+      "einstein_identity_gap": 0.3760800487306826,
+      "c5_source": "results_c5_p3_extension\\c5_p3.json",
+      "e1_source": "results_e1_p3_extension\\e1_p3.json",
+      "d1_inputs": {
+        "joint_closure": 0.6630118020624431,
+        "macro_closure_profile": 0.6752968873114753,
+        "reconstruction_consistency": 0.8431062859969531,
+        "reconstruction_coherence": 0.8299895501140241
+      },
+      "c5_inputs": {
+        "far_field_exponent": -0.019978266076323137,
+        "poisson_residual": 0.9987176605101638,
+        "curvature_load_corr": -0.4433376619941479,
+        "newton_like_pass": 0.0
+      },
+      "e1_input": {
+        "e1_cycle_residual_to_geometry_score": 0.8825730737128699
+      }
+    },
+    {
+      "regime": "P4",
+      "N": 6038.5,
+      "projector_closure_score": 0.7559274913764449,
+      "macro_stress_tensor_closure": 0.2178486939289408,
+      "einstein_identity_gap": 0.5380787974475041,
+      "c5_source": "results_c5_p4_extension\\c5_p4.json",
+      "e1_source": "results_e1_p4_extension\\e1_p4.json",
+      "d1_inputs": {
+        "joint_closure": 0.6615719890521113,
+        "macro_closure_profile": 0.6906093695087356,
+        "reconstruction_consistency": 0.8445211440607134,
+        "reconstruction_coherence": 0.8270074628842191
+      },
+      "c5_inputs": {
+        "far_field_exponent": -0.00294731761995672,
+        "poisson_residual": 0.969633356192807,
+        "curvature_load_corr": 0.03530964108185124,
+        "newton_like_pass": 0.0
+      },
+      "e1_input": {
+        "e1_cycle_residual_to_geometry_score": 0.8823286204282548
+      }
+    },
+    {
+      "regime": "P5",
+      "N": 9379.5,
+      "projector_closure_score": 0.7816988097978186,
+      "macro_stress_tensor_closure": 0.17859861952388698,
+      "einstein_identity_gap": 0.6031001902739316,
+      "c5_source": "results_c5_p5_extension\\c5_p5.json",
+      "e1_source": "results_e1_p5_extension\\e1_p5.json",
+      "d1_inputs": {
+        "joint_closure": 0.7037401563619463,
+        "macro_closure_profile": 0.7244003438633713,
+        "reconstruction_consistency": 0.8560764135923977,
+        "reconstruction_coherence": 0.8425783253735588
+      },
+      "c5_inputs": {
+        "far_field_exponent": -0.012530544201807724,
+        "poisson_residual": 0.9988130543874805,
+        "curvature_load_corr": 0.002870048913527684,
+        "newton_like_pass": 0.0
+      },
+      "e1_input": {
+        "e1_cycle_residual_to_geometry_score": 0.8774559074392769
+      }
+    },
+    {
+      "regime": "P6",
+      "N": 14181.0,
+      "projector_closure_score": 0.7538544478906536,
+      "macro_stress_tensor_closure": 0.37692079952896085,
+      "einstein_identity_gap": 0.37693364836169274,
+      "c5_source": "results_c5_p6_extension\\c5_p6.json",
+      "e1_source": "results_e1_p6_extension\\e1_p6.json",
+      "d1_inputs": {
+        "joint_closure": 0.6612935254471072,
+        "macro_closure_profile": 0.6736689780530364,
+        "reconstruction_consistency": 0.8484001517167639,
+        "reconstruction_coherence": 0.8320551363457073
+      },
+      "c5_inputs": {
+        "far_field_exponent": -0.02522355309731371,
+        "poisson_residual": 0.9960978536596847,
+        "curvature_load_corr": 0.2995376228264198,
+        "newton_like_pass": 0.0
+      },
+      "e1_input": {
+        "e1_cycle_residual_to_geometry_score": 0.880701851304489
+      }
+    }
+  ],
+  "richardson_endpoints": [
+    {
+      "alpha": 0.6666666666666666,
+      "gap_inf": 0.46841581801539295,
+      "c": -53.597067375975485,
+      "pair": {
+        "N1": 1539.0,
+        "g1": 0.06633321678817883,
+        "N2": 14181.0,
+        "g2": 0.37693364836169274
+      }
+    },
+    {
+      "alpha": 1.0,
+      "gap_inf": 0.41474523388547363,
+      "c": -536.2060943127367,
+      "pair": {
+        "N1": 1539.0,
+        "g1": 0.06633321678817883,
+        "N2": 14181.0,
+        "g2": 0.37693364836169274
+      }
+    },
+    {
+      "alpha": 0.848,
+      "gap_inf": 0.4326507687890355,
+      "c": -184.77196518596242,
+      "pair": {
+        "N1": 1539.0,
+        "g1": 0.06633321678817883,
+        "N2": 14181.0,
+        "g2": 0.37693364836169274
+      }
+    }
+  ],
+  "n_points": 6,
+  "n_extension_points": 4
+}

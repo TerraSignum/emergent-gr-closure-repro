@@ -1,0 +1,109 @@
+{
+  "bekenstein_hawking": {
+    "canonical": {
+      "S_over_A": 0.25000005,
+      "S_over_A_residual_vs_quarter": 5e-08,
+      "S_over_4piM2": 1.00001,
+      "area_law_satisfied": true
+    },
+    "extended": {
+      "S_over_A": 0.25000018,
+      "S_over_A_residual_vs_quarter": 1.8e-07,
+      "S_over_4piM2": 1.000266,
+      "area_law_satisfied": true
+    }
+  },
+  "horizon_threshold": {
+    "canonical": {
+      "compactness": 9.579836,
+      "is_black_hole": true,
+      "compactness_status": "BLACK_HOLE"
+    },
+    "extended": {
+      "compactness": 10.492609,
+      "is_black_hole": true,
+      "compactness_status": "BLACK_HOLE"
+    }
+  },
+  "kerr_geometry": {
+    "canonical": {
+      "chi_spin": 0.03381034,
+      "r_ISCO_lu": 17.427816,
+      "omega_lense_thirring_lu": 0.0183473943,
+      "r_ergo_equator_lu": 5.918645,
+      "chi_below_extremal": true
+    },
+    "extended": {
+      "chi_spin": 0.04002952,
+      "r_ISCO_lu": 19.327966,
+      "omega_lense_thirring_lu": 0.0207066753,
+      "r_ergo_equator_lu": 6.586877,
+      "chi_below_extremal": true
+    }
+  },
+  "penrose": {
+    "canonical": {
+      "a_star": 0.228373,
+      "penrose_efficiency": 0.006629,
+      "penrose_max_energy_extraction": 0.019616,
+      "extremal_limit": false
+    },
+    "extended": {
+      "a_star": 0.184387,
+      "penrose_efficiency": 0.004296,
+      "penrose_max_energy_extraction": 0.014148,
+      "extremal_limit": false
+    }
+  },
+  "binary_inspiral": {
+    "canonical": {
+      "M_chirp_lu": 2.576778,
+      "eta_symmetric": 0.25,
+      "f_ISCO_Hz": 2.008268446263112e+41,
+      "f_ringdown_Hz": 2.33016298099418e+41,
+      "ringdown_Q": 3.1,
+      "P_gw_lu": 10.338352729783
+    },
+    "extended": {
+      "M_chirp_lu": 2.867704,
+      "eta_symmetric": 0.25,
+      "f_ISCO_Hz": 2.0082682962006444e+41,
+      "f_ringdown_Hz": 2.3301628068790076e+41,
+      "ringdown_Q": 3.1,
+      "P_gw_lu": 16.29594713978
+    }
+  },
+  "information_paradox": {
+    "unitarity_status_label": "PRESERVED",
+    "unitarity_status_recomputed": "PRESERVED",
+    "page_curve_consistent_label": true,
+    "page_curve_consistent_recomputed": true,
+    "label_consistent_with_recomp": true,
+    "canonical": {
+      "scrambling_time_lu": 517.3441,
+      "page_time_lu": 1154.4937,
+      "page_ratio_recomputed": 2.2315779768243225,
+      "arrow_supports_unitarity_label": true,
+      "arrow_supports_unitarity_recomputed": true
+    },
+    "extended": {
+      "scrambling_time_lu": 669.9194,
+      "page_time_lu": 1591.3415,
+      "page_ratio_recomputed": 2.375422326924702,
+      "arrow_supports_unitarity_label": true,
+      "arrow_supports_unitarity_recomputed": true
+    }
+  },
+  "bh_quarter_label_audit": {
+    "canonical": {
+      "S_over_A_residual_recomp": 4.999999997368221e-08,
+      "area_law_satisfied_recomp": true,
+      "label_consistent_with_recomp": true
+    },
+    "extended": {
+      "S_over_A_residual_recomp": 1.8000000001627825e-07,
+      "area_law_satisfied_recomp": true,
+      "label_consistent_with_recomp": true
+    }
+  }
+}

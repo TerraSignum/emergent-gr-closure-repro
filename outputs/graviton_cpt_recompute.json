@@ -1,0 +1,11 @@
+{
+  "criterion": "Graviton + CPT + CP-violation recompute",
+  "graviton_massless": true,
+  "graviton_spin": 2,
+  "graviton_polarizations": 2,
+  "n_causal_modes_canonical": 2,
+  "CPT_theorem_tier": "DERIVED",
+  "CP_violation_tier": "DERIVED",
+  "fitted_parameters": 0,
+  "verdict": "PASS"
+}
