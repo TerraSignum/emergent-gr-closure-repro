@@ -5689,26 +5689,63 @@ The reproducer
 reports both Symanzik-$1$ fits and the cross-seed asymptote
 comparison.
 
-\textbf{Conjectures (rational closed forms).} The empirical
-asymptotes match two System-$\mathcal{R}$ rationals:
+\textbf{Conjectures (rational closed forms) --- and a
+threshold-sensitivity caveat.}
 \begin{equation}
 \lambda_{\infty}^{\rm weighted}\!\stackrel{?}{=}\!\tfrac{3}{8}\!=\!0.3750
-\quad(\Delta\!=\!1.0\%),
-\qquad
-\lambda_{\infty}^{\rm skel}\!\stackrel{?}{=}\!\tfrac{7}{24}\!=\!0.29167
-\quad(\Delta\!=\!0.24\%),
-\label{eq:two_rational_conjectures}
+\quad(\Delta\!=\!1.0\%)
+\label{eq:weighted_conjecture}
 \end{equation}
-with algebraically consistent ratio
-$(7/24)/(3/8)\!=\!7/9\!=\!0.7778$ vs.\ empirical $0.789$
-($\Delta\!=\!1.4\%$). The numerator
-$d\!+\!N_{\rm gen}\!=\!7$ enters both: in the weighted form via
-$3/8$ which is structurally $3/d^{2}\cdot 2$, and in the
-skeleton form via $7/24\!=\!(d\!+\!N_{\rm gen})/(d\cdot
-N_{\rm gen}\cdot 2)$. Both conjectures are registered for
-falsification on an extended ladder $N\!\ge\!1024$, not claimed
-as closures (1.0\% and 1.4\% residuals are well above the
-EXACT and PRECISE tier thresholds).
+is a candidate algebraic identity in
+$(d, N_{\rm gen})\!=\!(4, 3)$, $3/8\!=\!(d{-}1)/(2 d)$, on the
+\emph{threshold-free} weighted Laplacian. It is robust under
+re-sampling and stable across the $10$-regime ladder.
+\begin{equation}
+\lambda_{\infty}^{\rm skel}(\tau\!=\!0.10)\!=\!0.2924
+\quad\text{vs.\ candidate}\quad
+\tfrac{7}{24}\!=\!0.29167
+\quad(\Delta\!=\!0.24\%)
+\label{eq:skeleton_threshold_coincidence}
+\end{equation}
+is a \emph{threshold-specific coincidence}, not a robust
+algebraic identity. The threshold-sweep audit
+(\path|src/verify_lemma_B_threshold_sweep.py|, output
+\path|outputs/verify_lemma_B_threshold_sweep.json|) shows
+that $\lambda_{\infty}^{\rm skel}(\tau)$ varies smoothly from
+$0.49$ at $\tau\!=\!0.005$ to $0.11$ at $\tau\!=\!0.30$ and
+the conjectured $7/24$ value is met only in a narrow window
+around $\tau\!=\!0.10$ (where the threshold was originally
+chosen because $d_{\rm eff}(\tau\!=\!0.10)\!\approx\!d\cdot
+N_{\rm gen}\!=\!12$).
+\begin{center}
+\renewcommand{\arraystretch}{1.10}
+\small
+\begin{tabular}{@{}c c c c c@{}}
+\toprule
+$\tau$ & $\lambda_{\infty}^{\rm skel}(\tau)$ & $d_{\rm eff}^{\infty}(\tau)$ &
+$\lambda_{\rm AB}(d_{\rm eff})$ & $|\Delta|$ to $7/24$ \\
+\midrule
+$0.005$ & $0.492$ & $35.9$ & $0.671$ & $68.8\%$ \\
+$0.010$ & $0.492$ & $35.9$ & $0.671$ & $68.7\%$ \\
+$0.020$ & $0.488$ & $35.1$ & $0.667$ & $67.2\%$ \\
+$0.050$ & $0.425$ & $25.7$ & $0.613$ & $45.6\%$ \\
+\textbf{$0.100$} & \textbf{$0.292$} & \textbf{$12.1$} & \textbf{$0.450$} & \textbf{$0.24\%$} \\
+$0.200$ & $0.202$ & $5.5$  & $0.228$ & $30.6\%$ \\
+$0.300$ & $0.114$ & $3.8$  & $0.121$ & $61.1\%$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+Conclusion: the weighted-Laplacian conjecture
+\eqref{eq:weighted_conjecture} is robust (threshold-free)
+and the present Phase-$2$ leading rational target; the
+skeleton-Laplacian rational at $7/24$ is a
+\emph{coincidence of threshold choice} and is downgraded
+from "conjecture" to "registered finite-N value". The
+ratio $9/7$ derived earlier as
+$(3/8)/(7/24)$ is correspondingly downgraded. The Step-$4$a
+analytical target is now the weighted-Laplacian
+$3/8\!=\!(d{-}1)/(2 d)$ alone, not the two-stage Step-4a
++Step-4b decomposition.
 
 \textbf{Implication for analytical Phase-$2$.} The
 $30\%$ gap improvement of the weighted Laplacian over the
@@ -5894,38 +5931,28 @@ $\ge\!99.8\%$ & Prop.~\ref{prop:spectral_fingerprint} \\
 \end{tabular}
 \end{center}
 
-The locked-in analytical Phase-$2$ programme consists of
-two closed-form sub-bounds, each algebraic in the integer
-inputs $(d, N_{\rm gen})\!=\!(4, 3)$:
-\begin{align}
-\text{(Step~4a, small-world spectral theory)}\qquad
-\lambda_{\infty}^{\rm skel} \;&\stackrel{?}{=}\;
-\tfrac{7}{24}\;=\;\tfrac{d{+}N_{\rm gen}}{2\,d\,N_{\rm gen}},
-\label{eq:step4a_target}\\
-\text{(Step~4b, weight-distribution lift)}\qquad
-\lambda_{\infty}^{\rm weighted} \;&\stackrel{?}{=}\;
-\tfrac{3}{8}\;=\;\tfrac{d-1}{2\,d}.
-\label{eq:step4b_target}
-\end{align}
-The product of these is consistent with
-the empirical lift factor
-$\lambda_{\infty}^{\rm weighted}/\lambda_{\infty}^{\rm skel}\!=\!9/7$.
-The structural skeleton has asymptotic degree
-$d_{\rm eff}\!=\!d\!\cdot\!N_{\rm gen}\!=\!12$
-(Proposition~\ref{prop:expander_skeleton}); the
-Alon--Boppana bound at $d\!=\!12$ is
-$\lambda_{\rm AB}\!=\!1\!-\!2\sqrt{11}/12\!\approx\!0.4499$, so
-the conjectured \eqref{eq:step4a_target} corresponds to
-saturation ratio $\sim\!0.65$ (well inside the Friedman regime
-but not at the Ramanujan optimum). Both
-\eqref{eq:step4a_target} and \eqref{eq:step4b_target} are
-\emph{conjectured} closed forms, not analytically derived.
-The Step~$4$ analytical work, derivation from the carrier-
-action equilibrium construction, is the remaining Phase-$2$
-deliverable; both together would resolve the conditional
-structure of the master closure theorem of
-P6~\cite{Paper6} (the emergent Einstein equation conditional
-on A1--A8) into an unconditional theorem.
+The locked-in analytical Phase-$2$ programme, after the
+threshold-sensitivity audit of
+Proposition~\ref{prop:skeleton_laplacian_audit} downgrading
+the skeleton-rational $7/24$ to a threshold-specific
+coincidence, reduces to a single closed-form target on the
+threshold-free weighted Laplacian:
+\begin{equation}
+\text{(Step~4, weighted-Laplacian asymptote)}\qquad
+\lambda_{\infty}^{\rm weighted} \;\stackrel{?}{=}\;
+\tfrac{3}{8}\;=\;\tfrac{d-1}{2\,d},
+\label{eq:step4_target}
+\end{equation}
+algebraic in the integer inputs
+$(d, N_{\rm gen})\!=\!(4, 3)$ and threshold-free. The
+empirical Symanzik-$1$ asymptote $0.3789$ matches at $1.0\%$
+relative residual. The analytical proof, derivation of
+\eqref{eq:step4_target} from the carrier-action equilibrium
+construction, is the remaining Phase-$2$ deliverable; it
+would resolve the conditional structure of the master
+closure theorem of P6~\cite{Paper6} (the emergent Einstein
+equation conditional on A1--A8) into an unconditional
+theorem.
 
 \paragraph{Relation to the wider 3-Lemma decomposition.}
 The initial Phase-$2$ framing introduced three target lemmas:
