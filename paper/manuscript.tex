@@ -5680,7 +5680,7 @@ analytical step.
 \end{proposition}
 
 \begin{proposition}[Skeleton diameter scales logarithmically:
-Friedman-like, not Cayley-geometric]
+small-world signature, not Cayley-geometric]
 \label{prop:skeleton_diameter_friedman}
 On the same $10$-regime ladder ($\le 8$ seeds per regime; the
 $O(N^{2})$ shortest-path cost limits the seed count at large
@@ -5696,20 +5696,25 @@ $\Delta\mathrm{AICc}\!=\!+3.07$ in favour of the logarithmic
 fit. Combined with $100\%$ giant-component fraction on every
 regime, girth $\!=\!3$ on every regime, and skeleton-degree
 CV $\!\sim\!0.24$ close to the $1/\sqrt{d_{\rm eff}}$
-Friedman-random value~\cite{Friedman2008}, the skeleton is
-in the \emph{Friedman regime}: a sparse near-regular random
-expander, \emph{not} a geometric Cayley graph on a finite
-group.
-
-The Step-$3$c isolated-eigenvalue count of
+Friedman-random value~\cite{Friedman2008}, the skeleton has
+\emph{small-world}-type connectivity: short paths (log-$N$
+diameter) on a sparse near-regular random expander base.
+The Cayley-graph interpretation is rejected by the
+log-$N$ diameter; whether the small-world regime is
+Friedman-pure (vanishing clustering) or
+Watts--Strogatz-like (persistent clustering) is decided
+by the Step-$4$a pre-flight audit
+(Proposition~\ref{prop:edge_correlation_small_world}) which
+finds the Watts--Strogatz regime applies. The Step-$3$c
+isolated-eigenvalue count of
 Proposition~\ref{prop:spectral_fingerprint} is re-interpreted
 in light of this verdict: the linear-in-$N$ count of
 ``isolated'' eigenvalues was a MAD-detector artefact reading
 fine bulk clustering as discrete peaks, not a Cayley-
-representation signature. The skeleton is Friedman-random
-through and through, with Kesten--McKay bulk and at most
-$O(1)$ true isolated eigenvalues (the Perron value and a few
-near-Perron stragglers).
+representation signature. The skeleton has a Kesten--McKay
+bulk with at most $O(1)$ true isolated eigenvalues (the
+Perron value and a few near-Perron stragglers) plus
+persistent triangle clustering.
 
 Reproducer
 \path|src/verify_lemma_B_skeleton_diameter.py|
@@ -5842,30 +5847,35 @@ $\ge\!99.8\%$ & Prop.~\ref{prop:spectral_fingerprint} \\
 \end{center}
 
 The locked-in analytical Phase-$2$ programme consists of
-two closed-form sub-bounds:
+two closed-form sub-bounds, each algebraic in the integer
+inputs $(d, N_{\rm gen})\!=\!(4, 3)$:
 \begin{align}
-\text{(Step~4a, Friedman type)}\qquad
-\lambda_{\infty}^{\rm skel} \;&=\;
-\tfrac{7}{24}\;=\;\tfrac{d{+}N_{\rm gen}}{d\,N_{\rm gen}\!\cdot 2},
+\text{(Step~4a, small-world spectral theory)}\qquad
+\lambda_{\infty}^{\rm skel} \;&\stackrel{?}{=}\;
+\tfrac{7}{24}\;=\;\tfrac{d{+}N_{\rm gen}}{2\,d\,N_{\rm gen}},
 \label{eq:step4a_target}\\
-\text{(Step~4b, Kahale-type lift)}\qquad
-\lambda_{\infty}^{\rm weighted}/\lambda_{\infty}^{\rm skel} \;&=\;
-\tfrac{9}{7}\;=\;\tfrac{\alpha_{\xi}^{2}\cdot d}{d\!+\!N_{\rm gen}},
+\text{(Step~4b, weight-distribution lift)}\qquad
+\lambda_{\infty}^{\rm weighted} \;&\stackrel{?}{=}\;
+\tfrac{3}{8}\;=\;\tfrac{d-1}{2\,d}.
 \label{eq:step4b_target}
 \end{align}
-each addressable independently. The product of
-\eqref{eq:step4a_target} and \eqref{eq:step4b_target} is the
-weighted-Laplacian asymptote
-$\lambda_{\infty}^{\rm weighted}\!=\!3/8\!=\!\alpha_{\xi}^{2}/2\cdot 5/(d{+}1)$
-(if both rational conjectures hold), reproducing
-Proposition~\ref{prop:sg_empirical}. The full algebraic
-identification of $\lambda_{\infty}^{\rm weighted}$ in
-\eqref{eq:step4b_target} is a consequence of $\alpha_{\xi}\!=\!9/10$
-together with $d\!=\!4$ and $N_{\rm gen}\!=\!3$; it is part of
-the calibration target, not an independent algebraic claim.
-The Step~$4$ analytical derivation of either rational closes
-the corresponding empirical sub-bound; both together resolve
-the conditional structure of the master closure theorem of
+The product of these is consistent with
+the empirical lift factor
+$\lambda_{\infty}^{\rm weighted}/\lambda_{\infty}^{\rm skel}\!=\!9/7$.
+The structural skeleton has asymptotic degree
+$d_{\rm eff}\!=\!d\!\cdot\!N_{\rm gen}\!=\!12$
+(Proposition~\ref{prop:expander_skeleton}); the
+Alon--Boppana bound at $d\!=\!12$ is
+$\lambda_{\rm AB}\!=\!1\!-\!2\sqrt{11}/12\!\approx\!0.4499$, so
+the conjectured \eqref{eq:step4a_target} corresponds to
+saturation ratio $\sim\!0.65$ (well inside the Friedman regime
+but not at the Ramanujan optimum). Both
+\eqref{eq:step4a_target} and \eqref{eq:step4b_target} are
+\emph{conjectured} closed forms, not analytically derived.
+The Step~$4$ analytical work, derivation from the carrier-
+action equilibrium construction, is the remaining Phase-$2$
+deliverable; both together would resolve the conditional
+structure of the master closure theorem of
 P6~\cite{Paper6} (the emergent Einstein equation conditional
 on A1--A8) into an unconditional theorem.
 

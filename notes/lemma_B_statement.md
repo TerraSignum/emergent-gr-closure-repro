@@ -1,5 +1,14 @@
 # Lemma B (uniform spectral gap / Poincaré inequality) — notes
 
+**Naming note.** Internally these notes use "Lemma B" as a
+working name for the target uniform-spectral-gap theorem.
+In the P4 manuscript the same theorem is called the
+**"target (SG)-Lemma"** to avoid confusion with the
+loop-class library entries Lemma 1, ..., Lemma 10 of P3
+(Pure-Sync, Yukawa-Damping, PMNS-Self-Energy, etc.). The
+two names refer to the same object; the P4 nomenclature is
+authoritative for citation purposes.
+
 **Authoritative formal statement is in the P4 manuscript:**
 
 - Definition: `def:uniform_spectral_gap` (the `(SG)` axiom on
