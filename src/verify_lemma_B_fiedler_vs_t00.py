@@ -67,6 +67,9 @@ LADDER = [
     ("P5N256", 256, "results_d1_p5n256_12seeds/P5N256.snapshots.npz"),
     ("P5N300", 300, "results_d1_p5n300_12seeds/P5N300.snapshots.npz"),
     ("P5N512", 512, "results_d1_p5n512_12seeds/P5N512.snapshots.npz"),
+    ("P5N600", 600, "results_d1_p5n600_12seeds/P5N600.snapshots.npz"),
+    ("P5N700", 700, "results_d1_p5n700_12seeds/P5N700.snapshots.npz"),
+    ("P5N800", 800, "results_d1_p5n800_12seeds/P5N800.snapshots.npz"),
 ]
 # Throttle seeds for the heavy Galerkin pipeline (O(N^3) per snapshot).
 MAX_SEEDS_PER_REGIME = 6
