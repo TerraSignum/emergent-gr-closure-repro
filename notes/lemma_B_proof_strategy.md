@@ -36,18 +36,25 @@ The initial Phase-2 framing introduced three target lemmas:
   (γ-score 0.849, GAMMA_CONVERGED). A subsequent
   inventory of the corpus's actual CLP framework
   (outputs/clp_full_report.json,
-  Papers/python/08_Gap_Closure_Results.md §8) corrected
+  outputs/clp_full_families_extended_audit.json) corrected
   this to a three-axis decomposition:
 
     **Axis 1 — CLP-A (continuum-limit existence):**
       score 0.813, CLOSED (T1=1.0, T2=0.90, T3=0.45, T4=1.0).
 
     **Axis 2 — CLP-B (operator convergence):**
-      score 0.598 standard, 0.801 in the B-family
-      restructuring. Three sub-families:
-        - B-fast-geom (B1+B4-fast):  1.000 CLOSED
-        - B-slow-phys (B2+B3+B4-slow): 0.604 PRINCIPAL_RESIDUAL
-        - B-internal (B5+B6+B7):     0.733 INTERNAL_CONVERGE
+      score 0.598 (outputs/clp_full_report.json,
+      clp_full_families_extended_audit.json clp_b_b4 key).
+      Four sub-components:
+        - absorption: 0.514  (bottleneck)
+        - locality:   0.542
+        - density:    0.652
+        - spectral:   0.682
+      A B-family restructuring (B-fast/B-slow/B-internal)
+      with score 0.801 was once proposed in internal
+      working notes (Papers/python/...) but is NOT in the
+      published repo outputs; it is therefore not cited
+      here.
 
     **Axis 3 — CLP-C (Γ-convergence, the Dal Maso 5-proxy
       audit):** score 0.849, GAMMA_CONVERGED. Sub-scores
@@ -55,10 +62,12 @@ The initial Phase-2 framing introduced three target lemmas:
       coercivity), C4=0.82 (minimiser convergence), C5=0.87
       (= ½ C1 + ½ C2, δS_N → δS_∞ link).
 
-    **Axis 4 — CLP-N4 Bridge:**
+    **CLP-N4 Bridge (internal-notes only, not in repo):**
       Γ-convergence → first variation → operator-limit chain.
-      Numerical bridge score = min(Γ-side, B-side). Currently
-      inherits min(C_i) = 0.73 from C1.
+      Mentioned in internal working notes
+      (Papers/python/08_Gap_Closure_Results.md) but no
+      reproducible output in the repo; not cited as a
+      formal closure component.
 
     **CLP-D Overall:** 0.738 (weights A:0.3, B:0.4, C:0.3),
     status CLP_PROVEN.
@@ -68,12 +77,14 @@ The initial Phase-2 framing introduced three target lemmas:
     (a) tighten the weakest C_i (currently C1=liminf at 0.73)
         by replacing the numerical liminf proxy with a
         rigorous analytical argument;
-    (b) tighten the weakest B-family member (currently
-        B-slow-phys at 0.60) by replacing the spectral-gap /
-        resolvent / slow-tail proxies;
-    (c) operationalise CLP-N4 analytically by replacing the
-        min-bridge with an explicit first-variation →
-        operator-limit derivation.
+    (b) tighten the weakest B sub-component (currently
+        absorption at 0.514) by replacing the
+        absorption/locality/density/spectral numerical
+        proxies with analytical arguments;
+    (c) (optional/future) operationalise the analytical
+        bridge between Γ-convergence and operator-limit
+        sides; not yet present as a reproducible audit in
+        the repo.
 
   All three are independent multi-month research
   deliverables. The conditional master closure theorem of
@@ -866,3 +877,69 @@ refined to small-world (Watts-Strogatz-like), away from pure
 Friedman-random. Both rational conjectures (7/24, 9/7)
 unchanged; the analytical machinery changes from Friedman's
 theorem to small-world spectral theory.
+
+## Phase-2 W-loop result (t_00 corpus-canonical cross-check)
+
+Reproducer: `src/verify_lemma_B_fiedler_vs_t00.py`.
+Output: `outputs/verify_lemma_B_fiedler_vs_t00.json`.
+
+Earlier audits (S-loop row-sum, T-loop row-variance) used
+proxies for the matter-core classifier. The W-loop closes
+this by running the corpus-canonical Galerkin pipeline
+(`per_seed_galerkin` from
+`verify_galerkin_runner_A_hessian_ricci.py`) which computes
+the per-node energy density `t_00(a)` directly from ψ, K, Q
+fields available in the snapshots. AUC for t_00 as
+matter-core classifier is 0.85 (corpus, anisotropic
+companion paper).
+
+9-regime ladder, 6 seeds per regime (Galerkin-throttled):
+
+| Overlap | Empirical | Random | × Random |
+|---------|-----------|--------|----------|
+| J(Fiedler30%, t00-top10%)  | 0.137  | 0.057  | 2.4× |
+| J(Fiedler30%, t00-top30%)  | 0.249  | 0.18   | 1.38× |
+| J(Fiedler30%, t00-top5%)   | 0.078  | 0.029  | 2.7× |
+| J(Fiedler30%, t00-top1%)   | 0.039  | 0.006  | ~6× (abs small) |
+| J(rowvar30%, t00-top30%)   | 0.430  | 0.18   | 2.4× (proxy validation) |
+
+**Verdict:**
+1. Canonical t_00 audit qualitatively confirms the S+T loop
+   conclusions: Fiedler-set has weak positive matter-core
+   bias (1.4-2.4× random), strongly suppressed at the deep
+   C99 cusp.
+2. Row-variance(Ξ) is an *adequate* matter-core proxy
+   (Jaccard 0.43 with canonical t_00, 2.4× random), but not
+   perfect. Earlier S/T-loop findings stand.
+3. Halo-interpretation (Fiedler ~ matter-core neighbourhood,
+   not the cusp itself) is reinforced.
+4. Regime-stability: J(Fiedler30%, t00-top10%) is constant
+   at 0.12-0.16 across N=64..512, confirming the Halo
+   structure is θ(N)-stable (not dependent on the running
+   chirality angle).
+
+## Falsification triggers for the 3/8 weighted-Laplacian conjecture
+
+The 3/8 = (d−1)/(2d) conjecture for
+`lambda_inf^weighted` is empirical (Symanzik-1 fit at 1.0%
+relative residual). Three explicit falsifiers:
+
+- **(FB-w1)** On an extended ladder N ≥ 1024 the cross-seed
+  mean λ_2(L_w) drops outside [0.365, 0.385] (i.e., outside
+  ±2.7% of 3/8). The current Symanzik-1 fit predicts
+  asymptote 0.379, well within the band.
+
+- **(FB-w2)** A higher-order N-scaling model (e.g.,
+  Symanzik-2 with parameters λ_∞ + a/N + b/N²) prefers an
+  asymptote distinct from 3/8 by more than 2σ on the
+  bootstrap-CI of the asymptote across an extended ladder.
+
+- **(FB-w3)** The full-Laplacian asymptote on the alt-anchor
+  ladder (P0..P8) at any single physics regime (rather than
+  pooled) is more than 5% away from 3/8 at the corresponding
+  N. (Pointwise check at the overlap N=50: λ_2 = 0.515 for
+  both canonical and alt; consistency holds.)
+
+Trigger (FB-w1) is the deciding empirical falsifier; if a
+future ladder runs reach N ≥ 1024 and the asymptote moves
+outside [0.365, 0.385], the conjecture must be retracted.
