@@ -1,0 +1,36 @@
+{
+  "method": "verify_lemma_B_alpha_xi_master_identity",
+  "stand": "2026-05-13",
+  "d": 4,
+  "N_gen": 3,
+  "gamma": 0.1,
+  "alpha_xi": 0.9,
+  "spectral_anchors": {
+    "lambda_family_coupling": "7/6",
+    "lambda_skeleton": "7/24",
+    "kahale_lift": "9/7",
+    "lambda_w_vacuum": "3/8",
+    "matter_shift_2_gamma_sq": "1/50"
+  },
+  "master_identity": {
+    "form": "lambda_family = alpha_xi * Kahale_lift + gamma^2 * correction",
+    "correction": "20/21",
+    "correction_closed_form": "d * (d + 1) / (N_gen * (d + N_gen))",
+    "rhs": "7/6",
+    "lhs": "7/6",
+    "exact_match": true
+  },
+  "algebraic_chain_vacuum": {
+    "step_1_family_via_master": "7/6",
+    "step_2_skel_via_dilution": "7/24",
+    "step_3_lambda_w_via_kahale": "3/8",
+    "closure_form": "(d-1)/(2 d) = 3/8"
+  },
+  "algebraic_chain_matter": {
+    "lambda_w_mat": "79/200",
+    "shift_form": "lambda_w^vac + 2 gamma^2",
+    "shift_value": "1/50",
+    "exact": true
+  },
+  "interpretation": "The family-coupling spectral gap 7/6 is exactly the alpha_xi-weighted Kahale lift plus a gamma^2-scale structural correction 20/21 = d(d+1)/(N_gen(d+N_gen)). This connects ALL Lemma B spectral anchors via a single master algebraic identity involving the System-R rationals (gamma, alpha_xi) and the integer constants (d, N_gen). The chain closes the vacuum-branch weighted-Laplacian asymptote 3/8 = (d-1)/(2d) exactly via lambda_w^vac = (1/d) * [alpha_xi * Kahale + gamma^2 * 20/21] * Kahale = lambda_skel * Kahale, where lambda_skel = (1/d) * lambda_family-coupling and the 1/d dilution is the spatial-averaging factor. The matter-branch shift +2 gamma^2 = 1/50 enters the skeleton spectral gap, not the family-coupling (which is branch-invariant)."
+}
