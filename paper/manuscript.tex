@@ -5935,9 +5935,20 @@ $11/6\!=\!1.8333$ (Symanzik-1 asymptote $1.830$,
 rel.\ err.\ $-0.17\%$); the full spectrum is therefore
 $\text{spec}(L_{\rm norm}(M_{F}))\!=\!(0, 7/6, 11/6)$, a
 symmetric split of the $K_{3}$ degenerate pair $(0, 3/2, 3/2)$
-by $\pm(N_{\rm gen}\!-\!1)/(2\,N_{\rm gen})\!=\!\pm 1/3$ — a
+by $\pm(N_{\rm gen}\!-\!1)/(2\,N_{\rm gen})\!=\!\pm 1/3$ --- a
 pure System-$\mathcal{R}$ rational with no $\gamma$-scale
-corrections. This admits a clean structural relation to the
+corrections. The same $3\!\times\!3$ family-coupling matrix
+structure appears in the SYE fermion-mass extraction
+pipeline (\path|src/worldformula/physics/spectral_yukawa_
+eigenvalue.py|), which uses the SVD singular values
+$\sigma_{i}$ of the analogous $M_{d}^{3\times 3}$
+charged-lepton mass operator to extract fermion mass
+hierarchies via $m_{i}\!=\!\sigma_{i}\,v_{\rm EW}/\sqrt{2}$;
+the two pipelines share the upstream
+$\Xi$-to-$9$-mode projection but diverge at the eigenvalue
+extraction step (singular values for mass hierarchies versus
+normalised-Laplacian eigenvalues for the family-mixing
+spectral relaxation rates of this audit). This admits a clean structural relation to the
 skeleton spectral gap of
 Eq.~\eqref{eq:skel_cartesian_product}:
 \begin{equation}

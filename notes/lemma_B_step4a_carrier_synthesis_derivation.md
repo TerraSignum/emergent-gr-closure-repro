@@ -359,6 +359,50 @@ The previous "(spatial) gap = 1/d" and "(family) gap = 1/N_gen"
 conjectures (from the Cartesian-product synthesis) are
 SUPERSEDED by this single-subspace + dilution structure.
 
+## 7.4 Relation to SYE Yukawa eigenvalue pipeline
+
+The 3×3 family-coupling matrix M_F (this memo) and the SYE
+fermion-mass extraction (`src/worldformula/physics/
+spectral_yukawa_eigenvalue.py`, used in `calibrate_ckm_real_
+lattice.py`) share the **same upstream pipeline**:
+
+```
+Xi (N×N) -> R (dense-cell constraint matrix) -> G = R R^T
+        -> spectral decomp -> top 9 modes
+        -> mode_level_assignments (3 sectors x 3 generations)
+```
+
+but extract DIFFERENT algebraic objects from the resulting
+3-generation structure:
+
+| Quantity | SYE Yukawa | This memo M_F |
+|---|---|---|
+| 3×3 matrix | M_d^{3×3} (charged-lepton mass operator via F-05 GJ-Clebsch and (1,1)-texture-null SVD) | M_F[g,h] = ⟨ψ_g | Ξ | ψ_h⟩ (sector-averaged projection) |
+| Eigenvalue extraction | SVD singular values σ_i (= sqrt of M^T M eigenvalues) | Normalised-Laplacian eigenvalues of |M_F| |
+| Output spectrum | y_t ≈ 1, y_c ≈ 0.007, y_u ≈ 10^{-5} (exponential mass hierarchy) | (0, 7/6, 11/6) (symmetric K_3 degeneracy split, all O(1)) |
+| Physical content | Fermion mass eigenvalues m_i = y_i · v_EW/√2 | Family-mixing spectral relaxation rates |
+
+The two are STRUCTURALLY RELATED (same upstream Ξ → 9-mode
+projection) but extract complementary information:
+- SYE Yukawa: amplitude information (per-generation mass scales,
+  exponentially distributed)
+- M_F (Lemma B): transport information (inter-generation mixing
+  rates, O(1) symmetric)
+
+The shared input is the carrier-action equilibrium Ξ and its
+mode-level assignments (3 sectors × 3 generations = N_gen²
+PMNS slot count). The two pipelines diverge at the eigenvalue
+extraction step: SYE computes raw σ_i for mass hierarchies; M_F
+computes L_norm eigenvalues for spectral-gap structure.
+
+A unified analytical derivation that produces BOTH the Yukawa
+hierarchies (via SVD) AND the M_F (0, 7/6, 11/6) spectrum (via
+normalised Laplacian) from the same carrier-action equilibrium
+would close the algebraic identification of the family-coupling
+matrix completely. This is a session-tauglich follow-up since
+both pipelines exist as reproducers and only the structural
+unification is needed.
+
 ## 7.5 Eigenvalue split structure of M_F — full triple PRECISE
 
 The 3×3 family-coupling matrix M_F has normalised-Laplacian
