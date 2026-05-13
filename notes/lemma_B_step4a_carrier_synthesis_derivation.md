@@ -539,6 +539,55 @@ spectral gap:
        = (d + N_gen) / (2·d·N_gen) = 7/24      EXACT
 ```
 
+## 7.6 Structural interpretation of the universal (X-1)/X pattern
+
+The (X-1)/X universal pattern across the framework's carrier-action
+γ-scale corrections admits a clean structural reading:
+
+**Single-self-state-subtraction interpretation**: for a sub-sector
+with X total slots in the carrier-action equilibrium, the leading
+γ-scale correction factor is
+
+```
+factor = (X - 1)/X = 1 - 1/X
+```
+
+reading as "matrix-element averaged over X total slots minus the
+1 self-coupling slot". This is the natural form for a leading-order
+γ-scale correction in any sub-sector where:
+- X total slots: dimensional content of the sub-sector
+- 1 self-slot: the diagonal "self-coupling" contribution
+- (X - 1) non-self slots: contribute to the leading γ-scale correction
+
+The "slot count" X varies per sub-sector and determines which carrier-
+action sub-sector the correction operates on:
+
+| Sub-sector | Slot count X | Structural form |
+|---|---|---|
+| Matter-core threshold (γ/2) | 20 | 2(d+1) [pure 2-adic, ε_sync²] |
+| Generation-mixing (γ/N_gen) | 30 | 2(d+1)·N_gen [2-adic × N_gen] |
+| Pure-self-energy (γ²) | 100 | (2(d+1))² [2-adic squared] |
+| Family-coupling | **21** | **N_gen·(d+N_gen)** [family × combined-dim] |
+| β_π refined vacuum | 144 | 2^d·N_gen² [spinor × PMNS²] |
+
+For random walk interpretation: at uniform equilibrium on X slots
+(each slot with weight 1/X), the "non-self" mixing rate is exactly
+(X-1)/X — the probability that a random transition lands on a slot
+≠ the current self-slot. The (X-1)/X factor is therefore the
+NATURAL OFF-DIAGONAL FRACTION in a uniform-slot Markov-chain
+interpretation of the carrier-action equilibrium.
+
+For each sub-sector, the carrier-action equilibrium DOES produce
+the uniform-slot distribution (this is structurally established
+for the Loop-Class library and the β_π refined-vacuum closure;
+for Lemma B's X = 21 family-coupling slot count, this is the
+structural conjecture supported by empirical PRECISE-tier match).
+
+The master identity Eq.~(7) for Lemma B is therefore the natural
+γ²-loop correction with (X-1)/X = 20/21 = "non-self family-coupling
+slot fraction" at the framework's specific γ = 1/10 value, aligned
+with the α_ξ · Kahale leading term to give the exact closure 7/6.
+
 ## 8. Reproducer
 
 `src/verify_lemma_B_carrier_spectral_synthesis.py`
