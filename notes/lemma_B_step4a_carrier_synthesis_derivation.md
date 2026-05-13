@@ -403,6 +403,46 @@ matrix completely. This is a session-tauglich follow-up since
 both pipelines exist as reproducers and only the structural
 unification is needed.
 
+## 7.4.5 Branch-invariance of the family-coupling spectrum
+
+Empirical branch-resolved analysis of the family-coupling
+λ_2 on the canonical d1 P5/P5N ladder
+(`verify_lemma_B_family_factor_p5n_canonical.py`):
+
+```
+Pre-flip  (N = 64, 72, 84, 100):       mean λ_2 = 1.21375
+Post-flip (N = 128, 200, 256, 300, 512): mean λ_2 = 1.17646
+Symanzik-1 asymptote (all 10 regimes):  λ_2 = 1.170
+vs 7/6 = 1.16667:                      rel err 0.28% (PRECISE)
+```
+
+The family-coupling spectrum is **branch-invariant** at the
+N→∞ asymptote: both vacuum and matter branches converge to
+λ_2 = 7/6 = (d+N_gen)/(2·N_gen). The +4% pre-flip excess and
+~0.84% post-flip excess are finite-N effects that vanish in the
+continuum limit.
+
+In contrast, the **skeleton** λ_w has a +2γ² matter-branch
+shift (vacuum 3/8 → matter 79/200). The fact that this shift
+appears in the SKELETON but not in the FAMILY-COUPLING means
+the matter-branch correction is in the SPATIAL part of the
+graph (the (1/d)-dilution mechanism), not in the family-
+mixing matrix M_F itself.
+
+Structural summary:
+```
+Family-coupling spectrum (0, 7/6, 11/6):    branch-invariant
+Spatial dilution = 1/d = 1/4:               EXACT on vacuum
+Spatial dilution on matter:                  1/d + O(γ²) (~1.4% correction)
+Matter shift in skeleton λ_w:                +2γ² = +1/50 PRECISE
+```
+
+This is structurally significant: the family-mixing sector
+is "rigid" across the chirality flip (carrier-action's
+family-mixing dynamics is invariant under the matter/vacuum
+branch resolution), while the spatial sector carries the
+γ²-universality of chirality-flip-shift corrections.
+
 ## 7.5 Eigenvalue split structure of M_F — full triple PRECISE
 
 The 3×3 family-coupling matrix M_F has normalised-Laplacian
