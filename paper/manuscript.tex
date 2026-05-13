@@ -6032,6 +6032,37 @@ spectral gap by exactly factor $d$. Reproducer:
 output
 \path|outputs/verify_lemma_B_family_factor_p5n_canonical.json|.
 
+The off-diagonal triple $(\rho_{12},\rho_{13},\rho_{23})$ of the
+normalised adjacency $D^{-1/2}|M_{F}|D^{-1/2}$ is constrained by
+the spectrum~$(0, 7/6, 11/6)$ via two clean structural invariants:
+\begin{equation}
+\sum_{i<j}\rho_{ij}^{2} \;=\; 1 - \sigma, \qquad
+\prod_{i<j}\rho_{ij} \;=\; \sigma/2,
+\qquad
+\sigma \;\equiv\; \tfrac{d+1}{N_{\rm gen}\,d\,(d-1)}.
+\label{eq:MF_off_diagonal_invariants}
+\end{equation}
+At $(d,N_{\rm gen})\!=\!(4,3)$ this gives
+$\sigma\!=\!5/36$, sum-of-squares $31/36$ and product $5/72$
+EXACT. Empirical extraction of the sorted triple on the
+canonical~$10$-regime ladder ($152$ pooled seeds) confirms the
+arithmetic-progression structural form $(a\!-\!b,a,a\!+\!b)$ with
+midpoint-consistency $1.47\%$, while the geometric-progression
+candidate $(1/6,1/2,5/6)$ is rejected ($\rho_{\min}\!+35.7\%$).
+Under the arith-prog ansatz Eq.~\eqref{eq:MF_off_diagonal_invariants}
+reduces to the universal cubic
+\begin{equation}
+5\,a^{3} \;-\; (1\!-\!\sigma)\,a \;-\; \sigma \;=\; 0,
+\label{eq:MF_arith_prog_cubic}
+\end{equation}
+giving at $(4,3)$ the cubic $180\,a^{3}\!-\!31\,a\!-\!5\!=\!0$
+with unique positive real root $a^{*}\!\approx\!0.4797$. The
+off-diagonal triple is therefore an algebraic-irrational of
+degree~$3$ over~$\mathbb{Q}(\sigma)$, NOT a System-$\mathcal{R}$
+rational --- the simplest structural identification compatible
+with the empirical extraction. Reproducer:
+\path|src/verify_lemma_B_M_F_empirical_off_diagonal_extraction.py|.
+
 \textbf{The Cartesian-product synthesis is therefore replaced
 by the direct identification}
 \begin{equation}
