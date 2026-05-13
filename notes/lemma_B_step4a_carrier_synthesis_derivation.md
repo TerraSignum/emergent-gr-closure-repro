@@ -359,6 +359,50 @@ The previous "(spatial) gap = 1/d" and "(family) gap = 1/N_gen"
 conjectures (from the Cartesian-product synthesis) are
 SUPERSEDED by this single-subspace + dilution structure.
 
+## 7.3.5 Simplified forms under d = N_gen + 1
+
+The framework's specific (d, N_gen) = (4, 3) satisfies the
+algebraic relation **d = N_gen + 1**. Under this constraint,
+all Lemma B spectral anchors simplify to (N_gen)-only forms:
+
+```
+λ_family-coupling  =  (d+N_gen)/(2 N_gen)  =  (2 N_gen + 1)/(2 N_gen)
+λ_Kahale           =  (d-1)·N_gen/(d+N_gen)  =  N_gen²/(2 N_gen + 1)
+γ                  =  1/(2(d+1))  =  1/(2(N_gen + 2))
+α_ξ                =  1 − γ  =  (2 N_gen + 3)/(2 N_gen + 4)
+slot_count         =  N_gen·(d+N_gen)  =  N_gen·(2 N_gen + 1)
+λ_w^vacuum         =  (d-1)/(2 d)  =  N_gen/(2(N_gen + 1))
+```
+
+For N_gen = 3 these give the familiar (7/6, 9/7, 1/10, 9/10, 21, 3/8).
+
+**Generality test**: the master identity EXACT closure at (d=4,
+N_gen=3) requires the specific value γ = 1/10. Testing the
+identity at alternate (d=N_gen+1) values such as (d=3, N_gen=2)
+with γ = 1/(2(N_gen+2)) = 1/8:
+
+  α_ξ · Kahale + γ²·(1 - 1/slot_count)
+  = (7/8)·(4/5) + (1/64)·(9/10)
+  = 7/10 + 9/640 ≈ 0.714
+
+vs (d+N_gen)/(2 N_gen) = 5/4 = 1.25.
+
+The two do NOT agree at (d=3, N_gen=2). The master identity is
+therefore **specific to (d=4, N_gen=3)** — an algebraic
+coincidence of our framework's spacetime + generation values
+where the System-R rational γ = 1/10 makes the constraint
+satisfied exactly. The d=N_gen+1 structural relation is
+necessary but not sufficient for the master identity.
+
+The structural interpretation: the carrier-action's specific
+spectral content matches a particular alignment between the
+γ²-loop correction and the (Kahale, α_ξ) leading-order term
+that happens at our framework's parameter values. This is
+analogous to the well-known framework coincidence that
+d² = 2^d at d=4 (i.e. the spinor dimension equals the squared
+spacetime dimension only at our d), which underlies the
+β_π refined-vacuum closure 143/144.
+
 ## 7.4 Relation to SYE Yukawa eigenvalue pipeline
 
 The 3×3 family-coupling matrix M_F (this memo) and the SYE
