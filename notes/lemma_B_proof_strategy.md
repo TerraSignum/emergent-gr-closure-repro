@@ -1050,3 +1050,58 @@ The 3/8 conjecture is restated as the **vacuum-branch
 closed-form**, with **79/200 = 3/8 + 2γ²** the matter-branch
 closed-form, jointly governing the weighted-Laplacian
 spectral gap across the chirality flip at N\*≈110–120.
+
+## Defect-Condensation Hypothesis — FALSIFIED (2026-05-13)
+
+A natural candidate dynamical origin for the (SG) axiom was
+the *defect-condensation* hypothesis: that defect / matter-
+core nodes form a percolating network whose presence carries
+the spectral gap, with the (SG) emerging from the same
+relational geometry that produces the lattice in the first
+place. This hypothesis is tested in
+`src/verify_lemma_B_defect_condensation_test.py` (output
+`outputs/verify_lemma_B_defect_condensation_test.json`)
+across the 10-regime canonical ladder via two parallel
+sub-population rankings:
+
+  - **matter-core** = top-p% by row-variance(Ξ) (NFW-cusp
+    proxy, corpus AUC 0.83-0.90)
+  - **halo** = top-p% by |Fiedler v_2| (BFS distance 1-2
+    from cusp, identified earlier as the SG-active set)
+
+For each percentile p ∈ {1%, 5%, 10%, 25%, 50%}, the top-p%
+of nodes are removed from the graph, λ_2 of the residual is
+computed, and compared to a 20-permutation random-removal
+null at the same p.
+
+**Defect-driven hypothesis prediction**: targeted removal
+of defect-set nodes collapses λ_2 strictly *below* the
+random null (z-score < −1 at deep percentiles).
+
+**Empirical finding (both branches, both rankings)**:
+λ_2 after targeted removal is *higher* than the random null,
+not lower:
+
+  - matter-core (row-variance) removal:
+    z = +0.5 … +1.6 (positive, opposite of prediction)
+    Δ vs random = +0.8% … +4.5%
+  - halo (|Fiedler|) removal:
+    z = +3.5 … +4.9 at p=1% (strongly positive)
+    Δ vs random = +2.5% … +5.6%
+
+Both sub-populations are *spectral bottlenecks*: removing
+them slightly increases λ_2 (the residual graph is freer)
+relative to a random removal of the same node count. The
+halo nodes are even stronger bottlenecks than the cusp.
+
+**Conclusion**: the defect-condensation hypothesis in its
+simple "defects carry the SG" form is **falsified**. The
+SG is a globally distributed graph property, not localised
+on any identifiable sub-population.
+
+**Constructive consequence**: this independently corroborates
+the Phase-2 finding that the SG is *extensive* (PR(N) ≈ 0.3 N,
+not low-rank) and supports route 5b (small-world spectral
+theory on the τ=0.10 skeleton) as the analytical attack vector
+for Lemma B. Localisation-based routes (early Route 1 /
+radial-low-rank; defect-condensation) are excluded.
