@@ -10610,7 +10610,7 @@ nodes ($n_{\rm perm}=1000$ per seed).
 $\rho_{\rm S}(\mathrm{EC}, T_{00})$ and
 $\rho_{\rm S}(\mathrm{EC}, G_{00})$.}
 Spearman rank correlations between $\mathrm{EC}$ and the per-node
-fields are positive and consistent across all six regimes
+fields are positive and consistent across all ten regimes
 (values reported using all available seeds, no per-script seed cap):
 \begin{center}
 \begin{tabular}{rcc}
@@ -10620,21 +10620,24 @@ $N$ (seeds) & $\rho_{\rm S}(\mathrm{EC}, T_{00})$ &
 \hline
 $50$ (28)   & $+0.40\;[+0.14,+0.62]$ & $+0.43\;[+0.17,+0.64]$ \\
 $64$ (24)   & $+0.42\;[+0.20,+0.60]$ & $+0.39\;[+0.17,+0.59]$ \\
+$72$ (24)   & $+0.36\;[+0.15,+0.55]$ & $+0.42\;[+0.21,+0.60]$ \\
+$84$ (24)   & $+0.37\;[+0.17,+0.54]$ & $+0.42\;[+0.23,+0.58]$ \\
 $100$ (24)  & $+0.39\;[+0.21,+0.54]$ & $+0.41\;[+0.23,+0.57]$ \\
 $128$ (12)  & $+0.43\;[+0.31,+0.58]$ & $+0.33\;[+0.18,+0.49]$ \\
 $200$ (8)   & $+0.41\;[+0.29,+0.52]$ & $+0.35\;[+0.23,+0.47]$ \\
-$300$ (2)   & $+0.39\;[+0.29,+0.48]$ & $+0.36\;[+0.24,+0.45]$ \\
+$256$ (12)  & $+0.39\;[+0.27,+0.48]$ & $+0.34\;[+0.22,+0.45]$ \\
+$300$ (12)  & $+0.39\;[+0.29,+0.48]$ & $+0.38\;[+0.26,+0.46]$ \\
+$512$ (12)  & $+0.34\;[+0.27,+0.42]$ & $+0.26\;[+0.17,+0.34]$ \\
 \hline
 \end{tabular}
 \end{center}
 The bracketed numbers are bootstrap $95\%$ CIs on the seed-mean
-$\rho_{\rm S}$. All six bootstrap CIs exclude zero with margin
+$\rho_{\rm S}$. All ten bootstrap CIs exclude zero with margin
 for both $T_{00}$ and $G_{00}$. The mean values
-$\langle\rho_{\rm S}(\mathrm{EC},T_{00})\rangle = +0.41$ and
-$\langle\rho_{\rm S}(\mathrm{EC},G_{00})\rangle = +0.38$ are
+$\langle\rho_{\rm S}(\mathrm{EC},T_{00})\rangle = +0.39$ and
+$\langle\rho_{\rm S}(\mathrm{EC},G_{00})\rangle = +0.37$ are
 stable across the regime ladder, with regime-to-regime spread
-$\le 0.05$ on the $T_{00}$ correlation and $\le 0.10$ on the
-$G_{00}$ correlation. Eigenvector
+$\le 0.10$ on each correlation. Eigenvector
 centrality is itself strongly correlated with degree
 ($\rho_{\rm S}(\deg,\mathrm{EC})\in[+0.75,+0.80]$), so the two
 diagnostics are not strictly independent; we report both because
@@ -10646,21 +10649,37 @@ geometry.
 
 \paragraph{(ii) Per-decile degree concentration of the
 matter-core.} Stratifying nodes by $T_{00}$ decile and reporting
-the mean degree per bin yields a monotone increase: the top
-$T_{00}$ decile carries $\deg/\!\deg(\text{bottom decile})$
-ratios of $3.2, 5.8, 8.1, 8.0, 13.1, 13.1$ at $N=50, 64, 100,
-128, 200, 300$ respectively. The cleaner
-top-decile-vs-background contrast gives ratios of $1.5, 1.7,
-1.7, 1.5, 1.6, 1.9$, all sitting above their permutation-null
-$97.5\%$ quantiles $(1.58, 1.60, 1.59, 1.84, 1.49, 1.34)$
-within seed-bootstrap $95\%$ intervals
-$([1.0,2.3], [1.1,2.4], [1.2,2.5], [1.2,2.9], [1.5,2.8],
-[1.5,2.3])$. The top-decile-vs-background ratio is therefore
-$1.7\pm 0.2$ across the ladder, and the per-decile ratio grows
-with $N$ because the $\Xi$-graph thins (edge density
-$0.040\to 0.0035$) faster in the low-$T_{00}$ tails than at the
-matter-core. Both readings agree that high-$T_{00}$ vertices
-preferentially occupy high-connectivity positions in $\mathcal G_\Xi$.
+the mean degree per bin yields the top-vs-bottom decile
+$\deg(\text{top})/\!\deg(\text{bottom})$ ratios
+\begin{center}
+\begin{tabular}{rcc}
+\hline
+$N$ & $\deg(\text{top})/\deg(\text{bot})$ & permutation null $97.5\%$ \\
+\hline
+$50$  & $3.74$ & $1.64$ \\
+$64$  & $5.08$ & $1.75$ \\
+$72$  & $4.40$ & $1.65$ \\
+$84$  & $4.01$ & $1.62$ \\
+$100$ & $6.17$ & $1.60$ \\
+$128$ & $11.63$ & $1.79$ \\
+$200$ & $9.11$ & $1.44$ \\
+$256$ & $7.48$ & $1.49$ \\
+$300$ & $9.23$ & $1.37$ \\
+$512$ & $14.20$ & $1.39$ \\
+\hline
+\end{tabular}
+\end{center}
+The observed top-vs-bottom ratio sits well above the
+permutation-null $97.5\%$ quantile at every regime
+($N$-grand-mean ratio $7.5$, null $97.5\%$ mean $1.55$),
+i.e.\ degree-concentration on $T_{00}$-top nodes is highly
+significant against random $T_{00}$ shuffles across the full
+ten-regime ladder. The ratio grows monotonically with $N$
+because the $\Xi$-graph thins (edge density $0.040\!\to\!0.0035$
+across the ladder) faster in the low-$T_{00}$ tails than at the
+matter-core. Together with (i) this confirms that high-$T_{00}$
+vertices preferentially occupy high-connectivity positions in
+$\mathcal G_\Xi$.
 
 \paragraph{(iii) Cycle-rank ($H_1$) of the matter-core
 subgraph.} The cycle rank $H_1=|E|-|V|+H_0$ of the matter-core

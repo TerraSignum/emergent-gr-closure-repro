@@ -51,14 +51,16 @@ XI_THRESH = 0.5
 
 
 LAT_LADDER = [
-    ("P5",      50,  "results_d1_fix17/d1_p5.npz",                 "d1"),
-    ("P5N64",   64,  "results_d1_p5n64_24seeds/P5N64.snapshots.npz",   "snap"),
-    ("P5N100", 100,  "results_d1_p5n100_24seeds/P5N100.snapshots.npz", "snap"),
-    ("P5N128", 128,  "results_d1_p5n128_kq_fixed/P5N128.snapshots.npz","snap"),
-    ("P5N200", 200,  "results_d1_p5n200_8seeds/P5N200.snapshots.npz",  "snap"),
-    ("P5N300", 300,  "results_d1_p5n300_12seeds/P5N300.snapshots.npz",         "snap"),
-    ("P5N256", 256,  "results_d1_p5n256_12seeds/P5N256.snapshots.npz",  "snap"),
-    ("P5N512", 512,  "results_d1_p5n512_12seeds/P5N512.snapshots.npz",  "snap"),
+    ("P5",      50,  "results_d1_fix17/d1_p5.npz",                              "d1"),
+    ("P5N64",   64,  "results_d1_p5n64_24seeds/P5N64.snapshots.npz",            "snap"),
+    ("P5N72",   72,  "results_d1_p5n72_24seeds/P5N72.snapshots.npz",            "snap"),
+    ("P5N84",   84,  "results_d1_p5n84_24seeds/P5N84.snapshots.npz",            "snap"),
+    ("P5N100", 100,  "results_d1_p5n100_24seeds/P5N100.snapshots.npz",          "snap"),
+    ("P5N128", 128,  "results_d1_p5n128_kq_fixed/P5N128.snapshots.npz",         "snap"),
+    ("P5N200", 200,  "results_d1_p5n200_8seeds/P5N200.snapshots.npz",           "snap"),
+    ("P5N256", 256,  "results_d1_p5n256_12seeds/P5N256.snapshots.npz",          "snap"),
+    ("P5N300", 300,  "results_d1_p5n300_12seeds/P5N300.snapshots.npz",          "snap"),
+    ("P5N512", 512,  "results_d1_p5n512_12seeds/P5N512.snapshots.npz",          "snap"),
 ]
 
 
