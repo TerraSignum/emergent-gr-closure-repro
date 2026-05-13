@@ -1,0 +1,82 @@
+{
+  "method": "verify_lemma_B_universal_X_minus_1_over_X_pattern",
+  "stand": "2026-05-13",
+  "d": 4,
+  "N_gen": 3,
+  "universal_X_minus_1_over_X_pattern": true,
+  "loop_class_slots": [
+    {
+      "name": "L8-",
+      "value": "19/20",
+      "slot_count": 20,
+      "sub_sector": "gamma/2 (matter-core, eps_sync2)",
+      "structural_form": "2(d+1)"
+    },
+    {
+      "name": "L5",
+      "value": "29/30",
+      "slot_count": 30,
+      "sub_sector": "gamma/N_gen (generation)",
+      "structural_form": "2(d+1)*N_gen"
+    },
+    {
+      "name": "L1-",
+      "value": "39/40",
+      "slot_count": 40,
+      "sub_sector": "gamma/4 (Yukawa damping)",
+      "structural_form": "4(d+1)"
+    },
+    {
+      "name": "L6-",
+      "value": "59/60",
+      "slot_count": 60,
+      "sub_sector": "gamma/(2 N_gen) (sub-generation)",
+      "structural_form": "4(d+1)*N_gen"
+    },
+    {
+      "name": "L3-",
+      "value": "99/100",
+      "slot_count": 100,
+      "sub_sector": "gamma^2 (pure-self-energy)",
+      "structural_form": "(2(d+1))^2"
+    },
+    {
+      "name": "L7",
+      "value": "199/200",
+      "slot_count": 200,
+      "sub_sector": "gamma * eps_sync2 (EW-mixed)",
+      "structural_form": "8(d+1)^2"
+    },
+    {
+      "name": "L2",
+      "value": "399/400",
+      "slot_count": 400,
+      "sub_sector": "gamma^2/4 (PMNS self-energy)",
+      "structural_form": "(4(d+1))^2"
+    },
+    {
+      "name": "Lemma B family-coupling correction",
+      "value": "20/21",
+      "slot_count": 21,
+      "sub_sector": "1 - 1/(N_gen\u00b7(d+N_gen)) (family-coupling)",
+      "structural_form": "N_gen*(d+N_gen)"
+    },
+    {
+      "name": "beta_pi refined vacuum",
+      "value": "143/144",
+      "slot_count": 144,
+      "sub_sector": "1 - 1/(2^d \u00b7 N_gen^2) (spinor\u00b7PMNS^2)",
+      "structural_form": "2^d * N_gen^2"
+    }
+  ],
+  "lemma_B_X_uniqueness": {
+    "X": 21,
+    "factorisation": "3 \u00b7 7 (prime, no 2-adic content)",
+    "structural_forms": [
+      "N_gen \u00b7 (d + N_gen) = 3 \u00b7 7",
+      "d(d-1) + N_gen\u00b2 = 12 + 9"
+    ],
+    "comment": "Lemma B's slot count X = 21 is structurally unique among the (X-1)/X family: it is NOT a pure 2-adic multiple of (d+1) like the other loop-class slots, but combines family generations with combined dimensional content."
+  },
+  "verdict": "The (X-1)/X pattern is universal across the framework's gamma-scale carrier-action corrections, with sub-sector-specific slot counts X. The loop-class library follows a 2-adic hierarchy in (d+1), while the Lemma B family-coupling correction X = 21 = N_gen\u00b7(d+N_gen) lies in a structurally distinct family\u00d7dimensional category. The beta_pi refined vacuum X = 144 = 2^d\u00b7N_gen^2 spans both 2-adic (spinor) and family (PMNS^2) structures. Lemma B's family-coupling structural identification thus extends the framework's closure architecture into a new family\u00d7combined-dim sub-sector previously not covered."
+}
