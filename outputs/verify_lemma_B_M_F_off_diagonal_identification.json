@@ -1,0 +1,17 @@
+{
+  "method": "verify_lemma_B_M_F_off_diagonal_identification",
+  "stand": "2026-05-13",
+  "d": 4,
+  "N_gen": 3,
+  "target_spectrum": [
+    0,
+    "7/6",
+    "11/6"
+  ],
+  "constraints": {
+    "sum_sq_rho_12_13_23": "31/36",
+    "product_rho_12_13_23": "5/72"
+  },
+  "system_R_candidate_matches": [],
+  "interpretation": "The off-diagonal weights of M_F are constrained by two equations (sum of squares, product) leaving a 1-parameter family of solutions. No PRECISE-tier System-R rational triple (with both constraints below 1% rel err) found in the searched candidate space. The geometric-progression candidate (1/6, 1/2, 5/6) matches the product EXACTLY (5/72) but the sum_sq is off by 1/9. The carrier-action family-sector dynamics must provide an additional constraint to uniquely determine the off-diagonal triple."
+}
