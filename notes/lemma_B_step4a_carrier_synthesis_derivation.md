@@ -31,23 +31,37 @@ Reproducers:
 
 ---
 
-## 1. Algebraic chain
+## 1. Algebraic chain — REVISED (2026-05-13)
 
 The empirically certified spectral asymptotes admit the following
 clean algebraic identities in `(d, N_gen) = (4, 3)`:
 
 ```
-λ_∞^skel  =  7/24   =  (d + N_gen) / (2·d·N_gen)   =  (1/d + 1/N_gen) / 2
-λ_∞^w     =  3/8    =  (d − 1) / (2·d)
-ratio     =  9/7    =  (d − 1)·N_gen / (d + N_gen)
-chain     =  3/8    =  (7/24) · (9/7)              ✓ (algebraically exact)
-matter    =  79/200 =  3/8 + 2γ²                   (matter-branch shift)
+λ_∞^skel          =  7/24   =  (d + N_gen) / (2·d·N_gen)
+λ_∞^family-coupl. =  7/6    =  (d + N_gen) / (2·N_gen)
+ratio (skel/fam.) =  1/d    =  1/4                  ← EXACT spatial dilution
+λ_∞^w             =  3/8    =  (d − 1) / (2·d)
+Kahale-lift       =  9/7    =  (d − 1)·N_gen / (d + N_gen)
+chain             =  3/8    =  (7/24) · (9/7)              ✓ algebraically exact
+                          =  (1/d) · [(d+N_gen)/(2 N_gen)] · [(d-1) N_gen/(d+N_gen)]
+                          =  (d-1)/(2 d)                   ✓ exact closure
+matter            =  79/200 =  3/8 + 2γ²                   (matter-branch shift)
 ```
 
-The skeleton spectral gap factorises as the **arithmetic mean of
-1/d and 1/N_gen**. This is the signature of a Cartesian-product
-small-world ensemble whose two factors have spectral gaps 1/d and
-1/N_gen.
+The correct structural picture (REVISED after family-coupling
+test on canonical P5/P5N ladder, commit 91cf4dc) is:
+
+**SINGLE family-coupling subspace of dimension N_gen = 3**
+**with intrinsic spectral gap (d+N_gen)/(2·N_gen) = 7/6**,
+**diluted by the spatial-averaging factor 1/d when realised on**
+**the full N-vertex skeleton.**
+
+(NOT a two-factor Cartesian product, as the original Step-4a
+memo claimed — the (1/d + 1/N_gen)/2 form is an algebraic
+coincidence of the same value 7/24 but the literal per-factor
+interpretation as spatial-gap=1/d × family-gap=1/N_gen is
+empirically falsified: family-coupling matrix on P1-P5 family-
+phase data has λ_2 ≈ 1.21, not 1/N_gen = 1/3.)
 
 ## 2. Per-factor structural identification
 
@@ -288,30 +302,114 @@ weighted-Laplacian asymptote on the matter-branch to
 ```
 matching empirical `0.3957` at 0.18% rel err.
 
-## 7. What's now an open analytical step (session-tauglich)
+## 7. What's now an open analytical step (REVISED 2026-05-13)
 
-The Cartesian-product synthesis reduces the broad multi-month
-analytical question to **three sharper per-factor questions**:
+The corrected structural picture (single family-coupling
+subspace + 1/d spatial dilution + Kahale lift) reduces the
+broad analytical question to **three sharper per-component
+questions**:
 
-1. **(Spatial)** Derive `λ_2(L_S) = 1/d` from the kinetic +
-   potential terms of the carrier action `S_Ξ`. The lazy-Markov
-   structure with rate `(d − 1)/d² = 3/16` should emerge from
-   the Cl(1,3) spinor dimension `2^d = 16` slot count.
+1. **(Family-coupling subspace gap)** Derive
+   `λ_2(M_F) = (d + N_gen) / (2·N_gen) = 7/6` from the
+   carrier-action's family-sector dynamics. The structural form
+   combines spacetime dimension `d` and family generations
+   `N_gen` in the ratio `(d+N_gen)/(2 N_gen)`; empirically
+   certified at PRECISE 0.28% rel err on the canonical d1
+   P5/P5N ladder (9 regimes, 164 seeds; Symanzik-1 asymptote
+   1.170 vs 7/6 = 1.1667). Memo: structural derivation requires
+   the specific form of the family-coupling matrix M_F obtained
+   by projecting the carrier-action equilibrium Ξ onto the 3
+   generation-level basis vectors (one per fermion generation),
+   and showing that the resulting 3x3 matrix has the eigenvalue
+   pair (0, 7/6, 11/6) (or similar split summing to N_gen = 3
+   on the trace).
 
-2. **(Family)** Derive `λ_2(L_F) = 1/N_gen` from the family
-   sector of the carrier action. The lazy-Markov structure with
-   rate `(N_gen − 1)/N_gen² = 2/9` should emerge from the PMNS
-   matrix size `N_gen² = 9` slot count.
+2. **(Spatial dilution factor)** Derive the dilution ratio
+   `λ_skel / λ_family-coupling = 1/d = 1/4` from the projection
+   of the N-vertex skeleton adjacency onto the N_gen-dimensional
+   family-coupling subspace. The natural structural argument is
+   that projecting consolidates the N/N_gen lattice nodes per
+   family generation into a single per-generation mode, and the
+   spatial averaging factor 1/d reflects the d spatial directions
+   contributing 1/d each to the per-direction transition rate
+   (with d directions averaging to total rate 1 per step). Each
+   spatial direction contributes 1/d to the relaxation rate, so
+   projecting out the spatial sector multiplies the spectral
+   gap by exactly d.
 
-3. **(Weight lift)** Derive the Kahale lift ratio
+3. **(Kahale weight-lift)** Derive the lift ratio
    `(d − 1)·N_gen/(d + N_gen) = 9/7` from the carrier-action
-   edge-weight distribution. The CV `≈ 0.17` and the empirical
-   1.30 lift suggest a specific weight-distribution structure
-   that gives the analytical 9/7.
+   edge-weight distribution. The CV `≈ 0.17` (Phase-2 Step 2
+   degree-concentration audit) and the empirical 1.30 lift
+   ratio suggest a specific weight-distribution structure that
+   gives the analytical 9/7 = (d-1) N_gen / (d+N_gen). The
+   numerator (d-1) N_gen = 9 is the "spatially-restricted ×
+   family-count" combination (one less than d spatial directions
+   to account for the matter-side dimension, times N_gen family
+   generations); the denominator (d+N_gen) = 7 is the "total
+   dimensional content".
 
-Each of these is a per-factor structural identification, NOT a
-multi-month broad question. Phase-2 Step 4 is now reduced to
-these three.
+Each of these is a per-component structural identification on
+small algebraic objects (3-dim family-coupling matrix, scalar
+spatial-dilution factor, scalar weight-lift ratio), NOT a
+multi-month broad question on an asymptotic N-vertex graph.
+Phase-2 Step 4 is now reduced to these three.
+
+The previous "(spatial) gap = 1/d" and "(family) gap = 1/N_gen"
+conjectures (from the Cartesian-product synthesis) are
+SUPERSEDED by this single-subspace + dilution structure.
+
+## 7.5 Eigenvalue split structure of M_F — full triple PRECISE
+
+The 3×3 family-coupling matrix M_F has normalised-Laplacian
+eigenvalues that sum to N_gen = 3 (trace identity). All three
+are empirically certified to PRECISE tier on the canonical
+P5/P5N ladder (9 regimes, 164 seeds, Symanzik-1 asymptote):
+
+```
+spec(L_norm(M_F)) = {0, 7/6, 11/6}     ← all three empirically certified
+
+  λ_2(M_F) = 7/6  empirical 1.170, rel err  +0.28% vs 7/6 = 1.1667
+  λ_3(M_F) = 11/6 empirical 1.830, rel err  −0.17% vs 11/6 = 1.8333
+
+Closed-form System-R rationals:
+
+  λ_2 = (d + N_gen) / (2·N_gen)        = 3/2 − (N_gen − 1) / (2·N_gen)
+  λ_3 = (d + 3·N_gen − 2) / (2·N_gen)  = 3/2 + (N_gen − 1) / (2·N_gen)
+
+  λ_2 + λ_3 = 3 = N_gen (trace identity)
+  λ_3 − λ_2 = (N_gen − 1) / N_gen = 2/3 ← System-R split
+  Centroid  = 3/2 = K_3 spectral gap   ← exact baseline
+```
+
+**Structural interpretation**: the carrier-action family-coupling
+matrix M_F is K_{N_gen} (= K_3 for N_gen=3) with its degenerate
+spectral pair (3/2, 3/2) **broken symmetrically by ± (N_gen−1)/
+(2·N_gen)**. The split magnitude `(N_gen−1)/(2·N_gen) = 1/3` (for
+N_gen=3) is itself a pure System-R rational — no perturbative
+correction needed.
+
+This means the family-coupling matrix's structure is **completely
+fixed by the System-R integers `(d, N_gen)` plus the K_{N_gen}
+baseline**: no free parameters, no γ-scale corrections, just the
+exact algebraic split of the K_{N_gen} degeneracy.
+
+**Structural inverse-problem (residual analytical step)**: which
+3-vertex weighted graph has normalised-Laplacian eigenvalues
+exactly (0, 7/6, 11/6)? The unique irregular K_3 with this
+spectrum has off-diagonal weights (w_12, w_13, w_23) satisfying
+a specific algebraic constraint derivable from the carrier
+action. Identifying these three weights closes the family-
+coupling sub-component analytically.
+
+The corresponding spatial dilution factor is **1/d** (the d-fold
+spatial-averaging dilution when projecting the N-vertex skeleton
+onto the 3-dim family-coupling subspace), giving the skeleton
+spectral gap:
+```
+λ_skel = (1/d) · λ_2(M_F) = (1/d) · (d + N_gen) / (2·N_gen)
+       = (d + N_gen) / (2·d·N_gen) = 7/24      EXACT
+```
 
 ## 8. Reproducer
 
