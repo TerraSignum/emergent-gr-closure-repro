@@ -5914,23 +5914,40 @@ $9/7\!=\!(d\!-\!1)N_{\rm gen}/(d\!+\!N_{\rm gen})$
 
 Compared with the previous broad multi-month framing
 ``prove the skeleton is a near-Ramanujan expander with
-$d_{\rm eff}\!=\!12$'', the Cartesian-product synthesis
-reduces Step~$4$a to two sharper per-factor structural
-questions (spatial gap $=1/d$ from Cl$(1,3)$ spinor
-weighting; family gap $=1/N_{\rm gen}$ from PMNS-matrix
-weighting). The algebraic chain
+$d_{\rm eff}\!=\!12$'', the Cartesian-product
+\emph{algebraic factorisation} reduces Step~$4$a from a
+single broad question to a sharper algebraic
+question: identify the structural mechanism on the carrier-
+action equilibrium graph that produces a normalised-Laplacian
+spectral gap matching the arithmetic mean of $1/d$ and
+$1/N_{\rm gen}$. The natural per-factor interpretation as
+literal spatial and family factor graphs with gaps $1/d$ and
+$1/N_{\rm gen}$ respectively is \emph{not} directly supported
+by the existing P1-P5 family-phase microscopic data; the
+GFS-style family-coupling matrix on that dataset
+($136$ seeds, lattice size $28$) has normalised-Laplacian
+spectral gap $\approx 1.21$, regime-stable across P1-P5,
+which is close to the $K_{3}$ baseline $3/2$ with a
+$(1\!+\!\gamma)^{2}$ symmetry-breaking signature rather than
+the conjectured $1/N_{\rm gen}\!=\!1/3$
+(\path|src/verify_lemma_B_family_factor_p1p2prime.py|,
+\path|outputs/verify_lemma_B_family_factor_p1p2prime.json|).
+The algebraic chain
 \begin{equation}
 \tfrac{3}{8}\;=\;\bigl(\tfrac{7}{24}\bigr)\cdot\bigl(\tfrac{9}{7}\bigr)
             \;=\;\tfrac{d\!-\!1}{2\,d}
 \label{eq:lambda_w_chain}
 \end{equation}
-closes the weighted-Laplacian asymptote exactly, modulo the
-two per-factor structural identifications. Each of these is
-session-tauglich, not multi-month, since the factor graphs
-are finite (size $d$ and $N_{\rm gen}$ respectively) and the
-lazy-Markov rates are determined by the framework's existing
-structural denominators $2^{d}$ and $N_{\rm gen}^{2}$.
-Memo: \path|notes/lemma_B_step4a_carrier_synthesis_derivation.md|.
+closes the weighted-Laplacian asymptote exactly. The status is
+therefore: the algebraic factorisation is empirically certified
+at PRECISE tier on the canonical skeleton, the Kahale lift
+factor is empirically certified at PRECISE tier, and the
+algebraic chain $3/8 = (7/24)\cdot(9/7) = (d\!-\!1)/(2d)$ is
+exact; the structural mechanism by which the carrier-action
+equilibrium produces this specific factorisation, however,
+remains open and is not a literal product of two factor graphs
+with the algebraic decomposition gaps. Session-level memo:
+\path|notes/lemma_B_step4a_carrier_synthesis_derivation.md|.
 \end{proposition}
 
 \begin{proposition}[Skeleton diameter scales logarithmically:

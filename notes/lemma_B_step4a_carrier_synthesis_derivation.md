@@ -1,13 +1,33 @@
 # Lemma B Step 4a/4b — analytical derivation
 ## (session-tauglich attempt, 2026-05-13)
 
-**Status**: structural identification + per-factor lazy-rate
-derivation grounded in existing framework constants (Cl(1,3)
-spinor dimension, PMNS matrix size, β_π denominator).
-Reproducer: `src/verify_lemma_B_carrier_spectral_synthesis.py`
-(commit 6c52dcc). Empirical match for the Cartesian-product
-factorisation is PRECISE (0.24% rel err on 10 P5/P5N regimes,
-184 seeds, Symanzik-1 fit).
+**Status (REVISED 2026-05-13 after family-phase test)**:
+- ✓ Algebraic identity `7/24 = (1/d + 1/N_gen)/2` empirically
+  certified at 0.24% rel err on the canonical P5/P5N skeleton
+  (commit 6c52dcc).
+- ✓ Kahale-type weight lift `9/7 = (d-1)·N_gen/(d+N_gen)`
+  empirically certified at 0.79% rel err.
+- ✓ Algebraic chain `3/8 = (7/24)·(9/7) = (d-1)/(2d)` exact.
+- ✗ Per-factor "family gap = 1/N_gen" conjecture FALSIFIED on
+  the existing P1-P5 family_phase_microscopic dataset
+  (commit f5d5f35): empirical family-coupling matrix lambda_2
+  is ≈ 1.21 ≈ (1+γ)² across 136 seeds, NOT 1/N_gen = 0.33
+  (rel err +264%, 95% CI excludes 1/N_gen).
+- ? Per-factor "spatial gap = 1/d" conjecture untested; should
+  be regarded as equally skeptical.
+- Conclusion: the Cartesian-product synthesis is the
+  ALGEBRAIC factorisation of the empirical asymptote, NOT a
+  literal product-of-graphs structural decomposition. The
+  exact structural mechanism producing the (1/d + 1/N_gen)/2
+  spectral gap on the carrier-action skeleton remains open.
+
+Reproducers:
+- `src/verify_lemma_B_carrier_spectral_synthesis.py` (commit
+  6c52dcc): main skeleton spectral-gap empirical asymptote +
+  algebraic factorisation match.
+- `src/verify_lemma_B_family_factor_p1p2prime.py` (commit
+  f5d5f35): family-factor 1/N_gen conjecture falsification on
+  P1-P5 family-phase data.
 
 ---
 
