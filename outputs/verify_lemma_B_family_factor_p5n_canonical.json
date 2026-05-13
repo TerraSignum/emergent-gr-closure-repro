@@ -1,0 +1,75 @@
+{
+  "method": "verify_lemma_B_family_factor_p5n_canonical",
+  "stand": "2026-05-13",
+  "d": 4,
+  "N_gen": 3,
+  "target_lambda_2": 0.3333333333333333,
+  "rows": [
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_seeds": 24,
+      "lambda_2_mean": 1.194014352196012,
+      "lambda_2_sem": 0.02417899720603507
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "n_seeds": 24,
+      "lambda_2_mean": 1.2298874969293225,
+      "lambda_2_sem": 0.027499574607239632
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "n_seeds": 24,
+      "lambda_2_mean": 1.1993780191982133,
+      "lambda_2_sem": 0.022265622916109687
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds": 24,
+      "lambda_2_mean": 1.2317118833727259,
+      "lambda_2_sem": 0.02592825375159627
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "n_seeds": 12,
+      "lambda_2_mean": 1.1741331037453426,
+      "lambda_2_sem": 0.029263707663237472
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_seeds": 8,
+      "lambda_2_mean": 1.1589039420072698,
+      "lambda_2_sem": 0.05369670552694229
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_seeds": 12,
+      "lambda_2_mean": 1.1698354372972668,
+      "lambda_2_sem": 0.03361636846543618
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_seeds": 12,
+      "lambda_2_mean": 1.18764148757391,
+      "lambda_2_sem": 0.035542676197851966
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_seeds": 12,
+      "lambda_2_mean": 1.1918073249255856,
+      "lambda_2_sem": 0.02523899992449033
+    }
+  ],
+  "symanzik_fit_a_inf": 1.169718267341785,
+  "symanzik_fit_b": 2.8580442878472647,
+  "symanzik_fit_r2": 0.3210502113328445
+}
