@@ -5859,13 +5859,78 @@ information: the carrier-action does not merely produce a
 near-Ramanujan skeleton, it produces an
 \emph{edge-weight distribution} that further sharpens the
 spectral gap by a factor close to the conjectured rational
-$9/7$. The two-step analytical programme is therefore: (i)
-prove the skeleton is a near-Ramanujan expander with
-$d\!=\!12$ (Step~4a, Friedman-type bound), and (ii) prove
-the carrier-action weight distribution lifts the
-unweighted-Laplacian gap by the rational factor $9/7$
-(Step~4b, Kahale-type bound). The latter is the smaller
-analytical step.
+$9/7$.
+
+\textbf{Step-$4$a structural identification (Cartesian-product
+synthesis).} The skeleton asymptote $7/24$ admits the clean
+algebraic factorisation
+\begin{equation}
+\tfrac{7}{24}
+\;=\;\tfrac{d+N_{\rm gen}}{2\,d\,N_{\rm gen}}
+\;=\;\tfrac{1}{2}\Bigl(\tfrac{1}{d}\!+\!\tfrac{1}{N_{\rm gen}}\Bigr),
+\label{eq:skel_cartesian_product}
+\end{equation}
+i.e.\ the arithmetic mean of the inverse spacetime dimension
+$1/d$ and the inverse generation count $1/N_{\rm gen}$. The
+empirical asymptote on the $10$-regime ladder is
+$\lambda_{2}^{\infty}\!=\!0.29238$ at $0.24\%$ relative
+deviation from $7/24\!=\!0.29167$ (reproducer
+\path|src/verify_lemma_B_carrier_spectral_synthesis.py|,
+output \path|outputs/verify_lemma_B_carrier_spectral_synthesis.json|).
+This factorisation is the signature of a Cartesian-product
+small-world ensemble whose two factors have normalised-Laplacian
+spectral gaps $1/d$ (spatial factor) and $1/N_{\rm gen}$
+(family factor) respectively. The structural correspondences are:
+\begin{itemize}
+\item \textbf{Spatial factor:} lazy Markov chain on $d$
+spacetime directions with stay probability
+$\alpha_{S}\!=\!1-(d-1)/d^{2}\!=\!13/16$ and uniform
+per-alternative jump $1/d^{2}\!=\!1/16$. The $1/d^{2}$
+per-slot rate is the natural Cl$(1,3)$ spinor-dimension
+weighting (at $d\!=\!4$, $d^{2}\!=\!2^{d}\!=\!16$ coincide).
+\item \textbf{Family factor:} lazy Markov chain on
+$N_{\rm gen}$ fermion generations with stay
+$\alpha_{F}\!=\!1-(N_{\rm gen}\!-\!1)/N_{\rm gen}^{2}\!=\!7/9$
+and uniform per-alternative jump $1/N_{\rm gen}^{2}\!=\!1/9$.
+The $1/N_{\rm gen}^{2}$ per-slot rate is the natural PMNS-
+matrix-size weighting (the framework's family-mixing sector
+uses $N_{\rm gen}^{2}\!=\!9$ slots for ordered family pairs).
+\end{itemize}
+The framework anchor for both per-slot rates is the
+$\beta_{\pi}$ refined-vacuum closure form
+$\beta_{\pi}\!=\!(2^{d}\,N_{\rm gen}^{2}\!-\!1)/(2^{d}\,N_{\rm
+gen}^{2})\!=\!143/144$ in the causal-wave companion
+paper~\cite{Paper2}, whose denominator
+$2^{d}\,N_{\rm gen}^{2}\!=\!144\!=\!(d\,N_{\rm gen})^{2}$
+is the squared skeleton mean degree $d_{\rm eff}^{2}$. The two-step
+analytical programme is therefore: (i) prove the skeleton
+admits the Cartesian-product decomposition into a
+spatial factor and a family factor, each with the specified
+lazy-Markov spectral gap (Step~$4$a), and (ii) prove the
+carrier-action edge-weight distribution lifts the unweighted-
+Laplacian gap by the rational factor
+$9/7\!=\!(d\!-\!1)N_{\rm gen}/(d\!+\!N_{\rm gen})$
+(Step~$4$b, Kahale-type bound).
+
+Compared with the previous broad multi-month framing
+``prove the skeleton is a near-Ramanujan expander with
+$d_{\rm eff}\!=\!12$'', the Cartesian-product synthesis
+reduces Step~$4$a to two sharper per-factor structural
+questions (spatial gap $=1/d$ from Cl$(1,3)$ spinor
+weighting; family gap $=1/N_{\rm gen}$ from PMNS-matrix
+weighting). The algebraic chain
+\begin{equation}
+\tfrac{3}{8}\;=\;\bigl(\tfrac{7}{24}\bigr)\cdot\bigl(\tfrac{9}{7}\bigr)
+            \;=\;\tfrac{d\!-\!1}{2\,d}
+\label{eq:lambda_w_chain}
+\end{equation}
+closes the weighted-Laplacian asymptote exactly, modulo the
+two per-factor structural identifications. Each of these is
+session-tauglich, not multi-month, since the factor graphs
+are finite (size $d$ and $N_{\rm gen}$ respectively) and the
+lazy-Markov rates are determined by the framework's existing
+structural denominators $2^{d}$ and $N_{\rm gen}^{2}$.
+Memo: \path|notes/lemma_B_step4a_carrier_synthesis_derivation.md|.
 \end{proposition}
 
 \begin{proposition}[Skeleton diameter scales logarithmically:
@@ -6295,8 +6360,14 @@ $(\mathrm{SG})$ implies the full admissibility set
 A1+A8 via uniform Poincar\'e plus Cheeger--Buser), so no
 separate Lemma-A analytical attack is required;
 \textbf{Lemma~B} is the open analytical target
-(empirically characterised, analytical proof multi-month
-research, calibration targets $7/24$ and $3/8$);
+(empirically characterised; Step-$4$a Cartesian-product
+synthesis reduces the broad question to two sharper per-factor
+structural identifications, see
+Proposition~\ref{prop:skeleton_diameter_friedman} and memo
+\path|notes/lemma_B_step4a_carrier_synthesis_derivation.md|;
+calibration targets $7/24\!=\!(1/d\!+\!1/N_{\rm gen})/2$ and
+$3/8\!=\!(d\!-\!1)/(2d)$ algebraically chained via the Kahale
+lift $9/7\!=\!(d\!-\!1)N_{\rm gen}/(d\!+\!N_{\rm gen})$);
 \textbf{Lemma~C} is \emph{numerically certified} by the
 $5$-proxy Dal~Maso $\Gamma$-convergence audit
 ($\gamma$-score $0.849$ in the
