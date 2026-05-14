@@ -23,9 +23,66 @@ SCHEMA = "worldformula/branch_metadata/v1"
 
 # JSONs that legitimately don't carry branch_metadata (e.g. cross-regime
 # aggregates, anchor files that are corpus-wide rather than regime-specific).
+# Enumerated 2026-05-14 (Round 4 R4-S1 fix). When adding a NEW outputs/*.json,
+# either ensure peer_reviews/iter7_branch_tag_apply.py tags it, OR add its
+# basename here after confirming the JSON is NOT a per-regime audit output.
+# The strict set ensures any silent tag-drop on a previously-tagged file
+# fails the test (Round-2 R2-C3 anti-regression purpose).
 LEGITIMATELY_UNTAGGED = {
-    # Auto-discovered as of 2026-05-14. Add new entries here only after
-    # confirming the JSON is NOT a per-regime audit output.
+    "audit_omega_m_dual_form_corpus_anchors.json",
+    "bh_sector_recompute.json",
+    "clp_c_gamma_convergence_detailed_audit.json",
+    "clp_full_report.json",
+    "cosmological_constant_recompute.json",
+    "curvature_fixed_point_certificate.json",
+    "dimension_and_arrow_recompute.json",
+    "einstein_gap_5point_recompute.json",
+    "einstein_metric_stress_certificate.json",
+    "emergent_time_recompute.json",
+    "graviton_cpt_recompute.json",
+    "hawking_spectrum_recompute.json",
+    "inflation_closure_recompute.json",
+    "lorentzian_3plus1_recompute.json",
+    "regime_invariance_audit.json",
+    "schwarzschild_defect_recompute.json",
+    "stage6f_full_tensor_norm_audit.json",
+    "stage6f_signed_dm_hypothesis_test.json",
+    "sup_aware_envelope_refinement.json",
+    "vacuum_stability_recompute.json",
+    "verify_admissibility_counterexample_and_spectral_gap.json",
+    "verify_chirality_flip_cross_sector.json",
+    "verify_clp_b_architectural_ceiling.json",
+    "verify_clp_b_redundancy_audit.json",
+    "verify_cone_tightness_extended_ladder.json",
+    "verify_cone_tightness_p5_ladder.json",
+    "verify_density_contrast_a0_structural.json",
+    "verify_gap_monotonicity_p5_ladder.json",
+    "verify_lemma_B_M_F_empirical_off_diagonal_extraction.json",
+    "verify_lemma_B_M_F_off_diagonal_identification.json",
+    "verify_lemma_B_alpha_xi_master_identity.json",
+    "verify_lemma_B_branch_resolved_fit.json",
+    "verify_lemma_B_carrier_spectral_synthesis.json",
+    "verify_lemma_B_defect_condensation_test.json",
+    "verify_lemma_B_degree_concentration.json",
+    "verify_lemma_B_edge_correlation.json",
+    "verify_lemma_B_edge_weight_structure.json",
+    "verify_lemma_B_family_factor_p1p2prime.json",
+    "verify_lemma_B_family_factor_p5n_canonical.json",
+    "verify_lemma_B_fiedler_halo_test.json",
+    "verify_lemma_B_fiedler_overlap.json",
+    "verify_lemma_B_fiedler_vs_corpus_matter_core.json",
+    "verify_lemma_B_fiedler_vs_t00.json",
+    "verify_lemma_B_matter_branch_universality.json",
+    "verify_lemma_B_p0p8_cross_validation.json",
+    "verify_lemma_B_percentile_decomposition.json",
+    "verify_lemma_B_radial_hypothesis.json",
+    "verify_lemma_B_skeleton_diameter.json",
+    "verify_lemma_B_skeleton_laplacian.json",
+    "verify_lemma_B_spectral_fingerprint.json",
+    "verify_lemma_B_threshold_sweep.json",
+    "verify_lemma_B_uniform_poincare.json",
+    "verify_lemma_B_universal_X_minus_1_over_X_pattern.json",
+    "xi_graph_topology_deep.json",
 }
 
 
@@ -44,25 +101,21 @@ def _is_tagged(path: Path) -> bool:
 
 @pytest.mark.skipif(not OUTPUTS.is_dir(), reason="outputs/ directory absent")
 def test_branch_metadata_present_on_known_tagged():
-    """The 201 JSONs that carried branch_metadata at the 2026-05-14
-    Round-2 snapshot must still carry it. A drop signals that someone
-    re-ran an audit script and lost the tag (the iter7_branch_tag_apply
-    post-hoc injection regression of R2-C3)."""
+    """Strict allowlist (R4-S1 fix): every outputs/*.json must either
+    carry branch_metadata OR appear in LEGITIMATELY_UNTAGGED. Any single
+    silent drop of a tagged file fails the test immediately, which is
+    the iter7_branch_tag_apply post-hoc injection anti-regression
+    purpose of R2-C3."""
     jsons = _all_jsons()
-    untagged = [p.name for p in jsons if not _is_tagged(p)]
-    legit_set = LEGITIMATELY_UNTAGGED
-    # Drift test: if more than the expected ~54 are untagged, fail loudly.
-    new_untagged = [n for n in untagged if n not in legit_set]
-    # We expect ~54 legitimately-untagged outputs at the snapshot. Allow up
-    # to 70 to absorb minor corpus growth without flapping; below that
-    # threshold a regression of the tag-injection workflow is the most
-    # likely cause and the test fails loudly.
-    assert len(new_untagged) <= 70, (
-        f"Branch-metadata drop detected: {len(new_untagged)} untagged "
-        f"JSONs (expected <=70 at the Round-2 snapshot). Re-run "
-        f"peer_reviews/iter7_branch_tag_apply.py or investigate "
-        f"whether a script regression dropped the tag. "
-        f"First-15 untagged: {sorted(new_untagged)[:15]}"
+    untagged = {p.name for p in jsons if not _is_tagged(p)}
+    new_untagged = untagged - LEGITIMATELY_UNTAGGED
+    assert not new_untagged, (
+        f"Branch-metadata drop detected on previously-tagged file(s): "
+        f"{sorted(new_untagged)}. Either re-run "
+        f"peer_reviews/iter7_branch_tag_apply.py to re-tag, OR if the "
+        f"file legitimately should not be tagged (e.g. it is a "
+        f"corpus-wide aggregate, not a per-regime audit), add its "
+        f"basename to LEGITIMATELY_UNTAGGED."
     )
 
 
