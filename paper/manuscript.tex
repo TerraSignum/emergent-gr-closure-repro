@@ -5207,19 +5207,73 @@ $\Gamma_{r_{N}}$, curvature stability $\Delta_{\rm curv}$,
 effective-dimension drift $D_{\rm plateau}$, and patch metric
 $\bar S_{g}$ are the empirical witnesses of (A4)--(A7)
 recorded in the bundled lattice-data outputs.
-\emph{Hypothesis-level gap (why this is a sketch, not a proof).}
-The composition above maps each discrete condition (A1)--(A8)
-to the classical hypothesis it is intended to discharge, but it
-does \emph{not} verify that the discrete conditions are
-\emph{exactly} the hypotheses the cited theorems require --- in
-particular, Sturm's curvature-dimension condition $CD(K,N)$ and
-the Lott--Villani measure-contraction property are not
-explicitly shown to be implied by (A5)+(A6). Promoting this
-result from ``[Sketch]'' to a full ``[Proof]'' would require an
-explicit hypothesis-level table establishing each such
-implication; until then the theorem is used only in the
-conditionally-rigorous sense made explicit in
-Corollary~\ref{cor:cbi_admissibility}.
+
+\smallskip\noindent\emph{Hypothesis-level discharge table.}
+The composition is made precise by mapping each classical
+hypothesis to the discrete condition(s) that discharge it, and
+labelling the status of each implication:
+
+{\small
+\begin{center}
+\begin{tabular}{@{}p{0.31\linewidth}p{0.20\linewidth}p{0.40\linewidth}@{}}
+\toprule
+Classical hypothesis required & Discharged by & Status of the implication \\
+\midrule
+mm-GH precompactness (Sturm~\cite{Sturm2006} $\mathbb{D}$-topology):
+uniform doubling $+$ uniform tightness
+& (A1)$+$(A2)$+$(A8)
+& \textsc{rigorous}. (A8) is the two-sided
+$c\rho^{d_*}\!\le\!\mu(B)\!\le\!C\rho^{d_*}$ doubling/non-collapse
+bound verbatim; (A1)$+$(A2) supply the degree bound and
+common-compact tightness Gromov compactness needs. \\
+\addlinespace
+Limit is a compact length space:
+local chart consistency on overlaps
+& (A4)$+$(A7)
+& \textsc{rigorous} for the length-space structure; the
+\emph{choice} of $\Gamma_{r_N}$ and the $r\!\mapsto\!br$
+robustness functional as the consistency measures is
+framework-defined, not classical. \\
+\addlinespace
+Limit is $d_*$-rectifiable and Ahlfors $d_*$-regular:
+non-collapse $+$ fixed effective dimension
+& (A8)$+$(A6)
+& \textsc{rigorous}. (A8) is Ahlfors $d_*$-regularity; (A6)
+pins the dimension parameter $d_*$. \\
+\addlinespace
+$g_{\rm eff}$ exists $\mu_\infty$-a.e.\ as the $L^\infty$-limit
+of patch metrics: patch metrics Cauchy under refinement
+& (A3)$+$(A4)$+$(A7)
+& \textsc{rigorous} \emph{given} that the framework distortion
+functionals $E_{\rm nstress},\Gamma_{r_N}$ vanish in the limit
+(which is what (A3),(A4) assert). \\
+\addlinespace
+Curvature-dimension control for the limit: a uniform lower
+bound $CD(K,N)$ (Sturm~\cite{Sturm2006}) / the Lott--Villani
+measure-contraction property~\cite{LottVillani2009}
+& (A5)$+$(A6)
+& \textsc{open implication}. (A5) gives only
+$\Delta_{\rm curv}\!\to\!0$ --- the curvature \emph{stabilises}
+--- which is \emph{not} a uniform lower bound $K$; (A6) fixes
+$N\!=\!d_*$ but not $K$. Deriving $CD(K,N)$ or the
+measure-contraction property from (A5)$+$(A6) is the one
+load-bearing implication this sketch does \emph{not} close. \\
+\bottomrule
+\end{tabular}
+\end{center}}
+
+\noindent Four of the five classical hypotheses are discharged
+rigorously (modulo the framework-defined choice of distortion
+functionals, which is a definitional rather than a logical
+gap). The fifth row --- the curvature-dimension lower bound --- is
+the single open implication: this is precisely \emph{why} the
+result is stated as ``[Sketch]'' and used downstream only in the
+conditionally-rigorous sense of
+Corollary~\ref{cor:cbi_admissibility}. Promotion to a full
+``[Proof]'' requires closing the (A5)$+$(A6)$\,\Rightarrow\,CD(K,N)$
+row --- e.g.\ by strengthening (A5) from curvature-\emph{stability}
+to a uniform curvature \emph{lower bound}, or by an independent
+discrete-to-continuum measure-contraction argument.
 \end{proof}
 
 \paragraph{In-repo numerical witnesses of (A1)--(A8).}
