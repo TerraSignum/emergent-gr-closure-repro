@@ -5092,9 +5092,17 @@ canonical-configuration parameters
 (\url{outputs/ratio_asymptote_structural_audit.json}).\qed
 \end{proof}
 
-\begin{theorem}[Continuum Backreaction Identity, CBI]
+\begin{theorem}[Continuum Backreaction Identity, CBI --- conditional on the empirical asymptotes]
 \label{thm:cbi}
-Under the $\mathcal R$ canonical coefficient choice and
+\emph{Conditional statement.} Assume the two empirical-asymptote
+Lemmas~\ref{lem:t00-asymptote} and~\ref{lem:lambda-t-asymptote}
+hold --- i.e. that the Symanzik~$2$ extrapolations of
+$T_{00}^{\Xi}(N)$ and $\Lambda_{t}(N)$ both converge to the
+$\mathcal R$ rational $\alpha_{\xi}^{2}$ in the continuum limit
+(these are numerical extrapolations, $R^{2}=0.54$ and the
+$\Lambda_{t}$ counterpart, \emph{not} closed-form analytic
+limits; see the per-Lemma disclosures). Then, under the
+$\mathcal R$ canonical coefficient choice and
 the per-regime optimal definition of $\Lambda_{t}$, the cosmological-
 tensor time-time component asymptotically equals the relational
 stress-energy time-time component in the continuum limit:
@@ -5122,6 +5130,20 @@ $T_{00}^{\mathrm{grav}}$ follows from definition, and
 $G_{00}\to 0$ from $\kappa_{t}\to 1$ via the optimal-closure
 identity $G_{00}=(1-\kappa_{t})\,T_{00}^{\Xi}$.\qed
 \end{proof}
+
+\noindent\emph{Logical status.} The CBI is a \emph{conditional
+implication}: its antecedents are the two empirical-asymptote
+Lemmas, which are numerical Symanzik extrapolations
+($R^{2}=0.54$ for the $T_{00}^{\Xi}$ leg) rather than
+closed-form analytic limits. The deduction
+``both legs $\to\alpha_{\xi}^{2}$ $\Rightarrow$ ratio $\to 1$''
+is exact algebra; what is empirical, and therefore the
+load-bearing assumption, is that each leg \emph{does} converge
+to $\alpha_{\xi}^{2}$. The CBI should be read at PRECISE tier
+(the $0.85\%$ relative offset of the $T_{00}^{\Xi}$
+extrapolation), not as a strict-EXACT analytic identity; the
+within-$\mathcal R$ algebra is exact, the physical convergence
+is the conditional input.
 
 \paragraph{Continuum-limit framework underlying the CBI.}
 \label{par:continuum_framework_cbi}
@@ -5266,7 +5288,20 @@ The thresholds are $\gamma\!\ge\!0.75$ for
 \texttt{GAMMA\_PARTIAL}, $\gamma\!<\!0.45$ for
 \texttt{GAMMA\_OPEN}; the corpus is in the
 \texttt{GAMMA\_CONVERGED} band.
-\end{theorem}
+
+\emph{Non-independence disclosure.} The C5 proxy is by
+construction the arithmetic mean
+$\tfrac12(\mathrm{C1}+\mathrm{C2})$, i.e.\ it is \emph{not}
+an independent fifth measurement of the
+$\delta S_N\!\to\!\delta S_\infty$ condition but a derived
+quantity. The five-entry mean $\gamma$-score therefore weights
+the C1/C2 information twice. With C5 excluded, the mean of the
+four genuinely-independent proxies is
+$\tfrac14(0.732+1.000+0.832+0.816)=0.845$ --- statistically
+indistinguishable from the reported $0.849$, so the
+\texttt{GAMMA\_CONVERGED} verdict is unchanged either way; but
+the aggregate should be read as a four-proxy certificate with
+a redundant fifth row, not as five independent conditions.
 \begin{proof}[Reproduction.]
 Direct numerical reproduction: run
 \path|src/verify_clp_c_gamma_convergence_detailed.py|; the
@@ -7714,6 +7749,25 @@ spectrum extends this with a continuum of bulk-percentile
 exponents converging on the maximum $\hat\alpha_{p_{96}}\!=\!1.13$
 just below the bulk-matter-core transition.
 \end{theorem}
+
+\paragraph{Statistical status of Theorem~\ref{thm:percentile_spectrum_law}
+(disclosure).} This is an \emph{empirical-regression} result, not
+an analytic derivation: the $\hat\alpha_{\rho}$ are
+log--log slope estimates fitted to the residual ladder, and
+their $95\%$ bootstrap CIs are wide --- e.g.\
+$\hat\alpha_{p_{90}}=0.922\,[0.622,2.245]$ has an upper bound
+$3.6\times$ the central value. The four classical anchor
+rationals ($\mathrm{med}\!\sim\!1/3$,
+$\mathrm{mean}\!\sim\!17/20$, $p_{99}\!\sim\!1$,
+$\sup\!\sim\!1/2$) are stated as \emph{consistent with} the
+fitted exponents (each lies inside its bootstrap CI), \emph{not}
+as values the framework derives or predicts a priori; with CIs
+this wide the consistency is a weak test. The load-bearing,
+CI-robust content of the theorem is the qualitative
+\emph{rising-then-falling profile} and the strictly-positive
+lower CI bound on the ten bulk percentiles --- the specific
+rational identifications are a suggestive overlay at PRECISE
+tier, not a strict-EXACT closure.
 
 \begin{remark}[Compatibility with Theorem~2(ii)]
 The analytic Theorem~2(ii) bound from the parent
