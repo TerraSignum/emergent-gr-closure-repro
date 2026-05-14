@@ -23,7 +23,7 @@ Drei Strenge-Stufen:
 (4) Confidence-Intervall-Verifikation: 1/3 liegt im Power-law-α CI.
 """
 from __future__ import annotations
-import json, os
+import json
 from pathlib import Path
 import numpy as np
 

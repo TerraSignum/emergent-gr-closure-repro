@@ -16,7 +16,6 @@ Output: outputs/verify_O5_spatial_running_lambda_p5n512.json
 from __future__ import annotations
 
 import json
-import math
 import sys
 from pathlib import Path
 

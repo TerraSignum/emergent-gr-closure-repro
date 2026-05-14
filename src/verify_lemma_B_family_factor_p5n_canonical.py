@@ -32,7 +32,6 @@ Output: outputs/verify_lemma_B_family_factor_p5n_canonical.json
 from __future__ import annotations
 
 import json
-import math
 import sys
 from pathlib import Path
 
@@ -187,7 +186,7 @@ def main():
                 M = family_coupling_3x3(xi)
                 gap = spectral_gap_norm_lap(M)
                 gaps.append(gap)
-            except (ValueError, np.linalg.LinAlgError) as e:
+            except (ValueError, np.linalg.LinAlgError):
                 continue
         if not gaps:
             print(f"  [SKIP {regime}: no successful diagonalisations]")

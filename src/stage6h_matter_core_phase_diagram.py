@@ -49,7 +49,6 @@ sys.path.insert(0, str(REPO / "src"))
 from _d1_npz_discovery import find_d1_npz  # noqa: E402
 from stage6f_full_tensor_norm_audit import (  # noqa: E402
     LADDER, LAMBDA_T, LAMBDA_S, load_canonical, load_snapshots,
-    per_node_relative_delta,
 )
 from verify_galerkin_runner_A_hessian_ricci import per_seed_galerkin  # noqa: E402
 from verify_per_eigendirection_residual import (  # noqa: E402

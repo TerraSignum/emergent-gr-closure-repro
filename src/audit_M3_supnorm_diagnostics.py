@@ -35,7 +35,6 @@ import numpy as np
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "src"))
 
-from audit_M3_violations import m3_violation_rate
 from verify_galerkin_runner_A_hessian_ricci import (
     edge_to_matrix, per_seed_galerkin)
 

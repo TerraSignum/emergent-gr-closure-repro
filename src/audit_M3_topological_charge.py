@@ -45,7 +45,7 @@ sys.path.insert(0, str(REPO / "src"))
 
 from verify_galerkin_runner_A_hessian_ricci import edge_to_matrix
 from worldformula.defects.vortices import (
-    triangle_winding, vortex_support_nodes)
+    vortex_support_nodes)
 from worldformula.defects.topological_charge import topological_charge
 
 PARENT = REPO.parent

@@ -46,8 +46,6 @@ sys.meta_path.insert(0, _BlockCupy())
 from _d1_npz_discovery import find_d1_npz
 from verify_galerkin_runner_A_hessian_ricci import (
     edge_to_matrix, per_seed_galerkin)
-from verify_per_eigendirection_residual import (
-    per_node_eigendirection_residuals)
 
 
 REGIMES = [

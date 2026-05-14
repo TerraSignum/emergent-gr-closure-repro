@@ -59,9 +59,8 @@ from _d1_npz_discovery import find_d1_npz
 from verify_galerkin_runner_A_hessian_ricci import (
     D_MIN, ELL_0, EPS_D, XI_THRESH, edge_to_matrix, per_seed_galerkin)
 from verify_higher_order_terms_all8 import (
-    LAMBDA_T, LAMBDA_S, ALPHA_XI, GAMMA,
-    per_node_residual, t00_lift,
-    hessian_ricci_quadratic, lambda_running)
+    LAMBDA_T, LAMBDA_S, ALPHA_XI, per_node_residual, t00_lift,
+    hessian_ricci_quadratic)
 
 
 REGIMES_TO_TEST = [

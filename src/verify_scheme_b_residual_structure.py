@@ -121,7 +121,7 @@ def ks_against_zero_normal(x):
     sorted_x = np.sort(x)
     n = len(sorted_x)
     # CDF of N(0, sigma)
-    from math import erf, sqrt
+    from math import erf
     Phi = np.array([0.5 * (1 + erf(v / (sigma * np.sqrt(2.0)))) for v in sorted_x])
     F_emp = np.arange(1, n + 1) / n
     D = float(np.max(np.abs(F_emp - Phi)))

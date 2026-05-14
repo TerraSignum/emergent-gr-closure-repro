@@ -29,7 +29,6 @@ Output: outputs/verify_cone_tightness_extended_ladder.json
 """
 from __future__ import annotations
 import json
-import sys
 from pathlib import Path
 
 import numpy as np

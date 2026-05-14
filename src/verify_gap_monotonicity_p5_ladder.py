@@ -18,7 +18,6 @@ Output: outputs/verify_gap_monotonicity_p5_ladder.json
 """
 from __future__ import annotations
 import json
-import sys
 from pathlib import Path
 
 import numpy as np

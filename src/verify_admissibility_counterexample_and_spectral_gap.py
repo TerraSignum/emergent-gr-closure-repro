@@ -33,7 +33,6 @@ Output: outputs/verify_admissibility_counterexample_and_spectral_gap.json
 """
 from __future__ import annotations
 import json
-import sys
 from pathlib import Path
 
 import numpy as np

@@ -30,7 +30,6 @@ from __future__ import annotations
 import json
 import math
 from fractions import Fraction
-from itertools import product
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent

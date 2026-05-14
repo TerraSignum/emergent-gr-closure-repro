@@ -51,7 +51,6 @@ Output: outputs/verify_lemma_B_carrier_spectral_synthesis.json
 from __future__ import annotations
 
 import json
-import math
 import sys
 from pathlib import Path
 

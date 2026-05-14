@@ -50,7 +50,7 @@ class _BlockCupy:
 sys.meta_path.insert(0, _BlockCupy())
 
 from verify_galerkin_runner_A_hessian_ricci import (
-    edge_to_matrix, per_seed_galerkin)
+    per_seed_galerkin)
 from verify_within_p5_extended_seeds_runner_A import (
     find_best_npz, has_kq_persisted, load_seeds, LADDER)
 

@@ -72,9 +72,9 @@ class _BlockCupy:
 sys.meta_path.insert(0, _BlockCupy())
 
 from stage6f_full_tensor_norm_audit import (  # noqa: E402
-    LADDER, gather_regime, LAMBDA_T, LAMBDA_S, per_node_relative_delta)
+    LADDER, LAMBDA_T, LAMBDA_S, per_node_relative_delta)
 from verify_galerkin_runner_A_hessian_ricci import (  # noqa: E402
-    edge_to_matrix, ELL_0, D_MIN, EPS_D, XI_THRESH, per_seed_galerkin)
+    ELL_0, XI_THRESH, per_seed_galerkin)
 from _d1_npz_discovery import find_d1_npz  # noqa: E402
 
 OUT = REPO / "outputs" / "stage6f_signed_dm_hypothesis_test.json"

@@ -48,7 +48,7 @@ class _BlockCupy:
 sys.meta_path.insert(0, _BlockCupy())
 
 from stage6f_full_tensor_norm_audit import (  # noqa: E402
-    LADDER, LAMBDA_T, LAMBDA_S, per_node_relative_delta,
+    LAMBDA_T, LAMBDA_S, per_node_relative_delta,
     load_canonical, load_snapshots)
 from verify_galerkin_runner_A_hessian_ricci import (  # noqa: E402
     XI_THRESH, ELL_0, per_seed_galerkin)

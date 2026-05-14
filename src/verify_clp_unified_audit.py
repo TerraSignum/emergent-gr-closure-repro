@@ -29,7 +29,7 @@ import math
 from pathlib import Path
 
 import numpy as np
-from scipy.optimize import minimize, minimize_scalar
+from scipy.optimize import minimize_scalar
 
 REPO = Path(__file__).resolve().parent.parent.parent
 D1_DIRS = [

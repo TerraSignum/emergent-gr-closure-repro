@@ -26,7 +26,6 @@ beta_pi, eps_sync2, D_Omega), to be compared against empirical values.
 from __future__ import annotations
 import json
 from pathlib import Path
-import numpy as np
 from fractions import Fraction
 
 # ============================================================

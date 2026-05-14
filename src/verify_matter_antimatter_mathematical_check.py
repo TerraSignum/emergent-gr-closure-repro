@@ -72,7 +72,7 @@ class _BlockCupy:
 sys.meta_path.insert(0, _BlockCupy())
 
 from verify_galerkin_runner_A_hessian_ricci import (
-    XI_THRESH, edge_to_matrix, per_seed_galerkin)
+    XI_THRESH, per_seed_galerkin)
 from verify_higher_order_terms_all8 import (
     LAMBDA_T, LAMBDA_S, per_node_residual)
 

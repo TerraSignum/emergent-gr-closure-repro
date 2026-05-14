@@ -51,7 +51,7 @@ sys.meta_path.insert(0, _BlockCupy())
 
 from _d1_npz_discovery import find_d1_npz
 from verify_galerkin_runner_A_hessian_ricci import (
-    edge_to_matrix, frob_residual_three_variants, per_seed_galerkin)
+    edge_to_matrix, per_seed_galerkin)
 
 
 LADDER_REGIMES = [

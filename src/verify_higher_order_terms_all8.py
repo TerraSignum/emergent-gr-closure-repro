@@ -47,8 +47,7 @@ sys.meta_path.insert(0, _BlockCupy())
 
 from _d1_npz_discovery import find_d1_npz
 from verify_galerkin_runner_A_hessian_ricci import (
-    D_MIN, ELL_0, EPS_D, XI_THRESH, edge_to_matrix, per_seed_galerkin,
-    Z_XI, KAPPA_XI, ZETA_1, OMEGA, ZETA_3, A_K, A_Q)
+    D_MIN, ELL_0, EPS_D, XI_THRESH, edge_to_matrix, per_seed_galerkin)
 
 ALPHA_XI = 0.9
 GAMMA = 0.1

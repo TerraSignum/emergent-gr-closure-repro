@@ -31,7 +31,6 @@ matplotlib.rcParams["pdf.fonttype"] = 42  # embed TrueType (vector, arXiv-friend
 matplotlib.rcParams["ps.fonttype"] = 42
 
 import matplotlib.pyplot as plt
-from matplotlib.patches import Patch
 
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / "src"))

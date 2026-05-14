@@ -39,7 +39,7 @@ sys.meta_path.insert(0, _BlockCupy())
 
 from _d1_npz_discovery import find_d1_npz
 from verify_galerkin_runner_A_hessian_ricci import (
-    D_MIN, ELL_0, EPS_D, XI_THRESH, edge_to_matrix, per_seed_galerkin)
+    edge_to_matrix, per_seed_galerkin)
 from verify_higher_order_terms_all8 import (
     LAMBDA_T, LAMBDA_S, hessian_ricci_quadratic)
 from verify_per_eigendirection_residual import (

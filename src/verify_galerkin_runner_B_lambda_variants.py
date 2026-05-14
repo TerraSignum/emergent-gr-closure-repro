@@ -27,7 +27,6 @@ Usage:
 """
 from __future__ import annotations
 import json
-import math
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parent.parent
@@ -53,7 +52,7 @@ LAMBDA_S_STRUCT = -GAMMA ** 2 / 2.0  # -1/200
 
 import sys as _sys
 _sys.path.insert(0, str(Path(__file__).resolve().parent))
-from _d1_npz_discovery import find_d1_npz, standalone_message
+from _d1_npz_discovery import find_d1_npz
 
 LADDER_REGIMES = [
     ("P0", 18), ("P1", 28), ("P2prime", 30), ("P3", 36),

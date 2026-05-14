@@ -20,7 +20,6 @@ Output: outputs/stage6f_fine_percentile_audit.json
 from __future__ import annotations
 
 import json
-import math
 import random
 import sys
 from pathlib import Path

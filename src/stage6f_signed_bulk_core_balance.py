@@ -52,7 +52,7 @@ class _BlockCupy:
 
 sys.meta_path.insert(0, _BlockCupy())
 
-from stage6f_full_tensor_norm_audit import LADDER, gather_regime  # noqa: E402
+from stage6f_full_tensor_norm_audit import LADDER  # noqa: E402
 
 OUT = REPO / "outputs" / "stage6f_signed_bulk_core_balance.json"
 
@@ -98,7 +98,7 @@ def main():
         for xi_mat, psi, k_field, q_field in seeds:
             try:
                 prep = per_seed_galerkin(xi_mat, psi, k_field, q_field, n, np)
-            except Exception as exc:  # noqa: BLE001
+            except Exception:  # noqa: BLE001
                 continue
             tr = _signed_trace_diff(prep)
             # delta_full from the standard audit, to identify core nodes

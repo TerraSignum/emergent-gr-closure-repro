@@ -104,7 +104,6 @@ def hilbert_T00_per_seed(d, seed_idx, n_lat):
 def schwarzschild_unit_test():
     """Verify: in vacuum (G=T=0) with Lambda non-zero, residual = 2|Lambda|.
     With Lambda=0, residual = 0."""
-    import numpy as np
     # Vacuum, no Lambda: should be 0.
     g00 = 0.0
     gii = 0.0

@@ -33,7 +33,7 @@ from __future__ import annotations
 import json
 import sys
 from fractions import Fraction
-from itertools import combinations, product
+from itertools import combinations
 from pathlib import Path
 
 import numpy as np

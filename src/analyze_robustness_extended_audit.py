@@ -22,7 +22,6 @@ runs at N=50,64,72,84,100).
 """
 from __future__ import annotations
 import json
-import math
 import sys
 from pathlib import Path
 
