@@ -1,41 +1,41 @@
 {
   "title": "Matter-branch closure discrimination test",
-  "n_observations": 52,
+  "n_observations": 72,
   "n_regimes": 6,
   "n_max": 2048,
   "selected_model": "symanzik_3",
-  "asymptote_mean": 0.4127944000965673,
-  "asymptote_std": 0.003714544104513139,
+  "asymptote_mean": 0.42010115172327755,
+  "asymptote_std": 0.003233615666184339,
   "asymptote_ci95": [
-    0.4055138936517216,
-    0.42007490654141305
+    0.4137632650175562,
+    0.4264390384289989
   ],
   "candidate_verdicts": {
     "79/200": {
       "value": 0.395,
-      "z": 4.790466769514798,
-      "verdict": "EXCLUDED (z=+4.79)"
+      "z": 7.762564978198801,
+      "verdict": "EXCLUDED (z=+7.76)"
     },
     "13/32": {
       "value": 0.40625,
-      "z": 1.7618313075394436,
-      "verdict": "CONFIRMED (z=+1.76)"
+      "z": 4.28348732600677,
+      "verdict": "EXCLUDED (z=+4.28)"
     },
     "2/5": {
       "value": 0.4,
-      "z": 3.4444065641924153,
-      "verdict": "EXCLUDED (z=+3.44)"
+      "z": 6.216308243891228,
+      "verdict": "EXCLUDED (z=+6.22)"
     },
     "11/27": {
       "value": 0.4074074074074074,
-      "z": 1.4502432970481576,
-      "verdict": "CONFIRMED (z=+1.45)"
+      "z": 3.925557526398543,
+      "verdict": "EXCLUDED (z=+3.93)"
     },
     "9/22": {
       "value": 0.4090909090909091,
-      "z": 0.9970243726971743,
-      "verdict": "CONFIRMED (z=+1.00)"
+      "z": 3.4049323633320054,
+      "verdict": "EXCLUDED (z=+3.40)"
     }
   },
-  "overall_verdict": "PARTIAL: 9/22 closest (z=+1.00); 2 others not excluded"
+  "overall_verdict": "NEITHER: all candidates excluded"
 }
