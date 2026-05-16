@@ -6581,6 +6581,68 @@ high-$N$ run. Audit script:
 \pyown{src/derive\_branch\_resolved\_audit.py}{derive\_branch\_resolved\_audit}.
 \end{remark}
 
+\begin{remark}[Equilibration audit: matter-branch $\lambda_{2}$
+is not converged at iter $=120$ for high $N$]
+\label{rmk:matter_branch_not_equilibrated}
+The per-snapshot trajectory of $\lambda_{2}$ across the full
+$0,10,20,\ldots,120$-iteration evolution reveals that, in the
+matter-branch regime ($N \geq 256$), the system has \emph{not} reached
+a plateau at the canonical \texttt{iterations=120} setting. Per
+$10$-iteration drift in $\lambda_{2}$ between iteration $110$ and $120$:
+$N{=}300$: $+0.00047$;
+$N{=}512$: $+0.00061$;
+$N{=}1024$: $+0.00090$;
+$N{=}2048$: $+0.00144$.
+The drift \emph{grows} with $N$, indicating that the dynamical
+relaxation timescale of the fast-slow generator scales with $N$;
+the canonical iteration budget that was sufficient for vacuum-branch
+equilibration ($N \leq 100$, drift $<0.001$ by iter $120$) is
+\emph{insufficient} for high-$N$ matter-branch equilibration.
+The matter-branch asymptote $\lambda_{2}^{\rm mat}$ extracted from
+\texttt{iter=120} snapshots is therefore not the equilibrium value
+but a non-equilibrium-trajectory snapshot, biased upward by the
+continuing monotonic relaxation. This is the diagnostic root cause
+of the trust-region alarm reported in
+Remark~\ref{rmk:matter_branch_n2048_alarm}: extrapolation of
+$\lambda_{2}^{\rm mat}(N)$ in $1/N$ is mixing finite-$N$ corrections
+with finite-iteration-budget corrections, and the corresponding
+Symanzik-$K$ fits diverge with $K$
+(Remark~\ref{rmk:finite_n_divergence}).
+Audit script:
+\pyown{src/verify\_equilibration\_per\_n.py}{verify\_equilibration\_per\_n}.
+The methodologically robust resolution requires either (i) longer
+iteration budgets at high $N$ ($\sim 300$--$500$ at $N{=}2048$, scaling
+with $N$ as expected for diffusive relaxation), or (ii) branch-resolved
+equilibrium reconstruction via Cesaro-mean averaging over the
+post-flip trajectory rather than terminal-snapshot extraction. The
+vacuum-branch closure $\lambda_{\infty}^{\rm vac}=3/8$ is unaffected
+(Remark~\ref{rmk:branch_resolved_audit}) because $N \leq 100$ is in
+the converged regime.
+\end{remark}
+
+\begin{remark}[Symanzik-K asymptote diverges with K for matter-branch]
+\label{rmk:finite_n_divergence}
+Companion diagnostic to Remark~\ref{rmk:matter_branch_not_equilibrated}.
+For the matter-branch ladder including $N{=}2048$ ($52$ obs across $6$
+distinct $N$ values), fitting Symanzik-$K$ for $K{=}1,2,3$ yields
+asymptotes that do not converge in $K$:
+$a_{K=1} = 0.4133 \pm 0.0039$, $a_{K=2} = 0.4374 \pm 0.0074$,
+$a_{K=3} = 0.4613 \pm 0.0133$, with consecutive differences
+$|a_{K{=}2}-a_{K{=}1}| = 0.0241$,
+$|a_{K{=}3}-a_{K{=}2}| = 0.0239$.
+A genuine Symanzik power-series expansion would give converging
+$|a_{K{+}1}-a_{K}|$. The non-convergence is consistent with the
+equilibration-audit diagnostic
+(Remark~\ref{rmk:matter_branch_not_equilibrated}): if the underlying
+trajectory has a slowly-varying transient that scales with $N$,
+the $1/N$-series ansatz absorbs it into different coefficients at
+each order $K$, with no fixed asymptote. The per-$N$ residuals do
+shrink with $K$ ($5.4\%$ for $K{=}1$, $2.4\%$ for $K{=}2$, $1.2\%$
+for $K{=}3$), which is a classic over-fit signature for finite-iteration
+data masquerading as continuum extrapolation. Audit script:
+\pyown{src/verify\_finite\_n\_corrections.py}{verify\_finite\_n\_corrections}.
+\end{remark}
+
 \begin{remark}[Trust-region alarm at N=2048: matter-branch closure
 inconsistent with prior simple-rational candidates]
 \label{rmk:matter_branch_n2048_alarm}
