@@ -1,0 +1,62 @@
+{
+  "title": "Phase-C deliverable: K/Q-recoil Lemma (Lemma KQ-recoil)",
+  "hypothesis": [
+    "(SG) + admissibility A1--A8 (for the underlying Galerkin convergence)",
+    "P4B Eq.KQ-full-closure chirality-mixing structure for <K>(N), <Q>(N) with 8 rational coefficients",
+    "Canonical Symanzik-extrapolation discipline on the 10-regime canonical ladder"
+  ],
+  "kq_coefficients": {
+    "K_pre": "133/100",
+    "K_post": "4003/3000",
+    "a_K": "-1/400",
+    "b_K": "1/160",
+    "Q_pre": "8/25",
+    "Q_post": "403/1600",
+    "a_Q": "-1/50",
+    "b_Q": "-9/800"
+  },
+  "structural_targets": {
+    "S4_target": "3969/5000",
+    "T00_target": "8019/10000",
+    "S1_target": "81/10000",
+    "S4_matter_target": "81/100",
+    "S4_vacuum_target": "13/16"
+  },
+  "budget_identity": {
+    "S1_plus_S4": "8019/10000",
+    "T00": "8019/10000",
+    "closes_exactly": true
+  },
+  "empirical_certificates": {
+    "pooled_S4_audit": {
+      "y_inf": 0.7966577932657529,
+      "ci95": [
+        0.7928832672284211,
+        0.8005323656185312
+      ],
+      "target_in_ci95": true
+    },
+    "pooled_T00_audit": {
+      "y_inf": 0.8036120893375286,
+      "ci95": [
+        0.7992570501244693,
+        0.8081062154359981
+      ],
+      "target_in_ci95": true
+    },
+    "kq_chirality_mixing_audit": {
+      "available": true,
+      "verdict": {
+        "all_eight_coefficients_pass_1sigma": false
+      }
+    },
+    "branch_resolved_sharpening": {
+      "available": true,
+      "S4_matter_y_inf": null,
+      "S4_vacuum_y_inf": null,
+      "S4_matter_target_alpha_xi_sq": 0.81,
+      "S4_vacuum_target_13_over_16": 0.8125
+    }
+  },
+  "verdict": "DERIVED_CONDITIONAL_ON_SG_AND_KQ_FULL_CLOSURE"
+}

@@ -1,5 +1,27 @@
-r"""Lemma B Step 4a (b)-side extension: family-factor spectral gap on
+r"""SUPERSEDED (2026-05-14) -- NUMERICALLY VOID. See banner below.
+
+Lemma B Step 4a (b)-side extension: family-factor spectral gap on
 canonical d1 P5/P5N ladder.
+
+================================ SUPERSEDED ================================
+The family-coupling matrix M_F built as psi_g . Xi . psi_h, with generation
+basis vectors psi_g formed from DISJOINT sets of orthogonal Xi-eigenvectors
+({0,3,6}/{1,4,7}/{2,5,8}), is EXACTLY DIAGONAL in exact arithmetic: psi_i and
+psi_j (i != j) span orthogonal eigenspaces, so psi_i . Xi . psi_j = 0. The
+off-diagonal "coupling" entries are pure orthogonality round-off (~1e-16),
+which the subsequent 1/sqrt(deg) normalisation (deg ~ 1e-15) amplifies back
+to O(1). The reported lambda_2(M_F) = 7/6 is therefore the normalised
+Laplacian of round-off noise -- under 1e-12 perturbations of Xi it scatters
+by ~0.35.
+
+Diagnosis + two corrected derivations (project the tau=0.10 skeleton instead
+of Xi; genuine vertex-class graph quotient) are in
+verify_lemma_B_equitable_partition.py -- NEITHER reproduces 7/6. The M_F /
+family-coupling block has been removed from the P4 manuscript; only the real
+asymptotes lambda_skel = 7/24 and lambda_w = 3/8 and the pure-algebra
+identity 3/8 = (7/24)*(9/7) are retained. Kept for provenance only -- do not
+cite its output.
+============================================================================
 
 Companion to `verify_lemma_B_family_factor_p1p2prime.py` which
 falsified the conjectured family-factor gap = 1/N_gen on the small

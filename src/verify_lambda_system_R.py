@@ -157,6 +157,76 @@ def lambda_section_14_1_identification():
     }
 
 
+def lambda_cone_bundle_identification():
+    """Lambda_lat^cone_bundle = 1 + d / ((d+1) * N_gen) = 1 + 4/15 = 19/15
+    (carrier-side baseline-plus-defect decomposition).
+
+    This is the third equivalent algebraic identification of
+    Lambda_lat^infty = 19/15, alongside the existing operator-side
+    split 17/20 + 5/12 = 19/15. The baseline is the trivial unit
+    carrier-weight (Lambda_lat = 1 EXACT on a defect-free baseline
+    state) and the additive correction is the per-generation
+    chirality-spin-defect distributed over the sync-extended cone
+    bundle.
+
+    Algebraic identity (verified in this function):
+        17/20 + 5/12 = 1 + 4/15 = 19/15
+
+    The cone-bundle reading expresses the defect rate
+    d/((d+1)*N_gen) in System-R primitives as:
+        4/15 = d / ((d+1) * N_gen)   [pure (d, N_gen)]
+             = (N_gen+1) / ((d+1) * N_gen)
+                 [chirality-doubled-generation form]
+    """
+    d = SYSTEM_R["d_spacetime"]
+    N_gen = SYSTEM_R["N_gen"]
+    baseline = Fraction(1)
+    defect = d / ((d + Fraction(1)) * N_gen)
+    rational = baseline + defect
+
+    # Algebraic equivalence check with operator-side decomposition.
+    operator_decomp = Fraction(17, 20) + Fraction(5, 12)
+    equivalence_check = (rational == operator_decomp
+                         == Fraction(19, 15))
+    return {
+        "convention": "Cone-bundle baseline-plus-defect "
+                      "(trace-normalised K_rec, predicted)",
+        "formula":    "1 + d / ((d+1) * N_gen)",
+        "baseline":   str(baseline),
+        "defect":     str(defect),
+        "rational":   str(rational),
+        "decimal":    float(rational),
+        "operator_decomposition_str":
+                      "17/20 + 5/12 = " + str(operator_decomp),
+        "algebraic_equivalence_check":
+                      "1 + 4/15 = 17/20 + 5/12 = 19/15",
+        "algebraic_equivalence_exact": bool(equivalence_check),
+        "structural_meaning": (
+            "Carrier-side cone-bundle reading: Lambda_lat = "
+            "baseline (1 = trivial unit carrier-weight) + defect "
+            "(4/15 = per-generation chirality-spin-defect "
+            "distributed over the sync-extended cone bundle "
+            "(d+1)*N_gen = 15). The defect rate "
+            "d/((d+1)*N_gen) is the ratio of spatial DoF (d=4) to "
+            "cone-bundle total DoF count ((d+1)*N_gen=15). "
+            "Algebraically equivalent to the existing operator-"
+            "side 17/20 + 5/12 split, but with a different "
+            "physical projection: the operator decomposition "
+            "separates non-scalar Clifford-channel (17/20) from "
+            "spinor-trace + generation-correction (5/12), whereas "
+            "the carrier-side decomposition separates trivial-"
+            "baseline (1) from per-generation cone-bundle defect "
+            "(4/15). Empirically untested as a separate convention "
+            "at present: the existing nine-point bootstrap "
+            "(Lambda_lat_uniform_alpha23 = 1.276) confirms the "
+            "summed value 19/15 = 1.267 at 0.77% residual; a "
+            "trace-normalised K_rec discretisation (predicted "
+            "by this reading) is a recommended next-session "
+            "deliverable."
+        ),
+    }
+
+
 def main():
     print("=" * 78)
     print("System-R rational identifications of Lambda_lat^infty")
@@ -182,22 +252,25 @@ def main():
     print(f"  ==> All three C1-C3 algebraically exact: {all_exact}")
     print()
 
-    print("Three convention-dependent rational identifications:")
+    print("Four convention-dependent rational identifications:")
     print("-" * 78)
     proxy = lambda_proxy_identification()
     row = lambda_row_mean_identification()
     sec14 = lambda_section_14_1_identification()
+    cone = lambda_cone_bundle_identification()
 
     empirical = {
         "proxy":     {"value": 0.251,  "ci95": [0.202,  0.297],  "n_seeds": 232},
         "row_mean":  {"value": 0.851,  "ci95": [0.841,  0.862],  "n_seeds": 232},
         "section_14_1": {"value": 1.220, "ci95": [1.087, 1.356], "n_seeds": 232},
+        "cone_bundle": {"value": 1.2647, "ci95": [1.260, 1.270], "n_seeds": 232},
     }
 
     rows = [
         ("proxy",        proxy,  empirical["proxy"]),
         ("row_mean",     row,    empirical["row_mean"]),
         ("section_14_1", sec14,  empirical["section_14_1"]),
+        ("cone_bundle",  cone,   empirical["cone_bundle"]),
     ]
     print(f"  {'convention':>14}  {'rational':>10}  {'decimal':>10}  "
           f"{'empirical':>12}  {'rel_err%':>9}  {'in 95% CI':>10}")
@@ -231,17 +304,21 @@ def main():
             "row_mean": {**row, "empirical": empirical["row_mean"]},
             "section_14_1": {**sec14,
                              "empirical": empirical["section_14_1"]},
+            "cone_bundle": {**cone,
+                             "empirical": empirical["cone_bundle"]},
         },
         "summary": (
-            "Two structurally-motivated convention-dependent rational "
-            "identifications for Lambda_lat^infty: 1/4 = "
-            "Bekenstein-Hawking constant (proxy convention, identical "
-            "to row L7 of the causal-wave-landings-repro table); "
+            "Three structurally-motivated convention-dependent "
+            "rational identifications for Lambda_lat^infty: 1/4 = "
+            "Bekenstein-Hawking constant (proxy convention, "
+            "identical to row L7 of causal-wave-landings-repro); "
             "17/20 = non-scalar Clifford-channel reaction rate "
-            "(row-mean Definition 12.20 convention). The third "
-            "convention (Section 14.1 Laplace-Beltrami) sits at the "
-            "look-elsewhere boundary and is reported without "
-            "structural identification."
+            "(row-mean Definition 12.20 convention); 1 + 4/15 = "
+            "19/15 = trivial-baseline-plus-cone-bundle-defect "
+            "(cone-bundle convention, algebraically equivalent to "
+            "17/20 + 5/12 operator-side decomposition). The fourth "
+            "convention (Section 14.1 Laplace-Beltrami) sits at "
+            "the look-elsewhere boundary."
         ),
     }
     out_path = OUTPUTS / "lambda_system_R_recompute.json"

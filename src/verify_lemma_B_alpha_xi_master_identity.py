@@ -1,5 +1,27 @@
-r"""Lemma B Step 4a: master algebraic identity connecting all System-R
+r"""SUPERSEDED (2026-05-14) -- empirical anchor NUMERICALLY VOID. See banner.
+
+Lemma B Step 4a: master algebraic identity connecting all System-R
 spectral anchors via alpha_xi.
+
+================================ SUPERSEDED ================================
+This script's Fraction arithmetic (7/6 = alpha_xi * 9/7 + gamma^2 * 20/21,
+etc.) is algebraically exact and reproducible. But its EMPIRICAL ANCHOR --
+the claim that lambda_2(M_F) = 7/6 is measured "PRECISE 0.28%" on the d1
+ladder -- is void: the family-coupling matrix M_F is built as psi_g.Xi.psi_h
+with psi_g from DISJOINT orthogonal Xi-eigenvector sets, hence is exactly
+diagonal in exact arithmetic, and its "lambda_2 = 7/6" is the normalised
+Laplacian of orthogonality round-off (see
+verify_lemma_B_family_factor_p5n_canonical.py banner). An exact identity
+among rationals with no empirically realised left-hand side establishes
+nothing.
+
+Diagnosis + two corrected derivations are in
+verify_lemma_B_equitable_partition.py -- NEITHER reproduces 7/6. The M_F /
+master-identity block has been removed from the P4 manuscript; only the real
+asymptotes lambda_skel = 7/24 and lambda_w = 3/8 and the pure-algebra
+identity 3/8 = (7/24)*(9/7) are retained. Kept for provenance only -- do not
+cite its output.
+============================================================================
 
 The empirically certified chain is:
   lambda_family-coupling = 7/6  = (d + N_gen) / (2 * N_gen)

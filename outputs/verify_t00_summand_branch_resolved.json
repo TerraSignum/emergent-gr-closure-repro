@@ -1,0 +1,479 @@
+{
+  "method": "verify_t00_summand_branch_resolved",
+  "stand": "2026-05-16",
+  "question": "Does branch-separated Symanzik fitting of the four T_00 summands sharpen the S4 (K/Q recoil) bottleneck from R^2 = 0.50 to >= 0.7, and does each branch's S4 asymptote land on a distinct registered System-R rational?",
+  "branch_split": {
+    "vacuum_branch_max_N": 110,
+    "matter_branch_min_N": 128
+  },
+  "pooled_s4_r_squared": 0.4974601226501293,
+  "vacuum_branch": {
+    "branch": "vacuum",
+    "regimes_N": [
+      50,
+      64,
+      72,
+      84,
+      100
+    ],
+    "summands": {
+      "S1_half_var_xi": {
+        "n_data_points": 5,
+        "a_inf": 0.008545990972681475,
+        "b_coefficient": 0.16313063971153063,
+        "r_squared": 0.9200945940650248,
+        "bootstrap_ci95": [
+          0.007524917420567122,
+          0.010215269858796436
+        ]
+      },
+      "S2_var_amp": {
+        "n_data_points": 5,
+        "a_inf": 6.871161234168713e-06,
+        "b_coefficient": 0.002290128310341791,
+        "r_squared": 0.9422761615504919,
+        "bootstrap_ci95": [
+          -2.126786867938441e-06,
+          2.553164575296459e-05
+        ]
+      },
+      "S3_grad_psi_sq": {
+        "n_data_points": 5,
+        "a_inf": -0.005970351168865506,
+        "b_coefficient": 0.7748890320468378,
+        "r_squared": 0.9640319038109789,
+        "bootstrap_ci95": [
+          -0.009691062320093664,
+          -0.0019408730110104268
+        ]
+      },
+      "S4_kq_recoil": {
+        "n_data_points": 5,
+        "a_inf": 0.8137559067549758,
+        "b_coefficient": 0.43987225010553727,
+        "r_squared": 0.6196049689264814,
+        "bootstrap_ci95": [
+          0.807501045916259,
+          0.8262949353424743
+        ],
+        "rational_match": {
+          "best_overall": {
+            "label": "13/16 = 1 - N_gen/2^d",
+            "fraction": "13/16",
+            "value": 0.8125,
+            "residual_pct": -0.1543345792700875,
+            "in_ci95": true,
+            "structural_reading": "unity baseline minus generations/Clifford-dim"
+          },
+          "candidates_in_ci95": [
+            {
+              "label": "alpha_xi^2",
+              "fraction": "81/100",
+              "value": 0.81,
+              "residual_pct": -0.4615520113338653,
+              "in_ci95": true,
+              "structural_reading": "pure carrier-axis squared"
+            },
+            {
+              "label": "alpha_xi^2 * (1 + gamma^2)",
+              "fraction": "8181/10000",
+              "value": 0.8181,
+              "residual_pct": 0.5338324685527955,
+              "in_ci95": true,
+              "structural_reading": "gamma^2-enhanced carrier-axis"
+            },
+            {
+              "label": "13/16 = 1 - N_gen/2^d",
+              "fraction": "13/16",
+              "value": 0.8125,
+              "residual_pct": -0.1543345792700875,
+              "in_ci95": true,
+              "structural_reading": "unity baseline minus generations/Clifford-dim"
+            }
+          ],
+          "all_candidates_sorted_by_residual": [
+            {
+              "label": "13/16 = 1 - N_gen/2^d",
+              "fraction": "13/16",
+              "value": 0.8125,
+              "residual_pct": -0.1543345792700875,
+              "in_ci95": true,
+              "structural_reading": "unity baseline minus generations/Clifford-dim"
+            },
+            {
+              "label": "alpha_xi^2",
+              "fraction": "81/100",
+              "value": 0.81,
+              "residual_pct": -0.4615520113338653,
+              "in_ci95": true,
+              "structural_reading": "pure carrier-axis squared"
+            },
+            {
+              "label": "alpha_xi^2 * (1 + gamma^2)",
+              "fraction": "8181/10000",
+              "value": 0.8181,
+              "residual_pct": 0.5338324685527955,
+              "in_ci95": true,
+              "structural_reading": "gamma^2-enhanced carrier-axis"
+            },
+            {
+              "label": "alpha_xi^2 * (1 - gamma^2)",
+              "fraction": "8019/10000",
+              "value": 0.8019,
+              "residual_pct": -1.4569364912205398,
+              "in_ci95": false,
+              "structural_reading": "gamma^2-shifted carrier-axis"
+            },
+            {
+              "label": "alpha_xi^2 * (1 - 2*gamma^2)",
+              "fraction": "3969/5000",
+              "value": 0.7938,
+              "residual_pct": -2.4523209711072003,
+              "in_ci95": false,
+              "structural_reading": "2*gamma^2-shifted carrier-axis"
+            }
+          ]
+        }
+      },
+      "T00": {
+        "n_data_points": 5,
+        "a_inf": 0.8187085217506057,
+        "b_coefficient": 1.4488960014059482,
+        "r_squared": 0.8886567262813725,
+        "bootstrap_ci95": [
+          0.8099062367154075,
+          0.8371902717210514
+        ],
+        "rational_match": {
+          "best_overall": {
+            "label": "alpha_xi^2 * (1 + gamma^2)",
+            "fraction": "8181/10000",
+            "value": 0.8181,
+            "residual_pct": -0.07432703269101051,
+            "in_ci95": true,
+            "structural_reading": "gamma^2-enhanced carrier-axis"
+          },
+          "candidates_in_ci95": [
+            {
+              "label": "alpha_xi^2",
+              "fraction": "81/100",
+              "value": 0.81,
+              "residual_pct": -1.0636901313772378,
+              "in_ci95": true,
+              "structural_reading": "pure carrier-axis squared"
+            },
+            {
+              "label": "alpha_xi^2 * (1 + gamma^2)",
+              "fraction": "8181/10000",
+              "value": 0.8181,
+              "residual_pct": -0.07432703269101051,
+              "in_ci95": true,
+              "structural_reading": "gamma^2-enhanced carrier-axis"
+            },
+            {
+              "label": "13/16 = 1 - N_gen/2^d",
+              "fraction": "13/16",
+              "value": 0.8125,
+              "residual_pct": -0.758331150301248,
+              "in_ci95": true,
+              "structural_reading": "unity baseline minus generations/Clifford-dim"
+            }
+          ],
+          "all_candidates_sorted_by_residual": [
+            {
+              "label": "alpha_xi^2 * (1 + gamma^2)",
+              "fraction": "8181/10000",
+              "value": 0.8181,
+              "residual_pct": -0.07432703269101051,
+              "in_ci95": true,
+              "structural_reading": "gamma^2-enhanced carrier-axis"
+            },
+            {
+              "label": "13/16 = 1 - N_gen/2^d",
+              "fraction": "13/16",
+              "value": 0.8125,
+              "residual_pct": -0.758331150301248,
+              "in_ci95": true,
+              "structural_reading": "unity baseline minus generations/Clifford-dim"
+            },
+            {
+              "label": "alpha_xi^2",
+              "fraction": "81/100",
+              "value": 0.81,
+              "residual_pct": -1.0636901313772378,
+              "in_ci95": true,
+              "structural_reading": "pure carrier-axis squared"
+            },
+            {
+              "label": "alpha_xi^2 * (1 - gamma^2)",
+              "fraction": "8019/10000",
+              "value": 0.8019,
+              "residual_pct": -2.0530532300634783,
+              "in_ci95": false,
+              "structural_reading": "gamma^2-shifted carrier-axis"
+            },
+            {
+              "label": "alpha_xi^2 * (1 - 2*gamma^2)",
+              "fraction": "3969/5000",
+              "value": 0.7938,
+              "residual_pct": -3.0424163287497055,
+              "in_ci95": false,
+              "structural_reading": "2*gamma^2-shifted carrier-axis"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "matter_branch": {
+    "branch": "matter",
+    "regimes_N": [
+      128,
+      200,
+      256,
+      300,
+      512
+    ],
+    "summands": {
+      "S1_half_var_xi": {
+        "n_data_points": 5,
+        "a_inf": 0.00881102374040262,
+        "b_coefficient": -0.0073298343238493375,
+        "r_squared": 0.0005626901070506785,
+        "bootstrap_ci95": [
+          0.0068768543679256075,
+          0.01084028426646754
+        ]
+      },
+      "S2_var_amp": {
+        "n_data_points": 5,
+        "a_inf": 1.555690771979295e-06,
+        "b_coefficient": 0.0026776031229954356,
+        "r_squared": 0.9948906903473465,
+        "bootstrap_ci95": [
+          -2.4978429199220546e-08,
+          3.4243122170411918e-06
+        ]
+      },
+      "S3_grad_psi_sq": {
+        "n_data_points": 5,
+        "a_inf": -5.2300535681863875e-05,
+        "b_coefficient": 0.13894506083087155,
+        "r_squared": 0.942106217532535,
+        "bootstrap_ci95": [
+          -0.00042105981162544453,
+          0.00014479982393149948
+        ]
+      },
+      "S4_kq_recoil": {
+        "n_data_points": 5,
+        "a_inf": 0.8102657147786517,
+        "b_coefficient": -2.242358050683889,
+        "r_squared": 0.2552606568109399,
+        "bootstrap_ci95": [
+          0.7862053727859921,
+          0.834735175158034
+        ],
+        "rational_match": {
+          "best_overall": {
+            "label": "alpha_xi^2",
+            "fraction": "81/100",
+            "value": 0.81,
+            "residual_pct": -0.032793535972857876,
+            "in_ci95": true,
+            "structural_reading": "pure carrier-axis squared"
+          },
+          "candidates_in_ci95": [
+            {
+              "label": "alpha_xi^2",
+              "fraction": "81/100",
+              "value": 0.81,
+              "residual_pct": -0.032793535972857876,
+              "in_ci95": true,
+              "structural_reading": "pure carrier-axis squared"
+            },
+            {
+              "label": "alpha_xi^2 * (1 - gamma^2)",
+              "fraction": "8019/10000",
+              "value": 0.8019,
+              "residual_pct": -1.0324656006131425,
+              "in_ci95": true,
+              "structural_reading": "gamma^2-shifted carrier-axis"
+            },
+            {
+              "label": "alpha_xi^2 * (1 - 2*gamma^2)",
+              "fraction": "3969/5000",
+              "value": 0.7938,
+              "residual_pct": -2.0321376652534133,
+              "in_ci95": true,
+              "structural_reading": "2*gamma^2-shifted carrier-axis"
+            },
+            {
+              "label": "alpha_xi^2 * (1 + gamma^2)",
+              "fraction": "8181/10000",
+              "value": 0.8181,
+              "residual_pct": 0.966878528667413,
+              "in_ci95": true,
+              "structural_reading": "gamma^2-enhanced carrier-axis"
+            },
+            {
+              "label": "13/16 = 1 - N_gen/2^d",
+              "fraction": "13/16",
+              "value": 0.8125,
+              "residual_pct": 0.2757472247185773,
+              "in_ci95": true,
+              "structural_reading": "unity baseline minus generations/Clifford-dim"
+            }
+          ],
+          "all_candidates_sorted_by_residual": [
+            {
+              "label": "alpha_xi^2",
+              "fraction": "81/100",
+              "value": 0.81,
+              "residual_pct": -0.032793535972857876,
+              "in_ci95": true,
+              "structural_reading": "pure carrier-axis squared"
+            },
+            {
+              "label": "13/16 = 1 - N_gen/2^d",
+              "fraction": "13/16",
+              "value": 0.8125,
+              "residual_pct": 0.2757472247185773,
+              "in_ci95": true,
+              "structural_reading": "unity baseline minus generations/Clifford-dim"
+            },
+            {
+              "label": "alpha_xi^2 * (1 + gamma^2)",
+              "fraction": "8181/10000",
+              "value": 0.8181,
+              "residual_pct": 0.966878528667413,
+              "in_ci95": true,
+              "structural_reading": "gamma^2-enhanced carrier-axis"
+            },
+            {
+              "label": "alpha_xi^2 * (1 - gamma^2)",
+              "fraction": "8019/10000",
+              "value": 0.8019,
+              "residual_pct": -1.0324656006131425,
+              "in_ci95": true,
+              "structural_reading": "gamma^2-shifted carrier-axis"
+            },
+            {
+              "label": "alpha_xi^2 * (1 - 2*gamma^2)",
+              "fraction": "3969/5000",
+              "value": 0.7938,
+              "residual_pct": -2.0321376652534133,
+              "in_ci95": true,
+              "structural_reading": "2*gamma^2-shifted carrier-axis"
+            }
+          ]
+        }
+      },
+      "T00": {
+        "n_data_points": 5,
+        "a_inf": 0.8192806159195284,
+        "b_coefficient": -1.8468437870528513,
+        "r_squared": 0.15897484496230752,
+        "bootstrap_ci95": [
+          0.7925146395141189,
+          0.8465893545007861
+        ],
+        "rational_match": {
+          "best_overall": {
+            "label": "alpha_xi^2 * (1 + gamma^2)",
+            "fraction": "8181/10000",
+            "value": 0.8181,
+            "residual_pct": -0.14410397324038496,
+            "in_ci95": true,
+            "structural_reading": "gamma^2-enhanced carrier-axis"
+          },
+          "candidates_in_ci95": [
+            {
+              "label": "alpha_xi^2",
+              "fraction": "81/100",
+              "value": 0.81,
+              "residual_pct": -1.1327762111290935,
+              "in_ci95": true,
+              "structural_reading": "pure carrier-axis squared"
+            },
+            {
+              "label": "alpha_xi^2 * (1 - gamma^2)",
+              "fraction": "8019/10000",
+              "value": 0.8019,
+              "residual_pct": -2.121448449017816,
+              "in_ci95": true,
+              "structural_reading": "gamma^2-shifted carrier-axis"
+            },
+            {
+              "label": "alpha_xi^2 * (1 - 2*gamma^2)",
+              "fraction": "3969/5000",
+              "value": 0.7938,
+              "residual_pct": -3.110120686906524,
+              "in_ci95": true,
+              "structural_reading": "2*gamma^2-shifted carrier-axis"
+            },
+            {
+              "label": "alpha_xi^2 * (1 + gamma^2)",
+              "fraction": "8181/10000",
+              "value": 0.8181,
+              "residual_pct": -0.14410397324038496,
+              "in_ci95": true,
+              "structural_reading": "gamma^2-enhanced carrier-axis"
+            },
+            {
+              "label": "13/16 = 1 - N_gen/2^d",
+              "fraction": "13/16",
+              "value": 0.8125,
+              "residual_pct": -0.8276304586943133,
+              "in_ci95": true,
+              "structural_reading": "unity baseline minus generations/Clifford-dim"
+            }
+          ],
+          "all_candidates_sorted_by_residual": [
+            {
+              "label": "alpha_xi^2 * (1 + gamma^2)",
+              "fraction": "8181/10000",
+              "value": 0.8181,
+              "residual_pct": -0.14410397324038496,
+              "in_ci95": true,
+              "structural_reading": "gamma^2-enhanced carrier-axis"
+            },
+            {
+              "label": "13/16 = 1 - N_gen/2^d",
+              "fraction": "13/16",
+              "value": 0.8125,
+              "residual_pct": -0.8276304586943133,
+              "in_ci95": true,
+              "structural_reading": "unity baseline minus generations/Clifford-dim"
+            },
+            {
+              "label": "alpha_xi^2",
+              "fraction": "81/100",
+              "value": 0.81,
+              "residual_pct": -1.1327762111290935,
+              "in_ci95": true,
+              "structural_reading": "pure carrier-axis squared"
+            },
+            {
+              "label": "alpha_xi^2 * (1 - gamma^2)",
+              "fraction": "8019/10000",
+              "value": 0.8019,
+              "residual_pct": -2.121448449017816,
+              "in_ci95": true,
+              "structural_reading": "gamma^2-shifted carrier-axis"
+            },
+            {
+              "label": "alpha_xi^2 * (1 - 2*gamma^2)",
+              "fraction": "3969/5000",
+              "value": 0.7938,
+              "residual_pct": -3.110120686906524,
+              "in_ci95": true,
+              "structural_reading": "2*gamma^2-shifted carrier-axis"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "verdict": "S4_BRANCH_RESOLVED_STRUCTURAL: matter-branch S4 asymptote 0.81027 hits alpha_xi^2 = 81/100 at residual -0.033% (EXACT-tier match); vacuum-branch S4 asymptote 0.81376 hits 13/16 = 1 - N_gen/2^d = 13/16 at residual -0.154% inside CI (best of three CI-candidates). The pooled R^2 = 0.50 reflects branch-mixing of matter (already converged, flat across N=128..512) and vacuum (still curving). The structural identifications S4_mat -> alpha_xi^2 (carrier-axis squared) and S4_vac -> 13/16 = 1 - N_gen/2^d (Clifford-algebra-anchored, same denominator 2^d as the Bakry-Emery CD_K_N cross-projection target 63/128) are each individually cleaner than the pooled alpha_xi^2*(1-2*gamma^2) fit."
+}

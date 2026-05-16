@@ -2034,6 +2034,24 @@
         20.0,
         25.41875
       ]
+    },
+    {
+      "regime": "P5N600",
+      "N": 600,
+      "n_seeds_loaded": 0,
+      "status": "SNAPSHOT_NOT_AVAILABLE"
+    },
+    {
+      "regime": "P5N700",
+      "N": 700,
+      "n_seeds_loaded": 0,
+      "status": "SNAPSHOT_NOT_AVAILABLE"
+    },
+    {
+      "regime": "P5N800",
+      "N": 800,
+      "n_seeds_loaded": 0,
+      "status": "SNAPSHOT_NOT_AVAILABLE"
     }
   ],
   "scaling_fits": {

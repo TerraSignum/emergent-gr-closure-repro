@@ -1,6 +1,27 @@
-r"""Lemma B Step 4a (1)-side closure: extract empirical normalised-
+r"""SUPERSEDED (2026-05-14) -- NUMERICALLY VOID. See banner below.
+
+Lemma B Step 4a (1)-side closure: extract empirical normalised-
 adjacency off-diagonal weights (rho_12, rho_13, rho_23) from the
 canonical d1 P5/P5N family-coupling matrix M_F.
+
+================================ SUPERSEDED ================================
+The family-coupling matrix M_F built as psi_g . Xi . psi_h, with generation
+basis vectors psi_g formed from DISJOINT sets of orthogonal Xi-eigenvectors
+({0,3,6}/{1,4,7}/{2,5,8}), is EXACTLY DIAGONAL in exact arithmetic: psi_i and
+psi_j (i != j) span orthogonal eigenspaces, so psi_i . Xi . psi_j = 0. Its
+off-diagonal entries are pure orthogonality round-off (~1e-16). The
+off-diagonal triple (rho_12, rho_13, rho_23) extracted here -- and the
+universal cubic 180 a^3 - 31 a - 5 = 0 fitted to it -- are therefore
+extracted from round-off noise (rho_ij = |M_ij| / sqrt(d_i d_j) is the ratio
+of round-off to round-off) and carry no structural content.
+
+Diagnosis + two corrected derivations are in
+verify_lemma_B_equitable_partition.py. The M_F / family-coupling block has
+been removed from the P4 manuscript; only the real asymptotes
+lambda_skel = 7/24 and lambda_w = 3/8 and the pure-algebra identity
+3/8 = (7/24)*(9/7) are retained. Kept for provenance only -- do not cite its
+output.
+============================================================================
 
 Companion to `verify_lemma_B_M_F_off_diagonal_identification.py`
 (commit 6e421f6) which searched the System-R rational candidate

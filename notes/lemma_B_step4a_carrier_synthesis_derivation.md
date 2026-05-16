@@ -1,6 +1,49 @@
 # Lemma B Step 4a/4b — analytical derivation
 ## (session-tauglich attempt, 2026-05-13)
 
+> ## ⚠ SUPERSEDED (2026-05-14) — NUMERICALLY VOID
+>
+> The entire premise of this memo — the family-coupling matrix `M_F`
+> and its spectral gap `λ_2(M_F) = 7/6` — is a numerically degenerate
+> construction. `M_F` is built as `psi_g · Ξ · psi_h` with the
+> generation basis vectors `psi_g` formed from **disjoint sets of
+> orthogonal Ξ-eigenvectors** ({0,3,6}/{1,4,7}/{2,5,8}). Because `psi_i`
+> and `psi_j` (i≠j) span orthogonal eigenspaces, `psi_i · Ξ · psi_j = 0`
+> **exactly** in exact arithmetic — `M_F` is diagonal, with zero
+> inter-generation coupling by construction. The off-diagonal entries
+> are pure orthogonality round-off (~1e-16, machine epsilon), which the
+> `1/√deg` normalisation (deg ~ 1e-15) amplifies back to O(1). The
+> reported `λ_2(M_F) = 7/6`, the `(0, 7/6, 11/6)` spectrum, the
+> off-diagonal triple, the cubic `180a³−31a−5=0`, and the "master
+> identity"'s empirical anchor are therefore all the normalised
+> Laplacian of round-off noise. Decisive check: under 1e-12
+> perturbations of Ξ, `λ_2(M_F)` scatters by ~0.35.
+>
+> **Two corrected derivations were computed** (2026-05-14,
+> `src/verify_lemma_B_equitable_partition.py`):
+> 1. **Skeleton projection** `psi_g · A_skel · psi_h` (A_skel nonlinear
+>    in Ξ, so not diagonal in Ξ's eigenbasis) → `λ_2 → 1.04`, R²=0.007
+>    (no Symanzik convergence). Does **not** reproduce 7/6.
+> 2. **Genuine vertex-class graph quotient** (spectral-clustering
+>    3-partition of the skeleton) → `λ_2 → 1.46`, and the partition's
+>    equitability CV (0.73) is *worse than a random 3-partition* (0.50,
+>    z = +5.6…+25.9). No almost-equitable 3-partition exists. Does
+>    **not** reproduce 7/6.
+>
+> **Conclusion.** `λ_family = 7/6` has no valid construction. The M_F /
+> family-coupling block (master identity, `(0,7/6,11/6)` spectrum,
+> off-diagonal cubic, `1/d`-dilution `λ_skel = (1/d)λ_2(M_F)`) has been
+> **removed from the P4 manuscript**. What survives, and is real:
+> `λ_skel = 7/24` (τ=0.10 unweighted skeleton gap, full-seed Symanzik
+> 0.2924, R² good) and `λ_w = 3/8` (weighted Laplacian gap, 0.3789),
+> related by the **pure-algebra** identity `3/8 = (7/24)·(9/7)`. A
+> structural derivation of that factorisation from the carrier action
+> remains open; see `lemma_B_proof_strategy.md` for candidate routes.
+>
+> Everything below is retained for provenance only. Do not cite it.
+
+---
+
 **Status (REVISED 2026-05-13 after family-phase test)**:
 - ✓ Algebraic identity `7/24 = (1/d + 1/N_gen)/2` empirically
   certified at 0.24% rel err on the canonical P5/P5N skeleton

@@ -57,6 +57,8 @@ def find_d1_npz(regime: str, repo_root: Path) -> Optional[Path]:
                       / snap_name)
     candidates.append(external_root / f"results_d1_{regime}_v2"
                       / snap_name)
+    candidates.append(external_root / f"results_d1_{regime}_trial1seed"
+                      / snap_name)
 
     # Bundled location (primary).
     candidates.append(bundled_root / f"d1_{regime}.npz")

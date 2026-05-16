@@ -31,6 +31,7 @@ SCHEMA = "worldformula/branch_metadata/v1"
 LEGITIMATELY_UNTAGGED = {
     "audit_omega_m_dual_form_corpus_anchors.json",
     "bh_sector_recompute.json",
+    "carrier_bakry_emery_cd_audit.json",
     "clp_c_gamma_convergence_detailed_audit.json",
     "clp_full_report.json",
     "cosmological_constant_recompute.json",
@@ -45,9 +46,11 @@ LEGITIMATELY_UNTAGGED = {
     "lorentzian_3plus1_recompute.json",
     "regime_invariance_audit.json",
     "schwarzschild_defect_recompute.json",
+    "signed_ricci_lower_bound_audit.json",
     "stage6f_full_tensor_norm_audit.json",
     "stage6f_signed_dm_hypothesis_test.json",
     "sup_aware_envelope_refinement.json",
+    "t00_summand_decomposition_audit.json",
     "vacuum_stability_recompute.json",
     "verify_admissibility_counterexample_and_spectral_gap.json",
     "verify_chirality_flip_cross_sector.json",
@@ -66,6 +69,8 @@ LEGITIMATELY_UNTAGGED = {
     "verify_lemma_B_degree_concentration.json",
     "verify_lemma_B_edge_correlation.json",
     "verify_lemma_B_edge_weight_structure.json",
+    "verify_lemma_B_equitable_partition.json",
+    "verify_lemma_B_gap_statistical_fingerprint.json",
     "verify_lemma_B_family_factor_p1p2prime.json",
     "verify_lemma_B_family_factor_p5n_canonical.json",
     "verify_lemma_B_fiedler_halo_test.json",
@@ -82,6 +87,7 @@ LEGITIMATELY_UNTAGGED = {
     "verify_lemma_B_threshold_sweep.json",
     "verify_lemma_B_uniform_poincare.json",
     "verify_lemma_B_universal_X_minus_1_over_X_pattern.json",
+    "variance_reactivity_identity_audit.json",
     "xi_graph_topology_deep.json",
 }
 

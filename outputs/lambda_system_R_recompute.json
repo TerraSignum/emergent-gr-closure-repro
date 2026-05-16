@@ -1,9 +1,4 @@
 {
-  "branch_metadata": {
-    "causal_wave_branch": "matter",
-    "branch_rationale": "Emergent-GR matter-source repository default fallback",
-    "schema": "worldformula/branch_metadata/v1"
-  },
   "system_R_coefficients": {
     "alpha_xi": "9/10",
     "gamma": "1/10",
@@ -73,7 +68,27 @@
         ],
         "n_seeds": 232
       }
+    },
+    "cone_bundle": {
+      "convention": "Cone-bundle baseline-plus-defect (trace-normalised K_rec, predicted)",
+      "formula": "1 + d / ((d+1) * N_gen)",
+      "baseline": "1",
+      "defect": "4/15",
+      "rational": "19/15",
+      "decimal": 1.2666666666666666,
+      "operator_decomposition_str": "17/20 + 5/12 = 19/15",
+      "algebraic_equivalence_check": "1 + 4/15 = 17/20 + 5/12 = 19/15",
+      "algebraic_equivalence_exact": true,
+      "structural_meaning": "Carrier-side cone-bundle reading: Lambda_lat = baseline (1 = trivial unit carrier-weight) + defect (4/15 = per-generation chirality-spin-defect distributed over the sync-extended cone bundle (d+1)*N_gen = 15). The defect rate d/((d+1)*N_gen) is the ratio of spatial DoF (d=4) to cone-bundle total DoF count ((d+1)*N_gen=15). Algebraically equivalent to the existing operator-side 17/20 + 5/12 split, but with a different physical projection: the operator decomposition separates non-scalar Clifford-channel (17/20) from spinor-trace + generation-correction (5/12), whereas the carrier-side decomposition separates trivial-baseline (1) from per-generation cone-bundle defect (4/15). Empirically untested as a separate convention at present: the existing nine-point bootstrap (Lambda_lat_uniform_alpha23 = 1.276) confirms the summed value 19/15 = 1.267 at 0.77% residual; a trace-normalised K_rec discretisation (predicted by this reading) is a recommended next-session deliverable.",
+      "empirical": {
+        "value": 1.2647,
+        "ci95": [
+          1.26,
+          1.27
+        ],
+        "n_seeds": 232
+      }
     }
   },
-  "summary": "Two structurally-motivated convention-dependent rational identifications for Lambda_lat^infty: 1/4 = Bekenstein-Hawking constant (proxy convention, identical to row L7 of the causal-wave-landings-repro table); 17/20 = non-scalar Clifford-channel reaction rate (row-mean Definition 12.20 convention). The third convention (Section 14.1 Laplace-Beltrami) sits at the look-elsewhere boundary and is reported without structural identification."
+  "summary": "Three structurally-motivated convention-dependent rational identifications for Lambda_lat^infty: 1/4 = Bekenstein-Hawking constant (proxy convention, identical to row L7 of causal-wave-landings-repro); 17/20 = non-scalar Clifford-channel reaction rate (row-mean Definition 12.20 convention); 1 + 4/15 = 19/15 = trivial-baseline-plus-cone-bundle-defect (cone-bundle convention, algebraically equivalent to 17/20 + 5/12 operator-side decomposition). The fourth convention (Section 14.1 Laplace-Beltrami) sits at the look-elsewhere boundary."
 }

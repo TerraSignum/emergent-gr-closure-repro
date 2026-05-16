@@ -1,0 +1,190 @@
+{
+  "method": "verify_lemma_B_equitable_partition",
+  "stand": "2026-05-14",
+  "d": 4,
+  "N_gen": 3,
+  "tau": 0.1,
+  "legacy_MF_diagnosis": {
+    "construction": "psi_g . Xi . psi_h with psi_g from disjoint orthogonal Xi-eigenvector sets {0,3,6}/{1,4,7}/{2,5,8}",
+    "max_offdiag_all": 1.4269084959014614e-15,
+    "status": "DIAGONAL_BY_CONSTRUCTION_legacy_lambda2_is_roundoff"
+  },
+  "corrected_derivations": {
+    "MF_skel": "psi_g . A_skel . psi_h  (project the tau=0.10 skeleton, nonlinear in Xi -> genuine off-diagonal)",
+    "vertex_quotient": "spectral-clustering 3-partition of the skeleton; B_ij = mean class-i->class-j weight (genuine graph quotient)"
+  },
+  "per_regime": [
+    {
+      "regime": "P5",
+      "N": 50,
+      "n_seeds": 8,
+      "lambda_skel": 0.5639130831645716,
+      "legacy_MF_offdiag_max": 1.1267920010404783e-15,
+      "corrected_MFskel_offdiag_max": 0.6912846230632168,
+      "lambda_MFskel": 1.0,
+      "dilution_pred_MFskel": 0.25,
+      "lambda_quotient": 1.4271220069689425,
+      "equitability_cv": 0.3870189213481334,
+      "random_cv_mean": 0.290446277456604,
+      "cv_z_vs_random": 5.648817901112462
+    },
+    {
+      "regime": "P5N64",
+      "N": 64,
+      "n_seeds": 8,
+      "lambda_skel": 0.5005244059005457,
+      "legacy_MF_offdiag_max": 9.289337200732526e-16,
+      "corrected_MFskel_offdiag_max": 0.5088965307730149,
+      "lambda_MFskel": 1.0,
+      "dilution_pred_MFskel": 0.25,
+      "lambda_quotient": 1.4578071716619152,
+      "equitability_cv": 0.4625519017412914,
+      "random_cv_mean": 0.344852373013922,
+      "cv_z_vs_random": 6.445755323600513
+    },
+    {
+      "regime": "P5N72",
+      "N": 72,
+      "n_seeds": 8,
+      "lambda_skel": 0.5000952860468999,
+      "legacy_MF_offdiag_max": 1.2186985907257082e-15,
+      "corrected_MFskel_offdiag_max": 0.4308022746089288,
+      "lambda_MFskel": 1.1283105891744567,
+      "dilution_pred_MFskel": 0.2820776472936142,
+      "lambda_quotient": 1.4374828630329706,
+      "equitability_cv": 0.47754200137328645,
+      "random_cv_mean": 0.3496729147005139,
+      "cv_z_vs_random": 7.7737987513573845
+    },
+    {
+      "regime": "P5N84",
+      "N": 84,
+      "n_seeds": 8,
+      "lambda_skel": 0.44420665856798275,
+      "legacy_MF_offdiag_max": 1.4269084959014614e-15,
+      "corrected_MFskel_offdiag_max": 0.41846722669932734,
+      "lambda_MFskel": 1.0347722365360557,
+      "dilution_pred_MFskel": 0.2586930591340139,
+      "lambda_quotient": 1.4190632120317286,
+      "equitability_cv": 0.5111455714118904,
+      "random_cv_mean": 0.37054743548824554,
+      "cv_z_vs_random": 8.932513442498738
+    },
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds": 8,
+      "lambda_skel": 0.40981027081822063,
+      "legacy_MF_offdiag_max": 1.2247651356638466e-15,
+      "corrected_MFskel_offdiag_max": 0.36505932916055217,
+      "lambda_MFskel": 0.9999999999999997,
+      "dilution_pred_MFskel": 0.24999999999999992,
+      "lambda_quotient": 1.4237958760212805,
+      "equitability_cv": 0.5569240397494795,
+      "random_cv_mean": 0.41119359846878345,
+      "cv_z_vs_random": 8.663532111470095
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "n_seeds": 8,
+      "lambda_skel": 0.317105904647569,
+      "legacy_MF_offdiag_max": 8.955796297643037e-16,
+      "corrected_MFskel_offdiag_max": 0.34167369851946194,
+      "lambda_MFskel": 1.0679448301314765,
+      "dilution_pred_MFskel": 0.2669862075328691,
+      "lambda_quotient": 1.4417634125737586,
+      "equitability_cv": 0.6858392265294949,
+      "random_cv_mean": 0.48810759109376656,
+      "cv_z_vs_random": 10.838435142718769
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_seeds": 8,
+      "lambda_skel": 0.37887763024005705,
+      "legacy_MF_offdiag_max": 1.0538445116559103e-15,
+      "corrected_MFskel_offdiag_max": 0.26987634939234606,
+      "lambda_MFskel": 1.0101298607272908,
+      "dilution_pred_MFskel": 0.2525324651818227,
+      "lambda_quotient": 1.4404146927000505,
+      "equitability_cv": 0.6174379219768774,
+      "random_cv_mean": 0.4286021851397738,
+      "cv_z_vs_random": 15.144134891967866
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_seeds": 8,
+      "lambda_skel": 0.3256460212558737,
+      "legacy_MF_offdiag_max": 6.879262784420526e-16,
+      "corrected_MFskel_offdiag_max": 0.2569210041873524,
+      "lambda_MFskel": 0.9999999999999999,
+      "dilution_pred_MFskel": 0.24999999999999997,
+      "lambda_quotient": 1.4551044547014218,
+      "equitability_cv": 0.6693501508788211,
+      "random_cv_mean": 0.46947062381870586,
+      "cv_z_vs_random": 15.613507971853227
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_seeds": 8,
+      "lambda_skel": 0.34917741695599697,
+      "legacy_MF_offdiag_max": 9.948639134726989e-16,
+      "corrected_MFskel_offdiag_max": 0.2283629119759465,
+      "lambda_MFskel": 1.0674961526558249,
+      "dilution_pred_MFskel": 0.2668740381639562,
+      "lambda_quotient": 1.4567798558123624,
+      "equitability_cv": 0.6489177309896829,
+      "random_cv_mean": 0.44526126864830506,
+      "cv_z_vs_random": 18.15672874707921
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_seeds": 8,
+      "lambda_skel": 0.3236488132751266,
+      "legacy_MF_offdiag_max": 8.732977448827617e-16,
+      "corrected_MFskel_offdiag_max": 0.17548183947338802,
+      "lambda_MFskel": 1.0429722469615623,
+      "dilution_pred_MFskel": 0.2607430617403906,
+      "lambda_quotient": 1.4735814020724431,
+      "equitability_cv": 0.6891391859842976,
+      "random_cv_mean": 0.47371966989875347,
+      "cv_z_vs_random": 25.90231583406802
+    }
+  ],
+  "symanzik_fits": {
+    "lambda_skel": {
+      "a_inf": 0.28239094412932053,
+      "b": 13.798360093725787,
+      "r2": 0.8887090452962088
+    },
+    "lambda_MFskel": {
+      "a_inf": 1.0409212069542184,
+      "b": -0.6163966452857372,
+      "r2": 0.007450464636785448
+    },
+    "dilution_pred_MFskel": {
+      "a_inf": 0.2602303017385546,
+      "b": -0.1540991613214343,
+      "r2": 0.007450464636785448
+    },
+    "lambda_quotient": {
+      "a_inf": 1.4588543211460447,
+      "b": -1.6658299639713827,
+      "r2": 0.32838792171797104
+    },
+    "equitability_cv": {
+      "a_inf": 0.7295729541633613,
+      "b": -17.017739413754864,
+      "r2": 0.9043959495050861
+    },
+    "random_cv_mean": {
+      "a_inf": 0.5018436101066353,
+      "b": -10.131910329805445,
+      "r2": 0.8492984122828349
+    }
+  }
+}

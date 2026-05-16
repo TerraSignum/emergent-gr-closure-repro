@@ -56,7 +56,7 @@ def main() -> None:
     pred = [C_PREDICTED, D_PREDICTED]
     x = np.arange(len(labels))
     w = 0.35
-    ax_A.bar(x - w / 2, emp, w, label="empirical (10-pt fit)",
+    ax_A.bar(x - w / 2, emp, w, label="empirical (12-pt fit)",
               color="#3c6ea7", edgecolor="black", linewidth=0.6)
     ax_A.bar(x + w / 2, pred, w,
               label=r"closure $2\gamma\Lambda_t$, $-(1+\gamma)c$",
@@ -68,8 +68,8 @@ def main() -> None:
                        ha="center", fontsize=9, fontstyle="italic", color="#444")
     ax_A.set_xticks(x); ax_A.set_xticklabels(labels)
     ax_A.set_ylabel("prefactor value")
-    ax_A.set_title(r"\textbf{(A)} Federer prefactors: empirical vs closure",
-                     loc="left")
+    ax_A.set_title("(A) Federer prefactors: empirical vs closure",
+                     loc="left", fontweight="bold")
     ax_A.axhline(0, color="black", linewidth=0.5)
     ax_A.legend(loc="upper right", fontsize=8.5, frameon=True)
     ax_A.grid(True, axis="y", alpha=0.3)
@@ -89,8 +89,8 @@ def main() -> None:
     ax_B.annotate("$=11/10$", xy=(1, RATIO_PREDICTED + 0.005),
                    ha="center", fontsize=10, color="#5a3010")
     ax_B.set_ylabel(r"$|d|/c$")
-    ax_B.set_title(r"\textbf{(B)} Sub-leading-to-leading ratio $|d|/c$",
-                     loc="left")
+    ax_B.set_title(r"(B) Sub-leading-to-leading ratio $|d|/c$",
+                     loc="left", fontweight="bold")
     ax_B.set_ylim(1.05, 1.13)
     ax_B.legend(loc="upper right", fontsize=8.5, frameon=True)
     ax_B.grid(True, axis="y", alpha=0.3)
@@ -120,8 +120,8 @@ def main() -> None:
     ax_C.set_xlabel(r"$N$")
     ax_C.set_ylabel(r"$\Lambda_t$")
     ax_C.set_xscale("log")
-    ax_C.set_title(r"\textbf{(C)} (A1) anchor: $\Lambda_t^{\mathrm{emp}}\!=\!\alpha_\xi^2$ across $12$ regimes",
-                     loc="left")
+    ax_C.set_title(r"(C) (A1) anchor: $\Lambda_t^{\mathrm{emp}}\!=\!\alpha_\xi^2$ across $12$ regimes",
+                     loc="left", fontweight="bold")
     ax_C.legend(loc="lower right", fontsize=8.5, frameon=True)
     ax_C.grid(True, alpha=0.3)
     ax_C.set_ylim(0.76, 0.86)
@@ -146,8 +146,8 @@ def main() -> None:
                            val + (1 if val < -160 else -3)),
                        ha="center", fontsize=8.5)
     ax_D.set_ylabel("AICc")
-    ax_D.set_title(r"\textbf{(D)} Statistical preference: closure beats free fit",
-                     loc="left")
+    ax_D.set_title("(D) Statistical preference: closure beats free fit",
+                     loc="left", fontweight="bold")
     ax_D.invert_yaxis()  # lower AICc is better - put it at top
     ax_D.grid(True, axis="y", alpha=0.3)
     delta_TA_TB = aicc_closure - aicc_free

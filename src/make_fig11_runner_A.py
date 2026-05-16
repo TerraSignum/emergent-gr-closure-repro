@@ -19,6 +19,10 @@ with open(
     d = json.load(f)
 
 trend = d["trend"]
+# Sort by N so matplotlib connects markers in lattice-size order;
+# otherwise the trend list (built incrementally per regime) can
+# produce scrambled connecting lines.
+trend = sorted(trend, key=lambda t: t["N"])
 ns = np.array([t["N"] for t in trend])
 mean_blind = np.array([t["blind_frob_mean"] for t in trend])
 median_blind = np.array([t["blind_frob_median"] for t in trend])

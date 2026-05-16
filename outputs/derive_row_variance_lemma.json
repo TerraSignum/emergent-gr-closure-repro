@@ -1,0 +1,42 @@
+{
+  "title": "Phase-A deliverable: Row-variance lemma (Lemma RV)",
+  "hypothesis": [
+    "(SG) uniform spectral gap, lambda_infty = 3/8",
+    "admissibility A1--A8 (implied by (SG) at theorem level)",
+    "synchronisation-locking eps^2_sync = gamma/2 = 1/20"
+  ],
+  "algebraic_chain": {
+    "A1_stationary_distribution": "Markov-semigroup stationary distribution exists and is unique under (SG) + CD(K_BE, N) >= 0; K_BE values {15/32, 63/128, 51/88} from cross-projection.",
+    "A2_variance_reactivity": "sigma_Xi^2 = 2 * chi * D_eps via Fluctuation-Dissipation on the linearised fast-slow generator.",
+    "A3_algebraic_identification": {
+      "susceptibility_chi": "81/100",
+      "noise_strength_D_eps": "1/100",
+      "product_2chi_D": "81/5000"
+    }
+  },
+  "target": {
+    "sigma_xi_sq_continuum": "81/5000",
+    "half_sigma_xi_sq_continuum": "81/10000",
+    "numerical": 0.0162
+  },
+  "empirical_certificates": {
+    "S1_audit": {
+      "path": "outputs\\t00_summand_decomposition_audit.json",
+      "available": true,
+      "y_inf": 0.008051580180666007,
+      "bootstrap_ci95": [
+        0.007599574488760657,
+        0.008507385569399993
+      ],
+      "structural_target_alpha_xi_sq_gamma_sq": 0.0081,
+      "rel_err_vs_target": -0.005977755473332372,
+      "target_in_ci95": true
+    },
+    "variance_reactivity_audit": {
+      "path": "outputs\\variance_reactivity_identity_audit.json",
+      "available": true,
+      "raw_summary_value": "VARIANCE_REACTIVITY_IDENTITY_CONFIRMED"
+    }
+  },
+  "verdict": "DERIVED_CONDITIONAL_ON_SG"
+}

@@ -23,7 +23,7 @@ Section discrete-bianchi-recovered):
 This script reproduces / documents the result with a
 reanchored summary suitable for external-paper integration.
 
-Output: outputs/verify_continuum_bianchi_iter32.json
+Output: outputs/verify_continuum_bianchi.json
 """
 from __future__ import annotations
 
@@ -36,9 +36,9 @@ OUTPUTS.mkdir(parents=True, exist_ok=True)
 
 
 def main():
-    out_path = OUTPUTS / "verify_continuum_bianchi_iter32.json"
+    out_path = OUTPUTS / "verify_continuum_bianchi.json"
     print("=" * 90)
-    print("Continuum Bianchi closure verification (iter-32)")
+    print("Continuum Bianchi closure verification")
     print("=" * 90)
     print()
 

@@ -6,7 +6,7 @@
   },
   "schema_version": "1.0.0",
   "release": "v0.1.0",
-  "description": "Emergent time and Lorentz signature: structural closure that the relational lattice produces a 3+1 Lorentzian spacetime with a derived signal speed c_Xi^2 = Z_x/Z_tau, a time-dilation formula dtau/dt = 1/sqrt(1 + alpha_K K + alpha_R R) at the local-clock level, an IR-hyperbolic dispersion omega^2(k) = c_Xi^2 |k|^2 + m_eff^2/Z_tau + O(|k|^3), and a Lorentz-violation residual Delta_Lor(k) = o(k^2). Time itself is not a separate axis but emerges as a monotone labeling of the causal partial order, with the macroscopic rate set by the inconsistency-flux ratio dot tau(x,t) = q(x,t)/Q(t). The construction is irreversible by Coleman tunnelling at 95.9% (the Gamow channel) plus four sub-dominant channels (spectral 3.0%, topological 0.5%, gravitational 0.4%, decoherence 0.3%).",
+  "description": "Emergent time and Lorentz signature: structural closure that the relational lattice produces a 3+1 Lorentzian spacetime with a derived signal speed c_Xi^2 = Z_x/Z_tau, a time-dilation formula dtau/dt = 1/sqrt(1 + alpha_K K + alpha_R R) at the local-clock level, an IR-hyperbolic dispersion omega^2(k) = c_Xi^2 |k|^2 + m_eff^2/Z_tau + O(|k|^3), and a Lorentz-violation residual Delta_Lor(k) = o(k^2). Time itself is not a separate axis but emerges as a monotone labeling of the causal partial order, with the macroscopic rate set by the inconsistency-flux ratio dot tau(x,t) = q(x,t)/Q(t). The construction is irreversible by Coleman tunnelling at 95.8% (the Gamow channel) plus four sub-dominant channels (spectral 3.0%, topological 0.5%, gravitational 0.4%, decoherence 0.3%).",
   "stand": "2026-04-27",
   "lorentz_signature_closure": {
     "id": "LORENTZ-1",
@@ -39,11 +39,11 @@
   },
   "irreversibility_channels": {
     "id": "IRR-CHANNELS",
-    "claim": "Time is irreversible at 95.9% via the Gamow tunnelling channel; four sub-dominant channels make up the remaining 4.1%",
+    "claim": "Time is irreversible at 95.8% via the Gamow tunnelling channel; four sub-dominant channels make up the remaining 4.2%",
     "channels": [
       {
         "name": "Gamow tunnelling",
-        "share_pct": 95.9,
+        "share_pct": 95.8,
         "physics": "Coleman bounce action exp(-S) tunnel rate"
       },
       {
@@ -68,13 +68,13 @@
       }
     ],
     "n_channels": 5,
-    "shares_sum_pct": 100.1,
+    "shares_sum_pct": 100.0,
     "tier": "DERIVED",
     "framing": "All five channels appear in the 16-module temporal-emergence bundle of Paper 4 Section 13. The Gamow channel dominates by two orders of magnitude; the four sub-dominant channels are kept for completeness and stress-testing."
   },
   "summary": {
     "n_closures": 4,
     "fitted_parameters": 0,
-    "framing": "Time emerges as a monotone labeling of the causal partial order, with a derived Lorentz signature in the IR, a local time-dilation formula that reduces to the standard gravitational redshift in the weak-field limit, a macroscopic time-rate identity from the inconsistency flux, and an irreversibility budget dominated 96% by the Coleman bounce channel."
+    "framing": "Time emerges as a monotone labeling of the causal partial order, with a derived Lorentz signature in the IR, a local time-dilation formula that reduces to the standard gravitational redshift in the weak-field limit, a macroscopic time-rate identity from the inconsistency flux, and an irreversibility budget dominated 95.8% by the Coleman bounce channel (the four sub-dominant channels together account for 4.2%)."
   }
 }

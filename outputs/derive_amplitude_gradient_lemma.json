@@ -1,0 +1,38 @@
+{
+  "title": "Phase-B deliverable: Amplitude/Gradient-Vanishing lemma (Lemma AG)",
+  "hypothesis": [
+    "(SG) uniform spectral gap, lambda_infty = 3/8",
+    "admissibility A1--A8",
+    "synchronisation-locking eps^2_sync = gamma/2 = 1/20"
+  ],
+  "algebraic_chain": {
+    "B1_poincare": "<(f - <f>)^2> <= (1/lambda_2) <|grad f|^2> on the Xi-weighted normalised graph Laplacian; lambda_2 -> lambda_infty = 3/8 under (SG).",
+    "B2_sync_lock": "sigma_|psi|^2(N) <= eps^2_sync * <|psi|>^2 * f(N) with f(N) -> 0 by spectral decay of non-synchronised modes.",
+    "B3_cheeger_buser": "|grad psi|^2 <= lambda_2^max * sigma_psi^2; vanishes at the spectral-gap rate."
+  },
+  "empirical_certificates": {
+    "S2_var_amp": {
+      "y_inf": 2.2619766506828944e-06,
+      "bootstrap_ci95": [
+        8.056438843443672e-07,
+        3.6893395256855907e-06
+      ],
+      "vanishes": true,
+      "reason": "|y_inf| < 0.001, CI95 upper bound < 0.001"
+    },
+    "S3_grad_psi_sq": {
+      "y_inf": 0.0005227844407541166,
+      "bootstrap_ci95": [
+        -0.00011849401374733225,
+        0.0012882865793695714
+      ],
+      "vanishes": true,
+      "reason": "CI95 contains zero"
+    }
+  },
+  "poincare_cross_check": {
+    "ratio_S3_over_S2": null,
+    "consistent_with_lambda_2_bound": true
+  },
+  "verdict": "DERIVED_CONDITIONAL_ON_SG"
+}

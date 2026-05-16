@@ -1105,3 +1105,136 @@ not low-rank) and supports route 5b (small-world spectral
 theory on the τ=0.10 skeleton) as the analytical attack vector
 for Lemma B. Localisation-based routes (early Route 1 /
 radial-low-rank; defect-condensation) are excluded.
+
+## M_F / family-coupling construction — NUMERICALLY VOID (2026-05-14)
+
+The Step-4a "family-coupling matrix" M_F — used in
+`lemma_B_step4a_carrier_synthesis_derivation.md` and the four
+scripts `verify_lemma_B_family_factor_p5n_canonical.py`,
+`verify_lemma_B_family_factor_p1p2prime.py`,
+`verify_lemma_B_M_F_empirical_off_diagonal_extraction.py`,
+`verify_lemma_B_alpha_xi_master_identity.py` — was found to be a
+numerically degenerate construction.
+
+**The bug.** M_F = psi_g · Ξ · psi_h, with psi_g built from
+*disjoint sets of orthogonal Ξ-eigenvectors*
+({0,3,6}/{1,4,7}/{2,5,8}). Disjoint orthogonal eigenspaces ⇒
+psi_i · Ξ · psi_j = 0 *exactly* (exact arithmetic) ⇒ M_F is
+diagonal, zero inter-generation coupling by construction. The
+"λ_2(M_F) = 7/6" is the normalised Laplacian of ~1e-16
+orthogonality round-off, amplified to O(1) by the 1/√deg
+normalisation; it scatters by ~0.35 under 1e-12 perturbations
+of Ξ.
+
+**Root cause (general).** Any "project operator X onto
+X's-own-eigenbasis-derived generation vectors" is degenerate —
+X is diagonal in its own eigenbasis. A meaningful
+family-coupling needs a *different* operator projected, or a
+genuine vertex-partition quotient.
+
+**Two corrected derivations, computed**
+(`verify_lemma_B_equitable_partition.py`, 2026-05-14):
+- *Skeleton projection* psi_g · A_skel · psi_h (A_skel
+  nonlinear in Ξ) → λ_2 → 1.04, R² = 0.007 (no convergence).
+  Not 7/6.
+- *Vertex-class graph quotient* (spectral-clustering
+  3-partition of the skeleton) → λ_2 → 1.46; equitability CV
+  0.73, *worse* than a random 3-partition (0.50, z = +5.6…
+  +25.9). No almost-equitable 3-partition exists. Not 7/6.
+
+**Verdict.** λ_family = 7/6 has no valid construction. The M_F
+block (master identity, (0,7/6,11/6) spectrum, off-diagonal
+cubic, 1/d-dilution) is removed from the P4 manuscript.
+Surviving real results: λ_skel = 7/24 (τ=0.10 skeleton gap,
+full-seed Symanzik 0.2924) and λ_w = 3/8 (weighted Laplacian,
+0.3789), related by the *pure-algebra* identity
+3/8 = (7/24)·(9/7). A structural derivation of that
+factorisation from the carrier action remains the open Step-4
+deliverable.
+
+## Candidate alternative analytical routes (Routes 6–10, 2026-05-14)
+
+Beyond surveyed Routes 1–5b, a literature scan identified five
+non-surveyed routes. Route 6 has been computed (NOT_SUPPORTED,
+above); Routes 7–10 are proposals.
+
+**Route 6 — Equitable partition / graph quotient.**
+[COMPUTED — NOT_SUPPORTED.] Tests whether the τ=0.10 skeleton
+admits an almost-equitable 3-class vertex partition whose
+quotient reproduces the spectral structure. Result: no
+almost-equitable 3-partition exists (equitability CV worse than
+random at every N); vertex-quotient λ_2 → 1.46, no clean
+rational. `verify_lemma_B_equitable_partition.py`.
+
+**Route 7 — Graphop / action-convergence limit
+(Backhausz–Szegedy).** The carrier-action equilibrium
+edge-formation rule, if action-convergent, has a graphop limit
+P; (SG) = spectral gap of P, an explicit operator. Handles
+sparse O(1)-degree graphs (matches d_eff = 12 const in N);
+sidesteps finite-N entirely. Directly targets the
+"carrier-action → graph-ensemble" characterisation.
+
+**Route 8 — Deterministic recursive small-world comparison
+object.** A class of deterministic recursive small-world
+networks has exact closed-form Laplacian spectra. If the
+carrier skeleton can be spectrally sandwiched between such
+graphs of matching (d_eff, clustering), the exact spectrum
+transfers. Riskier (carrier is random), exact on success.
+
+**Route 9 — Local law / spectral-edge for the weighted
+Laplacian (Huang–Landon style).** Local-law results for sparse
+ER Laplacians pin the spectral edge to optimal scale. Gives
+*existence + uniformity* of (SG) — the half that discharges
+A1–A8 and makes M3 unconditional — but may not pin the exact
+rational. Best route if the priority is "M3 unconditional"
+rather than "exact 3/8".
+
+**Route 10 — Operator-valued free probability.** Skeleton =
+Kesten–McKay base ⊞ triangle/clustering correction;
+operator-valued free convolution computes the spectral edge of
+the sum. The rigorous version of Route 5b's "Friedman bulk +
+triangle correction".
+
+**Ranking by goal.** Existence + uniformity (M3 unconditional)
+→ Routes 9, 7. Exact rational 3/8 → no clean candidate survives
+(Route 6 failed; Routes 8, 10 unproven). Honest current
+status: the leading robust target remains the threshold-free
+weighted conjecture 3/8 = (d−1)/(2d) via small-world spectral
+theory (Route 5b), with Routes 7 and 9 the most promising
+non-surveyed alternatives.
+
+## Route 5b empirically validated — fingerprint study (2026-05-15)
+
+`src/verify_lemma_B_gap_statistical_fingerprint.py` (GPU, 12.5h
+on RTX 5070, 250 seeds × N∈[1k,128k]): five synthetic ensembles
+Symanzik-extrapolated, each matching progressively more carrier
+skeleton statistics.
+
+**Verdict: GAP_STATISTICALLY_DETERMINED.** Only **E2 Newman
+clustered** (configuration model with joint (degree,
+triangle-degree) sequence) reproduces the carrier asymptote
+`λ_skel → 7/24` at +0.36 % rel. err. (vs +0.36 % for the
+carrier vs 7/24 itself). E0 ER, E1 configuration model, and E4
+random regular all land at ~0.48 (+65 %); E3 Watts–Strogatz at
+~0.17 (−41 %); Phase-C WS rewiring-probability sweep crosses
+7/24 between p=0.40 and p=0.55 but no clean match.
+
+**Consequence — Route 5b → concrete graph-theoretic statement.**
+The structural derivation of `3/8 = (7/24)·(9/7)` from the
+carrier action reduces to: *the normalised-Laplacian spectral
+gap of the Newman-clustered-graph ensemble with the carrier's
+empirical (degree, triangle) distribution equals 7/24*. The
+analytical tool is the cavity / resolvent method for sparse
+networks with triangles (Pham–Peron–Metz, PRE 110, 054307,
+2024; arXiv:2404.08152), with diagonal-resolvent equation
+`[G_kk]⁻¹ = z − J_e² Σ_single G_jj − J_Δ² Σ_triangle uᵀ𝔾_a u`.
+Step-4 is now: solve these self-consistent equations for the
+carrier's clustered-degree distribution and verify the
+fixed-point value is 7/24.
+
+**What this changes.** The (SG) open analytical question is no
+longer "derive λ_∞ from the carrier-action equilibrium" (a
+broad, vague target) but "compute the cavity fixed point of a
+specific clustered-graph ensemble" (a concrete, tractable
+graph-theory problem). The Lemma-B route is settled; the
+remaining work is the closed-form cavity calculation.
