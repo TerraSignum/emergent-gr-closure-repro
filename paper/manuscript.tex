@@ -6581,6 +6581,38 @@ high-$N$ run. Audit script:
 \pyown{src/derive\_branch\_resolved\_audit.py}{derive\_branch\_resolved\_audit}.
 \end{remark}
 
+\begin{remark}[Trust-region alarm at N=2048: matter-branch closure
+inconsistent with prior simple-rational candidates]
+\label{rmk:matter_branch_n2048_alarm}
+The adaptive Bayesian pipeline at N=2048 with three bracket-check seeds
+triggered a trust-region outlier alarm. The per-seed weighted
+$\lambda_{2}$ values $(0.43582, 0.43766, 0.42954)$ are mutually
+consistent ($\sigma_{\rm seed}\!=\!0.0043$) but yield a sample mean
+$\widehat\lambda_{2}^{\rm mat}(N{=}2048) = 0.43434 \pm 0.00426$ at
+$z\!=\!+4.32$ above the prior bracket centred at the
+N=1024 matter-branch mean $0.40988$. The adaptive pipeline's bracket-
+check module \pyown{src/adaptive\_pipeline/bracket\_check.py}{bracket\_check}
+issued the \texttt{OUTSIDE\_ALARM} verdict, and the candidate-rational
+discrimination test \pyown{src/verify\_matter\_branch\_falsification.py}{verify\_matter\_branch\_falsification}
+now excludes every simple rational in the original candidate list (79/200,
+13/32, 2/5, 11/27, 9/22) at $\geq\!1\sigma$, with most at
+$\geq\!3\sigma$ from the N=2048-included asymptote.
+This is a methodologically significant finding: the same adaptive-pipeline
+infrastructure that confirms $\lambda_{\infty}^{\rm vac}\!=\!3/8$ on the
+branch-resolved low-$N$ data (Remark~\ref{rmk:branch_resolved_audit})
+also raises a hard alarm for the matter-branch closure when the lever-arm
+is extended to N=2048. Possible scenarios under follow-up:
+(a)~the 3-seed sample at N=2048 happened to draw from the upper trajectory
+class and a 12-seed run will pull the mean back into the prior bracket;
+(b)~higher-order Symanzik corrections ($1/N^{2}$ or $1/N^{3}$) become
+significant beyond N=1024, requiring a Symanzik-3 fit with explicit
+finite-N error budget; or (c)~the matter-branch closure does not
+converge to a simple rational and the original $79/200 = 3/8 + d\gamma^{2}/2$
+identification is finite-N artefactual. A full 12-seed N=2048 production
+run is in progress; the verdict will be auto-incorporated through the
+adaptive pipeline upon completion.
+\end{remark}
+
 \begin{remark}[Adaptive Bayesian pipeline with N=1024 lever-arm]
 \label{rmk:adaptive_pipeline_n1024}
 A fully automated adaptive-Bayesian analysis pipeline now drives the

@@ -26,6 +26,8 @@ _PRIORITY_TAGS = (
     "12seeds",
     "24seeds",
     "8seeds",
+    "6seeds",
+    "3seeds",
     "canonical",
     "_v2",
     "trial1seed",
