@@ -1,0 +1,99 @@
+{
+  "title": "Per-regime algebraic-chain audit for (SG) closure",
+  "anchor": {
+    "d": 4,
+    "N_gen": 3,
+    "tau_skeleton": 0.1
+  },
+  "exact_targets": {
+    "skeleton_gap_7_over_24": "7/24",
+    "weight_lift_9_over_7": "9/7",
+    "weighted_gap_3_over_8": "3/8",
+    "algebraic_identity_holds": true
+  },
+  "per_regime": [
+    {
+      "regime": "P5N100",
+      "N": 100,
+      "n_seeds": 8,
+      "source": "results_d1_p5n100_24seeds\\P5N100.snapshots.npz",
+      "weighted_l2": 0.4365826772749641,
+      "skeleton_l2": 0.40981027081822063,
+      "lift_l2": 1.0653287834960556
+    },
+    {
+      "regime": "P5N128",
+      "N": 128,
+      "n_seeds": 8,
+      "source": "results_d1_p5n128_kq_fixed\\P5N128.snapshots.npz",
+      "weighted_l2": 0.3899122455983995,
+      "skeleton_l2": 0.317105904647569,
+      "lift_l2": 1.2295962953819715
+    },
+    {
+      "regime": "P5N200",
+      "N": 200,
+      "n_seeds": 8,
+      "source": "results_d1_p5n200_8seeds\\P5N200.snapshots.npz",
+      "weighted_l2": 0.4197898619809064,
+      "skeleton_l2": 0.37887763024005705,
+      "lift_l2": 1.1079827059595135
+    },
+    {
+      "regime": "P5N256",
+      "N": 256,
+      "n_seeds": 8,
+      "source": "results_d1_p5n256_12seeds\\P5N256.snapshots.npz",
+      "weighted_l2": 0.40238371047628785,
+      "skeleton_l2": 0.3256460212558737,
+      "lift_l2": 1.2356475565845102
+    },
+    {
+      "regime": "P5N300",
+      "N": 300,
+      "n_seeds": 8,
+      "source": "results_d1_p5n300_12seeds\\P5N300.snapshots.npz",
+      "weighted_l2": 0.4048848905015492,
+      "skeleton_l2": 0.34917741695599697,
+      "lift_l2": 1.1595391650215812
+    },
+    {
+      "regime": "P5N512",
+      "N": 512,
+      "n_seeds": 8,
+      "source": "results_d1_p5n512_12seeds\\P5N512.snapshots.npz",
+      "weighted_l2": 0.4027791290638158,
+      "skeleton_l2": 0.3236488132751266,
+      "lift_l2": 1.2444943795342214
+    }
+  ],
+  "symanzik": {
+    "weighted": {
+      "a_inf": 0.39573024513004823,
+      "b": 2.5605533718798585,
+      "r2": 0.2226015318872684,
+      "target": 0.375,
+      "rel_err_pct": 5.528065368012861
+    },
+    "skeleton": {
+      "a_inf": 0.3139665763688644,
+      "b": 6.888460049486489,
+      "r2": 0.31849890403193415,
+      "target": 0.2916666666666667,
+      "rel_err_pct": 7.645683326467781
+    },
+    "lift": {
+      "a_inf": 1.24934260861707,
+      "b": -14.16853035298874,
+      "r2": 0.3234549603142164,
+      "target": 1.2857142857142858,
+      "rel_err_pct": -2.828908218672338
+    }
+  },
+  "chain_reconstruction": {
+    "empirical_skel_times_empirical_lift": 0.39225182153924754,
+    "empirical_weighted": 0.39573024513004823,
+    "chain_residual_pct": -0.8789885619325319
+  },
+  "honest_caveat": "Algebraic identity is exact in Q at (d, N_gen) = (4, 3): the N_gen factor in 9/7 cancels with that in 7/24, so the factorisation is post-hoc rather than a two-step mechanism. See par:cross_closure_identities of the bridge manuscript for the d-only / System-R independence statement that constrains this reading."
+}

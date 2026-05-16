@@ -1,0 +1,28 @@
+{
+  "title": "Kesten--McKay baseline observation at the carrier mean degree",
+  "anchor": {
+    "d": 4,
+    "N_gen": 3,
+    "d_times_N_gen": 12
+  },
+  "inputs": {
+    "gamma": "1/10",
+    "universal_leakage_gamma_sq_times_d_plus_N_gen": "7/100"
+  },
+  "kesten_mckay": {
+    "formula": "lambda_2^KM(d) = 1 - 2*sqrt(d-1)/d",
+    "literature": "BauerschmidtHuangYau2019 (arXiv:1609.09052)",
+    "lambda_2_KM_at_12": 0.4472292016074334
+  },
+  "vacuum_branch_observation": {
+    "shifted_value": 0.3772292016074334,
+    "target_lambda_inf_vac": 0.375,
+    "relative_residual": 0.005944537619822388,
+    "irrational": true
+  },
+  "skeleton_cross_check": {
+    "target_lambda_inf_skel": 0.2916666666666667,
+    "naive_residual": 0.5333572626540573
+  },
+  "verdict": "STRUCTURAL_BASELINE_OBSERVATION"
+}

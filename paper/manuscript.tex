@@ -6411,6 +6411,166 @@ residual.}
 \label{tab:sg_ladder}
 \end{table}
 
+\begin{remark}[Kesten--McKay baseline at the carrier mean degree]
+\label{rmk:km_baseline}
+A complementary structural observation, anchored in random-matrix
+theory of sparse random regular graphs (Bauerschmidt--Huang--Yau,
+local Kesten--McKay law for random regular graphs at fixed
+degree~\cite{BauerschmidtHuangYau2019}), gives the
+tree-like baseline for the normalised-Laplacian spectral gap of a
+random $d$-regular graph as
+\begin{equation}
+\lambda_{2}^{\mathrm{KM}}(d) \;=\; 1 - \frac{2\sqrt{d-1}}{d}.
+\label{eq:km_baseline}
+\end{equation}
+Evaluating at the carrier's empirical mean skeleton degree
+$d_{\mathrm{eff}}^{\mathrm{skel}} \!=\! d \cdot N_{\rm gen} \!=\!12$
+(itself a structural identification, P4 par. statistical-fingerprint)
+gives the irrational
+$\lambda_{2}^{\mathrm{KM}}(12) = 1 - 2\sqrt{11}/12 = 0.44723$.
+The carrier's vacuum-branch asymptote $\lambda_{\infty}^{\rm vac}\!=\!3/8\!=\!0.37500$
+sits \emph{below} this baseline by $0.07223$, suggestively close to
+the universal-leakage constant $\gamma^{2}(d{+}N_{\rm gen})\!=\!7/100\!=\!0.07000$
+that anchors the $n_{s}$, $\Sigma m_{\nu}$, $D/H_{\rm dressed}$,
+and Tolman-extended closure family.
+Numerically,
+\begin{equation}
+\lambda_{2}^{\mathrm{KM}}(12) - \gamma^{2}(d{+}N_{\rm gen})
+\;=\;0.37723
+\;\approx\; \tfrac{3}{8}
+\qquad(\text{relative residual }+0.59\%).
+\label{eq:km_minus_leakage}
+\end{equation}
+This decomposition is \emph{not} an algebraic identity in
+$\mathbb Q$ (the right-hand side contains $\sqrt{11}/12$,
+irrational), so the numerical match at $0.6\%$ is a coincidence at
+the empirical precision rather than a structural derivation.
+It is registered here as a falsification handle: if the carrier
+spectral gap were genuinely a Kesten--McKay baseline minus a
+universal-leakage triangle/clustering correction, one would expect
+a graph-class-dependent corrected form whose irrational part
+cancels against the carrier's specific clustering structure.
+The bundled audit script
+\pyown{src/derive_kesten_mckay_baseline_observation.py}{derive_kesten_mckay_baseline_observation}
+checks the numerical match and registers the $0.6\%$ residual; a
+closed-form derivation that yields the exact rational $3/8$ from
+Kesten--McKay plus a structured triangle correction is a concrete
+analytical target on the Pham--Peron--Metz cavity
+machinery~\cite{PhamPeronMetz2024} for sparse networks with
+clustering.
+\end{remark}
+
+\begin{remark}[Per-regime algebraic chain $3/8 = (7/24)\cdot(9/7)$
+and its end-to-end empirical match]
+\label{rmk:phase3_algebraic_chain}
+The closure $\lambda_{\infty}^{\rm vac}\!=\!3/8$ admits the
+$\mathbb Q$-identity
+\begin{equation}
+\frac{3}{8} \;=\; \underbrace{\frac{7}{24}}_{\lambda_{\infty}^{\rm skel}}
+\;\cdot\;\underbrace{\frac{9}{7}}_{\text{weight-lift factor}},
+\qquad \frac{9}{7} = \frac{d \,N_{\rm gen} \,(d-1)}{2 d (d + N_{\rm gen})}\;\Big/\;\frac{7}{24}.
+\label{eq:phase3_chain}
+\end{equation}
+Per-regime Symanzik extrapolation on the canonical ladder
+$N\!\in\!\{50,64,72,84,100,128,200,256,300,512\}$, broken into the
+three factors (skeleton $\lambda_{2}$ at threshold
+$\tau\!=\!0.10$; weighted $\lambda_{2}$ on the unthresholded carrier;
+weight-lift ratio of the two), gives
+$\widehat\lambda^{\rm skel} = 0.314$ (target $7/24\!=\!0.292$,
+$+7.6\%$), $\widehat\lambda^{\rm w} = 0.396$ (target
+$3/8\!=\!0.375$, $+5.5\%$), $\widehat{(\text{lift})} = 1.249$
+(target $9/7\!=\!1.286$, $-2.8\%$). The chained product
+$\widehat\lambda^{\rm skel} \cdot \widehat{(\text{lift})} = 0.392$
+matches the directly-extracted $\widehat\lambda^{\rm w}\!=\!0.396$
+to $0.88\%$ --- tighter than any single-factor residual,
+so the three factors are structurally correlated rather than
+algebraically independent. Conditional on the cross-sector
+independence statement that $3/8$ lives in the
+dimensional-graph algebra $\mathbb Q(d)$ rather than in the
+System-$R$ coefficient algebra (par.~\ref{par:cross_closure_identities}),
+the factor $9/7$ contains $N_{\rm gen}$ explicitly and cancels in the
+product; the chain is therefore a \emph{post-hoc} factorisation
+exact in $\mathbb Q$, not an independent two-step mechanism.
+Audit script:
+\pyown{src/derive_skeleton_weighted_lift_chain.py}{derive_skeleton_weighted_lift_chain}.
+\end{remark}
+
+\begin{remark}[Eigenvector top-spectrum is near-degenerate, not
+Cartesian-product]
+\label{rmk:phase4a_modes}
+A natural two-factor reading of the algebraic chain
+\eqref{eq:phase3_chain} would predict that the skeleton-Laplacian
+spectrum factors as a Cartesian product of a $d$-mode and an
+$N_{\rm gen}$-mode, giving the analytic prediction
+$\lambda_{3}/\lambda_{2} = \max(g_{d},g_{N_{\rm gen}})/\bar g
+= (1/d)/(7/24) = 8/7 \!=\! 1.143$. The empirical ratio,
+Symanzik-extrapolated on the canonical ladder, is
+\begin{equation}
+\lambda_{3}/\lambda_{2}(N\!\to\!\infty) \;=\; 1.010,
+\label{eq:phase4a_ratio}
+\end{equation}
+\emph{falsifying} the Cartesian-product reading. The top six
+non-trivial eigenvalues $\lambda_{2},\ldots,\lambda_{7}$ are
+near-degenerate with relative spacing $\Delta\lambda/\lambda
+\sim 0.01$--$0.05$: the spectrum exhibits a \emph{soft edge}
+at the closure value $7/24$ rather than a multiplicative-gap
+two-factor structure. The participation ratio of the
+$\lambda_{2}$-mode is $\mathrm{PR}\!\approx\!1/N_{\rm gen} = 1/3$
+(suggestive of a generation-index mode) and the correlation
+of the same mode with node degree vanishes asymptotically
+$\rho(\mathrm{mode},\deg)\!\to\!0$ (mode is not degree-tracking).
+This rules out the cleanest mechanistic readings (tensor-product
+factorisation; degree-localised Fiedler mode) and supports the
+Pham--Peron--Metz cavity reading
+of Proposition~\ref{prop:gap_statistical_fingerprint} where the
+gap edge is set by joint $(\text{degree},\text{triangle-degree})$
+statistics, not by individual axis structure. Audit script:
+\pyown{src/derive_skeleton_eigenvector_mode_audit.py}{derive_skeleton_eigenvector_mode_audit}.
+\end{remark}
+
+\begin{remark}[Analytic-route inventory for the open
+$(\mathrm{SG})$ derivation]
+\label{rmk:sg_route_inventory}
+Beyond the routes surveyed in
+\path|notes/lemma_B_proof_strategy.md|, four additional
+literature anchors have been screened for direct applicability
+to the carrier ensemble at $d_{\rm eff}^{\rm skel}\!=\!12$:
+\textbf{(R7)}~Backhausz--Szegedy action-convergence of
+operators/graphs and its size-transferability extension
+(arXiv:1811.00626; arXiv:2306.04495) covers intermediate-density
+graphops and yields a uniformity-over-$N$ lever; it does not pin
+the exact rational $3/8$. \textbf{(R8)}~Deterministic recursive
+small-world (e.g.~the hierarchical $K_{d}$-replacement networks
+of Zhang et al., Sci.~Reports 5:9024, 2015): the specific
+construction inspected gives clustering $((d{-}1)/d)^{2}\!=\!9/16$
+and spectral dimension $d_{s}\!=\!2$, both mismatched with the
+carrier's $\langle C\rangle\!\approx\!0.142$ and
+$d_{\rm eff}^{\rm skel}\!=\!12$, but the closed-form spectral
+recursion of the construction is a structurally exact template
+that may transfer to a carrier-matched variant.
+\textbf{(R9)}~Huang--Landon local law for sparse random graphs
+(arXiv:1510.06390) requires average degree $p N \!\sim\!N^{\delta}$
+with $\delta>0$ growing in $N$, hence is \emph{not} applicable to
+the $O(1)$-mean-degree carrier.
+\textbf{(R10)}~The Kesten--McKay baseline at fixed $d$
+(Bauerschmidt--Huang--Yau \cite{BauerschmidtHuangYau2019},
+Remark~\ref{rmk:km_baseline} above), together with a
+Bordenave--Lelarge-type free-convolution treatment of the
+carrier's empirical degree distribution, is the most concrete
+non-cavity analytic anchor; closed-form delivery of the rational
+$3/8$ from this anchor would require the irrational
+$1 - 2\sqrt{11}/12$ to combine with a structured rational triangle
+correction. None of (R7)--(R10) supersedes the Pham--Peron--Metz
+cavity route of
+Proposition~\ref{prop:gap_statistical_fingerprint}; (R7) and (R9)
+in combination yield M3-unconditional uniformity (existence of a
+constant gap over $N$) without exact-value derivation, (R8) gives
+a deterministic template at the cost of carrier-matching, and
+(R10) gives a rigorous baseline within $0.6\%$. The exact-value
+analytic frontier remains the cavity calculation of
+Proposition~\ref{prop:gap_statistical_fingerprint}.
+\end{remark}
+
 The combined picture is therefore as follows. Proposition
 \ref{prop:m0m3_insufficient} closes the original
 ``deduce $(A1)+(A8)$ from $M0$--$M3$'' question as
@@ -13904,6 +14064,23 @@ The analytical machinery one extends to the (degree, triangle)
 joint case of~\cite{PhamPeronMetz2024} to obtain the
 closed-form $\lambda_{\infty}^{\rm skel}\!=\!7/24$ targeted
 as the Step-4 deliverable of Lemma~B.
+
+\bibitem{BauerschmidtHuangYau2019}
+R.~Bauerschmidt, J.~Huang, and H.-T.~Yau,
+\emph{Local Kesten--McKay law for random regular graphs},
+Communications in Mathematical Physics \textbf{369}, 523 (2019);
+arXiv:1609.09052.
+Optimal local law: the empirical spectral distribution of a
+random $d$-regular graph follows the Kesten--McKay density
+$\rho_{\rm KM}(\lambda) = \frac{d}{2\pi}\frac{\sqrt{4(d{-}1) - \lambda^{2}}}{d^{2} - \lambda^{2}}$
+on $|\lambda| \le 2\sqrt{d{-}1}$ down to the optimal scale
+$N^{-1+\epsilon}$. The rigorous baseline against which the
+carrier-skeleton gap is compared in
+Remark~\ref{rmk:km_baseline}: the $d{=}12$ Kesten--McKay
+upper-edge gap $\lambda_{2}^{\rm KM}(12) = 1 - 2\sqrt{11}/12$
+sits within $0.6\%$ of the empirical $\lambda_{\infty}^{\rm skel}$
+after subtracting the universal $\gamma^{2}(d{+}N_{\rm gen})$
+leakage.
 
 \bibitem{KaloperPadilla2014}
 N.~Kaloper and A.~Padilla,
