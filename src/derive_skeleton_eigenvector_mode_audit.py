@@ -41,17 +41,16 @@ REPO = SRC.parent
 OUTPUTS = REPO / "outputs"
 OUTPUTS.mkdir(parents=True, exist_ok=True)
 sys.path.insert(0, str(SRC))
-from _d1_npz_discovery import find_d1_npz  # noqa: E402
+from _d1_ladder_discovery import discover_d1_ladder  # noqa: E402
 
 D = 4
 N_GEN = 3
 TAU = 0.10
 MAX_SEEDS = 6
 TOP_K = 6
-
-LADDER = ["P5N128", "P5N200", "P5N256", "P5N300", "P5N512"]
-LADDER_N = {"P5N128": 128, "P5N200": 200, "P5N256": 256,
-            "P5N300": 300, "P5N512": 512}
+# Adaptive: ladder auto-discovered. Exclude very-small-N regimes which
+# bias the soft-edge mode-degeneracy fit.
+LADDER_MIN_N = 128
 
 # Two-factor cartesian-product expectation.
 GAP_D = 1.0 / D
@@ -143,10 +142,16 @@ def main():
     print(f"    skel lambda_3 target  = max(g_d, g_N) = 1/3 = {GAP_LARGER:.4f}")
     print(f"    ratio l_3/l_2 target  = 8/7 = {TARGET_RATIO_8_7:.4f}")
     print()
+    ladder = [(r, n, p) for (r, n, p) in discover_d1_ladder(REPO)
+              if n >= LADDER_MIN_N]
+    if not ladder:
+        print("  [error] no ladder data discovered")
+        return 1
+    print(f"  Auto-discovered ladder ({len(ladder)} regimes, "
+          f"N in {{{ladder[0][1]}..{ladder[-1][1]}}})")
     per_regime = []
-    for regime in LADDER:
-        npz_path = find_d1_npz(regime, REPO)
-        if npz_path is None:
+    for regime, n_lat, npz_path in ladder:
+        if not npz_path.is_file():
             print(f"  [skip] {regime}: NPZ not found")
             continue
         d = np.load(npz_path, allow_pickle=True)
@@ -157,7 +162,7 @@ def main():
         seeds = [per_seed_diagnostics(xi_arr[s].astype(np.float64))
                  for s in range(n_seeds)]
         agg = aggregate(seeds)
-        print(f"  --- {regime} N={LADDER_N[regime]} ({n_seeds} seeds) ---")
+        print(f"  --- {regime} N={n_lat} ({n_seeds} seeds) ---")
         print(f"     weighted l_2..l_{TOP_K+1}: "
               + ", ".join(f"{v:.4f}" for v in agg['eigs_w']['mean']))
         print(f"     skeleton l_2..l_{TOP_K+1}: "
@@ -169,7 +174,7 @@ def main():
               f"{agg['rho_w_lambda2_vs_deg']['mean']:+.3f}")
         print()
         per_regime.append({"regime": regime,
-                            "N": LADDER_N[regime],
+                            "N": n_lat,
                             "n_seeds": n_seeds,
                             "agg": agg})
 

@@ -65,35 +65,53 @@
       "weighted_l2": 0.4027791290638158,
       "skeleton_l2": 0.3236488132751266,
       "lift_l2": 1.2444943795342214
+    },
+    {
+      "regime": "P5N600",
+      "N": 600,
+      "n_seeds": 1,
+      "source": "results_d1_p5n600_trial1seed\\P5N600.snapshots.npz",
+      "weighted_l2": 0.3952032903174668,
+      "skeleton_l2": 0.2887858943640308,
+      "lift_l2": 1.3684992862542342
+    },
+    {
+      "regime": "P5N1024",
+      "N": 1024,
+      "n_seeds": 8,
+      "source": "results_d1_p5n1024_12seeds\\P5N1024.snapshots.npz",
+      "weighted_l2": 0.40892085341032214,
+      "skeleton_l2": 0.2938879997189255,
+      "lift_l2": 1.3914173215694894
     }
   ],
   "symanzik": {
     "weighted": {
-      "a_inf": 0.39573024513004823,
-      "b": 2.5605533718798585,
-      "r2": 0.2226015318872684,
+      "a_inf": 0.3978978304181323,
+      "b": 2.2302308806466002,
+      "r2": 0.22949645082762438,
       "target": 0.375,
-      "rel_err_pct": 5.528065368012861
+      "rel_err_pct": 6.1060881115019505
     },
     "skeleton": {
-      "a_inf": 0.3139665763688644,
-      "b": 6.888460049486489,
-      "r2": 0.31849890403193415,
+      "a_inf": 0.2944072238811487,
+      "b": 9.572788389854843,
+      "r2": 0.5301900460799621,
       "target": 0.2916666666666667,
-      "rel_err_pct": 7.645683326467781
+      "rel_err_pct": 0.9396196163938353
     },
     "lift": {
-      "a_inf": 1.24934260861707,
-      "b": -14.16853035298874,
-      "r2": 0.3234549603142164,
+      "a_inf": 1.3426636466357706,
+      "b": -27.09512309998357,
+      "r2": 0.5560333584954663,
       "target": 1.2857142857142858,
-      "rel_err_pct": -2.828908218672338
+      "rel_err_pct": 4.4293947383377095
     }
   },
   "chain_reconstruction": {
-    "empirical_skel_times_empirical_lift": 0.39225182153924754,
-    "empirical_weighted": 0.39573024513004823,
-    "chain_residual_pct": -0.8789885619325319
+    "empirical_skel_times_empirical_lift": 0.39528987681217687,
+    "empirical_weighted": 0.3978978304181323,
+    "chain_residual_pct": -0.6554329796709049
   },
   "honest_caveat": "Algebraic identity is exact in Q at (d, N_gen) = (4, 3): the N_gen factor in 9/7 cancels with that in 7/24, so the factorisation is post-hoc rather than a two-step mechanism. See par:cross_closure_identities of the bridge manuscript for the d-only / System-R independence statement that constrains this reading."
 }

@@ -49,7 +49,7 @@ REPO = SRC.parent
 OUTPUTS = REPO / "outputs"
 OUTPUTS.mkdir(parents=True, exist_ok=True)
 sys.path.insert(0, str(SRC))
-from _d1_npz_discovery import find_d1_npz  # noqa: E402
+from _d1_ladder_discovery import discover_d1_ladder  # noqa: E402
 
 # ------------------------------------------------------------------
 # (d, N_gen) anchor.
@@ -58,10 +58,10 @@ D = 4
 N_GEN = 3
 TAU = 0.10
 MAX_SEEDS = 8
-
-LADDER = ["P5N100", "P5N128", "P5N200", "P5N256", "P5N300", "P5N512"]
-LADDER_N = {"P5N100": 100, "P5N128": 128, "P5N200": 200,
-            "P5N256": 256, "P5N300": 300, "P5N512": 512}
+# Adaptive ladder: discovered at runtime. Minimum N filter ensures
+# small-N regimes (P5N50..P5N84) are excluded from the algebraic-chain
+# audit since those are pre-flip-VAC-branch and bias the Symanzik fit.
+LADDER_MIN_N = 100
 
 # ------------------------------------------------------------------
 # Algebraic chain targets (exact in Q at (4, 3)).
@@ -118,10 +118,9 @@ def symanzik1_fit(n_arr, y_arr):
     return float(coef[0]), float(coef[1]), r2
 
 
-def process_regime(regime: str) -> dict | None:
-    npz_path = find_d1_npz(regime, REPO)
-    if npz_path is None:
-        print(f"  [skip] {regime}: NPZ not found")
+def process_regime(regime: str, n_lat: int, npz_path: Path) -> dict | None:
+    if not npz_path.is_file():
+        print(f"  [skip] {regime}: NPZ not found at {npz_path}")
         return None
     d = np.load(npz_path, allow_pickle=True)
     if "edge_xi_snapshots" not in d.files:
@@ -145,7 +144,7 @@ def process_regime(regime: str) -> dict | None:
     sm = float(np.mean(s_l2))
     return {
         "regime": regime,
-        "N": LADDER_N[regime],
+        "N": n_lat,
         "n_seeds": n_seeds,
         "source": str(npz_path.relative_to(REPO.parent) if REPO.parent in npz_path.parents else npz_path),
         "weighted_l2": wm,
@@ -170,12 +169,20 @@ def main():
           f"{TARGET_WEIGHTED}?  "
           f"{TARGET_SKEL * TARGET_LIFT == TARGET_WEIGHTED}")
     print()
+    # Auto-discover ladder from results_d1_*/P5N*.snapshots.npz files.
+    ladder = [(regime, n, p) for (regime, n, p) in discover_d1_ladder(REPO)
+              if n >= LADDER_MIN_N]
+    if not ladder:
+        print("  [error] no ladder data discovered; run a snapshot job first.")
+        return 1
+    print(f"  Auto-discovered ladder ({len(ladder)} regimes, "
+          f"N in {{{ladder[0][1]}..{ladder[-1][1]}}}):")
     per_regime = []
-    for regime in LADDER:
-        r = process_regime(regime)
+    for regime, n, npz_path in ladder:
+        r = process_regime(regime, n, npz_path)
         if r is not None:
             per_regime.append(r)
-            print(f"  {regime:<8} N={r['N']:>4}:  "
+            print(f"  {regime:<10} N={r['N']:>5}:  "
                   f"w_l2={r['weighted_l2']:.4f}   "
                   f"sk_l2={r['skeleton_l2']:.4f}   "
                   f"lift={r['lift_l2']:.4f}")
