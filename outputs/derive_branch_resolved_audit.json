@@ -1,0 +1,172 @@
+{
+  "title": "Branch-resolved Symanzik audit + Bayesian Rational-ID",
+  "vac_branch_fit": {
+    "branch": "VAC-branch (N <= 100)",
+    "n_obs": 48,
+    "n_range": [
+      64,
+      100
+    ],
+    "selected_model": "symanzik_3",
+    "asymptote_mean": 0.36788499935370567,
+    "asymptote_std": 0.019426606071837795,
+    "asymptote_ci95": [
+      0.3298088514529036,
+      0.4059611472545077
+    ],
+    "target_rational": "3/8",
+    "target_value": 0.375,
+    "relative_error_pct": -1.897333505678489,
+    "z_score_vs_target": -0.36625031773351036,
+    "bayes_factor_2v1": 1.0524245796393827
+  },
+  "vac_branch_bayes": {
+    "branch": "VAC-branch",
+    "top_rational": "3/8",
+    "top_posterior": 0.9082583089816678,
+    "registered": "3/8",
+    "registered_posterior": 0.9082583089816678,
+    "registered_rank": 1,
+    "top_5": [
+      {
+        "rational": "3/8",
+        "value": 0.375,
+        "posterior": 0.9082583089816678,
+        "z": 0.36625031773351036
+      },
+      {
+        "rational": "1/3",
+        "value": 0.3333333333333333,
+        "posterior": 0.00824817136929486,
+        "z": -1.7785744917358945
+      },
+      {
+        "rational": "8/21",
+        "value": 0.38095238095238093,
+        "posterior": 0.008143682016078799,
+        "z": 0.6726538619434241
+      },
+      {
+        "rational": "11/29",
+        "value": 0.3793103448275862,
+        "posterior": 0.007432085188318409,
+        "z": 0.5881287462993098
+      },
+      {
+        "rational": "5/13",
+        "value": 0.38461538461538464,
+        "posterior": 0.007241235726750759,
+        "z": 0.8612098891495278
+      }
+    ]
+  },
+  "matter_branch_fit": {
+    "branch": "MATTER-branch (N >= 256)",
+    "n_obs": 49,
+    "n_range": [
+      256,
+      1024
+    ],
+    "selected_model": "symanzik_1",
+    "asymptote_mean": 0.4064838026140839,
+    "asymptote_std": 0.0037272644373162454,
+    "asymptote_ci95": [
+      0.39917836431694403,
+      0.41378924091122377
+    ],
+    "target_rational": "79/200",
+    "target_value": 0.395,
+    "relative_error_pct": 2.907291801033894,
+    "z_score_vs_target": 3.0810270661538044,
+    "bayes_factor_2v1": 0.9995001147490998
+  },
+  "matter_branch_bayes": {
+    "branch": "MATTER-branch",
+    "top_rational": "2/5",
+    "top_posterior": 0.48788108917652145,
+    "registered": "79/200",
+    "registered_posterior": 0.0,
+    "registered_rank": -1,
+    "top_5": [
+      {
+        "rational": "2/5",
+        "value": 0.4,
+        "posterior": 0.48788108917652145,
+        "z": -1.7395606679177376
+      },
+      {
+        "rational": "9/22",
+        "value": 0.4090909090909091,
+        "posterior": 0.0828710309079083,
+        "z": 0.6994691470569283
+      },
+      {
+        "rational": "11/27",
+        "value": 0.4074074074074074,
+        "posterior": 0.07869429999839836,
+        "z": 0.24779695909864421
+      },
+      {
+        "rational": "13/32",
+        "value": 0.40625,
+        "posterior": 0.06512284729137427,
+        "z": -0.06272767012266124
+      },
+      {
+        "rational": "7/17",
+        "value": 0.4117647058823529,
+        "posterior": 0.05445855999188977,
+        "z": 1.4168308573435826
+      }
+    ]
+  },
+  "vac_branch_sources": [
+    [
+      "P5N64",
+      64,
+      12
+    ],
+    [
+      "P5N72",
+      72,
+      12
+    ],
+    [
+      "P5N84",
+      84,
+      12
+    ],
+    [
+      "P5N100",
+      100,
+      12
+    ]
+  ],
+  "matter_branch_sources": [
+    [
+      "P5N256",
+      256,
+      12
+    ],
+    [
+      "P5N300",
+      300,
+      12
+    ],
+    [
+      "P5N512",
+      512,
+      12
+    ],
+    [
+      "P5N600",
+      600,
+      1
+    ],
+    [
+      "P5N1024",
+      1024,
+      12
+    ]
+  ]
+}
