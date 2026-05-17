@@ -6704,30 +6704,38 @@ run is in progress; the verdict will be auto-incorporated through the
 adaptive pipeline upon completion.
 \end{remark}
 
-\begin{remark}[Longer-iteration audit at $N{=}1024$ shows post-
-inversion-regime acceleration, not matter-branch failure]
+\begin{remark}[Longer-iteration audit at $N{=}1024$ reveals
+post-inversion uniform densification, not $\xi$-saturation]
 \label{rmk:longer_iter_accelerating}
-The equilibration trajectory at $N=1024$ over iter $0$--$1000$
-($3$~seeds, snapshots every $25$ steps): per-25-iter drift in
-$\lambda_{2}$ increases monotonically from $+0.00204$ at iter~$25$
-to $+0.00346$ at iter~$1000$, with $\lambda_{2}$ rising from
-$0.40587$ to $0.51853$ across the run. The drift rate
-\emph{accelerates}; this is incompatible with relaxation to a
-finite matter-branch fixed point. Interpretation in light of
-Remark~\ref{rmk:three_regime_structure}: $N=1024$ is in the
-\emph{post-inversion} regime ($N > N_{\rm inv} \approx 591$--$600$),
-where $\alpha_{\xi}$ saturates and the carrier $\xi$-dynamics is
-structurally distinct from the matter-stable regime
-($256 \leq N \leq 600$). The accelerating drift is therefore not
-a failure of the matter-branch closure $79/200$ (which holds at
-the $0.2\%$ level in its proper $N$-range) but a separate
-phenomenon: a post-inversion saturation cascade in which the
-carrier $\xi$-matrix entries are being pushed against the
-$\xi_{\max}$ bound, driving $\lambda_{2}$ towards the complete-graph
-limit $\lambda_{2}\!\to\!1$. The vacuum-branch closure $3/8$ is
-unaffected; the matter-branch closure $79/200$ is confirmed in
-its proper $N$-range; the post-inversion regime ($N > 600$) is a
-new observation requiring separate structural identification.
+The equilibration trajectory at $N{=}1024$ over iter $0$--$1000$
+($3$~seeds, snapshots every $25$ steps): $\lambda_{2}$ rises
+monotonically from $0.40587$ at iter~$0$ to $0.51853$ at
+iter~$1000$ with accelerating per-25-iter drift
+($+0.00204 \to +0.00346$). Deep diagnostic
+(\pyown{src/analyze\_post\_inversion\_dynamics.py}{analyze\_post\_inversion\_dynamics})
+rules out an $\xi$-saturation cascade: the fraction of $\xi$
+entries within $5\%$ of $\xi_{\max}$ stays at $0.0000$ throughout.
+What actually happens is \emph{uniform densification}: the
+carrier mean degree grows $4.31 \to 6.62$ ($+54\%$), the Gini
+coefficient of $\xi$ values \emph{falls} $0.951 \to 0.837$ (more
+uniform distribution), the degree coefficient of variation
+\emph{falls} $0.160 \to 0.118$, and the entropy of $\xi$ rises
+$0.153 \to 0.195$~nats. New edges form approximately uniformly,
+not preferentially. Interpretation: with chirality saturated
+at $\arctan(N_{\rm gen})$ for $N > N_{\rm inv}$, the
+chirality-rotation differential that drove the matter-stable
+equilibrium at $79/200$ is exhausted; the carrier loses its
+vacuum--matter structural differentiation and enters a
+disordered uniform-densification phase whose asymptote is
+\emph{not} the $79/200$ matter-branch closure. The classical
+closures $3/8$ (vacuum) and $79/200$ (matter-stable) are
+finite-$N$ structurally-distinct phases, not aspects of a
+single continuum limit. The continuum limit of the carrier
+$\lambda_{2}$ is the uniform-densification asymptote (post-
+inversion regime), distinct from the $(\mathrm{SG})$-axiom value;
+the $(\mathrm{SG})$ axiom should be re-interpreted as a
+finite-$N$ structural-phase claim, not a $N \to \infty$ limit
+claim.
 \end{remark}
 
 \begin{remark}[$\tau$-threshold sensitivity of the skeleton closure
