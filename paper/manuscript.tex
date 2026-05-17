@@ -27,8 +27,8 @@
 
 % Clickable GitHub links for src/*.py citations (auto-generated)
 \newcommand{\ghrepo}[1]{https://github.com/TerraSignum/#1}
-% \nolinkurl gives a monospace, line-breakable rendering of the
-% short script-stem display text without competing with \href.
+% \nolinkurl gives a monospace, line-breakable rendering (handles
+% underscores) without creating an inner link competing with \href.
 \newcommand{\pyscript}[3]{%
   \href{\ghrepo{#1}/blob/main/#2}{\nolinkurl{#3}}}
 \newcommand{\repoOwn}{emergent-gr-closure-repro}
@@ -571,7 +571,7 @@ $\tan^{2}\theta_{\rm chir}\!=\!1/N_{\rm gen}^{2}$. Reproducer:
 across the five competing alternative-form hypotheses (golden
 ratio $\varphi/2\!=\!0.809$, $\pi/4\!=\!0.785$, $1/\varphi\!=\!0.618$,
 etc.) is bundled at
-\path|outputs/verify_alpha_xi_alternative_forms.json|: all
+\pyscript{emergent-gr-anisotropic-source-dm-de-repro}{outputs/verify_alpha_xi_alternative_forms.json}{verify_alpha_xi_alternative_forms.json}: all
 non-rational alternatives are $10$--$31\%$ off and falsified.
 
 A single small structural anomaly remains:
@@ -595,7 +595,7 @@ multi-lattice runs (reproducer
 \label{sec:chirality_flip}
 Per-regime causal-wave readouts across the 8-regime ladder
 $N\!\in\![50,512]$ (data bundled at
-\path|data/causal_wave_per_N_readout.json|) show all five
+\pyscript{causal-wave-landings-repro}{data/causal_wave_per_N_readout.json}{causal_wave_per_N_readout.json}) show all five
 coefficients running with $N$, parametrised by a single chirality
 angle $\theta_{\rm chir}(N)$. The cosine-sine identification
 $\alpha_{\xi}\!=\!\cos^{2}\theta$, $\gamma\!=\!\sin^{2}\theta$
@@ -674,7 +674,7 @@ Reproducers:
 \pyscript{emergent-gr-anisotropic-source-dm-de-repro}{src/verify_symanzik_continuum_anchors.py}{verify_symanzik_continuum_anchors},
 \pyscript{causal-wave-landings-repro}{src/verify_chirality_running_detailed.py}{verify_chirality_running_detailed},
 \pyscript{causal-wave-landings-repro}{src/verify_chirality_refined_rationals.py}{verify_chirality_refined_rationals};
-figure: \path|paper/figures/fig_chirality_flip_phase_diagram.pdf|
+figure: \pyscript{emergent-gr-anisotropic-source-dm-de-repro}{paper/figures/fig_chirality_flip_phase_diagram.pdf}{fig_chirality_flip_phase_diagram.pdf}
 (see Fig.~\ref{fig:chirality_flip}).
 
 \begin{figure}[!htbp]
@@ -1276,7 +1276,7 @@ under bootstrap: the target exponent $-2/5$ lies inside both
 $95\%$ CI $[-0.426, -0.338]$ and $99\%$ CI $[-0.440, -0.293]$.
 Reproducers:
 \pyscript{causal-wave-landings-repro}{src/verify_chirality_running_first_principles.py}{verify_chirality_running_first_principles},
-figure: \path|paper/figures/fig_chirality_higher_N_predictions.pdf|
+figure: \pyscript{emergent-gr-anisotropic-source-dm-de-repro}{paper/figures/fig_chirality_higher_N_predictions.pdf}{fig_chirality_higher_N_predictions.pdf}
 (see Fig.~\ref{fig:chirality_higher_N}).
 
 \begin{figure}[!htbp]
@@ -1365,7 +1365,7 @@ We explicitly do \emph{not} claim:
       Symanzik-2 model selection per AICc; the
       two-point Richardson and the five-point chirality-balance
       log--log fit ($\alpha_{\mathrm{fit}}=0.6355$, within $4.7\%$
-      of $2/3$, \path|data/einstein_gap_5point_fit.json|) are
+      of $2/3$, \pyown{data/einstein_gap_5point_fit.json}{einstein_gap_5point_fit.json}) are
       treated as supporting witnesses, not as standalone
       derivations.
 \end{itemize}
@@ -1506,64 +1506,64 @@ check: numerical reproduction of the calibrated $G_{N}$, not a
 parameter-free closure --- the far-field \emph{form}
 $1-2GM/r$ is derived, the prefactor is calibrated to $G_{N}$,
 see~\cite{Paper4A})
-& \S\ref{sec:emergence}, \path|data/black_hole/schwarzschild_far_field.json| \\
+& \S\ref{sec:emergence}, \pyown{data/black_hole/schwarzschild_far_field.json}{schwarzschild_far_field.json} \\
 Schwarzschild far-field $g_{00}$ vs analytical
 & relative error $2.83\times 10^{-4}$ at $P_1$ ($N=28$), $2.74\times 10^{-4}$ at extended
-& \S\ref{sec:emergence}, \path|data/galerkin_schwarzschild_defect_gpu.json| \\
+& \S\ref{sec:emergence}, \pyown{data/galerkin_schwarzschild_defect_gpu.json}{galerkin_schwarzschild_defect_gpu.json} \\
 PPN parameters $\gamma_{\rm PPN}, \beta_{\rm PPN}$
 & both $=1$ within experimental error
-& \S\ref{sec:ppn}, \path|data/ppn_results.json| \\
+& \S\ref{sec:ppn}, \pyown{data/ppn_results.json}{ppn_results.json} \\
 Lorentzian $3{+}1$ causal layer
 & $d_{\rm spacetime}=4$, $d_{\rm spatial}=3$, light-cone-fuzziness $f_{\rm LC}=0.170$
-& \S\ref{sec:emergence}, \path|data/lorentzian_3plus1.json| \\
+& \S\ref{sec:emergence}, \pyown{data/lorentzian_3plus1.json}{lorentzian_3plus1.json} \\
 Discrete Bianchi conservation
 & $\|\nabla_\mu G^{\mu\nu}\|_{\rm med}^{\infty} = 1.6\times 10^{-3}$, time-component scaling $N^{-1.60}$, spatial $N^{-2.29}$ ($R^2=0.99$)
-& \S\ref{sec:gap}, \path|outputs/discrete_bianchi_scaling_audit.json| \\
+& \S\ref{sec:gap}, \pyscript{emergent-gr-anisotropic-source-dm-de-repro}{outputs/discrete_bianchi_scaling_audit.json}{discrete_bianchi_scaling_audit.json} \\
 Per-node Galerkin $\|G+\Lambda g - 8\pi G\,T\|_F$
 & median $0.026$ at $N=84$
-& \S\ref{sec:gap}, \path|outputs/within_p5_runner_A_hessian_ricci.json| \\
+& \S\ref{sec:gap}, \pyown{outputs/within_p5_runner_A_hessian_ricci.json}{within_p5_runner_A_hessian_ricci.json} \\
 Basis-invariance of the Frobenius residual
 & max relative deviation $2.8\times 10^{-16}$ (machine precision) across spectral / Ricci-eigen / stress-eigen frames
-& \S\ref{sec:gap} (Robustness annex), \path|data/galerkin_runner_D_basis_invariance.json| \\
+& \S\ref{sec:gap} (Robustness annex), \pyown{data/galerkin_runner_D_basis_invariance.json}{galerkin_runner_D_basis_invariance.json} \\
 Free-exponent vs.\ Symanzik-2 model selection
 & AICc-preferred per observable; free-fit exponent $p=2.38$ on the residual scaling channel
-& \S\ref{sec:gap}, \path|outputs/symanzik_vs_powerlaw_audit.json|, \path|data/lambda_t_residual_scaling_exponent.json| \\
+& \S\ref{sec:gap}, \pyown{outputs/symanzik_vs_powerlaw_audit.json}{symanzik_vs_powerlaw_audit.json}, \pyown{data/lambda_t_residual_scaling_exponent.json}{lambda_t_residual_scaling_exponent.json} \\
 $2{+}1$ frame invariance check
 & sorting-induced; under random per-node $SO(3)$ rotation, $P(2\,\text{neg})=0.40$ vs.\ isotropic baseline $0.375$ (verdict {\sc no\_strong\_2plus1\_pattern})
-& \S\ref{sec:gap}, \path|outputs/2plus1_frame_invariance_audit.json| \\
+& \S\ref{sec:gap}, \pyown{outputs/2plus1_frame_invariance_audit.json}{2plus1_frame_invariance_audit.json} \\
 $\Lambda$-strategy independence
 & blind, asymptotic-frozen, and $\mathcal R$ structural strategies converge to the same residual within $7\%$ at $N=84$
-& \S\ref{sec:gap}, \path|data/galerkin_runner_B_lambda_variants.json| \\
+& \S\ref{sec:gap}, \pyown{data/galerkin_runner_B_lambda_variants.json}{galerkin_runner_B_lambda_variants.json} \\
 Eigenvector-centrality co-localisation of $T_{00}$ and $G_{00}$
 & $\rho_{\rm S}\approx +0.41, +0.38$ across six canonical regimes $N\in\{50,64,100,128,200,300\}$ ($98$ seeds total: 28/24/24/12/8/2), all bootstrap $95\%$ CIs exclude zero
-& \S\ref{sec:xi-graph-topology}, \path|outputs/xi_graph_topology_deep.json| \\
+& \S\ref{sec:xi-graph-topology}, \pyown{outputs/xi_graph_topology_deep.json}{xi_graph_topology_deep.json} \\
 Vortex-defect background EOS
 & $w_{\rm bg}=-0.3347$ within $0.4\%$ of SEC-saturation $-1/3$
-& \S\ref{sec:gap}, \path|outputs/lambda_vortex_quantization_geometry.json| \\
+& \S\ref{sec:gap}, \pyown{outputs/lambda_vortex_quantization_geometry.json}{lambda_vortex_quantization_geometry.json} \\
 Mask-threshold robustness
 & per-regime CV $<10\%$ under $\Xi$-mask threshold $\in\{0.40,0.45,0.50,0.55,0.60\}$
-& \S\ref{sec:gap}, \path|outputs/mask_threshold_robustness_audit.json| \\
+& \S\ref{sec:gap}, \pyown{outputs/mask_threshold_robustness_audit.json}{mask_threshold_robustness_audit.json} \\
 Distance-metric robustness
 & per-regime CV $<15\%$ across alternative metric forms (log, linear, cosine)
-& \S\ref{sec:gap}, \path|outputs/distance_metric_robustness_audit.json| \\
+& \S\ref{sec:gap}, \pyown{outputs/distance_metric_robustness_audit.json}{distance_metric_robustness_audit.json} \\
 Discrete-Bianchi bootstrap CI
 & asymptote $\le 7\times 10^{-4}$ confirmed under $n_{\rm boot}=2000$ resampling
-& \S\ref{sec:gap}, \path|outputs/bianchi_bootstrap_CI_audit.json| \\
+& \S\ref{sec:gap}, \pyown{outputs/bianchi_bootstrap_CI_audit.json}{bianchi_bootstrap_CI_audit.json} \\
 Within-$P_5$ power-law cross-validation
 & mean two-point prediction relative error at $N=100$: $5.8\%$ (median $2.1\%$); mean fitted exponent $\alpha=1.64$
-& \S\ref{sec:gap}, \path|outputs/within_regime_p5_power_law_robustness.json| \\
+& \S\ref{sec:gap}, \pyown{outputs/within_regime_p5_power_law_robustness.json}{within_regime_p5_power_law_robustness.json} \\
 NEC/SEC anisotropy robustness
 & robust under leave-one-out and constant-hypothesis tests
-& \S\ref{sec:gap}, \path|outputs/lambda_anisotropy_NEC_SEC_robustness.json| \\
+& \S\ref{sec:gap}, \pyscript{emergent-gr-anisotropic-source-dm-de-repro}{outputs/lambda_anisotropy_NEC_SEC_robustness.json}{lambda_anisotropy_NEC_SEC_robustness.json} \\
 $\Lambda_{t}^{*}$ leave-one-out (within-$\mathcal{P}_{5}$)
 & max LOO shift $0.85\%$, std $\le 0.003$ across 8 ladder points
-& \S\ref{sec:gap}, \path|outputs/robustness_extended_audit.json| \\
+& \S\ref{sec:gap}, \pyown{outputs/robustness_extended_audit.json}{robustness_extended_audit.json} \\
 $\Lambda_{t}^{*}$ window-sensitivity
 & asymptote stable under $N\ge 64$ ($0.81186$), $N\ge 100$ ($0.81405$); 3-point $N\ge 128$ widens to $0.82880$
-& \S\ref{sec:gap}, \path|outputs/robustness_extended_audit.json| \\
+& \S\ref{sec:gap}, \pyown{outputs/robustness_extended_audit.json}{robustness_extended_audit.json} \\
 $\Lambda_{t}^{*}$ asymptote bootstrap 95\% CI
 & $[0.80808,\,0.81888]$ around central $0.81348$; algebraic target $\alpha_{\xi}^{2}=81/100=0.81000$ \textbf{inside CI}
-& \S\ref{sec:gap}, \path|outputs/robustness_extended_audit.json| \\
+& \S\ref{sec:gap}, \pyown{outputs/robustness_extended_audit.json}{robustness_extended_audit.json} \\
 \end{longtable}
 
 These are not a substitute for the per-section technical
@@ -1706,7 +1706,7 @@ The within-$P_5$ multi-$N$ extension
 $N\!\in\!\{50,64,72,84,100,128,200,256,300,512\}$ reveals a clear
 \emph{decoupling} of the $L^{2}$ and sup-norm trends in the
 post-stabilisation regime
-(\path|outputs/audit_M3_violations_multi_N.json|):
+(\pyown{outputs/audit_M3_violations_multi_N.json}{audit_M3_violations_multi_N.json}):
 
 \begin{center}
 \small
@@ -1740,8 +1740,8 @@ fast-slow stabilisation, the M3 violation residual converges to
 zero in the $L^{2}$-mean and in count-rate, but \emph{not} in
 sup-norm at the present resolution. We have audited this open
 question along four diagnostic axes
-(\path|outputs/audit_M3_supnorm_diagnostics.json|,
-\path|outputs/audit_M3_envelope_variants.json|).
+(\pyown{outputs/audit_M3_supnorm_diagnostics.json}{audit_M3_supnorm_diagnostics.json},
+\pyown{outputs/audit_M3_envelope_variants.json}{audit_M3_envelope_variants.json}).
 
 \emph{(i) Localisation.} The top-$10$ worst-case triples per
 regime carry slack at a small set of unique node indices out
@@ -1802,7 +1802,7 @@ because $\Xi_{\min}$ is already well above the floor.
 
 \emph{(v) Defect-topology classification.}
 Identifying the worst-case nodes by defect type
-(\path|outputs/audit_M3_defect_topology.json|): of the top-$20$
+(\pyown{outputs/audit_M3_defect_topology.json}{audit_M3_defect_topology.json}): of the top-$20$
 worst-case triples per regime ($60$ node slots), $10$--$23\%$
 of slots fall on phase-variance top-decile nodes (a noisy
 proxy for vortex defects), $20$--$47\%$ at $T_{00}$ top-decile
@@ -1813,7 +1813,7 @@ framework's discrete-Wilson-loop holonomy diagnostic
 \path|src/worldformula/defects/vortices.py|) gives a
 finer-grained vortex set, and the existing
 defect-matter-correspondence audit
-(\path|outputs/defect_matter_correspondence_audit.json|) on the
+(\pyown{outputs/defect_matter_correspondence_audit.json}{defect_matter_correspondence_audit.json}) on the
 canonical $\mathcal P_{5}/\mathcal P_{5}N$ ten-regime + alt-anchor cross-check ladder ($268$ seeds total) $N\in\{18,\ldots,100\}$ reports a
 top-residual / non-zero-winding overlap with cross-regime mean
 lift $0.92$ and mean $z$-score $-0.30$ (i.e.\ no significant
@@ -1867,7 +1867,7 @@ where $v_{\mathrm{info}}=|\Xij(t{+}1)-\Xij(t)|/dt$ and
 $c_{\mathrm{info}}$ is calibrated as $2\times$ the regime-median
 edge speed. The dynamic audit on the snapshot time-series
 (\pyown{src/audit_M3_dynamic_causal.py}{audit_M3_dynamic_causal}, output
-\path|outputs/audit_M3_dynamic_causal.json|) gives, across
+\pyown{outputs/audit_M3_dynamic_causal.json}{audit_M3_dynamic_causal.json}) gives, across
 $N\in\{64,72,84,100,128,200,256,512\}$ ($8$ seeds for
 $N\!\le\!100$, $4$ seeds for $N\!\ge\!128$): per-regime
 Spearman $\rho(\mathrm{CVI}(t),M3_{\sup}(t))$
@@ -1979,7 +1979,7 @@ deficit angle. The strict-metric closure
 explicitly by a sup-aware envelope refinement with a
 \emph{physically independent} envelope
 (\pyown{src/verify_sup_aware_envelope_refinement.py}{verify_sup_aware_envelope_refinement}; output
-\path|outputs/sup_aware_envelope_refinement.json|). The
+\pyown{outputs/sup_aware_envelope_refinement.json}{sup_aware_envelope_refinement.json}). The
 envelope is the per-node phase-deficit
 \begin{equation}
 \varepsilon_{\rm phase}(a)\;=\;1\;-\;\Bigl|
@@ -2032,7 +2032,7 @@ quantitative defect-side analysis of the next paragraph.
 \label{sec:defect_side_quantitative}
 A reproducible quantitative audit
 (\pyown{src/audit_M3_defect_quantitative.py}{audit_M3_defect_quantitative}, output
-\path|outputs/audit_M3_defect_quantitative.json|) extracts four
+\pyown{outputs/audit_M3_defect_quantitative.json}{audit_M3_defect_quantitative.json}) extracts four
 defect-side observables from the seed-$0$ snapshot at each $N$:
 
 \emph{Q1 (per-vortex slack budget).}
@@ -2072,7 +2072,7 @@ Hopf-type topological-invariant claim in the strict sense
 correlation pattern rather than a conserved integer charge.
 The proper Wilson-loop topological-charge audit on the
 canonical $\mathcal P_{5}/\mathcal P_{5}N$ ten-regime + alt-anchor cross-check ladder ($268$ seeds total)
-(\path|outputs/defect_matter_correspondence_audit.json|) shows
+(\pyown{outputs/defect_matter_correspondence_audit.json}{defect_matter_correspondence_audit.json}) shows
 no significant correlation between non-zero winding-charge
 nodes and the heavy-tail residual (cross-regime mean lift
 $0.92$, mean $z$ $-0.30$); the topological-charge content of
@@ -2506,7 +2506,7 @@ Riemannian coherence at all probed sizes.}
 \paragraph{Metric-is-gravitational-field identification.}
 The identification $\dij=-\elln\log\Xij$ is not a free convention:
 the framework's bundled graviton-closure
-(\path|data/graviton_cpt_closure.json|, source
+(\pyown{data/graviton_cpt_closure.json}{graviton_cpt_closure.json}, source
 \path|src/worldformula/physics/gap_closure_astro_bh.py:289-386|,
 the bundled graviton-closure module) records the spin-2 massless transverse-traceless
 graviton as the canonical-regime emergent excitation, derived
@@ -2734,7 +2734,7 @@ threshold $0.70$; see Section~\ref{sec:gap} for the four-sub-component
 breakdown (absorption $0.51$, locality $0.54$, density $0.65$, spectral $0.68$).
 A bundled architectural-ceiling audit
 (\pyown{src/verify_clp_b_architectural_ceiling.py}{verify_clp_b_architectural_ceiling},
-\path|outputs/verify_clp_b_architectural_ceiling.json|)
+\pyown{outputs/verify_clp_b_architectural_ceiling.json}{verify_clp_b_architectural_ceiling.json})
 identifies the six inner asymptotes feeding the absorption
 sub-score as clean System-R rationals (support\_score $5/6$,
 support\_persistence $49/60$, macro/intrinsic/structural/calibration
@@ -3116,7 +3116,7 @@ within-P5 ladder at the chirality flip
 $\theta_{\rm chir}\!=\!\pi/4$ (observed crossing
 $N\!\sim\!110$--$120$, see Sec.~\ref{sec:chirality_flip})
 exposes a clean two-branch structure in the measured per-regime
-tensor observables (\path|outputs/per_regime_lambda_t_universal_audit.json|):
+tensor observables (\pyown{outputs/per_regime_lambda_t_universal_audit.json}{per_regime_lambda_t_universal_audit.json}):
 \begin{center}
 \begin{tabular}{l c c c c}
 \toprule
@@ -3156,7 +3156,7 @@ A second, independent observable class confirms the
 $\gamma^{2}$-scale chirality-flip shift: the matter-core factor
 fields $K$ and $Q$ extracted from the per-seed $K(x),Q(x)$
 reconstructions on the same within-P5 ladder
-(\path|../emergent-gr-anisotropic-source-dm-de-repro/outputs/verify_KQ_top5_full_structural_closure.json|).
+(\pyscript{causal-wave-landings-repro}{../emergent-gr-anisotropic-source-dm-de-repro/outputs/verify_KQ_top5_full_structural_closure.json}{verify_KQ_top5_full_structural_closure.json}).
 The chirality-mixing form
 $\langle K\rangle(\theta)\!=\!K_{\rm pre}\cos^{2}\theta
 \!+\!K_{\rm post}\sin^{2}\theta
@@ -3184,7 +3184,7 @@ $\langle Q\rangle_{\rm POST}\!=\!0.263\!\pm\!0.014$
 shift ($T_{00},\Lambda_{t}$ have vacuum $>$ matter), but the
 $\gamma^{2}$ scale is universal. Reproducer:
 \pyown{src/verify_chirality_flip_cross_sector.py}{verify_chirality_flip_cross_sector}, output
-\path|outputs/verify_chirality_flip_cross_sector.json|; verdict
+\pyown{outputs/verify_chirality_flip_cross_sector.json}{verify_chirality_flip_cross_sector.json}; verdict
 \texttt{cross\_sector\_lattice\_hypothesis\_confirmed: true}.
 
 \paragraph{Cosmological z=0 cross-check and the
@@ -3277,14 +3277,14 @@ at $\sigma_{\Omega_{m}}\!\lesssim\!0.001$ (CMB-S4-class)
 that tests the predicted CMB-side value
 $\Omega_{m}^{\rm vacuum}\!=\!19/60$ directly without needing
 a late-universe pair. Output:
-\path|outputs/audit_omega_m_dual_form_corpus_anchors.json|.
+\pyown{outputs/audit_omega_m_dual_form_corpus_anchors.json}{audit_omega_m_dual_form_corpus_anchors.json}.
 
 The other four $z\!=\!0$ observables ($\sigma_{8}$, $n_{s}$,
 $Y_{p}$, $H_{0}$) lack a clean vacuum-form System-$\mathcal R$
 rational at the same $\gamma^{2}$-scale and consolidate on the
 matter-branch reading within their experimental $\sigma$.
 Reproducer: \pyown{src/verify_chirality_flip_cross_sector.py}{verify_chirality_flip_cross_sector},
-output \path|outputs/verify_chirality_flip_cross_sector.json|.
+output \pyown{outputs/verify_chirality_flip_cross_sector.json}{verify_chirality_flip_cross_sector.json}.
 The single-branch forced-fit asymptotes
 ($0.818$ on the all-PRE 5-point ladder; $0.812$ on the
 PRE-dominated 7-point ladder; $0.821$ on the per-channel
@@ -4809,7 +4809,7 @@ $N\in\{50,64,72,84,100\}$ is reported below; the analogous
 P6-physics and P8-physics extensions to $N\!=\!128$
 (\path|results_d1_p6n128_12seeds/|,
 \path|results_d1_p8n128_12seeds/|; bundled audit
-\path|outputs/regime_invariance_audit.json|) report the
+\pyown{outputs/regime_invariance_audit.json}{regime_invariance_audit.json}) report the
 within-regime Symanzik-2 asymptotes
 $d_{\infty}^{P_{5}}\!=\!(0.0199,\,0.0055,\,0.0000,\,0.0018)$,
 $d_{\infty}^{P_{6}}\!=\!(0.0139,\,0.0055,\,0.0014,\,0.0013)$,
@@ -5125,7 +5125,7 @@ T_{00,\mathrm{med}}^{\infty}\;=\;0.81811\quad(R^{2}=0.54),
 \end{equation*}
 consistent with the $\mathcal R$ rational
 $\alpha_{\xi}^{2}=81/100=0.81000$ at $0.85\%$ relative offset
-(\path|outputs/p5_g00_t00_within_ladder.json|). The empirical
+(\pyown{outputs/p5_g00_t00_within_ladder.json}{p5_g00_t00_within_ladder.json}). The empirical
 power-law spread $|T_{00}-\alpha_{\xi}^{2}|\sim 1.36\,N^{-0.92}$
 ($R^{2}=0.87$) is consistent with the same asymptote. The
 identification $T_{00,\mathrm{med}}^{\infty}=\alpha_{\xi}^{2}$ is
@@ -5172,7 +5172,7 @@ The four-term structure of the per-node $T_{00}$ scalar admits a
 \emph{per-summand} Symanzik extrapolation, instrumented by the
 bundled reproducer
 \pyown{src/verify_t00_summand_decomposition.py}{verify_t00_summand_decomposition} (output
-\path|outputs/t00_summand_decomposition_audit.json|) on the
+\pyown{outputs/t00_summand_decomposition_audit.json}{t00_summand_decomposition_audit.json}) on the
 canonical ladder $N\!\in\![50,512]$. Rather than extrapolating
 the noisy aggregate, each summand is extrapolated separately,
 and each lands within seed-bootstrap $95\%$ confidence on a
@@ -5204,7 +5204,7 @@ The pooled $R^{2}\!=\!0.50$ of $S_{4}$ in the per-summand
 decomposition above is sharpened by a branch-resolved
 re-aggregation of the bundled per-seed data
 (\pyown{src/verify_t00_summand_branch_resolved.py}{verify_t00_summand_branch_resolved}, output
-\path|outputs/verify_t00_summand_branch_resolved.json|),
+\pyown{outputs/verify_t00_summand_branch_resolved.json}{verify_t00_summand_branch_resolved.json}),
 together with K/Q-closure-derived target candidates from
 $0.5\langle K\rangle\!+\!0.25\!-\!0.25\langle Q\rangle$ evaluated
 at the chirality-mixing endpoints
@@ -5340,7 +5340,7 @@ residual $-0.60\%$. The independent variance--reactivity
 audit of \pyown{src/verify_variance_reactivity_identity.py}{verify_variance_reactivity_identity}
 returns verdict \texttt{VARIANCE\_REACTIVITY\_IDENTITY\_CONFIRMED};
 the bundled artifact is
-\path|outputs/derive_row_variance_lemma.json|.
+\pyown{outputs/derive_row_variance_lemma.json}{derive_row_variance_lemma.json}.
 
 \begin{lemma}[Amplitude-/gradient-vanishing, AG]\label{lem:amp_grad_AG}
 Under the same hypotheses $(SG)+A_{1}\!-\!A_{8}+$\,sync-lock,
@@ -5489,7 +5489,7 @@ explicitly) yields $\Lambda_{t}^{\infty}=0.81348$ with
 LOO max-shift $0.85\%$ and Bootstrap $95\%$ CI
 $[0.80808,\,0.81888]$, containing
 $\alpha_{\xi}^{2}=81/100=0.81000$
-(\path|outputs/robustness_extended_audit.json|). We disclose
+(\pyown{outputs/robustness_extended_audit.json}{robustness_extended_audit.json}). We disclose
 that the central Symanzik~$2$ fit on $\Lambda_{t}$ has
 $R^{2}=0.17$: the data are nearly flat over the ladder, so the
 $1/N^{2}$ correction is small and poorly determined relative to
@@ -5505,7 +5505,7 @@ The canonical-configuration five-point sub-fit
 $N\in\{50,64,72,84,100\}$ ($124$ seeds total) yields
 $\Lambda_{t}^{\infty}=0.8184$ with CI $[0.806,\,0.830]$, again
 containing $\alpha_{\xi}^{2}$
-(\path|data/lambda_t_within_p5_5point.json|).
+(\pyown{data/lambda_t_within_p5_5point.json}{lambda_t_within_p5_5point.json}).
 \end{lemma}
 
 \begin{remark}[Branch-resolved sharpening of $T_{00}^{\Xi}$,
@@ -5802,14 +5802,14 @@ canonical-physics closure-domain ladder
 $\mathcal{P}_{5}/\mathcal{P}_{5}N$ at $N\!\in\![50,512]$:
 \begin{itemize}
 \item \pyscript{emergent-gr-anisotropic-source-dm-de-repro}{src/verify_continuum_bianchi.py}{verify_continuum_bianchi}, output
-\path|outputs/discrete_bianchi_scaling_audit.json|: discrete
+\pyscript{emergent-gr-anisotropic-source-dm-de-repro}{outputs/discrete_bianchi_scaling_audit.json}{discrete_bianchi_scaling_audit.json}: discrete
 Bianchi residual asymptote on the canonical ladder converges
 at power-law rate $N^{-1.44}$ (time)~/~$N^{-2.07}$ (spatial)
 to $7\!\times\!10^{-4}$ with $R^{2}\!=\!0.985$ (time) and
 $R^{2}\!=\!0.996$ (spatial) — witness of (A5)
 (IR-curvature stability).
 \item \pyown{src/stage6f_fine_percentile_audit.py}{stage6f_fine_percentile_audit}, output
-\path|outputs/stage6f_fine_percentile_audit.json|: the
+\pyown{outputs/stage6f_fine_percentile_audit.json}{stage6f_fine_percentile_audit.json}: the
 percentile-spectrum-law theorem
 (Theorem~\ref{thm:percentile_spectrum_law}) with strictly
 positive bootstrap-CI lower bound on
@@ -5817,12 +5817,12 @@ $\hat\alpha_{\rm mean}\!=\!17/20$ is the asymptotic-spectrum
 witness of the uniform Poincar\'e-type spectral gap entering
 (A4)+(A8).
 \item \pyown{src/verify_lambda_extrapolation_discipline_audit.py}{verify_lambda_extrapolation_discipline_audit},
-output \path|outputs/lambda_extrapolation_discipline_audit.json|:
+output \pyown{outputs/lambda_extrapolation_discipline_audit.json}{lambda_extrapolation_discipline_audit.json}:
 Symanzik-extrapolation discipline check on the
 $\Lambda$-asymptote — witness of (A3) (controlled global
 distorsion of the per-regime Symanzik fit).
 \item \pyown{src/verify_clp_c_gamma_convergence_detailed.py}{verify_clp_c_gamma_convergence_detailed},
-output \path|outputs/clp_c_gamma_convergence_detailed_audit.json|:
+output \pyown{outputs/clp_c_gamma_convergence_detailed_audit.json}{clp_c_gamma_convergence_detailed_audit.json}:
 the Dal Maso $\Gamma$-convergence consolidated certificate
 (Theorem~\ref{thm:gamma_certificate}). The
 five-sub-condition score $\gamma\!=\!0.849$ in the
@@ -5848,7 +5848,7 @@ confidence intervals:
 \item \emph{Strengthened-(A5) route ---} the signed
 Hessian-discrepancy Ricci tensor.
 \pyown{src/verify_signed_ricci_lower_bound.py}{verify_signed_ricci_lower_bound}, output
-\path|outputs/signed_ricci_lower_bound_audit.json|: the per-node
+\pyown{outputs/signed_ricci_lower_bound_audit.json}{signed_ricci_lower_bound_audit.json}: the per-node
 minimum eigenvalue of the Bochner-convention Ricci tensor
 $R^{\rm Hess}_{ij}$ of \S\ref{sec:cbi} (Runner~A) is extracted,
 and the regime curvature lower bound
@@ -5867,7 +5867,7 @@ $\Delta_{\rm curv}\!\to\!0$ but as $\lambda_{\min}(R^{\rm Hess})$
 \item \emph{Measure-contraction route ---} the intrinsic
 Bakry--\'Emery $\Gamma_2$ curvature of the carrier random-walk
 Dirichlet form. \pyown{src/verify_carrier_bakry_emery_cd.py}{verify_carrier_bakry_emery_cd},
-output \path|outputs/carrier_bakry_emery_cd_audit.json|: the
+output \pyown{outputs/carrier_bakry_emery_cd_audit.json}{carrier_bakry_emery_cd_audit.json}: the
 pointwise Bakry--\'Emery curvature
 $K_x=\min\{\lambda:\Gamma_2(f,f)(x)\!\geq\!\lambda\,\Gamma(f,f)(x)\}$
 is computed exactly as the smallest generalised eigenvalue of
@@ -5943,7 +5943,7 @@ $(SG)$-axiom and the Bakry--\'Emery $\Gamma_{2}$ audit. The
 empirical $K_{\rm BE}$ asymptotes for three distinct
 percentile statistics on the canonical ladder
 $N\!\in\![50, 512]$ (24 seeds) are recorded in
-\path|outputs/carrier_bakry_emery_cd_audit.json|; the
+\pyown{outputs/carrier_bakry_emery_cd_audit.json}{carrier_bakry_emery_cd_audit.json}; the
 verifier
 \pyown{src/verify_CD_K_N_cross_projection.py}{verify_CD_K_N_cross_projection}
 tests their identification with
@@ -6041,7 +6041,7 @@ $\{\mathcal{P}_{0},\dots,\mathcal{P}_{8}\}$ with the following
 $95\%$-bootstrap-CI certified scores (reproducer
 \pyown{src/verify_clp_c_gamma_convergence_detailed.py}{verify_clp_c_gamma_convergence_detailed}, bundled
 output
-\path|outputs/clp_c_gamma_convergence_detailed_audit.json|):
+\pyown{outputs/clp_c_gamma_convergence_detailed_audit.json}{clp_c_gamma_convergence_detailed_audit.json}):
 \begin{center}
 \small
 \begin{tabular}{@{}lll@{}}
@@ -6145,7 +6145,7 @@ framework. The full Lemma~C target also includes the
 \emph{operator-convergence axis} CLP-B and the
 \emph{existence axis} CLP-A; all three are reported in the
 bundled audit
-\path|outputs/clp_full_report.json|:
+\pyown{outputs/clp_full_report.json}{clp_full_report.json}:
 \begin{itemize}
 \item \textbf{CLP-A} (continuum-limit existence):
 $0.813$ \textbf{CLOSED} on the $9$-payload ladder
@@ -6155,7 +6155,7 @@ T$4\!=\!1.0$).
 $0.598$ overall with four sub-components
 absorption $\!=\!0.514$ (bottleneck), locality $\!=\!0.542$,
 density $\!=\!0.652$, spectral $\!=\!0.682$
-(\path|outputs/clp_full_families_extended_audit.json|,
+(\pyown{outputs/clp_full_families_extended_audit.json}{clp_full_families_extended_audit.json},
 \texttt{clp\_b\_b4} key).
 \item \textbf{CLP-C} (the $\Gamma$-convergence Dal Maso
 audit reported above): $0.849$ \textbf{GAMMA\_CONVERGED}
@@ -6163,7 +6163,7 @@ with C$1\!=\!0.73$, C$2\!=\!1.00$, C$3\!=\!0.83$,
 C$4\!=\!0.82$, C$5\!=\!0.87$.
 \item \textbf{CLP-D overall}: $0.738$ \textbf{CLP\_PROVEN}
 (weights $A\!:\!0.3, B\!:\!0.4, C\!:\!0.3$;
-\path|outputs/clp_full_report.json|, \texttt{CLP-D} key).
+\pyown{outputs/clp_full_report.json}{clp_full_report.json}, \texttt{CLP-D} key).
 \end{itemize}
 The Lemma~C analytical-replacement programme therefore
 proceeds along three axes simultaneously: tighten the
@@ -6258,7 +6258,7 @@ hence $(A8)$ fails.
 The audit
 \pyown{src/verify_admissibility_counterexample_and_spectral_gap.py}{verify_admissibility_counterexample_and_spectral_gap}
 (output
-\path|outputs/verify_admissibility_counterexample_and_spectral_gap.json|)
+\pyown{outputs/verify_admissibility_counterexample_and_spectral_gap.json}{verify_admissibility_counterexample_and_spectral_gap.json})
 verifies $M0$--$M3$ and admissibility numerically on
 $N\!\in\!\{10,50,100,500,1000\}$ and reports doubling ratios
 $\{10,50,100,500,1000\}$.\qed
@@ -6333,7 +6333,7 @@ $\mathcal{P}_{5}N_{128}$), giving the empirical Poincar\'e
 constant upper bound $C_{P}^{\rm emp}\!\le\!2.69$. The audit
 \pyown{src/verify_lemma_B_uniform_poincare.py}{verify_lemma_B_uniform_poincare}
 (output
-\path|outputs/verify_lemma_B_uniform_poincare.json|)
+\pyown{outputs/verify_lemma_B_uniform_poincare.json}{verify_lemma_B_uniform_poincare.json})
 reports the verdict
 \texttt{UNIFORM\_SPECTRAL\_GAP\_CERTIFIED}.
 
@@ -6352,7 +6352,7 @@ between $N\!=\!100$ ($\theta_{\mathrm{chir}}\!=\!37.1^{\circ}$)
 and $N\!=\!128$
 ($\theta_{\mathrm{chir}}\!=\!46.1^{\circ}$),
 i.e.\ $N^{\!*}\!\approx\!110$--$120$ (per-regime causal-wave
-readout, \path|outputs/causal_wave_per_N_readout.json|;
+readout, \pyown{outputs/causal_wave_per_N_readout.json}{causal_wave_per_N_readout.json};
 not to be confused with the chirality-inversion endpoint
 $N_{\mathrm{inv}}\!\approx\!591$--$600$ where
 $\theta_{\mathrm{chir}}\!\to\!\arctan(N_{\mathrm{gen}})\!\approx\!71.6^{\circ}$).
@@ -6383,7 +6383,7 @@ the bootstrap-CI$_{95\%}$ $[0.394, 0.407]$ contains
 $79/200$ and rejects both $3/8$ and $41/100$. The audit
 is \pyown{src/verify_lemma_B_matter_branch_universality.py}{verify_lemma_B_matter_branch_universality}
 (output
-\path|outputs/verify_lemma_B_matter_branch_universality.json|).
+\pyown{outputs/verify_lemma_B_matter_branch_universality.json}{verify_lemma_B_matter_branch_universality.json}).
 The matter-branch shift from the vacuum asymptote equals
 $d\gamma^{2}/2\!=\!2\gamma^{2}\!=\!1/50$ exactly --- the
 natural leading sub-leading $\gamma^{2}$-correction of the
@@ -6713,14 +6713,14 @@ with the branch-resolved closures registered in
 Pipeline implementation: \pyown{src/run\_adaptive\_pipeline.py}{run\_adaptive\_pipeline}
 with modular Tier 1--4 stack in \path|src/adaptive_pipeline/|. New high-$N$
 production runs are auto-incorporated without manuscript edits via
-\path|paper/generated/adaptive_macros.tex|.
+\pyown{paper/generated/adaptive_macros.tex}{adaptive_macros.tex}.
 \end{remark}
 
 \begin{remark}[Analytic-route inventory for the open
 $(\mathrm{SG})$ derivation]
 \label{rmk:sg_route_inventory}
 Beyond the routes surveyed in
-\path|notes/lemma_B_proof_strategy.md|, four additional
+\pyown{notes/lemma_B_proof_strategy.md}{lemma_B_proof_strategy.md}, four additional
 literature anchors have been screened for direct applicability
 to the carrier ensemble at $d_{\rm eff}^{\rm skel}\!=\!12$:
 \textbf{(R7)}~Backhausz--Szegedy action-convergence of
@@ -6773,7 +6773,7 @@ equilibrium construction?} Four candidate analytical routes
 (Cheeger isoperimetry, Bakry--\'Emery $CD(K,\infty)$, spectral
 synthesis via radial Markov operators, Brascamp--Lieb /
 log-Sobolev) are surveyed in
-\path|notes/lemma_B_proof_strategy.md|. The empirical
+\pyown{notes/lemma_B_proof_strategy.md}{lemma_B_proof_strategy.md}. The empirical
 Phase-2 Step-1 audit
 (Proposition~\ref{prop:radial_hypothesis_falsified} below)
 falsifies the low-rank version of the radial-synthesis route;
@@ -6797,7 +6797,7 @@ $(\mathrm{SG})$ via low-dimensional embedding of $\xi_{N}$ does
 not apply. The reproducer
 \pyown{src/verify_lemma_B_radial_hypothesis.py}{verify_lemma_B_radial_hypothesis}
 (output
-\path|outputs/verify_lemma_B_radial_hypothesis.json|) reports
+\pyown{outputs/verify_lemma_B_radial_hypothesis.json}{verify_lemma_B_radial_hypothesis.json}) reports
 that the radial-uniform-Poincar\'e hypothesis is not supported
 by the data. This is
 complementary to the earlier RMT-class audit
@@ -6843,7 +6843,7 @@ route, which requires $\mathrm{NSM}\!\to\!0$, is therefore not
 supported: relative degree fluctuations persist at the
 $17\%$ level in the continuum limit. The reproducer
 \pyown{src/verify_lemma_B_degree_concentration.py}{verify_lemma_B_degree_concentration}
-(output \path|outputs/verify_lemma_B_degree_concentration.json|)
+(output \pyown{outputs/verify_lemma_B_degree_concentration.json}{verify_lemma_B_degree_concentration.json})
 reports that the degree-concentration hypothesis is not
 supported.
 
@@ -6912,7 +6912,7 @@ high probability, and the carrier is empirically $84\%$ of the
 way to saturation. The reproducer
 \pyown{src/verify_lemma_B_edge_weight_structure.py}{verify_lemma_B_edge_weight_structure}
 (output
-\path|outputs/verify_lemma_B_edge_weight_structure.json|)
+\pyown{outputs/verify_lemma_B_edge_weight_structure.json}{verify_lemma_B_edge_weight_structure.json})
 reports the full hierarchy and the Alon--Boppana consistency
 check.
 
@@ -6955,7 +6955,7 @@ $\mathrm{CV}(d_{\rm skel})\!\to\!0.263$ (higher than the weighted
 CV of Proposition~\ref{prop:degree_concentration_negative}).
 The reproducer
 \pyown{src/verify_lemma_B_skeleton_laplacian.py}{verify_lemma_B_skeleton_laplacian}
-(output \path|outputs/verify_lemma_B_skeleton_laplacian.json|)
+(output \pyown{outputs/verify_lemma_B_skeleton_laplacian.json}{verify_lemma_B_skeleton_laplacian.json})
 reports both Symanzik-$1$ fits and the cross-seed asymptote
 comparison.
 
@@ -6980,7 +6980,7 @@ re-sampling and stable across the $10$-regime ladder.
 is a \emph{threshold-specific coincidence}, not a robust
 algebraic identity. The threshold-sweep audit
 (\pyown{src/verify_lemma_B_threshold_sweep.py}{verify_lemma_B_threshold_sweep}, output
-\path|outputs/verify_lemma_B_threshold_sweep.json|) shows
+\pyown{outputs/verify_lemma_B_threshold_sweep.json}{verify_lemma_B_threshold_sweep.json}) shows
 that $\lambda_{\infty}^{\rm skel}(\tau)$ varies smoothly from
 $0.49$ at $\tau\!=\!0.005$ to $0.11$ at $\tau\!=\!0.30$ and
 the conjectured $7/24$ value is met only in a narrow window
@@ -7052,7 +7052,7 @@ weighted-Laplacian conjecture $3/8\!=\!(d{-}1)/(2d)$ of
 Eq.~\eqref{eq:weighted_conjecture}; small-world spectral theory
 (Proposition~\ref{prop:edge_correlation_small_world}) is the
 working route, and candidate alternative analytical routes are
-surveyed in \path|notes/lemma_B_proof_strategy.md|.
+surveyed in \pyown{notes/lemma_B_proof_strategy.md}{lemma_B_proof_strategy.md}.
 \end{proposition}
 
 \begin{proposition}[Skeleton diameter scales logarithmically:
@@ -7094,7 +7094,7 @@ persistent triangle clustering.
 
 Reproducer
 \pyown{src/verify_lemma_B_skeleton_diameter.py}{verify_lemma_B_skeleton_diameter}
-(output \path|outputs/verify_lemma_B_skeleton_diameter.json|).
+(output \pyown{outputs/verify_lemma_B_skeleton_diameter.json}{verify_lemma_B_skeleton_diameter.json}).
 \end{proposition}
 
 The Step-$3$d verdict
@@ -7120,7 +7120,7 @@ algebraic identity $3/8\!=\!(7/24)\cdot(9/7)$, that the
 $\tau\!=\!0.10$ skeleton gap reaches $7/24$ and the
 edge-weight distribution supplies the $9/7$ lift. Candidate
 analytical routes are surveyed in
-\path|notes/lemma_B_proof_strategy.md|.
+\pyown{notes/lemma_B_proof_strategy.md}{lemma_B_proof_strategy.md}.
 
 \begin{proposition}[Skeleton edge-correlation: small-world,
 not pure Erd\H{o}s--R\'enyi]
@@ -7165,7 +7165,7 @@ for the target $(\mathrm{SG})$-Lemma is therefore small-world spectral theory, n
 Friedman's theorem direct.
 Reproducer
 \pyown{src/verify_lemma_B_edge_correlation.py}{verify_lemma_B_edge_correlation}, output
-\path|outputs/verify_lemma_B_edge_correlation.json|.
+\pyown{outputs/verify_lemma_B_edge_correlation.json}{verify_lemma_B_edge_correlation.json}.
 \end{proposition}
 
 \begin{proposition}[Statistical fingerprint of the
@@ -7181,7 +7181,7 @@ per-node triangle count) distribution.
 A GPU decomposition study
 (\pyown{src/verify_lemma_B_gap_statistical_fingerprint.py}{verify_lemma_B_gap_statistical_fingerprint},
 output
-\path|outputs/verify_lemma_B_gap_statistical_fingerprint.json|;
+\pyown{outputs/verify_lemma_B_gap_statistical_fingerprint.json}{verify_lemma_B_gap_statistical_fingerprint.json};
 $\sim\!12.5\,$h on an RTX 5070) generates five synthetic
 ensembles at $N$ up to $128\mathrm{k}$ with $250$ seeds per
 $(\text{ensemble},N)$ pair, each matching progressively more
@@ -7229,7 +7229,7 @@ Metz~\cite{PhamPeronMetz2024} --- separating single-edge
 ($J_{e}^{2}$) and triangle ($J_{\Delta}^{2}$) contributions to
 the diagonal resolvent --- is the precise analytical tool;
 small-world spectral theory (Route 5b of
-\path|notes/lemma_B_proof_strategy.md|) is thereby
+\pyown{notes/lemma_B_proof_strategy.md}{lemma_B_proof_strategy.md}) is thereby
 \emph{empirically validated} as the correct analytical route,
 and the open Step-$4$ deliverable is the closed-form cavity
 solution for the carrier's clustered-degree distribution.
@@ -7252,8 +7252,8 @@ distribution into independent spatial and generation channels
 contributing per-channel spectral gaps of $1/(2d)$ and
 $1/(2N_{\rm gen})$ --- was tested empirically in
 \pyown{src/verify_lemma_B_step4_hsd_factorization.py}{verify_lemma_B_step4_hsd_factorization} (bundled
-output \path|outputs/verify_lemma_B_step4_hsd_factorization.json|;
-note \path|notes/lemma_B_step4_cavity_sketch_2026_05_15.md|).
+output \pyown{outputs/verify_lemma_B_step4_hsd_factorization.json}{verify_lemma_B_step4_hsd_factorization.json};
+note \pyown{notes/lemma_B_step4_cavity_sketch_2026_05_15.md}{lemma_B_step4_cavity_sketch_2026_05_15.md}).
 The diagnostic is the joint cumulant
 $\kappa_{1,1}(N)\!=\!\langle k k_{\Delta}\rangle\!-\!\langle k\rangle
 \langle k_{\Delta}\rangle$: under a factorising joint
@@ -7326,7 +7326,7 @@ but structurally registered): $\rho\!=\!15/16$ for $(d,N_{\rm gen})
 Reproducer:
 \pyown{src/verify_lemma_B_step4_hsd_factorization.py}{verify_lemma_B_step4_hsd_factorization};
 bundled output
-\path|outputs/verify_lemma_B_step4_hsd_factorization.json|.
+\pyown{outputs/verify_lemma_B_step4_hsd_factorization.json}{verify_lemma_B_step4_hsd_factorization.json}.
 
 \begin{proposition}[Skeleton spectral-fingerprint is
 structured-random]\label{prop:spectral_fingerprint}
@@ -7355,7 +7355,7 @@ Wigner--Dyson level-spacing audit of
 P$0$--P$8$ ladder (which finds intermediate Poisson--GOE
 behaviour). Reproducer
 \pyown{src/verify_lemma_B_spectral_fingerprint.py}{verify_lemma_B_spectral_fingerprint}, output
-\path|outputs/verify_lemma_B_spectral_fingerprint.json|.
+\pyown{outputs/verify_lemma_B_spectral_fingerprint.json}{verify_lemma_B_spectral_fingerprint.json}.
 \end{proposition}
 
 \paragraph{Phase-$2$ empirical characterisation: summary.}
@@ -7406,7 +7406,7 @@ Laplacian per-node-percentile and per-bulk/matter-core
 (reproducer
 \pyown{src/verify_lemma_B_percentile_decomposition.py}{verify_lemma_B_percentile_decomposition},
 output
-\path|outputs/verify_lemma_B_percentile_decomposition.json|).
+\pyown{outputs/verify_lemma_B_percentile_decomposition.json}{verify_lemma_B_percentile_decomposition.json}).
 For each per-snapshot, vertices are sorted by row-sum
 (matter-core proxy: high row-sum $\Rightarrow$ strongly
 coupled $\Rightarrow$ matter-core); the sub-Laplacian of
@@ -7480,7 +7480,7 @@ proxy gives $J\!=\!0.26$ ($1.45\times$ random).
 
 A third audit
 (\pyown{src/verify_lemma_B_fiedler_vs_t00.py}{verify_lemma_B_fiedler_vs_t00}, output
-\path|outputs/verify_lemma_B_fiedler_vs_t00.json|) computes
+\pyown{outputs/verify_lemma_B_fiedler_vs_t00.json}{verify_lemma_B_fiedler_vs_t00.json}) computes
 the corpus-canonical matter-core classifier $t_{00}(a)$
 directly from $\psi/K/Q$ via \texttt{per\_seed\_galerkin}
 (loaded from \pyown{src/verify_galerkin_runner_A_hessian_ricci.py}{verify_galerkin_runner_A_hessian_ricci};
@@ -7592,7 +7592,7 @@ sub-network of defect / matter-core nodes carries the spectral
 gap, so that $\lambda_{2}$ is a localised sub-population
 property. This is tested directly
 (\pyown{src/verify_lemma_B_defect_condensation_test.py}{verify_lemma_B_defect_condensation_test}, output
-\path|outputs/verify_lemma_B_defect_condensation_test.json|) on
+\pyown{outputs/verify_lemma_B_defect_condensation_test.json}{verify_lemma_B_defect_condensation_test.json}) on
 the $10$-regime canonical ladder, $8$ seeds per regime. For each
 percentile $p\!\in\!\{1,5,10,25,50\}\%$ the top-$p\%$ nodes of a
 candidate sub-population are removed and $\lambda_{2}$ of the
@@ -7690,7 +7690,7 @@ closure theorem of P6~\cite{Paper6} (the emergent Einstein
 equation conditional on A1--A8) into an unconditional
 theorem. Three explicit falsification triggers for
 \eqref{eq:step4_target} are registered in
-\path|notes/lemma_B_proof_strategy.md| (FB-w$1$/$2$/$3$); the
+\pyown{notes/lemma_B_proof_strategy.md}{lemma_B_proof_strategy.md} (FB-w$1$/$2$/$3$); the
 deciding one is FB-w$1$: cross-seed mean
 $\lambda_{2}(L_{w})$ outside $[0.365,0.385]$ on an extended
 ladder $N\!\ge\!1024$.
@@ -7717,7 +7717,7 @@ exact algebraic identity $3/8\!=\!(7/24)\cdot(9/7)$; a
 structural derivation of this factorisation from the carrier
 action remains open, see
 Proposition~\ref{prop:skeleton_laplacian_audit} and the route
-survey in \path|notes/lemma_B_proof_strategy.md|);
+survey in \pyown{notes/lemma_B_proof_strategy.md}{lemma_B_proof_strategy.md});
 \textbf{Lemma~C} is \emph{numerically certified} by the
 $5$-proxy Dal~Maso $\Gamma$-convergence audit
 ($\gamma$-score $0.849$ in the
@@ -7729,7 +7729,7 @@ remaining open but supporting the conditional master
 closure theorem without further analytical work in the
 present session. A session-level
 scoping memo is at
-\path|notes/lemma_B_step4_analytical_attempt.md|: it
+\pyown{notes/lemma_B_step4_analytical_attempt.md}{lemma_B_step4_analytical_attempt.md}: it
 verifies the algebraic identities
 $7/24\!=\!(d{+}N_{\rm gen})/(2 d N_{\rm gen})$ and
 $3/8\!=\!(d{-}1)/(2 d)$ as algebraic consequences of the
@@ -7740,7 +7740,7 @@ deliverable --- a structural derivation of the factorisation
 $3/8\!=\!(7/24)\cdot(9/7)$ from the carrier-action
 equilibrium --- with small-world spectral theory the working
 route and candidate alternatives surveyed in
-\path|notes/lemma_B_proof_strategy.md|.
+\pyown{notes/lemma_B_proof_strategy.md}{lemma_B_proof_strategy.md}.
 
 The admissibility conditions (A1)+(A8) are not strengthenings
 that remain to be deduced from M0--M3: they are operative
@@ -7785,7 +7785,7 @@ $G(L)\!:=\!1\!-\!\mathrm{mean}_{k}s_{k}(L)$) is similarly
 certified on the canonical $\mathcal P_{5}/\mathcal P_{5}N$
 ladder by the bundled audit
 \pyown{src/verify_gap_monotonicity_p5_ladder.py}{verify_gap_monotonicity_p5_ladder} (output
-\path|outputs/verify_gap_monotonicity_p5_ladder.json|):
+\pyown{outputs/verify_gap_monotonicity_p5_ladder.json}{verify_gap_monotonicity_p5_ladder.json}):
 $\bar r\!=\!+0.109$ with bootstrap-CI95
 $[+0.075,\,+0.167]$ strictly positive, $G'(L)\!=\!-0.109$
 strictly negative, $5/5$ per-score rates positive, and the
@@ -8109,7 +8109,7 @@ Only the $T_{00}$-only subset $(\zeta_{3},A_{K},A_{Q})$ leaves
 the spatial residuals invariant; the spatial-block exponent is
 allowed to depend on the rest of the coefficient algebra, which
 is what the four-variant scan confirms
-(\path|outputs/four_alternative_theorems_audit.json|).
+(\pyown{outputs/four_alternative_theorems_audit.json}{four_alternative_theorems_audit.json}).
 
 \paragraph{Honest closure-status of the structural form.}
 Combining tests (i)--(v) on the eighteen-regime cross-regime
@@ -11987,7 +11987,7 @@ relative level (within the per-seed dispersion of $0.008$--$0.016$
 on individual regimes; the per-regime
 $\Lambda_{t}(N)$ band is $[0.79154,\,0.82551]$ across the
 ten regimes;
-\path|outputs/p5_g00_t00_within_ladder.json|). A three-block
+\pyown{outputs/p5_g00_t00_within_ladder.json}{p5_g00_t00_within_ladder.json}). A three-block
 robustness audit on the ten-point ladder certifies asymptote
 stability: \emph{(i)} leave-one-regime-out shifts the asymptote
 by at most $0.48\%$ relative (max absolute shift $0.0039$, std
@@ -12299,7 +12299,7 @@ $\mathcal{O}(N^{2})$ filtration cost grows steeply with $N$).
 Reproducer:
 \pyown{src/analyze_xi_filtration_complete.py}{analyze_xi_filtration_complete}
 with bundle
-\path|outputs/xi_filtration_complete.json|.
+\pyown{outputs/xi_filtration_complete.json}{xi_filtration_complete.json}.
 
 \FloatBarrier
 \section{Parametrized post-Newtonian (PPN) limits and 2PN extension}
@@ -12565,7 +12565,7 @@ The $N_{\mathrm{gen}}\!=\!4$ extension predicts
 $f_{\mathrm{neg}}\!=\!2/9$, providing the falsification
 handle.  Reproducer:
 \pyown{src/stage6b_solve_4_problems.py}{stage6b_solve_4_problems}; bundle
-\path|outputs/stage6b_structural_grounds_for_2_7.json|.
+\pyown{outputs/stage6b_structural_grounds_for_2_7.json}{stage6b_structural_grounds_for_2_7.json}.
 
 \section{Action-based Bianchi methodological note}
 \label{app:action_bianchi}
@@ -12786,15 +12786,15 @@ canonical-physics snapshot NPZ files via the discovery layer
 \pyscript{emergent-gr-anisotropic-source-dm-de-repro}{src/_d1_npz_discovery.py}{_d1_npz_discovery}:
 \pyown{src/analyze_xi_graph_topology_deep.py}{analyze_xi_graph_topology_deep} (eigenvector
 centrality, degree concentration, Betti-$H_{1}$ check) writing
-\path|outputs/xi_graph_topology_deep.json|;
+\pyown{outputs/xi_graph_topology_deep.json}{xi_graph_topology_deep.json};
 \pyown{src/analyze_extended_cluster_diagnostics.py}{analyze_extended_cluster_diagnostics} (Laplacian
 algebraic connectivity, modularity, edge expansion, eigenvector-
 centrality versus degree separability) writing
-\path|outputs/extended_cluster_diagnostics.json|; and
+\pyown{outputs/extended_cluster_diagnostics.json}{extended_cluster_diagnostics.json}; and
 \pyown{src/analyze_xi_filtration_complete.py}{analyze_xi_filtration_complete} (Vietoris--Rips
 $H_{0}/H_{1}$ persistence diagram and triangle-filtration count
 under finite truncation $\varepsilon^\ast=-\log 0.5$) writing
-\path|outputs/xi_filtration_complete.json|. These three
+\pyown{outputs/xi_filtration_complete.json}{xi_filtration_complete.json}. These three
 reproducers do not yet carry pinned unit tests in
 \path|tests/|; the underlying numerical operations (Gram-eigvalue,
 Laplacian-eigvalue, BFS connected-component, cycle-rank, FFT)
@@ -13615,7 +13615,7 @@ $(\pi/2,\pi/3,\pi/7)$-tessellation.  For $N_{\mathrm{gen}}=4$
 Eq.~\eqref{eq:fneg-Ngen} predicts $f_{\mathrm{neg}}=2/9$,
 providing the in-principle falsification handle.  Reproducer:
 \pyown{src/stage6b_solve_4_problems.py}{stage6b_solve_4_problems}; bundle
-\path|outputs/stage6b_structural_grounds_for_2_7.json|.
+\pyown{outputs/stage6b_structural_grounds_for_2_7.json}{stage6b_structural_grounds_for_2_7.json}.
 
 \begin{figure}[ht]
   \centering

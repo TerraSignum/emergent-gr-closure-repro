@@ -1,0 +1,93 @@
+{
+  "title": "Tau-threshold robustness audit (skeleton closure 7/24)",
+  "target": 0.2916666666666667,
+  "by_tau": {
+    "tau_0.05": {
+      "tau": 0.05,
+      "n_obs": 80,
+      "n_regimes": 10,
+      "selected_model": "symanzik_1",
+      "asymptote_mean": 0.4205046964382455,
+      "asymptote_std": 0.006384561411734182,
+      "asymptote_ci95": [
+        0.4079909560712465,
+        0.4330184368052445
+      ],
+      "z_vs_target": 20.17962103626844,
+      "rel_err_pct": 44.17303877882702
+    },
+    "tau_0.07": {
+      "tau": 0.07,
+      "n_obs": 80,
+      "n_regimes": 10,
+      "selected_model": "symanzik_1",
+      "asymptote_mean": 0.36248077183028254,
+      "asymptote_std": 0.007894364256770661,
+      "asymptote_ci95": [
+        0.34700781788701207,
+        0.377953725773553
+      ],
+      "z_vs_target": 8.970209995425737,
+      "rel_err_pct": 24.279121770382577
+    },
+    "tau_0.10": {
+      "tau": 0.1,
+      "n_obs": 80,
+      "n_regimes": 10,
+      "selected_model": "symanzik_1",
+      "asymptote_mean": 0.2957311483472064,
+      "asymptote_std": 0.006862006929125074,
+      "asymptote_ci95": [
+        0.28228161476612124,
+        0.3091806819282915
+      ],
+      "z_vs_target": 0.5923167555090071,
+      "rel_err_pct": 1.393536576185036
+    },
+    "tau_0.15": {
+      "tau": 0.15,
+      "n_obs": 80,
+      "n_regimes": 10,
+      "selected_model": "symanzik_1",
+      "asymptote_mean": 0.2478805705019837,
+      "asymptote_std": 0.004595034647111631,
+      "asymptote_ci95": [
+        0.2388743025936449,
+        0.2568868384103225
+      ],
+      "z_vs_target": -9.529002396577415,
+      "rel_err_pct": -15.012375827891308
+    },
+    "tau_0.20": {
+      "tau": 0.2,
+      "n_obs": 80,
+      "n_regimes": 10,
+      "selected_model": "symanzik_1",
+      "asymptote_mean": 0.21115102093279856,
+      "asymptote_std": 0.005285106787554513,
+      "asymptote_ci95": [
+        0.2007922116291917,
+        0.22150983023640541
+      ],
+      "z_vs_target": -15.23444065945236,
+      "rel_err_pct": -27.60536425161193
+    },
+    "tau_0.30": {
+      "tau": 0.3,
+      "n_obs": 80,
+      "n_regimes": 10,
+      "selected_model": "symanzik_1",
+      "asymptote_mean": 0.060525634556194884,
+      "asymptote_std": 0.00985633025529007,
+      "asymptote_ci95": [
+        0.041207227255826345,
+        0.07984404185656342
+      ],
+      "z_vs_target": -23.451023466509174,
+      "rel_err_pct": -79.24835386644746
+    },
+    "robustness_verdict": "BREAKS_DOWN",
+    "full_range_spread": 0.35997906188205064,
+    "mid_range_spread": 0.151329750897484
+  }
+}
