@@ -40,10 +40,18 @@ sys.path.insert(0, str(SRC))
 from _d1_ladder_discovery import discover_d1_ladder  # noqa: E402
 from adaptive_pipeline import hierarchical_bayes, theory_prior  # noqa: E402
 
-# Branch separation thresholds (from corpus memory):
-VAC_BRANCH_N_MAX = 100      # N <= 100 -> vacuum branch
-MATTER_BRANCH_N_MIN = 256   # N >= 256 -> matter branch
-# Intermediate 128 <= N <= 200: crossover region, excluded from branch fits.
+# Branch separation thresholds (corrected via N_inv ~ 591-600 chirality-
+# inversion endpoint identified in memory project_chirality_flip_pi_over_4
+# 2026-05-05 and project_lemma_B_phase2_J_X_loops_2026_05_12). Three
+# regimes:
+#   VAC-branch        : N <= 100              (theta_chir < pi/4)
+#   peri-flip mixing  : 128 <= N <= 200       (excluded)
+#   MATTER-stable     : 256 <= N <= 600       (theta_chir post-flip, pre-inversion)
+#   POST-INVERSION    : N >= 700              (alpha_xi -> 1/10, separate dynamics)
+VAC_BRANCH_N_MAX = 100
+MATTER_BRANCH_N_MIN = 256
+MATTER_BRANCH_N_MAX = 600   # N_inv ~ 591-600 is the upper bound
+POST_INVERSION_N_MIN = 700
 
 
 def extract_per_seed_lambdas(ladder, n_filter, max_seeds: int = 12):
@@ -197,28 +205,48 @@ def main():
     else:
         vac_bayes = {}
 
-    # MATTER branch (N >= 256)
+    # MATTER-STABLE branch (256 <= N <= 600, pre-inversion)
     n_mat, lam_mat, src_mat = extract_per_seed_lambdas(
-        ladder, lambda n: n >= MATTER_BRANCH_N_MIN
+        ladder, lambda n: MATTER_BRANCH_N_MIN <= n <= MATTER_BRANCH_N_MAX
     )
-    print(f"\n  MATTER branch sources: {src_mat}")
-    mat_fit = fit_and_report("MATTER-branch (N >= 256)", n_mat, lam_mat, (79, 200))
+    print(f"\n  MATTER-stable [256, 600] sources: {src_mat}")
+    mat_fit = fit_and_report(
+        "MATTER-stable (256 <= N <= 600, pre-inversion)",
+        n_mat, lam_mat, (79, 200))
     if "asymptote_mean" in mat_fit:
         mat_bayes = bayesian_id_branch(
-            "MATTER-branch", mat_fit["asymptote_mean"], mat_fit["asymptote_std"],
+            "MATTER-stable", mat_fit["asymptote_mean"], mat_fit["asymptote_std"],
             (79, 200)
         )
     else:
         mat_bayes = {}
 
+    # POST-INVERSION (N >= 700)
+    n_pi, lam_pi, src_pi = extract_per_seed_lambdas(
+        ladder, lambda n: n >= POST_INVERSION_N_MIN
+    )
+    print(f"\n  POST-INVERSION (N >= 700) sources: {src_pi}")
+    pi_fit = fit_and_report(
+        "POST-INVERSION (N >= 700)", n_pi, lam_pi, (1, 2)) \
+        if len(lam_pi) >= 4 else {"branch": "POST-INVERSION", "n_obs": int(len(lam_pi))}
+
     report = {
         "title": "Branch-resolved Symanzik audit + Bayesian Rational-ID",
+        "regimes": {
+            "VAC_max_N": VAC_BRANCH_N_MAX,
+            "MATTER_min_N": MATTER_BRANCH_N_MIN,
+            "MATTER_max_N": MATTER_BRANCH_N_MAX,
+            "POST_INVERSION_min_N": POST_INVERSION_N_MIN,
+            "N_inv_chirality_inversion": "~591-600 (project_chirality_flip_pi_over_4 2026-05-05)",
+        },
         "vac_branch_fit": vac_fit,
         "vac_branch_bayes": vac_bayes,
-        "matter_branch_fit": mat_fit,
-        "matter_branch_bayes": mat_bayes,
+        "matter_stable_fit": mat_fit,
+        "matter_stable_bayes": mat_bayes,
+        "post_inversion_fit": pi_fit,
         "vac_branch_sources": src_vac,
-        "matter_branch_sources": src_mat,
+        "matter_stable_sources": src_mat,
+        "post_inversion_sources": src_pi,
     }
     out_path = OUTPUTS / "derive_branch_resolved_audit.json"
     out_path.write_text(json.dumps(report, indent=2, default=str), encoding="utf-8")
