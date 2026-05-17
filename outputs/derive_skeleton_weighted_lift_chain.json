@@ -76,6 +76,15 @@
       "lift_l2": 1.2797826751973629
     },
     {
+      "regime": "P5N700",
+      "N": 700,
+      "n_seeds": 8,
+      "source": "results_d1_p5n700_12seeds\\P5N700.snapshots.npz",
+      "weighted_l2": 0.4033146309029434,
+      "skeleton_l2": 0.30070430324467495,
+      "lift_l2": 1.341233319746599
+    },
+    {
       "regime": "P5N1024",
       "N": 1024,
       "n_seeds": 8,
@@ -96,31 +105,31 @@
   ],
   "symanzik": {
     "weighted": {
-      "a_inf": 0.4082217913890619,
-      "b": 0.6974679047608898,
-      "r2": 0.02074494365730295,
+      "a_inf": 0.4070881791141121,
+      "b": 0.8460399389430927,
+      "r2": 0.031699060839492366,
       "target": 0.375,
-      "rel_err_pct": 8.859144370416505
+      "rel_err_pct": 8.556847763763226
     },
     "skeleton": {
-      "a_inf": 0.29163822550400864,
-      "b": 10.132027248913122,
-      "r2": 0.5847985887410295,
+      "a_inf": 0.2905997211927266,
+      "b": 10.268134365467581,
+      "r2": 0.6057412603884251,
       "target": 0.2916666666666667,
-      "rel_err_pct": -0.00975125576847218
+      "rel_err_pct": -0.3658098767794612
     },
     "lift": {
-      "a_inf": 1.3983012186166521,
-      "b": -36.034373474530206,
-      "r2": 0.5148839336869493,
+      "a_inf": 1.3972277709263103,
+      "b": -35.89368665376574,
+      "r2": 0.5289165044460205,
       "target": 1.2857142857142858,
-      "rel_err_pct": 8.756761447961825
+      "rel_err_pct": 8.67327107204635
     }
   },
   "chain_reconstruction": {
-    "empirical_skel_times_empirical_lift": 0.4077980861174533,
-    "empirical_weighted": 0.4082217913890619,
-    "chain_residual_pct": -0.10379290879276022
+    "empirical_skel_times_empirical_lift": 0.40603400067392065,
+    "empirical_weighted": 0.4070881791141121,
+    "chain_residual_pct": -0.2589557973620147
   },
   "honest_caveat": "Algebraic identity is exact in Q at (d, N_gen) = (4, 3): the N_gen factor in 9/7 cancels with that in 7/24, so the factorisation is post-hoc rather than a two-step mechanism. See par:cross_closure_identities of the bridge manuscript for the d-only / System-R independence statement that constrains this reading."
 }

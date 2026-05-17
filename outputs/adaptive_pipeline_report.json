@@ -1,151 +1,151 @@
 {
   "title": "Adaptive Carrier Pipeline \u2014 Tier 1-4 Integrated Analysis",
   "ladder_n_max": 2048,
-  "n_observations": 72,
-  "n_regimes_in_fit": 9,
+  "n_observations": 80,
+  "n_regimes_in_fit": 10,
   "hierarchical_fit": {
     "selected": "symanzik_3",
-    "a_mean": 0.40885244594079095,
-    "a_std": 0.003416044950238985,
+    "a_mean": 0.40774411972230806,
+    "a_std": 0.003053453154731948,
     "ci95": [
-      0.40215699783832254,
-      0.41554789404325937
+      0.40175935153903347,
+      0.41372888790558265
     ],
-    "sigma_seed": 0.01752751979817478
+    "sigma_seed": 0.016881120312851113
   },
   "model_comparison": {
     "symanzik_1": {
-      "log_evidence": 183.6047695254355,
-      "asymptote_mean": 0.40823464324883113,
-      "asymptote_std": 0.003369796629302932,
+      "log_evidence": 207.37758308038687,
+      "asymptote_mean": 0.40711243960358157,
+      "asymptote_std": 0.0029993472496678275,
       "asymptote_ci95": [
-        0.4016298418553974,
-        0.41483944464226485
+        0.4012337189942326,
+        0.41299116021293053
       ],
-      "sigma_seed": 0.017699179179443032
+      "sigma_seed": 0.017045653605929346
     },
     "symanzik_2": {
-      "log_evidence": 183.91726393252347,
-      "asymptote_mean": 0.40884117667699127,
-      "asymptote_std": 0.003415706315836467,
+      "log_evidence": 207.72754844047498,
+      "asymptote_mean": 0.40773293060147625,
+      "asymptote_std": 0.003053018787753916,
       "asymptote_ci95": [
-        0.4021463922979518,
-        0.41553596105603074
+        0.40174901377747857,
+        0.41371684742547393
       ],
-      "sigma_seed": 0.01753150738137222
+      "sigma_seed": 0.01688489497607857
     },
     "symanzik_3": {
-      "log_evidence": 183.92484092827019,
-      "asymptote_mean": 0.40885244594079095,
-      "asymptote_std": 0.003416044950238985,
+      "log_evidence": 207.7359171697431,
+      "asymptote_mean": 0.40774411972230806,
+      "asymptote_std": 0.003053453154731948,
       "asymptote_ci95": [
-        0.40215699783832254,
-        0.41554789404325937
+        0.40175935153903347,
+        0.41372888790558265
       ],
-      "sigma_seed": 0.01752751979817478
+      "sigma_seed": 0.016881120312851113
     },
-    "bayes_factor_2_vs_1": 1.3668302965908068,
-    "bayes_factor_3_vs_2": 1.007605773816845,
+    "bayes_factor_2_vs_1": 1.4190183930697788,
+    "bayes_factor_3_vs_2": 1.0084038449724824,
     "selected": "symanzik_3"
   },
   "posterior": {
     "top_rational": "9/22",
-    "top_posterior": 0.15957935041296517,
-    "second_rational": "7/17",
-    "second_posterior": 0.15614890619055352,
-    "posterior_odds": 1.0219690570116795,
+    "top_posterior": 0.16537650727206615,
+    "second_rational": "2/5",
+    "second_posterior": 0.1530209081725917,
+    "posterior_odds": 1.0807445155503757,
     "top_10": [
       {
         "rational": "9/22",
         "value": 0.4090909090909091,
-        "posterior": 0.15957935041296517
-      },
-      {
-        "rational": "7/17",
-        "value": 0.4117647058823529,
-        "posterior": 0.15614890619055352
+        "posterior": 0.16537650727206615
       },
       {
         "rational": "2/5",
         "value": 0.4,
-        "posterior": 0.11656078081170669
+        "posterior": 0.1530209081725917
       },
       {
         "rational": "11/27",
         "value": 0.4074074074074074,
-        "posterior": 0.11215313358424636
+        "posterior": 0.138902851468277
+      },
+      {
+        "rational": "7/17",
+        "value": 0.4117647058823529,
+        "posterior": 0.10753677009462867
       },
       {
         "rational": "13/32",
         "value": 0.40625,
-        "posterior": 0.07378193706285152
-      },
-      {
-        "rational": "16/39",
-        "value": 0.41025641025641024,
-        "posterior": 0.0704896428201375
-      },
-      {
-        "rational": "5/12",
-        "value": 0.4166666666666667,
-        "posterior": 0.0583011343200102
-      },
-      {
-        "rational": "20/49",
-        "value": 0.40816326530612246,
-        "posterior": 0.05640630623816931
+        "posterior": 0.09969420605176525
       },
       {
         "rational": "15/37",
         "value": 0.40540540540540543,
-        "posterior": 0.04927683644950666
+        "posterior": 0.06966983467833399
       },
       {
-        "rational": "12/29",
-        "value": 0.41379310344827586,
-        "posterior": 0.03930997926438119
+        "rational": "20/49",
+        "value": 0.40816326530612246,
+        "posterior": 0.06497674265096706
+      },
+      {
+        "rational": "16/39",
+        "value": 0.41025641025641024,
+        "posterior": 0.06230027936369377
+      },
+      {
+        "rational": "17/42",
+        "value": 0.40476190476190477,
+        "posterior": 0.04940127751010762
+      },
+      {
+        "rational": "19/47",
+        "value": 0.40425531914893614,
+        "posterior": 0.03597679174846229
       }
     ]
   },
   "stopping": {
     "should_stop": false,
-    "reason": "continue (top=0.1596, H=3.5515 bits)",
-    "entropy_bits": 3.5514821810259574
+    "reason": "continue (top=0.1654, H=3.4072 bits)",
+    "entropy_bits": 3.4071567298644996
   },
   "next_actions_top5": [
     {
       "name": "(d=3, N_gen=3) test, 3 seeds at N=512",
       "cost_hours": 0.05000000000000001,
-      "eig_bits": 0.7369655941662061,
-      "gittins_index": 14.739311883324119,
+      "eig_bits": 0.7369655941662062,
+      "gittins_index": 14.739311883324122,
       "rank": 1
     },
     {
       "name": "(d=5, N_gen=3) test, 3 seeds at N=512",
       "cost_hours": 0.05000000000000001,
-      "eig_bits": 0.7369655941662061,
-      "gittins_index": 14.739311883324119,
+      "eig_bits": 0.7369655941662062,
+      "gittins_index": 14.739311883324122,
       "rank": 2
     },
     {
       "name": "(d=6, N_gen=3) test, 3 seeds at N=512",
       "cost_hours": 0.05000000000000001,
-      "eig_bits": 0.7369655941662061,
-      "gittins_index": 14.739311883324119,
+      "eig_bits": 0.7369655941662062,
+      "gittins_index": 14.739311883324122,
       "rank": 3
     },
     {
       "name": "(d=3, N_gen=3) test, 12 seeds at N=512",
       "cost_hours": 0.20000000000000004,
-      "eig_bits": 0.7369655941662061,
-      "gittins_index": 3.6848279708310296,
+      "eig_bits": 0.7369655941662062,
+      "gittins_index": 3.6848279708310305,
       "rank": 4
     },
     {
       "name": "(d=5, N_gen=3) test, 12 seeds at N=512",
       "cost_hours": 0.20000000000000004,
-      "eig_bits": 0.7369655941662061,
-      "gittins_index": 3.6848279708310296,
+      "eig_bits": 0.7369655941662062,
+      "gittins_index": 3.6848279708310305,
       "rank": 5
     }
   ],
